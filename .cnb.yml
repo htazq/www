@@ -22,7 +22,5 @@ main:
         - name: Deploy to EdgeOne Pages
           image: node:20
           script: |
-            # 安装 edgeone CLI
-            npm install -g @tencent-cloud/edgeone-cli
-            # 部署到 EdgeOne Pages
-            edgeone pages deploy ./dist -n cnb-www -t $EDGEONE_API_TOKEN 
+            # 使用 npx 运行 edgeone 命令
+            npx edgeone pages deploy ./dist -n cnb-www -t $EDGEONE_API_TOKEN 
