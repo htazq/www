@@ -19,11 +19,11 @@ export const Hero: React.FC = () => {
     <div className="relative min-h-screen flex flex-col items-center justify-center z-10 pt-16">
       <div className="text-center space-y-8 px-4">
         <div className="inline-block mb-4 px-3 py-1 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-wider">
-          接受远程协作 / 自由职业委托
+          System Monitor
         </div>
         
         <h1 className="text-6xl md:text-8xl font-bold tracking-tighter glitch-text text-white mb-2" data-text="HTAZQ">
-          HTAZQ
+          海棠
         </h1>
         
         <div className="h-8 text-lg md:text-xl text-emerald-500 font-mono">

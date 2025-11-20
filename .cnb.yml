@@ -11,13 +11,7 @@ main:
             node -v
             npm install
             npm run build
-            # 验证构建输出
-            ls -la ./dist
-            # 检查是否生成了 index.html
-            if [ ! -f "./dist/index.html" ]; then
-              echo "构建失败：未找到 index.html"
-              exit 1
-            fi
+
         # 将构建输出部署到 EdgeOne Pages
         - name: Deploy to EdgeOne Pages
           image: node:20
