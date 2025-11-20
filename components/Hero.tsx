@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowDown, Github, AtSign, Globe, Mail } from 'lucide-react';
+import { CyberButton } from './CyberButton';
 
 export const Hero: React.FC = () => {
   const [text, setText] = useState('');
@@ -21,11 +22,11 @@ export const Hero: React.FC = () => {
         <div className="inline-block mb-4 px-3 py-1 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-wider">
           System Monitor
         </div>
-        
-        <h1 className="text-6xl md:text-8xl font-bold tracking-tighter glitch-text text-white mb-2" data-text="海棠">
+
+        <h1 className="text-6xl md:text-8xl font-bold tracking-tighter glitch-text text-white mb-2 hover:scale-105 transition-transform duration-300 cursor-default select-none" data-text="海棠">
           海棠
         </h1>
-        
+
         <div className="h-8 text-lg md:text-xl text-emerald-500 font-mono">
           {text}<span className="animate-pulse">_</span>
         </div>
@@ -37,22 +38,22 @@ export const Hero: React.FC = () => {
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-6 mt-8">
-          <a href="https://github.com/htazq" target="_blank" rel="noreferrer" className="flex items-center space-x-2 text-slate-400 hover:text-white transition-colors group">
-            <Github className="w-5 h-5 group-hover:text-purple-400 transition-colors" />
+          <CyberButton href="https://github.com/htazq" target="_blank" rel="noreferrer">
+            <Github className="w-5 h-5" />
             <span>Github</span>
-          </a>
-          <a href="https://cnb.cool/htazq" target="_blank" rel="noreferrer" className="flex items-center space-x-2 text-slate-400 hover:text-white transition-colors group">
-            <Globe className="w-5 h-5 group-hover:text-blue-400 transition-colors" />
+          </CyberButton>
+          <CyberButton href="https://cnb.cool/htazq" target="_blank" rel="noreferrer">
+            <Globe className="w-5 h-5" />
             <span>CNB.cool</span>
-          </a>
-          <a href="mailto:huayuhuia@gmail.com" className="flex items-center space-x-2 text-slate-400 hover:text-white transition-colors group">
-            <Mail className="w-5 h-5 group-hover:text-red-400 transition-colors" />
+          </CyberButton>
+          <CyberButton href="mailto:huayuhuia@gmail.com">
+            <Mail className="w-5 h-5" />
             <span>Email Me</span>
-          </a>
-          <div className="flex items-center space-x-2 text-slate-400">
-            <AtSign className="w-5 h-5 text-emerald-400" />
+          </CyberButton>
+          <CyberButton href="https://at9.net" target="_blank" rel="noreferrer" variant="secondary">
+            <AtSign className="w-5 h-5" />
             <span>at9.net</span>
-          </div>
+          </CyberButton>
         </div>
       </div>
 
