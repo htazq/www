@@ -1,17 +1,16 @@
-# ----------------------------------------------------------------
-# 云原生开发环境配置 (Cloud IDE)
-# ----------------------------------------------------------------
 $:
   vscode:
     - docker:
-        # 建议直接用 node:20 官方镜像，与下方构建环境保持一致
-        image: node:20
-        script: |
-          # 这里只进行安装，不要运行 npm run dev，否则会阻塞终端初始化
-          npm install
+        # 指定云原生开发启动时的基础镜像为当前镜像
+        image: docker.cnb.cool/htazq/image/node-22:latest
       services:
         - vscode
         - docker
+      stages:
+        - node -v
+        - npm install
+        - npm run docs:dev &
+        - echo ">>> ✅ 初始化完成！请等待右下角端口弹窗..."
 
 # ----------------------------------------------------------------
 # 流水线配置 (Pipeline)
