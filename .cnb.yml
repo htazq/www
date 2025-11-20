@@ -1,21 +1,49 @@
+# ----------------------------------------------------------------
+# 云原生开发环境配置 (Cloud IDE)
+# ----------------------------------------------------------------
 $:
   vscode:
     - docker:
-        image: docker.cnb.cool/anyexyz/examples/nodejs:latest
+        # 建议直接用 node:20 官方镜像，与下方构建环境保持一致
+        image: node:20
         script: |
-          npm install 
-          npm run dev
+          # 这里只进行安装，不要运行 npm run dev，否则会阻塞终端初始化
+          npm install
       services:
         - vscode
         - docker
 
-# 触发器：推送到主分支
+# ----------------------------------------------------------------
+# 流水线配置 (Pipeline)
+# ----------------------------------------------------------------
 main:
   push:
-    # 从私有仓库导入环境变量
+    # 导入密钥 (GITHUB_TOKEN, EDGEONE_API_TOKEN)
     - imports: https://cnb.cool/htazq/my-secrets/-/blob/main/envs.yml
       stages:
-        # 构建当前项目
+        # ------------------------------------------------------------
+        # 第一步：同步代码到 GitHub (htazq/www)
+        # ------------------------------------------------------------
+        - name: Sync to GitHub
+          image: alpine/git
+          script: |
+            # 1. 检查变量是否存在
+            if [ -z "$GITHUB_TOKEN" ]; then echo "Error: GITHUB_TOKEN is empty"; exit 1; fi
+            
+            # 2. 配置 Git 信息
+            git config --global user.email "sync-bot@cnb.cool"
+            git config --global user.name "CNB Sync Bot"
+            
+            # 3. 添加远程仓库
+            # 注意：这里是你的新仓库 www.git
+            git remote add github https://oauth2:$GITHUB_TOKEN@github.com/htazq/www.git
+            
+            # 4. 强制推送到 main 分支
+            git push --force github HEAD:main
+
+        # ------------------------------------------------------------
+        # 第二步：构建项目
+        # ------------------------------------------------------------
         - name: Build Current Project
           image: node:20
           script: |
@@ -23,9 +51,12 @@ main:
             npm install
             npm run build
 
-        # 将构建输出部署到 EdgeOne Pages
+        # ------------------------------------------------------------
+        # 第三步：部署到 EdgeOne (cnb-www)
+        # ------------------------------------------------------------
         - name: Deploy to EdgeOne Pages
           image: node:20
           script: |
-            # 使用 npx 运行 edgeone 命令
-            npx edgeone pages deploy ./dist -n cnb-www -t $EDGEONE_API_TOKEN 
+            # 部署 ./dist 目录 (普通前端项目通常是 dist，VitePress 才是 docs/.vitepress/dist)
+            # 确保 EdgeOne 上有名为 cnb-www 的项目
+            npx edgeone pages deploy ./dist -n cnb-www -t $EDGEONE_API_TOKEN
