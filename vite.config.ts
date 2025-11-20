@@ -9,6 +9,12 @@ export default defineConfig(({ mode }) => {
       // Polyfill process.env for the Gemini SDK which expects it
       'process.env.API_KEY': JSON.stringify(env.API_KEY || '')
     },
+    server: {
+      host: '0.0.0.0',
+      port: 5173,
+      strictPort: false,
+      allowedHosts: 'all'
+    },
     build: {
       outDir: 'dist',
       assetsDir: 'assets',
