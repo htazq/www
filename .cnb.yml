@@ -1,3 +1,14 @@
+$:
+  vscode:
+    - docker:
+        image: docker.cnb.cool/anyexyz/examples/nodejs:latest
+        script: |
+          npm install 
+          npm run dev
+      services:
+        - vscode
+        - docker
+
 # 触发器：推送到主分支
 main:
   push:
