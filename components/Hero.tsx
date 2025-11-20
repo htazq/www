@@ -22,7 +22,7 @@ export const Hero: React.FC = () => {
           System Monitor
         </div>
         
-        <h1 className="text-6xl md:text-8xl font-bold tracking-tighter glitch-text text-white mb-2" data-text="HTAZQ">
+        <h1 className="text-6xl md:text-8xl font-bold tracking-tighter glitch-text text-white mb-2" data-text="海棠">
           海棠
         </h1>
         
