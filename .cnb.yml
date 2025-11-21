@@ -29,9 +29,10 @@ main:
             # 1. 检查变量是否存在
             if [ -z "$GITHUB_TOKEN" ]; then echo "Error: GITHUB_TOKEN is empty"; exit 1; fi
             
-            # 2. 配置 Git 信息
-            git config --global user.email "sync-bot@cnb.cool"
-            git config --global user.name "CNB Sync Bot"
+            # 2. 配置 Git 信息 (修改了这里)
+            # 使用你的 GitHub 隐私邮箱 ID，确保同步操作算入你的贡献
+            git config --global user.email "61930738+htazq@users.noreply.github.com"
+            git config --global user.name "htazq"
             
             # 3. 添加远程仓库
             # 注意：这里是你的新仓库 www.git
