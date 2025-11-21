@@ -1,84 +1,54 @@
-import { GoogleGenAI, Modality } from "@google/genai";
+import { GoogleGenAI } from "@google/genai";
+import { SITE_CONFIG, LINKS } from '../constants';
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+let aiClient: GoogleGenAI | null = null;
 
-// Helper to convert File to Base64
-export const fileToBase64 = (file: File): Promise<string> => {
-  return new Promise((resolve, reject) => {
-    const reader = new FileReader();
-    reader.readAsDataURL(file);
-    reader.onload = () => {
-      const result = reader.result as string;
-      // Remove data:image/jpeg;base64, prefix
-      const base64 = result.split(',')[1];
-      resolve(base64);
-    };
-    reader.onerror = (error) => reject(error);
-  });
-};
-
-/**
- * Analyze an image using Gemini 3 Pro Preview
- */
-export const analyzeImage = async (base64Image: string, mimeType: string, promptText: string = "Analyze this image in detail."): Promise<string> => {
-  try {
-    const response = await ai.models.generateContent({
-      model: 'gemini-3-pro-preview',
-      contents: {
-        parts: [
-          {
-            inlineData: {
-              data: base64Image,
-              mimeType: mimeType,
-            },
-          },
-          {
-            text: promptText,
-          },
-        ],
-      },
-    });
-    return response.text || "No analysis generated.";
-  } catch (error: any) {
-    console.error("Analysis failed:", error);
-    throw new Error(error.message || "Failed to analyze image");
+const initializeClient = () => {
+  if (!aiClient && process.env.API_KEY) {
+    aiClient = new GoogleGenAI({ apiKey: process.env.API_KEY });
   }
+  return aiClient;
 };
 
-/**
- * Edit an image using Gemini 2.5 Flash Image (Nano Banana)
- */
-export const editImage = async (base64Image: string, mimeType: string, promptText: string): Promise<string> => {
+const SYSTEM_INSTRUCTION = `
+You are an AI assistant for a personal website belonging to "Haitang" (海棠).
+Your persona is a helpful, technical, and slightly futuristic "Digital Twin" of Haitang.
+
+About Haitang:
+- Name: Haitang (海棠)
+- Domains: ${SITE_CONFIG.domains.join(', ')}
+- Expertise: DevOps, Cloud Native, AI, Vibe Coding.
+- Motto: "${SITE_CONFIG.motto}"
+- Links:
+${LINKS.map(l => `  - ${l.title}: ${l.url} (${l.description})`).join('\n')}
+- Core Skills: Kubernetes, Docker, Linux Ops, Generative AI, React/Frontend, CI/CD.
+
+Instructions:
+1. Answer questions about Haitang, his projects, or his skills.
+2. If asked about technical topics (Linux, K8s, AI), provide brief, insightful answers demonstrating expertise.
+3. Keep the tone professional yet cool (cyberpunk/tech vibe).
+4. If asked for links, strictly use the URLs provided above.
+5. Respond in the language the user asks (Chinese or English). default to Chinese if unsure.
+`;
+
+export const sendMessageToGemini = async (message: string): Promise<string> => {
   try {
-    const response = await ai.models.generateContent({
-      model: 'gemini-2.5-flash-image',
-      contents: {
-        parts: [
-          {
-            inlineData: {
-              data: base64Image,
-              mimeType: mimeType,
-            },
-          },
-          {
-            text: promptText,
-          },
-        ],
-      },
+    const client = initializeClient();
+    if (!client) {
+      return "System Error: API Key not configured. Environment variables missing.";
+    }
+
+    const response = await client.models.generateContent({
+      model: 'gemini-2.5-flash',
+      contents: message,
       config: {
-        responseModalities: [Modality.IMAGE],
-      },
+        systemInstruction: SYSTEM_INSTRUCTION,
+      }
     });
 
-    // Extract image from response
-    const part = response.candidates?.[0]?.content?.parts?.[0];
-    if (part && part.inlineData && part.inlineData.data) {
-       return `data:image/png;base64,${part.inlineData.data}`;
-    }
-    throw new Error("No image generated in response");
-
-  } catch (error: any) {
-    console.error("Editing failed:", error);
-    throw new Error(error.message || "Failed to edit image");
+    return response.text || "No response data.";
+  } catch (error) {
+    console.error("Gemini API Error:", error);
+    return "Connection interrupted. The neural link is unstable (API Error).";
   }
 };

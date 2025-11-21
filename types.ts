@@ -1,20 +1,23 @@
-export enum AI_MODE {
-  ANALYZE = 'ANALYZE',
-  EDIT = 'EDIT'
+import { LucideIcon } from 'lucide-react';
+
+export interface LinkItem {
+  id: string;
+  title: string;
+  url: string;
+  description: string;
+  icon: LucideIcon;
+  category: 'Project' | 'Social' | 'Tool';
+  color: string;
 }
 
-export interface AnalysisResult {
+export interface ChatMessage {
+  role: 'user' | 'model';
   text: string;
-  error?: string;
+  timestamp: number;
 }
 
-export interface EditResult {
-  imageUrl: string;
-  error?: string;
-}
-
-export interface Skill {
+export interface TechSkill {
   name: string;
-  level: number;
-  category: 'Core' | 'DevOps' | 'Quant' | 'Net';
+  level: number; // 1-100
+  icon?: string;
 }
