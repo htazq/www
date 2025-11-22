@@ -1,4 +1,4 @@
-import { Github, Globe, Server, Network, Terminal, Cloud, Container } from 'lucide-react';
+import { Github, Globe, Server, Network, Container } from 'lucide-react';
 import { LinkItem } from './types';
 
 export const SITE_CONFIG = {
@@ -29,10 +29,10 @@ export const LINKS: LinkItem[] = [
   },
   {
     id: 'cnb',
-    title: 'CNB Profile',
+    title: 'CNB 平台',
     url: 'https://cnb.cool/htazq',
-    description: 'Cloud Native Build 账户',
-    icon: Cloud,
+    description: 'Cloud Native Build 超牛逼',
+    icon: 'https://cnb.cool/images/favicon.png',
     category: 'Social',
     color: 'text-orange-400',
   },

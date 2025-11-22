@@ -5,7 +5,7 @@ export interface LinkItem {
   title: string;
   url: string;
   description: string;
-  icon: LucideIcon;
+  icon: LucideIcon | string;
   category: 'Project' | 'Social' | 'Tool';
   color: string;
 }

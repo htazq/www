@@ -10,6 +10,7 @@ const LinkCard: React.FC<LinkCardProps> = ({ item }) => {
   const divRef = useRef<HTMLAnchorElement>(null);
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [opacity, setOpacity] = useState(0);
+  const isImageUrl = typeof item.icon === 'string';
   const Icon = item.icon;
 
   const handleMouseMove = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -71,7 +72,15 @@ const LinkCard: React.FC<LinkCardProps> = ({ item }) => {
       />
 
       <div className={`relative z-10 p-3 rounded-lg bg-slate-950 border border-slate-800 group-hover:border-${item.color.split('-')[1]}-500/50 transition-colors`}>
-        <Icon className={`w-6 h-6 ${item.color} transition-transform duration-300 group-hover:scale-110`} />
+        {isImageUrl ? (
+          <img 
+            src={item.icon as string} 
+            alt={item.title}
+            className={`w-6 h-6 ${item.color} transition-transform duration-300 group-hover:scale-110 object-contain`}
+          />
+        ) : (
+          <Icon className={`w-6 h-6 ${item.color} transition-transform duration-300 group-hover:scale-110`} />
+        )}
       </div>
 
       <div className="relative z-10 flex-1">
