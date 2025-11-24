@@ -3,14 +3,14 @@ $:
     - docker:
         # 指定云原生开发启动时的基础镜像为当前镜像
         image: docker.cnb.cool/htazq/image/node-22:latest
+      env:
+        CNB_WELCOME_EXECUTE_COMMAND: bash /workspace/welcome.sh
       services:
         - vscode
         - docker
       stages:
         - node -v
         - npm install
-        - npm run dev &
-        - echo ">>> ✅ 初始化完成！请等待右下角端口弹窗..."
 
 # ----------------------------------------------------------------
 # 流水线配置 (Pipeline)
