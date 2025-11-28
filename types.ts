@@ -21,3 +21,9 @@ export interface TechSkill {
   level: number; // 1-100
   icon?: string;
 }
+
+export interface Quote {
+  id: number;
+  category: string;
+  content: string;
+}

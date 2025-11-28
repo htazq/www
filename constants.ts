@@ -4,7 +4,6 @@ import { LinkItem } from './types';
 export const SITE_CONFIG = {
   name: '海棠 (Haitang)',
   domains: ['www.at9.net', 'at9.net'],
-  motto: 'AI认知的马太效应：今天，人与人之间最大的差距，不再是努力程度，而是对AI的认知深度。在智能倍速下，无效的勤奋，只会加速你的落伍。',
   titles: ['DevOps Engineer', 'Cloud Native Explorer', 'AI Enthusiast', 'Vibe Coding'],
 };
 

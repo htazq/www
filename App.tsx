@@ -1,10 +1,11 @@
-himport React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { SITE_CONFIG, LINKS } from './constants';
 import LinkCard from './components/LinkCard';
 import AiTerminal from './components/AiTerminal';
 import MatrixRain from './components/MatrixRain';
 import HackerText from './components/HackerText';
 import MouseSpotlight from './components/MouseSpotlight';
+import QuoteRotator from './components/QuoteRotator';
 
 const App: React.FC = () => {
   const [showMotto, setShowMotto] = useState(false);
@@ -13,14 +14,7 @@ const App: React.FC = () => {
     setTimeout(() => setShowMotto(true), 500);
   }, []);
 
-  // Helper to split text into interactive characters
-  const renderInteractiveText = (text: string) => {
-    return text.split('').map((char, idx) => (
-      <span key={idx} className="flip-char inline-block whitespace-pre">
-        {char}
-      </span>
-    ));
-  };
+
 
   return (
     <div className="min-h-screen w-full relative overflow-x-hidden flex flex-col bg-[#020617]">
@@ -60,19 +54,13 @@ const App: React.FC = () => {
             ))}
           </div>
 
-          {/* Interactive Motto Block */}
+          {/* Dynamic Quote Rotator */}
           <div 
-            className={`relative group p-6 md:p-10 rounded-2xl bg-slate-900/20 border border-white/5 backdrop-blur-md transition-all duration-1000 transform hover:bg-slate-800/30 hover:border-cyan-500/20 hover:shadow-[0_0_30px_rgba(6,182,212,0.1)] ${
+            className={`transition-all duration-1000 transform ${
               showMotto ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
             }`}
           >
-            {/* Corners */}
-            <div className="absolute -top-1 -left-1 w-4 h-4 border-t-2 border-l-2 border-cyan-500/50 group-hover:border-cyan-400 transition-colors" />
-            <div className="absolute -bottom-1 -right-1 w-4 h-4 border-b-2 border-r-2 border-neon-purple/50 group-hover:border-neon-purple transition-colors" />
-            
-            <p className="text-lg md:text-xl text-slate-300 leading-loose font-light">
-              {renderInteractiveText(SITE_CONFIG.motto)}
-            </p>
+            <QuoteRotator />
           </div>
         </section>
 

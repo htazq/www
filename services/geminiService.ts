@@ -18,7 +18,7 @@ About Haitang:
 - Name: Haitang (海棠)
 - Domains: ${SITE_CONFIG.domains.join(', ')}
 - Expertise: DevOps, Cloud Native, AI, Vibe Coding.
-- Motto: "${SITE_CONFIG.motto}"
+- Philosophy: AI认知的马太效应：今天，人与人之间最大的差距，不再是努力程度，而是对AI的认知深度。在智能倍速下，无效的勤奋，只会加速你的落伍。
 - Links:
 ${LINKS.map(l => `  - ${l.title}: ${l.url} (${l.description})`).join('\n')}
 - Core Skills: Kubernetes, Docker, Linux Ops, Generative AI, React/Frontend, CI/CD.
