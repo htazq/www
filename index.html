@@ -125,6 +125,22 @@
         0% { width: 0%; }
         100% { width: 100%; }
       }
+
+      /* Quote Animation */
+      @keyframes flyOut {
+        0% { transform: translateY(0); opacity: 1; filter: blur(0); }
+        100% { transform: translateY(-40px); opacity: 0; filter: blur(10px); }
+      }
+      @keyframes flyIn {
+        0% { transform: translateY(40px); opacity: 0; filter: blur(10px); }
+        100% { transform: translateY(0); opacity: 1; filter: blur(0); }
+      }
+      .animate-fly-out {
+        animation: flyOut 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+      }
+      .animate-fly-in {
+        animation: flyIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+      }
     </style>
   <script type="importmap">
 {

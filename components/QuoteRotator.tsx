@@ -25,7 +25,7 @@ const QuoteRotator: React.FC = () => {
 
     const interval = setInterval(() => {
       setIsFadingOut(true);
-      
+
       // Wait for fade out animation
       setTimeout(() => {
         const nextIndex = (currentIndex + 1) % quotes.length;
@@ -62,22 +62,22 @@ const QuoteRotator: React.FC = () => {
       {/* Corners */}
       <div className="absolute -top-1 -left-1 w-4 h-4 border-t-2 border-l-2 border-cyan-500/50 group-hover:border-cyan-400 transition-colors" />
       <div className="absolute -bottom-1 -right-1 w-4 h-4 border-b-2 border-r-2 border-neon-purple/50 group-hover:border-neon-purple transition-colors" />
-      
+
       {/* Category Badge */}
       <div className="absolute -top-3 left-6 px-3 py-1 rounded-full bg-gradient-to-r from-cyan-500/20 to-purple-500/20 border border-cyan-500/30 text-xs text-cyan-300 font-mono">
         {currentQuote.category}
       </div>
-      
+
       {/* Quote Content with Fade Transition */}
-      <div className={`transition-opacity duration-700 ${isFadingOut ? 'opacity-0' : 'opacity-100'}`}>
+      <div className={`${isFadingOut ? 'animate-fly-out' : 'animate-fly-in'}`}>
         <p className="text-lg md:text-xl text-slate-300 leading-loose font-light mb-4">
           {renderInteractiveText(currentQuote.content)}
         </p>
       </div>
-      
+
       {/* Progress Indicator */}
       <div className="absolute bottom-2 left-6 right-6 h-1 bg-slate-800 rounded-full overflow-hidden">
-        <div 
+        <div
           className="h-full bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full animate-pulse"
           style={{
             animation: 'slideProgress 6s linear infinite'

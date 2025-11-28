@@ -62,15 +62,7 @@ export const LINKS: LinkItem[] = [
     category: 'Tool',
     color: 'text-purple-400',
   },
-  {
-    id: 'email',
-    title: 'Email',
-    url: 'mailto:at9net@gmail.com',
-    description: '欢迎邮件交流合作',
-    icon: Mail,
-    category: 'Social',
-    color: 'text-red-400',
-  },
+
 ];
 
 export const TERMINAL_WELCOME = [
