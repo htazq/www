@@ -23,25 +23,38 @@ const QuoteRotator: React.FC = () => {
   useEffect(() => {
     if (quotes.length === 0) return;
 
-    const interval = setInterval(() => {
+    // Calculate total animation time based on text length
+    // 50ms per char + 800ms base animation time
+    const currentTextLength = quotes[currentIndex]?.content.length || 0;
+    const animationDuration = currentTextLength * 50 + 800;
+    const displayDuration = 4000; // Time to stay visible
+
+    const interval = setTimeout(() => {
       setIsFadingOut(true);
 
-      // Wait for fade out animation
+      // Wait for fade out animation to complete
       setTimeout(() => {
         const nextIndex = (currentIndex + 1) % quotes.length;
         setCurrentIndex(nextIndex);
         setCurrentQuote(quotes[nextIndex]);
         setIsFadingOut(false);
-      }, 800); // Match this with CSS transition duration
-    }, 6000); // Change quote every 6 seconds
+      }, animationDuration);
+    }, displayDuration + animationDuration);
 
-    return () => clearInterval(interval);
+    return () => clearTimeout(interval);
   }, [quotes, currentIndex]);
 
   // Helper to split text into interactive characters
   const renderInteractiveText = (text: string) => {
     return text.split('').map((char, idx) => (
-      <span key={idx} className="flip-char inline-block whitespace-pre">
+      <span
+        key={idx}
+        className={`flip-char inline-block whitespace-pre ${isFadingOut ? 'animate-fly-out' : 'animate-fly-in'
+          }`}
+        style={{
+          animationDelay: `${idx * 50}ms`
+        }}
+      >
         {char}
       </span>
     ));
@@ -68,21 +81,11 @@ const QuoteRotator: React.FC = () => {
         {currentQuote.category}
       </div>
 
-      {/* Quote Content with Fade Transition */}
-      <div className={`${isFadingOut ? 'animate-fly-out' : 'animate-fly-in'}`}>
+      {/* Quote Content */}
+      <div>
         <p className="text-lg md:text-xl text-slate-300 leading-loose font-light mb-4">
           {renderInteractiveText(currentQuote.content)}
         </p>
-      </div>
-
-      {/* Progress Indicator */}
-      <div className="absolute bottom-2 left-6 right-6 h-1 bg-slate-800 rounded-full overflow-hidden">
-        <div
-          className="h-full bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full animate-pulse"
-          style={{
-            animation: 'slideProgress 6s linear infinite'
-          }}
-        />
       </div>
     </div>
   );
