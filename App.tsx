@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+himport React, { useEffect, useState } from 'react';
 import { SITE_CONFIG, LINKS } from './constants';
 import LinkCard from './components/LinkCard';
 import AiTerminal from './components/AiTerminal';
@@ -86,7 +86,12 @@ const App: React.FC = () => {
 
       {/* Static Footer */}
       <footer className="relative z-10 py-8 border-t border-slate-900/50 bg-slate-950/50 text-center text-slate-600 text-sm backdrop-blur-sm">
-        <p className="hover:text-slate-400 transition-colors cursor-default">© {new Date().getFullYear()} {SITE_CONFIG.domains[0]} [SYSTEM_ACTIVE]</p>
+        <p className="hover:text-slate-400 transition-colors cursor-default mb-2">© {new Date().getFullYear()} {SITE_CONFIG.domains[0]} [SYSTEM_ACTIVE]</p>
+        <div className="flex justify-center items-center gap-6 text-xs">
+          <a href="https://github.com/htazq" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">GitHub</a>
+          <a href="https://cnb.cool/htazq" target="_blank" rel="noopener noreferrer" className="hover:text-orange-400 transition-colors">CNB</a>
+          <a href="mailto:at9net@gmail.com" className="hover:text-red-400 transition-colors">at9net@gmail.com</a>
+        </div>
       </footer>
 
       {/* Chat Widget */}

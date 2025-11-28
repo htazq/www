@@ -1,4 +1,4 @@
-import { Github, Globe, Server, Network, Container } from 'lucide-react';
+import { Github, Globe, Server, Network, Container, Mail } from 'lucide-react';
 import { LinkItem } from './types';
 
 export const SITE_CONFIG = {
@@ -62,6 +62,15 @@ export const LINKS: LinkItem[] = [
     icon: Server,
     category: 'Tool',
     color: 'text-purple-400',
+  },
+  {
+    id: 'email',
+    title: 'Email',
+    url: 'mailto:at9net@gmail.com',
+    description: '欢迎邮件交流合作',
+    icon: Mail,
+    category: 'Social',
+    color: 'text-red-400',
   },
 ];
 

@@ -8,6 +8,12 @@ This contains everything you need to run your app locally.
 
 View your app in AI Studio: https://ai.studio/apps/drive/14TxuWw_vSJzC1LzA4c-VgJ6Mi5No0SF9
 
+## Contact
+
+- **GitHub**: [htazq](https://github.com/htazq)
+- **CNB**: [htazq](https://cnb.cool/htazq)
+- **Email**: [at9net@gmail.com](mailto:at9net@gmail.com)
+
 ## Run Locally
 
 **Prerequisites:**  Node.js
