@@ -34,7 +34,15 @@ const QuoteRotator: React.FC = () => {
 
       // Wait for fade out animation to complete
       setTimeout(() => {
-        const nextIndex = (currentIndex + 1) % quotes.length;
+        let nextIndex;
+        if (quotes.length <= 1) {
+          nextIndex = 0;
+        } else {
+          do {
+            nextIndex = Math.floor(Math.random() * quotes.length);
+          } while (nextIndex === currentIndex);
+        }
+
         setCurrentIndex(nextIndex);
         setCurrentQuote(quotes[nextIndex]);
         setIsFadingOut(false);
