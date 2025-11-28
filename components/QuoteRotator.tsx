@@ -14,7 +14,10 @@ const QuoteRotator: React.FC = () => {
       .then(data => {
         setQuotes(data);
         if (data.length > 0) {
-          setCurrentQuote(data[0]);
+          // Randomly select initial quote
+          const randomIndex = Math.floor(Math.random() * data.length);
+          setCurrentIndex(randomIndex);
+          setCurrentQuote(data[randomIndex]);
         }
       })
       .catch(error => console.error('Error loading quotes:', error));
