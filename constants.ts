@@ -46,7 +46,7 @@ export const LINKS: LinkItem[] = [
   },
   {
     id: 'ip',
-    title: 'IP Lookup',
+    title: 'View-My-IP',
     url: 'https://ip.at9.net',
     description: '快速获取本机公网IP信息',
     icon: Network,
