@@ -10,11 +10,7 @@ export interface LinkItem {
   color: string;
 }
 
-export interface ChatMessage {
-  role: 'user' | 'model';
-  text: string;
-  timestamp: number;
-}
+
 
 export interface TechSkill {
   name: string;

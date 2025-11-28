@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { SITE_CONFIG, LINKS } from './constants';
 import LinkCard from './components/LinkCard';
-import AiTerminal from './components/AiTerminal';
 import MatrixRain from './components/MatrixRain';
 import HackerText from './components/HackerText';
 import MouseSpotlight from './components/MouseSpotlight';
 import QuoteRotator from './components/QuoteRotator';
+import ScrollToTop from './components/ScrollToTop';
 
 const App: React.FC = () => {
   const [showMotto, setShowMotto] = useState(false);
@@ -25,22 +25,22 @@ const App: React.FC = () => {
       <div className="fixed inset-0 bg-gradient-to-b from-slate-950/80 via-slate-950/90 to-slate-950 pointer-events-none -z-0" />
 
       <main className="relative z-10 flex-1 container mx-auto px-4 py-12 md:py-24 max-w-5xl flex flex-col justify-center">
-        
+
         {/* Hero Section */}
         <section className="mb-20 text-center md:text-left">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-400 text-xs font-mono mb-6 animate-pulse">
             <span className="w-2 h-2 bg-green-500 rounded-full animate-ping"></span>
             SYSTEM ONLINE • v2.5.1
           </div>
-          
+
           {/* Hacker Text Effect for Name */}
           <div className="mb-4 min-h-[4rem] md:min-h-[6rem]">
-             <HackerText 
-               text={SITE_CONFIG.name} 
-               className="text-5xl md:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white via-cyan-100 to-slate-400 tracking-tight"
-             />
+            <HackerText
+              text={SITE_CONFIG.name}
+              className="text-5xl md:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white via-cyan-100 to-slate-400 tracking-tight"
+            />
           </div>
-          
+
           <div className="flex flex-wrap gap-4 justify-center md:justify-start mb-10">
             {SITE_CONFIG.titles.map((title, index) => (
               <div key={index} className="group relative cursor-default">
@@ -48,17 +48,16 @@ const App: React.FC = () => {
                   {title}
                 </span>
                 {index < SITE_CONFIG.titles.length - 1 && (
-                   <span className="ml-4 text-slate-700">/</span>
+                  <span className="ml-4 text-slate-700">/</span>
                 )}
               </div>
             ))}
           </div>
 
           {/* Dynamic Quote Rotator */}
-          <div 
-            className={`transition-all duration-1000 transform ${
-              showMotto ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-            }`}
+          <div
+            className={`transition-all duration-1000 transform ${showMotto ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+              }`}
           >
             <QuoteRotator />
           </div>
@@ -82,8 +81,8 @@ const App: React.FC = () => {
         </div>
       </footer>
 
-      {/* Chat Widget */}
-      <AiTerminal />
+      {/* Scroll To Top Button */}
+      <ScrollToTop />
     </div>
   );
 };

@@ -64,10 +64,3 @@ export const LINKS: LinkItem[] = [
   },
 
 ];
-
-export const TERMINAL_WELCOME = [
-  "Initializing connection to at9.net...",
-  "Loading module: Vibe Coding...",
-  "Loading module: Cloud Native...",
-  "Access granted. Welcome, user.",
-];
