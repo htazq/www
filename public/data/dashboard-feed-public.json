@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-20T08:37:36.415Z",
+  "generatedAt": "2026-05-20T08:58:22.523Z",
   "source": {
     "github": {
       "configured": false,
@@ -37,16 +37,16 @@
         "count": 12
       },
       {
-        "name": "工具",
+        "name": "网站",
         "count": 11
       },
       {
         "name": "AI",
-        "count": 10
+        "count": 11
       },
       {
-        "name": "网站",
-        "count": 8
+        "name": "工具",
+        "count": 7
       }
     ],
     "byStatus": {
@@ -2071,7 +2071,7 @@
       "categoryConfidence": 0.2,
       "status": "watch",
       "statusText": "关注",
-      "daysSinceActive": 31,
+      "daysSinceActive": 32,
       "lastActiveAt": "2026-04-18T08:45:48Z",
       "latestCommit": null,
       "contribution": null,
@@ -4587,7 +4587,7 @@
       "name": "cloudflare-docker-proxy",
       "fullName": "htazq/cloudflare-docker-proxy",
       "category": "工具",
-      "categoryConfidence": 0.6,
+      "categoryConfidence": 0.4,
       "status": "stale",
       "statusText": "沉默",
       "daysSinceActive": 197,
@@ -4783,10 +4783,10 @@
     {
       "key": "htazq/chatgpt-web-midjourney-proxy",
       "owner": "htazq",
-      "name": "private-tool-03",
-      "fullName": "htazq/private-tool-03",
-      "category": "工具",
-      "categoryConfidence": 0.6,
+      "name": "private-ai-05",
+      "fullName": "htazq/private-ai-05",
+      "category": "AI",
+      "categoryConfidence": 0.4,
       "status": "stale",
       "statusText": "沉默",
       "daysSinceActive": 536,
@@ -5090,7 +5090,7 @@
       "categoryConfidence": 0,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 932,
+      "daysSinceActive": 933,
       "lastActiveAt": "2023-10-30T08:40:36Z",
       "latestCommit": {
         "sha": "c899acaeb9f229f5f9cf7073d7c384484a0eba21",
@@ -5128,8 +5128,8 @@
     {
       "key": "htazq/autogpt-next-web",
       "owner": "htazq",
-      "name": "private-ai-05",
-      "fullName": "htazq/private-ai-05",
+      "name": "private-ai-06",
+      "fullName": "htazq/private-ai-06",
       "category": "AI",
       "categoryConfidence": 0.2,
       "status": "stale",
@@ -5172,10 +5172,10 @@
     {
       "key": "htazq/go-proxy-bingai-vercel",
       "owner": "htazq",
-      "name": "private-tool-04",
-      "fullName": "htazq/private-tool-04",
-      "category": "工具",
-      "categoryConfidence": 0.4,
+      "name": "private-web-05",
+      "fullName": "htazq/private-web-05",
+      "category": "网站",
+      "categoryConfidence": 0.2,
       "status": "stale",
       "statusText": "沉默",
       "daysSinceActive": 1082,
@@ -5218,8 +5218,8 @@
       "owner": "htazq",
       "name": "go-proxy-bingai-2",
       "fullName": "htazq/go-proxy-bingai-2",
-      "category": "工具",
-      "categoryConfidence": 0.4,
+      "category": "网站",
+      "categoryConfidence": 0.2,
       "status": "stale",
       "statusText": "沉默",
       "daysSinceActive": 1082,
@@ -5262,8 +5262,8 @@
       "owner": "htazq",
       "name": "go-proxy-bingai",
       "fullName": "htazq/go-proxy-bingai",
-      "category": "工具",
-      "categoryConfidence": 0.4,
+      "category": "网站",
+      "categoryConfidence": 0.2,
       "status": "stale",
       "statusText": "沉默",
       "daysSinceActive": 1082,

@@ -6,7 +6,7 @@ import {fileURLToPath} from 'node:url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const repoRoot = path.resolve(__dirname, '..');
-const outputDir = path.join(repoRoot, 'public', '9deck', 'data');
+const outputDir = path.join(repoRoot, 'public', 'data');
 const outputJson = path.join(outputDir, 'dashboard-feed.json');
 const outputCsv = path.join(outputDir, 'dashboard-feed.csv');
 const rulePath = path.join(outputDir, 'repo-category-rules.json');
