@@ -1,0 +1,98 @@
+{
+  "categories": [
+    {
+      "name": "AI",
+      "keywords": [
+        "agent",
+        "agents",
+        "llm",
+        "rag",
+        "vector",
+        "prompt",
+        "assistant",
+        "chat",
+        "openclaw",
+        "claude",
+        "deepseek",
+        "gpt",
+        "qwen",
+        "autopilot"
+      ]
+    },
+    {
+      "name": "金融",
+      "keywords": [
+        "trade",
+        "trading",
+        "quant",
+        "mt5",
+        "stock",
+        "crypto",
+        "financial",
+        "economy",
+        "arbitrage",
+        "sentiment",
+        "portfolio",
+        "ibkr",
+        "market"
+      ]
+    },
+    {
+      "name": "脚本",
+      "keywords": [
+        "script",
+        "scripts",
+        "cli",
+        "shell",
+        "automation",
+        "autotrade",
+        "batch",
+        "task",
+        "workflow",
+        "workflow",
+        "bot",
+        "chrome",
+        "powershell"
+      ]
+    },
+    {
+      "name": "网站",
+      "keywords": [
+        "blog",
+        "dashboard",
+        "frontend",
+        "react",
+        "vue",
+        "vite",
+        "html",
+        "css",
+        "page",
+        "website",
+        "portal",
+        "app",
+        "panel"
+      ]
+    },
+    {
+      "name": "工具",
+      "keywords": [
+        "tool",
+        "utils",
+        "util",
+        "proxy",
+        "ip",
+        "registry",
+        "proxy",
+        "docker",
+        "mirror",
+        "image",
+        "monitor"
+      ]
+    },
+    {
+      "name": "其他",
+      "keywords": []
+    }
+  ],
+  "overrides": {}
+}

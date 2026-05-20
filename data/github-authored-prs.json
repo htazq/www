@@ -1,0 +1,807 @@
+﻿[
+    {
+        "author":  {
+                       "id":  "MDQ6VXNlcjYxOTMwNzM4",
+                       "is_bot":  false,
+                       "login":  "htazq",
+                       "type":  "User",
+                       "url":  "https://github.com/htazq"
+                   },
+        "closedAt":  "2026-05-19T06:52:19Z",
+        "commentsCount":  0,
+        "createdAt":  "2026-05-19T05:50:09Z",
+        "isDraft":  false,
+        "labels":  [
+
+                   ],
+        "number":  1,
+        "repository":  {
+                           "name":  "fenghuoyi-card-game",
+                           "nameWithOwner":  "htazq/fenghuoyi-card-game"
+                       },
+        "state":  "merged",
+        "title":  "feat: implement Fenghuoyi classic and enhanced playable prototype",
+        "updatedAt":  "2026-05-19T06:52:19Z",
+        "url":  "https://github.com/htazq/fenghuoyi-card-game/pull/1"
+    },
+    {
+        "author":  {
+                       "id":  "MDQ6VXNlcjYxOTMwNzM4",
+                       "is_bot":  false,
+                       "login":  "htazq",
+                       "type":  "User",
+                       "url":  "https://github.com/htazq"
+                   },
+        "closedAt":  "2026-05-11T15:34:51Z",
+        "commentsCount":  0,
+        "createdAt":  "2026-05-11T15:33:14Z",
+        "isDraft":  false,
+        "labels":  [
+
+                   ],
+        "number":  7,
+        "repository":  {
+                           "name":  "paio-autotrader",
+                           "nameWithOwner":  "htazq/paio-autotrader"
+                       },
+        "state":  "merged",
+        "title":  "Add Brooks BOPB and failed breakout research",
+        "updatedAt":  "2026-05-11T15:34:57Z",
+        "url":  "https://github.com/htazq/paio-autotrader/pull/7"
+    },
+    {
+        "author":  {
+                       "id":  "MDQ6VXNlcjYxOTMwNzM4",
+                       "is_bot":  false,
+                       "login":  "htazq",
+                       "type":  "User",
+                       "url":  "https://github.com/htazq"
+                   },
+        "closedAt":  "2026-05-11T14:12:56Z",
+        "commentsCount":  0,
+        "createdAt":  "2026-05-11T08:55:47Z",
+        "isDraft":  false,
+        "labels":  [
+
+                   ],
+        "number":  5,
+        "repository":  {
+                           "name":  "paio-autotrader",
+                           "nameWithOwner":  "htazq/paio-autotrader"
+                       },
+        "state":  "merged",
+        "title":  "Add H2 measured move strategy",
+        "updatedAt":  "2026-05-11T14:13:02Z",
+        "url":  "https://github.com/htazq/paio-autotrader/pull/5"
+    },
+    {
+        "author":  {
+                       "id":  "MDQ6VXNlcjYxOTMwNzM4",
+                       "is_bot":  false,
+                       "login":  "htazq",
+                       "type":  "User",
+                       "url":  "https://github.com/htazq"
+                   },
+        "closedAt":  "2026-05-11T07:28:03Z",
+        "commentsCount":  0,
+        "createdAt":  "2026-05-11T07:21:29Z",
+        "isDraft":  false,
+        "labels":  [
+
+                   ],
+        "number":  4,
+        "repository":  {
+                           "name":  "paio-autotrader",
+                           "nameWithOwner":  "htazq/paio-autotrader"
+                       },
+        "state":  "merged",
+        "title":  "Add walk-forward validation",
+        "updatedAt":  "2026-05-11T07:28:06Z",
+        "url":  "https://github.com/htazq/paio-autotrader/pull/4"
+    },
+    {
+        "author":  {
+                       "id":  "MDQ6VXNlcjYxOTMwNzM4",
+                       "is_bot":  false,
+                       "login":  "htazq",
+                       "type":  "User",
+                       "url":  "https://github.com/htazq"
+                   },
+        "closedAt":  "2026-05-09T09:18:00Z",
+        "commentsCount":  2,
+        "createdAt":  "2026-05-05T02:27:55Z",
+        "isDraft":  false,
+        "labels":  [
+
+                   ],
+        "number":  165,
+        "repository":  {
+                           "name":  "TradingAgents-AShare",
+                           "nameWithOwner":  "KylinMountain/TradingAgents-AShare"
+                       },
+        "state":  "closed",
+        "title":  "Fix Docker frontend API base URL for remote deployments",
+        "updatedAt":  "2026-05-09T09:18:00Z",
+        "url":  "https://github.com/KylinMountain/TradingAgents-AShare/pull/165"
+    },
+    {
+        "author":  {
+                       "id":  "MDQ6VXNlcjYxOTMwNzM4",
+                       "is_bot":  false,
+                       "login":  "htazq",
+                       "type":  "User",
+                       "url":  "https://github.com/htazq"
+                   },
+        "closedAt":  "2026-04-28T08:32:07Z",
+        "commentsCount":  0,
+        "createdAt":  "2026-04-28T01:43:45Z",
+        "isDraft":  false,
+        "labels":  [
+
+                   ],
+        "number":  32,
+        "repository":  {
+                           "name":  "Sanyue-ImgHub",
+                           "nameWithOwner":  "MarSeventh/Sanyue-ImgHub"
+                       },
+        "state":  "merged",
+        "title":  "Expose WebDAV storage channels in the frontend",
+        "updatedAt":  "2026-04-28T08:32:07Z",
+        "url":  "https://github.com/MarSeventh/Sanyue-ImgHub/pull/32"
+    },
+    {
+        "author":  {
+                       "id":  "MDQ6VXNlcjYxOTMwNzM4",
+                       "is_bot":  false,
+                       "login":  "htazq",
+                       "type":  "User",
+                       "url":  "https://github.com/htazq"
+                   },
+        "closedAt":  "2026-04-28T08:31:37Z",
+        "commentsCount":  3,
+        "createdAt":  "2026-04-27T16:15:26Z",
+        "isDraft":  false,
+        "labels":  [
+
+                   ],
+        "number":  536,
+        "repository":  {
+                           "name":  "CloudFlare-ImgBed",
+                           "nameWithOwner":  "MarSeventh/CloudFlare-ImgBed"
+                       },
+        "state":  "merged",
+        "title":  "Enable third-party WebDAV storage without new runtime dependencies",
+        "updatedAt":  "2026-04-28T08:31:37Z",
+        "url":  "https://github.com/MarSeventh/CloudFlare-ImgBed/pull/536"
+    },
+    {
+        "author":  {
+                       "id":  "MDQ6VXNlcjYxOTMwNzM4",
+                       "is_bot":  false,
+                       "login":  "htazq",
+                       "type":  "User",
+                       "url":  "https://github.com/htazq"
+                   },
+        "closedAt":  "2026-04-29T03:13:31Z",
+        "commentsCount":  1,
+        "createdAt":  "2026-04-27T16:00:16Z",
+        "isDraft":  false,
+        "labels":  [
+
+                   ],
+        "number":  1,
+        "repository":  {
+                           "name":  "CloudFlare-ImgBed",
+                           "nameWithOwner":  "htazq/CloudFlare-ImgBed"
+                       },
+        "state":  "merged",
+        "title":  "Add third-party WebDAV storage channel",
+        "updatedAt":  "2026-04-29T03:13:31Z",
+        "url":  "https://github.com/htazq/CloudFlare-ImgBed/pull/1"
+    },
+    {
+        "author":  {
+                       "id":  "MDQ6VXNlcjYxOTMwNzM4",
+                       "is_bot":  false,
+                       "login":  "htazq",
+                       "type":  "User",
+                       "url":  "https://github.com/htazq"
+                   },
+        "closedAt":  "2026-04-17T14:05:17Z",
+        "commentsCount":  0,
+        "createdAt":  "2026-04-17T14:05:07Z",
+        "isDraft":  false,
+        "labels":  [
+
+                   ],
+        "number":  18,
+        "repository":  {
+                           "name":  "brooks-es5m-rule-lab",
+                           "nameWithOwner":  "htazq/brooks-es5m-rule-lab"
+                       },
+        "state":  "merged",
+        "title":  "Feat/automation audit orchestration vision",
+        "updatedAt":  "2026-04-17T14:05:29Z",
+        "url":  "https://github.com/htazq/brooks-es5m-rule-lab/pull/18"
+    },
+    {
+        "author":  {
+                       "id":  "MDQ6VXNlcjYxOTMwNzM4",
+                       "is_bot":  false,
+                       "login":  "htazq",
+                       "type":  "User",
+                       "url":  "https://github.com/htazq"
+                   },
+        "closedAt":  "2026-04-07T15:12:41Z",
+        "commentsCount":  0,
+        "createdAt":  "2026-04-07T15:12:23Z",
+        "isDraft":  false,
+        "labels":  [
+
+                   ],
+        "number":  17,
+        "repository":  {
+                           "name":  "brooks-es5m-rule-lab",
+                           "nameWithOwner":  "htazq/brooks-es5m-rule-lab"
+                       },
+        "state":  "merged",
+        "title":  "feat: 接入 US500m_historical_data.csv 真实数据并落地时区/RTH 处理",
+        "updatedAt":  "2026-04-07T15:12:43Z",
+        "url":  "https://github.com/htazq/brooks-es5m-rule-lab/pull/17"
+    },
+    {
+        "author":  {
+                       "id":  "MDQ6VXNlcjYxOTMwNzM4",
+                       "is_bot":  false,
+                       "login":  "htazq",
+                       "type":  "User",
+                       "url":  "https://github.com/htazq"
+                   },
+        "closedAt":  "2026-04-07T13:51:02Z",
+        "commentsCount":  0,
+        "createdAt":  "2026-04-07T13:50:43Z",
+        "isDraft":  false,
+        "labels":  [
+
+                   ],
+        "number":  16,
+        "repository":  {
+                           "name":  "brooks-es5m-rule-lab",
+                           "nameWithOwner":  "htazq/brooks-es5m-rule-lab"
+                       },
+        "state":  "merged",
+        "title":  "feat: 新增 opening/midday reversal candidate 注释标签",
+        "updatedAt":  "2026-04-07T13:51:05Z",
+        "url":  "https://github.com/htazq/brooks-es5m-rule-lab/pull/16"
+    },
+    {
+        "author":  {
+                       "id":  "MDQ6VXNlcjYxOTMwNzM4",
+                       "is_bot":  false,
+                       "login":  "htazq",
+                       "type":  "User",
+                       "url":  "https://github.com/htazq"
+                   },
+        "closedAt":  "2026-04-07T13:43:24Z",
+        "commentsCount":  0,
+        "createdAt":  "2026-04-07T13:42:57Z",
+        "isDraft":  false,
+        "labels":  [
+
+                   ],
+        "number":  15,
+        "repository":  {
+                           "name":  "brooks-es5m-rule-lab",
+                           "nameWithOwner":  "htazq/brooks-es5m-rule-lab"
+                       },
+        "state":  "merged",
+        "title":  "feat: 把时间状态机、关键 bar 标签与文档编排对齐到 Brooks V1",
+        "updatedAt":  "2026-04-07T13:43:27Z",
+        "url":  "https://github.com/htazq/brooks-es5m-rule-lab/pull/15"
+    },
+    {
+        "author":  {
+                       "id":  "MDQ6VXNlcjYxOTMwNzM4",
+                       "is_bot":  false,
+                       "login":  "htazq",
+                       "type":  "User",
+                       "url":  "https://github.com/htazq"
+                   },
+        "closedAt":  "2026-04-07T12:42:15Z",
+        "commentsCount":  0,
+        "createdAt":  "2026-04-07T12:41:20Z",
+        "isDraft":  false,
+        "labels":  [
+
+                   ],
+        "number":  14,
+        "repository":  {
+                           "name":  "brooks-es5m-rule-lab",
+                           "nameWithOwner":  "htazq/brooks-es5m-rule-lab"
+                       },
+        "state":  "merged",
+        "title":  "feat: 扩展日内风险闸门为交易次数上限与亏损冷却期",
+        "updatedAt":  "2026-04-07T12:42:18Z",
+        "url":  "https://github.com/htazq/brooks-es5m-rule-lab/pull/14"
+    },
+    {
+        "author":  {
+                       "id":  "MDQ6VXNlcjYxOTMwNzM4",
+                       "is_bot":  false,
+                       "login":  "htazq",
+                       "type":  "User",
+                       "url":  "https://github.com/htazq"
+                   },
+        "closedAt":  "2026-04-07T12:38:21Z",
+        "commentsCount":  0,
+        "createdAt":  "2026-04-07T12:38:05Z",
+        "isDraft":  false,
+        "labels":  [
+
+                   ],
+        "number":  13,
+        "repository":  {
+                           "name":  "brooks-es5m-rule-lab",
+                           "nameWithOwner":  "htazq/brooks-es5m-rule-lab"
+                       },
+        "state":  "merged",
+        "title":  "feat: 新增可审计的 paper mode 顺序仿真接口",
+        "updatedAt":  "2026-04-07T12:38:24Z",
+        "url":  "https://github.com/htazq/brooks-es5m-rule-lab/pull/13"
+    },
+    {
+        "author":  {
+                       "id":  "MDQ6VXNlcjYxOTMwNzM4",
+                       "is_bot":  false,
+                       "login":  "htazq",
+                       "type":  "User",
+                       "url":  "https://github.com/htazq"
+                   },
+        "closedAt":  "2026-04-07T11:46:47Z",
+        "commentsCount":  0,
+        "createdAt":  "2026-04-07T11:46:34Z",
+        "isDraft":  false,
+        "labels":  [
+
+                   ],
+        "number":  12,
+        "repository":  {
+                           "name":  "brooks-es5m-rule-lab",
+                           "nameWithOwner":  "htazq/brooks-es5m-rule-lab"
+                       },
+        "state":  "merged",
+        "title":  "fix: 收紧风险参数校验并纠正 risk/backtest 分层",
+        "updatedAt":  "2026-04-07T11:46:50Z",
+        "url":  "https://github.com/htazq/brooks-es5m-rule-lab/pull/12"
+    },
+    {
+        "author":  {
+                       "id":  "MDQ6VXNlcjYxOTMwNzM4",
+                       "is_bot":  false,
+                       "login":  "htazq",
+                       "type":  "User",
+                       "url":  "https://github.com/htazq"
+                   },
+        "closedAt":  "2026-04-07T11:42:50Z",
+        "commentsCount":  0,
+        "createdAt":  "2026-04-07T11:42:39Z",
+        "isDraft":  false,
+        "labels":  [
+
+                   ],
+        "number":  11,
+        "repository":  {
+                           "name":  "brooks-es5m-rule-lab",
+                           "nameWithOwner":  "htazq/brooks-es5m-rule-lab"
+                       },
+        "state":  "merged",
+        "title":  "feat: 新增日内风险闸门与 risk events 审计链",
+        "updatedAt":  "2026-04-07T11:42:53Z",
+        "url":  "https://github.com/htazq/brooks-es5m-rule-lab/pull/11"
+    },
+    {
+        "author":  {
+                       "id":  "MDQ6VXNlcjYxOTMwNzM4",
+                       "is_bot":  false,
+                       "login":  "htazq",
+                       "type":  "User",
+                       "url":  "https://github.com/htazq"
+                   },
+        "closedAt":  "2026-04-07T11:05:41Z",
+        "commentsCount":  0,
+        "createdAt":  "2026-04-07T11:05:31Z",
+        "isDraft":  false,
+        "labels":  [
+
+                   ],
+        "number":  10,
+        "repository":  {
+                           "name":  "brooks-es5m-rule-lab",
+                           "nameWithOwner":  "htazq/brooks-es5m-rule-lab"
+                       },
+        "state":  "merged",
+        "title":  "fix: 保持 pattern replay 的时间因果一致性",
+        "updatedAt":  "2026-04-07T11:05:43Z",
+        "url":  "https://github.com/htazq/brooks-es5m-rule-lab/pull/10"
+    },
+    {
+        "author":  {
+                       "id":  "MDQ6VXNlcjYxOTMwNzM4",
+                       "is_bot":  false,
+                       "login":  "htazq",
+                       "type":  "User",
+                       "url":  "https://github.com/htazq"
+                   },
+        "closedAt":  "2026-04-07T11:04:01Z",
+        "commentsCount":  0,
+        "createdAt":  "2026-04-07T11:03:53Z",
+        "isDraft":  false,
+        "labels":  [
+
+                   ],
+        "number":  9,
+        "repository":  {
+                           "name":  "brooks-es5m-rule-lab",
+                           "nameWithOwner":  "htazq/brooks-es5m-rule-lab"
+                       },
+        "state":  "merged",
+        "title":  "feat: 新增 Brooks pattern annotations 分析层",
+        "updatedAt":  "2026-04-07T11:04:03Z",
+        "url":  "https://github.com/htazq/brooks-es5m-rule-lab/pull/9"
+    },
+    {
+        "author":  {
+                       "id":  "MDQ6VXNlcjYxOTMwNzM4",
+                       "is_bot":  false,
+                       "login":  "htazq",
+                       "type":  "User",
+                       "url":  "https://github.com/htazq"
+                   },
+        "closedAt":  "2026-04-07T08:09:20Z",
+        "commentsCount":  0,
+        "createdAt":  "2026-04-07T08:09:12Z",
+        "isDraft":  false,
+        "labels":  [
+
+                   ],
+        "number":  8,
+        "repository":  {
+                           "name":  "brooks-es5m-rule-lab",
+                           "nameWithOwner":  "htazq/brooks-es5m-rule-lab"
+                       },
+        "state":  "merged",
+        "title":  "feat: 为 backtest 引入默认成本模型与净收益统计",
+        "updatedAt":  "2026-04-07T08:09:23Z",
+        "url":  "https://github.com/htazq/brooks-es5m-rule-lab/pull/8"
+    },
+    {
+        "author":  {
+                       "id":  "MDQ6VXNlcjYxOTMwNzM4",
+                       "is_bot":  false,
+                       "login":  "htazq",
+                       "type":  "User",
+                       "url":  "https://github.com/htazq"
+                   },
+        "closedAt":  "2026-04-07T08:05:19Z",
+        "commentsCount":  0,
+        "createdAt":  "2026-04-07T08:05:08Z",
+        "isDraft":  false,
+        "labels":  [
+
+                   ],
+        "number":  7,
+        "repository":  {
+                           "name":  "brooks-es5m-rule-lab",
+                           "nameWithOwner":  "htazq/brooks-es5m-rule-lab"
+                       },
+        "state":  "merged",
+        "title":  "feat: 新增 backtest 循环、执行模拟与报告导出",
+        "updatedAt":  "2026-04-07T08:05:21Z",
+        "url":  "https://github.com/htazq/brooks-es5m-rule-lab/pull/7"
+    },
+    {
+        "author":  {
+                       "id":  "MDQ6VXNlcjYxOTMwNzM4",
+                       "is_bot":  false,
+                       "login":  "htazq",
+                       "type":  "User",
+                       "url":  "https://github.com/htazq"
+                   },
+        "closedAt":  "2026-04-07T07:53:00Z",
+        "commentsCount":  0,
+        "createdAt":  "2026-04-07T07:52:48Z",
+        "isDraft":  false,
+        "labels":  [
+
+                   ],
+        "number":  6,
+        "repository":  {
+                           "name":  "brooks-es5m-rule-lab",
+                           "nameWithOwner":  "htazq/brooks-es5m-rule-lab"
+                       },
+        "state":  "merged",
+        "title":  "feat: 新增 replay CLI 与逐 bar 事件流导出",
+        "updatedAt":  "2026-04-07T07:53:02Z",
+        "url":  "https://github.com/htazq/brooks-es5m-rule-lab/pull/6"
+    },
+    {
+        "author":  {
+                       "id":  "MDQ6VXNlcjYxOTMwNzM4",
+                       "is_bot":  false,
+                       "login":  "htazq",
+                       "type":  "User",
+                       "url":  "https://github.com/htazq"
+                   },
+        "closedAt":  "2026-04-07T07:50:22Z",
+        "commentsCount":  0,
+        "createdAt":  "2026-04-07T07:50:09Z",
+        "isDraft":  false,
+        "labels":  [
+
+                   ],
+        "number":  5,
+        "repository":  {
+                           "name":  "brooks-es5m-rule-lab",
+                           "nameWithOwner":  "htazq/brooks-es5m-rule-lab"
+                       },
+        "state":  "merged",
+        "title":  "feat: 新增 validate-data / doctor / scan CLI 入口",
+        "updatedAt":  "2026-04-07T07:50:24Z",
+        "url":  "https://github.com/htazq/brooks-es5m-rule-lab/pull/5"
+    },
+    {
+        "author":  {
+                       "id":  "MDQ6VXNlcjYxOTMwNzM4",
+                       "is_bot":  false,
+                       "login":  "htazq",
+                       "type":  "User",
+                       "url":  "https://github.com/htazq"
+                   },
+        "closedAt":  "2026-04-07T07:45:46Z",
+        "commentsCount":  0,
+        "createdAt":  "2026-04-07T07:45:35Z",
+        "isDraft":  false,
+        "labels":  [
+
+                   ],
+        "number":  4,
+        "repository":  {
+                           "name":  "brooks-es5m-rule-lab",
+                           "nameWithOwner":  "htazq/brooks-es5m-rule-lab"
+                       },
+        "state":  "merged",
+        "title":  "feat: 新增 H2/L2 setup detector 与最小策略准入层",
+        "updatedAt":  "2026-04-07T07:45:48Z",
+        "url":  "https://github.com/htazq/brooks-es5m-rule-lab/pull/4"
+    },
+    {
+        "author":  {
+                       "id":  "MDQ6VXNlcjYxOTMwNzM4",
+                       "is_bot":  false,
+                       "login":  "htazq",
+                       "type":  "User",
+                       "url":  "https://github.com/htazq"
+                   },
+        "closedAt":  "2026-04-07T07:39:53Z",
+        "commentsCount":  0,
+        "createdAt":  "2026-04-07T07:39:20Z",
+        "isDraft":  false,
+        "labels":  [
+
+                   ],
+        "number":  3,
+        "repository":  {
+                           "name":  "brooks-es5m-rule-lab",
+                           "nameWithOwner":  "htazq/brooks-es5m-rule-lab"
+                       },
+        "state":  "merged",
+        "title":  "feat: 落地 Phase 2 结构引擎与最小上下文状态机",
+        "updatedAt":  "2026-04-07T07:39:56Z",
+        "url":  "https://github.com/htazq/brooks-es5m-rule-lab/pull/3"
+    },
+    {
+        "author":  {
+                       "id":  "MDQ6VXNlcjYxOTMwNzM4",
+                       "is_bot":  false,
+                       "login":  "htazq",
+                       "type":  "User",
+                       "url":  "https://github.com/htazq"
+                   },
+        "closedAt":  "2026-04-07T07:06:04Z",
+        "commentsCount":  1,
+        "createdAt":  "2026-04-07T07:04:59Z",
+        "isDraft":  false,
+        "labels":  [
+
+                   ],
+        "number":  2,
+        "repository":  {
+                           "name":  "brooks-es5m-rule-lab",
+                           "nameWithOwner":  "htazq/brooks-es5m-rule-lab"
+                       },
+        "state":  "merged",
+        "title":  "feat: 落地数据合同与 bar 语义基础",
+        "updatedAt":  "2026-04-07T07:09:45Z",
+        "url":  "https://github.com/htazq/brooks-es5m-rule-lab/pull/2"
+    },
+    {
+        "author":  {
+                       "id":  "MDQ6VXNlcjYxOTMwNzM4",
+                       "is_bot":  false,
+                       "login":  "htazq",
+                       "type":  "User",
+                       "url":  "https://github.com/htazq"
+                   },
+        "closedAt":  "2026-04-07T05:35:29Z",
+        "commentsCount":  2,
+        "createdAt":  "2026-04-07T05:34:21Z",
+        "isDraft":  false,
+        "labels":  [
+
+                   ],
+        "number":  1,
+        "repository":  {
+                           "name":  "brooks-es5m-rule-lab",
+                           "nameWithOwner":  "htazq/brooks-es5m-rule-lab"
+                       },
+        "state":  "merged",
+        "title":  "docs: 冻结 V1 规格与工程边界",
+        "updatedAt":  "2026-04-07T06:45:19Z",
+        "url":  "https://github.com/htazq/brooks-es5m-rule-lab/pull/1"
+    },
+    {
+        "author":  {
+                       "id":  "MDQ6VXNlcjYxOTMwNzM4",
+                       "is_bot":  false,
+                       "login":  "htazq",
+                       "type":  "User",
+                       "url":  "https://github.com/htazq"
+                   },
+        "closedAt":  "2026-03-11T04:03:03Z",
+        "commentsCount":  4,
+        "createdAt":  "2026-02-02T06:05:20Z",
+        "isDraft":  false,
+        "labels":  [
+                       {
+                           "color":  "F7E7A1",
+                           "description":  "Marked as stale due to inactivity",
+                           "id":  "LA_kwDOQb6kR88AAAACXnE6Tg",
+                           "name":  "stale"
+                       }
+                   ],
+        "number":  6918,
+        "repository":  {
+                           "name":  "openclaw",
+                           "nameWithOwner":  "openclaw/openclaw"
+                       },
+        "state":  "closed",
+        "title":  "docs: add Chinese README",
+        "updatedAt":  "2026-03-11T04:03:03Z",
+        "url":  "https://github.com/openclaw/openclaw/pull/6918"
+    },
+    {
+        "author":  {
+                       "id":  "MDQ6VXNlcjYxOTMwNzM4",
+                       "is_bot":  false,
+                       "login":  "htazq",
+                       "type":  "User",
+                       "url":  "https://github.com/htazq"
+                   },
+        "closedAt":  "2026-04-13T15:29:39Z",
+        "commentsCount":  1,
+        "createdAt":  "2026-01-09T03:28:48Z",
+        "isDraft":  false,
+        "labels":  [
+
+                   ],
+        "number":  100,
+        "repository":  {
+                           "name":  "tg-signer",
+                           "nameWithOwner":  "amchii/tg-signer"
+                       },
+        "state":  "closed",
+        "title":  "feat: add Docker auto-build workflow and WebUI support",
+        "updatedAt":  "2026-04-13T15:29:39Z",
+        "url":  "https://github.com/amchii/tg-signer/pull/100"
+    },
+    {
+        "author":  {
+                       "id":  "MDQ6VXNlcjYxOTMwNzM4",
+                       "is_bot":  false,
+                       "login":  "htazq",
+                       "type":  "User",
+                       "url":  "https://github.com/htazq"
+                   },
+        "closedAt":  "0001-01-01T00:00:00Z",
+        "commentsCount":  2,
+        "createdAt":  "2026-01-07T14:22:06Z",
+        "isDraft":  false,
+        "labels":  [
+
+                   ],
+        "number":  1315,
+        "repository":  {
+                           "name":  "nofx",
+                           "nameWithOwner":  "NoFxAiOS/nofx"
+                       },
+        "state":  "open",
+        "title":  "Fix backtest validation and improve error messaging",
+        "updatedAt":  "2026-03-16T05:53:33Z",
+        "url":  "https://github.com/NoFxAiOS/nofx/pull/1315"
+    },
+    {
+        "author":  {
+                       "id":  "MDQ6VXNlcjYxOTMwNzM4",
+                       "is_bot":  false,
+                       "login":  "htazq",
+                       "type":  "User",
+                       "url":  "https://github.com/htazq"
+                   },
+        "closedAt":  "2025-06-16T12:05:16Z",
+        "commentsCount":  0,
+        "createdAt":  "2025-06-16T12:05:09Z",
+        "isDraft":  false,
+        "labels":  [
+
+                   ],
+        "number":  1,
+        "repository":  {
+                           "name":  "k8s",
+                           "nameWithOwner":  "htazq/k8s"
+                       },
+        "state":  "merged",
+        "title":  "Jules was unable to complete the task in time. Please review the work…",
+        "updatedAt":  "2025-06-16T12:05:20Z",
+        "url":  "https://github.com/htazq/k8s/pull/1"
+    },
+    {
+        "author":  {
+                       "id":  "MDQ6VXNlcjYxOTMwNzM4",
+                       "is_bot":  false,
+                       "login":  "htazq",
+                       "type":  "User",
+                       "url":  "https://github.com/htazq"
+                   },
+        "closedAt":  "2025-05-28T13:13:55Z",
+        "commentsCount":  0,
+        "createdAt":  "2025-05-28T13:13:46Z",
+        "isDraft":  false,
+        "labels":  [
+
+                   ],
+        "number":  2,
+        "repository":  {
+                           "name":  "4x4-chess",
+                           "nameWithOwner":  "htazq/4x4-chess"
+                       },
+        "state":  "merged",
+        "title":  "特性: 完成Taro/Vue3射箭棋重构（4x4棋盘及详细规则对齐）",
+        "updatedAt":  "2025-05-28T13:13:58Z",
+        "url":  "https://github.com/htazq/4x4-chess/pull/2"
+    },
+    {
+        "author":  {
+                       "id":  "MDQ6VXNlcjYxOTMwNzM4",
+                       "is_bot":  false,
+                       "login":  "htazq",
+                       "type":  "User",
+                       "url":  "https://github.com/htazq"
+                   },
+        "closedAt":  "2025-05-27T13:50:15Z",
+        "commentsCount":  0,
+        "createdAt":  "2025-05-27T13:48:16Z",
+        "isDraft":  false,
+        "labels":  [
+
+                   ],
+        "number":  1,
+        "repository":  {
+                           "name":  "4x4-chess",
+                           "nameWithOwner":  "htazq/4x4-chess"
+                       },
+        "state":  "merged",
+        "title":  "feat: K8s CI/CD 和应用程序容器化的初始设置",
+        "updatedAt":  "2025-05-27T13:50:24Z",
+        "url":  "https://github.com/htazq/4x4-chess/pull/1"
+    }
+]
