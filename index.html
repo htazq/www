@@ -1263,6 +1263,7 @@
 
       let nextRefreshAt = 0;
       let countdownTimer = null;
+      let checkDataTimer = null;
       let visibleCommands = [];
 
       const statusMeta = {
@@ -1358,20 +1359,63 @@
         $("clock").textContent = new Date().toLocaleTimeString("zh-CN", {hour12: false});
       }
 
+      async function checkAndFetchNewData() {
+        if (state.loading) return;
+        try {
+          const response = await fetch(`/data/dashboard-feed.json?t=${Date.now()}`);
+          if (!response.ok) return;
+          const newData = await response.json();
+
+          const oldTime = state.data?.generatedAt ? new Date(state.data.generatedAt).getTime() : 0;
+          const newTime = newData?.generatedAt ? new Date(newData.generatedAt).getTime() : 0;
+
+          if (newTime > oldTime) {
+            state.data = newData;
+            renderAll();
+            startCountdown();
+          }
+        } catch (e) {
+          // silent ignore
+        }
+      }
+
       function startCountdown() {
         if (countdownTimer) clearInterval(countdownTimer);
-        nextRefreshAt = Date.now() + refreshMs;
+        if (checkDataTimer) clearInterval(checkDataTimer);
+
+        const buildIntervalMs = 30 * 60 * 1000; // 云端定时任务每 30 分钟重新构建一次
+        const generatedTime = state.data?.generatedAt ? new Date(state.data.generatedAt).getTime() : Date.now();
+        let nextRefreshAt = generatedTime + buildIntervalMs;
+
+        const now = Date.now();
+        // 容错处理：若用户本地时间相差过大，或时区不同导致算出来的倒计时异常，做合理限制
+        if (nextRefreshAt - now > buildIntervalMs) {
+          nextRefreshAt = now + buildIntervalMs;
+        }
 
         countdownTimer = setInterval(() => {
-          const left = Math.max(0, nextRefreshAt - Date.now());
-          const totalSeconds = Math.ceil(left / 1000);
-          const minutes = String(Math.floor(totalSeconds / 60)).padStart(2, "0");
-          const seconds = String(totalSeconds % 60).padStart(2, "0");
-          $("nextRefresh").textContent = `${minutes}:${seconds}`;
-          if (left <= 0 && !state.loading) {
-            loadData();
+          const left = nextRefreshAt - Date.now();
+          if (left > 0) {
+            const totalSeconds = Math.ceil(left / 1000);
+            const minutes = String(Math.floor(totalSeconds / 60)).padStart(2, "0");
+            const seconds = String(totalSeconds % 60).padStart(2, "0");
+            $("nextRefresh").textContent = `${minutes}:${seconds}`;
+            $("nextRefresh").style.color = "";
+          } else {
+            // 已到期，显示心跳同步中状态
+            $("nextRefresh").textContent = "SYNC";
+            const sec = new Date().getSeconds();
+            $("nextRefresh").style.color = sec % 2 === 0 ? "var(--green)" : "var(--yellow)";
           }
         }, 1000);
+
+        // 如果数据已到期，每 15 秒静默向云端 fetch 检查是否有新生成的 JSON 数据
+        checkDataTimer = setInterval(() => {
+          const left = nextRefreshAt - Date.now();
+          if (left <= 0 && !state.loading) {
+            checkAndFetchNewData();
+          }
+        }, 15000);
       }
 
       function getLatestItems(data) {

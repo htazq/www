@@ -76,7 +76,7 @@ repository,platforms,category,status,days_since_active,is_private,last_active_at
 "htazq/fileupdown","cnb","其他","stale",183,false,"2025-11-18T07:29:45Z","","","https://cnb.cool/htazq/fileUpDown"
 "htazq/desktop","cnb","脚本","stale",183,false,"2025-11-18T07:14:37Z","","","https://cnb.cool/htazq/Desktop"
 "htazq/code-sandbox-in-cnb","cnb","脚本","stale",183,false,"2025-11-18T06:56:57Z","","","https://cnb.cool/htazq/code-sandbox-in-cnb"
-"htazq/cloudflare-docker-proxy","github","工具","stale",197,false,"2025-11-03T09:20:16Z","2025-11-03T09:20:14Z","","https://github.com/htazq/cloudflare-docker-proxy"
+"htazq/cloudflare-docker-proxy","github","工具","stale",198,false,"2025-11-03T09:20:16Z","2025-11-03T09:20:14Z","","https://github.com/htazq/cloudflare-docker-proxy"
 "htazq/view-trading-information","github","金融","stale",350,true,"2025-06-03T11:27:55Z","2025-06-03T11:27:48Z","","https://github.com/htazq/view-trading-information"
 "htazq/deepseek","cnb","AI","stale",464,false,"2025-02-10T03:13:32Z","","","https://cnb.cool/htazq/deepseek"
 "htazq/test","cnb","脚本","stale",523,false,"2024-12-12T10:25:11Z","","","https://cnb.cool/htazq/test"
