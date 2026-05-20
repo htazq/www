@@ -49,7 +49,7 @@ repository,platforms,category,status,days_since_active,is_private,last_active_at
 "htazq/catalystx-api","github","其他","stale",114,true,"2026-01-26T07:10:16Z","2026-01-26T07:09:57Z","","https://github.com/htazq/catalystx-api"
 "htazq/openwebui-auth","github,cnb","脚本","stale",115,true,"2026-01-24T12:50:06Z","2026-01-24T12:43:43Z","","https://github.com/htazq/openwebui-auth"
 "htazq/AlphaGPT_mt5","github","AI","stale",121,true,"2026-01-18T13:54:03Z","2026-01-18T13:53:48Z","","https://github.com/htazq/AlphaGPT_mt5"
-"htazq/nofx_strategy","github","其他","stale",130,true,"2026-01-09T09:08:49Z","2026-01-09T09:08:43Z","","https://github.com/htazq/nofx_strategy"
+"htazq/nofx_strategy","github","其他","stale",131,true,"2026-01-09T09:08:49Z","2026-01-09T09:08:43Z","","https://github.com/htazq/nofx_strategy"
 "htazq/Auto","github","脚本","stale",133,false,"2026-01-06T11:54:22Z","2026-01-06T11:54:18Z","","https://github.com/htazq/Auto"
 "htazq/z-image-comfyui","cnb","工具","stale",171,false,"2025-11-29T12:06:15Z","","","https://cnb.cool/htazq/z-image-comfyui"
 "htazq/www","github,cnb","脚本","stale",173,true,"2025-11-28T05:40:03Z","2025-11-28T05:39:52Z","","https://github.com/htazq/www"

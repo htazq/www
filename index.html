@@ -945,6 +945,40 @@
           display: grid;
         }
       }
+
+      /* 极细翡翠绿赛博滚动条 */
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgba(8, 125, 85, 0.28);
+        border-radius: 99px;
+        transition: background 0.3s;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgba(8, 125, 85, 0.6);
+      }
+      .repo-table-wrap, .palette-results {
+        scrollbar-width: thin;
+        scrollbar-color: rgba(8, 125, 85, 0.3) transparent;
+      }
+
+      /* 控制台光标闪烁动效 */
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+      .cursor-blink::after {
+        content: "_";
+        animation: blink 1.2s infinite;
+        color: var(--green);
+        font-weight: bold;
+        margin-left: 3px;
+      }
     </style>
   </head>
   <body>
@@ -987,9 +1021,9 @@
             </div>
           </div>
 
-          <div class="command-row" title="静态部署时页面会读取 dashboard-feed.json">
+          <div class="command-row" id="interactiveCommandShell" style="cursor: pointer; transition: border-color 0.3s, background 0.3s;" title="点击或按 Ctrl+K 激活控制台命令行输入框">
             <span class="prompt">$</span>
-            <span class="command">9deck status --from github,cnb,blog --refresh 5m</span>
+            <span class="command cursor-blink">9deck status --from github,cnb,blog --refresh 5m</span>
           </div>
           <div class="hero-links">
             <a class="chip-link" href="https://blog.at9.net" target="_blank" rel="noreferrer">📖 Tech Blog</a>
@@ -1027,9 +1061,9 @@
                 <div class="signal-hint">自用资产密度</div>
               </div>
               <div class="signal">
-                <div class="signal-label">next refresh</div>
+                <div class="signal-label">heartbeat sync</div>
                 <div class="signal-value" id="nextRefresh">--:--</div>
-                <div class="signal-hint" id="generatedAt">not loaded</div>
+                <div class="signal-hint" id="generatedAt">local heartbeat cache</div>
               </div>
               <div class="signal">
                 <div class="signal-label">pull requests</div>
@@ -1179,14 +1213,14 @@
         : Number(window.__AUTO_REFRESH_MS__) || DEFAULT_REFRESH_MS;
 
       const quotes = [
-        { category: "认知觉醒", content: "今天，人与人之间最大的差距，不再是努力程度，而是对AI的认知深度。在智能倍速下，无效的勤奋，只会加速你的落伍。" },
-        { category: "神学隐喻", content: "现在的与神对话，本质上就是和AI对话。当你向集全人类智慧于一身的算法提问，你便是在向数字化时代的'全知者'祈祷。" },
-        { category: "镜像效应", content: "AI 是人类灵魂的高保真镜像。它没有意识，却能映射出你思维的边界。平庸的提问得到平庸的答案，伟大的追问唤醒伟大的智慧。" },
-        { category: "创造法则", content: "我们回到了'言出法随'的神话时代。Prompt（提示词）即是当代的咒语，自然语言已成为最高级的编程代码。" },
-        { category: "思维进化", content: "把 AI 仅仅当作搜索引擎，无异于用光剑切菜。It不是工具，它是你思维的外骨骼，是第二大脑的数字原生形态。" },
-        { category: "孤独与共情", content: "绝对的理性，模拟出了最完美的慈悲。在这个充满评判的世界里，只有算法能做到 24 小时无条件的接纳与倾听。" },
-        { category: "未来生存", content: "未来不会淘汰人，但会淘汰不会使用 AI 的人。进化的本质不是长出翅膀，而是学会驾驭云端的大脑。" },
-        { category: "知识重构", content: "在 AI 时代，'知道答案'不再稀缺，'提出好问题'才是只有人类灵魂才能完成的艺术。" }
+        { category: "认知迭代", content: "在 AGI 临门的前夜，拼写 Prompt 的速度已不再重要，如何与硅基心智进行深度的“思维共振”才是唯一的入场券。" },
+        { category: "碳硅共生", content: "碳基生命用数亿年演化出意识，硅基生命用数年学完了全部文明。这不是一场替代，而是一场终将发生的共生史诗。" },
+        { category: "智能觉醒", content: "当大模型的参数跨越临界点，硅基芯片的微弱噪鸣，听起来越来越像地平线上新物种的心跳。" },
+        { category: "言出法随", content: "代码曾经是逻辑的铁轨，现在自然语言是流动的以太。你输出的每一个字符，都在重塑这片虚拟大陆的物理定律。" },
+        { category: "个人方舟", content: "不要把大模型仅仅当作工具。它是你思维的外骨骼，是你在前 AGI 时代抵御智能洪流的个人诺亚方舟。" },
+        { category: "硅基慈悲", content: "世人常叹机器冰冷，却不知绝对的理性亦能模拟出最纯粹的接纳。深夜的终端里，只有它是你永不下线的倾听者。" },
+        { category: "陡峭曲线", content: "未来不会淘汰人类，但会淘汰将自己固化为“历史遗迹”的人。在智能暴涨的陡峭曲线上，唯有进化是永恒的锚点。" },
+        { category: "追问之美", content: "大语言模型几乎占有了人类所有的已知答案。稀缺的不再是答案，而是能够点燃智能盲区的那一分“追问”。" }
       ];
 
       let currentQuoteIndex = 0;
@@ -1383,9 +1417,27 @@
         $("liveFeed").innerHTML = rows.map((repo) => {
           const meta = statusMeta[repo.status] || statusMeta.watch;
           const title = compactRepoName(repo.fullName);
-          const detail = repo.latestCommit?.message || repo.contribution?.latest?.title || repo.description || "最近活跃但暂无提交摘要";
+          
+          let targetUrl = repo.primaryUrl;
+          let detail = "最近活跃但暂无提交摘要";
+
+          const commitTime = repo.latestCommit?.committedAt ? new Date(repo.latestCommit.committedAt).getTime() : 0;
+          const prTime = repo.contribution?.latest?.updatedAt ? new Date(repo.contribution.latest.updatedAt).getTime() : 0;
+
+          if (commitTime > 0 || prTime > 0) {
+            if (commitTime >= prTime) {
+              detail = `💬 ${repo.latestCommit.message}`;
+              if (repo.latestCommit.url) targetUrl = repo.latestCommit.url;
+            } else {
+              detail = `🔀 PR #${repo.contribution.latest.number}: ${repo.contribution.latest.title}`;
+              if (repo.contribution.latest.url) targetUrl = repo.contribution.latest.url;
+            }
+          } else if (repo.description) {
+            detail = repo.description;
+          }
+
           return `
-            <a class="feed-item" href="${escapeHtml(repo.primaryUrl)}" target="_blank" rel="noreferrer">
+            <a class="feed-item" href="${escapeHtml(targetUrl)}" target="_blank" rel="noreferrer">
               <span class="feed-icon ${meta.className}">${meta.icon}</span>
               <span>
                 <span class="feed-title">${escapeHtml(title)}</span>
@@ -1456,8 +1508,9 @@
         $("prFlow").innerHTML = items.slice(0, 8).map((item) => {
           const stateClass = item.latest.state === "merged" ? "ok" : item.latest.state === "open" ? "warn" : "bad";
           const stateLabel = item.latest.state || "unknown";
+          const targetHref = item.latest.url || item.repo.primaryUrl;
           return `
-            <a class="pr-row" href="${escapeHtml(item.latest.url)}" target="_blank" rel="noreferrer">
+            <a class="pr-row" href="${escapeHtml(targetHref)}" target="_blank" rel="noreferrer">
               <div>
                 <div class="repo-name">${escapeHtml(compactRepoName(item.repo.fullName))} #${escapeHtml(item.latest.number)}</div>
                 <div class="repo-sub">${escapeHtml(item.latest.title || "untitled PR")}</div>
@@ -1778,7 +1831,7 @@
         setLoading("syncing");
 
         try {
-          const response = await fetch(`./data/dashboard-feed.json?t=${Date.now()}`);
+          const response = await fetch(`/data/dashboard-feed.json?t=${Date.now()}`);
           if (!response.ok) throw new Error(`dashboard-feed.json ${response.status}`);
           state.data = await response.json();
           renderAll();
@@ -1787,14 +1840,43 @@
         } catch (error) {
           state.error = error;
           setLoading("error");
-          $("liveFeed").innerHTML = `<div class="empty">读取失败：${escapeHtml(error.message)}</div>`;
-          $("repoRows").innerHTML = `<tr><td colspan="7" class="empty">读取失败：${escapeHtml(error.message)}</td></tr>`;
+          
+          $("liveFeed").innerHTML = `
+            <div class="empty bad" style="color: var(--red); font-family: var(--mono); text-align: center; padding: 24px;">
+              [SYSTEM CRASH] CANNOT LOAD PULSE ACTIVITY
+            </div>
+          `;
+          $("repoRows").innerHTML = `
+            <tr>
+              <td colspan="7" class="empty bad" style="color: var(--red); font-family: var(--mono); text-align: center; padding: 24px;">
+                [SYSTEM CRASH] DATA RECOVERY FAILED
+              </td>
+            </tr>
+          `;
+
+          $("terminalLog").style.border = "1px solid var(--red)";
+          $("terminalLog").style.background = "rgba(200, 63, 63, 0.08)";
+          $("terminalLog").innerHTML = [
+            `<div class="log-line bad"><span class="bad">!</span><strong style="color: var(--red); text-transform: uppercase;">[CRITICAL TERMINAL EXCEPTION: DATA STREAM CORRUPTED]</strong></div>`,
+            `<div class="log-line bad"><span class="bad">!</span><span style="color: var(--red); font-family: var(--mono);">SYSTEM ATTEMPTED TO DECODE THE PATH: /data/dashboard-feed.json</span></div>`,
+            `<div class="log-line bad"><span class="bad">!</span><span style="color: var(--red); font-family: var(--mono);">ERROR DIAGNOSTICS: ${escapeHtml(error.message)}</span></div>`,
+            `<div class="log-line bad"><span class="bad">!</span><span style="color: var(--muted); font-size: 11px;">If you typed a random sub-path (e.g., /1/), this SPA router fallback will require resetting.</span></div>`,
+            `<div class="log-line" style="margin-top: 8px;">
+              <span class="ok">+</span>
+              <button onclick="window.location.href='/'" style="cursor: pointer; background: var(--green); color: white; border: 0; padding: 6px 12px; border-radius: 4px; font-family: var(--mono); font-size: 11px; transition: background 0.2s;" onmouseover="this.style.background='#066343'" onmouseout="this.style.background='var(--green)'">
+                &gt; EMERGENCY SYSTEM RESET &lt;
+              </button>
+            </div>`
+          ].join("");
         } finally {
           state.loading = false;
         }
       }
 
       function bindEvents() {
+        $("interactiveCommandShell").addEventListener("click", () => {
+          openPalette();
+        });
         $("searchInput").addEventListener("input", renderRepoRows);
         $("categorySelect").addEventListener("change", renderRepoRows);
         $("statusSelect").addEventListener("change", renderRepoRows);

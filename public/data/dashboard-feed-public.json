@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-20T08:58:22.523Z",
+  "generatedAt": "2026-05-20T09:12:53.948Z",
   "source": {
     "github": {
       "configured": false,
@@ -507,7 +507,7 @@
         "forks": 0,
         "openIssues": 0
       },
-      "daysSinceActive": 130,
+      "daysSinceActive": 131,
       "key": "htazq/nofx_strategy",
       "status": "stale",
       "category": "其他",
@@ -3439,7 +3439,7 @@
       "categoryConfidence": 0,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 130,
+      "daysSinceActive": 131,
       "lastActiveAt": "2026-01-09T09:08:49Z",
       "latestCommit": {
         "sha": "e0d78a551d444d2b2ddd2192145ff325cb007308",

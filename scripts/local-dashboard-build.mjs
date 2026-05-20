@@ -892,8 +892,28 @@ async function main() {
 
   await fs.mkdir(outputDir, {recursive: true});
   
+  // 敏感 Token 拦截防护网
+  const jsonText = `${JSON.stringify(activeBoard, null, 2)}\n`;
+  const sensitiveEnvKeys = ['TOKEN', 'SECRET', 'PASSWORD', 'KEY', 'API_KEY', 'AUTH'];
+  const sensitivePatterns = [/ghp_[a-zA-Z0-9]{36}/, /ey[a-zA-Z0-9-_=]+\.[a-zA-Z0-9-_=]+\.?[a-zA-Z0-9-_=]*/];
+  
+  for (const pattern of sensitivePatterns) {
+    if (pattern.test(jsonText)) {
+      throw new Error(`[CRITICAL SECURITY ALERT] 检测到敏感 Token 特征字样！已强行拦截以防止任何泄露！匹配正则: ${pattern}`);
+    }
+  }
+
+  for (const [key, val] of Object.entries(process.env)) {
+    const isSensitiveName = sensitiveEnvKeys.some(sk => key.toUpperCase().includes(sk));
+    if (isSensitiveName && val && val.trim().length > 5) {
+      if (jsonText.includes(val)) {
+        throw new Error(`[CRITICAL SECURITY ALERT] 发现 JSON 内容中包含了敏感环境变量 process.env.${key} 的值！已强力拦截以确保数据安全！`);
+      }
+    }
+  }
+
   // 写入主文件 (如果 --public, 写入脱敏版; 否则写入包含私有信息的完整版)
-  await fs.writeFile(outputJson, `${JSON.stringify(activeBoard, null, 2)}\n`, 'utf8');
+  await fs.writeFile(outputJson, jsonText, 'utf8');
   await fs.writeFile(outputCsv, csvText, 'utf8');
 
   // 始终生成一份明确带 -public 后缀的文件备份
