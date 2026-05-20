@@ -1,4 +1,4 @@
-import { Github, Globe, Server, Network, Container, Mail } from 'lucide-react';
+import { Github, Globe, Server, Network, Container, Mail, LayoutDashboard } from 'lucide-react';
 import { LinkItem } from './types';
 
 export const SITE_CONFIG = {
@@ -8,6 +8,15 @@ export const SITE_CONFIG = {
 };
 
 export const LINKS: LinkItem[] = [
+  {
+    id: '9deck',
+    title: '9Deck Dashboard',
+    url: '/9deck/',
+    description: '云端个人数字资产主控台，包含开源项目、动态与监控',
+    icon: LayoutDashboard,
+    category: 'Tool',
+    color: 'text-emerald-400',
+  },
   {
     id: 'blog',
     title: 'Tech Blog',
@@ -62,5 +71,4 @@ export const LINKS: LinkItem[] = [
     category: 'Tool',
     color: 'text-purple-400',
   },
-
 ];
