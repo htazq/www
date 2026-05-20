@@ -5,8 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "check": "node --check scripts/local-dashboard-build.mjs && node --check scripts/validate-dashboard.mjs && npm run validate",
+    "validate": "node scripts/validate-dashboard.mjs",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "npm run check && npm run build"
   },
   "dependencies": {
     "react-dom": "^19.2.0",

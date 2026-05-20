@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>9Deck · at9.net personal asset console</title>
-    <script src="./__dashboard-config.js"></script>
+    <script>
+      window.__AUTO_REFRESH_MS__ = 300000;
+    </script>
     <style>
       :root {
         --bg: #f7f9f6;
@@ -1173,7 +1175,7 @@
           </div>
         </div>
         <div class="repo-table-wrap">
-          <table>
+          <table id="repoTable">
             <thead>
               <tr>
                 <th>repo</th>
