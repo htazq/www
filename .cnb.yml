@@ -44,6 +44,9 @@ main:
         # ------------------------------------------------------------
         - name: Build Project & Feed
           image: node:20
+          env:
+            GITHUB_TOKEN: $GITHUB_TOKEN
+            CNB_TOKEN: $CNB_TOKEN
           script: |
             node -v
             npm install
@@ -72,6 +75,9 @@ main:
         # ------------------------------------------------------------
         - name: Scheduled Build & Deploy
           image: node:20
+          env:
+            GITHUB_TOKEN: $GITHUB_TOKEN
+            CNB_TOKEN: $CNB_TOKEN
           script: |
             node -v
             npm install
