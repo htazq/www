@@ -554,8 +554,11 @@ function normalizeCnbRepo(item) {
 
 async function fetchAllGitHubRepos() {
   if (!USE_API || !GH_TOKEN) {
+    console.warn('[GitHub API] 跳过: USE_API=' + USE_API + ', GH_TOKEN=' + (GH_TOKEN ? '已设置(' + GH_TOKEN.length + '字符)' : '未设置'));
     return [];
   }
+
+  console.log('[GitHub API] 开始调用, GH_OWNER=' + GH_OWNER + ', INCLUDE_FORKS=' + INCLUDE_FORKS);
 
   const headers = {
     Authorization: `token ${GH_TOKEN}`,
@@ -761,8 +764,11 @@ async function fetchDataFromSources() {
     if (apiRepos.length > 0) {
       sourceMeta.githubUsedApi = true;
       githubRepos = apiRepos;
+    } else {
+      console.warn('[GitHub API] 返回了 0 个仓库 — 可能 token 权限不足或 affiliation=owner 过滤掉了所有结果');
     }
-  } catch {
+  } catch (err) {
+    console.error('[GitHub API] 请求失败，将回退到离线快照:', err.message);
     githubRepos = [];
   }
 
@@ -789,7 +795,8 @@ async function fetchDataFromSources() {
       sourceMeta.cnbUsedApi = true;
       cnbRepos = apiRepos;
     }
-  } catch {
+  } catch (err) {
+    console.error('[CNB API] 请求失败，将回退到离线快照:', err.message);
     cnbRepos = [];
   }
 
