@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
+import { Activity, GitCommit, GitPullRequest, RefreshCw } from 'lucide-react';
 
 /* ─────────────────────────────────────────────
    All in AI · 静态展示页
@@ -204,10 +205,84 @@ const QUOTES = [
   '碳基生命用数亿年演化出意识，硅基生命用数年学完了全部文明。',
 ];
 
+type FeedSource = {
+  configured: boolean;
+  usedApi: boolean;
+  repos: number;
+};
+
+type DashboardRepo = {
+  fullName: string;
+  primaryUrl: string;
+  latestCommit?: {
+    sha?: string;
+    message?: string;
+    committedAt?: string;
+    author?: string;
+    url?: string;
+  } | null;
+  contribution?: {
+    latest?: {
+      number?: number;
+      title?: string;
+      state?: string;
+      updatedAt?: string;
+      url?: string;
+    } | null;
+  } | null;
+};
+
+type DashboardFeed = {
+  generatedAt: string;
+  source: {
+    github: FeedSource;
+    cnb: FeedSource;
+  };
+  summary: {
+    total: number;
+  };
+  repositories: DashboardRepo[];
+};
+
+const formatDateTime = (value?: string) => {
+  if (!value) return '等待同步';
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return '等待同步';
+  return new Intl.DateTimeFormat('zh-CN', {
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: false,
+  }).format(date);
+};
+
+const shortSha = (value?: string) => (value ? value.slice(0, 7) : 'pending');
+
 // ── 主应用 ──
 const App: React.FC = () => {
   const [quoteIdx, setQuoteIdx] = useState(0);
   const [quoteVisible, setQuoteVisible] = useState(true);
+  const [feed, setFeed] = useState<DashboardFeed | null>(null);
+  const [feedLoading, setFeedLoading] = useState(true);
+  const [feedError, setFeedError] = useState('');
+
+  const loadFeed = async () => {
+    setFeedLoading(true);
+    try {
+      const response = await fetch(`/data/dashboard-feed.json?t=${Date.now()}`, { cache: 'no-store' });
+      if (!response.ok) {
+        throw new Error(`dashboard-feed.json ${response.status}`);
+      }
+      const payload = (await response.json()) as DashboardFeed;
+      setFeed(payload);
+      setFeedError('');
+    } catch (error) {
+      setFeedError(error instanceof Error ? error.message : '无法读取动态 feed');
+    } finally {
+      setFeedLoading(false);
+    }
+  };
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -219,6 +294,17 @@ const App: React.FC = () => {
     }, 6000);
     return () => clearInterval(timer);
   }, []);
+
+  useEffect(() => {
+    void loadFeed();
+    const timer = setInterval(() => void loadFeed(), 5 * 60 * 1000);
+    return () => clearInterval(timer);
+  }, []);
+
+  const latestCommitRepo = feed?.repositories.find((repo) => repo.latestCommit?.committedAt);
+  const latestPrRepo = feed?.repositories.find((repo) => repo.contribution?.latest?.updatedAt);
+  const latestCommit = latestCommitRepo?.latestCommit;
+  const latestPr = latestPrRepo?.contribution?.latest;
 
   return (
     <div className="min-h-screen w-full bg-[#030712] text-white font-sans overflow-x-hidden">
@@ -236,6 +322,7 @@ const App: React.FC = () => {
           </div>
           <div className="hidden md:flex items-center gap-6 text-sm text-slate-400">
             <a href="#capabilities" className="hover:text-cyan-400 transition-colors">能力</a>
+            <a href="#activity" className="hover:text-cyan-400 transition-colors">动态</a>
             <a href="#timeline" className="hover:text-cyan-400 transition-colors">演进</a>
             <a href="#manifesto" className="hover:text-cyan-400 transition-colors">宣言</a>
             <a href="#links" className="hover:text-cyan-400 transition-colors">链接</a>
@@ -286,6 +373,12 @@ const App: React.FC = () => {
             >
               阅读宣言
             </a>
+            <a
+              href="#activity"
+              className="px-6 py-3 rounded-lg border border-emerald-400/30 text-emerald-300 font-medium text-sm hover:border-emerald-300 hover:text-emerald-200 transition-all"
+            >
+              查看代码动态
+            </a>
           </div>
 
           {/* 向下滚动提示 */}
@@ -308,6 +401,106 @@ const App: React.FC = () => {
                 <div className="text-xs text-slate-600 mt-0.5">{s.sub}</div>
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* ── 代码动态 ── */}
+        <section id="activity" className="py-24 px-6 bg-gradient-to-b from-cyan-500/[0.03] to-transparent">
+          <div className="max-w-6xl mx-auto">
+            <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10">
+              <div>
+                <span className="font-mono text-xs text-cyan-400 uppercase tracking-widest">Live Activity</span>
+                <h2 className="text-4xl md:text-5xl font-bold mt-3">代码动态同步</h2>
+                <p className="text-slate-400 mt-3 max-w-2xl">
+                  聚合 GitHub 与 CNB feed，展示最近提交、最近 PR 和当前数据源状态。
+                </p>
+              </div>
+              <button
+                type="button"
+                onClick={() => void loadFeed()}
+                disabled={feedLoading}
+                className="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg border border-cyan-500/30 bg-cyan-500/10 text-cyan-200 text-sm hover:bg-cyan-500/15 disabled:opacity-50 transition-colors"
+              >
+                <RefreshCw className={`w-4 h-4 ${feedLoading ? 'animate-spin' : ''}`} />
+                刷新
+              </button>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+              {[
+                { label: 'feed updated', value: formatDateTime(feed?.generatedAt), accent: 'text-cyan-300' },
+                { label: 'GitHub repos', value: `${feed?.source.github.repos ?? 0} · ${feed?.source.github.usedApi ? 'API' : 'snapshot'}`, accent: 'text-blue-300' },
+                { label: 'CNB repos', value: `${feed?.source.cnb.repos ?? 0} · ${feed?.source.cnb.usedApi ? 'API' : 'snapshot'}`, accent: 'text-orange-300' },
+              ].map((item) => (
+                <div key={item.label} className="rounded-xl border border-white/5 bg-white/[0.025] px-5 py-4">
+                  <div className="font-mono text-[11px] uppercase tracking-widest text-slate-600">{item.label}</div>
+                  <div className={`mt-2 text-lg font-semibold ${item.accent}`}>{item.value}</div>
+                </div>
+              ))}
+            </div>
+
+            {feedError ? (
+              <div className="rounded-xl border border-red-500/20 bg-red-500/10 px-5 py-4 text-sm text-red-200">
+                {feedError}
+              </div>
+            ) : (
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+                <a
+                  href={latestCommit?.url || latestCommitRepo?.primaryUrl || 'https://github.com/htazq'}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group rounded-xl border border-cyan-500/15 bg-[#06111f]/80 p-6 hover:border-cyan-400/40 hover:bg-cyan-500/[0.08] transition-all"
+                >
+                  <div className="flex items-center gap-3 text-cyan-300 mb-4">
+                    <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-cyan-400/10">
+                      <GitCommit className="h-5 w-5" />
+                    </span>
+                    <div>
+                      <div className="text-sm font-semibold">最近 Commit</div>
+                      <div className="font-mono text-xs text-slate-500">{formatDateTime(latestCommit?.committedAt)}</div>
+                    </div>
+                  </div>
+                  <div className="font-mono text-xs text-slate-500 mb-2">{shortSha(latestCommit?.sha)} · {latestCommitRepo?.fullName || '等待数据'}</div>
+                  <p className="text-slate-200 leading-relaxed line-clamp-3">
+                    {latestCommit?.message || 'feed 正在生成，稍后会显示最近提交。'}
+                  </p>
+                  <div className="mt-5 inline-flex items-center text-xs text-cyan-300 group-hover:translate-x-1 transition-transform">
+                    打开提交记录 →
+                  </div>
+                </a>
+
+                <a
+                  href={latestPr?.url || latestPrRepo?.primaryUrl || 'https://github.com/htazq'}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group rounded-xl border border-emerald-500/15 bg-[#061610]/80 p-6 hover:border-emerald-400/40 hover:bg-emerald-500/[0.08] transition-all"
+                >
+                  <div className="flex items-center gap-3 text-emerald-300 mb-4">
+                    <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-400/10">
+                      <GitPullRequest className="h-5 w-5" />
+                    </span>
+                    <div>
+                      <div className="text-sm font-semibold">最近 PR</div>
+                      <div className="font-mono text-xs text-slate-500">{formatDateTime(latestPr?.updatedAt)}</div>
+                    </div>
+                  </div>
+                  <div className="font-mono text-xs text-slate-500 mb-2">
+                    #{latestPr?.number ?? 0} · {latestPr?.state || 'pending'} · {latestPrRepo?.fullName || '等待数据'}
+                  </div>
+                  <p className="text-slate-200 leading-relaxed line-clamp-3">
+                    {latestPr?.title || 'feed 正在生成，稍后会显示最近 PR。'}
+                  </p>
+                  <div className="mt-5 inline-flex items-center text-xs text-emerald-300 group-hover:translate-x-1 transition-transform">
+                    打开 PR →
+                  </div>
+                </a>
+              </div>
+            )}
+
+            <div className="mt-6 flex items-center gap-2 text-xs text-slate-500">
+              <Activity className="w-4 h-4 text-cyan-400" />
+              <span>页面每 5 分钟自动重新读取一次 feed。</span>
+            </div>
           </div>
         </section>
 

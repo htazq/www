@@ -7,6 +7,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const repoRoot = path.resolve(__dirname, '..');
 const htmlPath = path.join(repoRoot, 'index.html');
+const appPath = path.join(repoRoot, 'App.tsx');
 const publicDir = path.join(repoRoot, 'public');
 const feedPath = path.join(publicDir, 'data', 'dashboard-feed.json');
 
@@ -19,6 +20,9 @@ function resolvePublicAsset(rawAsset) {
   const assetPath = rawAsset.split(/[?#]/, 1)[0];
   if (!assetPath) return null;
   if (assetPath.startsWith('/')) {
+    if (assetPath === '/index.tsx') {
+      return path.join(repoRoot, 'index.tsx');
+    }
     return path.join(publicDir, assetPath.slice(1));
   }
   if (assetPath.startsWith('./data/') || assetPath.startsWith('data/')) {
@@ -56,11 +60,25 @@ async function validateHtml() {
   if (html.includes('__dashboard-config.js')) {
     fail('index.html must not load __dashboard-config.js; EdgeOne fallback returns HTML for that path');
   }
-  if (!html.includes('window.__AUTO_REFRESH_MS__')) {
-    fail('index.html missing inline window.__AUTO_REFRESH_MS__ config');
-  }
-  if (!html.includes('id="repoTable"')) {
-    fail('repository table must keep id="repoTable" for stable audits');
+
+  const isLegacyDashboard = html.includes('id="repoTable"');
+  const isViteReactApp = html.includes('id="root"') && html.includes('src="/index.tsx"');
+
+  if (isLegacyDashboard) {
+    if (!html.includes('window.__AUTO_REFRESH_MS__')) {
+      fail('index.html missing inline window.__AUTO_REFRESH_MS__ config');
+    }
+    assertInlineScriptSyntax(html);
+  } else if (isViteReactApp) {
+    const appSource = await fs.readFile(appPath, 'utf8');
+    if (!appSource.includes('dashboard-feed.json')) {
+      fail('React app must read dashboard-feed.json for activity updates');
+    }
+    if (!appSource.includes('id="activity"')) {
+      fail('React app must expose id="activity" for recent commit/PR updates');
+    }
+  } else {
+    fail('index.html must be either the legacy dashboard or the Vite React app shell');
   }
 
   const attrPattern = /<[^>]+\b(?:src|href)=["']([^"']+)["']/gi;
@@ -84,7 +102,6 @@ async function validateHtml() {
     checkedAssets.push(rawAsset);
   }
 
-  assertInlineScriptSyntax(html);
   console.log(`[dashboard] html valid: ${checkedAssets.length} local asset references`);
 }
 

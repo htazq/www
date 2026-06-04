@@ -14,7 +14,7 @@ const rulePath = path.join(outputDir, 'repo-category-rules.json');
 const GH_TOKEN = process.env.GITHUB_TOKEN || process.env.GH_TOKEN || '';
 const CNB_TOKEN = process.env.CNB_TOKEN || process.env.CNB_PERSONAL_TOKEN || '';
 const GH_OWNER = process.env.GH_OWNER || 'htazq';
-const CNB_USER = process.env.CNB_USER || process.env.CNB_USER_ID || 'Brooks';
+const CNB_USER = process.env.CNB_USER || process.env.CNB_USER_ID || 'htazq';
 const STALE_DAYS = Number(process.env.STALE_DAYS || '90');
 const ACTIVE_DAYS = Number(process.env.ACTIVE_DAYS || '14');
 const USE_API = process.env.LOCAL_DASHBOARD_USE_API !== '0';
@@ -99,6 +99,47 @@ async function requestJson(url, headers = {}) {
   const text = await response.text();
   const payload = text ? JSON.parse(text) : null;
   return {status: response.status, ok: response.ok, payload, headers: response.headers};
+}
+
+function makeGitHubHeaders() {
+  const headers = {
+    Accept: 'application/vnd.github+json',
+    'User-Agent': 'local-dashboard-builder',
+  };
+  if (GH_TOKEN) {
+    headers.Authorization = `token ${GH_TOKEN}`;
+  }
+  return headers;
+}
+
+function encodeGitHubRepoPath(fullName) {
+  const [owner, name] = String(fullName || '').split('/');
+  if (!owner || !name) {
+    return '';
+  }
+  return `${encodeURIComponent(owner)}/${encodeURIComponent(name)}`;
+}
+
+function extractCnbItems(payload) {
+  if (Array.isArray(payload)) {
+    return payload;
+  }
+  if (Array.isArray(payload?.data)) {
+    return payload.data;
+  }
+  if (Array.isArray(payload?.items)) {
+    return payload.items;
+  }
+  if (Array.isArray(payload?.records)) {
+    return payload.records;
+  }
+  if (Array.isArray(payload?.data?.items)) {
+    return payload.data.items;
+  }
+  if (Array.isArray(payload?.data?.records)) {
+    return payload.data.records;
+  }
+  return [];
 }
 
 function parseGitHubLinkHeader(header = '') {
@@ -417,6 +458,7 @@ function deSensitizeBoard(originalBoard) {
   const cleanRepo = (repo) => {
     if (!repo.isPrivate) return;
     const obName = getObfuscatedName(repo);
+    repo.key = obName.toLowerCase();
     repo.fullName = obName;
     repo.name = obName.split('/')[1];
     repo.description = '自用资产，已做元数据脱敏保护';
@@ -553,30 +595,28 @@ function normalizeCnbRepo(item) {
 }
 
 async function fetchAllGitHubRepos() {
-  if (!USE_API || !GH_TOKEN) {
-    console.warn('[GitHub API] 跳过: USE_API=' + USE_API + ', GH_TOKEN=' + (GH_TOKEN ? '已设置(' + GH_TOKEN.length + '字符)' : '未设置'));
+  if (!USE_API) {
+    console.warn('[GitHub API] 跳过: USE_API=' + USE_API);
     return [];
   }
 
-  console.log('[GitHub API] 开始调用, GH_OWNER=' + GH_OWNER + ', INCLUDE_FORKS=' + INCLUDE_FORKS);
-
-  const headers = {
-    Authorization: `token ${GH_TOKEN}`,
-    Accept: 'application/vnd.github+json',
-    'User-Agent': 'local-dashboard-builder',
-  };
+  const headers = makeGitHubHeaders();
   const repos = [];
-  let next = 'https://api.github.com/user/repos?per_page=100&page=1&sort=updated&direction=desc&type=all&affiliation=owner';
+  let next = GH_TOKEN
+    ? 'https://api.github.com/user/repos?per_page=100&page=1&sort=updated&direction=desc&affiliation=owner'
+    : `https://api.github.com/users/${encodeURIComponent(GH_OWNER)}/repos?per_page=100&page=1&sort=updated&direction=desc`;
+
+  console.log('[GitHub API] 开始调用, GH_OWNER=' + GH_OWNER + ', INCLUDE_FORKS=' + INCLUDE_FORKS + ', GH_TOKEN=' + (GH_TOKEN ? '已设置' : '未设置'));
 
   while (next) {
     const {ok, payload, headers: responseHeaders, status} = await requestJson(next, headers);
     if (!ok) {
-      throw new Error(`GitHub API 请求失败: ${status}`);
+      throw new Error(`GitHub API 请求失败: ${status} ${payload?.message || ''}`.trim());
     }
     const rows = Array.isArray(payload) ? payload : [];
     const normalized = rows
       .filter((repo) => repo?.name && repo?.owner?.login)
-      .filter((repo) => repo.owner.login === GH_OWNER)
+      .filter((repo) => repo.owner.login.toLowerCase() === GH_OWNER.toLowerCase())
       .filter((repo) => (INCLUDE_FORKS ? true : !repo.fork))
       .map(normalizeGitHubFromApi)
       .filter((repo) => !GITHUB_SELF_ONLY || !repo.isFork);
@@ -590,9 +630,13 @@ async function fetchAllGitHubRepos() {
 }
 
 async function fetchGithubLatestCommit(fullName, headers) {
+  const repoPath = encodeGitHubRepoPath(fullName);
+  if (!repoPath) {
+    return null;
+  }
   try {
     const {ok, payload} = await requestJson(
-      `https://api.github.com/repos/${encodeURIComponent(fullName)}/commits?per_page=1`,
+      `https://api.github.com/repos/${repoPath}/commits?per_page=1`,
       headers,
     );
     if (!ok || !Array.isArray(payload) || payload.length === 0) {
@@ -612,14 +656,10 @@ async function fetchGithubLatestCommit(fullName, headers) {
 }
 
 async function fetchGitHubWithCommits(repositories) {
-  if (!USE_API || !GH_TOKEN) {
+  if (!USE_API) {
     return repositories;
   }
-  const headers = {
-    Authorization: `token ${GH_TOKEN}`,
-    Accept: 'application/vnd.github+json',
-    'User-Agent': 'local-dashboard-builder',
-  };
+  const headers = makeGitHubHeaders();
   const result = [];
   for (const repo of repositories) {
     const latestCommit = await fetchGithubLatestCommit(repo.fullName, headers);
@@ -630,6 +670,69 @@ async function fetchGitHubWithCommits(repositories) {
     });
   }
   return result;
+}
+
+async function fetchGitHubPrDetail(url, headers) {
+  if (!url) {
+    return null;
+  }
+  try {
+    const {ok, payload} = await requestJson(url, headers);
+    return ok ? payload : null;
+  } catch {
+    return null;
+  }
+}
+
+async function fetchGitHubAuthoredPrs() {
+  if (!USE_API) {
+    return [];
+  }
+
+  const headers = makeGitHubHeaders();
+  const rows = [];
+  let next = `https://api.github.com/search/issues?q=${encodeURIComponent(`author:${GH_OWNER} type:pr`)}&sort=updated&order=desc&per_page=100`;
+
+  console.log('[GitHub PR API] 开始调用, GH_OWNER=' + GH_OWNER + ', GH_TOKEN=' + (GH_TOKEN ? '已设置' : '未设置'));
+
+  while (next && rows.length < 100) {
+    const {ok, payload, headers: responseHeaders, status} = await requestJson(next, headers);
+    if (!ok) {
+      throw new Error(`GitHub PR API 请求失败: ${status} ${payload?.message || ''}`.trim());
+    }
+
+    const items = Array.isArray(payload?.items) ? payload.items : [];
+    for (const item of items) {
+      const repoFullName = String(item.repository_url || '').split('/repos/')[1] || '';
+      if (!repoFullName) {
+        continue;
+      }
+
+      const detail = await fetchGitHubPrDetail(item.pull_request?.url, headers);
+      const mergedAt = detail?.merged_at || null;
+      const [, repoName = ''] = repoFullName.split('/');
+
+      rows.push({
+        title: item.title || '',
+        number: item.number,
+        url: item.html_url || '',
+        state: mergedAt ? 'merged' : (item.state || ''),
+        merged: Boolean(mergedAt),
+        mergedAt,
+        createdAt: item.created_at || '',
+        updatedAt: item.updated_at || '',
+        repository: {
+          name: repoName,
+          nameWithOwner: repoFullName,
+        },
+      });
+    }
+
+    const parsed = parseGitHubLinkHeader(responseHeaders.get('link'));
+    next = rows.length < 100 ? (parsed.next || '') : '';
+  }
+
+  return rows;
 }
 
 function buildContributionMeta(prRows) {
@@ -692,6 +795,7 @@ function buildCommitMeta(commitRows) {
 
 async function fetchAllCnbRepos() {
   if (!USE_API || !CNB_TOKEN) {
+    console.warn('[CNB API] 跳过: USE_API=' + USE_API + ', CNB_TOKEN=' + (CNB_TOKEN ? '已设置(' + CNB_TOKEN.length + '字符)' : '未设置'));
     return [];
   }
 
@@ -702,29 +806,42 @@ async function fetchAllCnbRepos() {
   };
 
   const endpointList = [
-    `https://api.cnb.cool/user/repos?type=all&per_page=100`,
-    `https://api.cnb.cool/users/${encodeURIComponent(CNB_USER)}/repos?type=all&per_page=100`,
-    `https://api.cnb.cool/api/v1/user/repos?type=all&per_page=100`,
-    `https://api.cnb.cool/api/v1/users/${encodeURIComponent(CNB_USER)}/repos?type=all&per_page=100`,
+    `https://api.cnb.cool/users/${encodeURIComponent(CNB_USER)}/repos`,
+    `https://api.cnb.cool/api/v1/users/${encodeURIComponent(CNB_USER)}/repos`,
+    `https://api.cnb.cool/user/repos`,
+    `https://api.cnb.cool/api/v1/user/repos`,
   ];
 
   for (const endpoint of endpointList) {
     try {
-      const {ok, payload} = await requestJson(endpoint, headers);
-      if (!ok || !payload) {
-        continue;
+      const items = [];
+      for (let page = 1; page <= 20; page += 1) {
+        const separator = endpoint.includes('?') ? '&' : '?';
+        const url = `${endpoint}${separator}type=all&per_page=100&page_size=100&page=${page}`;
+        const {ok, payload} = await requestJson(url, headers);
+        if (!ok || !payload) {
+          break;
+        }
+
+        const pageItems = extractCnbItems(payload);
+        if (pageItems.length === 0) {
+          break;
+        }
+
+        items.push(...pageItems);
+        if (pageItems.length < 100) {
+          break;
+        }
       }
-      const items = Array.isArray(payload) ? payload : payload.data || payload.items || [];
-      if (!Array.isArray(items) || items.length === 0) {
-        continue;
-      }
+
       const normalized = items
         .map(normalizeCnbRepo)
         .filter((repo) => repo.owner && repo.name);
       if (normalized.length > 0) {
         return normalized;
       }
-    } catch {
+    } catch (err) {
+      console.error('[CNB API] endpoint 失败:', endpoint, err.message);
       continue;
     }
   }
@@ -785,7 +902,7 @@ async function fetchDataFromSources() {
     }
   }
 
-  if (USE_API && GH_TOKEN && githubRepos.length > 0) {
+  if (USE_API && githubRepos.length > 0) {
     githubRepos = await fetchGitHubWithCommits(githubRepos);
   }
 
@@ -811,7 +928,15 @@ async function fetchDataFromSources() {
   }
 
   const commitRows = (await safeLoadJson(githubSelfCreatedCommitsPath)) || [];
-  const prRows = (await safeLoadJson(githubAuthoredPrsPath)) || [];
+  let prRows = [];
+  try {
+    prRows = await fetchGitHubAuthoredPrs();
+  } catch (err) {
+    console.error('[GitHub PR API] 请求失败，将回退到离线快照:', err.message);
+  }
+  if (prRows.length === 0) {
+    prRows = (await safeLoadJson(githubAuthoredPrsPath)) || [];
+  }
   const commitMap = buildCommitMeta(Array.isArray(commitRows) ? commitRows : []);
   const contributionMap = buildContributionMeta(Array.isArray(prRows) ? prRows : []);
 
@@ -902,7 +1027,10 @@ async function main() {
   // 敏感 Token 拦截防护网
   const jsonText = `${JSON.stringify(activeBoard, null, 2)}\n`;
   const sensitiveEnvKeys = ['TOKEN', 'SECRET', 'PASSWORD', 'KEY', 'API_KEY', 'AUTH'];
-  const sensitivePatterns = [/ghp_[a-zA-Z0-9]{36}/, /ey[a-zA-Z0-9-_=]+\.[a-zA-Z0-9-_=]+\.?[a-zA-Z0-9-_=]*/];
+  const sensitivePatterns = [
+    /(?:ghp|gho|ghu|ghs|ghr)_[a-zA-Z0-9_]{20,}/,
+    /eyJ[a-zA-Z0-9_-]*\.[a-zA-Z0-9_-]+\.[a-zA-Z0-9_-]+/,
+  ];
   
   for (const pattern of sensitivePatterns) {
     if (pattern.test(jsonText)) {

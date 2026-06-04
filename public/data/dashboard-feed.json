@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-05-20T09:23:07.073Z",
+  "generatedAt": "2026-06-04T13:59:26.548Z",
   "source": {
     "github": {
-      "configured": false,
-      "usedApi": false,
-      "repos": 66
+      "configured": true,
+      "usedApi": true,
+      "repos": 71
     },
     "cnb": {
       "configured": false,
@@ -16,12 +16,12 @@
     "activeDays": 14,
     "staleDays": 90,
     "owner": "htazq",
-    "cnbUser": "Brooks",
+    "cnbUser": "htazq",
     "includeForks": false,
     "githubSelfOnly": false
   },
   "summary": {
-    "total": 95,
+    "total": 100,
     "mirrorAcrossPlatforms": 4,
     "byCategory": [
       {
@@ -30,15 +30,15 @@
       },
       {
         "name": "脚本",
-        "count": 23
+        "count": 26
       },
       {
         "name": "金融",
-        "count": 12
+        "count": 13
       },
       {
         "name": "网站",
-        "count": 11
+        "count": 12
       },
       {
         "name": "AI",
@@ -50,14 +50,14 @@
       }
     ],
     "byStatus": {
-      "active": 12,
-      "watch": 32,
-      "stale": 51
+      "active": 11,
+      "watch": 28,
+      "stale": 61
     },
     "bySource": {
       "github": {
-        "total": 66,
-        "private": 52,
+        "total": 71,
+        "private": 57,
         "public": 14
       },
       "cnb": {
@@ -66,14 +66,685 @@
         "public": 25
       }
     },
-    "staleRepos": 51,
-    "activeRepos": 12,
-    "watchRepos": 32
+    "staleRepos": 61,
+    "activeRepos": 11,
+    "watchRepos": 28
   },
   "topByStale": [
     {
       "platform": "github",
-      "platformId": "",
+      "platformId": "1167301812",
+      "owner": "htazq",
+      "name": "mq5-trading",
+      "fullName": "htazq/mq5-trading",
+      "description": "mql5",
+      "visibility": "Private",
+      "isPrivate": true,
+      "isFork": false,
+      "isArchived": false,
+      "language": "Python",
+      "topics": [],
+      "createdAt": "2026-02-26T06:32:18Z",
+      "updatedAt": "2026-03-03T15:19:14Z",
+      "pushedAt": "2026-03-03T15:12:22Z",
+      "homepage": "",
+      "path": "htazq/mq5-trading",
+      "license": "",
+      "tags": [],
+      "site": "",
+      "url": "https://github.com/htazq/mq5-trading",
+      "cloneUrl": "https://github.com/htazq/mq5-trading.git",
+      "stats": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "lastActiveAt": "2026-03-03T15:11:58Z",
+      "latestCommit": {
+        "sha": "25ed1ca9455e51bb177c116c0690477ae24a6607",
+        "message": "chore: 清理产物并保留Alpha研究代码，更新README说明",
+        "committedAt": "2026-03-03T15:11:58Z",
+        "author": "htazq",
+        "url": "https://github.com/htazq/mq5-trading/commit/25ed1ca9455e51bb177c116c0690477ae24a6607"
+      },
+      "contribution": null,
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/htazq/mq5-trading",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": true,
+          "visibility": "Private",
+          "url": "https://github.com/htazq/mq5-trading",
+          "updatedAt": "2026-03-03T15:11:58Z"
+        }
+      ],
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "daysSinceActive": 92,
+      "key": "htazq/mq5-trading",
+      "status": "stale",
+      "category": "金融",
+      "categoryConfidence": 0.2
+    },
+    {
+      "platform": "github",
+      "platformId": "1159639009",
+      "owner": "htazq",
+      "name": "polymarket-ai-arb",
+      "fullName": "htazq/polymarket-ai-arb",
+      "description": "AI-driven Polymarket arbitrage analysis system (24/7)",
+      "visibility": "Private",
+      "isPrivate": true,
+      "isFork": false,
+      "isArchived": false,
+      "language": "Python",
+      "topics": [],
+      "createdAt": "2026-02-17T01:06:20Z",
+      "updatedAt": "2026-03-02T08:14:27Z",
+      "pushedAt": "2026-03-02T08:14:23Z",
+      "homepage": "",
+      "path": "htazq/polymarket-ai-arb",
+      "license": "",
+      "tags": [],
+      "site": "",
+      "url": "https://github.com/htazq/polymarket-ai-arb",
+      "cloneUrl": "https://github.com/htazq/polymarket-ai-arb.git",
+      "stats": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "lastActiveAt": "2026-03-02T08:12:45Z",
+      "latestCommit": {
+        "sha": "6abc7f9ac55c950fa98ea481954dd056686ff7b0",
+        "message": "feat: 60s scan loop and conditional LLM audit gate",
+        "committedAt": "2026-03-02T08:12:45Z",
+        "author": "htazq",
+        "url": "https://github.com/htazq/polymarket-ai-arb/commit/6abc7f9ac55c950fa98ea481954dd056686ff7b0"
+      },
+      "contribution": null,
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/htazq/polymarket-ai-arb",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": true,
+          "visibility": "Private",
+          "url": "https://github.com/htazq/polymarket-ai-arb",
+          "updatedAt": "2026-03-02T08:12:45Z"
+        }
+      ],
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "daysSinceActive": 94,
+      "key": "htazq/polymarket-ai-arb",
+      "status": "stale",
+      "category": "金融",
+      "categoryConfidence": 0.4
+    },
+    {
+      "platform": "github",
+      "platformId": "1149485045",
+      "owner": "htazq",
+      "name": "openclaw-memory",
+      "fullName": "htazq/openclaw-memory",
+      "description": "",
+      "visibility": "Private",
+      "isPrivate": true,
+      "isFork": false,
+      "isArchived": false,
+      "language": "",
+      "topics": [],
+      "createdAt": "2026-02-04T06:57:31Z",
+      "updatedAt": "2026-02-28T10:00:13Z",
+      "pushedAt": "2026-02-28T10:00:10Z",
+      "homepage": "",
+      "path": "htazq/openclaw-memory",
+      "license": "",
+      "tags": [],
+      "site": "",
+      "url": "https://github.com/htazq/openclaw-memory",
+      "cloneUrl": "https://github.com/htazq/openclaw-memory.git",
+      "stats": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "lastActiveAt": "2026-02-28T10:00:11Z",
+      "latestCommit": {
+        "sha": "c4f1aeab7e58089e36b7fdb4492b82f3295c242f",
+        "message": "sync: 编排系统约定 + 模型更新 + 心跳监控 + 日记同步\n\n- MEMORY.md: 新增编排系统约定（稳定性/智能性/可用性）\n  - Ralph Loop 失败重试逻辑\n  - 模型自动路由规则（opus/codex/gemini/qwen）\n  - 响应可靠性约定（8秒ACK、分级熔断、进度播报）\n  - 通知策略（只在需要决策时推送）\n- MEMORY.md: 主3更新为 gemini-3.1-pro-high，主4新增 qwen3.5\n- HEARTBEAT.md: 配置子任务监控 + 系统健康检查\n- memory/: 同步近期日记文件",
+        "committedAt": "2026-02-28T10:00:11Z",
+        "author": "htazq",
+        "url": "https://github.com/htazq/openclaw-memory/commit/c4f1aeab7e58089e36b7fdb4492b82f3295c242f"
+      },
+      "contribution": null,
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/htazq/openclaw-memory",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": true,
+          "visibility": "Private",
+          "url": "https://github.com/htazq/openclaw-memory",
+          "updatedAt": "2026-02-28T10:00:11Z"
+        }
+      ],
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "daysSinceActive": 96,
+      "key": "htazq/openclaw-memory",
+      "status": "stale",
+      "category": "AI",
+      "categoryConfidence": 0.2
+    },
+    {
+      "platform": "github",
+      "platformId": "1169160574",
+      "owner": "htazq",
+      "name": "openclaw-orchestrator",
+      "fullName": "htazq/openclaw-orchestrator",
+      "description": "OpenClaw Agent Orchestration System - 多模型编排+自动CI/CD+交叉Review",
+      "visibility": "Private",
+      "isPrivate": true,
+      "isFork": false,
+      "isArchived": false,
+      "language": "Python",
+      "topics": [],
+      "createdAt": "2026-02-28T09:08:33Z",
+      "updatedAt": "2026-02-28T09:42:45Z",
+      "pushedAt": "2026-02-28T09:42:41Z",
+      "homepage": "",
+      "path": "htazq/openclaw-orchestrator",
+      "license": "",
+      "tags": [],
+      "site": "",
+      "url": "https://github.com/htazq/openclaw-orchestrator",
+      "cloneUrl": "https://github.com/htazq/openclaw-orchestrator.git",
+      "stats": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "lastActiveAt": "2026-02-28T09:42:42Z",
+      "latestCommit": {
+        "sha": "2e3c88ad4ac1313f372f1f49e77780a946483d92",
+        "message": "feat: update orchestration config - model routing, Ralph Loop, docs\n\n- Updated models.yaml with detailed routing rules matching MEMORY.md\n- Added Ralph Loop retry categories and subtask timeouts\n- Added docs/ORCHESTRATION.md with full orchestration system documentation\n- Covers stability, intelligence, usability pillars",
+        "committedAt": "2026-02-28T09:42:42Z",
+        "author": "htazq",
+        "url": "https://github.com/htazq/openclaw-orchestrator/commit/2e3c88ad4ac1313f372f1f49e77780a946483d92"
+      },
+      "contribution": null,
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/htazq/openclaw-orchestrator",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": true,
+          "visibility": "Private",
+          "url": "https://github.com/htazq/openclaw-orchestrator",
+          "updatedAt": "2026-02-28T09:42:42Z"
+        }
+      ],
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "daysSinceActive": 96,
+      "key": "htazq/openclaw-orchestrator",
+      "status": "stale",
+      "category": "AI",
+      "categoryConfidence": 0.4
+    },
+    {
+      "platform": "github",
+      "platformId": "1167675983",
+      "owner": "htazq",
+      "name": "china-travding",
+      "fullName": "htazq/china-travding",
+      "description": "",
+      "visibility": "Private",
+      "isPrivate": true,
+      "isFork": false,
+      "isArchived": false,
+      "language": "Python",
+      "topics": [],
+      "createdAt": "2026-02-26T15:02:00Z",
+      "updatedAt": "2026-02-28T02:34:43Z",
+      "pushedAt": "2026-02-28T02:34:40Z",
+      "homepage": "",
+      "path": "htazq/china-travding",
+      "license": "",
+      "tags": [],
+      "site": "",
+      "url": "https://github.com/htazq/china-travding",
+      "cloneUrl": "https://github.com/htazq/china-travding.git",
+      "stats": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "lastActiveAt": "2026-02-28T02:33:14Z",
+      "latestCommit": {
+        "sha": "b4ed9916a10ff59b6188edb1ff0cffe40b17d3a4",
+        "message": "init",
+        "committedAt": "2026-02-28T02:33:14Z",
+        "author": "htazq",
+        "url": "https://github.com/htazq/china-travding/commit/b4ed9916a10ff59b6188edb1ff0cffe40b17d3a4"
+      },
+      "contribution": null,
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/htazq/china-travding",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": true,
+          "visibility": "Private",
+          "url": "https://github.com/htazq/china-travding",
+          "updatedAt": "2026-02-28T02:33:14Z"
+        }
+      ],
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "daysSinceActive": 96,
+      "key": "htazq/china-travding",
+      "status": "stale",
+      "category": "其他",
+      "categoryConfidence": 0
+    },
+    {
+      "platform": "github",
+      "platformId": "789405656",
+      "owner": "htazq",
+      "name": "automation",
+      "fullName": "htazq/automation",
+      "description": "",
+      "visibility": "Private",
+      "isPrivate": true,
+      "isFork": false,
+      "isArchived": false,
+      "language": "Shell",
+      "topics": [],
+      "createdAt": "2024-04-20T13:05:57Z",
+      "updatedAt": "2026-02-26T09:48:44Z",
+      "pushedAt": "2026-02-26T09:48:41Z",
+      "homepage": "",
+      "path": "htazq/automation",
+      "license": "other",
+      "tags": [],
+      "site": "",
+      "url": "https://github.com/htazq/automation",
+      "cloneUrl": "https://github.com/htazq/automation.git",
+      "stats": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "lastActiveAt": "2026-02-26T09:48:37Z",
+      "latestCommit": {
+        "sha": "a30cbbbb65e93a4f3e3baf01e930c6e02e2a98d7",
+        "message": "修改条件",
+        "committedAt": "2026-02-26T09:48:37Z",
+        "author": "htazq",
+        "url": "https://github.com/htazq/automation/commit/a30cbbbb65e93a4f3e3baf01e930c6e02e2a98d7"
+      },
+      "contribution": null,
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/htazq/automation",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": true,
+          "visibility": "Private",
+          "url": "https://github.com/htazq/automation",
+          "updatedAt": "2026-02-26T09:48:37Z"
+        }
+      ],
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "daysSinceActive": 98,
+      "key": "htazq/automation",
+      "status": "stale",
+      "category": "脚本",
+      "categoryConfidence": 0.4
+    },
+    {
+      "platform": "github",
+      "platformId": "1164045588",
+      "owner": "htazq",
+      "name": "relay",
+      "fullName": "htazq/relay",
+      "description": "一款远程工具（ssh/rdp/telnet/console等）",
+      "visibility": "Private",
+      "isPrivate": true,
+      "isFork": false,
+      "isArchived": false,
+      "language": "Rust",
+      "topics": [],
+      "createdAt": "2026-02-22T15:01:11Z",
+      "updatedAt": "2026-02-24T10:08:58Z",
+      "pushedAt": "2026-02-24T10:09:04Z",
+      "homepage": "",
+      "path": "htazq/relay",
+      "license": "",
+      "tags": [],
+      "site": "",
+      "url": "https://github.com/htazq/relay",
+      "cloneUrl": "https://github.com/htazq/relay.git",
+      "stats": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "lastActiveAt": "2026-02-24T10:08:49Z",
+      "latestCommit": {
+        "sha": "4771a3e32f53bf4ad7adcbc514acc24a6d16531e",
+        "message": "mobaxterm庚哥",
+        "committedAt": "2026-02-24T10:08:49Z",
+        "author": "htazq",
+        "url": "https://github.com/htazq/relay/commit/4771a3e32f53bf4ad7adcbc514acc24a6d16531e"
+      },
+      "contribution": null,
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/htazq/relay",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": true,
+          "visibility": "Private",
+          "url": "https://github.com/htazq/relay",
+          "updatedAt": "2026-02-24T10:08:49Z"
+        }
+      ],
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "daysSinceActive": 100,
+      "key": "htazq/relay",
+      "status": "stale",
+      "category": "其他",
+      "categoryConfidence": 0
+    },
+    {
+      "platform": "github",
+      "platformId": "1156734841",
+      "owner": "htazq",
+      "name": "follow-orders",
+      "fullName": "htazq/follow-orders",
+      "description": "mt5跟单，rust+mq5(ea)",
+      "visibility": "Private",
+      "isPrivate": true,
+      "isFork": false,
+      "isArchived": false,
+      "language": "MQL5",
+      "topics": [],
+      "createdAt": "2026-02-13T01:44:50Z",
+      "updatedAt": "2026-02-24T10:00:01Z",
+      "pushedAt": "2026-02-24T09:59:58Z",
+      "homepage": "",
+      "path": "htazq/follow-orders",
+      "license": "",
+      "tags": [],
+      "site": "",
+      "url": "https://github.com/htazq/follow-orders",
+      "cloneUrl": "https://github.com/htazq/follow-orders.git",
+      "stats": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "lastActiveAt": "2026-02-24T09:59:49Z",
+      "latestCommit": {
+        "sha": "f11618ddb946a07d71aee1d6a05da23021b4f65e",
+        "message": "feat(mapping): keep bidirectional rules with ordered multi-candidate resolution",
+        "committedAt": "2026-02-24T09:59:49Z",
+        "author": "htazq",
+        "url": "https://github.com/htazq/follow-orders/commit/f11618ddb946a07d71aee1d6a05da23021b4f65e"
+      },
+      "contribution": null,
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/htazq/follow-orders",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": true,
+          "visibility": "Private",
+          "url": "https://github.com/htazq/follow-orders",
+          "updatedAt": "2026-02-24T09:59:49Z"
+        }
+      ],
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "daysSinceActive": 100,
+      "key": "htazq/follow-orders",
+      "status": "stale",
+      "category": "金融",
+      "categoryConfidence": 0.2
+    },
+    {
+      "platform": "github",
+      "platformId": "1158444471",
+      "owner": "htazq",
+      "name": "travding",
+      "fullName": "htazq/travding",
+      "description": "Artifact repository (post-reset).",
+      "visibility": "Private",
+      "isPrivate": true,
+      "isFork": false,
+      "isArchived": false,
+      "language": "",
+      "topics": [],
+      "createdAt": "2026-02-15T11:38:15Z",
+      "updatedAt": "2026-02-24T09:55:09Z",
+      "pushedAt": "2026-02-24T09:55:05Z",
+      "homepage": "",
+      "path": "htazq/travding",
+      "license": "",
+      "tags": [],
+      "site": "",
+      "url": "https://github.com/htazq/travding",
+      "cloneUrl": "https://github.com/htazq/travding.git",
+      "stats": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "lastActiveAt": "2026-02-24T09:55:04Z",
+      "latestCommit": {
+        "sha": "c63049c8ec1fecd04f8dfa1bac6318b89c1e0c02",
+        "message": "Add files via upload",
+        "committedAt": "2026-02-24T09:55:04Z",
+        "author": "htazq",
+        "url": "https://github.com/htazq/travding/commit/c63049c8ec1fecd04f8dfa1bac6318b89c1e0c02"
+      },
+      "contribution": null,
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/htazq/travding",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": true,
+          "visibility": "Private",
+          "url": "https://github.com/htazq/travding",
+          "updatedAt": "2026-02-24T09:55:04Z"
+        }
+      ],
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "daysSinceActive": 100,
+      "key": "htazq/travding",
+      "status": "stale",
+      "category": "其他",
+      "categoryConfidence": 0
+    },
+    {
+      "platform": "github",
+      "platformId": "979744474",
+      "owner": "htazq",
+      "name": "go_test_W",
+      "fullName": "htazq/go_test_W",
+      "description": "",
+      "visibility": "Public",
+      "isPrivate": false,
+      "isFork": false,
+      "isArchived": false,
+      "language": "",
+      "topics": [],
+      "createdAt": "2025-05-08T02:14:57Z",
+      "updatedAt": "2026-02-20T03:30:32Z",
+      "pushedAt": "2026-02-20T03:30:28Z",
+      "homepage": "",
+      "path": "htazq/go_test_W",
+      "license": "",
+      "tags": [],
+      "site": "",
+      "url": "https://github.com/htazq/go_test_W",
+      "cloneUrl": "https://github.com/htazq/go_test_W.git",
+      "stats": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "lastActiveAt": "2026-02-20T03:30:27Z",
+      "latestCommit": {
+        "sha": "7a97180eb5528d201e87e58158a06c8a2efd264a",
+        "message": "🔄 自动同步 Worker 版本: v4.1.3",
+        "committedAt": "2026-02-20T03:30:27Z",
+        "author": "github-actions[bot]",
+        "url": "https://github.com/htazq/go_test_W/commit/7a97180eb5528d201e87e58158a06c8a2efd264a"
+      },
+      "contribution": null,
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/htazq/go_test_W",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": false,
+          "visibility": "Public",
+          "url": "https://github.com/htazq/go_test_W",
+          "updatedAt": "2026-02-20T03:30:27Z"
+        }
+      ],
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "daysSinceActive": 104,
+      "key": "htazq/go_test_w",
+      "status": "stale",
+      "category": "其他",
+      "categoryConfidence": 0
+    },
+    {
+      "platform": "github",
+      "platformId": "1161436533",
+      "owner": "htazq",
+      "name": "crypto-cross-sectional-momentum",
+      "fullName": "htazq/crypto-cross-sectional-momentum",
+      "description": "",
+      "visibility": "Private",
+      "isPrivate": true,
+      "isFork": false,
+      "isArchived": false,
+      "language": "",
+      "topics": [],
+      "createdAt": "2026-02-19T05:18:04Z",
+      "updatedAt": "2026-02-19T05:18:09Z",
+      "pushedAt": "2026-02-19T05:18:06Z",
+      "homepage": "",
+      "path": "htazq/crypto-cross-sectional-momentum",
+      "license": "",
+      "tags": [],
+      "site": "",
+      "url": "https://github.com/htazq/crypto-cross-sectional-momentum",
+      "cloneUrl": "https://github.com/htazq/crypto-cross-sectional-momentum.git",
+      "stats": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "lastActiveAt": "2026-02-19T05:17:46Z",
+      "latestCommit": {
+        "sha": "7f993f0d9d1a51b06ae3b97824f5eaadf378b313",
+        "message": "chore: initialize crypto cross-sectional momentum research repo",
+        "committedAt": "2026-02-19T05:17:46Z",
+        "author": "htazq",
+        "url": "https://github.com/htazq/crypto-cross-sectional-momentum/commit/7f993f0d9d1a51b06ae3b97824f5eaadf378b313"
+      },
+      "contribution": null,
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/htazq/crypto-cross-sectional-momentum",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": true,
+          "visibility": "Private",
+          "url": "https://github.com/htazq/crypto-cross-sectional-momentum",
+          "updatedAt": "2026-02-19T05:17:46Z"
+        }
+      ],
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "daysSinceActive": 105,
+      "key": "htazq/crypto-cross-sectional-momentum",
+      "status": "stale",
+      "category": "金融",
+      "categoryConfidence": 0.2
+    },
+    {
+      "platform": "github",
+      "platformId": "1159658842",
       "owner": "htazq",
       "name": "skill-to-animation-studio",
       "fullName": "htazq/skill-to-animation-studio",
@@ -86,23 +757,22 @@
       "topics": [],
       "createdAt": "2026-02-17T02:00:10Z",
       "updatedAt": "2026-02-17T02:19:39Z",
-      "pushedAt": "2026-02-17T02:19:39Z",
+      "pushedAt": "2026-02-17T02:19:36Z",
       "homepage": "",
       "path": "htazq/skill-to-animation-studio",
       "license": "",
       "tags": [],
       "site": "",
       "url": "https://github.com/htazq/skill-to-animation-studio",
-      "cloneUrl": "",
+      "cloneUrl": "https://github.com/htazq/skill-to-animation-studio.git",
       "stats": {
         "stars": 0,
         "forks": 0,
         "openIssues": 0
       },
-      "lastActiveAt": "2026-02-17T02:19:39Z",
+      "lastActiveAt": "2026-02-17T02:19:36Z",
       "latestCommit": {
         "sha": "4f199035e3ae086d2de0a5af68cd95a013f91363",
-        "shortSha": "4f19903",
         "message": "feat: 初始化 Skill 自动转动画视频开箱即用仓库",
         "committedAt": "2026-02-17T02:19:36Z",
         "author": "htazq",
@@ -119,7 +789,7 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq/skill-to-animation-studio",
-          "updatedAt": "2026-02-17T02:19:39Z"
+          "updatedAt": "2026-02-17T02:19:36Z"
         }
       ],
       "metrics": {
@@ -127,7 +797,7 @@
         "forks": 0,
         "openIssues": 0
       },
-      "daysSinceActive": 92,
+      "daysSinceActive": 107,
       "key": "htazq/skill-to-animation-studio",
       "status": "stale",
       "category": "其他",
@@ -135,7 +805,7 @@
     },
     {
       "platform": "github",
-      "platformId": "",
+      "platformId": "1156135130",
       "owner": "htazq",
       "name": "A-Stock-Screening",
       "fullName": "htazq/A-Stock-Screening",
@@ -148,23 +818,22 @@
       "topics": [],
       "createdAt": "2026-02-12T09:53:11Z",
       "updatedAt": "2026-02-12T14:04:08Z",
-      "pushedAt": "2026-02-12T14:04:08Z",
+      "pushedAt": "2026-02-12T14:02:36Z",
       "homepage": "",
       "path": "htazq/A-Stock-Screening",
       "license": "",
       "tags": [],
       "site": "",
       "url": "https://github.com/htazq/A-Stock-Screening",
-      "cloneUrl": "",
+      "cloneUrl": "https://github.com/htazq/A-Stock-Screening.git",
       "stats": {
         "stars": 0,
         "forks": 0,
         "openIssues": 0
       },
-      "lastActiveAt": "2026-02-12T14:04:08Z",
+      "lastActiveAt": "2026-02-12T14:02:31Z",
       "latestCommit": {
         "sha": "e8aebfcd2982bfbec748bde0edcda940f5f22517",
-        "shortSha": "e8aebfc",
         "message": "修复板块严格链路并完善评分缓存测试文档",
         "committedAt": "2026-02-12T14:02:31Z",
         "author": "htazq",
@@ -181,7 +850,7 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq/A-Stock-Screening",
-          "updatedAt": "2026-02-12T14:04:08Z"
+          "updatedAt": "2026-02-12T14:02:31Z"
         }
       ],
       "metrics": {
@@ -189,7 +858,7 @@
         "forks": 0,
         "openIssues": 0
       },
-      "daysSinceActive": 96,
+      "daysSinceActive": 111,
       "key": "htazq/a-stock-screening",
       "status": "stale",
       "category": "金融",
@@ -197,7 +866,7 @@
     },
     {
       "platform": "github",
-      "platformId": "",
+      "platformId": "1143146779",
       "owner": "htazq",
       "name": "yingdao",
       "fullName": "htazq/yingdao",
@@ -210,23 +879,22 @@
       "topics": [],
       "createdAt": "2026-01-27T08:16:10Z",
       "updatedAt": "2026-01-30T09:29:42Z",
-      "pushedAt": "2026-01-30T09:29:42Z",
+      "pushedAt": "2026-01-30T09:31:30Z",
       "homepage": "",
       "path": "htazq/yingdao",
       "license": "",
       "tags": [],
       "site": "",
       "url": "https://github.com/htazq/yingdao",
-      "cloneUrl": "",
+      "cloneUrl": "https://github.com/htazq/yingdao.git",
       "stats": {
         "stars": 0,
         "forks": 0,
         "openIssues": 0
       },
-      "lastActiveAt": "2026-01-30T09:29:42Z",
+      "lastActiveAt": "2026-01-30T09:29:32Z",
       "latestCommit": {
         "sha": "927356589ebec840c538850234311cd143a6d273",
-        "shortSha": "9273565",
         "message": "修复分页抓取",
         "committedAt": "2026-01-30T09:29:32Z",
         "author": "htazq",
@@ -243,7 +911,7 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq/yingdao",
-          "updatedAt": "2026-01-30T09:29:42Z"
+          "updatedAt": "2026-01-30T09:29:32Z"
         }
       ],
       "metrics": {
@@ -251,7 +919,7 @@
         "forks": 0,
         "openIssues": 0
       },
-      "daysSinceActive": 109,
+      "daysSinceActive": 125,
       "key": "htazq/yingdao",
       "status": "stale",
       "category": "其他",
@@ -259,7 +927,7 @@
     },
     {
       "platform": "github",
-      "platformId": "",
+      "platformId": "1141164696",
       "owner": "htazq",
       "name": "catalystx-api",
       "fullName": "htazq/catalystx-api",
@@ -272,23 +940,22 @@
       "topics": [],
       "createdAt": "2026-01-24T11:20:00Z",
       "updatedAt": "2026-01-26T07:10:16Z",
-      "pushedAt": "2026-01-26T07:10:16Z",
+      "pushedAt": "2026-01-26T07:10:13Z",
       "homepage": "",
       "path": "htazq/catalystx-api",
       "license": "",
       "tags": [],
       "site": "",
       "url": "https://github.com/htazq/catalystx-api",
-      "cloneUrl": "",
+      "cloneUrl": "https://github.com/htazq/catalystx-api.git",
       "stats": {
         "stars": 0,
         "forks": 0,
         "openIssues": 0
       },
-      "lastActiveAt": "2026-01-26T07:10:16Z",
+      "lastActiveAt": "2026-01-26T07:09:57Z",
       "latestCommit": {
         "sha": "c47d0786948ce33f805949833c62d71878305d2a",
-        "shortSha": "c47d078",
         "message": "修正sqlite路径解析避免落到容器内部",
         "committedAt": "2026-01-26T07:09:57Z",
         "author": "htazq",
@@ -305,7 +972,7 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq/catalystx-api",
-          "updatedAt": "2026-01-26T07:10:16Z"
+          "updatedAt": "2026-01-26T07:09:57Z"
         }
       ],
       "metrics": {
@@ -313,7 +980,7 @@
         "forks": 0,
         "openIssues": 0
       },
-      "daysSinceActive": 114,
+      "daysSinceActive": 129,
       "key": "htazq/catalystx-api",
       "status": "stale",
       "category": "其他",
@@ -321,7 +988,7 @@
     },
     {
       "platform": "github",
-      "platformId": "",
+      "platformId": "1139033935",
       "owner": "htazq",
       "name": "openwebui-auth",
       "fullName": "htazq/openwebui-auth",
@@ -334,23 +1001,22 @@
       "topics": [],
       "createdAt": "2026-01-21T12:42:12Z",
       "updatedAt": "2026-01-24T12:50:06Z",
-      "pushedAt": "2026-01-24T12:50:06Z",
+      "pushedAt": "2026-01-24T12:50:03Z",
       "homepage": "",
       "path": "htazq/openwebui-auth",
       "license": "",
       "tags": [],
       "site": "",
       "url": "https://github.com/htazq/openwebui-auth",
-      "cloneUrl": "",
+      "cloneUrl": "https://github.com/htazq/openwebui-auth.git",
       "stats": {
         "stars": 0,
         "forks": 0,
         "openIssues": 0
       },
-      "lastActiveAt": "2026-01-24T12:50:06Z",
+      "lastActiveAt": "2026-01-24T12:43:43Z",
       "latestCommit": {
         "sha": "0cba08bbc13e136bc4ce3aa56f9556cb76364137",
-        "shortSha": "0cba08b",
         "message": "Feat: Implement backend-driven usage billing with admin config",
         "committedAt": "2026-01-24T12:43:43Z",
         "author": "htazq",
@@ -368,7 +1034,7 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq/openwebui-auth",
-          "updatedAt": "2026-01-24T12:50:06Z"
+          "updatedAt": "2026-01-24T12:43:43Z"
         },
         {
           "platform": "cnb",
@@ -383,7 +1049,7 @@
         "forks": 0,
         "openIssues": 0
       },
-      "daysSinceActive": 115,
+      "daysSinceActive": 131,
       "key": "htazq/openwebui-auth",
       "status": "stale",
       "category": "脚本",
@@ -391,7 +1057,7 @@
     },
     {
       "platform": "github",
-      "platformId": "",
+      "platformId": "1136102277",
       "owner": "htazq",
       "name": "AlphaGPT_mt5",
       "fullName": "htazq/AlphaGPT_mt5",
@@ -404,23 +1070,22 @@
       "topics": [],
       "createdAt": "2026-01-17T04:19:05Z",
       "updatedAt": "2026-01-18T13:54:03Z",
-      "pushedAt": "2026-01-18T13:54:03Z",
+      "pushedAt": "2026-01-18T13:54:00Z",
       "homepage": "",
       "path": "htazq/AlphaGPT_mt5",
-      "license": "",
+      "license": "apache-2.0",
       "tags": [],
       "site": "",
       "url": "https://github.com/htazq/AlphaGPT_mt5",
-      "cloneUrl": "",
+      "cloneUrl": "https://github.com/htazq/AlphaGPT_mt5.git",
       "stats": {
         "stars": 0,
         "forks": 0,
         "openIssues": 0
       },
-      "lastActiveAt": "2026-01-18T13:54:03Z",
+      "lastActiveAt": "2026-01-18T13:53:48Z",
       "latestCommit": {
         "sha": "515b6592b36ff79dfcec700abde34f52de14ed90",
-        "shortSha": "515b659",
         "message": "新增因子解释与回测可视化，完善训练输出",
         "committedAt": "2026-01-18T13:53:48Z",
         "author": "htazq",
@@ -437,7 +1102,7 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq/AlphaGPT_mt5",
-          "updatedAt": "2026-01-18T13:54:03Z"
+          "updatedAt": "2026-01-18T13:53:48Z"
         }
       ],
       "metrics": {
@@ -445,7 +1110,7 @@
         "forks": 0,
         "openIssues": 0
       },
-      "daysSinceActive": 121,
+      "daysSinceActive": 137,
       "key": "htazq/alphagpt_mt5",
       "status": "stale",
       "category": "AI",
@@ -453,7 +1118,7 @@
     },
     {
       "platform": "github",
-      "platformId": "",
+      "platformId": "1130238814",
       "owner": "htazq",
       "name": "nofx_strategy",
       "fullName": "htazq/nofx_strategy",
@@ -466,23 +1131,22 @@
       "topics": [],
       "createdAt": "2026-01-08T08:18:40Z",
       "updatedAt": "2026-01-09T09:08:49Z",
-      "pushedAt": "2026-01-09T09:08:49Z",
+      "pushedAt": "2026-01-09T09:08:46Z",
       "homepage": "",
       "path": "htazq/nofx_strategy",
       "license": "",
       "tags": [],
       "site": "",
       "url": "https://github.com/htazq/nofx_strategy",
-      "cloneUrl": "",
+      "cloneUrl": "https://github.com/htazq/nofx_strategy.git",
       "stats": {
         "stars": 0,
         "forks": 0,
         "openIssues": 0
       },
-      "lastActiveAt": "2026-01-09T09:08:49Z",
+      "lastActiveAt": "2026-01-09T09:08:43Z",
       "latestCommit": {
         "sha": "e0d78a551d444d2b2ddd2192145ff325cb007308",
-        "shortSha": "e0d78a5",
         "message": "init",
         "committedAt": "2026-01-09T09:08:43Z",
         "author": "htazq",
@@ -499,7 +1163,7 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq/nofx_strategy",
-          "updatedAt": "2026-01-09T09:08:49Z"
+          "updatedAt": "2026-01-09T09:08:43Z"
         }
       ],
       "metrics": {
@@ -507,7 +1171,7 @@
         "forks": 0,
         "openIssues": 0
       },
-      "daysSinceActive": 131,
+      "daysSinceActive": 146,
       "key": "htazq/nofx_strategy",
       "status": "stale",
       "category": "其他",
@@ -515,7 +1179,7 @@
     },
     {
       "platform": "github",
-      "platformId": "",
+      "platformId": "652487155",
       "owner": "htazq",
       "name": "Auto",
       "fullName": "htazq/Auto",
@@ -528,23 +1192,22 @@
       "topics": [],
       "createdAt": "2023-06-12T07:10:09Z",
       "updatedAt": "2026-01-06T11:54:22Z",
-      "pushedAt": "2026-01-06T11:54:22Z",
+      "pushedAt": "2026-01-06T11:54:18Z",
       "homepage": "",
       "path": "htazq/Auto",
       "license": "",
       "tags": [],
       "site": "",
       "url": "https://github.com/htazq/Auto",
-      "cloneUrl": "",
+      "cloneUrl": "https://github.com/htazq/Auto.git",
       "stats": {
-        "stars": 0,
+        "stars": 1,
         "forks": 0,
         "openIssues": 0
       },
-      "lastActiveAt": "2026-01-06T11:54:22Z",
+      "lastActiveAt": "2026-01-06T11:54:18Z",
       "latestCommit": {
         "sha": "4b9d2fc928834fbfc0ca844d18a6a92702c6fd53",
-        "shortSha": "4b9d2fc",
         "message": "Update README.md",
         "committedAt": "2026-01-06T11:54:18Z",
         "author": "htazq",
@@ -561,15 +1224,15 @@
           "isPrivate": false,
           "visibility": "Public",
           "url": "https://github.com/htazq/Auto",
-          "updatedAt": "2026-01-06T11:54:22Z"
+          "updatedAt": "2026-01-06T11:54:18Z"
         }
       ],
       "metrics": {
-        "stars": 0,
+        "stars": 1,
         "forks": 0,
         "openIssues": 0
       },
-      "daysSinceActive": 133,
+      "daysSinceActive": 149,
       "key": "htazq/auto",
       "status": "stale",
       "category": "脚本",
@@ -622,667 +1285,296 @@
         "openIssues": 0
       },
       "lastActiveAt": "2025-11-29T12:06:15Z",
-      "daysSinceActive": 171,
+      "daysSinceActive": 187,
       "key": "htazq/z-image-comfyui",
       "status": "stale",
       "category": "工具",
       "categoryConfidence": 0.4
-    },
-    {
-      "platform": "github",
-      "platformId": "",
-      "owner": "htazq",
-      "name": "www",
-      "fullName": "htazq/www",
-      "description": "",
-      "visibility": "Private",
-      "isPrivate": true,
-      "isFork": false,
-      "isArchived": false,
-      "language": "TypeScript",
-      "topics": [],
-      "createdAt": "2025-11-20T11:38:15Z",
-      "updatedAt": "2025-11-28T05:40:03Z",
-      "pushedAt": "2025-11-28T05:40:03Z",
-      "homepage": "",
-      "path": "htazq/www",
-      "license": "",
-      "tags": [],
-      "site": "",
-      "url": "https://github.com/htazq/www",
-      "cloneUrl": "",
-      "stats": {
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0
-      },
-      "lastActiveAt": "2025-11-28T05:40:03Z",
-      "latestCommit": {
-        "sha": "5d0c5806fe3b2c832a03e2de5721840bc665f21b",
-        "shortSha": "5d0c580",
-        "message": "feat: 随机选择初始语录，避免每次都从第一条开始显示",
-        "committedAt": "2025-11-28T05:39:52Z",
-        "author": "cnb.Z89F8fq0hPA",
-        "url": "https://github.com/htazq/www/commit/5d0c5806fe3b2c832a03e2de5721840bc665f21b"
-      },
-      "contribution": null,
-      "platforms": [
-        "github",
-        "cnb"
-      ],
-      "primaryUrl": "https://github.com/htazq/www",
-      "sources": [
-        {
-          "platform": "github",
-          "isPrivate": true,
-          "visibility": "Private",
-          "url": "https://github.com/htazq/www",
-          "updatedAt": "2025-11-28T05:40:03Z"
-        },
-        {
-          "platform": "cnb",
-          "isPrivate": true,
-          "visibility": "Private",
-          "url": "https://cnb.cool/htazq/www",
-          "updatedAt": "2025-11-20T02:43:23Z"
-        }
-      ],
-      "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0
-      },
-      "daysSinceActive": 173,
-      "key": "htazq/www",
-      "status": "stale",
-      "category": "脚本",
-      "categoryConfidence": 0.2
-    },
-    {
-      "platform": "cnb",
-      "platformId": "1993660295477088256",
-      "owner": "htazq",
-      "name": "docker-image",
-      "fullName": "htazq/docker-image",
-      "description": "",
-      "visibility": "Private",
-      "isPrivate": true,
-      "isFork": false,
-      "isArchived": false,
-      "language": "JavaScript",
-      "topics": [],
-      "createdAt": "2025-11-26T12:37:10Z",
-      "updatedAt": "2025-11-26T12:37:10Z",
-      "pushedAt": "2025-11-27T13:11:21Z",
-      "homepage": "",
-      "path": "htazq/docker-image",
-      "license": "",
-      "tags": [],
-      "site": "",
-      "url": "https://cnb.cool/htazq/docker-image",
-      "cloneUrl": "",
-      "stats": {
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0
-      },
-      "platforms": [
-        "cnb"
-      ],
-      "primaryUrl": "https://cnb.cool/htazq/docker-image",
-      "sources": [
-        {
-          "platform": "cnb",
-          "isPrivate": true,
-          "visibility": "Private",
-          "url": "https://cnb.cool/htazq/docker-image",
-          "updatedAt": "2025-11-26T12:37:10Z"
-        }
-      ],
-      "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0
-      },
-      "lastActiveAt": "2025-11-27T13:11:21Z",
-      "daysSinceActive": 173,
-      "key": "htazq/docker-image",
-      "status": "stale",
-      "category": "工具",
-      "categoryConfidence": 0.6
-    },
-    {
-      "platform": "github",
-      "platformId": "",
-      "owner": "htazq",
-      "name": "ai-image-process",
-      "fullName": "htazq/ai-image-process",
-      "description": "ai-image-process",
-      "visibility": "Private",
-      "isPrivate": true,
-      "isFork": false,
-      "isArchived": false,
-      "language": "TypeScript",
-      "topics": [],
-      "createdAt": "2025-11-23T11:28:43Z",
-      "updatedAt": "2025-11-25T09:33:49Z",
-      "pushedAt": "2025-11-25T09:33:49Z",
-      "homepage": "",
-      "path": "htazq/ai-image-process",
-      "license": "",
-      "tags": [],
-      "site": "",
-      "url": "https://github.com/htazq/ai-image-process",
-      "cloneUrl": "",
-      "stats": {
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0
-      },
-      "lastActiveAt": "2025-11-25T09:33:49Z",
-      "latestCommit": {
-        "sha": "cf88d243eb940826fa5a690cd32f55b6b99ea1c7",
-        "shortSha": "cf88d24",
-        "message": "feat: Implement interactive cropping and background color",
-        "committedAt": "2025-11-25T09:33:44Z",
-        "author": "htazq",
-        "url": "https://github.com/htazq/ai-image-process/commit/cf88d243eb940826fa5a690cd32f55b6b99ea1c7"
-      },
-      "contribution": null,
-      "platforms": [
-        "github"
-      ],
-      "primaryUrl": "https://github.com/htazq/ai-image-process",
-      "sources": [
-        {
-          "platform": "github",
-          "isPrivate": true,
-          "visibility": "Private",
-          "url": "https://github.com/htazq/ai-image-process",
-          "updatedAt": "2025-11-25T09:33:49Z"
-        }
-      ],
-      "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0
-      },
-      "daysSinceActive": 175,
-      "key": "htazq/ai-image-process",
-      "status": "stale",
-      "category": "工具",
-      "categoryConfidence": 0.4
-    },
-    {
-      "platform": "github",
-      "platformId": "",
-      "owner": "htazq",
-      "name": "View-IP",
-      "fullName": "htazq/View-IP",
-      "description": "A quick way to view my IP address",
-      "visibility": "Public",
-      "isPrivate": false,
-      "isFork": false,
-      "isArchived": false,
-      "language": "JavaScript",
-      "topics": [],
-      "createdAt": "2025-11-25T07:16:53Z",
-      "updatedAt": "2025-11-25T07:42:29Z",
-      "pushedAt": "2025-11-25T07:42:29Z",
-      "homepage": "",
-      "path": "htazq/View-IP",
-      "license": "",
-      "tags": [],
-      "site": "",
-      "url": "https://github.com/htazq/View-IP",
-      "cloneUrl": "",
-      "stats": {
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0
-      },
-      "lastActiveAt": "2025-11-25T07:42:29Z",
-      "latestCommit": {
-        "sha": "6f06d7f8bc22b00a612e64875d81099f0c1338b2",
-        "shortSha": "6f06d7f",
-        "message": "feat: 更新部署配置和演示站点地址",
-        "committedAt": "2025-11-25T07:42:14Z",
-        "author": "htazq",
-        "url": "https://github.com/htazq/View-IP/commit/6f06d7f8bc22b00a612e64875d81099f0c1338b2"
-      },
-      "contribution": null,
-      "platforms": [
-        "github",
-        "cnb"
-      ],
-      "primaryUrl": "https://github.com/htazq/View-IP",
-      "sources": [
-        {
-          "platform": "github",
-          "isPrivate": false,
-          "visibility": "Public",
-          "url": "https://github.com/htazq/View-IP",
-          "updatedAt": "2025-11-25T07:42:29Z"
-        },
-        {
-          "platform": "cnb",
-          "isPrivate": false,
-          "visibility": "Public",
-          "url": "https://cnb.cool/htazq/View-IP",
-          "updatedAt": "2025-11-25T07:23:34Z"
-        }
-      ],
-      "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0
-      },
-      "daysSinceActive": 176,
-      "key": "htazq/view-ip",
-      "status": "stale",
-      "category": "脚本",
-      "categoryConfidence": 0.2
-    },
-    {
-      "platform": "github",
-      "platformId": "",
-      "owner": "htazq",
-      "name": "container-mirror-for-china",
-      "fullName": "htazq/container-mirror-for-china",
-      "description": "",
-      "visibility": "Public",
-      "isPrivate": false,
-      "isFork": false,
-      "isArchived": false,
-      "language": "HTML",
-      "topics": [],
-      "createdAt": "2025-06-05T23:33:43Z",
-      "updatedAt": "2025-11-25T07:05:40Z",
-      "pushedAt": "2025-11-25T07:05:40Z",
-      "homepage": "",
-      "path": "htazq/container-mirror-for-china",
-      "license": "",
-      "tags": [],
-      "site": "",
-      "url": "https://github.com/htazq/container-mirror-for-china",
-      "cloneUrl": "",
-      "stats": {
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0
-      },
-      "lastActiveAt": "2025-11-25T07:05:40Z",
-      "latestCommit": {
-        "sha": "2aa163d60b22445b94a6294330df3134661200ce",
-        "shortSha": "2aa163d",
-        "message": "Update deployment instructions in README.md",
-        "committedAt": "2025-11-25T07:05:36Z",
-        "author": "htazq",
-        "url": "https://github.com/htazq/container-mirror-for-china/commit/2aa163d60b22445b94a6294330df3134661200ce"
-      },
-      "contribution": null,
-      "platforms": [
-        "github"
-      ],
-      "primaryUrl": "https://github.com/htazq/container-mirror-for-china",
-      "sources": [
-        {
-          "platform": "github",
-          "isPrivate": false,
-          "visibility": "Public",
-          "url": "https://github.com/htazq/container-mirror-for-china",
-          "updatedAt": "2025-11-25T07:05:40Z"
-        }
-      ],
-      "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0
-      },
-      "daysSinceActive": 176,
-      "key": "htazq/container-mirror-for-china",
-      "status": "stale",
-      "category": "网站",
-      "categoryConfidence": 0.2
-    },
-    {
-      "platform": "cnb",
-      "platformId": "1991761717583171584",
-      "owner": "eleaivideo",
-      "name": "wanvideo_wan2.2",
-      "fullName": "eleaivideo/wanvideo_wan2.2",
-      "description": "【一分钟即可出视频】\n超级氦气加速 图生视频 工作流\n生成视频速度大幅提升\nwan2.2效果炸裂\n打造wan2.2全能仓库\n欢迎大家提交合并请求\n\n【交流群】\nhttps://cnb.cool/fuliai/comfyui/-/issues/11",
-      "visibility": "Public",
-      "isPrivate": false,
-      "isFork": false,
-      "isArchived": false,
-      "language": "Python",
-      "topics": [],
-      "createdAt": "2025-11-21T06:52:53Z",
-      "updatedAt": "2025-11-21T06:52:53Z",
-      "pushedAt": "2025-11-21T13:43:17Z",
-      "homepage": "",
-      "path": "eleaivideo/WanVideo_wan2.2",
-      "license": "",
-      "tags": [],
-      "site": "",
-      "url": "https://cnb.cool/eleaivideo/WanVideo_wan2.2",
-      "cloneUrl": "",
-      "stats": {
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0
-      },
-      "platforms": [
-        "cnb"
-      ],
-      "primaryUrl": "https://cnb.cool/eleaivideo/WanVideo_wan2.2",
-      "sources": [
-        {
-          "platform": "cnb",
-          "isPrivate": false,
-          "visibility": "Public",
-          "url": "https://cnb.cool/eleaivideo/WanVideo_wan2.2",
-          "updatedAt": "2025-11-21T06:52:53Z"
-        }
-      ],
-      "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0
-      },
-      "lastActiveAt": "2025-11-21T13:43:17Z",
-      "daysSinceActive": 179,
-      "key": "eleaivideo/wanvideo_wan2.2",
-      "status": "stale",
-      "category": "其他",
-      "categoryConfidence": 0
-    },
-    {
-      "platform": "cnb",
-      "platformId": "1991860394247122944",
-      "owner": "eleaivideo",
-      "name": "cloud",
-      "fullName": "eleaivideo/cloud",
-      "description": "",
-      "visibility": "Public",
-      "isPrivate": false,
-      "isFork": false,
-      "isArchived": false,
-      "language": "HTML",
-      "topics": [],
-      "createdAt": "2025-11-21T13:25:00Z",
-      "updatedAt": "2025-11-21T13:25:00Z",
-      "pushedAt": "2025-11-21T13:27:29Z",
-      "homepage": "",
-      "path": "eleaivideo/cloud",
-      "license": "",
-      "tags": [],
-      "site": "",
-      "url": "https://cnb.cool/eleaivideo/cloud",
-      "cloneUrl": "",
-      "stats": {
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0
-      },
-      "platforms": [
-        "cnb"
-      ],
-      "primaryUrl": "https://cnb.cool/eleaivideo/cloud",
-      "sources": [
-        {
-          "platform": "cnb",
-          "isPrivate": false,
-          "visibility": "Public",
-          "url": "https://cnb.cool/eleaivideo/cloud",
-          "updatedAt": "2025-11-21T13:25:00Z"
-        }
-      ],
-      "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0
-      },
-      "lastActiveAt": "2025-11-21T13:27:29Z",
-      "daysSinceActive": 179,
-      "key": "eleaivideo/cloud",
-      "status": "stale",
-      "category": "网站",
-      "categoryConfidence": 0.2
-    },
-    {
-      "platform": "cnb",
-      "platformId": "1991859853722972160",
-      "owner": "eleaivideo",
-      "name": "www",
-      "fullName": "eleaivideo/www",
-      "description": "",
-      "visibility": "Public",
-      "isPrivate": false,
-      "isFork": false,
-      "isArchived": false,
-      "language": "",
-      "topics": [],
-      "createdAt": "2025-11-21T13:22:51Z",
-      "updatedAt": "2025-11-21T13:22:51Z",
-      "pushedAt": "2025-11-21T13:22:51Z",
-      "homepage": "",
-      "path": "eleaivideo/www",
-      "license": "",
-      "tags": [],
-      "site": "",
-      "url": "https://cnb.cool/eleaivideo/www",
-      "cloneUrl": "",
-      "stats": {
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0
-      },
-      "platforms": [
-        "cnb"
-      ],
-      "primaryUrl": "https://cnb.cool/eleaivideo/www",
-      "sources": [
-        {
-          "platform": "cnb",
-          "isPrivate": false,
-          "visibility": "Public",
-          "url": "https://cnb.cool/eleaivideo/www",
-          "updatedAt": "2025-11-21T13:22:51Z"
-        }
-      ],
-      "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0
-      },
-      "lastActiveAt": "2025-11-21T13:22:51Z",
-      "daysSinceActive": 179,
-      "key": "eleaivideo/www",
-      "status": "stale",
-      "category": "其他",
-      "categoryConfidence": 0
-    },
-    {
-      "platform": "cnb",
-      "platformId": "1991692705524371456",
-      "owner": "htazq",
-      "name": "wanvideo_wan2.2",
-      "fullName": "htazq/wanvideo_wan2.2",
-      "description": "【一分钟即可出视频】\n超级氦气加速 图生视频 工作流\n生成视频速度大幅提升\nwan2.2效果炸裂\n打造wan2.2全能仓库\n欢迎大家提交合并请求\n\n【交流群】\nhttps://cnb.cool/fuliai/comfyui/-/issues/11",
-      "visibility": "Public",
-      "isPrivate": false,
-      "isFork": false,
-      "isArchived": false,
-      "language": "Python",
-      "topics": [],
-      "createdAt": "2025-11-21T02:18:40Z",
-      "updatedAt": "2025-11-21T02:18:40Z",
-      "pushedAt": "2025-11-21T02:18:40Z",
-      "homepage": "",
-      "path": "htazq/WanVideo_wan2.2",
-      "license": "",
-      "tags": [],
-      "site": "",
-      "url": "https://cnb.cool/htazq/WanVideo_wan2.2",
-      "cloneUrl": "",
-      "stats": {
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0
-      },
-      "platforms": [
-        "cnb"
-      ],
-      "primaryUrl": "https://cnb.cool/htazq/WanVideo_wan2.2",
-      "sources": [
-        {
-          "platform": "cnb",
-          "isPrivate": false,
-          "visibility": "Public",
-          "url": "https://cnb.cool/htazq/WanVideo_wan2.2",
-          "updatedAt": "2025-11-21T02:18:40Z"
-        }
-      ],
-      "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0
-      },
-      "lastActiveAt": "2025-11-21T02:18:40Z",
-      "daysSinceActive": 180,
-      "key": "htazq/wanvideo_wan2.2",
-      "status": "stale",
-      "category": "其他",
-      "categoryConfidence": 0
-    },
-    {
-      "platform": "github",
-      "platformId": "",
-      "owner": "htazq",
-      "name": "rust",
-      "fullName": "htazq/rust",
-      "description": "",
-      "visibility": "Private",
-      "isPrivate": true,
-      "isFork": false,
-      "isArchived": false,
-      "language": "Rust",
-      "topics": [],
-      "createdAt": "2025-08-18T15:23:55Z",
-      "updatedAt": "2025-11-21T02:03:28Z",
-      "pushedAt": "2025-11-21T02:03:28Z",
-      "homepage": "",
-      "path": "htazq/rust",
-      "license": "",
-      "tags": [],
-      "site": "",
-      "url": "https://github.com/htazq/rust",
-      "cloneUrl": "",
-      "stats": {
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0
-      },
-      "lastActiveAt": "2025-11-21T02:03:28Z",
-      "latestCommit": {
-        "sha": "21ffa6b3e9d8208f9ec6bcaffea68a7403e63237",
-        "shortSha": "21ffa6b",
-        "message": "添加项目架构分析文档和清理临时文件",
-        "committedAt": "2025-09-06T10:26:38Z",
-        "author": "htazq",
-        "url": "https://github.com/htazq/rust/commit/21ffa6b3e9d8208f9ec6bcaffea68a7403e63237"
-      },
-      "contribution": null,
-      "platforms": [
-        "github"
-      ],
-      "primaryUrl": "https://github.com/htazq/rust",
-      "sources": [
-        {
-          "platform": "github",
-          "isPrivate": true,
-          "visibility": "Private",
-          "url": "https://github.com/htazq/rust",
-          "updatedAt": "2025-11-21T02:03:28Z"
-        }
-      ],
-      "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0
-      },
-      "daysSinceActive": 180,
-      "key": "htazq/rust",
-      "status": "stale",
-      "category": "其他",
-      "categoryConfidence": 0
-    },
-    {
-      "platform": "github",
-      "platformId": "",
-      "owner": "htazq",
-      "name": "OfflinePack",
-      "fullName": "htazq/OfflinePack",
-      "description": "Build offline dependency packages for air-gapped Linux environments",
-      "visibility": "Public",
-      "isPrivate": false,
-      "isFork": false,
-      "isArchived": false,
-      "language": "",
-      "topics": [],
-      "createdAt": "2025-10-27T09:07:53Z",
-      "updatedAt": "2025-11-21T02:02:48Z",
-      "pushedAt": "2025-11-21T02:02:48Z",
-      "homepage": "",
-      "path": "htazq/OfflinePack",
-      "license": "",
-      "tags": [],
-      "site": "",
-      "url": "https://github.com/htazq/OfflinePack",
-      "cloneUrl": "",
-      "stats": {
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0
-      },
-      "lastActiveAt": "2025-11-21T02:02:48Z",
-      "latestCommit": {
-        "sha": "5b7bbe041f531ba49a9a74c1dcf8632a5cff68ac",
-        "shortSha": "5b7bbe0",
-        "message": "Initial commit",
-        "committedAt": "2025-10-27T09:07:53Z",
-        "author": "htazq",
-        "url": "https://github.com/htazq/OfflinePack/commit/5b7bbe041f531ba49a9a74c1dcf8632a5cff68ac"
-      },
-      "contribution": null,
-      "platforms": [
-        "github"
-      ],
-      "primaryUrl": "https://github.com/htazq/OfflinePack",
-      "sources": [
-        {
-          "platform": "github",
-          "isPrivate": false,
-          "visibility": "Public",
-          "url": "https://github.com/htazq/OfflinePack",
-          "updatedAt": "2025-11-21T02:02:48Z"
-        }
-      ],
-      "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0
-      },
-      "daysSinceActive": 180,
-      "key": "htazq/offlinepack",
-      "status": "stale",
-      "category": "网站",
-      "categoryConfidence": 0.2
     }
   ],
   "repositories": [
+    {
+      "key": "htazq/new-travding",
+      "owner": "htazq",
+      "name": "new-travding",
+      "fullName": "htazq/new-travding",
+      "category": "其他",
+      "categoryConfidence": 0,
+      "status": "active",
+      "statusText": "活跃",
+      "daysSinceActive": 0,
+      "lastActiveAt": "2026-06-04T07:38:27Z",
+      "latestCommit": {
+        "sha": "a803a8e845ba77eca41725655241e5c9de1ceab6",
+        "message": "Merge pull request #1 from htazq/feat/entry-risk-signal-codes\n\n重构账户风控并细化入场信号统计",
+        "committedAt": "2026-06-04T07:38:27Z",
+        "author": "htazq",
+        "url": "https://github.com/htazq/new-travding/commit/a803a8e845ba77eca41725655241e5c9de1ceab6"
+      },
+      "contribution": {
+        "total": 1,
+        "opened": 0,
+        "merged": 1,
+        "closed": 0,
+        "latest": {
+          "number": 1,
+          "title": "重构账户风控并细化入场信号统计",
+          "state": "merged",
+          "updatedAt": "2026-06-04T07:38:32Z",
+          "url": "https://github.com/htazq/new-travding/pull/1"
+        }
+      },
+      "isPrivate": true,
+      "description": "",
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/htazq/new-travding",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": true,
+          "visibility": "Private",
+          "url": "https://github.com/htazq/new-travding",
+          "updatedAt": "2026-06-04T07:38:27Z"
+        }
+      ],
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "language": "Python",
+      "topics": [],
+      "homepage": ""
+    },
+    {
+      "key": "htazq/htazq",
+      "owner": "htazq",
+      "name": "htazq",
+      "fullName": "htazq/htazq",
+      "category": "其他",
+      "categoryConfidence": 0,
+      "status": "active",
+      "statusText": "活跃",
+      "daysSinceActive": 0,
+      "lastActiveAt": "2026-06-04T03:35:18Z",
+      "latestCommit": {
+        "sha": "9228699aca11fbfcd3274447df5a8c8877d0f577",
+        "message": "Update README stats",
+        "committedAt": "2026-06-04T03:35:18Z",
+        "author": "github-actions[bot]",
+        "url": "https://github.com/htazq/htazq/commit/9228699aca11fbfcd3274447df5a8c8877d0f577"
+      },
+      "contribution": null,
+      "isPrivate": false,
+      "description": "",
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/htazq/htazq",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": false,
+          "visibility": "Public",
+          "url": "https://github.com/htazq/htazq",
+          "updatedAt": "2026-06-04T03:35:18Z"
+        }
+      ],
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "language": "",
+      "topics": [],
+      "homepage": ""
+    },
+    {
+      "key": "htazq/litevpn-infra",
+      "owner": "htazq",
+      "name": "litevpn-infra",
+      "fullName": "htazq/litevpn-infra",
+      "category": "脚本",
+      "categoryConfidence": 0.2,
+      "status": "active",
+      "statusText": "活跃",
+      "daysSinceActive": 2,
+      "lastActiveAt": "2026-06-02T08:35:32Z",
+      "latestCommit": {
+        "sha": "65d88805cab4cccfab6d69ce15dd0f9d0ff4ddae",
+        "message": "docs: 中文化项目文档",
+        "committedAt": "2026-06-02T08:35:32Z",
+        "author": "htazq",
+        "url": "https://github.com/htazq/litevpn-infra/commit/65d88805cab4cccfab6d69ce15dd0f9d0ff4ddae"
+      },
+      "contribution": null,
+      "isPrivate": true,
+      "description": "LiteVPN node infrastructure templates and operations",
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/htazq/litevpn-infra",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": true,
+          "visibility": "Private",
+          "url": "https://github.com/htazq/litevpn-infra",
+          "updatedAt": "2026-06-02T08:35:32Z"
+        }
+      ],
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "language": "JavaScript",
+      "topics": [],
+      "homepage": ""
+    },
+    {
+      "key": "htazq/litevpn-control-plane",
+      "owner": "htazq",
+      "name": "litevpn-control-plane",
+      "fullName": "htazq/litevpn-control-plane",
+      "category": "脚本",
+      "categoryConfidence": 0.2,
+      "status": "active",
+      "statusText": "活跃",
+      "daysSinceActive": 2,
+      "lastActiveAt": "2026-06-02T08:35:31Z",
+      "latestCommit": {
+        "sha": "735ce8bcf38fc56dde550f3e5987c196d2e8cd5d",
+        "message": "docs: 中文化项目文档",
+        "committedAt": "2026-06-02T08:35:31Z",
+        "author": "htazq",
+        "url": "https://github.com/htazq/litevpn-control-plane/commit/735ce8bcf38fc56dde550f3e5987c196d2e8cd5d"
+      },
+      "contribution": null,
+      "isPrivate": true,
+      "description": "LiteVPN control plane API admin and config delivery",
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/htazq/litevpn-control-plane",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": true,
+          "visibility": "Private",
+          "url": "https://github.com/htazq/litevpn-control-plane",
+          "updatedAt": "2026-06-02T08:35:31Z"
+        }
+      ],
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "language": "JavaScript",
+      "topics": [],
+      "homepage": ""
+    },
+    {
+      "key": "htazq/litevpn-client",
+      "owner": "htazq",
+      "name": "litevpn-client",
+      "fullName": "htazq/litevpn-client",
+      "category": "脚本",
+      "categoryConfidence": 0.2,
+      "status": "active",
+      "statusText": "活跃",
+      "daysSinceActive": 2,
+      "lastActiveAt": "2026-06-02T08:35:31Z",
+      "latestCommit": {
+        "sha": "81cb565b9a87f4cdcfbb04f305d6e8b72950b7e3",
+        "message": "docs: 中文化项目文档",
+        "committedAt": "2026-06-02T08:35:31Z",
+        "author": "htazq",
+        "url": "https://github.com/htazq/litevpn-client/commit/81cb565b9a87f4cdcfbb04f305d6e8b72950b7e3"
+      },
+      "contribution": null,
+      "isPrivate": true,
+      "description": "Cross-platform LiteVPN client for Windows Android and iOS",
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/htazq/litevpn-client",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": true,
+          "visibility": "Private",
+          "url": "https://github.com/htazq/litevpn-client",
+          "updatedAt": "2026-06-02T08:35:31Z"
+        }
+      ],
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "language": "Rust",
+      "topics": [],
+      "homepage": ""
+    },
+    {
+      "key": "htazq/marketpipe",
+      "owner": "htazq",
+      "name": "marketpipe",
+      "fullName": "htazq/marketpipe",
+      "category": "金融",
+      "categoryConfidence": 0.4,
+      "status": "active",
+      "statusText": "活跃",
+      "daysSinceActive": 7,
+      "lastActiveAt": "2026-05-28T07:35:52Z",
+      "latestCommit": {
+        "sha": "3818ece8c6a4700369c96b3484a075a8d8b87c5f",
+        "message": "Merge pull request #1 from htazq/feat/marketpipe-mvp\n\nFeat/marketpipe mvp",
+        "committedAt": "2026-05-28T07:35:52Z",
+        "author": "htazq",
+        "url": "https://github.com/htazq/marketpipe/commit/3818ece8c6a4700369c96b3484a075a8d8b87c5f"
+      },
+      "contribution": {
+        "total": 1,
+        "opened": 0,
+        "merged": 1,
+        "closed": 0,
+        "latest": {
+          "number": 1,
+          "title": "Feat/marketpipe mvp",
+          "state": "merged",
+          "updatedAt": "2026-05-28T07:35:56Z",
+          "url": "https://github.com/htazq/marketpipe/pull/1"
+        }
+      },
+      "isPrivate": true,
+      "description": "MarketPipe financial market data API platform MVP",
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/htazq/marketpipe",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": true,
+          "visibility": "Private",
+          "url": "https://github.com/htazq/marketpipe",
+          "updatedAt": "2026-05-28T07:35:52Z"
+        }
+      ],
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "language": "Python",
+      "topics": [],
+      "homepage": ""
+    },
     {
       "key": "htazq/fenghuoyi-card-game",
       "owner": "htazq",
@@ -1292,27 +1584,26 @@
       "categoryConfidence": 0.2,
       "status": "active",
       "statusText": "活跃",
-      "daysSinceActive": 1,
-      "lastActiveAt": "2026-05-19T06:52:24Z",
+      "daysSinceActive": 7,
+      "lastActiveAt": "2026-05-28T03:22:21Z",
       "latestCommit": {
-        "sha": "7ed140130f6ded51a46f21e4fc6ffa0e8123ce4b",
-        "shortSha": "7ed1401",
-        "message": "feat: implement Fenghuoyi classic and enhanced playable prototype",
-        "committedAt": "2026-05-19T06:52:19Z",
+        "sha": "60a253399c541f0c070c5d1d6120b8a72098187e",
+        "message": "ci: update actions for node 24",
+        "committedAt": "2026-05-28T03:22:21Z",
         "author": "htazq",
-        "url": "https://github.com/htazq/fenghuoyi-card-game/commit/7ed140130f6ded51a46f21e4fc6ffa0e8123ce4b"
+        "url": "https://github.com/htazq/fenghuoyi-card-game/commit/60a253399c541f0c070c5d1d6120b8a72098187e"
       },
       "contribution": {
-        "total": 1,
+        "total": 4,
         "opened": 0,
-        "merged": 1,
+        "merged": 4,
         "closed": 0,
         "latest": {
-          "number": 1,
-          "title": "feat: implement Fenghuoyi classic and enhanced playable prototype",
+          "number": 4,
+          "title": "ci: update actions for node 24",
           "state": "merged",
-          "updatedAt": "2026-05-19T06:52:19Z",
-          "url": "https://github.com/htazq/fenghuoyi-card-game/pull/1"
+          "updatedAt": "2026-05-28T03:22:25Z",
+          "url": "https://github.com/htazq/fenghuoyi-card-game/pull/4"
         }
       },
       "isPrivate": true,
@@ -1327,7 +1618,7 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq/fenghuoyi-card-game",
-          "updatedAt": "2026-05-19T06:52:24Z"
+          "updatedAt": "2026-05-28T03:22:21Z"
         }
       ],
       "metrics": {
@@ -1340,15 +1631,250 @@
       "homepage": ""
     },
     {
+      "key": "htazq/www",
+      "owner": "htazq",
+      "name": "www",
+      "fullName": "htazq/www",
+      "category": "脚本",
+      "categoryConfidence": 0.2,
+      "status": "active",
+      "statusText": "活跃",
+      "daysSinceActive": 13,
+      "lastActiveAt": "2026-05-22T09:45:43Z",
+      "latestCommit": {
+        "sha": "f45535eca3846cde792992dad5c21651dfca32b6",
+        "message": "feat: redesign as All in AI static showcase page\n\n- Replace 9Deck dashboard with AI-themed landing page\n- Add particle background, typewriter hero, AI capability cards\n- Add AI evolution timeline, rotating quotes, manifesto section\n- Simplify index.html, remove inline 9Deck styles\n- Keep link cards for existing services",
+        "committedAt": "2026-05-22T09:45:43Z",
+        "author": "cnb.Z89F8fq0hPA",
+        "url": "https://github.com/htazq/www/commit/f45535eca3846cde792992dad5c21651dfca32b6"
+      },
+      "contribution": null,
+      "isPrivate": true,
+      "description": "",
+      "platforms": [
+        "github",
+        "cnb"
+      ],
+      "primaryUrl": "https://github.com/htazq/www",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": true,
+          "visibility": "Private",
+          "url": "https://github.com/htazq/www",
+          "updatedAt": "2026-05-22T09:45:43Z"
+        },
+        {
+          "platform": "cnb",
+          "isPrivate": true,
+          "visibility": "Private",
+          "url": "https://cnb.cool/htazq/www",
+          "updatedAt": "2025-11-20T02:43:23Z"
+        }
+      ],
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "language": "TypeScript",
+      "topics": [],
+      "homepage": ""
+    },
+    {
+      "key": "htazq/mt5-strategy-lab",
+      "owner": "htazq",
+      "name": "mt5-strategy-lab",
+      "fullName": "htazq/mt5-strategy-lab",
+      "category": "金融",
+      "categoryConfidence": 0.2,
+      "status": "active",
+      "statusText": "活跃",
+      "daysSinceActive": 14,
+      "lastActiveAt": "2026-05-20T16:10:51Z",
+      "latestCommit": {
+        "sha": "4c44fef4c11fd70992ff1fae700bb4ffde0139f9",
+        "message": "docs: register ustec h2l2 research candidate",
+        "committedAt": "2026-05-20T16:10:51Z",
+        "author": "htazq",
+        "url": "https://github.com/htazq/mt5-strategy-lab/commit/4c44fef4c11fd70992ff1fae700bb4ffde0139f9"
+      },
+      "contribution": null,
+      "isPrivate": true,
+      "description": "MT5 strategy research and backtesting lab",
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/htazq/mt5-strategy-lab",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": true,
+          "visibility": "Private",
+          "url": "https://github.com/htazq/mt5-strategy-lab",
+          "updatedAt": "2026-05-20T16:10:51Z"
+        }
+      ],
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "language": "",
+      "topics": [],
+      "homepage": ""
+    },
+    {
+      "key": "htazq/money-den",
+      "owner": "htazq",
+      "name": "money-den",
+      "fullName": "htazq/money-den",
+      "category": "金融",
+      "categoryConfidence": 0.2,
+      "status": "active",
+      "statusText": "活跃",
+      "daysSinceActive": 14,
+      "lastActiveAt": "2026-05-20T16:10:51Z",
+      "latestCommit": {
+        "sha": "4974a334af638b722ff99ce8c536536f5cb2587e",
+        "message": "docs: add ustec h2l2 candidate review",
+        "committedAt": "2026-05-20T16:10:51Z",
+        "author": "htazq",
+        "url": "https://github.com/htazq/money-den/commit/4974a334af638b722ff99ce8c536536f5cb2587e"
+      },
+      "contribution": null,
+      "isPrivate": true,
+      "description": "CLI-first personal money command center: trading research, compliant airdrop tracking, wallets, and reports",
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/htazq/money-den",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": true,
+          "visibility": "Private",
+          "url": "https://github.com/htazq/money-den",
+          "updatedAt": "2026-05-20T16:10:51Z"
+        }
+      ],
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "language": "Python",
+      "topics": [],
+      "homepage": ""
+    },
+    {
+      "key": "htazq/brooks-es5m-rule-lab",
+      "owner": "htazq",
+      "name": "brooks-es5m-rule-lab",
+      "fullName": "htazq/brooks-es5m-rule-lab",
+      "category": "其他",
+      "categoryConfidence": 0,
+      "status": "active",
+      "statusText": "活跃",
+      "daysSinceActive": 14,
+      "lastActiveAt": "2026-05-20T16:10:51Z",
+      "latestCommit": {
+        "sha": "44e8d9a9ad1456b3da8fa05aa18b46131b4d4311",
+        "message": "fix: use symbol-specific market contracts",
+        "committedAt": "2026-05-20T16:10:51Z",
+        "author": "htazq",
+        "url": "https://github.com/htazq/brooks-es5m-rule-lab/commit/44e8d9a9ad1456b3da8fa05aa18b46131b4d4311"
+      },
+      "contribution": {
+        "total": 18,
+        "opened": 0,
+        "merged": 18,
+        "closed": 0,
+        "latest": {
+          "number": 18,
+          "title": "Feat/automation audit orchestration vision",
+          "state": "merged",
+          "updatedAt": "2026-04-17T14:05:29Z",
+          "url": "https://github.com/htazq/brooks-es5m-rule-lab/pull/18"
+        }
+      },
+      "isPrivate": true,
+      "description": "Brooks-style ES 5m intraday rule research and backtesting system",
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/htazq/brooks-es5m-rule-lab",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": true,
+          "visibility": "Private",
+          "url": "https://github.com/htazq/brooks-es5m-rule-lab",
+          "updatedAt": "2026-05-20T16:10:51Z"
+        }
+      ],
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "language": "Python",
+      "topics": [],
+      "homepage": ""
+    },
+    {
+      "key": "htazq/personal-knowledge-base",
+      "owner": "htazq",
+      "name": "personal-knowledge-base",
+      "fullName": "htazq/personal-knowledge-base",
+      "category": "网站",
+      "categoryConfidence": 0.2,
+      "status": "watch",
+      "statusText": "关注",
+      "daysSinceActive": 15,
+      "lastActiveAt": "2026-05-20T09:46:54Z",
+      "latestCommit": {
+        "sha": "2d6cb491742179fd46d2d8ab2adb3f18ea403717",
+        "message": "feat: add 9deck asset dashboard",
+        "committedAt": "2026-05-20T09:46:54Z",
+        "author": "htazq",
+        "url": "https://github.com/htazq/personal-knowledge-base/commit/2d6cb491742179fd46d2d8ab2adb3f18ea403717"
+      },
+      "contribution": null,
+      "isPrivate": true,
+      "description": "Private personal inventory, knowledge base, and at9.net redesign notes",
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/htazq/personal-knowledge-base",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": true,
+          "visibility": "Private",
+          "url": "https://github.com/htazq/personal-knowledge-base",
+          "updatedAt": "2026-05-20T09:46:54Z"
+        }
+      ],
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "language": "HTML",
+      "topics": [],
+      "homepage": ""
+    },
+    {
       "key": "eleaivideo/astro-yuanyuan",
       "owner": "eleaivideo",
       "name": "astro-yuanyuan",
       "fullName": "eleaivideo/astro-yuanyuan",
       "category": "脚本",
       "categoryConfidence": 0.2,
-      "status": "active",
-      "statusText": "活跃",
-      "daysSinceActive": 1,
+      "status": "watch",
+      "statusText": "关注",
+      "daysSinceActive": 16,
       "lastActiveAt": "2026-05-19T05:06:02Z",
       "latestCommit": null,
       "contribution": null,
@@ -1377,103 +1903,15 @@
       "homepage": ""
     },
     {
-      "key": "htazq/htazq",
-      "owner": "htazq",
-      "name": "htazq",
-      "fullName": "htazq/htazq",
-      "category": "其他",
-      "categoryConfidence": 0,
-      "status": "active",
-      "statusText": "活跃",
-      "daysSinceActive": 1,
-      "lastActiveAt": "2026-05-18T19:46:06Z",
-      "latestCommit": {
-        "sha": "0546e598a0e87deb53ec070148af01e7e075ca87",
-        "shortSha": "0546e59",
-        "message": "generated",
-        "committedAt": "2026-05-18T19:46:00Z",
-        "author": "github-actions",
-        "url": "https://github.com/htazq/htazq/commit/0546e598a0e87deb53ec070148af01e7e075ca87"
-      },
-      "contribution": null,
-      "isPrivate": false,
-      "description": "",
-      "platforms": [
-        "github"
-      ],
-      "primaryUrl": "https://github.com/htazq/htazq",
-      "sources": [
-        {
-          "platform": "github",
-          "isPrivate": false,
-          "visibility": "Public",
-          "url": "https://github.com/htazq/htazq",
-          "updatedAt": "2026-05-18T19:46:06Z"
-        }
-      ],
-      "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0
-      },
-      "language": "",
-      "topics": [],
-      "homepage": ""
-    },
-    {
-      "key": "htazq/mt5-strategy-lab",
-      "owner": "htazq",
-      "name": "mt5-strategy-lab",
-      "fullName": "htazq/mt5-strategy-lab",
-      "category": "金融",
-      "categoryConfidence": 0.2,
-      "status": "active",
-      "statusText": "活跃",
-      "daysSinceActive": 3,
-      "lastActiveAt": "2026-05-16T16:28:51Z",
-      "latestCommit": {
-        "sha": "31d8cc50b2796f3036352b30e29089d0a029e3e0",
-        "shortSha": "31d8cc5",
-        "message": "docs: initialize mt5 strategy lab",
-        "committedAt": "2026-05-16T16:28:39Z",
-        "author": "htazq",
-        "url": "https://github.com/htazq/mt5-strategy-lab/commit/31d8cc50b2796f3036352b30e29089d0a029e3e0"
-      },
-      "contribution": null,
-      "isPrivate": true,
-      "description": "MT5 strategy research and backtesting lab",
-      "platforms": [
-        "github"
-      ],
-      "primaryUrl": "https://github.com/htazq/mt5-strategy-lab",
-      "sources": [
-        {
-          "platform": "github",
-          "isPrivate": true,
-          "visibility": "Private",
-          "url": "https://github.com/htazq/mt5-strategy-lab",
-          "updatedAt": "2026-05-16T16:28:51Z"
-        }
-      ],
-      "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0
-      },
-      "language": "",
-      "topics": [],
-      "homepage": ""
-    },
-    {
       "key": "htazq/card_game",
       "owner": "htazq",
       "name": "card_game",
       "fullName": "htazq/card_game",
       "category": "脚本",
       "categoryConfidence": 0.2,
-      "status": "active",
-      "statusText": "活跃",
-      "daysSinceActive": 4,
+      "status": "watch",
+      "statusText": "关注",
+      "daysSinceActive": 19,
       "lastActiveAt": "2026-05-15T16:25:56Z",
       "latestCommit": null,
       "contribution": null,
@@ -1508,13 +1946,12 @@
       "fullName": "htazq/xy-doc",
       "category": "网站",
       "categoryConfidence": 0.2,
-      "status": "active",
-      "statusText": "活跃",
-      "daysSinceActive": 5,
-      "lastActiveAt": "2026-05-15T01:36:19Z",
+      "status": "watch",
+      "statusText": "关注",
+      "daysSinceActive": 20,
+      "lastActiveAt": "2026-05-15T01:36:00Z",
       "latestCommit": {
         "sha": "7baa0948d36fe4aae11242ab1fbc9cc2383355a0",
-        "shortSha": "7baa094",
         "message": "20260515暂存",
         "committedAt": "2026-05-15T01:36:00Z",
         "author": "htazq",
@@ -1533,7 +1970,7 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq/xy-doc",
-          "updatedAt": "2026-05-15T01:36:19Z"
+          "updatedAt": "2026-05-15T01:36:00Z"
         }
       ],
       "metrics": {
@@ -1546,59 +1983,15 @@
       "homepage": ""
     },
     {
-      "key": "htazq/money-den",
-      "owner": "htazq",
-      "name": "money-den",
-      "fullName": "htazq/money-den",
-      "category": "金融",
-      "categoryConfidence": 0.2,
-      "status": "active",
-      "statusText": "活跃",
-      "daysSinceActive": 6,
-      "lastActiveAt": "2026-05-14T08:06:24Z",
-      "latestCommit": {
-        "sha": "b81e4835805de15344da9298a4497db3b468e143",
-        "shortSha": "b81e483",
-        "message": "Add weekly macro dislocation radar demo",
-        "committedAt": "2026-05-14T08:06:24Z",
-        "author": "Hermes Agent",
-        "url": "https://github.com/htazq/money-den/commit/b81e4835805de15344da9298a4497db3b468e143"
-      },
-      "contribution": null,
-      "isPrivate": true,
-      "description": "CLI-first personal money command center: trading research, compliant airdrop tracking, wallets, and reports",
-      "platforms": [
-        "github"
-      ],
-      "primaryUrl": "https://github.com/htazq/money-den",
-      "sources": [
-        {
-          "platform": "github",
-          "isPrivate": true,
-          "visibility": "Private",
-          "url": "https://github.com/htazq/money-den",
-          "updatedAt": "2026-05-14T08:06:24Z"
-        }
-      ],
-      "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0
-      },
-      "language": "Python",
-      "topics": [],
-      "homepage": ""
-    },
-    {
       "key": "htazq/comfyui_cloud",
       "owner": "htazq",
       "name": "comfyui_cloud",
       "fullName": "htazq/comfyui_cloud",
       "category": "其他",
       "categoryConfidence": 0,
-      "status": "active",
-      "statusText": "活跃",
-      "daysSinceActive": 6,
+      "status": "watch",
+      "statusText": "关注",
+      "daysSinceActive": 21,
       "lastActiveAt": "2026-05-13T15:24:12Z",
       "latestCommit": null,
       "contribution": null,
@@ -1633,9 +2026,9 @@
       "fullName": "htazq/comfyui-yi_dian_tong",
       "category": "其他",
       "categoryConfidence": 0,
-      "status": "active",
-      "statusText": "活跃",
-      "daysSinceActive": 6,
+      "status": "watch",
+      "statusText": "关注",
+      "daysSinceActive": 21,
       "lastActiveAt": "2026-05-13T15:18:02Z",
       "latestCommit": null,
       "contribution": null,
@@ -1670,9 +2063,9 @@
       "fullName": "eleaivideo/comfyui",
       "category": "AI",
       "categoryConfidence": 0.2,
-      "status": "active",
-      "statusText": "活跃",
-      "daysSinceActive": 6,
+      "status": "watch",
+      "statusText": "关注",
+      "daysSinceActive": 21,
       "lastActiveAt": "2026-05-13T15:14:33Z",
       "latestCommit": null,
       "contribution": null,
@@ -1707,13 +2100,12 @@
       "fullName": "htazq/aifs_perf_harness",
       "category": "其他",
       "categoryConfidence": 0,
-      "status": "active",
-      "statusText": "活跃",
-      "daysSinceActive": 8,
-      "lastActiveAt": "2026-05-12T07:08:46Z",
+      "status": "watch",
+      "statusText": "关注",
+      "daysSinceActive": 23,
+      "lastActiveAt": "2026-05-12T07:08:36Z",
       "latestCommit": {
         "sha": "1748ba82c2fd9fa202ee48b8da6fc0d392c17ee5",
-        "shortSha": "1748ba8",
         "message": "fio和mdtest独立脚本完成",
         "committedAt": "2026-05-12T07:08:36Z",
         "author": "htazq",
@@ -1732,7 +2124,7 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq/aifs_perf_harness",
-          "updatedAt": "2026-05-12T07:08:46Z"
+          "updatedAt": "2026-05-12T07:08:36Z"
         }
       ],
       "metrics": {
@@ -1751,13 +2143,12 @@
       "fullName": "htazq/paio-autotrader",
       "category": "金融",
       "categoryConfidence": 0.2,
-      "status": "active",
-      "statusText": "活跃",
-      "daysSinceActive": 8,
-      "lastActiveAt": "2026-05-12T03:44:36Z",
+      "status": "watch",
+      "statusText": "关注",
+      "daysSinceActive": 23,
+      "lastActiveAt": "2026-05-12T03:44:23Z",
       "latestCommit": {
         "sha": "da9d8ac2be7c7fd2bc01f8d11f5d89141462dc47",
-        "shortSha": "da9d8ac",
         "message": "docs: add research operating contract",
         "committedAt": "2026-05-12T03:44:23Z",
         "author": "htazq",
@@ -1788,13 +2179,13 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq/paio-autotrader",
-          "updatedAt": "2026-05-12T03:44:36Z"
+          "updatedAt": "2026-05-12T03:44:23Z"
         }
       ],
       "metrics": {
         "stars": 0,
         "forks": 0,
-        "openIssues": 0
+        "openIssues": 3
       },
       "language": "MQL5",
       "topics": [],
@@ -1809,11 +2200,10 @@
       "categoryConfidence": 0.8,
       "status": "watch",
       "statusText": "关注",
-      "daysSinceActive": 22,
-      "lastActiveAt": "2026-04-28T06:52:08Z",
+      "daysSinceActive": 37,
+      "lastActiveAt": "2026-04-28T06:52:06Z",
       "latestCommit": {
         "sha": "9d2876c281b569dad84e5168e6266f4116b32515",
-        "shortSha": "9d2876c",
         "message": "fix(live): 启动重放未应用订单事件",
         "committedAt": "2026-04-28T06:52:06Z",
         "author": "htazq",
@@ -1832,63 +2222,7 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq/ibkr-auto-arb",
-          "updatedAt": "2026-04-28T06:52:08Z"
-        }
-      ],
-      "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0
-      },
-      "language": "Python",
-      "topics": [],
-      "homepage": ""
-    },
-    {
-      "key": "htazq/brooks-es5m-rule-lab",
-      "owner": "htazq",
-      "name": "brooks-es5m-rule-lab",
-      "fullName": "htazq/brooks-es5m-rule-lab",
-      "category": "其他",
-      "categoryConfidence": 0,
-      "status": "watch",
-      "statusText": "关注",
-      "daysSinceActive": 26,
-      "lastActiveAt": "2026-04-24T08:11:36Z",
-      "latestCommit": {
-        "sha": "534f7d098254952b0c4de91f9a1203a67192e2be",
-        "shortSha": "534f7d0",
-        "message": "Commit remaining local artifacts and tooling updates",
-        "committedAt": "2026-04-24T08:11:23Z",
-        "author": "htazq",
-        "url": "https://github.com/htazq/brooks-es5m-rule-lab/commit/534f7d098254952b0c4de91f9a1203a67192e2be"
-      },
-      "contribution": {
-        "total": 18,
-        "opened": 0,
-        "merged": 18,
-        "closed": 0,
-        "latest": {
-          "number": 18,
-          "title": "Feat/automation audit orchestration vision",
-          "state": "merged",
-          "updatedAt": "2026-04-17T14:05:29Z",
-          "url": "https://github.com/htazq/brooks-es5m-rule-lab/pull/18"
-        }
-      },
-      "isPrivate": true,
-      "description": "Brooks-style ES 5m intraday rule research and backtesting system",
-      "platforms": [
-        "github"
-      ],
-      "primaryUrl": "https://github.com/htazq/brooks-es5m-rule-lab",
-      "sources": [
-        {
-          "platform": "github",
-          "isPrivate": true,
-          "visibility": "Private",
-          "url": "https://github.com/htazq/brooks-es5m-rule-lab",
-          "updatedAt": "2026-04-24T08:11:36Z"
+          "updatedAt": "2026-04-28T06:52:06Z"
         }
       ],
       "metrics": {
@@ -1909,7 +2243,7 @@
       "categoryConfidence": 0,
       "status": "watch",
       "statusText": "关注",
-      "daysSinceActive": 27,
+      "daysSinceActive": 42,
       "lastActiveAt": "2026-04-23T01:07:01Z",
       "latestCommit": null,
       "contribution": null,
@@ -1946,11 +2280,10 @@
       "categoryConfidence": 0.2,
       "status": "watch",
       "statusText": "关注",
-      "daysSinceActive": 27,
-      "lastActiveAt": "2026-04-22T11:07:15Z",
+      "daysSinceActive": 43,
+      "lastActiveAt": "2026-04-22T11:01:35Z",
       "latestCommit": {
         "sha": "c6bdbf7689d2a27a8cba1fa65d70aab97335da06",
-        "shortSha": "c6bdbf7",
         "message": "docs: refresh deployment and operations runbooks",
         "committedAt": "2026-04-22T11:01:35Z",
         "author": "htazq",
@@ -1969,7 +2302,7 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq/polymarket",
-          "updatedAt": "2026-04-22T11:07:15Z"
+          "updatedAt": "2026-04-22T11:01:35Z"
         }
       ],
       "metrics": {
@@ -1990,12 +2323,11 @@
       "categoryConfidence": 0.2,
       "status": "watch",
       "statusText": "关注",
-      "daysSinceActive": 27,
-      "lastActiveAt": "2026-04-22T09:27:37Z",
+      "daysSinceActive": 43,
+      "lastActiveAt": "2026-04-22T09:27:30Z",
       "latestCommit": {
         "sha": "bc1dbd3f2651dc4e5e36deb67f2917ab8db68c60",
-        "shortSha": "bc1dbd3",
-        "message": "refactor(i18n): remove shared content buckets zh, en, es, pt",
+        "message": "refactor(i18n): remove shared content buckets zh, en, es, pt\n\nAfter splitting into independent locale directories, remove the now-redundant shared buckets:\n- zh/ (replaced by zh-CN, zh-TW, zh-HK)\n- en/ (replaced by en-US, en-GB)\n- es/ (replaced by es-ES, es-419)\n- pt/ (replaced by pt-PT, pt-BR)\n\nNow exactly 46 directories match 46 locales.\n\nVerified: npm run verify:i18n; npm run build (781 pages)",
         "committedAt": "2026-04-22T09:27:30Z",
         "author": "htazq",
         "url": "https://github.com/htazq/Astro-yuanyuan/commit/bc1dbd3f2651dc4e5e36deb67f2917ab8db68c60"
@@ -2013,7 +2345,7 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq/Astro-yuanyuan",
-          "updatedAt": "2026-04-22T09:27:37Z"
+          "updatedAt": "2026-04-22T09:27:30Z"
         }
       ],
       "metrics": {
@@ -2034,7 +2366,7 @@
       "categoryConfidence": 0.2,
       "status": "watch",
       "statusText": "关注",
-      "daysSinceActive": 31,
+      "daysSinceActive": 47,
       "lastActiveAt": "2026-04-18T09:27:34Z",
       "latestCommit": null,
       "contribution": null,
@@ -2071,7 +2403,7 @@
       "categoryConfidence": 0.2,
       "status": "watch",
       "statusText": "关注",
-      "daysSinceActive": 32,
+      "daysSinceActive": 47,
       "lastActiveAt": "2026-04-18T08:45:48Z",
       "latestCommit": null,
       "contribution": null,
@@ -2108,7 +2440,7 @@
       "categoryConfidence": 0.2,
       "status": "watch",
       "statusText": "关注",
-      "daysSinceActive": 32,
+      "daysSinceActive": 47,
       "lastActiveAt": "2026-04-18T08:02:40Z",
       "latestCommit": null,
       "contribution": null,
@@ -2145,7 +2477,7 @@
       "categoryConfidence": 0.2,
       "status": "watch",
       "statusText": "关注",
-      "daysSinceActive": 32,
+      "daysSinceActive": 47,
       "lastActiveAt": "2026-04-18T06:25:44Z",
       "latestCommit": null,
       "contribution": null,
@@ -2182,7 +2514,7 @@
       "categoryConfidence": 0.2,
       "status": "watch",
       "statusText": "关注",
-      "daysSinceActive": 34,
+      "daysSinceActive": 50,
       "lastActiveAt": "2026-04-15T10:48:01Z",
       "latestCommit": null,
       "contribution": null,
@@ -2219,11 +2551,10 @@
       "categoryConfidence": 0.2,
       "status": "watch",
       "statusText": "关注",
-      "daysSinceActive": 35,
-      "lastActiveAt": "2026-04-15T06:44:20Z",
+      "daysSinceActive": 50,
+      "lastActiveAt": "2026-04-15T06:44:08Z",
       "latestCommit": {
         "sha": "d341e29ef4df361abb9136088829fec08de11222",
-        "shortSha": "d341e29",
         "message": "新增：Ubuntu_核心库损坏_排查实战.md",
         "committedAt": "2026-04-15T06:44:08Z",
         "author": "htazq",
@@ -2243,7 +2574,7 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq/My-Knowledge-Accumulation",
-          "updatedAt": "2026-04-15T06:44:20Z"
+          "updatedAt": "2026-04-15T06:44:08Z"
         },
         {
           "platform": "cnb",
@@ -2271,7 +2602,7 @@
       "categoryConfidence": 0,
       "status": "watch",
       "statusText": "关注",
-      "daysSinceActive": 37,
+      "daysSinceActive": 52,
       "lastActiveAt": "2026-04-13T08:10:03Z",
       "latestCommit": null,
       "contribution": null,
@@ -2308,11 +2639,10 @@
       "categoryConfidence": 0,
       "status": "watch",
       "statusText": "关注",
-      "daysSinceActive": 37,
-      "lastActiveAt": "2026-04-12T14:16:48Z",
+      "daysSinceActive": 52,
+      "lastActiveAt": "2026-04-12T14:16:45Z",
       "latestCommit": {
         "sha": "fac4a6ac68ebc154d305cf514f65b92cbd13172d",
-        "shortSha": "fac4a6a",
         "message": "Initial commit",
         "committedAt": "2026-04-12T14:16:45Z",
         "author": "htazq",
@@ -2331,7 +2661,7 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq/astro-yuanyuan-md-knowledge",
-          "updatedAt": "2026-04-12T14:16:48Z"
+          "updatedAt": "2026-04-12T14:16:45Z"
         }
       ],
       "metrics": {
@@ -2344,50 +2674,6 @@
       "homepage": ""
     },
     {
-      "key": "htazq/aifs-fs-functional-harness",
-      "owner": "htazq",
-      "name": "aifs-fs-functional-harness",
-      "fullName": "htazq/aifs-fs-functional-harness",
-      "category": "其他",
-      "categoryConfidence": 0,
-      "status": "watch",
-      "statusText": "关注",
-      "daysSinceActive": 40,
-      "lastActiveAt": "2026-04-10T07:38:43Z",
-      "latestCommit": {
-        "sha": "ba15f04c37a50727f28822b8b92b63ae0513367d",
-        "shortSha": "ba15f04",
-        "message": "Make the harness deliverable as a full filesystem test repository",
-        "committedAt": "2026-04-02T12:12:09Z",
-        "author": "htazq",
-        "url": "https://github.com/htazq/aifs-fs-functional-harness/commit/ba15f04c37a50727f28822b8b92b63ae0513367d"
-      },
-      "contribution": null,
-      "isPrivate": true,
-      "description": "",
-      "platforms": [
-        "github"
-      ],
-      "primaryUrl": "https://github.com/htazq/aifs-fs-functional-harness",
-      "sources": [
-        {
-          "platform": "github",
-          "isPrivate": true,
-          "visibility": "Private",
-          "url": "https://github.com/htazq/aifs-fs-functional-harness",
-          "updatedAt": "2026-04-10T07:38:43Z"
-        }
-      ],
-      "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0
-      },
-      "language": "Python",
-      "topics": [],
-      "homepage": ""
-    },
-    {
       "key": "htazq/comfyui_shonl",
       "owner": "htazq",
       "name": "comfyui_shonl",
@@ -2396,7 +2682,7 @@
       "categoryConfidence": 0,
       "status": "watch",
       "statusText": "关注",
-      "daysSinceActive": 42,
+      "daysSinceActive": 57,
       "lastActiveAt": "2026-04-08T02:41:41Z",
       "latestCommit": null,
       "contribution": null,
@@ -2433,7 +2719,7 @@
       "categoryConfidence": 0.2,
       "status": "watch",
       "statusText": "关注",
-      "daysSinceActive": 42,
+      "daysSinceActive": 57,
       "lastActiveAt": "2026-04-08T02:41:24Z",
       "latestCommit": null,
       "contribution": null,
@@ -2470,7 +2756,7 @@
       "categoryConfidence": 0.2,
       "status": "watch",
       "statusText": "关注",
-      "daysSinceActive": 45,
+      "daysSinceActive": 60,
       "lastActiveAt": "2026-04-05T04:52:38Z",
       "latestCommit": null,
       "contribution": null,
@@ -2499,6 +2785,49 @@
       "homepage": ""
     },
     {
+      "key": "htazq/aifs-fs-functional-harness",
+      "owner": "htazq",
+      "name": "aifs-fs-functional-harness",
+      "fullName": "htazq/aifs-fs-functional-harness",
+      "category": "其他",
+      "categoryConfidence": 0,
+      "status": "watch",
+      "statusText": "关注",
+      "daysSinceActive": 63,
+      "lastActiveAt": "2026-04-02T12:12:09Z",
+      "latestCommit": {
+        "sha": "ba15f04c37a50727f28822b8b92b63ae0513367d",
+        "message": "Make the harness deliverable as a full filesystem test repository\n\nThis change turns the repo from a runnable skeleton into a Chinese-first,\noperator-facing filesystem test repository with one CLI entrypoint,\ntimestamped run archives, a structured case catalog, suite design\ndocs, wrapper methodology, and step-by-step execution runbooks.\n\nConstraint: Must stay in the existing aifs-fs-functional-harness repository\nConstraint: Must remain Chinese-first and keep Python + Bash as the primary implementation path\nConstraint: Default execution path must stay lightweight under the local 100G/10G/5-core budget\nRejected: Rebuild the repo around a new framework or repo layout | would break continuity and violate the no-repo-reset requirement\nRejected: Make heavy Docker/Kubernetes/multi-VM orchestration the default path | conflicts with the requested lightweight local workflow\nConfidence: high\nScope-risk: moderate\nReversibility: clean\nDirective: When adding new suites or cases, update the CLI catalog, suite docs, category docs, and runbook together so automation and manual guidance do not drift\nTested: python3 -m pytest -q\nTested: python3 main.py --list-suites\nTested: python3 main.py --suite smoke --mount /auto_test/artifacts/localfs-default/mnt\nTested: python3 main.py --suite meta --mount /auto_test/artifacts/localfs-default/mnt\nTested: python3 main.py --suite recovery-lite --mount /auto_test/artifacts/localfs-default/mnt\nTested: python3 main.py --suite quota --mount /auto_test/artifacts/localfs-default/mnt\nNot-tested: Real quota-enabled filesystem behavior beyond skip path\nNot-tested: Real pjdfstest / xfstests binaries and wrapper execution against an installed toolchain\nNot-tested: Distinct dual-client mounts, fsck maintenance-window flow, and manual-only release runbook items",
+        "committedAt": "2026-04-02T12:12:09Z",
+        "author": "htazq",
+        "url": "https://github.com/htazq/aifs-fs-functional-harness/commit/ba15f04c37a50727f28822b8b92b63ae0513367d"
+      },
+      "contribution": null,
+      "isPrivate": true,
+      "description": "",
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/htazq/aifs-fs-functional-harness",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": true,
+          "visibility": "Private",
+          "url": "https://github.com/htazq/aifs-fs-functional-harness",
+          "updatedAt": "2026-04-02T12:12:09Z"
+        }
+      ],
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "language": "Python",
+      "topics": [],
+      "homepage": ""
+    },
+    {
       "key": "htazq/shuake",
       "owner": "htazq",
       "name": "shuake",
@@ -2507,11 +2836,10 @@
       "categoryConfidence": 0.2,
       "status": "watch",
       "statusText": "关注",
-      "daysSinceActive": 48,
-      "lastActiveAt": "2026-04-01T13:29:25Z",
+      "daysSinceActive": 64,
+      "lastActiveAt": "2026-04-01T13:29:12Z",
       "latestCommit": {
         "sha": "710f4fffd58725ab9ba5c54a4bb5d790ab66ed3e",
-        "shortSha": "710f4ff",
         "message": "init",
         "committedAt": "2026-04-01T13:29:12Z",
         "author": "htazq",
@@ -2530,7 +2858,7 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq/shuake",
-          "updatedAt": "2026-04-01T13:29:25Z"
+          "updatedAt": "2026-04-01T13:29:12Z"
         }
       ],
       "metrics": {
@@ -2551,11 +2879,10 @@
       "categoryConfidence": 0.4,
       "status": "watch",
       "statusText": "关注",
-      "daysSinceActive": 64,
-      "lastActiveAt": "2026-03-16T13:57:21Z",
+      "daysSinceActive": 80,
+      "lastActiveAt": "2026-03-16T13:57:13Z",
       "latestCommit": {
         "sha": "405ed6e1d7a1380ee8a77619c564e87f3aa840fa",
-        "shortSha": "405ed6e",
         "message": "init",
         "committedAt": "2026-03-16T13:57:13Z",
         "author": "htazq",
@@ -2574,7 +2901,7 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq/ai-weekly-ext",
-          "updatedAt": "2026-03-16T13:57:21Z"
+          "updatedAt": "2026-03-16T13:57:13Z"
         }
       ],
       "metrics": {
@@ -2595,11 +2922,10 @@
       "categoryConfidence": 0.2,
       "status": "watch",
       "statusText": "关注",
-      "daysSinceActive": 69,
-      "lastActiveAt": "2026-03-12T01:17:23Z",
+      "daysSinceActive": 84,
+      "lastActiveAt": "2026-03-12T01:17:21Z",
       "latestCommit": {
         "sha": "82cf38ada65e118f3bc6e66108ed39a9482cb8ff",
-        "shortSha": "82cf38a",
         "message": "fix: use fully qualified qwen model id",
         "committedAt": "2026-03-12T01:17:21Z",
         "author": "htazq",
@@ -2618,7 +2944,7 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq/global-sentinel",
-          "updatedAt": "2026-03-12T01:17:23Z"
+          "updatedAt": "2026-03-12T01:17:21Z"
         }
       ],
       "metrics": {
@@ -2637,13 +2963,12 @@
       "fullName": "htazq/mq5-trading",
       "category": "金融",
       "categoryConfidence": 0.2,
-      "status": "watch",
-      "statusText": "关注",
-      "daysSinceActive": 77,
-      "lastActiveAt": "2026-03-03T15:19:14Z",
+      "status": "stale",
+      "statusText": "沉默",
+      "daysSinceActive": 92,
+      "lastActiveAt": "2026-03-03T15:11:58Z",
       "latestCommit": {
         "sha": "25ed1ca9455e51bb177c116c0690477ae24a6607",
-        "shortSha": "25ed1ca",
         "message": "chore: 清理产物并保留Alpha研究代码，更新README说明",
         "committedAt": "2026-03-03T15:11:58Z",
         "author": "htazq",
@@ -2662,7 +2987,7 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq/mq5-trading",
-          "updatedAt": "2026-03-03T15:19:14Z"
+          "updatedAt": "2026-03-03T15:11:58Z"
         }
       ],
       "metrics": {
@@ -2681,13 +3006,12 @@
       "fullName": "htazq/polymarket-ai-arb",
       "category": "金融",
       "categoryConfidence": 0.4,
-      "status": "watch",
-      "statusText": "关注",
-      "daysSinceActive": 79,
-      "lastActiveAt": "2026-03-02T08:14:27Z",
+      "status": "stale",
+      "statusText": "沉默",
+      "daysSinceActive": 94,
+      "lastActiveAt": "2026-03-02T08:12:45Z",
       "latestCommit": {
         "sha": "6abc7f9ac55c950fa98ea481954dd056686ff7b0",
-        "shortSha": "6abc7f9",
         "message": "feat: 60s scan loop and conditional LLM audit gate",
         "committedAt": "2026-03-02T08:12:45Z",
         "author": "htazq",
@@ -2706,51 +3030,7 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq/polymarket-ai-arb",
-          "updatedAt": "2026-03-02T08:14:27Z"
-        }
-      ],
-      "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0
-      },
-      "language": "Python",
-      "topics": [],
-      "homepage": ""
-    },
-    {
-      "key": "htazq/new-travding",
-      "owner": "htazq",
-      "name": "new-travding",
-      "fullName": "htazq/new-travding",
-      "category": "其他",
-      "categoryConfidence": 0,
-      "status": "watch",
-      "statusText": "关注",
-      "daysSinceActive": 80,
-      "lastActiveAt": "2026-02-28T17:26:14Z",
-      "latestCommit": {
-        "sha": "5dfdc5dda2404afc3bfe436e4059afa488ab72fa",
-        "shortSha": "5dfdc5d",
-        "message": "fix(stock-overnight): 修复股票临近收盘未强平的问题",
-        "committedAt": "2026-02-28T17:26:05Z",
-        "author": "htazq",
-        "url": "https://github.com/htazq/new-travding/commit/5dfdc5dda2404afc3bfe436e4059afa488ab72fa"
-      },
-      "contribution": null,
-      "isPrivate": true,
-      "description": "",
-      "platforms": [
-        "github"
-      ],
-      "primaryUrl": "https://github.com/htazq/new-travding",
-      "sources": [
-        {
-          "platform": "github",
-          "isPrivate": true,
-          "visibility": "Private",
-          "url": "https://github.com/htazq/new-travding",
-          "updatedAt": "2026-02-28T17:26:14Z"
+          "updatedAt": "2026-03-02T08:12:45Z"
         }
       ],
       "metrics": {
@@ -2769,14 +3049,13 @@
       "fullName": "htazq/openclaw-memory",
       "category": "AI",
       "categoryConfidence": 0.2,
-      "status": "watch",
-      "statusText": "关注",
-      "daysSinceActive": 80,
-      "lastActiveAt": "2026-02-28T10:00:13Z",
+      "status": "stale",
+      "statusText": "沉默",
+      "daysSinceActive": 96,
+      "lastActiveAt": "2026-02-28T10:00:11Z",
       "latestCommit": {
         "sha": "c4f1aeab7e58089e36b7fdb4492b82f3295c242f",
-        "shortSha": "c4f1aea",
-        "message": "sync: 编排系统约定 + 模型更新 + 心跳监控 + 日记同步",
+        "message": "sync: 编排系统约定 + 模型更新 + 心跳监控 + 日记同步\n\n- MEMORY.md: 新增编排系统约定（稳定性/智能性/可用性）\n  - Ralph Loop 失败重试逻辑\n  - 模型自动路由规则（opus/codex/gemini/qwen）\n  - 响应可靠性约定（8秒ACK、分级熔断、进度播报）\n  - 通知策略（只在需要决策时推送）\n- MEMORY.md: 主3更新为 gemini-3.1-pro-high，主4新增 qwen3.5\n- HEARTBEAT.md: 配置子任务监控 + 系统健康检查\n- memory/: 同步近期日记文件",
         "committedAt": "2026-02-28T10:00:11Z",
         "author": "htazq",
         "url": "https://github.com/htazq/openclaw-memory/commit/c4f1aeab7e58089e36b7fdb4492b82f3295c242f"
@@ -2794,7 +3073,7 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq/openclaw-memory",
-          "updatedAt": "2026-02-28T10:00:13Z"
+          "updatedAt": "2026-02-28T10:00:11Z"
         }
       ],
       "metrics": {
@@ -2813,14 +3092,13 @@
       "fullName": "htazq/openclaw-orchestrator",
       "category": "AI",
       "categoryConfidence": 0.4,
-      "status": "watch",
-      "statusText": "关注",
-      "daysSinceActive": 80,
-      "lastActiveAt": "2026-02-28T09:42:45Z",
+      "status": "stale",
+      "statusText": "沉默",
+      "daysSinceActive": 96,
+      "lastActiveAt": "2026-02-28T09:42:42Z",
       "latestCommit": {
         "sha": "2e3c88ad4ac1313f372f1f49e77780a946483d92",
-        "shortSha": "2e3c88a",
-        "message": "feat: update orchestration config - model routing, Ralph Loop, docs",
+        "message": "feat: update orchestration config - model routing, Ralph Loop, docs\n\n- Updated models.yaml with detailed routing rules matching MEMORY.md\n- Added Ralph Loop retry categories and subtask timeouts\n- Added docs/ORCHESTRATION.md with full orchestration system documentation\n- Covers stability, intelligence, usability pillars",
         "committedAt": "2026-02-28T09:42:42Z",
         "author": "htazq",
         "url": "https://github.com/htazq/openclaw-orchestrator/commit/2e3c88ad4ac1313f372f1f49e77780a946483d92"
@@ -2838,7 +3116,7 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq/openclaw-orchestrator",
-          "updatedAt": "2026-02-28T09:42:45Z"
+          "updatedAt": "2026-02-28T09:42:42Z"
         }
       ],
       "metrics": {
@@ -2857,13 +3135,12 @@
       "fullName": "htazq/china-travding",
       "category": "其他",
       "categoryConfidence": 0,
-      "status": "watch",
-      "statusText": "关注",
-      "daysSinceActive": 81,
-      "lastActiveAt": "2026-02-28T02:34:43Z",
+      "status": "stale",
+      "statusText": "沉默",
+      "daysSinceActive": 96,
+      "lastActiveAt": "2026-02-28T02:33:14Z",
       "latestCommit": {
         "sha": "b4ed9916a10ff59b6188edb1ff0cffe40b17d3a4",
-        "shortSha": "b4ed991",
         "message": "init",
         "committedAt": "2026-02-28T02:33:14Z",
         "author": "htazq",
@@ -2882,7 +3159,7 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq/china-travding",
-          "updatedAt": "2026-02-28T02:34:43Z"
+          "updatedAt": "2026-02-28T02:33:14Z"
         }
       ],
       "metrics": {
@@ -2901,13 +3178,12 @@
       "fullName": "htazq/automation",
       "category": "脚本",
       "categoryConfidence": 0.4,
-      "status": "watch",
-      "statusText": "关注",
-      "daysSinceActive": 82,
-      "lastActiveAt": "2026-02-26T09:48:44Z",
+      "status": "stale",
+      "statusText": "沉默",
+      "daysSinceActive": 98,
+      "lastActiveAt": "2026-02-26T09:48:37Z",
       "latestCommit": {
         "sha": "a30cbbbb65e93a4f3e3baf01e930c6e02e2a98d7",
-        "shortSha": "a30cbbb",
         "message": "修改条件",
         "committedAt": "2026-02-26T09:48:37Z",
         "author": "htazq",
@@ -2926,7 +3202,7 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq/automation",
-          "updatedAt": "2026-02-26T09:48:44Z"
+          "updatedAt": "2026-02-26T09:48:37Z"
         }
       ],
       "metrics": {
@@ -2945,13 +3221,12 @@
       "fullName": "htazq/relay",
       "category": "其他",
       "categoryConfidence": 0,
-      "status": "watch",
-      "statusText": "关注",
-      "daysSinceActive": 84,
-      "lastActiveAt": "2026-02-24T10:08:58Z",
+      "status": "stale",
+      "statusText": "沉默",
+      "daysSinceActive": 100,
+      "lastActiveAt": "2026-02-24T10:08:49Z",
       "latestCommit": {
         "sha": "4771a3e32f53bf4ad7adcbc514acc24a6d16531e",
-        "shortSha": "4771a3e",
         "message": "mobaxterm庚哥",
         "committedAt": "2026-02-24T10:08:49Z",
         "author": "htazq",
@@ -2970,7 +3245,7 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq/relay",
-          "updatedAt": "2026-02-24T10:08:58Z"
+          "updatedAt": "2026-02-24T10:08:49Z"
         }
       ],
       "metrics": {
@@ -2989,13 +3264,12 @@
       "fullName": "htazq/follow-orders",
       "category": "金融",
       "categoryConfidence": 0.2,
-      "status": "watch",
-      "statusText": "关注",
-      "daysSinceActive": 84,
-      "lastActiveAt": "2026-02-24T10:00:01Z",
+      "status": "stale",
+      "statusText": "沉默",
+      "daysSinceActive": 100,
+      "lastActiveAt": "2026-02-24T09:59:49Z",
       "latestCommit": {
         "sha": "f11618ddb946a07d71aee1d6a05da23021b4f65e",
-        "shortSha": "f11618d",
         "message": "feat(mapping): keep bidirectional rules with ordered multi-candidate resolution",
         "committedAt": "2026-02-24T09:59:49Z",
         "author": "htazq",
@@ -3014,7 +3288,7 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq/follow-orders",
-          "updatedAt": "2026-02-24T10:00:01Z"
+          "updatedAt": "2026-02-24T09:59:49Z"
         }
       ],
       "metrics": {
@@ -3033,13 +3307,12 @@
       "fullName": "htazq/travding",
       "category": "其他",
       "categoryConfidence": 0,
-      "status": "watch",
-      "statusText": "关注",
-      "daysSinceActive": 84,
-      "lastActiveAt": "2026-02-24T09:55:09Z",
+      "status": "stale",
+      "statusText": "沉默",
+      "daysSinceActive": 100,
+      "lastActiveAt": "2026-02-24T09:55:04Z",
       "latestCommit": {
         "sha": "c63049c8ec1fecd04f8dfa1bac6318b89c1e0c02",
-        "shortSha": "c63049c",
         "message": "Add files via upload",
         "committedAt": "2026-02-24T09:55:04Z",
         "author": "htazq",
@@ -3058,7 +3331,7 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq/travding",
-          "updatedAt": "2026-02-24T09:55:09Z"
+          "updatedAt": "2026-02-24T09:55:04Z"
         }
       ],
       "metrics": {
@@ -3077,13 +3350,12 @@
       "fullName": "htazq/go_test_W",
       "category": "其他",
       "categoryConfidence": 0,
-      "status": "watch",
-      "statusText": "关注",
-      "daysSinceActive": 89,
-      "lastActiveAt": "2026-02-20T03:30:32Z",
+      "status": "stale",
+      "statusText": "沉默",
+      "daysSinceActive": 104,
+      "lastActiveAt": "2026-02-20T03:30:27Z",
       "latestCommit": {
         "sha": "7a97180eb5528d201e87e58158a06c8a2efd264a",
-        "shortSha": "7a97180",
         "message": "🔄 自动同步 Worker 版本: v4.1.3",
         "committedAt": "2026-02-20T03:30:27Z",
         "author": "github-actions[bot]",
@@ -3102,7 +3374,7 @@
           "isPrivate": false,
           "visibility": "Public",
           "url": "https://github.com/htazq/go_test_W",
-          "updatedAt": "2026-02-20T03:30:32Z"
+          "updatedAt": "2026-02-20T03:30:27Z"
         }
       ],
       "metrics": {
@@ -3121,13 +3393,12 @@
       "fullName": "htazq/crypto-cross-sectional-momentum",
       "category": "金融",
       "categoryConfidence": 0.2,
-      "status": "watch",
-      "statusText": "关注",
-      "daysSinceActive": 90,
-      "lastActiveAt": "2026-02-19T05:18:09Z",
+      "status": "stale",
+      "statusText": "沉默",
+      "daysSinceActive": 105,
+      "lastActiveAt": "2026-02-19T05:17:46Z",
       "latestCommit": {
         "sha": "7f993f0d9d1a51b06ae3b97824f5eaadf378b313",
-        "shortSha": "7f993f0",
         "message": "chore: initialize crypto cross-sectional momentum research repo",
         "committedAt": "2026-02-19T05:17:46Z",
         "author": "htazq",
@@ -3146,7 +3417,7 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq/crypto-cross-sectional-momentum",
-          "updatedAt": "2026-02-19T05:18:09Z"
+          "updatedAt": "2026-02-19T05:17:46Z"
         }
       ],
       "metrics": {
@@ -3167,11 +3438,10 @@
       "categoryConfidence": 0,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 92,
-      "lastActiveAt": "2026-02-17T02:19:39Z",
+      "daysSinceActive": 107,
+      "lastActiveAt": "2026-02-17T02:19:36Z",
       "latestCommit": {
         "sha": "4f199035e3ae086d2de0a5af68cd95a013f91363",
-        "shortSha": "4f19903",
         "message": "feat: 初始化 Skill 自动转动画视频开箱即用仓库",
         "committedAt": "2026-02-17T02:19:36Z",
         "author": "htazq",
@@ -3190,7 +3460,7 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq/skill-to-animation-studio",
-          "updatedAt": "2026-02-17T02:19:39Z"
+          "updatedAt": "2026-02-17T02:19:36Z"
         }
       ],
       "metrics": {
@@ -3211,11 +3481,10 @@
       "categoryConfidence": 0.2,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 96,
-      "lastActiveAt": "2026-02-12T14:04:08Z",
+      "daysSinceActive": 111,
+      "lastActiveAt": "2026-02-12T14:02:31Z",
       "latestCommit": {
         "sha": "e8aebfcd2982bfbec748bde0edcda940f5f22517",
-        "shortSha": "e8aebfc",
         "message": "修复板块严格链路并完善评分缓存测试文档",
         "committedAt": "2026-02-12T14:02:31Z",
         "author": "htazq",
@@ -3234,7 +3503,7 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq/A-Stock-Screening",
-          "updatedAt": "2026-02-12T14:04:08Z"
+          "updatedAt": "2026-02-12T14:02:31Z"
         }
       ],
       "metrics": {
@@ -3255,11 +3524,10 @@
       "categoryConfidence": 0,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 109,
-      "lastActiveAt": "2026-01-30T09:29:42Z",
+      "daysSinceActive": 125,
+      "lastActiveAt": "2026-01-30T09:29:32Z",
       "latestCommit": {
         "sha": "927356589ebec840c538850234311cd143a6d273",
-        "shortSha": "9273565",
         "message": "修复分页抓取",
         "committedAt": "2026-01-30T09:29:32Z",
         "author": "htazq",
@@ -3278,7 +3546,7 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq/yingdao",
-          "updatedAt": "2026-01-30T09:29:42Z"
+          "updatedAt": "2026-01-30T09:29:32Z"
         }
       ],
       "metrics": {
@@ -3299,11 +3567,10 @@
       "categoryConfidence": 0,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 114,
-      "lastActiveAt": "2026-01-26T07:10:16Z",
+      "daysSinceActive": 129,
+      "lastActiveAt": "2026-01-26T07:09:57Z",
       "latestCommit": {
         "sha": "c47d0786948ce33f805949833c62d71878305d2a",
-        "shortSha": "c47d078",
         "message": "修正sqlite路径解析避免落到容器内部",
         "committedAt": "2026-01-26T07:09:57Z",
         "author": "htazq",
@@ -3322,7 +3589,7 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq/catalystx-api",
-          "updatedAt": "2026-01-26T07:10:16Z"
+          "updatedAt": "2026-01-26T07:09:57Z"
         }
       ],
       "metrics": {
@@ -3343,11 +3610,10 @@
       "categoryConfidence": 0.2,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 115,
-      "lastActiveAt": "2026-01-24T12:50:06Z",
+      "daysSinceActive": 131,
+      "lastActiveAt": "2026-01-24T12:43:43Z",
       "latestCommit": {
         "sha": "0cba08bbc13e136bc4ce3aa56f9556cb76364137",
-        "shortSha": "0cba08b",
         "message": "Feat: Implement backend-driven usage billing with admin config",
         "committedAt": "2026-01-24T12:43:43Z",
         "author": "htazq",
@@ -3367,7 +3633,7 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq/openwebui-auth",
-          "updatedAt": "2026-01-24T12:50:06Z"
+          "updatedAt": "2026-01-24T12:43:43Z"
         },
         {
           "platform": "cnb",
@@ -3395,11 +3661,10 @@
       "categoryConfidence": 0.2,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 121,
-      "lastActiveAt": "2026-01-18T13:54:03Z",
+      "daysSinceActive": 137,
+      "lastActiveAt": "2026-01-18T13:53:48Z",
       "latestCommit": {
         "sha": "515b6592b36ff79dfcec700abde34f52de14ed90",
-        "shortSha": "515b659",
         "message": "新增因子解释与回测可视化，完善训练输出",
         "committedAt": "2026-01-18T13:53:48Z",
         "author": "htazq",
@@ -3418,7 +3683,7 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq/AlphaGPT_mt5",
-          "updatedAt": "2026-01-18T13:54:03Z"
+          "updatedAt": "2026-01-18T13:53:48Z"
         }
       ],
       "metrics": {
@@ -3439,11 +3704,10 @@
       "categoryConfidence": 0,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 131,
-      "lastActiveAt": "2026-01-09T09:08:49Z",
+      "daysSinceActive": 146,
+      "lastActiveAt": "2026-01-09T09:08:43Z",
       "latestCommit": {
         "sha": "e0d78a551d444d2b2ddd2192145ff325cb007308",
-        "shortSha": "e0d78a5",
         "message": "init",
         "committedAt": "2026-01-09T09:08:43Z",
         "author": "htazq",
@@ -3462,7 +3726,7 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq/nofx_strategy",
-          "updatedAt": "2026-01-09T09:08:49Z"
+          "updatedAt": "2026-01-09T09:08:43Z"
         }
       ],
       "metrics": {
@@ -3483,11 +3747,10 @@
       "categoryConfidence": 0.6,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 133,
-      "lastActiveAt": "2026-01-06T11:54:22Z",
+      "daysSinceActive": 149,
+      "lastActiveAt": "2026-01-06T11:54:18Z",
       "latestCommit": {
         "sha": "4b9d2fc928834fbfc0ca844d18a6a92702c6fd53",
-        "shortSha": "4b9d2fc",
         "message": "Update README.md",
         "committedAt": "2026-01-06T11:54:18Z",
         "author": "htazq",
@@ -3506,11 +3769,11 @@
           "isPrivate": false,
           "visibility": "Public",
           "url": "https://github.com/htazq/Auto",
-          "updatedAt": "2026-01-06T11:54:22Z"
+          "updatedAt": "2026-01-06T11:54:18Z"
         }
       ],
       "metrics": {
-        "stars": 0,
+        "stars": 1,
         "forks": 0,
         "openIssues": 0
       },
@@ -3527,7 +3790,7 @@
       "categoryConfidence": 0.4,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 171,
+      "daysSinceActive": 187,
       "lastActiveAt": "2025-11-29T12:06:15Z",
       "latestCommit": null,
       "contribution": null,
@@ -3556,58 +3819,6 @@
       "homepage": ""
     },
     {
-      "key": "htazq/www",
-      "owner": "htazq",
-      "name": "www",
-      "fullName": "htazq/www",
-      "category": "脚本",
-      "categoryConfidence": 0.2,
-      "status": "stale",
-      "statusText": "沉默",
-      "daysSinceActive": 173,
-      "lastActiveAt": "2025-11-28T05:40:03Z",
-      "latestCommit": {
-        "sha": "5d0c5806fe3b2c832a03e2de5721840bc665f21b",
-        "shortSha": "5d0c580",
-        "message": "feat: 随机选择初始语录，避免每次都从第一条开始显示",
-        "committedAt": "2025-11-28T05:39:52Z",
-        "author": "cnb.Z89F8fq0hPA",
-        "url": "https://github.com/htazq/www/commit/5d0c5806fe3b2c832a03e2de5721840bc665f21b"
-      },
-      "contribution": null,
-      "isPrivate": true,
-      "description": "",
-      "platforms": [
-        "github",
-        "cnb"
-      ],
-      "primaryUrl": "https://github.com/htazq/www",
-      "sources": [
-        {
-          "platform": "github",
-          "isPrivate": true,
-          "visibility": "Private",
-          "url": "https://github.com/htazq/www",
-          "updatedAt": "2025-11-28T05:40:03Z"
-        },
-        {
-          "platform": "cnb",
-          "isPrivate": true,
-          "visibility": "Private",
-          "url": "https://cnb.cool/htazq/www",
-          "updatedAt": "2025-11-20T02:43:23Z"
-        }
-      ],
-      "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0
-      },
-      "language": "TypeScript",
-      "topics": [],
-      "homepage": ""
-    },
-    {
       "key": "htazq/docker-image",
       "owner": "htazq",
       "name": "docker-image",
@@ -3616,7 +3827,7 @@
       "categoryConfidence": 0.6,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 173,
+      "daysSinceActive": 189,
       "lastActiveAt": "2025-11-27T13:11:21Z",
       "latestCommit": null,
       "contribution": null,
@@ -3653,12 +3864,11 @@
       "categoryConfidence": 0.4,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 175,
-      "lastActiveAt": "2025-11-25T09:33:49Z",
+      "daysSinceActive": 191,
+      "lastActiveAt": "2025-11-25T09:33:44Z",
       "latestCommit": {
         "sha": "cf88d243eb940826fa5a690cd32f55b6b99ea1c7",
-        "shortSha": "cf88d24",
-        "message": "feat: Implement interactive cropping and background color",
+        "message": "feat: Implement interactive cropping and background color\n\nIntroduce a new function `generateCroppedImage` for interactive image cropping with pan and zoom functionality. Update the UI to include controls for background color, AI background replacement mode, and tolerance. Refactor image processing to utilize the new cropping capabilities.",
         "committedAt": "2025-11-25T09:33:44Z",
         "author": "htazq",
         "url": "https://github.com/htazq/ai-image-process/commit/cf88d243eb940826fa5a690cd32f55b6b99ea1c7"
@@ -3676,7 +3886,7 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq/ai-image-process",
-          "updatedAt": "2025-11-25T09:33:49Z"
+          "updatedAt": "2025-11-25T09:33:44Z"
         }
       ],
       "metrics": {
@@ -3697,11 +3907,10 @@
       "categoryConfidence": 0.2,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 176,
-      "lastActiveAt": "2025-11-25T07:42:29Z",
+      "daysSinceActive": 191,
+      "lastActiveAt": "2025-11-25T07:42:14Z",
       "latestCommit": {
         "sha": "6f06d7f8bc22b00a612e64875d81099f0c1338b2",
-        "shortSha": "6f06d7f",
         "message": "feat: 更新部署配置和演示站点地址",
         "committedAt": "2025-11-25T07:42:14Z",
         "author": "htazq",
@@ -3721,7 +3930,7 @@
           "isPrivate": false,
           "visibility": "Public",
           "url": "https://github.com/htazq/View-IP",
-          "updatedAt": "2025-11-25T07:42:29Z"
+          "updatedAt": "2025-11-25T07:42:14Z"
         },
         {
           "platform": "cnb",
@@ -3738,7 +3947,7 @@
       },
       "language": "JavaScript",
       "topics": [],
-      "homepage": ""
+      "homepage": "https://ip.at9.net"
     },
     {
       "key": "htazq/container-mirror-for-china",
@@ -3749,11 +3958,10 @@
       "categoryConfidence": 0.2,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 176,
-      "lastActiveAt": "2025-11-25T07:05:40Z",
+      "daysSinceActive": 191,
+      "lastActiveAt": "2025-11-25T07:05:36Z",
       "latestCommit": {
         "sha": "2aa163d60b22445b94a6294330df3134661200ce",
-        "shortSha": "2aa163d",
         "message": "Update deployment instructions in README.md",
         "committedAt": "2025-11-25T07:05:36Z",
         "author": "htazq",
@@ -3772,11 +3980,11 @@
           "isPrivate": false,
           "visibility": "Public",
           "url": "https://github.com/htazq/container-mirror-for-china",
-          "updatedAt": "2025-11-25T07:05:40Z"
+          "updatedAt": "2025-11-25T07:05:36Z"
         }
       ],
       "metrics": {
-        "stars": 0,
+        "stars": 1,
         "forks": 0,
         "openIssues": 0
       },
@@ -3793,7 +4001,7 @@
       "categoryConfidence": 0,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 179,
+      "daysSinceActive": 195,
       "lastActiveAt": "2025-11-21T13:43:17Z",
       "latestCommit": null,
       "contribution": null,
@@ -3830,7 +4038,7 @@
       "categoryConfidence": 0.2,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 179,
+      "daysSinceActive": 195,
       "lastActiveAt": "2025-11-21T13:27:29Z",
       "latestCommit": null,
       "contribution": null,
@@ -3867,7 +4075,7 @@
       "categoryConfidence": 0,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 179,
+      "daysSinceActive": 195,
       "lastActiveAt": "2025-11-21T13:22:51Z",
       "latestCommit": null,
       "contribution": null,
@@ -3904,7 +4112,7 @@
       "categoryConfidence": 0,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 180,
+      "daysSinceActive": 195,
       "lastActiveAt": "2025-11-21T02:18:40Z",
       "latestCommit": null,
       "contribution": null,
@@ -3933,470 +4141,6 @@
       "homepage": ""
     },
     {
-      "key": "htazq/rust",
-      "owner": "htazq",
-      "name": "rust",
-      "fullName": "htazq/rust",
-      "category": "其他",
-      "categoryConfidence": 0,
-      "status": "stale",
-      "statusText": "沉默",
-      "daysSinceActive": 180,
-      "lastActiveAt": "2025-11-21T02:03:28Z",
-      "latestCommit": {
-        "sha": "21ffa6b3e9d8208f9ec6bcaffea68a7403e63237",
-        "shortSha": "21ffa6b",
-        "message": "添加项目架构分析文档和清理临时文件",
-        "committedAt": "2025-09-06T10:26:38Z",
-        "author": "htazq",
-        "url": "https://github.com/htazq/rust/commit/21ffa6b3e9d8208f9ec6bcaffea68a7403e63237"
-      },
-      "contribution": null,
-      "isPrivate": true,
-      "description": "",
-      "platforms": [
-        "github"
-      ],
-      "primaryUrl": "https://github.com/htazq/rust",
-      "sources": [
-        {
-          "platform": "github",
-          "isPrivate": true,
-          "visibility": "Private",
-          "url": "https://github.com/htazq/rust",
-          "updatedAt": "2025-11-21T02:03:28Z"
-        }
-      ],
-      "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0
-      },
-      "language": "Rust",
-      "topics": [],
-      "homepage": ""
-    },
-    {
-      "key": "htazq/offlinepack",
-      "owner": "htazq",
-      "name": "OfflinePack",
-      "fullName": "htazq/OfflinePack",
-      "category": "网站",
-      "categoryConfidence": 0.2,
-      "status": "stale",
-      "statusText": "沉默",
-      "daysSinceActive": 180,
-      "lastActiveAt": "2025-11-21T02:02:48Z",
-      "latestCommit": {
-        "sha": "5b7bbe041f531ba49a9a74c1dcf8632a5cff68ac",
-        "shortSha": "5b7bbe0",
-        "message": "Initial commit",
-        "committedAt": "2025-10-27T09:07:53Z",
-        "author": "htazq",
-        "url": "https://github.com/htazq/OfflinePack/commit/5b7bbe041f531ba49a9a74c1dcf8632a5cff68ac"
-      },
-      "contribution": null,
-      "isPrivate": false,
-      "description": "Build offline dependency packages for air-gapped Linux environments",
-      "platforms": [
-        "github"
-      ],
-      "primaryUrl": "https://github.com/htazq/OfflinePack",
-      "sources": [
-        {
-          "platform": "github",
-          "isPrivate": false,
-          "visibility": "Public",
-          "url": "https://github.com/htazq/OfflinePack",
-          "updatedAt": "2025-11-21T02:02:48Z"
-        }
-      ],
-      "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0
-      },
-      "language": "",
-      "topics": [],
-      "homepage": ""
-    },
-    {
-      "key": "htazq/my_www",
-      "owner": "htazq",
-      "name": "my_www",
-      "fullName": "htazq/my_www",
-      "category": "网站",
-      "categoryConfidence": 0.2,
-      "status": "stale",
-      "statusText": "沉默",
-      "daysSinceActive": 180,
-      "lastActiveAt": "2025-11-21T02:01:07Z",
-      "latestCommit": {
-        "sha": "5aa852deb0c3d7106cdb0f57ac538d73b064445c",
-        "shortSha": "5aa852d",
-        "message": "Merge branch 'main' of https://github.com/htazq/my_www",
-        "committedAt": "2025-03-06T05:46:39Z",
-        "author": "htazq",
-        "url": "https://github.com/htazq/my_www/commit/5aa852deb0c3d7106cdb0f57ac538d73b064445c"
-      },
-      "contribution": null,
-      "isPrivate": true,
-      "description": "",
-      "platforms": [
-        "github"
-      ],
-      "primaryUrl": "https://github.com/htazq/my_www",
-      "sources": [
-        {
-          "platform": "github",
-          "isPrivate": true,
-          "visibility": "Private",
-          "url": "https://github.com/htazq/my_www",
-          "updatedAt": "2025-11-21T02:01:07Z"
-        }
-      ],
-      "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0
-      },
-      "language": "Vue",
-      "topics": [],
-      "homepage": ""
-    },
-    {
-      "key": "htazq/my-content-creation-kit",
-      "owner": "htazq",
-      "name": "my-content-creation-kit",
-      "fullName": "htazq/my-content-creation-kit",
-      "category": "其他",
-      "categoryConfidence": 0,
-      "status": "stale",
-      "statusText": "沉默",
-      "daysSinceActive": 180,
-      "lastActiveAt": "2025-11-21T01:59:43Z",
-      "latestCommit": {
-        "sha": "25f043aae8ab1895f1af6529fa3e515bc6fff03e",
-        "shortSha": "25f043a",
-        "message": "自动生成内容: 2025-07-05 到 2025-07-05",
-        "committedAt": "2025-07-04T09:42:40Z",
-        "author": "GitHub Actions Bot",
-        "url": "https://github.com/htazq/my-content-creation-kit/commit/25f043aae8ab1895f1af6529fa3e515bc6fff03e"
-      },
-      "contribution": null,
-      "isPrivate": true,
-      "description": "",
-      "platforms": [
-        "github"
-      ],
-      "primaryUrl": "https://github.com/htazq/my-content-creation-kit",
-      "sources": [
-        {
-          "platform": "github",
-          "isPrivate": true,
-          "visibility": "Private",
-          "url": "https://github.com/htazq/my-content-creation-kit",
-          "updatedAt": "2025-11-21T01:59:43Z"
-        }
-      ],
-      "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0
-      },
-      "language": "Python",
-      "topics": [],
-      "homepage": ""
-    },
-    {
-      "key": "htazq/k8s",
-      "owner": "htazq",
-      "name": "k8s",
-      "fullName": "htazq/k8s",
-      "category": "脚本",
-      "categoryConfidence": 0.2,
-      "status": "stale",
-      "statusText": "沉默",
-      "daysSinceActive": 180,
-      "lastActiveAt": "2025-11-21T01:58:42Z",
-      "latestCommit": {
-        "sha": "86978e229917c803d00dc3b889110d834f8f3cb4",
-        "shortSha": "86978e2",
-        "message": "优化dzot-mirror",
-        "committedAt": "2025-11-09T14:21:22Z",
-        "author": "htazq",
-        "url": "https://github.com/htazq/k8s/commit/86978e229917c803d00dc3b889110d834f8f3cb4"
-      },
-      "contribution": {
-        "total": 1,
-        "opened": 0,
-        "merged": 1,
-        "closed": 0,
-        "latest": {
-          "number": 1,
-          "title": "Jules was unable to complete the task in time. Please review the work…",
-          "state": "merged",
-          "updatedAt": "2025-06-16T12:05:20Z",
-          "url": "https://github.com/htazq/k8s/pull/1"
-        }
-      },
-      "isPrivate": true,
-      "description": "",
-      "platforms": [
-        "github"
-      ],
-      "primaryUrl": "https://github.com/htazq/k8s",
-      "sources": [
-        {
-          "platform": "github",
-          "isPrivate": true,
-          "visibility": "Private",
-          "url": "https://github.com/htazq/k8s",
-          "updatedAt": "2025-11-21T01:58:42Z"
-        }
-      ],
-      "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0
-      },
-      "language": "Shell",
-      "topics": [],
-      "homepage": ""
-    },
-    {
-      "key": "htazq/juzi",
-      "owner": "htazq",
-      "name": "juzi",
-      "fullName": "htazq/juzi",
-      "category": "脚本",
-      "categoryConfidence": 0.2,
-      "status": "stale",
-      "statusText": "沉默",
-      "daysSinceActive": 180,
-      "lastActiveAt": "2025-11-21T01:57:10Z",
-      "latestCommit": {
-        "sha": "22d9e0aab18995e43d72bd6db469cc3b80dc33a4",
-        "shortSha": "22d9e0a",
-        "message": "暂存",
-        "committedAt": "2025-07-26T14:18:19Z",
-        "author": "htazq",
-        "url": "https://github.com/htazq/juzi/commit/22d9e0aab18995e43d72bd6db469cc3b80dc33a4"
-      },
-      "contribution": null,
-      "isPrivate": true,
-      "description": "",
-      "platforms": [
-        "github"
-      ],
-      "primaryUrl": "https://github.com/htazq/juzi",
-      "sources": [
-        {
-          "platform": "github",
-          "isPrivate": true,
-          "visibility": "Private",
-          "url": "https://github.com/htazq/juzi",
-          "updatedAt": "2025-11-21T01:57:10Z"
-        }
-      ],
-      "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0
-      },
-      "language": "TypeScript",
-      "topics": [],
-      "homepage": ""
-    },
-    {
-      "key": "htazq/hugo-blog",
-      "owner": "htazq",
-      "name": "hugo-blog",
-      "fullName": "htazq/hugo-blog",
-      "category": "网站",
-      "categoryConfidence": 0.4,
-      "status": "stale",
-      "statusText": "沉默",
-      "daysSinceActive": 180,
-      "lastActiveAt": "2025-11-21T01:56:45Z",
-      "latestCommit": {
-        "sha": "d349ffcb58de8e7556f572e6e3c87d8ade3fde5c",
-        "shortSha": "d349ffc",
-        "message": "Create USTECm_20250222_0601.md",
-        "committedAt": "2025-02-21T22:01:30Z",
-        "author": "htazq",
-        "url": "https://github.com/htazq/hugo-blog/commit/d349ffcb58de8e7556f572e6e3c87d8ade3fde5c"
-      },
-      "contribution": null,
-      "isPrivate": true,
-      "description": "",
-      "platforms": [
-        "github"
-      ],
-      "primaryUrl": "https://github.com/htazq/hugo-blog",
-      "sources": [
-        {
-          "platform": "github",
-          "isPrivate": true,
-          "visibility": "Private",
-          "url": "https://github.com/htazq/hugo-blog",
-          "updatedAt": "2025-11-21T01:56:45Z"
-        }
-      ],
-      "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0
-      },
-      "language": "HTML",
-      "topics": [],
-      "homepage": ""
-    },
-    {
-      "key": "htazq/helm-v2ray",
-      "owner": "htazq",
-      "name": "helm-v2ray",
-      "fullName": "htazq/helm-v2ray",
-      "category": "其他",
-      "categoryConfidence": 0,
-      "status": "stale",
-      "statusText": "沉默",
-      "daysSinceActive": 180,
-      "lastActiveAt": "2025-11-21T01:54:28Z",
-      "latestCommit": {
-        "sha": "b8b3e99f29a5927a18df7fc6094c319d9acab3e3",
-        "shortSha": "b8b3e99",
-        "message": "优化cf",
-        "committedAt": "2025-04-07T10:10:44Z",
-        "author": "htazq",
-        "url": "https://github.com/htazq/helm-v2ray/commit/b8b3e99f29a5927a18df7fc6094c319d9acab3e3"
-      },
-      "contribution": null,
-      "isPrivate": false,
-      "description": "用 Helm 部署 V2Ray 的项目",
-      "platforms": [
-        "github"
-      ],
-      "primaryUrl": "https://github.com/htazq/helm-v2ray",
-      "sources": [
-        {
-          "platform": "github",
-          "isPrivate": false,
-          "visibility": "Public",
-          "url": "https://github.com/htazq/helm-v2ray",
-          "updatedAt": "2025-11-21T01:54:28Z"
-        }
-      ],
-      "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0
-      },
-      "language": "Python",
-      "topics": [],
-      "homepage": ""
-    },
-    {
-      "key": "htazq/hello-world-webapp",
-      "owner": "htazq",
-      "name": "hello-world-webapp",
-      "fullName": "htazq/hello-world-webapp",
-      "category": "网站",
-      "categoryConfidence": 0.2,
-      "status": "stale",
-      "statusText": "沉默",
-      "daysSinceActive": 180,
-      "lastActiveAt": "2025-11-21T01:54:08Z",
-      "latestCommit": {
-        "sha": "4364f0f8f72ef0b9c362f4821256b427f13973ff",
-        "shortSha": "4364f0f",
-        "message": "test",
-        "committedAt": "2025-04-21T10:19:53Z",
-        "author": "htazq",
-        "url": "https://github.com/htazq/hello-world-webapp/commit/4364f0f8f72ef0b9c362f4821256b427f13973ff"
-      },
-      "contribution": null,
-      "isPrivate": false,
-      "description": "",
-      "platforms": [
-        "github"
-      ],
-      "primaryUrl": "https://github.com/htazq/hello-world-webapp",
-      "sources": [
-        {
-          "platform": "github",
-          "isPrivate": false,
-          "visibility": "Public",
-          "url": "https://github.com/htazq/hello-world-webapp",
-          "updatedAt": "2025-11-21T01:54:08Z"
-        }
-      ],
-      "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0
-      },
-      "language": "Python",
-      "topics": [],
-      "homepage": ""
-    },
-    {
-      "key": "htazq/4x4-chess",
-      "owner": "htazq",
-      "name": "4x4-chess",
-      "fullName": "htazq/4x4-chess",
-      "category": "脚本",
-      "categoryConfidence": 0.2,
-      "status": "stale",
-      "statusText": "沉默",
-      "daysSinceActive": 180,
-      "lastActiveAt": "2025-11-21T01:51:14Z",
-      "latestCommit": {
-        "sha": "9ea3f34da5f71d6bf4828cad09fd97e175777bda",
-        "shortSha": "9ea3f34",
-        "message": "解决Redis配置合并冲突 - 采用Headless Service方案",
-        "committedAt": "2025-08-16T04:49:06Z",
-        "author": "htazq",
-        "url": "https://github.com/htazq/4x4-chess/commit/9ea3f34da5f71d6bf4828cad09fd97e175777bda"
-      },
-      "contribution": {
-        "total": 2,
-        "opened": 0,
-        "merged": 2,
-        "closed": 0,
-        "latest": {
-          "number": 2,
-          "title": "特性: 完成Taro/Vue3射箭棋重构（4x4棋盘及详细规则对齐）",
-          "state": "merged",
-          "updatedAt": "2025-05-28T13:13:58Z",
-          "url": "https://github.com/htazq/4x4-chess/pull/2"
-        }
-      },
-      "isPrivate": true,
-      "description": "16子",
-      "platforms": [
-        "github"
-      ],
-      "primaryUrl": "https://github.com/htazq/4x4-chess",
-      "sources": [
-        {
-          "platform": "github",
-          "isPrivate": true,
-          "visibility": "Private",
-          "url": "https://github.com/htazq/4x4-chess",
-          "updatedAt": "2025-11-21T01:51:14Z"
-        }
-      ],
-      "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0
-      },
-      "language": "JavaScript",
-      "topics": [],
-      "homepage": ""
-    },
-    {
       "key": "htazq/image",
       "owner": "htazq",
       "name": "image",
@@ -4405,7 +4149,7 @@
       "categoryConfidence": 0.4,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 180,
+      "daysSinceActive": 195,
       "lastActiveAt": "2025-11-20T16:32:56Z",
       "latestCommit": null,
       "contribution": null,
@@ -4442,7 +4186,7 @@
       "categoryConfidence": 0.2,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 180,
+      "daysSinceActive": 195,
       "lastActiveAt": "2025-11-20T14:16:40Z",
       "latestCommit": null,
       "contribution": null,
@@ -4479,7 +4223,7 @@
       "categoryConfidence": 0,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 183,
+      "daysSinceActive": 198,
       "lastActiveAt": "2025-11-18T07:29:45Z",
       "latestCommit": null,
       "contribution": null,
@@ -4516,7 +4260,7 @@
       "categoryConfidence": 0.2,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 183,
+      "daysSinceActive": 198,
       "lastActiveAt": "2025-11-18T07:14:37Z",
       "latestCommit": null,
       "contribution": null,
@@ -4553,7 +4297,7 @@
       "categoryConfidence": 0.2,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 183,
+      "daysSinceActive": 198,
       "lastActiveAt": "2025-11-18T06:56:57Z",
       "latestCommit": null,
       "contribution": null,
@@ -4582,6 +4326,61 @@
       "homepage": ""
     },
     {
+      "key": "htazq/k8s",
+      "owner": "htazq",
+      "name": "k8s",
+      "fullName": "htazq/k8s",
+      "category": "脚本",
+      "categoryConfidence": 0.2,
+      "status": "stale",
+      "statusText": "沉默",
+      "daysSinceActive": 206,
+      "lastActiveAt": "2025-11-09T14:21:22Z",
+      "latestCommit": {
+        "sha": "86978e229917c803d00dc3b889110d834f8f3cb4",
+        "message": "优化dzot-mirror",
+        "committedAt": "2025-11-09T14:21:22Z",
+        "author": "htazq",
+        "url": "https://github.com/htazq/k8s/commit/86978e229917c803d00dc3b889110d834f8f3cb4"
+      },
+      "contribution": {
+        "total": 1,
+        "opened": 0,
+        "merged": 1,
+        "closed": 0,
+        "latest": {
+          "number": 1,
+          "title": "Jules was unable to complete the task in time. Please review the work…",
+          "state": "merged",
+          "updatedAt": "2025-06-16T12:05:20Z",
+          "url": "https://github.com/htazq/k8s/pull/1"
+        }
+      },
+      "isPrivate": true,
+      "description": "",
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/htazq/k8s",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": true,
+          "visibility": "Private",
+          "url": "https://github.com/htazq/k8s",
+          "updatedAt": "2025-11-09T14:21:22Z"
+        }
+      ],
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "language": "Shell",
+      "topics": [],
+      "homepage": ""
+    },
+    {
       "key": "htazq/cloudflare-docker-proxy",
       "owner": "htazq",
       "name": "cloudflare-docker-proxy",
@@ -4590,11 +4389,10 @@
       "categoryConfidence": 0.4,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 198,
-      "lastActiveAt": "2025-11-03T09:20:16Z",
+      "daysSinceActive": 213,
+      "lastActiveAt": "2025-11-03T09:20:14Z",
       "latestCommit": {
         "sha": "7a976d0a5ab1c94f9f8ba83806f08a42f043d207",
-        "shortSha": "7a976d0",
         "message": "Uploading template.",
         "committedAt": "2025-11-03T09:20:14Z",
         "author": "cloudflare-workers-and-pages[bot]",
@@ -4613,7 +4411,7 @@
           "isPrivate": false,
           "visibility": "Public",
           "url": "https://github.com/htazq/cloudflare-docker-proxy",
-          "updatedAt": "2025-11-03T09:20:16Z"
+          "updatedAt": "2025-11-03T09:20:14Z"
         }
       ],
       "metrics": {
@@ -4626,6 +4424,233 @@
       "homepage": ""
     },
     {
+      "key": "htazq/offlinepack",
+      "owner": "htazq",
+      "name": "OfflinePack",
+      "fullName": "htazq/OfflinePack",
+      "category": "网站",
+      "categoryConfidence": 0.2,
+      "status": "stale",
+      "statusText": "沉默",
+      "daysSinceActive": 220,
+      "lastActiveAt": "2025-10-27T09:07:53Z",
+      "latestCommit": {
+        "sha": "5b7bbe041f531ba49a9a74c1dcf8632a5cff68ac",
+        "message": "Initial commit",
+        "committedAt": "2025-10-27T09:07:53Z",
+        "author": "htazq",
+        "url": "https://github.com/htazq/OfflinePack/commit/5b7bbe041f531ba49a9a74c1dcf8632a5cff68ac"
+      },
+      "contribution": null,
+      "isPrivate": false,
+      "description": "Build offline dependency packages for air-gapped Linux environments",
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/htazq/OfflinePack",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": false,
+          "visibility": "Public",
+          "url": "https://github.com/htazq/OfflinePack",
+          "updatedAt": "2025-10-27T09:07:53Z"
+        }
+      ],
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "language": "",
+      "topics": [],
+      "homepage": ""
+    },
+    {
+      "key": "htazq/rust",
+      "owner": "htazq",
+      "name": "rust",
+      "fullName": "htazq/rust",
+      "category": "其他",
+      "categoryConfidence": 0,
+      "status": "stale",
+      "statusText": "沉默",
+      "daysSinceActive": 271,
+      "lastActiveAt": "2025-09-06T10:26:38Z",
+      "latestCommit": {
+        "sha": "21ffa6b3e9d8208f9ec6bcaffea68a7403e63237",
+        "message": "添加项目架构分析文档和清理临时文件\n\n- 添加CLAUDE.md项目指导文档，记录2025-09-06架构重构分析结果\n- 分析确认项目已达到企业级标准，无需重构\n- 清理.codebuddy临时图片文件\n\n🤖 Generated with [Claude Code](https://claude.ai/code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>",
+        "committedAt": "2025-09-06T10:26:38Z",
+        "author": "htazq",
+        "url": "https://github.com/htazq/rust/commit/21ffa6b3e9d8208f9ec6bcaffea68a7403e63237"
+      },
+      "contribution": null,
+      "isPrivate": true,
+      "description": "",
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/htazq/rust",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": true,
+          "visibility": "Private",
+          "url": "https://github.com/htazq/rust",
+          "updatedAt": "2025-09-06T10:26:38Z"
+        }
+      ],
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "language": "Rust",
+      "topics": [],
+      "homepage": ""
+    },
+    {
+      "key": "htazq/4x4-chess",
+      "owner": "htazq",
+      "name": "4x4-chess",
+      "fullName": "htazq/4x4-chess",
+      "category": "脚本",
+      "categoryConfidence": 0.2,
+      "status": "stale",
+      "statusText": "沉默",
+      "daysSinceActive": 292,
+      "lastActiveAt": "2025-08-16T04:49:06Z",
+      "latestCommit": {
+        "sha": "9ea3f34da5f71d6bf4828cad09fd97e175777bda",
+        "message": "解决Redis配置合并冲突 - 采用Headless Service方案",
+        "committedAt": "2025-08-16T04:49:06Z",
+        "author": "htazq",
+        "url": "https://github.com/htazq/4x4-chess/commit/9ea3f34da5f71d6bf4828cad09fd97e175777bda"
+      },
+      "contribution": {
+        "total": 2,
+        "opened": 0,
+        "merged": 2,
+        "closed": 0,
+        "latest": {
+          "number": 2,
+          "title": "特性: 完成Taro/Vue3射箭棋重构（4x4棋盘及详细规则对齐）",
+          "state": "merged",
+          "updatedAt": "2025-05-28T13:13:58Z",
+          "url": "https://github.com/htazq/4x4-chess/pull/2"
+        }
+      },
+      "isPrivate": true,
+      "description": "16子",
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/htazq/4x4-chess",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": true,
+          "visibility": "Private",
+          "url": "https://github.com/htazq/4x4-chess",
+          "updatedAt": "2025-08-16T04:49:06Z"
+        }
+      ],
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "language": "JavaScript",
+      "topics": [],
+      "homepage": ""
+    },
+    {
+      "key": "htazq/juzi",
+      "owner": "htazq",
+      "name": "juzi",
+      "fullName": "htazq/juzi",
+      "category": "脚本",
+      "categoryConfidence": 0.2,
+      "status": "stale",
+      "statusText": "沉默",
+      "daysSinceActive": 312,
+      "lastActiveAt": "2025-07-26T14:18:19Z",
+      "latestCommit": {
+        "sha": "22d9e0aab18995e43d72bd6db469cc3b80dc33a4",
+        "message": "暂存",
+        "committedAt": "2025-07-26T14:18:19Z",
+        "author": "htazq",
+        "url": "https://github.com/htazq/juzi/commit/22d9e0aab18995e43d72bd6db469cc3b80dc33a4"
+      },
+      "contribution": null,
+      "isPrivate": true,
+      "description": "",
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/htazq/juzi",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": true,
+          "visibility": "Private",
+          "url": "https://github.com/htazq/juzi",
+          "updatedAt": "2025-07-26T14:18:19Z"
+        }
+      ],
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "language": "TypeScript",
+      "topics": [],
+      "homepage": ""
+    },
+    {
+      "key": "htazq/my-content-creation-kit",
+      "owner": "htazq",
+      "name": "my-content-creation-kit",
+      "fullName": "htazq/my-content-creation-kit",
+      "category": "其他",
+      "categoryConfidence": 0,
+      "status": "stale",
+      "statusText": "沉默",
+      "daysSinceActive": 335,
+      "lastActiveAt": "2025-07-04T09:42:40Z",
+      "latestCommit": {
+        "sha": "25f043aae8ab1895f1af6529fa3e515bc6fff03e",
+        "message": "自动生成内容: 2025-07-05 到 2025-07-05",
+        "committedAt": "2025-07-04T09:42:40Z",
+        "author": "GitHub Actions Bot",
+        "url": "https://github.com/htazq/my-content-creation-kit/commit/25f043aae8ab1895f1af6529fa3e515bc6fff03e"
+      },
+      "contribution": null,
+      "isPrivate": true,
+      "description": "",
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/htazq/my-content-creation-kit",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": true,
+          "visibility": "Private",
+          "url": "https://github.com/htazq/my-content-creation-kit",
+          "updatedAt": "2025-07-04T09:42:40Z"
+        }
+      ],
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "language": "Python",
+      "topics": [],
+      "homepage": ""
+    },
+    {
       "key": "htazq/view-trading-information",
       "owner": "htazq",
       "name": "view-trading-information",
@@ -4634,11 +4659,10 @@
       "categoryConfidence": 0.2,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 350,
-      "lastActiveAt": "2025-06-03T11:27:55Z",
+      "daysSinceActive": 366,
+      "lastActiveAt": "2025-06-03T11:27:48Z",
       "latestCommit": {
         "sha": "b7712bd3576457adcdb058b5e527ba5926ca6030",
-        "shortSha": "b7712bd",
         "message": "完成四个规则文件的Context7 MCP强制验证机制集成",
         "committedAt": "2025-06-03T11:27:48Z",
         "author": "htazq",
@@ -4657,7 +4681,7 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq/view-trading-information",
-          "updatedAt": "2025-06-03T11:27:55Z"
+          "updatedAt": "2025-06-03T11:27:48Z"
         }
       ],
       "metrics": {
@@ -4670,6 +4694,178 @@
       "homepage": ""
     },
     {
+      "key": "htazq/hello-world-webapp",
+      "owner": "htazq",
+      "name": "hello-world-webapp",
+      "fullName": "htazq/hello-world-webapp",
+      "category": "网站",
+      "categoryConfidence": 0.2,
+      "status": "stale",
+      "statusText": "沉默",
+      "daysSinceActive": 409,
+      "lastActiveAt": "2025-04-21T10:19:53Z",
+      "latestCommit": {
+        "sha": "4364f0f8f72ef0b9c362f4821256b427f13973ff",
+        "message": "test",
+        "committedAt": "2025-04-21T10:19:53Z",
+        "author": "htazq",
+        "url": "https://github.com/htazq/hello-world-webapp/commit/4364f0f8f72ef0b9c362f4821256b427f13973ff"
+      },
+      "contribution": null,
+      "isPrivate": false,
+      "description": "",
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/htazq/hello-world-webapp",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": false,
+          "visibility": "Public",
+          "url": "https://github.com/htazq/hello-world-webapp",
+          "updatedAt": "2025-04-21T10:19:53Z"
+        }
+      ],
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "language": "Python",
+      "topics": [],
+      "homepage": ""
+    },
+    {
+      "key": "htazq/helm-v2ray",
+      "owner": "htazq",
+      "name": "helm-v2ray",
+      "fullName": "htazq/helm-v2ray",
+      "category": "其他",
+      "categoryConfidence": 0,
+      "status": "stale",
+      "statusText": "沉默",
+      "daysSinceActive": 423,
+      "lastActiveAt": "2025-04-07T10:10:44Z",
+      "latestCommit": {
+        "sha": "b8b3e99f29a5927a18df7fc6094c319d9acab3e3",
+        "message": "优化cf",
+        "committedAt": "2025-04-07T10:10:44Z",
+        "author": "htazq",
+        "url": "https://github.com/htazq/helm-v2ray/commit/b8b3e99f29a5927a18df7fc6094c319d9acab3e3"
+      },
+      "contribution": null,
+      "isPrivate": false,
+      "description": "用 Helm 部署 V2Ray 的项目",
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/htazq/helm-v2ray",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": false,
+          "visibility": "Public",
+          "url": "https://github.com/htazq/helm-v2ray",
+          "updatedAt": "2025-04-07T10:10:44Z"
+        }
+      ],
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "language": "Python",
+      "topics": [],
+      "homepage": ""
+    },
+    {
+      "key": "htazq/my_www",
+      "owner": "htazq",
+      "name": "my_www",
+      "fullName": "htazq/my_www",
+      "category": "网站",
+      "categoryConfidence": 0.2,
+      "status": "stale",
+      "statusText": "沉默",
+      "daysSinceActive": 455,
+      "lastActiveAt": "2025-03-06T05:46:39Z",
+      "latestCommit": {
+        "sha": "5aa852deb0c3d7106cdb0f57ac538d73b064445c",
+        "message": "Merge branch 'main' of https://github.com/htazq/my_www",
+        "committedAt": "2025-03-06T05:46:39Z",
+        "author": "htazq",
+        "url": "https://github.com/htazq/my_www/commit/5aa852deb0c3d7106cdb0f57ac538d73b064445c"
+      },
+      "contribution": null,
+      "isPrivate": true,
+      "description": "",
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/htazq/my_www",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": true,
+          "visibility": "Private",
+          "url": "https://github.com/htazq/my_www",
+          "updatedAt": "2025-03-06T05:46:39Z"
+        }
+      ],
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "language": "Vue",
+      "topics": [],
+      "homepage": ""
+    },
+    {
+      "key": "htazq/hugo-blog",
+      "owner": "htazq",
+      "name": "hugo-blog",
+      "fullName": "htazq/hugo-blog",
+      "category": "网站",
+      "categoryConfidence": 0.4,
+      "status": "stale",
+      "statusText": "沉默",
+      "daysSinceActive": 467,
+      "lastActiveAt": "2025-02-21T22:01:30Z",
+      "latestCommit": {
+        "sha": "d349ffcb58de8e7556f572e6e3c87d8ade3fde5c",
+        "message": "Create USTECm_20250222_0601.md",
+        "committedAt": "2025-02-21T22:01:30Z",
+        "author": "htazq",
+        "url": "https://github.com/htazq/hugo-blog/commit/d349ffcb58de8e7556f572e6e3c87d8ade3fde5c"
+      },
+      "contribution": null,
+      "isPrivate": true,
+      "description": "",
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/htazq/hugo-blog",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": true,
+          "visibility": "Private",
+          "url": "https://github.com/htazq/hugo-blog",
+          "updatedAt": "2025-02-21T22:01:30Z"
+        }
+      ],
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "language": "HTML",
+      "topics": [],
+      "homepage": ""
+    },
+    {
       "key": "htazq/deepseek",
       "owner": "htazq",
       "name": "deepseek",
@@ -4678,7 +4874,7 @@
       "categoryConfidence": 0.2,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 464,
+      "daysSinceActive": 479,
       "lastActiveAt": "2025-02-10T03:13:32Z",
       "latestCommit": null,
       "contribution": null,
@@ -4715,7 +4911,7 @@
       "categoryConfidence": 0.2,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 523,
+      "daysSinceActive": 539,
       "lastActiveAt": "2024-12-12T10:25:11Z",
       "latestCommit": null,
       "contribution": null,
@@ -4752,7 +4948,7 @@
       "categoryConfidence": 0,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 530,
+      "daysSinceActive": 545,
       "lastActiveAt": "2024-12-06T05:03:03Z",
       "latestCommit": null,
       "contribution": null,
@@ -4789,12 +4985,11 @@
       "categoryConfidence": 0.4,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 536,
-      "lastActiveAt": "2024-11-29T09:44:36Z",
+      "daysSinceActive": 552,
+      "lastActiveAt": "2024-11-29T09:31:54Z",
       "latestCommit": {
         "sha": "c0746c5a39c308d7df92ddc4b4341a1ef1dec697",
-        "shortSha": "c0746c5",
-        "message": "Initial commit",
+        "message": "Initial commit\n\nCreated from https://vercel.com/new",
         "committedAt": "2024-11-29T09:31:54Z",
         "author": "htazq",
         "url": "https://github.com/htazq/chatgpt-web-midjourney-proxy/commit/c0746c5a39c308d7df92ddc4b4341a1ef1dec697"
@@ -4812,7 +5007,7 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq/chatgpt-web-midjourney-proxy",
-          "updatedAt": "2024-11-29T09:44:36Z"
+          "updatedAt": "2024-11-29T09:31:54Z"
         }
       ],
       "metrics": {
@@ -4822,7 +5017,7 @@
       },
       "language": "JavaScript",
       "topics": [],
-      "homepage": ""
+      "homepage": "https://chatgpt-web-midjourney-proxy-five-zeta.vercel.app"
     },
     {
       "key": "htazq/1",
@@ -4833,12 +5028,11 @@
       "categoryConfidence": 0.2,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 539,
-      "lastActiveAt": "2024-11-27T08:08:13Z",
+      "daysSinceActive": 554,
+      "lastActiveAt": "2024-11-27T08:02:55Z",
       "latestCommit": {
         "sha": "1beec0607aab5b75420db2b44d3be7804bb84ca9",
-        "shortSha": "1beec06",
-        "message": "Initial commit",
+        "message": "Initial commit\n\nCreated from https://vercel.com/new",
         "committedAt": "2024-11-27T08:02:55Z",
         "author": "htazq",
         "url": "https://github.com/htazq/1/commit/1beec0607aab5b75420db2b44d3be7804bb84ca9"
@@ -4856,17 +5050,17 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq/1",
-          "updatedAt": "2024-11-27T08:08:13Z"
+          "updatedAt": "2024-11-27T08:02:55Z"
         }
       ],
       "metrics": {
         "stars": 0,
         "forks": 0,
-        "openIssues": 0
+        "openIssues": 5
       },
       "language": "TypeScript",
       "topics": [],
-      "homepage": ""
+      "homepage": "https://1-five-ebon.vercel.app"
     },
     {
       "key": "htazq/word_status",
@@ -4877,11 +5071,10 @@
       "categoryConfidence": 0.2,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 584,
-      "lastActiveAt": "2024-10-12T09:43:55Z",
+      "daysSinceActive": 600,
+      "lastActiveAt": "2024-10-12T09:43:52Z",
       "latestCommit": {
         "sha": "84d0de654c0327084704718353865ea57ed6bd51",
-        "shortSha": "84d0de6",
         "message": "Update uptime.config.ts",
         "committedAt": "2024-10-12T09:43:52Z",
         "author": "htazq",
@@ -4900,7 +5093,7 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq/word_status",
-          "updatedAt": "2024-10-12T09:43:55Z"
+          "updatedAt": "2024-10-12T09:43:52Z"
         }
       ],
       "metrics": {
@@ -4921,12 +5114,11 @@
       "categoryConfidence": 0.2,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 753,
-      "lastActiveAt": "2024-04-27T03:08:05Z",
+      "daysSinceActive": 768,
+      "lastActiveAt": "2024-04-27T03:04:40Z",
       "latestCommit": {
         "sha": "76987b88070f09c82fa989c39b267634777b8dee",
-        "shortSha": "76987b8",
-        "message": "Initial commit",
+        "message": "Initial commit\n\nCreated from https://vercel.com/new",
         "committedAt": "2024-04-27T03:04:40Z",
         "author": "htazq",
         "url": "https://github.com/htazq/coze2openai/commit/76987b88070f09c82fa989c39b267634777b8dee"
@@ -4944,7 +5136,7 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq/coze2openai",
-          "updatedAt": "2024-04-27T03:08:05Z"
+          "updatedAt": "2024-04-27T03:04:40Z"
         }
       ],
       "metrics": {
@@ -4954,7 +5146,7 @@
       },
       "language": "JavaScript",
       "topics": [],
-      "homepage": ""
+      "homepage": "https://coze2openai-beta.vercel.app"
     },
     {
       "key": "htazq/tianya",
@@ -4965,11 +5157,10 @@
       "categoryConfidence": 0,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 791,
-      "lastActiveAt": "2024-03-20T01:39:24Z",
+      "daysSinceActive": 806,
+      "lastActiveAt": "2024-03-20T01:38:23Z",
       "latestCommit": {
         "sha": "ba65333fbb2c66a8b9b4c736842c3280a0c877e9",
-        "shortSha": "ba65333",
         "message": "Initial commit",
         "committedAt": "2024-03-20T01:38:23Z",
         "author": "htazq",
@@ -4988,7 +5179,7 @@
           "isPrivate": false,
           "visibility": "Public",
           "url": "https://github.com/htazq/tianya",
-          "updatedAt": "2024-03-20T01:39:24Z"
+          "updatedAt": "2024-03-20T01:38:23Z"
         }
       ],
       "metrics": {
@@ -5009,11 +5200,10 @@
       "categoryConfidence": 0,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 822,
+      "daysSinceActive": 837,
       "lastActiveAt": "2024-02-18T03:22:14Z",
       "latestCommit": {
         "sha": "d763fd02cbaa6eb097d2b31a2e8893d081d89961",
-        "shortSha": "d763fd0",
         "message": "Initial commit",
         "committedAt": "2024-02-18T03:22:14Z",
         "author": "htazq",
@@ -5053,7 +5243,7 @@
       "categoryConfidence": 0,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 847,
+      "daysSinceActive": 862,
       "lastActiveAt": "2024-01-23T23:03:54Z",
       "latestCommit": null,
       "contribution": null,
@@ -5090,11 +5280,10 @@
       "categoryConfidence": 0,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 933,
+      "daysSinceActive": 948,
       "lastActiveAt": "2023-10-30T08:40:36Z",
       "latestCommit": {
         "sha": "c899acaeb9f229f5f9cf7073d7c384484a0eba21",
-        "shortSha": "c899aca",
         "message": "Initial commit",
         "committedAt": "2023-10-30T08:40:36Z",
         "author": "htazq",
@@ -5134,12 +5323,11 @@
       "categoryConfidence": 0.2,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 1045,
-      "lastActiveAt": "2023-07-10T02:24:45Z",
+      "daysSinceActive": 1060,
+      "lastActiveAt": "2023-07-10T02:22:14Z",
       "latestCommit": {
         "sha": "80530f937425ea3b7606a2b7c87c541aa36f9b6a",
-        "shortSha": "80530f9",
-        "message": "Initial commit",
+        "message": "Initial commit\n\nCreated from https://vercel.com/new",
         "committedAt": "2023-07-10T02:22:14Z",
         "author": "htazq",
         "url": "https://github.com/htazq/AutoGPT-Next-Web/commit/80530f937425ea3b7606a2b7c87c541aa36f9b6a"
@@ -5157,17 +5345,17 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq/AutoGPT-Next-Web",
-          "updatedAt": "2023-07-10T02:24:45Z"
+          "updatedAt": "2023-07-10T02:22:14Z"
         }
       ],
       "metrics": {
         "stars": 0,
         "forks": 0,
-        "openIssues": 0
+        "openIssues": 5
       },
       "language": "TypeScript",
       "topics": [],
-      "homepage": ""
+      "homepage": "https://auto-gpt-next-web-htazq.vercel.app"
     },
     {
       "key": "htazq/go-proxy-bingai-vercel",
@@ -5175,15 +5363,14 @@
       "name": "go-proxy-bingai-vercel",
       "fullName": "htazq/go-proxy-bingai-vercel",
       "category": "网站",
-      "categoryConfidence": 0.2,
+      "categoryConfidence": 0.4,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 1082,
-      "lastActiveAt": "2023-06-03T07:21:07Z",
+      "daysSinceActive": 1097,
+      "lastActiveAt": "2023-06-03T07:20:33Z",
       "latestCommit": {
         "sha": "73c637e321d8a6adb94224ca4d54ed8e14b65835",
-        "shortSha": "73c637e",
-        "message": "Initial commit",
+        "message": "Initial commit\n\nCreated from https://vercel.com/new",
         "committedAt": "2023-06-03T07:20:33Z",
         "author": "htazq",
         "url": "https://github.com/htazq/go-proxy-bingai-vercel/commit/73c637e321d8a6adb94224ca4d54ed8e14b65835"
@@ -5201,7 +5388,7 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq/go-proxy-bingai-vercel",
-          "updatedAt": "2023-06-03T07:21:07Z"
+          "updatedAt": "2023-06-03T07:20:33Z"
         }
       ],
       "metrics": {
@@ -5211,7 +5398,7 @@
       },
       "language": "HTML",
       "topics": [],
-      "homepage": ""
+      "homepage": "https://go-proxy-bingai-vercel-htazq.vercel.app"
     },
     {
       "key": "htazq/go-proxy-bingai-2",
@@ -5222,11 +5409,10 @@
       "categoryConfidence": 0.2,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 1082,
-      "lastActiveAt": "2023-06-03T07:13:47Z",
+      "daysSinceActive": 1097,
+      "lastActiveAt": "2023-06-03T06:26:19Z",
       "latestCommit": {
         "sha": "76d44c7d0abece36de3069515cd688be71594419",
-        "shortSha": "76d44c7",
         "message": "fix: fix dependencies",
         "committedAt": "2023-06-03T06:26:19Z",
         "author": "adams549659584",
@@ -5245,7 +5431,7 @@
           "isPrivate": false,
           "visibility": "Public",
           "url": "https://github.com/htazq/go-proxy-bingai-2",
-          "updatedAt": "2023-06-03T07:13:47Z"
+          "updatedAt": "2023-06-03T06:26:19Z"
         }
       ],
       "metrics": {
@@ -5266,11 +5452,10 @@
       "categoryConfidence": 0.2,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 1082,
-      "lastActiveAt": "2023-06-03T07:09:19Z",
+      "daysSinceActive": 1097,
+      "lastActiveAt": "2023-06-03T06:26:19Z",
       "latestCommit": {
         "sha": "76d44c7d0abece36de3069515cd688be71594419",
-        "shortSha": "76d44c7",
         "message": "fix: fix dependencies",
         "committedAt": "2023-06-03T06:26:19Z",
         "author": "adams549659584",
@@ -5289,7 +5474,7 @@
           "isPrivate": false,
           "visibility": "Public",
           "url": "https://github.com/htazq/go-proxy-bingai",
-          "updatedAt": "2023-06-03T07:09:19Z"
+          "updatedAt": "2023-06-03T06:26:19Z"
         }
       ],
       "metrics": {
@@ -5310,11 +5495,10 @@
       "categoryConfidence": 0.2,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 1251,
-      "lastActiveAt": "2022-12-15T12:39:29Z",
+      "daysSinceActive": 1267,
+      "lastActiveAt": "2022-12-15T12:38:54Z",
       "latestCommit": {
         "sha": "47f36abc933804fd10f7a67a3c9ca8c0abb29f59",
-        "shortSha": "47f36ab",
         "message": "Initial commit",
         "committedAt": "2022-12-15T12:38:54Z",
         "author": "htazq",
@@ -5333,7 +5517,7 @@
           "isPrivate": false,
           "visibility": "Public",
           "url": "https://github.com/htazq/note",
-          "updatedAt": "2022-12-15T12:39:29Z"
+          "updatedAt": "2022-12-15T12:38:54Z"
         }
       ],
       "metrics": {
