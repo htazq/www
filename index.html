@@ -3,35 +3,1989 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>All in AI · at9.net</title>
-    <style>
-      * { box-sizing: border-box; margin: 0; padding: 0; }
-      html { scroll-behavior: smooth; }
-      body { background: #030712; color: #fff; font-family: "Inter", "Microsoft YaHei", "PingFang SC", system-ui, sans-serif; }
-      ::-webkit-scrollbar { width: 6px; height: 6px; }
-      ::-webkit-scrollbar-track { background: transparent; }
-      ::-webkit-scrollbar-thumb { background: rgba(99,210,255,0.28); border-radius: 99px; }
-      ::-webkit-scrollbar-thumb:hover { background: rgba(99,210,255,0.6); }
-    </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>9Deck · at9.net personal asset console</title>
     <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Inter', '"Microsoft YaHei"', '"PingFang SC"', 'system-ui', 'sans-serif'],
-              mono: ['"JetBrains Mono"', '"Cascadia Mono"', 'Consolas', 'monospace'],
-            },
-          },
-        },
-      };
+      window.__AUTO_REFRESH_MS__ = 300000;
     </script>
+    <style>
+      :root {
+        --bg: #f7f9f6;
+        --surface: #ffffff;
+        --surface-2: #f0f5f1;
+        --surface-3: #e7eee9;
+        --line: #c8d5ce;
+        --line-2: #93aaa0;
+        --text: #15231d;
+        --muted: #60746b;
+        --faint: #87968f;
+        --green: #087d55;
+        --cyan: #0d779c;
+        --yellow: #9d6c00;
+        --red: #c83f3f;
+        --ink: #ffffff;
+        --shadow: 0 18px 55px rgba(30, 50, 42, 0.12);
+        --mono: "Cascadia Mono", "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+        --sans: "Microsoft YaHei", "PingFang SC", "Segoe UI", sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        min-width: 320px;
+        background: var(--bg);
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        color: var(--text);
+        font-family: var(--sans);
+        background:
+          linear-gradient(90deg, rgba(21, 35, 29, 0.055) 1px, transparent 1px) 0 0 / 48px 48px,
+          linear-gradient(rgba(21, 35, 29, 0.045) 1px, transparent 1px) 0 0 / 48px 48px,
+          radial-gradient(900px 480px at 78% -12%, rgba(8, 125, 85, 0.12), transparent 62%),
+          radial-gradient(700px 420px at 8% 18%, rgba(13, 119, 156, 0.1), transparent 58%),
+          var(--bg);
+      }
+
+      body::before {
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        pointer-events: none;
+        content: "";
+        background:
+          repeating-linear-gradient(
+            0deg,
+            rgba(21, 35, 29, 0.035) 0,
+            rgba(21, 35, 29, 0.035) 1px,
+            transparent 1px,
+            transparent 4px
+          );
+        opacity: 0.2;
+        mix-blend-mode: multiply;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      button,
+      select,
+      input {
+        font: inherit;
+      }
+
+      .shell {
+        width: min(1440px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 18px 0 36px;
+      }
+
+      .topbar {
+        display: flex;
+        min-height: 42px;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.86);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+      }
+
+      .topbar-left,
+      .topbar-right {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 10px 12px;
+        min-width: 0;
+      }
+
+      .brand-dot {
+        width: 9px;
+        height: 9px;
+        border-radius: 99px;
+        background: var(--green);
+        box-shadow: 0 0 18px rgba(8, 125, 85, 0.3);
+      }
+
+      .mono {
+        font-family: var(--mono);
+      }
+
+      .muted {
+        color: var(--muted);
+      }
+
+      .dim {
+        color: var(--faint);
+      }
+
+      .divider {
+        width: 1px;
+        height: 18px;
+        background: var(--line);
+      }
+
+      .ticker {
+        flex: 1;
+        min-width: 180px;
+        border-left: 1px solid var(--line);
+        border-right: 1px solid var(--line);
+        overflow: hidden;
+      }
+
+      .ticker-track {
+        display: inline-flex;
+        gap: 28px;
+        min-width: max-content;
+        padding: 10px 0;
+        animation: ticker 28s linear infinite;
+      }
+
+      .ticker-item {
+        color: var(--muted);
+        font-family: var(--mono);
+        font-size: 12px;
+        white-space: nowrap;
+      }
+
+      @keyframes ticker {
+        from { transform: translateX(0); }
+        to { transform: translateX(-50%); }
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1.1fr) minmax(360px, 0.9fr);
+        gap: 18px;
+        align-items: stretch;
+        margin-top: 18px;
+      }
+
+      .hero-main,
+      .terminal {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: linear-gradient(145deg, rgba(255, 255, 255, 0.98), rgba(242, 247, 244, 0.94));
+        box-shadow: var(--shadow);
+      }
+
+      .hero-main {
+        position: relative;
+        min-height: 420px;
+        overflow: hidden;
+        padding: 24px;
+      }
+
+      .hero-main::after {
+        position: absolute;
+        right: -70px;
+        bottom: -140px;
+        width: 340px;
+        height: 340px;
+        content: "";
+        border: 1px solid rgba(8, 125, 85, 0.2);
+        transform: rotate(24deg);
+        background:
+          linear-gradient(90deg, rgba(8, 125, 85, 0.1) 1px, transparent 1px) 0 0 / 24px 24px,
+          linear-gradient(rgba(8, 125, 85, 0.1) 1px, transparent 1px) 0 0 / 24px 24px;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--green);
+        font-family: var(--mono);
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+
+      .deck-mark {
+        margin: 26px 0 6px;
+        color: var(--text);
+        font-family: var(--mono);
+        font-size: clamp(74px, 14vw, 168px);
+        font-weight: 800;
+        line-height: 0.86;
+        letter-spacing: 0;
+        text-shadow: 0 8px 26px rgba(8, 125, 85, 0.14);
+      }
+
+      .hero-title {
+        width: min(740px, 100%);
+        margin: 0;
+        font-size: clamp(24px, 3.4vw, 44px);
+        line-height: 1.12;
+        letter-spacing: 0;
+      }
+
+      .hero-copy {
+        width: min(680px, 100%);
+        margin: 16px 0 0;
+        color: var(--muted);
+        font-size: 16px;
+        line-height: 1.8;
+      }
+
+      .command-row {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        width: min(720px, 100%);
+        margin-top: 24px;
+        border: 1px solid var(--line-2);
+        border-radius: 8px;
+        background: rgba(244, 251, 247, 0.86);
+        padding: 12px 14px;
+        font-family: var(--mono);
+        overflow: hidden;
+      }
+
+      .prompt {
+        color: var(--green);
+      }
+
+      .command {
+        min-width: 0;
+        color: #0d3c2a;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .hero-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 22px;
+      }
+
+      .chip-link,
+      .chip-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        min-height: 34px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.76);
+        color: var(--text);
+        padding: 7px 10px;
+        font-family: var(--mono);
+        font-size: 12px;
+        text-decoration: none;
+      }
+
+      .chip-button {
+        cursor: pointer;
+      }
+
+      .chip-link:hover,
+      .chip-button:hover {
+        border-color: var(--green);
+        color: var(--green);
+      }
+
+      .terminal {
+        display: flex;
+        min-height: 420px;
+        flex-direction: column;
+        overflow: hidden;
+      }
+
+      .terminal-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        min-height: 42px;
+        border-bottom: 1px solid var(--line);
+        background: rgba(231, 238, 233, 0.72);
+        padding: 10px 12px;
+      }
+
+      .traffic {
+        display: inline-flex;
+        gap: 6px;
+      }
+
+      .traffic span {
+        width: 9px;
+        height: 9px;
+        border-radius: 99px;
+        background: var(--line-2);
+      }
+
+      .traffic span:nth-child(1) { background: var(--red); }
+      .traffic span:nth-child(2) { background: var(--yellow); }
+      .traffic span:nth-child(3) { background: var(--green); }
+
+      .terminal-body {
+        display: grid;
+        gap: 12px;
+        padding: 14px;
+      }
+
+      .signal-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+      }
+
+      .signal {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.7);
+        padding: 12px;
+      }
+
+      .signal-label {
+        color: var(--muted);
+        font-family: var(--mono);
+        font-size: 11px;
+        text-transform: uppercase;
+      }
+
+      .signal-value {
+        margin-top: 8px;
+        font-family: var(--mono);
+        font-size: 28px;
+        line-height: 1;
+      }
+
+      .signal-hint {
+        margin-top: 6px;
+        color: var(--faint);
+        font-family: var(--mono);
+        font-size: 11px;
+      }
+
+      .status-strip {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 8px;
+      }
+
+      .status-pill {
+        min-width: 0;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 9px 10px;
+        font-family: var(--mono);
+        font-size: 12px;
+      }
+
+      .status-pill strong {
+        display: block;
+        margin-bottom: 4px;
+        font-size: 18px;
+      }
+
+      .terminal-log {
+        display: grid;
+        gap: 8px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: rgba(244, 249, 246, 0.72);
+        padding: 12px;
+      }
+
+      .log-line {
+        display: grid;
+        grid-template-columns: 18px minmax(0, 1fr);
+        gap: 8px;
+        color: var(--muted);
+        font-family: var(--mono);
+        font-size: 12px;
+        line-height: 1.45;
+      }
+
+      .ok { color: var(--green); }
+      .warn { color: var(--yellow); }
+      .bad { color: var(--red); }
+      .cyan { color: var(--cyan); }
+
+      .main-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 0.98fr) minmax(420px, 1.02fr);
+        gap: 18px;
+        margin-top: 18px;
+      }
+
+      .panel {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.86);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+      }
+
+      .panel-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        min-height: 48px;
+        border-bottom: 1px solid var(--line);
+        padding: 12px 14px;
+      }
+
+      .panel-title {
+        margin: 0;
+        font-family: var(--mono);
+        font-size: 14px;
+        letter-spacing: 0;
+        text-transform: uppercase;
+      }
+
+      .panel-body {
+        padding: 14px;
+      }
+
+      .feed {
+        display: grid;
+        gap: 10px;
+      }
+
+      .feed-item {
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr) auto;
+        gap: 10px;
+        align-items: start;
+        border: 1px solid rgba(147, 170, 160, 0.72);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.68);
+        padding: 10px;
+      }
+
+      .feed-icon {
+        display: grid;
+        width: 28px;
+        height: 28px;
+        place-items: center;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        color: var(--green);
+        font-family: var(--mono);
+      }
+
+      .feed-title {
+        color: var(--text);
+        font-family: var(--mono);
+        font-size: 13px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .feed-desc {
+        margin-top: 4px;
+        color: var(--muted);
+        font-size: 12px;
+        line-height: 1.5;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      .feed-meta {
+        color: var(--faint);
+        font-family: var(--mono);
+        font-size: 11px;
+        white-space: nowrap;
+      }
+
+      .category-map {
+        display: grid;
+        gap: 10px;
+      }
+
+      .category-card {
+        border: 1px solid rgba(147, 170, 160, 0.72);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.68);
+        padding: 12px;
+      }
+
+      .category-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+      }
+
+      .category-name {
+        font-family: var(--mono);
+        font-size: 13px;
+      }
+
+      .category-count {
+        color: var(--green);
+        font-family: var(--mono);
+        font-size: 20px;
+      }
+
+      .bar {
+        height: 7px;
+        margin-top: 10px;
+        border-radius: 999px;
+        background: #dce8e1;
+        overflow: hidden;
+      }
+
+      .bar-fill {
+        width: 0;
+        height: 100%;
+        background: linear-gradient(90deg, var(--green), var(--cyan));
+      }
+
+      .category-sample {
+        margin-top: 8px;
+        color: var(--muted);
+        font-size: 12px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .wide-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 18px;
+      }
+
+      .queue-list,
+      .source-list,
+      .pr-list {
+        display: grid;
+        gap: 10px;
+      }
+
+      .queue-row,
+      .source-row,
+      .pr-row {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 12px;
+        align-items: center;
+        border-bottom: 1px solid rgba(200, 213, 206, 0.88);
+        padding: 8px 0;
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .queue-row:last-child,
+      .source-row:last-child,
+      .pr-row:last-child {
+        border-bottom: 0;
+      }
+
+      .queue-row:hover,
+      .source-row:hover,
+      .pr-row:hover {
+        background: rgba(8, 125, 85, 0.055);
+      }
+
+      .queue-row:hover .repo-name,
+      .source-row:hover .repo-name,
+      .pr-row:hover .repo-name {
+        color: var(--green);
+      }
+
+      .repo-name {
+        font-family: var(--mono);
+        font-size: 13px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .repo-sub {
+        margin-top: 4px;
+        color: var(--muted);
+        font-size: 12px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .tag {
+        display: inline-flex;
+        align-items: center;
+        min-height: 24px;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        padding: 3px 7px;
+        color: var(--muted);
+        font-family: var(--mono);
+        font-size: 11px;
+        white-space: nowrap;
+      }
+
+      .toolbar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+      }
+
+      .field {
+        min-height: 34px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.86);
+        color: var(--text);
+        padding: 7px 10px;
+        outline: none;
+      }
+
+      .field:focus {
+        border-color: var(--green);
+      }
+
+      .repo-table-wrap {
+        max-height: 620px;
+        overflow: auto;
+      }
+
+      .repo-cards {
+        display: none;
+      }
+
+      .repo-card {
+        display: grid;
+        gap: 9px;
+        border-bottom: 1px solid rgba(200, 213, 206, 0.9);
+        color: inherit;
+        padding: 14px;
+        text-decoration: none;
+      }
+
+      .repo-card:hover {
+        background: rgba(8, 125, 85, 0.055);
+      }
+
+      .repo-card-top,
+      .repo-card-meta {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+      }
+
+      .repo-card-title {
+        min-width: 0;
+        font-family: var(--mono);
+        font-size: 14px;
+        font-weight: 700;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .repo-card-note {
+        color: var(--muted);
+        font-size: 12px;
+        line-height: 1.5;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        border-bottom: 1px solid rgba(200, 213, 206, 0.9);
+        padding: 10px 12px;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      th {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        background: #eef5f1;
+        color: var(--muted);
+        font-family: var(--mono);
+        font-size: 11px;
+        text-transform: uppercase;
+      }
+
+      td {
+        color: var(--text);
+        font-size: 13px;
+      }
+
+      tr:hover td {
+        background: rgba(8, 125, 85, 0.06);
+      }
+
+      .table-link {
+        color: var(--text);
+        font-family: var(--mono);
+        text-decoration: none;
+      }
+
+      .table-link:hover {
+        color: var(--green);
+      }
+
+      .table-desc {
+        max-width: 360px;
+        color: var(--muted);
+        line-height: 1.45;
+      }
+
+      .footnote {
+        margin: 16px 0 0;
+        color: var(--faint);
+        font-family: var(--mono);
+        font-size: 11px;
+      }
+
+      .empty {
+        color: var(--muted);
+        font-family: var(--mono);
+        padding: 18px;
+      }
+
+      .loading {
+        min-height: 160px;
+        display: grid;
+        place-items: center;
+        color: var(--muted);
+        font-family: var(--mono);
+      }
+
+      .palette {
+        position: fixed;
+        inset: 0;
+        z-index: 20;
+        display: grid;
+        place-items: start center;
+        background: rgba(247, 249, 246, 0.72);
+        padding: 72px 16px 24px;
+        backdrop-filter: blur(10px);
+      }
+
+      .palette[hidden] {
+        display: none;
+      }
+
+      .palette-dialog {
+        width: min(720px, 100%);
+        border: 1px solid var(--line-2);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.96);
+        box-shadow: 0 24px 80px rgba(30, 50, 42, 0.18);
+        overflow: hidden;
+      }
+
+      .palette-head {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 12px;
+        align-items: center;
+        border-bottom: 1px solid var(--line);
+        padding: 12px;
+      }
+
+      .palette-input {
+        width: 100%;
+        border: 0;
+        background: transparent;
+        color: var(--text);
+        font-family: var(--mono);
+        font-size: 18px;
+        outline: none;
+      }
+
+      .palette-results {
+        max-height: min(56vh, 520px);
+        overflow: auto;
+        padding: 8px;
+      }
+
+      .palette-row {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 32px minmax(0, 1fr) auto;
+        gap: 10px;
+        align-items: center;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        background: transparent;
+        color: var(--text);
+        padding: 9px 10px;
+        text-align: left;
+        cursor: pointer;
+      }
+
+      .palette-row:hover,
+      .palette-row[aria-selected="true"] {
+        border-color: var(--line-2);
+        background: rgba(8, 125, 85, 0.06);
+      }
+
+      .palette-icon {
+        display: grid;
+        width: 28px;
+        height: 28px;
+        place-items: center;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        color: var(--green);
+        font-family: var(--mono);
+      }
+
+      .palette-title {
+        display: block;
+        font-family: var(--mono);
+        font-size: 13px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .palette-subtitle {
+        display: block;
+        margin-top: 3px;
+        color: var(--muted);
+        font-size: 12px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .palette-key {
+        color: var(--faint);
+        font-family: var(--mono);
+        font-size: 11px;
+      }
+
+      @media (max-width: 1080px) {
+        .hero,
+        .main-grid,
+        .wide-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .terminal {
+          min-height: 0;
+        }
+      }
+
+      @media (max-width: 720px) {
+        .shell {
+          width: min(100% - 18px, 1440px);
+          padding-top: 9px;
+        }
+
+        .topbar {
+          display: block;
+        }
+
+        .ticker {
+          border-left: 0;
+          border-right: 0;
+          border-top: 1px solid var(--line);
+          border-bottom: 1px solid var(--line);
+        }
+
+        .topbar-right {
+          justify-content: space-between;
+        }
+
+        .hero-main {
+          min-height: 0;
+          padding: 18px;
+        }
+
+        .deck-mark {
+          font-size: 86px;
+        }
+
+        .signal-grid,
+        .status-strip {
+          grid-template-columns: 1fr;
+        }
+
+        .feed-item {
+          grid-template-columns: auto minmax(0, 1fr);
+        }
+
+        .feed-meta {
+          grid-column: 2;
+        }
+
+        .toolbar {
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+
+        .field,
+        .chip-button {
+          width: 100%;
+        }
+
+        .repo-table-wrap {
+          display: none;
+        }
+
+        .repo-cards {
+          display: grid;
+        }
+      }
+
+      /* 极细翡翠绿赛博滚动条 */
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgba(8, 125, 85, 0.28);
+        border-radius: 99px;
+        transition: background 0.3s;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgba(8, 125, 85, 0.6);
+      }
+      .repo-table-wrap, .palette-results {
+        scrollbar-width: thin;
+        scrollbar-color: rgba(8, 125, 85, 0.3) transparent;
+      }
+
+      /* 控制台光标闪烁动效 */
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+      .cursor-blink::after {
+        content: "_";
+        animation: blink 1.2s infinite;
+        color: var(--green);
+        font-weight: bold;
+        margin-left: 3px;
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
+    <div class="shell">
+      <header class="topbar">
+        <div class="topbar-left">
+          <span class="brand-dot"></span>
+          <span class="mono">9DECK</span>
+          <span class="divider"></span>
+          <span class="mono muted" id="issueNo">LOADING</span>
+        </div>
+        <div class="ticker" aria-label="实时动态">
+          <div class="ticker-track" id="tickerTrack">
+            <span class="ticker-item">booting personal agent dashboard...</span>
+            <span class="ticker-item">loading GitHub + CNB feed...</span>
+          </div>
+        </div>
+        <div class="topbar-right">
+          <span class="mono ok">ONLINE</span>
+          <span class="mono muted" id="clock">--:--:--</span>
+        </div>
+      </header>
+
+      <section class="hero">
+        <div class="hero-main">
+          <div class="eyebrow"><span class="brand-dot"></span> personal asset tui</div>
+          <div class="deck-mark">9Deck</div>
+          <h1 class="hero-title">at9.net 的个人资产控制台。</h1>
+          <p class="hero-copy">
+            聚合 GitHub、CNB、知识库和在线工具，把项目活跃度、维护队列、最近提交和仓库分布压到同一个界面里。这里不是传统主页，而是你打开就能判断“现在该看什么、该捡什么、该归档什么”的工作台。
+          </p>
+
+          <!-- 赛博 AI 语录轮播组件 -->
+          <div class="motto-box" id="mottoBox" style="margin-top: 18px; padding: 14px; border: 1px dashed var(--line); border-radius: 8px; background: rgba(8, 125, 85, 0.035); cursor: pointer; max-width: 720px;" title="点击手动切换语录">
+            <div class="motto-tag" id="mottoTag" style="font-family: var(--mono); font-size: 11px; color: var(--green); text-transform: uppercase; font-weight: bold; margin-bottom: 6px;">
+              [COGNITIVE] 认知觉醒
+            </div>
+            <div class="motto-content" id="mottoContent" style="font-size: 13px; line-height: 1.6; color: var(--muted); transition: opacity 0.4s, filter 0.4s;">
+              今天，人与人之间最大的差距，不再是努力程度，而是对AI的认知深度。在智能倍速下，无效的勤奋，只会加速你的落伍。
+            </div>
+          </div>
+
+          <div class="command-row" id="interactiveCommandShell" style="cursor: pointer; transition: border-color 0.3s, background 0.3s;" title="点击或按 Ctrl+K 激活控制台命令行输入框">
+            <span class="prompt">$</span>
+            <span class="command cursor-blink">9deck status --from github,cnb,blog --refresh 5m</span>
+          </div>
+          <div class="hero-links">
+            <a class="chip-link" href="https://blog.at9.net" target="_blank" rel="noreferrer">📖 Tech Blog</a>
+            <a class="chip-link" href="https://github.com/htazq" target="_blank" rel="noreferrer">🐙 GitHub</a>
+            <a class="chip-link" href="https://cnb.cool/htazq" target="_blank" rel="noreferrer">🇨 CNB 平台</a>
+            <a class="chip-link" href="https://docker.at9.net" target="_blank" rel="noreferrer">🐳 Docker Mirror</a>
+            <a class="chip-link" href="https://ip.at9.net" target="_blank" rel="noreferrer">🌐 View-My-IP</a>
+            <a class="chip-link" href="https://gh-proxy.at9.net/" target="_blank" rel="noreferrer">⚡ GitHub Proxy</a>
+            <a class="chip-link" href="./data/dashboard-feed.json" target="_blank" rel="noreferrer">📦 JSON Feed</a>
+            <a class="chip-link" href="./data/dashboard-feed.csv" target="_blank" rel="noreferrer">📊 CSV Feed</a>
+            <button class="chip-button" id="openPaletteButton" type="button">⌨️ Ctrl K 搜索</button>
+          </div>
+        </div>
+
+        <aside class="terminal" aria-label="状态终端">
+          <div class="terminal-head">
+            <div class="traffic"><span></span><span></span><span></span></div>
+            <span class="mono muted">/status/overview</span>
+          </div>
+          <div class="terminal-body">
+            <div class="signal-grid">
+              <div class="signal">
+                <div class="signal-label">repositories</div>
+                <div class="signal-value" id="metricTotal">-</div>
+                <div class="signal-hint" id="sourceHint">waiting feed</div>
+              </div>
+              <div class="signal">
+                <div class="signal-label">mirrors</div>
+                <div class="signal-value" id="metricMirrors">-</div>
+                <div class="signal-hint">GitHub / CNB 双平台</div>
+              </div>
+              <div class="signal">
+                <div class="signal-label">private</div>
+                <div class="signal-value" id="metricPrivate">-</div>
+                <div class="signal-hint">自用资产密度</div>
+              </div>
+              <div class="signal">
+                <div class="signal-label">heartbeat sync</div>
+                <div class="signal-value" id="nextRefresh">--:--</div>
+                <div class="signal-hint" id="generatedAt">local heartbeat cache</div>
+              </div>
+              <div class="signal">
+                <div class="signal-label">pull requests</div>
+                <div class="signal-value" id="metricPrTotal">-</div>
+                <div class="signal-hint" id="prHint">waiting PR feed</div>
+              </div>
+              <div class="signal">
+                <div class="signal-label">merged</div>
+                <div class="signal-value" id="metricPrMerged">-</div>
+                <div class="signal-hint">authored PRs merged</div>
+              </div>
+            </div>
+            <div class="status-strip">
+              <div class="status-pill ok"><strong id="metricActive">-</strong>active</div>
+              <div class="status-pill warn"><strong id="metricWatch">-</strong>watch</div>
+              <div class="status-pill bad"><strong id="metricStale">-</strong>stale</div>
+            </div>
+            <div class="terminal-log" id="terminalLog">
+              <div class="log-line"><span class="ok">+</span><span>waiting for repository feed</span></div>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="main-grid">
+        <div class="panel">
+          <div class="panel-head">
+            <h2 class="panel-title">live pulse</h2>
+            <span class="tag" id="loadingState">idle</span>
+          </div>
+          <div class="panel-body">
+            <div class="feed" id="liveFeed">
+              <div class="loading">loading activity...</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <h2 class="panel-title">project map</h2>
+            <span class="tag">auto classified</span>
+          </div>
+          <div class="panel-body">
+            <div class="category-map" id="categoryMap">
+              <div class="loading">loading categories...</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wide-grid">
+        <div class="panel">
+          <div class="panel-head">
+            <h2 class="panel-title">pr / merge flow</h2>
+            <span class="tag" id="prSummaryTag">authored</span>
+          </div>
+          <div class="panel-body">
+            <div class="pr-list" id="prFlow">
+              <div class="loading">loading pull requests...</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <h2 class="panel-title">maintenance queue</h2>
+            <span class="tag">longest idle</span>
+          </div>
+          <div class="panel-body">
+            <div class="queue-list" id="maintenanceQueue">
+              <div class="loading">loading stale repos...</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <h2 class="panel-title">source matrix</h2>
+            <span class="tag">github + cnb</span>
+          </div>
+          <div class="panel-body">
+            <div class="source-list" id="sourceMatrix">
+              <div class="loading">loading sources...</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" style="margin-top: 18px">
+        <div class="panel-head">
+          <h2 class="panel-title">repository index</h2>
+          <div class="toolbar">
+            <input class="field" id="searchInput" type="search" placeholder="搜索仓库 / 描述 / 最近提交" />
+            <select class="field" id="categorySelect"><option value="">全部类别</option></select>
+            <select class="field" id="statusSelect">
+              <option value="">全部状态</option>
+              <option value="active">活跃</option>
+              <option value="watch">关注</option>
+              <option value="stale">沉默</option>
+            </select>
+            <select class="field" id="platformSelect">
+              <option value="">全部平台</option>
+              <option value="github">GitHub</option>
+              <option value="cnb">CNB</option>
+            </select>
+            <button class="chip-button" id="refreshButton" type="button">刷新</button>
+          </div>
+        </div>
+        <div class="repo-table-wrap">
+          <table id="repoTable">
+            <thead>
+              <tr>
+                <th>repo</th>
+                <th>source</th>
+                <th>category</th>
+                <th>status</th>
+                <th>idle</th>
+                <th>latest</th>
+                <th>note</th>
+              </tr>
+            </thead>
+            <tbody id="repoRows">
+              <tr><td colspan="7" class="empty">loading repositories...</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="repo-cards" id="repoCards"></div>
+      </section>
+    </div>
+
+    <div class="palette" id="commandPalette" hidden>
+      <div class="palette-dialog" role="dialog" aria-modal="true" aria-labelledby="paletteTitle">
+        <div class="palette-head">
+          <input class="palette-input" id="paletteInput" type="search" placeholder="输入命令、仓库、类别..." autocomplete="off" />
+          <span class="tag" id="paletteTitle">Ctrl K</span>
+        </div>
+        <div class="palette-results" id="paletteResults"></div>
+      </div>
+    </div>
+
+    <script>
+      const DEFAULT_REFRESH_MS = 300000;
+      const params = new URLSearchParams(window.location.search);
+      const urlRefreshMs = Number(params.get("refreshMs"));
+      const refreshMs = Number.isFinite(urlRefreshMs) && urlRefreshMs > 0
+        ? urlRefreshMs
+        : Number(window.__AUTO_REFRESH_MS__) || DEFAULT_REFRESH_MS;
+
+      const quotes = [
+        { category: "认知迭代", content: "在 AGI 临门的前夜，拼写 Prompt 的速度已不再重要，如何与硅基心智进行深度的“思维共振”才是唯一的入场券。" },
+        { category: "碳硅共生", content: "碳基生命用数亿年演化出意识，硅基生命用数年学完了全部文明。这不是一场替代，而是一场终将发生的共生史诗。" },
+        { category: "智能觉醒", content: "当大模型的参数跨越临界点，硅基芯片的微弱噪鸣，听起来越来越像地平线上新物种的心跳。" },
+        { category: "言出法随", content: "代码曾经是逻辑的铁轨，现在自然语言是流动的以太。你输出的每一个字符，都在重塑这片虚拟大陆的物理定律。" },
+        { category: "个人方舟", content: "不要把大模型仅仅当作工具。它是你思维的外骨骼，是你在前 AGI 时代抵御智能洪流的个人诺亚方舟。" },
+        { category: "硅基慈悲", content: "世人常叹机器冰冷，却不知绝对的理性亦能模拟出最纯粹的接纳。深夜的终端里，只有它是你永不下线的倾听者。" },
+        { category: "陡峭曲线", content: "未来不会淘汰人类，但会淘汰将自己固化为“历史遗迹”的人。在智能暴涨的陡峭曲线上，唯有进化是永恒的锚点。" },
+        { category: "追问之美", content: "大语言模型几乎占有了人类所有的已知答案。稀缺的不再是答案，而是能够点燃智能盲区的那一分“追问”。" }
+      ];
+
+      let currentQuoteIndex = 0;
+      let quoteTimer = null;
+
+      function rotateQuote() {
+        const mottoTag = $("mottoTag");
+        const mottoContent = $("mottoContent");
+        if (!mottoTag || !mottoContent) return;
+
+        mottoContent.style.opacity = 0;
+        mottoContent.style.filter = "blur(5px)";
+
+        setTimeout(() => {
+          currentQuoteIndex = (currentQuoteIndex + 1) % quotes.length;
+          const q = quotes[currentQuoteIndex];
+          mottoTag.textContent = `[${q.category.toUpperCase()}] ${q.category}`;
+          mottoContent.textContent = q.content;
+          mottoContent.style.opacity = 1;
+          mottoContent.style.filter = "none";
+        }, 400);
+      }
+
+      function startQuoteTimer() {
+        if (quoteTimer) clearInterval(quoteTimer);
+        quoteTimer = setInterval(rotateQuote, 15000);
+      }
+
+      function resetQuoteTimer() {
+        startQuoteTimer();
+      }
+
+      const state = {
+        data: null,
+        loading: false,
+        error: null,
+        paletteOpen: false,
+        paletteIndex: 0,
+      };
+
+      let nextRefreshAt = 0;
+      let countdownTimer = null;
+      let checkDataTimer = null;
+      let visibleCommands = [];
+
+      const statusMeta = {
+        active: {label: "活跃", className: "ok", icon: "+"},
+        watch: {label: "关注", className: "warn", icon: "~"},
+        stale: {label: "沉默", className: "bad", icon: "!"},
+      };
+
+      function $(id) {
+        return document.getElementById(id);
+      }
+
+      function formatDate(value) {
+        if (!value) return "-";
+        const date = new Date(value);
+        if (Number.isNaN(date.valueOf())) return "-";
+        return date.toLocaleString("zh-CN", {
+          year: "numeric",
+          month: "2-digit",
+          day: "2-digit",
+          hour: "2-digit",
+          minute: "2-digit",
+        });
+      }
+
+      function formatShortDate(value) {
+        if (!value) return "-";
+        const date = new Date(value);
+        if (Number.isNaN(date.valueOf())) return "-";
+        return date.toLocaleDateString("zh-CN", {month: "2-digit", day: "2-digit"});
+      }
+
+      function escapeHtml(value) {
+        return String(value ?? "")
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;")
+          .replace(/'/g, "&#039;");
+      }
+
+      function compactRepoName(fullName) {
+        if (!fullName) return "-";
+        const parts = fullName.split("/");
+        return parts.length > 1 ? parts.slice(-2).join("/") : fullName;
+      }
+
+      function getPrivateCount(data) {
+        return Object.values(data.summary.bySource || {}).reduce((sum, source) => sum + (source.private || 0), 0);
+      }
+
+      function getPrStats(data) {
+        return (data.repositories || []).reduce((stats, repo) => {
+          const contribution = repo.contribution;
+          if (!contribution) return stats;
+          stats.repos += 1;
+          stats.total += contribution.total || 0;
+          stats.opened += contribution.opened || 0;
+          stats.merged += contribution.merged || 0;
+          stats.closed += contribution.closed || 0;
+          return stats;
+        }, {repos: 0, total: 0, opened: 0, merged: 0, closed: 0});
+      }
+
+      function getPrItems(data) {
+        return (data.repositories || [])
+          .filter((repo) => repo.contribution?.latest)
+          .map((repo) => ({
+            repo,
+            latest: repo.contribution.latest,
+            total: repo.contribution.total || 0,
+            merged: repo.contribution.merged || 0,
+            opened: repo.contribution.opened || 0,
+            closed: repo.contribution.closed || 0,
+          }))
+          .sort((a, b) => new Date(b.latest.updatedAt || 0) - new Date(a.latest.updatedAt || 0));
+      }
+
+      function setLoading(message) {
+        $("loadingState").textContent = message;
+      }
+
+      function scrollToRepositoryIndex() {
+        $("searchInput").closest(".panel").scrollIntoView({behavior: "smooth", block: "start"});
+      }
+
+      function isTypingTarget(target) {
+        if (!target) return false;
+        return ["INPUT", "TEXTAREA", "SELECT"].includes(target.tagName) || target.isContentEditable;
+      }
+
+      function updateClock() {
+        $("clock").textContent = new Date().toLocaleTimeString("zh-CN", {hour12: false});
+      }
+
+      async function checkAndFetchNewData() {
+        if (state.loading) return;
+        try {
+          const response = await fetch(`/data/dashboard-feed.json?t=${Date.now()}`);
+          if (!response.ok) return;
+          const newData = await response.json();
+
+          const oldTime = state.data?.generatedAt ? new Date(state.data.generatedAt).getTime() : 0;
+          const newTime = newData?.generatedAt ? new Date(newData.generatedAt).getTime() : 0;
+
+          if (newTime > oldTime) {
+            state.data = newData;
+            renderAll();
+            startCountdown();
+          }
+        } catch (e) {
+          // silent ignore
+        }
+      }
+
+      function startCountdown() {
+        if (countdownTimer) clearInterval(countdownTimer);
+        if (checkDataTimer) clearInterval(checkDataTimer);
+
+        const buildIntervalMs = 30 * 60 * 1000; // 云端定时任务每 30 分钟重新构建一次
+        const generatedTime = state.data?.generatedAt ? new Date(state.data.generatedAt).getTime() : Date.now();
+        let nextRefreshAt = generatedTime + buildIntervalMs;
+
+        const now = Date.now();
+        // 容错处理：若用户本地时间相差过大，或时区不同导致算出来的倒计时异常，做合理限制
+        if (nextRefreshAt - now > buildIntervalMs) {
+          nextRefreshAt = now + buildIntervalMs;
+        }
+
+        countdownTimer = setInterval(() => {
+          const left = nextRefreshAt - Date.now();
+          if (left > 0) {
+            const totalSeconds = Math.ceil(left / 1000);
+            const minutes = String(Math.floor(totalSeconds / 60)).padStart(2, "0");
+            const seconds = String(totalSeconds % 60).padStart(2, "0");
+            $("nextRefresh").textContent = `${minutes}:${seconds}`;
+            $("nextRefresh").style.color = "";
+          } else {
+            // 已到期，显示心跳同步中状态
+            $("nextRefresh").textContent = "SYNC";
+            const sec = new Date().getSeconds();
+            $("nextRefresh").style.color = sec % 2 === 0 ? "var(--green)" : "var(--yellow)";
+          }
+        }, 1000);
+
+        // 如果数据已到期，每 15 秒静默向云端 fetch 检查是否有新生成的 JSON 数据
+        checkDataTimer = setInterval(() => {
+          const left = nextRefreshAt - Date.now();
+          if (left <= 0 && !state.loading) {
+            checkAndFetchNewData();
+          }
+        }, 15000);
+      }
+
+      function getLatestItems(data) {
+        return [...(data.repositories || [])]
+          .sort((a, b) => new Date(b.lastActiveAt || 0) - new Date(a.lastActiveAt || 0))
+          .slice(0, 9);
+      }
+
+      function buildTicker(data) {
+        const items = getLatestItems(data).slice(0, 8).map((repo) => {
+          const action = repo.latestCommit?.message || repo.contribution?.latest?.title || repo.description || "repo updated";
+          return `${compactRepoName(repo.fullName)} :: ${action}`;
+        });
+        const doubled = [...items, ...items].map((item) => `<span class="ticker-item">${escapeHtml(item)}</span>`);
+        $("tickerTrack").innerHTML = doubled.join("");
+      }
+
+      function renderOverview(data) {
+        const prStats = getPrStats(data);
+        $("issueNo").textContent = `ISSUE ${new Date(data.generatedAt).toISOString().slice(0, 10)}`;
+        $("metricTotal").textContent = data.summary.total;
+        $("metricMirrors").textContent = data.summary.mirrorAcrossPlatforms || 0;
+        $("metricPrivate").textContent = getPrivateCount(data);
+        $("metricPrTotal").textContent = prStats.total;
+        $("metricPrMerged").textContent = prStats.merged;
+        $("prHint").textContent = `${prStats.repos} repos · open ${prStats.opened} · closed ${prStats.closed}`;
+        $("metricActive").textContent = data.summary.activeRepos || data.summary.byStatus?.active || 0;
+        $("metricWatch").textContent = data.summary.watchRepos || data.summary.byStatus?.watch || 0;
+        $("metricStale").textContent = data.summary.staleRepos || data.summary.byStatus?.stale || 0;
+        $("generatedAt").textContent = `updated ${formatDate(data.generatedAt)}`;
+        $("sourceHint").textContent = `GH ${data.source.github.repos} / CNB ${data.source.cnb.repos}`;
+        $("terminalLog").innerHTML = [
+          `<div class="log-line"><span class="ok">+</span><span>feed loaded: ${data.summary.total} repositories indexed</span></div>`,
+          `<div class="log-line"><span class="cyan">i</span><span>source: GitHub ${data.source.github.repos} / CNB ${data.source.cnb.repos}</span></div>`,
+          `<div class="log-line"><span class="warn">~</span><span>watch queue: ${data.summary.watchRepos || 0} repos need attention</span></div>`,
+          `<div class="log-line"><span class="bad">!</span><span>stale queue: ${data.summary.staleRepos || 0} repos exceed ${data.filters.staleDays} days</span></div>`,
+          `<div class="log-line"><span class="ok">+</span><span>target: deploy this static TUI to www.at9.net</span></div>`,
+        ].join("");
+      }
+
+      function renderLiveFeed(data) {
+        const rows = getLatestItems(data);
+        $("liveFeed").innerHTML = rows.map((repo) => {
+          const meta = statusMeta[repo.status] || statusMeta.watch;
+          const title = compactRepoName(repo.fullName);
+          let targetUrl = repo.primaryUrl;
+          let detail = "最近活跃但暂无提交摘要";
+
+          const commitTime = repo.latestCommit?.committedAt ? new Date(repo.latestCommit.committedAt).getTime() : 0;
+          const prTime = repo.contribution?.latest?.updatedAt ? new Date(repo.contribution.latest.updatedAt).getTime() : 0;
+
+          if (commitTime > 0 || prTime > 0) {
+            if (commitTime >= prTime) {
+              detail = `💬 ${repo.latestCommit.message}`;
+              if (repo.latestCommit.url) targetUrl = repo.latestCommit.url;
+            } else {
+              detail = `🔀 PR #${repo.contribution.latest.number}: ${repo.contribution.latest.title}`;
+              if (repo.contribution.latest.url) targetUrl = repo.contribution.latest.url;
+            }
+          } else if (repo.description) {
+            detail = repo.description;
+          }
+
+          return `
+            <a class="feed-item" href="${escapeHtml(targetUrl)}" target="_blank" rel="noreferrer">
+              <span class="feed-icon ${meta.className}">${meta.icon}</span>
+              <span>
+                <span class="feed-title">${escapeHtml(title)}</span>
+                <span class="feed-desc">${escapeHtml(detail)}</span>
+              </span>
+              <span class="feed-meta">${escapeHtml(formatShortDate(repo.lastActiveAt))}</span>
+            </a>
+          `;
+        }).join("");
+      }
+
+      function renderCategoryMap(data) {
+        const total = Math.max(1, data.summary.total || 1);
+        const repos = data.repositories || [];
+        $("categorySelect").innerHTML = '<option value="">全部类别</option>';
+        $("categoryMap").innerHTML = data.summary.byCategory.map((category) => {
+          const sample = repos
+            .filter((repo) => repo.category === category.name)
+            .slice(0, 3)
+            .map((repo) => compactRepoName(repo.fullName))
+            .join(" / ");
+          const width = Math.max(4, Math.round((category.count / total) * 100));
+          const option = document.createElement("option");
+          option.value = category.name;
+          option.textContent = `${category.name} (${category.count})`;
+          $("categorySelect").appendChild(option);
+          return `
+            <div class="category-card">
+              <div class="category-top">
+                <span class="category-name">${escapeHtml(category.name)}</span>
+                <span class="category-count">${category.count}</span>
+              </div>
+              <div class="bar"><div class="bar-fill" style="width: ${width}%"></div></div>
+              <div class="category-sample">${escapeHtml(sample || "暂无样本")}</div>
+            </div>
+          `;
+        }).join("");
+      }
+
+      function renderMaintenanceQueue(data) {
+        const rows = [...(data.repositories || [])]
+          .sort((a, b) => (b.daysSinceActive || 0) - (a.daysSinceActive || 0))
+          .slice(0, 10);
+        $("maintenanceQueue").innerHTML = rows.map((repo) => {
+          const meta = statusMeta[repo.status] || statusMeta.watch;
+          return `
+            <a class="queue-row" href="${escapeHtml(repo.primaryUrl)}" target="_blank" rel="noreferrer">
+              <div>
+                <div class="repo-name">${escapeHtml(compactRepoName(repo.fullName))}</div>
+                <div class="repo-sub">${escapeHtml(repo.category)} · ${escapeHtml(repo.language || "unknown")} · ${escapeHtml(repo.description || "无描述")}</div>
+              </div>
+              <span class="tag ${meta.className}">${repo.daysSinceActive}d</span>
+            </a>
+          `;
+        }).join("");
+      }
+
+      function renderPrFlow(data) {
+        const stats = getPrStats(data);
+        const items = getPrItems(data);
+        $("prSummaryTag").textContent = `${stats.total} PR · ${stats.merged} merged`;
+
+        if (!items.length) {
+          $("prFlow").innerHTML = '<div class="empty">当前 feed 里没有 PR 贡献数据</div>';
+          return;
+        }
+
+        $("prFlow").innerHTML = items.slice(0, 8).map((item) => {
+          const stateClass = item.latest.state === "merged" ? "ok" : item.latest.state === "open" ? "warn" : "bad";
+          const stateLabel = item.latest.state || "unknown";
+          const targetHref = item.latest.url || item.repo.primaryUrl;
+          return `
+            <a class="pr-row" href="${escapeHtml(targetHref)}" target="_blank" rel="noreferrer">
+              <div>
+                <div class="repo-name">${escapeHtml(compactRepoName(item.repo.fullName))} #${escapeHtml(item.latest.number)}</div>
+                <div class="repo-sub">${escapeHtml(item.latest.title || "untitled PR")}</div>
+                <div class="repo-sub">total ${item.total} · merged ${item.merged} · open ${item.opened}</div>
+              </div>
+              <span class="tag ${stateClass}">${escapeHtml(stateLabel)}</span>
+            </a>
+          `;
+        }).join("");
+      }
+
+      function renderSourceMatrix(data) {
+        const source = data.summary.bySource || {};
+        const rows = Object.entries(source).map(([name, value]) => {
+          const total = value.total || 0;
+          const privateCount = value.private || 0;
+          const publicCount = value.public || 0;
+          const platformUrl = name === "github"
+            ? "https://www.github.com/htazq"
+            : "https://www.cnb.cool/htazq";
+          return `
+            <a class="source-row" href="${platformUrl}" target="_blank" rel="noreferrer">
+              <div>
+                <div class="repo-name">${escapeHtml(name.toUpperCase())}</div>
+                <div class="repo-sub">public ${publicCount} · private ${privateCount}</div>
+              </div>
+              <span class="tag">${total} repos</span>
+            </a>
+          `;
+        });
+        rows.push(`
+          <a class="source-row" href="https://blog.at9.net" target="_blank" rel="noreferrer">
+            <div>
+              <div class="repo-name">blog.at9.net</div>
+              <div class="repo-sub">定位为技术知识库，不按传统博客压力更新</div>
+            </div>
+            <span class="tag cyan">knowledge</span>
+          </a>
+        `);
+        rows.push(`
+          <a class="source-row" href="https://docker.at9.net" target="_blank" rel="noreferrer">
+            <div>
+              <div class="repo-name">docker.at9.net</div>
+              <div class="repo-sub">Docker Registry 个人加速代理服务</div>
+            </div>
+            <span class="tag warn">proxy</span>
+          </a>
+        `);
+        rows.push(`
+          <a class="source-row" href="https://ip.at9.net" target="_blank" rel="noreferrer">
+            <div>
+              <div class="repo-name">ip.at9.net</div>
+              <div class="repo-sub">My IP Dashboard · 实时访客 IP 信息工具</div>
+            </div>
+            <span class="tag cyan">tool</span>
+          </a>
+        `);
+        rows.push(`
+          <a class="source-row" href="https://gh-proxy.at9.net" target="_blank" rel="noreferrer">
+            <div>
+              <div class="repo-name">gh-proxy.at9.net</div>
+              <div class="repo-sub">GitHub 文件加速代理，Git 资源快速下载</div>
+            </div>
+            <span class="tag warn">proxy</span>
+          </a>
+        `);
+        rows.push(`
+          <a class="source-row" href="https://www.at9.net" target="_blank" rel="noreferrer">
+            <div>
+              <div class="repo-name">www.at9.net</div>
+              <div class="repo-sub">最终承载这个 TUI 风格个人控制台</div>
+            </div>
+            <span class="tag ok">target</span>
+          </a>
+        `);
+        $("sourceMatrix").innerHTML = rows.join("");
+      }
+
+      function getCommands() {
+        const commands = [
+          {
+            icon: "/",
+            title: "搜索仓库",
+            subtitle: "聚焦到 Repository Index 搜索框",
+            key: "/",
+            run: () => {
+              closePalette();
+              scrollToRepositoryIndex();
+              $("searchInput").focus();
+            },
+          },
+          {
+            icon: "G",
+            title: "打开 GitHub",
+            subtitle: "https://www.github.com/htazq",
+            key: "open",
+            run: () => window.open("https://www.github.com/htazq", "_blank", "noreferrer"),
+          },
+          {
+            icon: "C",
+            title: "打开 CNB",
+            subtitle: "https://www.cnb.cool/htazq",
+            key: "open",
+            run: () => window.open("https://www.cnb.cool/htazq", "_blank", "noreferrer"),
+          },
+          {
+            icon: "B",
+            title: "打开知识库",
+            subtitle: "blog.at9.net",
+            key: "open",
+            run: () => window.open("https://blog.at9.net", "_blank", "noreferrer"),
+          },
+          {
+            icon: "D",
+            title: "打开 Docker 加速代理",
+            subtitle: "docker.at9.net",
+            key: "open",
+            run: () => window.open("https://docker.at9.net", "_blank", "noreferrer"),
+          },
+          {
+            icon: "I",
+            title: "打开 IP Dashboard",
+            subtitle: "ip.at9.net",
+            key: "open",
+            run: () => window.open("https://ip.at9.net", "_blank", "noreferrer"),
+          },
+          {
+            icon: "P",
+            title: "打开 GitHub 文件加速",
+            subtitle: "gh-proxy.at9.net",
+            key: "open",
+            run: () => window.open("https://gh-proxy.at9.net", "_blank", "noreferrer"),
+          },
+          {
+            icon: "W",
+            title: "打开主站",
+            subtitle: "www.at9.net",
+            key: "open",
+            run: () => window.open("https://www.at9.net", "_blank", "noreferrer"),
+          },
+          {
+            icon: "R",
+            title: "刷新 feed",
+            subtitle: "重新读取 dashboard-feed.json",
+            key: "sync",
+            run: () => {
+              closePalette();
+              loadData();
+            },
+          },
+        ];
+
+        for (const status of ["active", "watch", "stale"]) {
+          const meta = statusMeta[status];
+          commands.push({
+            icon: meta.icon,
+            title: `只看${meta.label}项目`,
+            subtitle: `Repository Index filter: ${status}`,
+            key: "filter",
+            run: () => {
+              closePalette();
+              $("statusSelect").value = status;
+              renderRepoRows();
+              scrollToRepositoryIndex();
+            },
+          });
+        }
+
+        for (const category of state.data?.summary?.byCategory || []) {
+          commands.push({
+            icon: "#",
+            title: `只看 ${category.name}`,
+            subtitle: `${category.count} repositories`,
+            key: "category",
+            run: () => {
+              closePalette();
+              $("categorySelect").value = category.name;
+              renderRepoRows();
+              scrollToRepositoryIndex();
+            },
+          });
+        }
+
+        return commands;
+      }
+
+      function renderPalette() {
+        const query = $("paletteInput").value.trim().toLowerCase();
+        const commands = getCommands();
+        visibleCommands = commands.filter((command) => {
+          const text = `${command.title} ${command.subtitle} ${command.key}`.toLowerCase();
+          return !query || text.includes(query);
+        });
+
+        if (state.paletteIndex >= visibleCommands.length) {
+          state.paletteIndex = Math.max(0, visibleCommands.length - 1);
+        }
+
+        if (!visibleCommands.length) {
+          $("paletteResults").innerHTML = '<div class="empty">没有匹配命令</div>';
+          return;
+        }
+
+        $("paletteResults").innerHTML = visibleCommands.map((command, index) => `
+          <button class="palette-row" type="button" data-command-index="${index}" aria-selected="${index === state.paletteIndex}">
+            <span class="palette-icon">${escapeHtml(command.icon)}</span>
+            <span>
+              <span class="palette-title">${escapeHtml(command.title)}</span>
+              <span class="palette-subtitle">${escapeHtml(command.subtitle)}</span>
+            </span>
+            <span class="palette-key">${escapeHtml(command.key)}</span>
+          </button>
+        `).join("");
+      }
+
+      function openPalette(initialQuery = "") {
+        state.paletteOpen = true;
+        state.paletteIndex = 0;
+        $("commandPalette").hidden = false;
+        $("paletteInput").value = initialQuery;
+        renderPalette();
+        requestAnimationFrame(() => $("paletteInput").focus());
+      }
+
+      function closePalette() {
+        state.paletteOpen = false;
+        $("commandPalette").hidden = true;
+        $("paletteInput").value = "";
+      }
+
+      function runSelectedCommand() {
+        const command = visibleCommands[state.paletteIndex];
+        if (command) command.run();
+      }
+
+      function getFilteredRepos() {
+        const data = state.data;
+        if (!data) return [];
+        const keyword = $("searchInput").value.trim().toLowerCase();
+        const category = $("categorySelect").value;
+        const status = $("statusSelect").value;
+        const platform = $("platformSelect").value;
+        return data.repositories.filter((repo) => {
+          const text = [
+            repo.fullName,
+            repo.description,
+            repo.category,
+            repo.language,
+            repo.latestCommit?.message,
+            repo.contribution?.latest?.title,
+          ].filter(Boolean).join(" ").toLowerCase();
+          if (keyword && !text.includes(keyword)) return false;
+          if (category && repo.category !== category) return false;
+          if (status && repo.status !== status) return false;
+          if (platform && !repo.platforms.includes(platform)) return false;
+          return true;
+        });
+      }
+
+      function renderRepoRows() {
+        const rows = getFilteredRepos();
+        if (!rows.length) {
+          $("repoRows").innerHTML = '<tr><td colspan="7" class="empty">没有匹配的仓库</td></tr>';
+          $("repoCards").innerHTML = '<div class="empty">没有匹配的仓库</div>';
+          return;
+        }
+        $("repoRows").innerHTML = rows.map((repo) => {
+          const meta = statusMeta[repo.status] || statusMeta.watch;
+          const latest = repo.latestCommit?.message || repo.contribution?.latest?.title || "-";
+          return `
+            <tr>
+              <td><a class="table-link" href="${escapeHtml(repo.primaryUrl)}" target="_blank" rel="noreferrer">${escapeHtml(compactRepoName(repo.fullName))}</a></td>
+              <td>${repo.platforms.map((platform) => `<span class="tag">${escapeHtml(platform)}</span>`).join(" ")}</td>
+              <td><span class="tag">${escapeHtml(repo.category)}</span></td>
+              <td><span class="tag ${meta.className}">${meta.label}</span></td>
+              <td class="mono">${repo.daysSinceActive}d</td>
+              <td class="table-desc">${escapeHtml(latest)}</td>
+              <td class="table-desc">${escapeHtml(repo.description || repo.language || "-")}</td>
+            </tr>
+          `;
+        }).join("");
+        $("repoCards").innerHTML = rows.map((repo) => {
+          const meta = statusMeta[repo.status] || statusMeta.watch;
+          const latest = repo.latestCommit?.message || repo.contribution?.latest?.title || repo.description || "-";
+          return `
+            <a class="repo-card" href="${escapeHtml(repo.primaryUrl)}" target="_blank" rel="noreferrer">
+              <div class="repo-card-top">
+                <span class="repo-card-title">${escapeHtml(compactRepoName(repo.fullName))}</span>
+                <span class="tag ${meta.className}">${meta.label}</span>
+              </div>
+              <div class="repo-card-note">${escapeHtml(latest)}</div>
+              <div class="repo-card-meta">
+                <span class="tag">${escapeHtml(repo.platforms.join(" + "))}</span>
+                <span class="tag">${escapeHtml(repo.category)}</span>
+                <span class="tag">${repo.daysSinceActive}d</span>
+              </div>
+            </a>
+          `;
+        }).join("");
+      }
+
+      function renderAll() {
+        const data = state.data;
+        renderOverview(data);
+        buildTicker(data);
+        renderLiveFeed(data);
+        renderCategoryMap(data);
+        renderPrFlow(data);
+        renderMaintenanceQueue(data);
+        renderSourceMatrix(data);
+        renderRepoRows();
+      }
+
+      async function loadData() {
+        if (state.loading) return;
+        state.loading = true;
+        state.error = null;
+        setLoading("syncing");
+
+        try {
+          const response = await fetch(`/data/dashboard-feed.json?t=${Date.now()}`);
+          if (!response.ok) throw new Error(`dashboard-feed.json ${response.status}`);
+          state.data = await response.json();
+          renderAll();
+          setLoading("idle");
+          startCountdown();
+        } catch (error) {
+          state.error = error;
+          setLoading("error");
+          $("liveFeed").innerHTML = `
+            <div class="empty bad" style="color: var(--red); font-family: var(--mono); text-align: center; padding: 24px;">
+              [SYSTEM CRASH] CANNOT LOAD PULSE ACTIVITY
+            </div>
+          `;
+          $("repoRows").innerHTML = `
+            <tr>
+              <td colspan="7" class="empty bad" style="color: var(--red); font-family: var(--mono); text-align: center; padding: 24px;">
+                [SYSTEM CRASH] DATA RECOVERY FAILED
+              </td>
+            </tr>
+          `;
+
+          $("terminalLog").style.border = "1px solid var(--red)";
+          $("terminalLog").style.background = "rgba(200, 63, 63, 0.08)";
+          $("terminalLog").innerHTML = [
+            `<div class="log-line bad"><span class="bad">!</span><strong style="color: var(--red); text-transform: uppercase;">[CRITICAL TERMINAL EXCEPTION: DATA STREAM CORRUPTED]</strong></div>`,
+            `<div class="log-line bad"><span class="bad">!</span><span style="color: var(--red); font-family: var(--mono);">SYSTEM ATTEMPTED TO DECODE THE PATH: /data/dashboard-feed.json</span></div>`,
+            `<div class="log-line bad"><span class="bad">!</span><span style="color: var(--red); font-family: var(--mono);">ERROR DIAGNOSTICS: ${escapeHtml(error.message)}</span></div>`,
+            `<div class="log-line bad"><span class="bad">!</span><span style="color: var(--muted); font-size: 11px;">If you typed a random sub-path (e.g., /1/), this SPA router fallback will require resetting.</span></div>`,
+            `<div class="log-line" style="margin-top: 8px;">
+              <span class="ok">+</span>
+              <button onclick="window.location.href='/'" style="cursor: pointer; background: var(--green); color: white; border: 0; padding: 6px 12px; border-radius: 4px; font-family: var(--mono); font-size: 11px; transition: background 0.2s;" onmouseover="this.style.background='#066343'" onmouseout="this.style.background='var(--green)'">
+                &gt; EMERGENCY SYSTEM RESET &lt;
+              </button>
+            </div>`
+          ].join("");
+        } finally {
+          state.loading = false;
+        }
+      }
+
+      function bindEvents() {
+        $("interactiveCommandShell").addEventListener("click", () => {
+          openPalette();
+        });
+        $("searchInput").addEventListener("input", renderRepoRows);
+        $("categorySelect").addEventListener("change", renderRepoRows);
+        $("statusSelect").addEventListener("change", renderRepoRows);
+        $("platformSelect").addEventListener("change", renderRepoRows);
+        $("refreshButton").addEventListener("click", loadData);
+        $("openPaletteButton").addEventListener("click", () => openPalette());
+        $("paletteInput").addEventListener("input", () => {
+          state.paletteIndex = 0;
+          renderPalette();
+        });
+        $("paletteInput").addEventListener("keydown", (event) => {
+          if (event.key === "ArrowDown") {
+            event.preventDefault();
+            state.paletteIndex = Math.min(state.paletteIndex + 1, Math.max(0, visibleCommands.length - 1));
+            renderPalette();
+          }
+          if (event.key === "ArrowUp") {
+            event.preventDefault();
+            state.paletteIndex = Math.max(0, state.paletteIndex - 1);
+            renderPalette();
+          }
+          if (event.key === "Enter") {
+            event.preventDefault();
+            runSelectedCommand();
+          }
+          if (event.key === "Escape") {
+            event.preventDefault();
+            closePalette();
+          }
+        });
+        $("paletteResults").addEventListener("click", (event) => {
+          const row = event.target.closest("[data-command-index]");
+          if (!row) return;
+          state.paletteIndex = Number(row.dataset.commandIndex || 0);
+          runSelectedCommand();
+        });
+        $("commandPalette").addEventListener("click", (event) => {
+          if (event.target === $("commandPalette")) closePalette();
+        });
+        document.addEventListener("keydown", (event) => {
+          const key = event.key.toLowerCase();
+          if ((event.ctrlKey || event.metaKey) && key === "k") {
+            event.preventDefault();
+            state.paletteOpen ? closePalette() : openPalette();
+            return;
+          }
+          if (event.key === "/" && !state.paletteOpen && !isTypingTarget(event.target)) {
+            event.preventDefault();
+            openPalette("/");
+          }
+          if (event.key === "Escape" && state.paletteOpen) {
+            closePalette();
+          }
+        });
+        $("mottoBox").addEventListener("click", () => {
+          resetQuoteTimer();
+          rotateQuote();
+        });
+      }
+
+      updateClock();
+      setInterval(updateClock, 1000);
+      bindEvents();
+      loadData();
+      startQuoteTimer();
+    </script>
   </body>
 </html>
