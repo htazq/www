@@ -75,6 +75,17 @@ function toOwnerRepoKey(value) {
   return '';
 }
 
+function splitOwnerRepo(value) {
+  if (!value) {
+    return null;
+  }
+  const [owner, name] = String(value).split('/');
+  if (!owner || !name) {
+    return null;
+  }
+  return {owner, name};
+}
+
 function mapStatus(daysSinceActive) {
   if (daysSinceActive <= ACTIVE_DAYS) {
     return 'active';
@@ -351,6 +362,7 @@ function toBoardRepo(item, rules) {
     language: item.language || '',
     topics: item.topics || [],
     homepage: item.homepage || '',
+    isExternalContribution: Boolean(item.isExternalContribution),
   };
 }
 
@@ -416,6 +428,7 @@ function buildBoard(items, rules, sourceMeta) {
     summary: {
       total: withCategory.length,
       mirrorAcrossPlatforms: withCategory.filter((item) => item.sources.length > 1).length,
+      externalContributions: withCategory.filter((item) => item.isExternalContribution).length,
       byCategory: categories,
       byStatus: statusCounter,
       bySource: sourceCounter,
@@ -725,7 +738,66 @@ async function fetchGitHubAuthoredPrs() {
           name: repoName,
           nameWithOwner: repoFullName,
         },
+        repositoryDetails: detail?.base?.repo ? normalizeGitHubFromApi(detail.base.repo) : null,
       });
+    }
+
+    const parsed = parseGitHubLinkHeader(responseHeaders.get('link'));
+    next = rows.length < 100 ? (parsed.next || '') : '';
+  }
+
+  return rows;
+}
+
+function normalizeGitHubCommitSearchItem(item) {
+  const repo = item.repository || null;
+  const repoFullName = repo?.full_name || String(item.html_url || '').split('/commit/')[0].replace('https://github.com/', '');
+  if (!repoFullName || !repoFullName.includes('/')) {
+    return null;
+  }
+
+  const sha = item.sha || '';
+  return {
+    repository: repoFullName,
+    visibility: repo?.private ? 'private' : 'public',
+    language: repo?.language || '',
+    sha,
+    shortSha: sha.slice(0, 7),
+    date: item.commit?.committer?.date || item.commit?.author?.date || '',
+    authorName: item.commit?.author?.name || item.author?.login || '',
+    authorEmail: item.commit?.author?.email || '',
+    message: item.commit?.message || '',
+    url: item.html_url || '',
+    repositoryDetails: repo ? normalizeGitHubFromApi(repo) : null,
+  };
+}
+
+async function fetchGitHubAuthoredCommits() {
+  if (!USE_API) {
+    return [];
+  }
+
+  const headers = {
+    ...makeGitHubHeaders(),
+    Accept: 'application/vnd.github.cloak-preview+json',
+  };
+  const rows = [];
+  let next = `https://api.github.com/search/commits?q=${encodeURIComponent(`author:${GH_OWNER}`)}&sort=committer-date&order=desc&per_page=100`;
+
+  console.log('[GitHub Commit API] 开始调用, GH_OWNER=' + GH_OWNER + ', GH_TOKEN=' + (GH_TOKEN ? '已设置' : '未设置'));
+
+  while (next && rows.length < 100) {
+    const {ok, payload, headers: responseHeaders, status} = await requestJson(next, headers);
+    if (!ok) {
+      throw new Error(`GitHub Commit API 请求失败: ${status} ${payload?.message || ''}`.trim());
+    }
+
+    const items = Array.isArray(payload?.items) ? payload.items : [];
+    for (const item of items) {
+      const normalized = normalizeGitHubCommitSearchItem(item);
+      if (normalized) {
+        rows.push(normalized);
+      }
     }
 
     const parsed = parseGitHubLinkHeader(responseHeaders.get('link'));
@@ -791,6 +863,105 @@ function buildCommitMeta(commitRows) {
     }
   }
   return out;
+}
+
+function maxDateText(values) {
+  return values
+    .filter(Boolean)
+    .sort((a, b) => (parseHttpDate(b)?.getTime() || 0) - (parseHttpDate(a)?.getTime() || 0))[0] || '';
+}
+
+function addContributionRepoInfo(map, rawFullName, details, fallback = {}) {
+  const parsed = splitOwnerRepo(rawFullName);
+  if (!parsed) {
+    return;
+  }
+  const key = normalizeRepoKey(parsed.owner, parsed.name);
+  if (!map.has(key)) {
+    map.set(key, {
+      owner: parsed.owner,
+      name: parsed.name,
+      fullName: `${parsed.owner}/${parsed.name}`,
+      details: null,
+      visibility: '',
+      language: '',
+    });
+  }
+
+  const info = map.get(key);
+  if (!info.details && details) {
+    info.details = details;
+  }
+  if (!info.visibility && fallback.visibility) {
+    info.visibility = fallback.visibility;
+  }
+  if (!info.language && fallback.language) {
+    info.language = fallback.language;
+  }
+}
+
+function buildExternalContributionRepos(commitRows, prRows, commitMap, contributionMap, existingRepos) {
+  const existingKeys = new Set(existingRepos.map((repo) => normalizeRepoKey(repo.owner, repo.name)));
+  const repoInfo = new Map();
+
+  for (const item of commitRows) {
+    addContributionRepoInfo(repoInfo, item.repository, item.repositoryDetails, {
+      visibility: item.visibility,
+      language: item.language,
+    });
+  }
+
+  for (const item of prRows) {
+    addContributionRepoInfo(repoInfo, item.repository?.nameWithOwner || item.repository, item.repositoryDetails);
+  }
+
+  return Array.from(repoInfo.entries())
+    .filter(([key]) => !existingKeys.has(key) && !key.startsWith(`${GH_OWNER.toLowerCase()}/`))
+    .map(([key, info]) => {
+      const details = info.details || null;
+      const latestCommit = commitMap.get(key) || null;
+      const contribution = contributionMap.get(key) || null;
+      const visibility = details?.visibility || (String(info.visibility).toLowerCase() === 'private' ? 'Private' : 'Public');
+      const isPrivate = details?.isPrivate ?? visibility.toLowerCase() === 'private';
+      const fullName = details?.fullName || info.fullName;
+      const lastActiveAt = maxDateText([
+        latestCommit?.committedAt,
+        contribution?.latest?.updatedAt,
+        details?.pushedAt,
+        details?.updatedAt,
+      ]);
+
+      return {
+        platform: 'github',
+        platformId: details?.platformId || '',
+        owner: details?.owner || info.owner,
+        name: details?.name || info.name,
+        fullName,
+        description: details?.description || '外部贡献项目',
+        visibility,
+        isPrivate,
+        isFork: Boolean(details?.isFork),
+        isArchived: Boolean(details?.isArchived),
+        language: details?.language || info.language || '',
+        topics: details?.topics || [],
+        createdAt: details?.createdAt || '',
+        updatedAt: details?.updatedAt || lastActiveAt,
+        pushedAt: details?.pushedAt || lastActiveAt,
+        homepage: details?.homepage || '',
+        path: details?.path || fullName,
+        license: details?.license || '',
+        tags: details?.tags || [],
+        site: details?.site || '',
+        url: details?.url || `https://github.com/${fullName}`,
+        cloneUrl: details?.cloneUrl || '',
+        stats: details?.stats || {stars: 0, forks: 0, openIssues: 0},
+        lastActiveAt,
+        latestCommit,
+        contribution,
+        isExternalContribution: true,
+      };
+    })
+    .filter((repo) => repo.latestCommit || repo.contribution);
 }
 
 async function fetchAllCnbRepos() {
@@ -927,7 +1098,16 @@ async function fetchDataFromSources() {
     }
   }
 
-  const commitRows = (await safeLoadJson(githubSelfCreatedCommitsPath)) || [];
+  let commitRows = [];
+  try {
+    commitRows = await fetchGitHubAuthoredCommits();
+  } catch (err) {
+    console.error('[GitHub Commit API] 请求失败，将回退到离线快照:', err.message);
+  }
+  if (commitRows.length === 0) {
+    commitRows = (await safeLoadJson(githubSelfCreatedCommitsPath)) || [];
+  }
+
   let prRows = [];
   try {
     prRows = await fetchGitHubAuthoredPrs();
@@ -941,6 +1121,13 @@ async function fetchDataFromSources() {
   const contributionMap = buildContributionMeta(Array.isArray(prRows) ? prRows : []);
 
   githubRepos = githubRepos.map((repo) => applyEnrichments(repo, commitMap, contributionMap));
+  githubRepos.push(...buildExternalContributionRepos(
+    Array.isArray(commitRows) ? commitRows : [],
+    Array.isArray(prRows) ? prRows : [],
+    commitMap,
+    contributionMap,
+    githubRepos,
+  ));
 
   sourceMeta.githubCount = githubRepos.length;
   sourceMeta.cnbCount = cnbRepos.length;

@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-04T13:59:26.548Z",
+  "generatedAt": "2026-06-04T15:52:52.518Z",
   "source": {
     "github": {
       "configured": true,
       "usedApi": true,
-      "repos": 71
+      "repos": 79
     },
     "cnb": {
       "configured": false,
@@ -21,8 +21,9 @@
     "githubSelfOnly": false
   },
   "summary": {
-    "total": 100,
+    "total": 108,
     "mirrorAcrossPlatforms": 4,
+    "externalContributions": 8,
     "byCategory": [
       {
         "name": "其他",
@@ -30,35 +31,35 @@
       },
       {
         "name": "脚本",
-        "count": 26
+        "count": 27
       },
       {
         "name": "金融",
-        "count": 13
+        "count": 15
       },
       {
         "name": "网站",
-        "count": 12
+        "count": 14
       },
       {
         "name": "AI",
-        "count": 11
+        "count": 13
       },
       {
         "name": "工具",
-        "count": 7
+        "count": 8
       }
     ],
     "byStatus": {
-      "active": 11,
+      "active": 19,
       "watch": 28,
       "stale": 61
     },
     "bySource": {
       "github": {
-        "total": 71,
+        "total": 79,
         "private": 57,
-        "public": 14
+        "public": 22
       },
       "cnb": {
         "total": 33,
@@ -67,7 +68,7 @@
       }
     },
     "staleRepos": 61,
-    "activeRepos": 11,
+    "activeRepos": 19,
     "watchRepos": 28
   },
   "topByStale": [
@@ -126,7 +127,7 @@
         "forks": 0,
         "openIssues": 0
       },
-      "daysSinceActive": 92,
+      "daysSinceActive": 93,
       "key": "htazq/mq5-trading",
       "status": "stale",
       "category": "金融",
@@ -858,7 +859,7 @@
         "forks": 0,
         "openIssues": 0
       },
-      "daysSinceActive": 111,
+      "daysSinceActive": 112,
       "key": "htazq/a-stock-screening",
       "status": "stale",
       "category": "金融",
@@ -1294,6 +1295,420 @@
   ],
   "repositories": [
     {
+      "key": "openclaw/openclaw",
+      "owner": "openclaw",
+      "name": "openclaw",
+      "fullName": "openclaw/openclaw",
+      "category": "AI",
+      "categoryConfidence": 0.4,
+      "status": "active",
+      "statusText": "活跃",
+      "daysSinceActive": 0,
+      "lastActiveAt": "2026-06-04T15:51:42Z",
+      "latestCommit": null,
+      "contribution": {
+        "total": 1,
+        "opened": 0,
+        "merged": 0,
+        "closed": 1,
+        "latest": {
+          "number": 6918,
+          "title": "docs: add Chinese README",
+          "state": "closed",
+          "updatedAt": "2026-03-11T04:03:03Z",
+          "url": "https://github.com/openclaw/openclaw/pull/6918"
+        }
+      },
+      "isPrivate": false,
+      "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/openclaw/openclaw",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": false,
+          "visibility": "Public",
+          "url": "https://github.com/openclaw/openclaw",
+          "updatedAt": "2026-06-04T15:51:42Z"
+        }
+      ],
+      "metrics": {
+        "stars": 376787,
+        "forks": 78736,
+        "openIssues": 7636
+      },
+      "language": "TypeScript",
+      "topics": [
+        "ai",
+        "assistant",
+        "crustacean",
+        "molty",
+        "openclaw",
+        "own-your-data",
+        "personal"
+      ],
+      "homepage": "https://openclaw.ai",
+      "isExternalContribution": true
+    },
+    {
+      "key": "htazq/www",
+      "owner": "htazq",
+      "name": "www",
+      "fullName": "htazq/www",
+      "category": "网站",
+      "categoryConfidence": 0.2,
+      "status": "active",
+      "statusText": "活跃",
+      "daysSinceActive": 0,
+      "lastActiveAt": "2026-06-04T15:34:27Z",
+      "latestCommit": {
+        "sha": "cafac1440bc69b168582ab2d47c40d4ab0aa305d",
+        "message": "fix: restore 9deck dashboard homepage",
+        "committedAt": "2026-06-04T15:34:27Z",
+        "author": "cnb.Z89F8fq0hPA",
+        "url": "https://github.com/htazq/www/commit/cafac1440bc69b168582ab2d47c40d4ab0aa305d"
+      },
+      "contribution": null,
+      "isPrivate": true,
+      "description": "",
+      "platforms": [
+        "github",
+        "cnb"
+      ],
+      "primaryUrl": "https://github.com/htazq/www",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": true,
+          "visibility": "Private",
+          "url": "https://github.com/htazq/www",
+          "updatedAt": "2026-06-04T15:34:27Z"
+        },
+        {
+          "platform": "cnb",
+          "isPrivate": true,
+          "visibility": "Private",
+          "url": "https://cnb.cool/htazq/www",
+          "updatedAt": "2025-11-20T02:43:23Z"
+        }
+      ],
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "language": "HTML",
+      "topics": [],
+      "homepage": "",
+      "isExternalContribution": false
+    },
+    {
+      "key": "kylinmountain/tradingagents-ashare",
+      "owner": "KylinMountain",
+      "name": "TradingAgents-AShare",
+      "fullName": "KylinMountain/TradingAgents-AShare",
+      "category": "AI",
+      "categoryConfidence": 1,
+      "status": "active",
+      "statusText": "活跃",
+      "daysSinceActive": 0,
+      "lastActiveAt": "2026-06-04T15:04:59Z",
+      "latestCommit": null,
+      "contribution": {
+        "total": 1,
+        "opened": 0,
+        "merged": 0,
+        "closed": 1,
+        "latest": {
+          "number": 165,
+          "title": "Fix Docker frontend API base URL for remote deployments",
+          "state": "closed",
+          "updatedAt": "2026-05-09T09:18:00Z",
+          "url": "https://github.com/KylinMountain/TradingAgents-AShare/pull/165"
+        }
+      },
+      "isPrivate": false,
+      "description": "A 股多智能体智能投研系统 — 基于 TradingAgents 架构，15 名 AI Agent 模拟机构协作与实时辩论对抗，全流程可视化，支持 OpenClaw / Claude Code 集成，Docker 一键部署。",
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/KylinMountain/TradingAgents-AShare",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": false,
+          "visibility": "Public",
+          "url": "https://github.com/KylinMountain/TradingAgents-AShare",
+          "updatedAt": "2026-06-04T15:04:59Z"
+        }
+      ],
+      "metrics": {
+        "stars": 523,
+        "forks": 164,
+        "openIssues": 19
+      },
+      "language": "Python",
+      "topics": [
+        "agents",
+        "ai",
+        "finance",
+        "llm",
+        "openclaw",
+        "openclaw-skills",
+        "skills",
+        "stock"
+      ],
+      "homepage": "https://app.510168.xyz",
+      "isExternalContribution": true
+    },
+    {
+      "key": "nofxaios/nofx",
+      "owner": "NoFxAiOS",
+      "name": "nofx",
+      "fullName": "NoFxAiOS/nofx",
+      "category": "金融",
+      "categoryConfidence": 1,
+      "status": "active",
+      "statusText": "活跃",
+      "daysSinceActive": 0,
+      "lastActiveAt": "2026-06-04T14:54:38Z",
+      "latestCommit": null,
+      "contribution": {
+        "total": 1,
+        "opened": 1,
+        "merged": 0,
+        "closed": 0,
+        "latest": {
+          "number": 1315,
+          "title": "Fix backtest validation and improve error messaging",
+          "state": "open",
+          "updatedAt": "2026-03-16T05:53:33Z",
+          "url": "https://github.com/NoFxAiOS/nofx/pull/1315"
+        }
+      },
+      "isPrivate": false,
+      "description": "Your AI trading terminal assistant for US stocks, commodities, forex, and crypto.",
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/NoFxAiOS/nofx",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": false,
+          "visibility": "Public",
+          "url": "https://github.com/NoFxAiOS/nofx",
+          "updatedAt": "2026-06-04T14:54:38Z"
+        }
+      ],
+      "metrics": {
+        "stars": 12484,
+        "forks": 3003,
+        "openIssues": 505
+      },
+      "language": "Go",
+      "topics": [
+        "agentictrading",
+        "ai",
+        "ai-trading",
+        "arbitrage",
+        "binance",
+        "bitcoin",
+        "commodities",
+        "exchange",
+        "forex",
+        "hyperliquid",
+        "metals",
+        "perp-dex",
+        "stocks",
+        "trading",
+        "us-stocks",
+        "x402",
+        "x402-agent"
+      ],
+      "homepage": "https://vergex.trade",
+      "isExternalContribution": true
+    },
+    {
+      "key": "marseventh/cloudflare-imgbed",
+      "owner": "MarSeventh",
+      "name": "CloudFlare-ImgBed",
+      "fullName": "MarSeventh/CloudFlare-ImgBed",
+      "category": "工具",
+      "categoryConfidence": 0.4,
+      "status": "active",
+      "statusText": "活跃",
+      "daysSinceActive": 0,
+      "lastActiveAt": "2026-06-04T14:53:02Z",
+      "latestCommit": null,
+      "contribution": {
+        "total": 1,
+        "opened": 0,
+        "merged": 1,
+        "closed": 0,
+        "latest": {
+          "number": 536,
+          "title": "Enable third-party WebDAV storage without new runtime dependencies",
+          "state": "merged",
+          "updatedAt": "2026-04-28T08:31:37Z",
+          "url": "https://github.com/MarSeventh/CloudFlare-ImgBed/pull/536"
+        }
+      },
+      "isPrivate": false,
+      "description": "🏖️ A serverless, open-source file hosting solution built on Cloudflare. Supports image hosting, secure file storage, and personal cloud drive capabilities.",
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/MarSeventh/CloudFlare-ImgBed",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": false,
+          "visibility": "Public",
+          "url": "https://github.com/MarSeventh/CloudFlare-ImgBed",
+          "updatedAt": "2026-06-04T14:53:02Z"
+        }
+      ],
+      "metrics": {
+        "stars": 5257,
+        "forks": 6542,
+        "openIssues": 32
+      },
+      "language": "JavaScript",
+      "topics": [
+        "asset-management",
+        "cloud-native",
+        "cloudflare-d1",
+        "cloudflare-r2",
+        "cloudflare-workers",
+        "edge-computing",
+        "image-gallery",
+        "image-hosting",
+        "imgbed",
+        "infra",
+        "media-server",
+        "multi-platform",
+        "serverless",
+        "uploader"
+      ],
+      "homepage": "https://cfbed.sanyue.de",
+      "isExternalContribution": true
+    },
+    {
+      "key": "amchii/tg-signer",
+      "owner": "amchii",
+      "name": "tg-signer",
+      "fullName": "amchii/tg-signer",
+      "category": "脚本",
+      "categoryConfidence": 0.6,
+      "status": "active",
+      "statusText": "活跃",
+      "daysSinceActive": 0,
+      "lastActiveAt": "2026-06-04T13:25:58Z",
+      "latestCommit": null,
+      "contribution": {
+        "total": 1,
+        "opened": 0,
+        "merged": 0,
+        "closed": 1,
+        "latest": {
+          "number": 100,
+          "title": "feat: add Docker auto-build workflow and WebUI support",
+          "state": "closed",
+          "updatedAt": "2026-04-13T15:29:39Z",
+          "url": "https://github.com/amchii/tg-signer/pull/100"
+        }
+      },
+      "isPrivate": false,
+      "description": "电报自动执行（签到、发送消息、点击键盘、AI回复等）；个人、群组、频道消息监控、转发与自动回复。Automated Telegram tasks (check-ins, sending messages, keyboard clicks, AI replies, etc.); monitoring, forwarding, and auto-replying to private, group, and channel messages.",
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/amchii/tg-signer",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": false,
+          "visibility": "Public",
+          "url": "https://github.com/amchii/tg-signer",
+          "updatedAt": "2026-06-04T13:25:58Z"
+        }
+      ],
+      "metrics": {
+        "stars": 926,
+        "forks": 204,
+        "openIssues": 11
+      },
+      "language": "Python",
+      "topics": [
+        "telegram",
+        "telegram-bot"
+      ],
+      "homepage": "",
+      "isExternalContribution": true
+    },
+    {
+      "key": "ariadng/metatrader-mcp-server",
+      "owner": "ariadng",
+      "name": "metatrader-mcp-server",
+      "fullName": "ariadng/metatrader-mcp-server",
+      "category": "金融",
+      "categoryConfidence": 0.6,
+      "status": "active",
+      "statusText": "活跃",
+      "daysSinceActive": 0,
+      "lastActiveAt": "2026-06-04T12:58:16Z",
+      "latestCommit": null,
+      "contribution": {
+        "total": 1,
+        "opened": 1,
+        "merged": 0,
+        "closed": 0,
+        "latest": {
+          "number": 30,
+          "title": "Fix account type trade mode mapping",
+          "state": "open",
+          "updatedAt": "2026-06-02T14:57:08Z",
+          "url": "https://github.com/ariadng/metatrader-mcp-server/pull/30"
+        }
+      },
+      "isPrivate": false,
+      "description": "Model Context Protocol (MCP) to enable AI LLMs to trade using MetaTrader platform",
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/ariadng/metatrader-mcp-server",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": false,
+          "visibility": "Public",
+          "url": "https://github.com/ariadng/metatrader-mcp-server",
+          "updatedAt": "2026-06-04T12:58:16Z"
+        }
+      ],
+      "metrics": {
+        "stars": 475,
+        "forks": 169,
+        "openIssues": 13
+      },
+      "language": "Python",
+      "topics": [
+        "ai",
+        "finance",
+        "investment",
+        "llm",
+        "mcp",
+        "metatrader",
+        "quantitative-finance",
+        "trading"
+      ],
+      "homepage": "",
+      "isExternalContribution": true
+    },
+    {
       "key": "htazq/new-travding",
       "owner": "htazq",
       "name": "new-travding",
@@ -1346,7 +1761,65 @@
       },
       "language": "Python",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
+    },
+    {
+      "key": "goodboy008/r-shell",
+      "owner": "GOODBOY008",
+      "name": "r-shell",
+      "fullName": "GOODBOY008/r-shell",
+      "category": "脚本",
+      "categoryConfidence": 0.4,
+      "status": "active",
+      "statusText": "活跃",
+      "daysSinceActive": 0,
+      "lastActiveAt": "2026-06-04T04:45:03Z",
+      "latestCommit": {
+        "sha": "7a99bc4b4d986a57238f209d155500e14d9d2276",
+        "shortSha": "7a99bc4",
+        "message": "fix: preserve editable shortcut handling\n\n(cherry picked from commit 414921f57ba1dc5edc04eeb3dda5455573951ab0)",
+        "committedAt": "2026-06-04T10:27:25.000+08:00",
+        "author": "htazq",
+        "url": "https://github.com/GOODBOY008/r-shell/commit/7a99bc4b4d986a57238f209d155500e14d9d2276"
+      },
+      "contribution": {
+        "total": 10,
+        "opened": 5,
+        "merged": 5,
+        "closed": 0,
+        "latest": {
+          "number": 27,
+          "title": "fix: bound PTY websocket output buffering",
+          "state": "open",
+          "updatedAt": "2026-06-04T04:45:03Z",
+          "url": "https://github.com/GOODBOY008/r-shell/pull/27"
+        }
+      },
+      "isPrivate": false,
+      "description": "🚀  Lightweight open-source SSH/SFTP/FTP client built with Rust & Tauri 2. Only ~34 MB memory. Installer under 10 MB . Split terminals, SFTP, GPU monitoring. macOS/Windows/Linux.",
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/GOODBOY008/r-shell",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": false,
+          "visibility": "Public",
+          "url": "https://github.com/GOODBOY008/r-shell",
+          "updatedAt": "2026-06-04T04:45:03Z"
+        }
+      ],
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "language": "",
+      "topics": [],
+      "homepage": "",
+      "isExternalContribution": true
     },
     {
       "key": "htazq/htazq",
@@ -1389,7 +1862,58 @@
       },
       "language": "",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
+    },
+    {
+      "key": "marseventh/sanyue-imghub",
+      "owner": "MarSeventh",
+      "name": "Sanyue-ImgHub",
+      "fullName": "MarSeventh/Sanyue-ImgHub",
+      "category": "网站",
+      "categoryConfidence": 0.4,
+      "status": "active",
+      "statusText": "活跃",
+      "daysSinceActive": 1,
+      "lastActiveAt": "2026-06-03T04:05:41Z",
+      "latestCommit": null,
+      "contribution": {
+        "total": 1,
+        "opened": 0,
+        "merged": 1,
+        "closed": 0,
+        "latest": {
+          "number": 32,
+          "title": "Expose WebDAV storage channels in the frontend",
+          "state": "merged",
+          "updatedAt": "2026-04-28T08:32:07Z",
+          "url": "https://github.com/MarSeventh/Sanyue-ImgHub/pull/32"
+        }
+      },
+      "isPrivate": false,
+      "description": "Frontend of https://github.com/MarSeventh/CloudFlare-ImgBed.",
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/MarSeventh/Sanyue-ImgHub",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": false,
+          "visibility": "Public",
+          "url": "https://github.com/MarSeventh/Sanyue-ImgHub",
+          "updatedAt": "2026-06-03T04:05:41Z"
+        }
+      ],
+      "metrics": {
+        "stars": 190,
+        "forks": 116,
+        "openIssues": 0
+      },
+      "language": "Vue",
+      "topics": [],
+      "homepage": "https://cfbed.sanyue.de",
+      "isExternalContribution": true
     },
     {
       "key": "htazq/litevpn-infra",
@@ -1432,7 +1956,8 @@
       },
       "language": "JavaScript",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/litevpn-control-plane",
@@ -1475,7 +2000,8 @@
       },
       "language": "JavaScript",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/litevpn-client",
@@ -1518,7 +2044,8 @@
       },
       "language": "Rust",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/marketpipe",
@@ -1573,7 +2100,8 @@
       },
       "language": "Python",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/fenghuoyi-card-game",
@@ -1628,58 +2156,8 @@
       },
       "language": "TypeScript",
       "topics": [],
-      "homepage": ""
-    },
-    {
-      "key": "htazq/www",
-      "owner": "htazq",
-      "name": "www",
-      "fullName": "htazq/www",
-      "category": "脚本",
-      "categoryConfidence": 0.2,
-      "status": "active",
-      "statusText": "活跃",
-      "daysSinceActive": 13,
-      "lastActiveAt": "2026-05-22T09:45:43Z",
-      "latestCommit": {
-        "sha": "f45535eca3846cde792992dad5c21651dfca32b6",
-        "message": "feat: redesign as All in AI static showcase page\n\n- Replace 9Deck dashboard with AI-themed landing page\n- Add particle background, typewriter hero, AI capability cards\n- Add AI evolution timeline, rotating quotes, manifesto section\n- Simplify index.html, remove inline 9Deck styles\n- Keep link cards for existing services",
-        "committedAt": "2026-05-22T09:45:43Z",
-        "author": "cnb.Z89F8fq0hPA",
-        "url": "https://github.com/htazq/www/commit/f45535eca3846cde792992dad5c21651dfca32b6"
-      },
-      "contribution": null,
-      "isPrivate": true,
-      "description": "",
-      "platforms": [
-        "github",
-        "cnb"
-      ],
-      "primaryUrl": "https://github.com/htazq/www",
-      "sources": [
-        {
-          "platform": "github",
-          "isPrivate": true,
-          "visibility": "Private",
-          "url": "https://github.com/htazq/www",
-          "updatedAt": "2026-05-22T09:45:43Z"
-        },
-        {
-          "platform": "cnb",
-          "isPrivate": true,
-          "visibility": "Private",
-          "url": "https://cnb.cool/htazq/www",
-          "updatedAt": "2025-11-20T02:43:23Z"
-        }
-      ],
-      "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0
-      },
-      "language": "TypeScript",
-      "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/mt5-strategy-lab",
@@ -1722,7 +2200,8 @@
       },
       "language": "",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/money-den",
@@ -1765,7 +2244,8 @@
       },
       "language": "Python",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/brooks-es5m-rule-lab",
@@ -1820,7 +2300,8 @@
       },
       "language": "Python",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/personal-knowledge-base",
@@ -1863,7 +2344,8 @@
       },
       "language": "HTML",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "eleaivideo/astro-yuanyuan",
@@ -1900,7 +2382,8 @@
       },
       "language": "JavaScript",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/card_game",
@@ -1937,7 +2420,8 @@
       },
       "language": "TypeScript",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/xy-doc",
@@ -1980,7 +2464,8 @@
       },
       "language": "HTML",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/comfyui_cloud",
@@ -1991,7 +2476,7 @@
       "categoryConfidence": 0,
       "status": "watch",
       "statusText": "关注",
-      "daysSinceActive": 21,
+      "daysSinceActive": 22,
       "lastActiveAt": "2026-05-13T15:24:12Z",
       "latestCommit": null,
       "contribution": null,
@@ -2017,7 +2502,8 @@
       },
       "language": "",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/comfyui-yi_dian_tong",
@@ -2028,7 +2514,7 @@
       "categoryConfidence": 0,
       "status": "watch",
       "statusText": "关注",
-      "daysSinceActive": 21,
+      "daysSinceActive": 22,
       "lastActiveAt": "2026-05-13T15:18:02Z",
       "latestCommit": null,
       "contribution": null,
@@ -2054,7 +2540,8 @@
       },
       "language": "Python",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "eleaivideo/comfyui",
@@ -2065,7 +2552,7 @@
       "categoryConfidence": 0.2,
       "status": "watch",
       "statusText": "关注",
-      "daysSinceActive": 21,
+      "daysSinceActive": 22,
       "lastActiveAt": "2026-05-13T15:14:33Z",
       "latestCommit": null,
       "contribution": null,
@@ -2091,7 +2578,8 @@
       },
       "language": "",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/aifs_perf_harness",
@@ -2134,7 +2622,8 @@
       },
       "language": "Python",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/paio-autotrader",
@@ -2189,7 +2678,8 @@
       },
       "language": "MQL5",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/ibkr-auto-arb",
@@ -2232,7 +2722,8 @@
       },
       "language": "Python",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "eleaivideo/my-secrets",
@@ -2269,7 +2760,8 @@
       },
       "language": "",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/polymarket",
@@ -2312,7 +2804,8 @@
       },
       "language": "Rust",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/astro-yuanyuan",
@@ -2355,7 +2848,8 @@
       },
       "language": "JavaScript",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/vllm",
@@ -2392,7 +2886,8 @@
       },
       "language": "",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/a2a-forge",
@@ -2429,7 +2924,8 @@
       },
       "language": "TypeScript",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/my-agent",
@@ -2466,7 +2962,8 @@
       },
       "language": "TypeScript",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/tuyaya",
@@ -2503,7 +3000,8 @@
       },
       "language": "Shell",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/knowledge",
@@ -2540,7 +3038,8 @@
       },
       "language": "HTML",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/my-knowledge-accumulation",
@@ -2591,7 +3090,8 @@
       },
       "language": "Dockerfile",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/my-secrets",
@@ -2628,7 +3128,8 @@
       },
       "language": "",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/astro-yuanyuan-md-knowledge",
@@ -2639,7 +3140,7 @@
       "categoryConfidence": 0,
       "status": "watch",
       "statusText": "关注",
-      "daysSinceActive": 52,
+      "daysSinceActive": 53,
       "lastActiveAt": "2026-04-12T14:16:45Z",
       "latestCommit": {
         "sha": "fac4a6ac68ebc154d305cf514f65b92cbd13172d",
@@ -2671,7 +3172,8 @@
       },
       "language": "",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/comfyui_shonl",
@@ -2708,7 +3210,8 @@
       },
       "language": "Python",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/zhan_zhi_comfyui",
@@ -2745,7 +3248,8 @@
       },
       "language": "",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/gemma4-31b",
@@ -2782,7 +3286,8 @@
       },
       "language": "Shell",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/aifs-fs-functional-harness",
@@ -2825,7 +3330,8 @@
       },
       "language": "Python",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/shuake",
@@ -2868,7 +3374,8 @@
       },
       "language": "JavaScript",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/ai-weekly-ext",
@@ -2911,7 +3418,8 @@
       },
       "language": "JavaScript",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/global-sentinel",
@@ -2954,7 +3462,8 @@
       },
       "language": "Python",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/mq5-trading",
@@ -2965,7 +3474,7 @@
       "categoryConfidence": 0.2,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 92,
+      "daysSinceActive": 93,
       "lastActiveAt": "2026-03-03T15:11:58Z",
       "latestCommit": {
         "sha": "25ed1ca9455e51bb177c116c0690477ae24a6607",
@@ -2997,7 +3506,8 @@
       },
       "language": "Python",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/polymarket-ai-arb",
@@ -3040,7 +3550,8 @@
       },
       "language": "Python",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/openclaw-memory",
@@ -3083,7 +3594,8 @@
       },
       "language": "",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/openclaw-orchestrator",
@@ -3126,7 +3638,8 @@
       },
       "language": "Python",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/china-travding",
@@ -3169,7 +3682,8 @@
       },
       "language": "Python",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/automation",
@@ -3212,7 +3726,8 @@
       },
       "language": "Shell",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/relay",
@@ -3255,7 +3770,8 @@
       },
       "language": "Rust",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/follow-orders",
@@ -3298,7 +3814,8 @@
       },
       "language": "MQL5",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/travding",
@@ -3341,7 +3858,8 @@
       },
       "language": "",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/go_test_w",
@@ -3384,7 +3902,8 @@
       },
       "language": "",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/crypto-cross-sectional-momentum",
@@ -3427,7 +3946,8 @@
       },
       "language": "",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/skill-to-animation-studio",
@@ -3470,7 +3990,8 @@
       },
       "language": "Python",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/a-stock-screening",
@@ -3481,7 +4002,7 @@
       "categoryConfidence": 0.2,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 111,
+      "daysSinceActive": 112,
       "lastActiveAt": "2026-02-12T14:02:31Z",
       "latestCommit": {
         "sha": "e8aebfcd2982bfbec748bde0edcda940f5f22517",
@@ -3513,7 +4034,8 @@
       },
       "language": "Python",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/yingdao",
@@ -3556,7 +4078,8 @@
       },
       "language": "Python",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/catalystx-api",
@@ -3599,7 +4122,8 @@
       },
       "language": "Python",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/openwebui-auth",
@@ -3650,7 +4174,8 @@
       },
       "language": "TypeScript",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/alphagpt_mt5",
@@ -3693,7 +4218,8 @@
       },
       "language": "Python",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/nofx_strategy",
@@ -3736,7 +4262,8 @@
       },
       "language": "",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/auto",
@@ -3779,7 +4306,8 @@
       },
       "language": "Shell",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/z-image-comfyui",
@@ -3816,7 +4344,8 @@
       },
       "language": "Dockerfile",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/docker-image",
@@ -3853,7 +4382,8 @@
       },
       "language": "JavaScript",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/ai-image-process",
@@ -3896,7 +4426,8 @@
       },
       "language": "TypeScript",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/view-ip",
@@ -3947,7 +4478,8 @@
       },
       "language": "JavaScript",
       "topics": [],
-      "homepage": "https://ip.at9.net"
+      "homepage": "https://ip.at9.net",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/container-mirror-for-china",
@@ -3990,7 +4522,8 @@
       },
       "language": "HTML",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "eleaivideo/wanvideo_wan2.2",
@@ -4027,7 +4560,8 @@
       },
       "language": "Python",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "eleaivideo/cloud",
@@ -4064,7 +4598,8 @@
       },
       "language": "HTML",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "eleaivideo/www",
@@ -4101,7 +4636,8 @@
       },
       "language": "",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/wanvideo_wan2.2",
@@ -4138,7 +4674,8 @@
       },
       "language": "Python",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/image",
@@ -4175,7 +4712,8 @@
       },
       "language": "Dockerfile",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/os",
@@ -4186,7 +4724,7 @@
       "categoryConfidence": 0.2,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 195,
+      "daysSinceActive": 196,
       "lastActiveAt": "2025-11-20T14:16:40Z",
       "latestCommit": null,
       "contribution": null,
@@ -4212,7 +4750,8 @@
       },
       "language": "Dockerfile",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/fileupdown",
@@ -4249,7 +4788,8 @@
       },
       "language": "",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/desktop",
@@ -4286,7 +4826,8 @@
       },
       "language": "Shell",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/code-sandbox-in-cnb",
@@ -4323,7 +4864,8 @@
       },
       "language": "JavaScript",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/k8s",
@@ -4334,7 +4876,7 @@
       "categoryConfidence": 0.2,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 206,
+      "daysSinceActive": 207,
       "lastActiveAt": "2025-11-09T14:21:22Z",
       "latestCommit": {
         "sha": "86978e229917c803d00dc3b889110d834f8f3cb4",
@@ -4378,7 +4920,8 @@
       },
       "language": "Shell",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/cloudflare-docker-proxy",
@@ -4421,7 +4964,8 @@
       },
       "language": "",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/offlinepack",
@@ -4464,7 +5008,8 @@
       },
       "language": "",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/rust",
@@ -4507,7 +5052,8 @@
       },
       "language": "Rust",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/4x4-chess",
@@ -4562,7 +5108,8 @@
       },
       "language": "JavaScript",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/juzi",
@@ -4573,7 +5120,7 @@
       "categoryConfidence": 0.2,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 312,
+      "daysSinceActive": 313,
       "lastActiveAt": "2025-07-26T14:18:19Z",
       "latestCommit": {
         "sha": "22d9e0aab18995e43d72bd6db469cc3b80dc33a4",
@@ -4605,7 +5152,8 @@
       },
       "language": "TypeScript",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/my-content-creation-kit",
@@ -4648,7 +5196,8 @@
       },
       "language": "Python",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/view-trading-information",
@@ -4691,7 +5240,8 @@
       },
       "language": "TypeScript",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/hello-world-webapp",
@@ -4734,7 +5284,8 @@
       },
       "language": "Python",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/helm-v2ray",
@@ -4777,7 +5328,8 @@
       },
       "language": "Python",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/my_www",
@@ -4820,7 +5372,8 @@
       },
       "language": "Vue",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/hugo-blog",
@@ -4863,7 +5416,8 @@
       },
       "language": "HTML",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/deepseek",
@@ -4900,7 +5454,8 @@
       },
       "language": "Markdown",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/test",
@@ -4937,7 +5492,8 @@
       },
       "language": "Shell",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/private",
@@ -4974,7 +5530,8 @@
       },
       "language": "",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/chatgpt-web-midjourney-proxy",
@@ -5017,7 +5574,8 @@
       },
       "language": "JavaScript",
       "topics": [],
-      "homepage": "https://chatgpt-web-midjourney-proxy-five-zeta.vercel.app"
+      "homepage": "https://chatgpt-web-midjourney-proxy-five-zeta.vercel.app",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/1",
@@ -5060,7 +5618,8 @@
       },
       "language": "TypeScript",
       "topics": [],
-      "homepage": "https://1-five-ebon.vercel.app"
+      "homepage": "https://1-five-ebon.vercel.app",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/word_status",
@@ -5103,7 +5662,8 @@
       },
       "language": "TypeScript",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/coze2openai",
@@ -5146,7 +5706,8 @@
       },
       "language": "JavaScript",
       "topics": [],
-      "homepage": "https://coze2openai-beta.vercel.app"
+      "homepage": "https://coze2openai-beta.vercel.app",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/tianya",
@@ -5189,7 +5750,8 @@
       },
       "language": "",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/jellyfin_work",
@@ -5232,7 +5794,8 @@
       },
       "language": "",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/my-memos",
@@ -5269,7 +5832,8 @@
       },
       "language": "",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/nezha_backup",
@@ -5312,7 +5876,8 @@
       },
       "language": "",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/autogpt-next-web",
@@ -5355,7 +5920,8 @@
       },
       "language": "TypeScript",
       "topics": [],
-      "homepage": "https://auto-gpt-next-web-htazq.vercel.app"
+      "homepage": "https://auto-gpt-next-web-htazq.vercel.app",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/go-proxy-bingai-vercel",
@@ -5398,7 +5964,8 @@
       },
       "language": "HTML",
       "topics": [],
-      "homepage": "https://go-proxy-bingai-vercel-htazq.vercel.app"
+      "homepage": "https://go-proxy-bingai-vercel-htazq.vercel.app",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/go-proxy-bingai-2",
@@ -5441,7 +6008,8 @@
       },
       "language": "HTML",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/go-proxy-bingai",
@@ -5484,7 +6052,8 @@
       },
       "language": "HTML",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "htazq/note",
@@ -5527,7 +6096,8 @@
       },
       "language": "JavaScript",
       "topics": [],
-      "homepage": ""
+      "homepage": "",
+      "isExternalContribution": false
     }
   ]
 }

@@ -1452,6 +1452,7 @@
         $("terminalLog").innerHTML = [
           `<div class="log-line"><span class="ok">+</span><span>feed loaded: ${data.summary.total} repositories indexed</span></div>`,
           `<div class="log-line"><span class="cyan">i</span><span>source: GitHub ${data.source.github.repos} / CNB ${data.source.cnb.repos}</span></div>`,
+          `<div class="log-line"><span class="cyan">i</span><span>external contributions: ${data.summary.externalContributions || 0} repos with authored PRs/commits</span></div>`,
           `<div class="log-line"><span class="warn">~</span><span>watch queue: ${data.summary.watchRepos || 0} repos need attention</span></div>`,
           `<div class="log-line"><span class="bad">!</span><span>stale queue: ${data.summary.staleRepos || 0} repos exceed ${data.filters.staleDays} days</span></div>`,
           `<div class="log-line"><span class="ok">+</span><span>target: deploy this static TUI to www.at9.net</span></div>`,
