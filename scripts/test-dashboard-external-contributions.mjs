@@ -17,6 +17,7 @@ async function writeJson(filePath, value) {
 
 async function main() {
   const tempRoot = await fs.mkdtemp(path.join(os.tmpdir(), 'dashboard-external-'));
+  const recentIso = new Date().toISOString();
   await fs.mkdir(path.join(tempRoot, 'scripts'), {recursive: true});
   await fs.copyFile(
     path.join(repoRoot, 'scripts', 'local-dashboard-build.mjs'),
@@ -40,6 +41,17 @@ async function main() {
   await writeJson(path.join(tempRoot, 'data', 'cnb-authenticated-repositories.json'), []);
   await writeJson(path.join(tempRoot, 'data', 'github-self-created-latest-commits.json'), [
     {
+      repository: 'htazq/owned',
+      visibility: 'private',
+      language: 'JavaScript',
+      sha: 'def1234567890',
+      shortSha: 'def1234',
+      date: recentIso,
+      authorName: 'htazq',
+      message: 'fix: private repo fallback update',
+      url: 'https://github.com/htazq/owned/commit/def1234567890',
+    },
+    {
       repository: 'other/project',
       visibility: 'public',
       language: 'TypeScript',
@@ -52,6 +64,20 @@ async function main() {
     },
   ]);
   await writeJson(path.join(tempRoot, 'data', 'github-authored-prs.json'), [
+    {
+      title: 'fix: private repo fallback pr',
+      number: 8,
+      url: 'https://github.com/htazq/owned/pull/8',
+      state: 'merged',
+      merged: true,
+      mergedAt: recentIso,
+      createdAt: recentIso,
+      updatedAt: recentIso,
+      repository: {
+        name: 'owned',
+        nameWithOwner: 'htazq/owned',
+      },
+    },
     {
       title: 'fix: contribute upstream patch',
       number: 42,
@@ -119,6 +145,10 @@ async function main() {
   assert.equal(feed.summary.authoredIssues?.total, 1);
   assert.equal(feed.summary.authoredIssues?.open, 1);
   assert.ok(privateOwned, 'full feed may expose private repository names');
+  assert.equal(privateOwned.latestCommit?.sha, 'def1234567890');
+  assert.equal(privateOwned.contribution?.latest?.number, 8);
+  assert.equal(privateOwned.lastActiveAt, recentIso);
+  assert.equal(privateOwned.status, 'active');
   assert.equal(feedText.includes(fakeGithubToken), false, 'feed must not expose GitHub token values');
   assert.equal(feedText.includes(fakeCnbToken), false, 'feed must not expose CNB token values');
   assert.equal(feed.source.github.repos, 3);

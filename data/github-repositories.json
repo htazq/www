@@ -1,1 +1,2398 @@
-﻿[{"createdAt":"2026-05-19T04:58:45Z","description":"","isArchived":false,"isFork":false,"isPrivate":true,"name":"fenghuoyi-card-game","nameWithOwner":"htazq/fenghuoyi-card-game","primaryLanguage":{"name":"TypeScript"},"updatedAt":"2026-05-19T06:52:24Z","url":"https://github.com/htazq/fenghuoyi-card-game"},{"createdAt":"2025-11-20T09:45:07Z","description":"","isArchived":false,"isFork":false,"isPrivate":false,"name":"htazq","nameWithOwner":"htazq/htazq","primaryLanguage":null,"updatedAt":"2026-05-18T19:46:06Z","url":"https://github.com/htazq/htazq"},{"createdAt":"2026-05-16T16:24:56Z","description":"MT5 strategy research and backtesting lab","isArchived":false,"isFork":false,"isPrivate":true,"name":"mt5-strategy-lab","nameWithOwner":"htazq/mt5-strategy-lab","primaryLanguage":null,"updatedAt":"2026-05-16T16:28:51Z","url":"https://github.com/htazq/mt5-strategy-lab"},{"createdAt":"2026-04-08T06:45:39Z","description":"xy-doc","isArchived":false,"isFork":false,"isPrivate":true,"name":"xy-doc","nameWithOwner":"htazq/xy-doc","primaryLanguage":{"name":"HTML"},"updatedAt":"2026-05-15T01:36:19Z","url":"https://github.com/htazq/xy-doc"},{"createdAt":"2026-05-13T16:03:57Z","description":"CLI-first personal money command center: trading research, compliant airdrop tracking, wallets, and reports","isArchived":false,"isFork":false,"isPrivate":true,"name":"money-den","nameWithOwner":"htazq/money-den","primaryLanguage":{"name":"Python"},"updatedAt":"2026-05-14T08:06:24Z","url":"https://github.com/htazq/money-den"},{"createdAt":"2026-04-10T06:14:06Z","description":"aifs_perf_harness","isArchived":false,"isFork":false,"isPrivate":true,"name":"aifs_perf_harness","nameWithOwner":"htazq/aifs_perf_harness","primaryLanguage":{"name":"Python"},"updatedAt":"2026-05-12T07:08:46Z","url":"https://github.com/htazq/aifs_perf_harness"},{"createdAt":"2026-05-11T07:16:33Z","description":"","isArchived":false,"isFork":false,"isPrivate":true,"name":"paio-autotrader","nameWithOwner":"htazq/paio-autotrader","primaryLanguage":{"name":"MQL5"},"updatedAt":"2026-05-12T03:44:36Z","url":"https://github.com/htazq/paio-autotrader"},{"createdAt":"2026-05-16T00:25:47Z","description":"紫微斗数开源排盘引擎 — 基于倪海夏《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据","isArchived":false,"isFork":true,"isPrivate":false,"name":"ziwei-doushu","nameWithOwner":"htazq/ziwei-doushu","primaryLanguage":{"name":"TypeScript"},"updatedAt":"2026-05-16T00:25:47Z","url":"https://github.com/htazq/ziwei-doushu"},{"createdAt":"2025-03-16T12:31:34Z","description":"Implementation of Trading Strategies for Backtesting in MetaTrader 5 (MT5) Using MQL5 Programming Language – Free Open-Source Trading Bots (Expert Advisors) for MT5","isArchived":false,"isFork":true,"isPrivate":false,"name":"metatrader5","nameWithOwner":"htazq/metatrader5","primaryLanguage":{"name":"MQL5"},"updatedAt":"2026-05-05T08:11:35Z","url":"https://github.com/htazq/metatrader5"},{"createdAt":"2026-05-05T02:26:03Z","description":"A 股多智能体智能投研系统 — 基于 TradingAgents 架构，15 名 AI Agent 模拟机构协作与实时辩论对抗，全流程可视化，支持 OpenClaw / Claude Code 集成，Docker 一键部署。","isArchived":false,"isFork":true,"isPrivate":false,"name":"TradingAgents-AShare","nameWithOwner":"htazq/TradingAgents-AShare","primaryLanguage":{"name":"Python"},"updatedAt":"2026-05-05T02:26:03Z","url":"https://github.com/htazq/TradingAgents-AShare"},{"createdAt":"2026-04-26T07:11:20Z","description":"A serverless, open-source file hosting solution built on Cloudflare. Supports image hosting, secure file storage, and personal cloud drive capabilities.","isArchived":false,"isFork":true,"isPrivate":false,"name":"CloudFlare-ImgBed","nameWithOwner":"htazq/CloudFlare-ImgBed","primaryLanguage":{"name":"JavaScript"},"updatedAt":"2026-04-29T03:13:37Z","url":"https://github.com/htazq/CloudFlare-ImgBed"},{"createdAt":"2026-04-21T16:40:34Z","description":"IBKR stock auto-trading and arbitrage platform with technical, fundamental and AI-ready research pipeline","isArchived":false,"isFork":false,"isPrivate":true,"name":"ibkr-auto-arb","nameWithOwner":"htazq/ibkr-auto-arb","primaryLanguage":{"name":"Python"},"updatedAt":"2026-04-28T06:52:08Z","url":"https://github.com/htazq/ibkr-auto-arb"},{"createdAt":"2026-04-28T01:31:06Z","description":"Frontend of https://github.com/MarSeventh/CloudFlare-ImgBed.","isArchived":false,"isFork":true,"isPrivate":false,"name":"Sanyue-ImgHub","nameWithOwner":"htazq/Sanyue-ImgHub","primaryLanguage":{"name":"Vue"},"updatedAt":"2026-04-28T01:31:06Z","url":"https://github.com/htazq/Sanyue-ImgHub"},{"createdAt":"2026-04-29T06:26:53Z","description":"CLI for common Playwright actions. Record and generate Playwright code, inspect selectors and take screenshots.","isArchived":false,"isFork":true,"isPrivate":false,"name":"playwright-cli","nameWithOwner":"htazq/playwright-cli","primaryLanguage":{"name":"TypeScript"},"updatedAt":"2026-04-29T06:26:53Z","url":"https://github.com/htazq/playwright-cli"},{"createdAt":"2026-04-07T05:04:52Z","description":"Brooks-style ES 5m intraday rule research and backtesting system","isArchived":false,"isFork":false,"isPrivate":true,"name":"brooks-es5m-rule-lab","nameWithOwner":"htazq/brooks-es5m-rule-lab","primaryLanguage":{"name":"Python"},"updatedAt":"2026-04-24T08:11:36Z","url":"https://github.com/htazq/brooks-es5m-rule-lab"},{"createdAt":"2026-04-24T06:23:16Z","description":"A Claude Code Skill that turns prompts into horizontal-swipe magazine-style HTML decks — 10 layouts, 5 curated themes, WebGL hero backgrounds, single-file output.","isArchived":false,"isFork":true,"isPrivate":false,"name":"guizang-ppt-skill","nameWithOwner":"htazq/guizang-ppt-skill","primaryLanguage":{"name":"HTML"},"updatedAt":"2026-04-24T06:23:16Z","url":"https://github.com/htazq/guizang-ppt-skill"},{"createdAt":"2026-04-21T08:15:52Z","description":"polymarket套利","isArchived":false,"isFork":false,"isPrivate":true,"name":"polymarket","nameWithOwner":"htazq/polymarket","primaryLanguage":{"name":"Rust"},"updatedAt":"2026-04-22T11:07:15Z","url":"https://github.com/htazq/polymarket"},{"createdAt":"2026-04-10T03:53:47Z","description":"","isArchived":false,"isFork":false,"isPrivate":true,"name":"Astro-yuanyuan","nameWithOwner":"htazq/Astro-yuanyuan","primaryLanguage":{"name":"JavaScript"},"updatedAt":"2026-04-22T09:27:37Z","url":"https://github.com/htazq/Astro-yuanyuan"},{"createdAt":"2026-04-17T13:35:48Z","description":"AIO Repack for latest Microsoft Visual C++ Redistributable Runtimes","isArchived":false,"isFork":true,"isPrivate":false,"name":"vcredist","nameWithOwner":"htazq/vcredist","primaryLanguage":{"name":"VBScript"},"updatedAt":"2026-04-17T13:35:48Z","url":"https://github.com/htazq/vcredist"},{"createdAt":"2025-11-20T11:21:10Z","description":"","isArchived":false,"isFork":false,"isPrivate":true,"name":"My-Knowledge-Accumulation","nameWithOwner":"htazq/My-Knowledge-Accumulation","primaryLanguage":{"name":"Dockerfile"},"updatedAt":"2026-04-15T06:44:20Z","url":"https://github.com/htazq/My-Knowledge-Accumulation"},{"createdAt":"2026-04-12T14:16:44Z","description":"知识库","isArchived":false,"isFork":false,"isPrivate":true,"name":"astro-yuanyuan-md-knowledge","nameWithOwner":"htazq/astro-yuanyuan-md-knowledge","primaryLanguage":null,"updatedAt":"2026-04-12T14:16:48Z","url":"https://github.com/htazq/astro-yuanyuan-md-knowledge"},{"createdAt":"2026-04-02T09:26:24Z","description":"","isArchived":false,"isFork":false,"isPrivate":true,"name":"aifs-fs-functional-harness","nameWithOwner":"htazq/aifs-fs-functional-harness","primaryLanguage":{"name":"Python"},"updatedAt":"2026-04-10T07:38:43Z","url":"https://github.com/htazq/aifs-fs-functional-harness"},{"createdAt":"2026-04-15T08:19:27Z","description":"Google Workspace CLI — one command-line tool for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, and more. Dynamically built from Google Discovery Service. Includes AI agent skills.","isArchived":false,"isFork":true,"isPrivate":false,"name":"googleworkspace_cli","nameWithOwner":"htazq/googleworkspace_cli","primaryLanguage":{"name":"Rust"},"updatedAt":"2026-04-15T08:19:27Z","url":"https://github.com/htazq/googleworkspace_cli"},{"createdAt":"2026-04-03T07:05:41Z","description":"OmX - Oh My codeX: Your codex is not alone. Add hooks, agent teams, HUDs, and so much more.","isArchived":false,"isFork":true,"isPrivate":false,"name":"oh-my-codex","nameWithOwner":"htazq/oh-my-codex","primaryLanguage":{"name":"TypeScript"},"updatedAt":"2026-04-03T07:05:41Z","url":"https://github.com/htazq/oh-my-codex"},{"createdAt":"2026-03-31T02:37:36Z","description":"An agentic skills framework & software development methodology that works.","isArchived":false,"isFork":true,"isPrivate":false,"name":"superpowers","nameWithOwner":"htazq/superpowers","primaryLanguage":{"name":"Shell"},"updatedAt":"2026-04-02T09:26:47Z","url":"https://github.com/htazq/superpowers"},{"createdAt":"2026-04-01T13:27:08Z","description":"刷课","isArchived":false,"isFork":false,"isPrivate":true,"name":"shuake","nameWithOwner":"htazq/shuake","primaryLanguage":{"name":"JavaScript"},"updatedAt":"2026-04-01T13:29:25Z","url":"https://github.com/htazq/shuake"},{"createdAt":"2026-03-31T09:26:14Z","description":"Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.","isArchived":false,"isFork":true,"isPrivate":false,"name":"claude-code","nameWithOwner":"htazq/claude-code","primaryLanguage":{"name":"TypeScript"},"updatedAt":"2026-04-02T00:12:28Z","url":"https://github.com/htazq/claude-code"},{"createdAt":"2026-03-16T12:13:18Z","description":"自动获取GPT、GEMINI、CLAUDE近一周内容自动整理出周报的谷歌浏览器扩展","isArchived":false,"isFork":false,"isPrivate":true,"name":"ai-weekly-ext","nameWithOwner":"htazq/ai-weekly-ext","primaryLanguage":{"name":"JavaScript"},"updatedAt":"2026-03-16T13:57:21Z","url":"https://github.com/htazq/ai-weekly-ext"},{"createdAt":"2026-02-28T11:04:50Z","description":"全球舆情监控+链上资金追踪+AI多轮分析系统 | Global Sentiment & On-chain Whale Monitor with AI Analysis","isArchived":false,"isFork":false,"isPrivate":true,"name":"global-sentinel","nameWithOwner":"htazq/global-sentinel","primaryLanguage":{"name":"Python"},"updatedAt":"2026-03-12T01:17:23Z","url":"https://github.com/htazq/global-sentinel"},{"createdAt":"2026-02-26T06:32:18Z","description":"mql5","isArchived":false,"isFork":false,"isPrivate":true,"name":"mq5-trading","nameWithOwner":"htazq/mq5-trading","primaryLanguage":{"name":"Python"},"updatedAt":"2026-03-03T15:19:14Z","url":"https://github.com/htazq/mq5-trading"},{"createdAt":"2026-02-17T01:06:20Z","description":"AI-driven Polymarket arbitrage analysis system (24/7)","isArchived":false,"isFork":false,"isPrivate":true,"name":"polymarket-ai-arb","nameWithOwner":"htazq/polymarket-ai-arb","primaryLanguage":{"name":"Python"},"updatedAt":"2026-03-02T08:14:27Z","url":"https://github.com/htazq/polymarket-ai-arb"},{"createdAt":"2026-02-14T10:59:15Z","description":"","isArchived":false,"isFork":false,"isPrivate":true,"name":"new-travding","nameWithOwner":"htazq/new-travding","primaryLanguage":{"name":"Python"},"updatedAt":"2026-02-28T17:26:14Z","url":"https://github.com/htazq/new-travding"},{"createdAt":"2026-02-04T06:57:31Z","description":"","isArchived":false,"isFork":false,"isPrivate":true,"name":"openclaw-memory","nameWithOwner":"htazq/openclaw-memory","primaryLanguage":null,"updatedAt":"2026-02-28T10:00:13Z","url":"https://github.com/htazq/openclaw-memory"},{"createdAt":"2026-02-28T09:08:33Z","description":"OpenClaw Agent Orchestration System - 多模型编排+自动CI/CD+交叉Review","isArchived":false,"isFork":false,"isPrivate":true,"name":"openclaw-orchestrator","nameWithOwner":"htazq/openclaw-orchestrator","primaryLanguage":{"name":"Python"},"updatedAt":"2026-02-28T09:42:45Z","url":"https://github.com/htazq/openclaw-orchestrator"},{"createdAt":"2026-02-28T19:23:07Z","description":"首家工业级全流程可控协作式专业AIagent影视生产平台，从短片到漫剧到真人级影视剧一站搞定，采用好莱坞专业制作团队思路，让你拥有虚拟制片场","isArchived":false,"isFork":true,"isPrivate":false,"name":"waoowaoo","nameWithOwner":"htazq/waoowaoo","primaryLanguage":{"name":"TypeScript"},"updatedAt":"2026-05-06T06:25:34Z","url":"https://github.com/htazq/waoowaoo"},{"createdAt":"2026-02-26T15:02:00Z","description":"","isArchived":false,"isFork":false,"isPrivate":true,"name":"china-travding","nameWithOwner":"htazq/china-travding","primaryLanguage":{"name":"Python"},"updatedAt":"2026-02-28T02:34:43Z","url":"https://github.com/htazq/china-travding"},{"createdAt":"2024-04-20T13:05:57Z","description":"","isArchived":false,"isFork":false,"isPrivate":true,"name":"automation","nameWithOwner":"htazq/automation","primaryLanguage":{"name":"Shell"},"updatedAt":"2026-02-26T09:48:44Z","url":"https://github.com/htazq/automation"},{"createdAt":"2026-02-28T02:23:58Z","description":"\"ClawWork: OpenClaw as Your AI Coworker - 💰 $10K earned in 7 Hours\"","isArchived":false,"isFork":true,"isPrivate":false,"name":"ClawWork","nameWithOwner":"htazq/ClawWork","primaryLanguage":{"name":"Python"},"updatedAt":"2026-02-28T02:23:58Z","url":"https://github.com/htazq/ClawWork"},{"createdAt":"2026-02-22T15:01:11Z","description":"一款远程工具（ssh/rdp/telnet/console等）","isArchived":false,"isFork":false,"isPrivate":true,"name":"relay","nameWithOwner":"htazq/relay","primaryLanguage":{"name":"Rust"},"updatedAt":"2026-02-24T10:08:58Z","url":"https://github.com/htazq/relay"},{"createdAt":"2026-02-13T01:44:50Z","description":"mt5跟单，rust+mq5(ea)","isArchived":false,"isFork":false,"isPrivate":true,"name":"follow-orders","nameWithOwner":"htazq/follow-orders","primaryLanguage":{"name":"MQL5"},"updatedAt":"2026-02-24T10:00:01Z","url":"https://github.com/htazq/follow-orders"},{"createdAt":"2026-02-15T11:38:15Z","description":"Artifact repository (post-reset).","isArchived":false,"isFork":false,"isPrivate":true,"name":"travding","nameWithOwner":"htazq/travding","primaryLanguage":null,"updatedAt":"2026-02-24T09:55:09Z","url":"https://github.com/htazq/travding"},{"createdAt":"2025-05-08T02:14:57Z","description":"","isArchived":false,"isFork":false,"isPrivate":false,"name":"go_test_W","nameWithOwner":"htazq/go_test_W","primaryLanguage":null,"updatedAt":"2026-02-20T03:30:32Z","url":"https://github.com/htazq/go_test_W"},{"createdAt":"2026-02-19T05:18:04Z","description":"","isArchived":false,"isFork":false,"isPrivate":true,"name":"crypto-cross-sectional-momentum","nameWithOwner":"htazq/crypto-cross-sectional-momentum","primaryLanguage":null,"updatedAt":"2026-02-19T05:18:09Z","url":"https://github.com/htazq/crypto-cross-sectional-momentum"},{"createdAt":"2026-02-17T02:00:10Z","description":"","isArchived":false,"isFork":false,"isPrivate":true,"name":"skill-to-animation-studio","nameWithOwner":"htazq/skill-to-animation-studio","primaryLanguage":{"name":"Python"},"updatedAt":"2026-02-17T02:19:39Z","url":"https://github.com/htazq/skill-to-animation-studio"},{"createdAt":"2026-02-12T09:53:11Z","description":"A股选股","isArchived":false,"isFork":false,"isPrivate":true,"name":"A-Stock-Screening","nameWithOwner":"htazq/A-Stock-Screening","primaryLanguage":{"name":"Python"},"updatedAt":"2026-02-12T14:04:08Z","url":"https://github.com/htazq/A-Stock-Screening"},{"createdAt":"2026-01-27T13:09:57Z","description":"Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ","isArchived":false,"isFork":true,"isPrivate":false,"name":"openclaw","nameWithOwner":"htazq/openclaw","primaryLanguage":{"name":"TypeScript"},"updatedAt":"2026-02-01T14:43:19Z","url":"https://github.com/htazq/openclaw"},{"createdAt":"2026-01-27T08:16:10Z","description":"","isArchived":false,"isFork":false,"isPrivate":true,"name":"yingdao","nameWithOwner":"htazq/yingdao","primaryLanguage":{"name":"Python"},"updatedAt":"2026-01-30T09:29:42Z","url":"https://github.com/htazq/yingdao"},{"createdAt":"2026-01-24T11:20:00Z","description":"","isArchived":false,"isFork":false,"isPrivate":true,"name":"catalystx-api","nameWithOwner":"htazq/catalystx-api","primaryLanguage":{"name":"Python"},"updatedAt":"2026-01-26T07:10:16Z","url":"https://github.com/htazq/catalystx-api"},{"createdAt":"2026-01-21T12:42:12Z","description":"","isArchived":false,"isFork":false,"isPrivate":true,"name":"openwebui-auth","nameWithOwner":"htazq/openwebui-auth","primaryLanguage":{"name":"TypeScript"},"updatedAt":"2026-01-24T12:50:06Z","url":"https://github.com/htazq/openwebui-auth"},{"createdAt":"2026-01-24T01:25:29Z","description":"🙌 OpenHands: AI-Driven Development","isArchived":false,"isFork":true,"isPrivate":false,"name":"OpenHands","nameWithOwner":"htazq/OpenHands","primaryLanguage":{"name":"Python"},"updatedAt":"2026-01-24T01:25:29Z","url":"https://github.com/htazq/OpenHands"},{"createdAt":"2026-01-23T14:33:51Z","description":"The Best Agent Harness. Meet Sisyphus: The Batteries-Included Agent that codes like you.","isArchived":false,"isFork":true,"isPrivate":false,"name":"oh-my-opencode","nameWithOwner":"htazq/oh-my-opencode","primaryLanguage":{"name":"TypeScript"},"updatedAt":"2026-01-23T14:33:51Z","url":"https://github.com/htazq/oh-my-opencode"},{"createdAt":"2026-01-22T15:52:26Z","description":"An AI SKILL that provide design intelligence for building professional UI/UX multiple platforms","isArchived":false,"isFork":true,"isPrivate":false,"name":"ui-ux-pro-max-skill","nameWithOwner":"htazq/ui-ux-pro-max-skill","primaryLanguage":{"name":"Python"},"updatedAt":"2026-01-22T15:52:26Z","url":"https://github.com/htazq/ui-ux-pro-max-skill"},{"createdAt":"2026-01-17T04:19:05Z","description":"","isArchived":false,"isFork":false,"isPrivate":true,"name":"AlphaGPT_mt5","nameWithOwner":"htazq/AlphaGPT_mt5","primaryLanguage":{"name":"Python"},"updatedAt":"2026-01-18T13:54:03Z","url":"https://github.com/htazq/AlphaGPT_mt5"},{"createdAt":"2026-01-17T02:49:55Z","description":"使用符号回归在中国股市与加密市场上进行高效因子挖掘。","isArchived":false,"isFork":true,"isPrivate":false,"name":"AlphaGPT","nameWithOwner":"htazq/AlphaGPT","primaryLanguage":{"name":"Python"},"updatedAt":"2026-01-17T02:49:55Z","url":"https://github.com/htazq/AlphaGPT"},{"createdAt":"2026-01-17T13:46:00Z","description":"Leverage the novel features and advanced financial mathematics introduced in Uniswap V4 to effectively mitigate just-in-time (JIT) liquidity provision issues.","isArchived":false,"isFork":true,"isPrivate":false,"name":"no_JIT","nameWithOwner":"htazq/no_JIT","primaryLanguage":{"name":"Solidity"},"updatedAt":"2026-01-17T13:46:00Z","url":"https://github.com/htazq/no_JIT"},{"createdAt":"2026-01-13T10:55:00Z","description":"The open source coding agent.","isArchived":false,"isFork":true,"isPrivate":false,"name":"opencode","nameWithOwner":"htazq/opencode","primaryLanguage":{"name":"TypeScript"},"updatedAt":"2026-01-13T10:55:00Z","url":"https://github.com/htazq/opencode"},{"createdAt":"2026-01-08T08:18:40Z","description":"","isArchived":false,"isFork":false,"isPrivate":true,"name":"nofx_strategy","nameWithOwner":"htazq/nofx_strategy","primaryLanguage":null,"updatedAt":"2026-01-09T09:08:49Z","url":"https://github.com/htazq/nofx_strategy"},{"createdAt":"2025-11-10T06:44:39Z","description":"电报自动执行（签到、发送消息、点击键盘、AI回复等）；个人、群组、频道消息监控、转发与自动回复。Automated Telegram tasks (check-ins, sending messages, keyboard clicks, AI replies, etc.); monitoring, forwarding, and auto-replying to private, group, and channel messages.","isArchived":false,"isFork":true,"isPrivate":false,"name":"tg-signer","nameWithOwner":"htazq/tg-signer","primaryLanguage":{"name":"Python"},"updatedAt":"2026-01-09T03:46:51Z","url":"https://github.com/htazq/tg-signer"},{"createdAt":"2026-01-07T12:58:48Z","description":"Open-source Trading OS with pluggable AI brain | From market data → AI reasoning → Trade execution | Self-hosted & Multi-exchange","isArchived":false,"isFork":true,"isPrivate":false,"name":"nofx","nameWithOwner":"htazq/nofx","primaryLanguage":{"name":"Go"},"updatedAt":"2026-01-07T12:58:48Z","url":"https://github.com/htazq/nofx"},{"createdAt":"2026-01-06T15:34:38Z","description":"AI模型聚合管理中转分发系统，一个应用管理您的所有AI模型，支持将多种大模型转为统一格式调用，支持OpenAI、Claude、Gemini等格式，可供个人或者企业内部管理与分发渠道使用。🍥 A Unified AI Model Management & Distribution System. Aggregate all your LLMs into one app and access them via an OpenAI-compatible API, with native support for Claude (Messages) and Gemini formats.","isArchived":false,"isFork":true,"isPrivate":false,"name":"new-api","nameWithOwner":"htazq/new-api","primaryLanguage":{"name":"JavaScript"},"updatedAt":"2026-01-06T15:34:38Z","url":"https://github.com/htazq/new-api"},{"createdAt":"2023-06-12T07:10:09Z","description":"My_Auto_scripts","isArchived":false,"isFork":false,"isPrivate":false,"name":"Auto","nameWithOwner":"htazq/Auto","primaryLanguage":{"name":"Shell"},"updatedAt":"2026-01-06T11:54:22Z","url":"https://github.com/htazq/Auto"},{"createdAt":"2026-01-06T08:34:34Z","description":"Wrap Gemini CLI, Antigravity, ChatGPT Codex, Claude Code, Qwen Code, iFlow as an OpenAI/Gemini/Claude/Codex compatible API service, allowing you to enjoy the free Gemini 2.5 Pro, GPT 5, Claude, Qwen model through API","isArchived":false,"isFork":true,"isPrivate":false,"name":"CLIProxyAPI","nameWithOwner":"htazq/CLIProxyAPI","primaryLanguage":{"name":"Go"},"updatedAt":"2026-01-06T08:34:34Z","url":"https://github.com/htazq/CLIProxyAPI"},{"createdAt":"2026-01-02T02:54:42Z","description":"A new AList Fork to Anti Trust Crisis","isArchived":false,"isFork":true,"isPrivate":false,"name":"OpenList","nameWithOwner":"htazq/OpenList","primaryLanguage":{"name":"Go"},"updatedAt":"2026-01-02T02:54:42Z","url":"https://github.com/htazq/OpenList"},{"createdAt":"2026-01-06T13:38:08Z","description":"AIGCPanel 是一个简单易用的一站式AI数字人系统，支持视频合成、声音合成、声音克隆，简化本地模型管理、一键导入和使用AI模型。","isArchived":false,"isFork":true,"isPrivate":false,"name":"aigcpanel","nameWithOwner":"htazq/aigcpanel","primaryLanguage":{"name":"TypeScript"},"updatedAt":"2026-01-06T13:38:08Z","url":"https://github.com/htazq/aigcpanel"},{"createdAt":"2025-11-20T11:38:15Z","description":"","isArchived":false,"isFork":false,"isPrivate":true,"name":"www","nameWithOwner":"htazq/www","primaryLanguage":{"name":"TypeScript"},"updatedAt":"2025-11-28T05:40:03Z","url":"https://github.com/htazq/www"},{"createdAt":"2025-11-23T11:28:43Z","description":"ai-image-process","isArchived":false,"isFork":false,"isPrivate":true,"name":"ai-image-process","nameWithOwner":"htazq/ai-image-process","primaryLanguage":{"name":"TypeScript"},"updatedAt":"2025-11-25T09:33:49Z","url":"https://github.com/htazq/ai-image-process"},{"createdAt":"2025-11-25T07:16:53Z","description":"A quick way to view my IP address","isArchived":false,"isFork":false,"isPrivate":false,"name":"View-IP","nameWithOwner":"htazq/View-IP","primaryLanguage":{"name":"JavaScript"},"updatedAt":"2025-11-25T07:42:29Z","url":"https://github.com/htazq/View-IP"},{"createdAt":"2025-06-05T23:33:43Z","description":"","isArchived":false,"isFork":false,"isPrivate":false,"name":"container-mirror-for-china","nameWithOwner":"htazq/container-mirror-for-china","primaryLanguage":{"name":"HTML"},"updatedAt":"2025-11-25T07:05:40Z","url":"https://github.com/htazq/container-mirror-for-china"},{"createdAt":"2025-08-18T15:23:55Z","description":"","isArchived":false,"isFork":false,"isPrivate":true,"name":"rust","nameWithOwner":"htazq/rust","primaryLanguage":{"name":"Rust"},"updatedAt":"2025-11-21T02:03:28Z","url":"https://github.com/htazq/rust"},{"createdAt":"2025-10-27T09:07:53Z","description":"Build offline dependency packages for air-gapped Linux environments","isArchived":false,"isFork":false,"isPrivate":false,"name":"OfflinePack","nameWithOwner":"htazq/OfflinePack","primaryLanguage":null,"updatedAt":"2025-11-21T02:02:48Z","url":"https://github.com/htazq/OfflinePack"},{"createdAt":"2024-02-04T02:43:26Z","description":"","isArchived":false,"isFork":false,"isPrivate":true,"name":"my_www","nameWithOwner":"htazq/my_www","primaryLanguage":{"name":"Vue"},"updatedAt":"2025-11-21T02:01:07Z","url":"https://github.com/htazq/my_www"},{"createdAt":"2025-06-06T10:16:18Z","description":"","isArchived":false,"isFork":false,"isPrivate":true,"name":"my-content-creation-kit","nameWithOwner":"htazq/my-content-creation-kit","primaryLanguage":{"name":"Python"},"updatedAt":"2025-11-21T01:59:43Z","url":"https://github.com/htazq/my-content-creation-kit"},{"createdAt":"2025-06-13T06:40:38Z","description":"","isArchived":false,"isFork":false,"isPrivate":true,"name":"k8s","nameWithOwner":"htazq/k8s","primaryLanguage":{"name":"Shell"},"updatedAt":"2025-11-21T01:58:42Z","url":"https://github.com/htazq/k8s"},{"createdAt":"2025-07-22T14:02:53Z","description":"","isArchived":false,"isFork":false,"isPrivate":true,"name":"juzi","nameWithOwner":"htazq/juzi","primaryLanguage":{"name":"TypeScript"},"updatedAt":"2025-11-21T01:57:10Z","url":"https://github.com/htazq/juzi"},{"createdAt":"2024-02-02T07:14:26Z","description":"","isArchived":false,"isFork":false,"isPrivate":true,"name":"hugo-blog","nameWithOwner":"htazq/hugo-blog","primaryLanguage":{"name":"HTML"},"updatedAt":"2025-11-21T01:56:45Z","url":"https://github.com/htazq/hugo-blog"},{"createdAt":"2025-03-25T06:47:10Z","description":"用 Helm 部署 V2Ray 的项目","isArchived":false,"isFork":false,"isPrivate":false,"name":"helm-v2ray","nameWithOwner":"htazq/helm-v2ray","primaryLanguage":{"name":"Python"},"updatedAt":"2025-11-21T01:54:28Z","url":"https://github.com/htazq/helm-v2ray"},{"createdAt":"2025-04-21T08:40:29Z","description":"","isArchived":false,"isFork":false,"isPrivate":false,"name":"hello-world-webapp","nameWithOwner":"htazq/hello-world-webapp","primaryLanguage":{"name":"Python"},"updatedAt":"2025-11-21T01:54:08Z","url":"https://github.com/htazq/hello-world-webapp"},{"createdAt":"2025-02-10T05:19:30Z","description":"16子","isArchived":false,"isFork":false,"isPrivate":true,"name":"4x4-chess","nameWithOwner":"htazq/4x4-chess","primaryLanguage":{"name":"JavaScript"},"updatedAt":"2025-11-21T01:51:14Z","url":"https://github.com/htazq/4x4-chess"},{"createdAt":"2025-11-21T15:08:49Z","description":"Edgeone pages templates","isArchived":false,"isFork":true,"isPrivate":false,"name":"pages-templates","nameWithOwner":"htazq/pages-templates","primaryLanguage":null,"updatedAt":"2025-11-21T15:08:49Z","url":"https://github.com/htazq/pages-templates"},{"createdAt":"2025-11-07T09:47:02Z","description":"The Intelligent Cloud OS. Use AI to automate the full lifecycle of your development and production environments, from provisioning custom dev stacks and deploying self-optimizing databases (MySQL, PostgreSQL, Redis, MongoDB) to running any Dockerized service.","isArchived":false,"isFork":true,"isPrivate":false,"name":"sealos","nameWithOwner":"htazq/sealos","primaryLanguage":{"name":"TypeScript"},"updatedAt":"2025-11-07T09:47:02Z","url":"https://github.com/htazq/sealos"},{"createdAt":"2025-11-03T09:20:12Z","description":"","isArchived":false,"isFork":false,"isPrivate":false,"name":"cloudflare-docker-proxy","nameWithOwner":"htazq/cloudflare-docker-proxy","primaryLanguage":null,"updatedAt":"2025-11-03T09:20:16Z","url":"https://github.com/htazq/cloudflare-docker-proxy"},{"createdAt":"2025-09-28T07:45:00Z","description":"","isArchived":false,"isFork":true,"isPrivate":false,"name":"cfnew","nameWithOwner":"htazq/cfnew","primaryLanguage":null,"updatedAt":"2025-09-28T07:45:00Z","url":"https://github.com/htazq/cfnew"},{"createdAt":"2023-12-15T04:36:59Z","description":"又一个一键重装脚本","isArchived":false,"isFork":true,"isPrivate":false,"name":"reinstall","nameWithOwner":"htazq/reinstall","primaryLanguage":{"name":"Shell"},"updatedAt":"2025-09-02T07:35:01Z","url":"https://github.com/htazq/reinstall"},{"createdAt":"2025-09-15T00:12:02Z","description":"PowerPoint-ist（/'pauəpɔintist/）, An online presentation application that replicates most of the commonly used features of MS PowerPoint, allowing for the editing and presentation of PPT online. Support AIPPT.","isArchived":false,"isFork":true,"isPrivate":false,"name":"PPTist","nameWithOwner":"htazq/PPTist","primaryLanguage":{"name":"Vue"},"updatedAt":"2025-09-15T00:12:02Z","url":"https://github.com/htazq/PPTist"},{"createdAt":"2026-01-03T02:11:02Z","description":"切换到新的网站了 https://pahubcn.com/app/courses","isArchived":false,"isFork":true,"isPrivate":false,"name":"PriceActions","nameWithOwner":"htazq/PriceActions","primaryLanguage":{"name":"JavaScript"},"updatedAt":"2026-01-03T02:11:02Z","url":"https://github.com/htazq/PriceActions"},{"createdAt":"2026-01-05T05:41:08Z","description":"本仓库面向所有对量化分析或开发感兴趣的量化交易从业者，提供系统性学习量化开发的技术路线，从数据获取、策略开发、回测系统到实盘部署。","isArchived":false,"isFork":true,"isPrivate":false,"name":"Awesome-QuantDev-Learn","nameWithOwner":"htazq/Awesome-QuantDev-Learn","primaryLanguage":null,"updatedAt":"2026-01-05T05:41:09Z","url":"https://github.com/htazq/Awesome-QuantDev-Learn"},{"createdAt":"2025-06-05T14:56:36Z","description":"zot - A scale-out production-ready vendor-neutral OCI-native container image/artifact registry (purely based on OCI Distribution Specification)","isArchived":false,"isFork":true,"isPrivate":false,"name":"zot","nameWithOwner":"htazq/zot","primaryLanguage":{"name":"Go"},"updatedAt":"2025-06-05T14:56:36Z","url":"https://github.com/htazq/zot"},{"createdAt":"2025-06-02T12:16:47Z","description":"","isArchived":false,"isFork":false,"isPrivate":true,"name":"view-trading-information","nameWithOwner":"htazq/view-trading-information","primaryLanguage":{"name":"TypeScript"},"updatedAt":"2025-06-03T11:27:55Z","url":"https://github.com/htazq/view-trading-information"},{"createdAt":"2025-11-04T13:42:27Z","description":"A GitHub Action for Gemini AI to review a pull request","isArchived":false,"isFork":true,"isPrivate":false,"name":"gemini-code-review-action","nameWithOwner":"htazq/gemini-code-review-action","primaryLanguage":{"name":"Python"},"updatedAt":"2025-11-04T13:42:27Z","url":"https://github.com/htazq/gemini-code-review-action"},{"createdAt":"2025-05-07T03:38:00Z","description":"Monitor browser logs directly from Cursor and other MCP compatible IDEs.","isArchived":false,"isFork":true,"isPrivate":false,"name":"browser-tools-mcp","nameWithOwner":"htazq/browser-tools-mcp","primaryLanguage":{"name":"JavaScript"},"updatedAt":"2025-05-07T03:38:00Z","url":"https://github.com/htazq/browser-tools-mcp"},{"createdAt":"2025-04-24T13:23:10Z","description":"A set of exercises to prepare for Certified Kubernetes Application Developer exam by Cloud Native Computing Foundation","isArchived":false,"isFork":true,"isPrivate":false,"name":"CKAD-exercises","nameWithOwner":"htazq/CKAD-exercises","primaryLanguage":null,"updatedAt":"2025-04-24T13:23:11Z","url":"https://github.com/htazq/CKAD-exercises"},{"createdAt":"2026-04-07T13:41:45Z","description":"AI一键批量生成各类短视频,自动批量混剪短视频,自动把视频发布到抖音,快手,小红书,视频号上,赚钱从来没有这么容易过! 支持本地语音模型chatTTS,fasterwhisper,GPTSoVITS,支持云语音：Azure,阿里云,腾讯云。支持Stable diffusion,comfyUI直接AI生图。Generate short videos with one click using AI LLM,print money together! support:chatTTS,faster-whisper,GPTSoVITS,Azure,tencent Cloud,Ali Cloud.","isArchived":false,"isFork":true,"isPrivate":false,"name":"MoneyPrinterPlus","nameWithOwner":"htazq/MoneyPrinterPlus","primaryLanguage":{"name":"Python"},"updatedAt":"2026-04-07T13:41:45Z","url":"https://github.com/htazq/MoneyPrinterPlus"},{"createdAt":"2024-11-27T08:02:50Z","description":"","isArchived":false,"isFork":false,"isPrivate":true,"name":"1","nameWithOwner":"htazq/1","primaryLanguage":{"name":"TypeScript"},"updatedAt":"2024-11-27T08:08:13Z","url":"https://github.com/htazq/1"},{"createdAt":"2024-12-05T06:03:11Z","description":"🤯 Lobe Chat - an open-source, modern-design AI chat framework. Supports Multi AI Providers( OpenAI / Claude 3 / Gemini / Ollama / Qwen /  DeepSeek), Knowledge Base (file upload / knowledge management / RAG ), Multi-Modals (Vision/TTS/Plugins/Artifacts). One-click FREE deployment of your private ChatGPT/ Claude application.","isArchived":false,"isFork":true,"isPrivate":false,"name":"lobe-chat","nameWithOwner":"htazq/lobe-chat","primaryLanguage":{"name":"TypeScript"},"updatedAt":"2025-02-11T06:22:54Z","url":"https://github.com/htazq/lobe-chat"},{"createdAt":"2026-03-02T09:43:55Z","description":"Generating sets of formulaic alpha (predictive) stock factors via reinforcement learning.","isArchived":false,"isFork":true,"isPrivate":false,"name":"alphagen","nameWithOwner":"htazq/alphagen","primaryLanguage":{"name":"Python"},"updatedAt":"2026-03-02T09:43:55Z","url":"https://github.com/htazq/alphagen"},{"createdAt":"2024-12-04T08:27:31Z","description":"An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.","isArchived":false,"isFork":true,"isPrivate":false,"name":"rustdesk","nameWithOwner":"htazq/rustdesk","primaryLanguage":{"name":"Rust"},"updatedAt":"2024-12-04T08:27:31Z","url":"https://github.com/htazq/rustdesk"},{"createdAt":"2024-12-04T13:14:32Z","description":"sing-box精装桶一键脚本【Hysteria2、Tuic5、Vless-reality、Vmess-ws/argo】：支持alpine系统、自签/acme双证书切换、Argo固定临时双隧道（可共存）、Psiphon赛风VPN（30个国家）分流功能；附singbox电脑网页客户端下载","isArchived":false,"isFork":true,"isPrivate":false,"name":"sing-box-yg","nameWithOwner":"htazq/sing-box-yg","primaryLanguage":{"name":"Shell"},"updatedAt":"2024-12-04T13:14:32Z","url":"https://github.com/htazq/sing-box-yg"},{"createdAt":"2024-11-29T09:31:48Z","description":"","isArchived":false,"isFork":false,"isPrivate":true,"name":"chatgpt-web-midjourney-proxy","nameWithOwner":"htazq/chatgpt-web-midjourney-proxy","primaryLanguage":{"name":"JavaScript"},"updatedAt":"2024-11-29T09:44:36Z","url":"https://github.com/htazq/chatgpt-web-midjourney-proxy"},{"createdAt":"2024-12-03T10:58:13Z","description":"法克劳德，啥也不是。","isArchived":false,"isFork":true,"isPrivate":false,"name":"fuclaude","nameWithOwner":"htazq/fuclaude","primaryLanguage":null,"updatedAt":"2024-12-03T10:58:13Z","url":"https://github.com/htazq/fuclaude"},{"createdAt":"2024-10-11T09:27:50Z","description":"My status","isArchived":false,"isFork":false,"isPrivate":true,"name":"word_status","nameWithOwner":"htazq/word_status","primaryLanguage":{"name":"TypeScript"},"updatedAt":"2024-10-12T09:43:55Z","url":"https://github.com/htazq/word_status"},{"createdAt":"2026-03-02T09:46:18Z","description":"Official implementation for AAAI2025: AlphaForge: A Framework to Mine and Dynamically Combine Formulaic Alpha  Factors","isArchived":false,"isFork":true,"isPrivate":false,"name":"AlphaForge","nameWithOwner":"htazq/AlphaForge","primaryLanguage":{"name":"Python"},"updatedAt":"2026-03-02T09:46:18Z","url":"https://github.com/htazq/AlphaForge"},{"createdAt":"2024-08-19T06:34:27Z","description":"在原版的基础上修改了显示 VLESS 配置信息转换为订阅内容。使用该脚本，你可以方便地将 VLESS 配置信息使用在线配置转换到 Clash 或 Singbox 等工具中。","isArchived":false,"isFork":true,"isPrivate":false,"name":"edgetunnel","nameWithOwner":"htazq/edgetunnel","primaryLanguage":{"name":"JavaScript"},"updatedAt":"2024-08-19T06:34:27Z","url":"https://github.com/htazq/edgetunnel"},{"createdAt":"2024-12-26T09:18:02Z","description":"Python - 100天从新手到大师","isArchived":false,"isFork":true,"isPrivate":false,"name":"Python-100-Days","nameWithOwner":"htazq/Python-100-Days","primaryLanguage":{"name":"Python"},"updatedAt":"2024-12-26T09:18:03Z","url":"https://github.com/htazq/Python-100-Days"},{"createdAt":"2024-06-12T07:28:29Z","description":"Windows inside a Docker container.","isArchived":false,"isFork":true,"isPrivate":false,"name":"windows","nameWithOwner":"htazq/windows","primaryLanguage":{"name":"Shell"},"updatedAt":"2024-06-12T07:28:29Z","url":"https://github.com/htazq/windows"},{"createdAt":"2024-04-30T06:21:24Z","description":"一个还算强大的Web思维导图。A relatively powerful web mind map.","isArchived":false,"isFork":true,"isPrivate":false,"name":"mind-map","nameWithOwner":"htazq/mind-map","primaryLanguage":{"name":"Vue"},"updatedAt":"2024-04-30T06:21:24Z","url":"https://github.com/htazq/mind-map"},{"createdAt":"2024-04-27T03:04:36Z","description":"","isArchived":false,"isFork":false,"isPrivate":true,"name":"coze2openai","nameWithOwner":"htazq/coze2openai","primaryLanguage":{"name":"JavaScript"},"updatedAt":"2024-04-27T03:08:05Z","url":"https://github.com/htazq/coze2openai"},{"createdAt":"2024-03-20T01:38:23Z","description":"tianya","isArchived":false,"isFork":false,"isPrivate":false,"name":"tianya","nameWithOwner":"htazq/tianya","primaryLanguage":null,"updatedAt":"2024-03-20T01:39:24Z","url":"https://github.com/htazq/tianya"},{"createdAt":"2026-05-12T06:37:38Z","description":"收藏一些电子书","isArchived":false,"isFork":true,"isPrivate":false,"name":"iBook","nameWithOwner":"htazq/iBook","primaryLanguage":null,"updatedAt":"2026-05-12T06:37:38Z","url":"https://github.com/htazq/iBook"},{"createdAt":"2024-02-18T03:22:13Z","description":"","isArchived":false,"isFork":false,"isPrivate":false,"name":"jellyfin_work","nameWithOwner":"htazq/jellyfin_work","primaryLanguage":null,"updatedAt":"2024-02-18T03:22:14Z","url":"https://github.com/htazq/jellyfin_work"},{"createdAt":"2024-02-02T06:28:10Z","description":"A clean, elegant and advanced blog theme for Hugo.","isArchived":false,"isFork":true,"isPrivate":false,"name":"DoIt","nameWithOwner":"htazq/DoIt","primaryLanguage":{"name":"HTML"},"updatedAt":"2024-02-02T06:28:10Z","url":"https://github.com/htazq/DoIt"},{"createdAt":"2024-01-23T23:03:54Z","description":"","isArchived":false,"isFork":false,"isPrivate":true,"name":"my-memos","nameWithOwner":"htazq/my-memos","primaryLanguage":null,"updatedAt":"2024-01-23T23:03:54Z","url":"https://github.com/htazq/my-memos"},{"createdAt":"2024-03-17T11:05:47Z","description":"电话攻击，电话炸弹，电话轰炸(可代替短信轰炸) 联系莆田医院，专门炸坏蛋，BOOM💥","isArchived":false,"isFork":true,"isPrivate":false,"name":"contactPutianHospital","nameWithOwner":"htazq/contactPutianHospital","primaryLanguage":{"name":"Python"},"updatedAt":"2024-03-17T11:05:47Z","url":"https://github.com/htazq/contactPutianHospital"},{"createdAt":"2024-01-22T02:20:28Z","description":"HFS is a web file server to run on your computer. Share folders or even a single file thanks to the virtual file system.","isArchived":false,"isFork":true,"isPrivate":false,"name":"hfs","nameWithOwner":"htazq/hfs","primaryLanguage":{"name":"TypeScript"},"updatedAt":"2024-01-22T02:20:28Z","url":"https://github.com/htazq/hfs"},{"createdAt":"2024-01-15T05:05:03Z","description":" 🦋 A Hexo Theme: Butterfly","isArchived":false,"isFork":true,"isPrivate":false,"name":"hexo-theme-butterfly","nameWithOwner":"htazq/hexo-theme-butterfly","primaryLanguage":{"name":"JavaScript"},"updatedAt":"2024-01-15T05:05:03Z","url":"https://github.com/htazq/hexo-theme-butterfly"},{"createdAt":"2024-01-31T01:52:43Z","description":"Moments piled up. A Hugo theme ported from SumiMakito/hexo-theme-Journal.","isArchived":false,"isFork":true,"isPrivate":false,"name":"hugo-theme-diary","nameWithOwner":"htazq/hugo-theme-diary","primaryLanguage":{"name":"HTML"},"updatedAt":"2024-01-31T01:52:43Z","url":"https://github.com/htazq/hugo-theme-diary"},{"createdAt":"2023-10-30T08:40:35Z","description":"","isArchived":false,"isFork":false,"isPrivate":true,"name":"nezha_backup","nameWithOwner":"htazq/nezha_backup","primaryLanguage":null,"updatedAt":"2023-10-30T08:40:36Z","url":"https://github.com/htazq/nezha_backup"},{"createdAt":"2023-07-10T02:22:08Z","description":"","isArchived":false,"isFork":false,"isPrivate":true,"name":"AutoGPT-Next-Web","nameWithOwner":"htazq/AutoGPT-Next-Web","primaryLanguage":{"name":"TypeScript"},"updatedAt":"2023-07-10T02:24:45Z","url":"https://github.com/htazq/AutoGPT-Next-Web"},{"createdAt":"2023-09-16T11:05:28Z","description":"✯ 一个国内可直连的直播源分享项目 ✯  🔕 永久免费 直连访问 完整开源 不含广告 完善的台标 直播源支持IPv4/IPv6双栈访问 🔕","isArchived":false,"isFork":true,"isPrivate":false,"name":"live","nameWithOwner":"htazq/live","primaryLanguage":{"name":"JavaScript"},"updatedAt":"2023-09-16T11:05:28Z","url":"https://github.com/htazq/live"},{"createdAt":"2023-09-16T10:08:54Z","description":"","isArchived":false,"isFork":true,"isPrivate":false,"name":"TVbox-interface","nameWithOwner":"htazq/TVbox-interface","primaryLanguage":null,"updatedAt":"2023-09-16T10:08:54Z","url":"https://github.com/htazq/TVbox-interface"},{"createdAt":"2023-08-27T10:54:45Z","description":"Next Terminal是一个简单好用安全的开源交互审计系统，支持RDP、SSH、VNC、Telnet、Kubernetes协议。","isArchived":false,"isFork":true,"isPrivate":false,"name":"next-terminal","nameWithOwner":"htazq/next-terminal","primaryLanguage":{"name":"JavaScript"},"updatedAt":"2023-08-27T10:54:45Z","url":"https://github.com/htazq/next-terminal"},{"createdAt":"2023-12-08T04:25:42Z","description":"专注大数据学习面试，大数据成神之路开启。Flink/Spark/Hadoop/Hbase/Hive...","isArchived":false,"isFork":true,"isPrivate":false,"name":"God-Of-BigData","nameWithOwner":"htazq/God-Of-BigData","primaryLanguage":null,"updatedAt":"2023-12-08T04:25:43Z","url":"https://github.com/htazq/God-Of-BigData"},{"createdAt":"2023-08-02T12:10:08Z","description":"GNU/Linux 一键更换系统软件源脚本","isArchived":false,"isFork":true,"isPrivate":false,"name":"LinuxMirrors","nameWithOwner":"htazq/LinuxMirrors","primaryLanguage":{"name":"Shell"},"updatedAt":"2023-08-02T12:10:08Z","url":"https://github.com/htazq/LinuxMirrors"},{"createdAt":"2023-10-17T12:51:43Z","description":"信息安全方面的书籍书籍","isArchived":false,"isFork":true,"isPrivate":false,"name":"Information_Security_Books","nameWithOwner":"htazq/Information_Security_Books","primaryLanguage":null,"updatedAt":"2023-10-17T12:51:43Z","url":"https://github.com/htazq/Information_Security_Books"},{"createdAt":"2023-07-09T13:59:01Z","description":"🤖 Assemble, configure, and deploy autonomous AI Agents in your browser.","isArchived":false,"isFork":true,"isPrivate":false,"name":"AgentGPT","nameWithOwner":"htazq/AgentGPT","primaryLanguage":{"name":"TypeScript"},"updatedAt":"2023-07-09T13:59:01Z","url":"https://github.com/htazq/AgentGPT"},{"createdAt":"2023-07-05T07:14:44Z","description":"ChatGPT 中文指南🔥，ChatGPT 中文调教指南，指令指南，应用开发指南，精选资源清单，更好的使用 chatGPT 让你的生产力 up up up! 🚀","isArchived":false,"isFork":true,"isPrivate":false,"name":"awesome-chatgpt-zh","nameWithOwner":"htazq/awesome-chatgpt-zh","primaryLanguage":{"name":"Python"},"updatedAt":"2024-05-03T04:32:22Z","url":"https://github.com/htazq/awesome-chatgpt-zh"},{"createdAt":"2023-06-27T17:56:34Z","description":"用 Express 和  Vue3 搭建的 ChatGPT 演示网页","isArchived":false,"isFork":true,"isPrivate":false,"name":"chatgpt-web","nameWithOwner":"htazq/chatgpt-web","primaryLanguage":{"name":"Vue"},"updatedAt":"2023-06-27T17:56:34Z","url":"https://github.com/htazq/chatgpt-web"},{"createdAt":"2023-06-27T17:44:33Z","description":"ChatGPT 中文调教指南。各种场景使用指南。学习怎么让它听你的话。","isArchived":false,"isFork":true,"isPrivate":false,"name":"awesome-chatgpt-prompts-zh","nameWithOwner":"htazq/awesome-chatgpt-prompts-zh","primaryLanguage":null,"updatedAt":"2023-06-27T17:44:33Z","url":"https://github.com/htazq/awesome-chatgpt-prompts-zh"},{"createdAt":"2023-06-11T17:14:33Z","description":"用 diango 开发的 shadowsocks 面板","isArchived":false,"isFork":true,"isPrivate":false,"name":"django-sspanel","nameWithOwner":"htazq/django-sspanel","primaryLanguage":{"name":"Python"},"updatedAt":"2023-06-11T17:14:33Z","url":"https://github.com/htazq/django-sspanel"},{"createdAt":"2023-06-03T07:20:28Z","description":"","isArchived":false,"isFork":false,"isPrivate":true,"name":"go-proxy-bingai-vercel","nameWithOwner":"htazq/go-proxy-bingai-vercel","primaryLanguage":{"name":"HTML"},"updatedAt":"2023-06-03T07:21:07Z","url":"https://github.com/htazq/go-proxy-bingai-vercel"},{"createdAt":"2023-06-03T07:13:33Z","description":"","isArchived":false,"isFork":false,"isPrivate":false,"name":"go-proxy-bingai-2","nameWithOwner":"htazq/go-proxy-bingai-2","primaryLanguage":{"name":"HTML"},"updatedAt":"2023-06-03T07:13:47Z","url":"https://github.com/htazq/go-proxy-bingai-2"},{"createdAt":"2023-06-03T07:09:04Z","description":"","isArchived":false,"isFork":false,"isPrivate":false,"name":"go-proxy-bingai","nameWithOwner":"htazq/go-proxy-bingai","primaryLanguage":{"name":"HTML"},"updatedAt":"2023-06-03T07:09:19Z","url":"https://github.com/htazq/go-proxy-bingai"},{"createdAt":"2023-06-03T07:11:57Z","description":"用 Vue3 和 Go 搭建的微软 New Bing 演示站点，拥有一致的 UI 体验，支持 ChatGPT 提示词，国内可用。","isArchived":false,"isFork":true,"isPrivate":false,"name":"go-proxy-bingai-1","nameWithOwner":"htazq/go-proxy-bingai-1","primaryLanguage":{"name":"HTML"},"updatedAt":"2023-06-03T07:11:58Z","url":"https://github.com/htazq/go-proxy-bingai-1"},{"createdAt":"2023-05-28T06:00:59Z","description":"🌩「自选优选 IP」测试 Cloudflare CDN 延迟和速度，获取最快 IP (IPv4 / IPv6)！另外也支持其他 CDN / 网站 IP ~","isArchived":false,"isFork":true,"isPrivate":false,"name":"CloudflareSpeedTest","nameWithOwner":"htazq/CloudflareSpeedTest","primaryLanguage":{"name":"Go"},"updatedAt":"2023-05-28T06:00:59Z","url":"https://github.com/htazq/CloudflareSpeedTest"},{"createdAt":"2023-05-14T14:12:58Z","description":"decentralising the Ai Industry, just some language model api's...","isArchived":false,"isFork":true,"isPrivate":false,"name":"gpt4free","nameWithOwner":"htazq/gpt4free","primaryLanguage":{"name":"Python"},"updatedAt":"2023-05-14T14:12:58Z","url":"https://github.com/htazq/gpt4free"},{"createdAt":"2023-05-11T07:26:35Z","description":"Easy and fast book searcher, create and search your private library. Index metadata for over 10 million books in one minute as well as search in 30µs.","isArchived":false,"isFork":true,"isPrivate":false,"name":"book-searcher","nameWithOwner":"htazq/book-searcher","primaryLanguage":{"name":"TypeScript"},"updatedAt":"2023-12-27T06:44:30Z","url":"https://github.com/htazq/book-searcher"},{"createdAt":"2023-04-24T06:34:33Z","description":"An account management Panel based on Laravel7 framework. Include multiple payment, account management, system caching, admin notification, products models, and more. ","isArchived":false,"isFork":true,"isPrivate":false,"name":"ProxyPanel","nameWithOwner":"htazq/ProxyPanel","primaryLanguage":{"name":"PHP"},"updatedAt":"2023-04-24T06:34:34Z","url":"https://github.com/htazq/ProxyPanel"},{"createdAt":"2023-04-21T03:01:48Z","description":"基于Python的开源量化交易平台开发框架","isArchived":false,"isFork":true,"isPrivate":false,"name":"vnpy","nameWithOwner":"htazq/vnpy","primaryLanguage":{"name":"Python"},"updatedAt":"2023-04-21T03:01:48Z","url":"https://github.com/htazq/vnpy"},{"createdAt":"2023-04-13T14:42:54Z","description":"An experimental open-source attempt to make GPT-4 fully autonomous.","isArchived":false,"isFork":true,"isPrivate":false,"name":"Auto-GPT","nameWithOwner":"htazq/Auto-GPT","primaryLanguage":{"name":"Python"},"updatedAt":"2023-04-13T14:42:51Z","url":"https://github.com/htazq/Auto-GPT"},{"createdAt":"2023-06-09T13:13:04Z","description":"pyTranscriber can be used to generate automatic transcription / automatic subtitles for audio/video files through a friendly graphical user interface.","isArchived":false,"isFork":true,"isPrivate":false,"name":"pyTranscriber","nameWithOwner":"htazq/pyTranscriber","primaryLanguage":{"name":"Python"},"updatedAt":"2023-06-09T13:13:04Z","url":"https://github.com/htazq/pyTranscriber"},{"createdAt":"2023-04-13T03:18:36Z","description":"The tool can install v2ray on the Doprax, including VMess and VLess protocols, it will automatically switch IP, you need to fork this projects, read readme.md and run it. Create By ifeng.","isArchived":false,"isFork":true,"isPrivate":false,"name":"V2ray-for-Doprax","nameWithOwner":"htazq/V2ray-for-Doprax","primaryLanguage":{"name":"Dockerfile"},"updatedAt":"2023-04-13T03:16:46Z","url":"https://github.com/htazq/V2ray-for-Doprax"},{"createdAt":"2023-03-02T04:19:24Z","description":"python八字排盘软件。　子平真诠、耕寸集等经典八字教程。　丰富的八字案例。","isArchived":false,"isFork":true,"isPrivate":false,"name":"bazi","nameWithOwner":"htazq/bazi","primaryLanguage":{"name":"Python"},"updatedAt":"2023-03-02T04:19:20Z","url":"https://github.com/htazq/bazi"},{"createdAt":"2023-03-03T13:48:40Z","description":"v2ray/xray多用户管理部署程序","isArchived":false,"isFork":true,"isPrivate":false,"name":"multi-v2ray","nameWithOwner":"htazq/multi-v2ray","primaryLanguage":{"name":"Python"},"updatedAt":"2023-03-03T13:48:36Z","url":"https://github.com/htazq/multi-v2ray"},{"createdAt":"2022-12-15T12:38:51Z","description":"个人笔记","isArchived":false,"isFork":false,"isPrivate":false,"name":"note","nameWithOwner":"htazq/note","primaryLanguage":{"name":"JavaScript"},"updatedAt":"2022-12-15T12:39:29Z","url":"https://github.com/htazq/note"},{"createdAt":"2023-03-02T03:14:19Z","description":"基于UniAPP开发的八字排盘工具","isArchived":false,"isFork":true,"isPrivate":false,"name":"8Char-H5","nameWithOwner":"htazq/8Char-H5","primaryLanguage":{"name":"TypeScript"},"updatedAt":"2025-11-23T01:18:35Z","url":"https://github.com/htazq/8Char-H5"},{"createdAt":"2022-12-17T02:18:53Z","description":"在线云盘、网盘、OneDrive、云存储、私有云、对象存储、h5ai、上传、下载","isArchived":false,"isFork":true,"isPrivate":false,"name":"zfile","nameWithOwner":"htazq/zfile","primaryLanguage":{"name":"Java"},"updatedAt":"2022-12-17T02:18:48Z","url":"https://github.com/htazq/zfile"},{"createdAt":"2022-11-28T05:57:03Z","description":"Flippy's openwrt packaged source code","isArchived":false,"isFork":true,"isPrivate":false,"name":"openwrt_packit","nameWithOwner":"htazq/openwrt_packit","primaryLanguage":{"name":"Shell"},"updatedAt":"2022-11-28T05:57:01Z","url":"https://github.com/htazq/openwrt_packit"},{"createdAt":"2023-04-10T03:12:54Z","description":"An open-source windows defender manager. Now you can disable windows defender permanently. ","isArchived":false,"isFork":true,"isPrivate":false,"name":"defender-control","nameWithOwner":"htazq/defender-control","primaryLanguage":{"name":"C++"},"updatedAt":"2023-04-10T03:12:51Z","url":"https://github.com/htazq/defender-control"},{"createdAt":"2022-11-18T03:25:52Z","description":"Simple Linux Panel","isArchived":false,"isFork":true,"isPrivate":false,"name":"mdserver-web","nameWithOwner":"htazq/mdserver-web","primaryLanguage":{"name":"JavaScript"},"updatedAt":"2022-11-18T03:25:47Z","url":"https://github.com/htazq/mdserver-web"},{"createdAt":"2022-11-18T14:58:45Z","description":"支持多协议多用户的 xray 面板","isArchived":false,"isFork":true,"isPrivate":false,"name":"x-ui","nameWithOwner":"htazq/x-ui","primaryLanguage":{"name":"JavaScript"},"updatedAt":"2022-11-18T14:58:53Z","url":"https://github.com/htazq/x-ui"},{"createdAt":"2022-11-13T08:05:54Z","description":"https://bitcartcc.com","isArchived":false,"isFork":true,"isPrivate":false,"name":"bitcart","nameWithOwner":"htazq/bitcart","primaryLanguage":{"name":"Python"},"updatedAt":"2022-11-13T08:05:49Z","url":"https://github.com/htazq/bitcart"},{"createdAt":"2022-11-04T08:57:37Z","description":"Free Image Hosting solution, Flickr/imgur alternative. Using Cloudflare Pages and Telegraph.","isArchived":false,"isFork":true,"isPrivate":false,"name":"Telegraph-Image","nameWithOwner":"htazq/Telegraph-Image","primaryLanguage":{"name":"HTML"},"updatedAt":"2022-11-04T08:30:37Z","url":"https://github.com/htazq/Telegraph-Image"},{"createdAt":"2022-05-22T08:52:11Z","description":"中国电信助手,白嫖年入保底256+话费 .每月金豆领取(lv6,1000金豆),每日签到(随机金豆),每日喂食宠物.每日登录奖励领取(5金豆),查看我的云盘(10金豆),翻牌 (10金豆),查看我的订单 (5金豆),打开消息 (100金豆),当日分享 (50金豆),浏览生活频道 (5金豆),查看我的金豆 (5金豆),关注直播 (5金豆),观看直播15s (5金豆),打开消息 (100金豆),答问卷 (100金豆)","isArchived":false,"isFork":true,"isPrivate":false,"name":"China-Telecom-Helper","nameWithOwner":"htazq/China-Telecom-Helper","primaryLanguage":null,"updatedAt":"2022-05-22T08:51:05Z","url":"https://github.com/htazq/China-Telecom-Helper"},{"createdAt":"2022-05-23T14:12:10Z","description":"github加速神器，解决github打不开、用户头像无法加载、releases无法上传下载、git-clone、git-pull、git-push失败等问题","isArchived":false,"isFork":true,"isPrivate":false,"name":"FastGithub","nameWithOwner":"htazq/FastGithub","primaryLanguage":{"name":"C#"},"updatedAt":"2022-05-23T11:17:17Z","url":"https://github.com/htazq/FastGithub"},{"createdAt":"2022-04-29T09:54:20Z","description":"tinyproxy - a light-weight HTTP/HTTPS proxy daemon for POSIX operating systems","isArchived":false,"isFork":true,"isPrivate":false,"name":"tinyproxy","nameWithOwner":"htazq/tinyproxy","primaryLanguage":{"name":"C"},"updatedAt":"2022-04-29T09:54:17Z","url":"https://github.com/htazq/tinyproxy"},{"createdAt":"2022-04-24T11:38:01Z","description":"","isArchived":false,"isFork":true,"isPrivate":false,"name":"COVID-19","nameWithOwner":"htazq/COVID-19","primaryLanguage":{"name":"JavaScript"},"updatedAt":"2022-04-24T11:37:52Z","url":"https://github.com/htazq/COVID-19"},{"createdAt":"2022-04-23T13:32:23Z","description":"一款轻量级、高性能、功能强大的内网穿透代理服务器。支持tcp、udp、socks5、http等几乎所有流量转发，可用来访问内网网站、本地支付接口调试、ssh访问、远程桌面，内网dns解析、内网socks5代理等等……，并带有功能强大的web管理端。a lightweight, high-performance, powerful intranet penetration proxy server, with a powerful web management terminal.","isArchived":false,"isFork":true,"isPrivate":false,"name":"nps","nameWithOwner":"htazq/nps","primaryLanguage":{"name":"Go"},"updatedAt":"2022-04-23T13:32:28Z","url":"https://github.com/htazq/nps"},{"createdAt":"2022-03-13T12:56:14Z","description":"","isArchived":false,"isFork":true,"isPrivate":false,"name":"GPEN","nameWithOwner":"htazq/GPEN","primaryLanguage":{"name":"Jupyter Notebook"},"updatedAt":"2022-03-13T12:54:40Z","url":"https://github.com/htazq/GPEN"},{"createdAt":"2022-03-13T13:52:11Z","description":"Real-ESRGAN aims at developing Practical Algorithms for General Image/Video Restoration.","isArchived":false,"isFork":true,"isPrivate":false,"name":"Real-ESRGAN","nameWithOwner":"htazq/Real-ESRGAN","primaryLanguage":{"name":"Python"},"updatedAt":"2022-03-13T13:52:05Z","url":"https://github.com/htazq/Real-ESRGAN"},{"createdAt":"2022-02-04T13:06:14Z","description":"康师傅OpenVPN流控4.1纪念版Shell脚本源码","isArchived":false,"isFork":true,"isPrivate":false,"name":"OpenVpn-kangml4.1","nameWithOwner":"htazq/OpenVpn-kangml4.1","primaryLanguage":{"name":"Shell"},"updatedAt":"2023-07-28T09:14:51Z","url":"https://github.com/htazq/OpenVpn-kangml4.1"},{"createdAt":"2022-02-04T13:06:19Z","description":"康师傅流控4.1纪念版PHP源码，使用PHP7.3制作，仅供交流学习与研究。","isArchived":false,"isFork":true,"isPrivate":false,"name":"OpenVpn-Flow-Control-System","nameWithOwner":"htazq/OpenVpn-Flow-Control-System","primaryLanguage":{"name":"PHP"},"updatedAt":"2023-07-28T09:13:12Z","url":"https://github.com/htazq/OpenVpn-Flow-Control-System"},{"createdAt":"2022-02-15T08:25:28Z","description":"🚀傲星工具箱，一个在线工具箱","isArchived":false,"isFork":true,"isPrivate":false,"name":"toolbox","nameWithOwner":"htazq/toolbox","primaryLanguage":{"name":"JavaScript"},"updatedAt":"2022-02-15T08:25:27Z","url":"https://github.com/htazq/toolbox"},{"createdAt":"2022-02-09T10:00:59Z","description":"📝基于 Vue、Vditor，所构建的在线 Markdown 编辑器，支持流程图、甘特图、时序图、任务列表、HTML 自动转换为 Markdown 等功能；🎉新增「所见即所得」编辑模式。","isArchived":false,"isFork":true,"isPrivate":false,"name":"markdown-online-editor","nameWithOwner":"htazq/markdown-online-editor","primaryLanguage":{"name":"CSS"},"updatedAt":"2022-02-08T02:45:03Z","url":"https://github.com/htazq/markdown-online-editor"},{"createdAt":"2022-01-19T01:51:51Z","description":"Hexo博客模版，通过云开发平台一键部署为可访问网站。","isArchived":false,"isFork":true,"isPrivate":false,"name":"hexo","nameWithOwner":"htazq/hexo","primaryLanguage":{"name":"HTML"},"updatedAt":"2022-01-18T06:59:51Z","url":"https://github.com/htazq/hexo"},{"createdAt":"2022-03-13T04:05:43Z","description":"Use Vue, Vuex to code Tetris.使用 Vue, Vuex 做俄罗斯方块 ","isArchived":false,"isFork":true,"isPrivate":false,"name":"vue-tetris","nameWithOwner":"htazq/vue-tetris","primaryLanguage":{"name":"JavaScript"},"updatedAt":"2022-03-12T03:41:48Z","url":"https://github.com/htazq/vue-tetris"},{"createdAt":"2022-01-09T15:40:43Z","description":"一个浙江大学本科生的计算机、地理信息科学知识库 包含课程资料 学习笔记 大作业等（ 数据结构与算法、人工智能、地理空间数据库、计算机组成、计算机网络、图形学、编译原理等课程）","isArchived":false,"isFork":true,"isPrivate":false,"name":"ZJU-CS-GIS-ClassNotes","nameWithOwner":"htazq/ZJU-CS-GIS-ClassNotes","primaryLanguage":{"name":"Jupyter Notebook"},"updatedAt":"2022-01-09T15:40:44Z","url":"https://github.com/htazq/ZJU-CS-GIS-ClassNotes"},{"createdAt":"2021-12-05T18:36:26Z","description":"A build script for qBittorent nox static.","isArchived":false,"isFork":true,"isPrivate":false,"name":"qbittorrent-nox-static","nameWithOwner":"htazq/qbittorrent-nox-static","primaryLanguage":{"name":"Shell"},"updatedAt":"2021-12-05T18:36:27Z","url":"https://github.com/htazq/qbittorrent-nox-static"},{"createdAt":"2021-12-18T15:31:00Z","description":"一套基于layui框架的Typecho主题Echo","isArchived":false,"isFork":true,"isPrivate":false,"name":"Echo","nameWithOwner":"htazq/Echo","primaryLanguage":{"name":"PHP"},"updatedAt":"2021-12-18T15:31:01Z","url":"https://github.com/htazq/Echo"},{"createdAt":"2021-11-27T19:41:24Z","description":":trollface: 哪吒监控 一站式轻监控轻运维系统。支持系统状态、HTTP、TCP、Ping 监控报警，计划任务和在线终端。","isArchived":false,"isFork":true,"isPrivate":false,"name":"nezha","nameWithOwner":"htazq/nezha","primaryLanguage":{"name":"Go"},"updatedAt":"2024-11-23T14:08:06Z","url":"https://github.com/htazq/nezha"},{"createdAt":"2021-11-02T11:24:44Z","description":"萌咖大佬的Linux 一键DD脚本","isArchived":false,"isFork":true,"isPrivate":false,"name":"dd","nameWithOwner":"htazq/dd","primaryLanguage":{"name":"Shell"},"updatedAt":"2021-11-02T11:24:45Z","url":"https://github.com/htazq/dd"},{"createdAt":"2022-02-09T03:18:40Z","description":"单纯就是一个导航。","isArchived":false,"isFork":true,"isPrivate":false,"name":"aNavigation","nameWithOwner":"htazq/aNavigation","primaryLanguage":{"name":"JavaScript"},"updatedAt":"2022-02-08T06:10:40Z","url":"https://github.com/htazq/aNavigation"},{"createdAt":"2021-11-03T02:57:28Z","description":"Typecho Theme","isArchived":false,"isFork":true,"isPrivate":false,"name":"junichi","nameWithOwner":"htazq/junichi","primaryLanguage":{"name":"PHP"},"updatedAt":"2021-11-03T02:57:30Z","url":"https://github.com/htazq/junichi"},{"createdAt":"2022-03-13T13:52:10Z","description":"waifu2xのCaffe版","isArchived":false,"isFork":true,"isPrivate":false,"name":"waifu2x-caffe","nameWithOwner":"htazq/waifu2x-caffe","primaryLanguage":{"name":"C++"},"updatedAt":"2022-03-13T13:52:09Z","url":"https://github.com/htazq/waifu2x-caffe"},{"createdAt":"2023-05-25T07:23:09Z","description":"来这里学股票知识吧！！！！","isArchived":false,"isFork":true,"isPrivate":false,"name":"stock_learning","nameWithOwner":"htazq/stock_learning","primaryLanguage":null,"updatedAt":"2023-05-25T07:23:09Z","url":"https://github.com/htazq/stock_learning"},{"createdAt":"2021-11-02T15:32:34Z","description":"","isArchived":false,"isFork":true,"isPrivate":false,"name":"DDWIN","nameWithOwner":"htazq/DDWIN","primaryLanguage":{"name":"Shell"},"updatedAt":"2021-11-02T15:32:35Z","url":"https://github.com/htazq/DDWIN"},{"createdAt":"2021-04-18T07:43:42Z","description":"『微信小程序』优秀教程、轮子、开源项目 资源汇总","isArchived":false,"isFork":true,"isPrivate":false,"name":"MasterWechatApp","nameWithOwner":"htazq/MasterWechatApp","primaryLanguage":null,"updatedAt":"2021-04-18T07:43:43Z","url":"https://github.com/htazq/MasterWechatApp"}]
+[
+  {
+    "createdAt": "2026-05-19T04:58:45Z",
+    "description": "",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "fenghuoyi-card-game",
+    "nameWithOwner": "htazq/fenghuoyi-card-game",
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "updatedAt": "2026-05-19T06:52:24Z",
+    "url": "https://github.com/htazq/fenghuoyi-card-game"
+  },
+  {
+    "createdAt": "2025-11-20T09:45:07Z",
+    "description": "",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": false,
+    "name": "htazq",
+    "nameWithOwner": "htazq/htazq",
+    "primaryLanguage": null,
+    "updatedAt": "2026-05-18T19:46:06Z",
+    "url": "https://github.com/htazq/htazq"
+  },
+  {
+    "createdAt": "2026-05-16T16:24:56Z",
+    "description": "MT5 strategy research and backtesting lab",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "mt5-strategy-lab",
+    "nameWithOwner": "htazq/mt5-strategy-lab",
+    "primaryLanguage": null,
+    "updatedAt": "2026-05-16T16:28:51Z",
+    "url": "https://github.com/htazq/mt5-strategy-lab"
+  },
+  {
+    "createdAt": "2026-04-08T06:45:39Z",
+    "description": "xy-doc",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "xy-doc",
+    "nameWithOwner": "htazq/xy-doc",
+    "primaryLanguage": {
+      "name": "HTML"
+    },
+    "updatedAt": "2026-05-15T01:36:19Z",
+    "url": "https://github.com/htazq/xy-doc"
+  },
+  {
+    "createdAt": "2026-05-13T16:03:57Z",
+    "description": "CLI-first personal money command center: trading research, compliant airdrop tracking, wallets, and reports",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "money-den",
+    "nameWithOwner": "htazq/money-den",
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "updatedAt": "2026-05-14T08:06:24Z",
+    "url": "https://github.com/htazq/money-den"
+  },
+  {
+    "createdAt": "2026-04-10T06:14:06Z",
+    "description": "aifs_perf_harness",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "aifs_perf_harness",
+    "nameWithOwner": "htazq/aifs_perf_harness",
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "updatedAt": "2026-05-12T07:08:46Z",
+    "url": "https://github.com/htazq/aifs_perf_harness"
+  },
+  {
+    "createdAt": "2026-05-11T07:16:33Z",
+    "description": "",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "paio-autotrader",
+    "nameWithOwner": "htazq/paio-autotrader",
+    "primaryLanguage": {
+      "name": "MQL5"
+    },
+    "updatedAt": "2026-05-12T03:44:36Z",
+    "url": "https://github.com/htazq/paio-autotrader"
+  },
+  {
+    "createdAt": "2026-05-16T00:25:47Z",
+    "description": "紫微斗数开源排盘引擎 — 基于倪海夏《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "ziwei-doushu",
+    "nameWithOwner": "htazq/ziwei-doushu",
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "updatedAt": "2026-05-16T00:25:47Z",
+    "url": "https://github.com/htazq/ziwei-doushu"
+  },
+  {
+    "createdAt": "2025-03-16T12:31:34Z",
+    "description": "Implementation of Trading Strategies for Backtesting in MetaTrader 5 (MT5) Using MQL5 Programming Language – Free Open-Source Trading Bots (Expert Advisors) for MT5",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "metatrader5",
+    "nameWithOwner": "htazq/metatrader5",
+    "primaryLanguage": {
+      "name": "MQL5"
+    },
+    "updatedAt": "2026-05-05T08:11:35Z",
+    "url": "https://github.com/htazq/metatrader5"
+  },
+  {
+    "createdAt": "2026-05-05T02:26:03Z",
+    "description": "A 股多智能体智能投研系统 — 基于 TradingAgents 架构，15 名 AI Agent 模拟机构协作与实时辩论对抗，全流程可视化，支持 OpenClaw / Claude Code 集成，Docker 一键部署。",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "TradingAgents-AShare",
+    "nameWithOwner": "htazq/TradingAgents-AShare",
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "updatedAt": "2026-05-05T02:26:03Z",
+    "url": "https://github.com/htazq/TradingAgents-AShare"
+  },
+  {
+    "createdAt": "2026-04-26T07:11:20Z",
+    "description": "A serverless, open-source file hosting solution built on Cloudflare. Supports image hosting, secure file storage, and personal cloud drive capabilities.",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "CloudFlare-ImgBed",
+    "nameWithOwner": "htazq/CloudFlare-ImgBed",
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "updatedAt": "2026-04-29T03:13:37Z",
+    "url": "https://github.com/htazq/CloudFlare-ImgBed"
+  },
+  {
+    "createdAt": "2026-04-21T16:40:34Z",
+    "description": "IBKR stock auto-trading and arbitrage platform with technical, fundamental and AI-ready research pipeline",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "ibkr-auto-arb",
+    "nameWithOwner": "htazq/ibkr-auto-arb",
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "updatedAt": "2026-04-28T06:52:08Z",
+    "url": "https://github.com/htazq/ibkr-auto-arb"
+  },
+  {
+    "createdAt": "2026-04-28T01:31:06Z",
+    "description": "Frontend of https://github.com/MarSeventh/CloudFlare-ImgBed.",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "Sanyue-ImgHub",
+    "nameWithOwner": "htazq/Sanyue-ImgHub",
+    "primaryLanguage": {
+      "name": "Vue"
+    },
+    "updatedAt": "2026-04-28T01:31:06Z",
+    "url": "https://github.com/htazq/Sanyue-ImgHub"
+  },
+  {
+    "createdAt": "2026-04-29T06:26:53Z",
+    "description": "CLI for common Playwright actions. Record and generate Playwright code, inspect selectors and take screenshots.",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "playwright-cli",
+    "nameWithOwner": "htazq/playwright-cli",
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "updatedAt": "2026-04-29T06:26:53Z",
+    "url": "https://github.com/htazq/playwright-cli"
+  },
+  {
+    "createdAt": "2026-04-07T05:04:52Z",
+    "description": "Brooks-style ES 5m intraday rule research and backtesting system",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "brooks-es5m-rule-lab",
+    "nameWithOwner": "htazq/brooks-es5m-rule-lab",
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "updatedAt": "2026-04-24T08:11:36Z",
+    "url": "https://github.com/htazq/brooks-es5m-rule-lab"
+  },
+  {
+    "createdAt": "2026-04-24T06:23:16Z",
+    "description": "A Claude Code Skill that turns prompts into horizontal-swipe magazine-style HTML decks — 10 layouts, 5 curated themes, WebGL hero backgrounds, single-file output.",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "guizang-ppt-skill",
+    "nameWithOwner": "htazq/guizang-ppt-skill",
+    "primaryLanguage": {
+      "name": "HTML"
+    },
+    "updatedAt": "2026-04-24T06:23:16Z",
+    "url": "https://github.com/htazq/guizang-ppt-skill"
+  },
+  {
+    "createdAt": "2026-04-21T08:15:52Z",
+    "description": "polymarket套利",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "polymarket",
+    "nameWithOwner": "htazq/polymarket",
+    "primaryLanguage": {
+      "name": "Rust"
+    },
+    "updatedAt": "2026-04-22T11:07:15Z",
+    "url": "https://github.com/htazq/polymarket"
+  },
+  {
+    "createdAt": "2026-04-10T03:53:47Z",
+    "description": "",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "Astro-yuanyuan",
+    "nameWithOwner": "htazq/Astro-yuanyuan",
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "updatedAt": "2026-04-22T09:27:37Z",
+    "url": "https://github.com/htazq/Astro-yuanyuan"
+  },
+  {
+    "createdAt": "2026-04-17T13:35:48Z",
+    "description": "AIO Repack for latest Microsoft Visual C++ Redistributable Runtimes",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "vcredist",
+    "nameWithOwner": "htazq/vcredist",
+    "primaryLanguage": {
+      "name": "VBScript"
+    },
+    "updatedAt": "2026-04-17T13:35:48Z",
+    "url": "https://github.com/htazq/vcredist"
+  },
+  {
+    "createdAt": "2025-11-20T11:21:10Z",
+    "description": "",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "My-Knowledge-Accumulation",
+    "nameWithOwner": "htazq/My-Knowledge-Accumulation",
+    "primaryLanguage": {
+      "name": "Dockerfile"
+    },
+    "updatedAt": "2026-04-15T06:44:20Z",
+    "url": "https://github.com/htazq/My-Knowledge-Accumulation"
+  },
+  {
+    "createdAt": "2026-04-12T14:16:44Z",
+    "description": "知识库",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "astro-yuanyuan-md-knowledge",
+    "nameWithOwner": "htazq/astro-yuanyuan-md-knowledge",
+    "primaryLanguage": null,
+    "updatedAt": "2026-04-12T14:16:48Z",
+    "url": "https://github.com/htazq/astro-yuanyuan-md-knowledge"
+  },
+  {
+    "createdAt": "2026-04-02T09:26:24Z",
+    "description": "",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "aifs-fs-functional-harness",
+    "nameWithOwner": "htazq/aifs-fs-functional-harness",
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "updatedAt": "2026-04-10T07:38:43Z",
+    "url": "https://github.com/htazq/aifs-fs-functional-harness"
+  },
+  {
+    "createdAt": "2026-04-15T08:19:27Z",
+    "description": "Google Workspace CLI — one command-line tool for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, and more. Dynamically built from Google Discovery Service. Includes AI agent skills.",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "googleworkspace_cli",
+    "nameWithOwner": "htazq/googleworkspace_cli",
+    "primaryLanguage": {
+      "name": "Rust"
+    },
+    "updatedAt": "2026-04-15T08:19:27Z",
+    "url": "https://github.com/htazq/googleworkspace_cli"
+  },
+  {
+    "createdAt": "2026-04-03T07:05:41Z",
+    "description": "OmX - Oh My codeX: Your codex is not alone. Add hooks, agent teams, HUDs, and so much more.",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "oh-my-codex",
+    "nameWithOwner": "htazq/oh-my-codex",
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "updatedAt": "2026-04-03T07:05:41Z",
+    "url": "https://github.com/htazq/oh-my-codex"
+  },
+  {
+    "createdAt": "2026-03-31T02:37:36Z",
+    "description": "An agentic skills framework & software development methodology that works.",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "superpowers",
+    "nameWithOwner": "htazq/superpowers",
+    "primaryLanguage": {
+      "name": "Shell"
+    },
+    "updatedAt": "2026-04-02T09:26:47Z",
+    "url": "https://github.com/htazq/superpowers"
+  },
+  {
+    "createdAt": "2026-04-01T13:27:08Z",
+    "description": "刷课",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "shuake",
+    "nameWithOwner": "htazq/shuake",
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "updatedAt": "2026-04-01T13:29:25Z",
+    "url": "https://github.com/htazq/shuake"
+  },
+  {
+    "createdAt": "2026-03-31T09:26:14Z",
+    "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "claude-code",
+    "nameWithOwner": "htazq/claude-code",
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "updatedAt": "2026-04-02T00:12:28Z",
+    "url": "https://github.com/htazq/claude-code"
+  },
+  {
+    "createdAt": "2026-03-16T12:13:18Z",
+    "description": "自动获取GPT、GEMINI、CLAUDE近一周内容自动整理出周报的谷歌浏览器扩展",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "ai-weekly-ext",
+    "nameWithOwner": "htazq/ai-weekly-ext",
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "updatedAt": "2026-03-16T13:57:21Z",
+    "url": "https://github.com/htazq/ai-weekly-ext"
+  },
+  {
+    "createdAt": "2026-02-28T11:04:50Z",
+    "description": "全球舆情监控+链上资金追踪+AI多轮分析系统 | Global Sentiment & On-chain Whale Monitor with AI Analysis",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "global-sentinel",
+    "nameWithOwner": "htazq/global-sentinel",
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "updatedAt": "2026-03-12T01:17:23Z",
+    "url": "https://github.com/htazq/global-sentinel"
+  },
+  {
+    "createdAt": "2026-02-26T06:32:18Z",
+    "description": "mql5",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "mq5-trading",
+    "nameWithOwner": "htazq/mq5-trading",
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "updatedAt": "2026-03-03T15:19:14Z",
+    "url": "https://github.com/htazq/mq5-trading"
+  },
+  {
+    "createdAt": "2026-02-17T01:06:20Z",
+    "description": "AI-driven Polymarket arbitrage analysis system (24/7)",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "polymarket-ai-arb",
+    "nameWithOwner": "htazq/polymarket-ai-arb",
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "updatedAt": "2026-03-02T08:14:27Z",
+    "url": "https://github.com/htazq/polymarket-ai-arb"
+  },
+  {
+    "createdAt": "2026-02-14T10:59:15Z",
+    "description": "",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "new-travding",
+    "nameWithOwner": "htazq/new-travding",
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "updatedAt": "2026-06-04T07:38:32Z",
+    "url": "https://github.com/htazq/new-travding"
+  },
+  {
+    "createdAt": "2026-02-04T06:57:31Z",
+    "description": "",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "openclaw-memory",
+    "nameWithOwner": "htazq/openclaw-memory",
+    "primaryLanguage": null,
+    "updatedAt": "2026-02-28T10:00:13Z",
+    "url": "https://github.com/htazq/openclaw-memory"
+  },
+  {
+    "createdAt": "2026-02-28T09:08:33Z",
+    "description": "OpenClaw Agent Orchestration System - 多模型编排+自动CI/CD+交叉Review",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "openclaw-orchestrator",
+    "nameWithOwner": "htazq/openclaw-orchestrator",
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "updatedAt": "2026-02-28T09:42:45Z",
+    "url": "https://github.com/htazq/openclaw-orchestrator"
+  },
+  {
+    "createdAt": "2026-02-28T19:23:07Z",
+    "description": "首家工业级全流程可控协作式专业AIagent影视生产平台，从短片到漫剧到真人级影视剧一站搞定，采用好莱坞专业制作团队思路，让你拥有虚拟制片场",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "waoowaoo",
+    "nameWithOwner": "htazq/waoowaoo",
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "updatedAt": "2026-05-06T06:25:34Z",
+    "url": "https://github.com/htazq/waoowaoo"
+  },
+  {
+    "createdAt": "2026-02-26T15:02:00Z",
+    "description": "",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "china-travding",
+    "nameWithOwner": "htazq/china-travding",
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "updatedAt": "2026-02-28T02:34:43Z",
+    "url": "https://github.com/htazq/china-travding"
+  },
+  {
+    "createdAt": "2024-04-20T13:05:57Z",
+    "description": "",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "automation",
+    "nameWithOwner": "htazq/automation",
+    "primaryLanguage": {
+      "name": "Shell"
+    },
+    "updatedAt": "2026-02-26T09:48:44Z",
+    "url": "https://github.com/htazq/automation"
+  },
+  {
+    "createdAt": "2026-02-28T02:23:58Z",
+    "description": "\"ClawWork: OpenClaw as Your AI Coworker - 💰 $10K earned in 7 Hours\"",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "ClawWork",
+    "nameWithOwner": "htazq/ClawWork",
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "updatedAt": "2026-02-28T02:23:58Z",
+    "url": "https://github.com/htazq/ClawWork"
+  },
+  {
+    "createdAt": "2026-02-22T15:01:11Z",
+    "description": "一款远程工具（ssh/rdp/telnet/console等）",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "relay",
+    "nameWithOwner": "htazq/relay",
+    "primaryLanguage": {
+      "name": "Rust"
+    },
+    "updatedAt": "2026-02-24T10:08:58Z",
+    "url": "https://github.com/htazq/relay"
+  },
+  {
+    "createdAt": "2026-02-13T01:44:50Z",
+    "description": "mt5跟单，rust+mq5(ea)",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "follow-orders",
+    "nameWithOwner": "htazq/follow-orders",
+    "primaryLanguage": {
+      "name": "MQL5"
+    },
+    "updatedAt": "2026-02-24T10:00:01Z",
+    "url": "https://github.com/htazq/follow-orders"
+  },
+  {
+    "createdAt": "2026-02-15T11:38:15Z",
+    "description": "Artifact repository (post-reset).",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "travding",
+    "nameWithOwner": "htazq/travding",
+    "primaryLanguage": null,
+    "updatedAt": "2026-02-24T09:55:09Z",
+    "url": "https://github.com/htazq/travding"
+  },
+  {
+    "createdAt": "2025-05-08T02:14:57Z",
+    "description": "",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": false,
+    "name": "go_test_W",
+    "nameWithOwner": "htazq/go_test_W",
+    "primaryLanguage": null,
+    "updatedAt": "2026-02-20T03:30:32Z",
+    "url": "https://github.com/htazq/go_test_W"
+  },
+  {
+    "createdAt": "2026-02-19T05:18:04Z",
+    "description": "",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "crypto-cross-sectional-momentum",
+    "nameWithOwner": "htazq/crypto-cross-sectional-momentum",
+    "primaryLanguage": null,
+    "updatedAt": "2026-02-19T05:18:09Z",
+    "url": "https://github.com/htazq/crypto-cross-sectional-momentum"
+  },
+  {
+    "createdAt": "2026-02-17T02:00:10Z",
+    "description": "",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "skill-to-animation-studio",
+    "nameWithOwner": "htazq/skill-to-animation-studio",
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "updatedAt": "2026-02-17T02:19:39Z",
+    "url": "https://github.com/htazq/skill-to-animation-studio"
+  },
+  {
+    "createdAt": "2026-02-12T09:53:11Z",
+    "description": "A股选股",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "A-Stock-Screening",
+    "nameWithOwner": "htazq/A-Stock-Screening",
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "updatedAt": "2026-02-12T14:04:08Z",
+    "url": "https://github.com/htazq/A-Stock-Screening"
+  },
+  {
+    "createdAt": "2026-01-27T13:09:57Z",
+    "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "openclaw",
+    "nameWithOwner": "htazq/openclaw",
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "updatedAt": "2026-02-01T14:43:19Z",
+    "url": "https://github.com/htazq/openclaw"
+  },
+  {
+    "createdAt": "2026-01-27T08:16:10Z",
+    "description": "",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "yingdao",
+    "nameWithOwner": "htazq/yingdao",
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "updatedAt": "2026-01-30T09:29:42Z",
+    "url": "https://github.com/htazq/yingdao"
+  },
+  {
+    "createdAt": "2026-01-24T11:20:00Z",
+    "description": "",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "catalystx-api",
+    "nameWithOwner": "htazq/catalystx-api",
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "updatedAt": "2026-01-26T07:10:16Z",
+    "url": "https://github.com/htazq/catalystx-api"
+  },
+  {
+    "createdAt": "2026-01-21T12:42:12Z",
+    "description": "",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "openwebui-auth",
+    "nameWithOwner": "htazq/openwebui-auth",
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "updatedAt": "2026-01-24T12:50:06Z",
+    "url": "https://github.com/htazq/openwebui-auth"
+  },
+  {
+    "createdAt": "2026-01-24T01:25:29Z",
+    "description": "🙌 OpenHands: AI-Driven Development",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "OpenHands",
+    "nameWithOwner": "htazq/OpenHands",
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "updatedAt": "2026-01-24T01:25:29Z",
+    "url": "https://github.com/htazq/OpenHands"
+  },
+  {
+    "createdAt": "2026-01-23T14:33:51Z",
+    "description": "The Best Agent Harness. Meet Sisyphus: The Batteries-Included Agent that codes like you.",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "oh-my-opencode",
+    "nameWithOwner": "htazq/oh-my-opencode",
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "updatedAt": "2026-01-23T14:33:51Z",
+    "url": "https://github.com/htazq/oh-my-opencode"
+  },
+  {
+    "createdAt": "2026-01-22T15:52:26Z",
+    "description": "An AI SKILL that provide design intelligence for building professional UI/UX multiple platforms",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "ui-ux-pro-max-skill",
+    "nameWithOwner": "htazq/ui-ux-pro-max-skill",
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "updatedAt": "2026-01-22T15:52:26Z",
+    "url": "https://github.com/htazq/ui-ux-pro-max-skill"
+  },
+  {
+    "createdAt": "2026-01-17T04:19:05Z",
+    "description": "",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "AlphaGPT_mt5",
+    "nameWithOwner": "htazq/AlphaGPT_mt5",
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "updatedAt": "2026-01-18T13:54:03Z",
+    "url": "https://github.com/htazq/AlphaGPT_mt5"
+  },
+  {
+    "createdAt": "2026-01-17T02:49:55Z",
+    "description": "使用符号回归在中国股市与加密市场上进行高效因子挖掘。",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "AlphaGPT",
+    "nameWithOwner": "htazq/AlphaGPT",
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "updatedAt": "2026-01-17T02:49:55Z",
+    "url": "https://github.com/htazq/AlphaGPT"
+  },
+  {
+    "createdAt": "2026-01-17T13:46:00Z",
+    "description": "Leverage the novel features and advanced financial mathematics introduced in Uniswap V4 to effectively mitigate just-in-time (JIT) liquidity provision issues.",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "no_JIT",
+    "nameWithOwner": "htazq/no_JIT",
+    "primaryLanguage": {
+      "name": "Solidity"
+    },
+    "updatedAt": "2026-01-17T13:46:00Z",
+    "url": "https://github.com/htazq/no_JIT"
+  },
+  {
+    "createdAt": "2026-01-13T10:55:00Z",
+    "description": "The open source coding agent.",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "opencode",
+    "nameWithOwner": "htazq/opencode",
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "updatedAt": "2026-01-13T10:55:00Z",
+    "url": "https://github.com/htazq/opencode"
+  },
+  {
+    "createdAt": "2026-01-08T08:18:40Z",
+    "description": "",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "nofx_strategy",
+    "nameWithOwner": "htazq/nofx_strategy",
+    "primaryLanguage": null,
+    "updatedAt": "2026-01-09T09:08:49Z",
+    "url": "https://github.com/htazq/nofx_strategy"
+  },
+  {
+    "createdAt": "2025-11-10T06:44:39Z",
+    "description": "电报自动执行（签到、发送消息、点击键盘、AI回复等）；个人、群组、频道消息监控、转发与自动回复。Automated Telegram tasks (check-ins, sending messages, keyboard clicks, AI replies, etc.); monitoring, forwarding, and auto-replying to private, group, and channel messages.",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "tg-signer",
+    "nameWithOwner": "htazq/tg-signer",
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "updatedAt": "2026-01-09T03:46:51Z",
+    "url": "https://github.com/htazq/tg-signer"
+  },
+  {
+    "createdAt": "2026-01-07T12:58:48Z",
+    "description": "Open-source Trading OS with pluggable AI brain | From market data → AI reasoning → Trade execution | Self-hosted & Multi-exchange",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "nofx",
+    "nameWithOwner": "htazq/nofx",
+    "primaryLanguage": {
+      "name": "Go"
+    },
+    "updatedAt": "2026-01-07T12:58:48Z",
+    "url": "https://github.com/htazq/nofx"
+  },
+  {
+    "createdAt": "2026-01-06T15:34:38Z",
+    "description": "AI模型聚合管理中转分发系统，一个应用管理您的所有AI模型，支持将多种大模型转为统一格式调用，支持OpenAI、Claude、Gemini等格式，可供个人或者企业内部管理与分发渠道使用。🍥 A Unified AI Model Management & Distribution System. Aggregate all your LLMs into one app and access them via an OpenAI-compatible API, with native support for Claude (Messages) and Gemini formats.",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "new-api",
+    "nameWithOwner": "htazq/new-api",
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "updatedAt": "2026-01-06T15:34:38Z",
+    "url": "https://github.com/htazq/new-api"
+  },
+  {
+    "createdAt": "2023-06-12T07:10:09Z",
+    "description": "My_Auto_scripts",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": false,
+    "name": "Auto",
+    "nameWithOwner": "htazq/Auto",
+    "primaryLanguage": {
+      "name": "Shell"
+    },
+    "updatedAt": "2026-01-06T11:54:22Z",
+    "url": "https://github.com/htazq/Auto"
+  },
+  {
+    "createdAt": "2026-01-06T08:34:34Z",
+    "description": "Wrap Gemini CLI, Antigravity, ChatGPT Codex, Claude Code, Qwen Code, iFlow as an OpenAI/Gemini/Claude/Codex compatible API service, allowing you to enjoy the free Gemini 2.5 Pro, GPT 5, Claude, Qwen model through API",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "CLIProxyAPI",
+    "nameWithOwner": "htazq/CLIProxyAPI",
+    "primaryLanguage": {
+      "name": "Go"
+    },
+    "updatedAt": "2026-01-06T08:34:34Z",
+    "url": "https://github.com/htazq/CLIProxyAPI"
+  },
+  {
+    "createdAt": "2026-01-02T02:54:42Z",
+    "description": "A new AList Fork to Anti Trust Crisis",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "OpenList",
+    "nameWithOwner": "htazq/OpenList",
+    "primaryLanguage": {
+      "name": "Go"
+    },
+    "updatedAt": "2026-01-02T02:54:42Z",
+    "url": "https://github.com/htazq/OpenList"
+  },
+  {
+    "createdAt": "2026-01-06T13:38:08Z",
+    "description": "AIGCPanel 是一个简单易用的一站式AI数字人系统，支持视频合成、声音合成、声音克隆，简化本地模型管理、一键导入和使用AI模型。",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "aigcpanel",
+    "nameWithOwner": "htazq/aigcpanel",
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "updatedAt": "2026-01-06T13:38:08Z",
+    "url": "https://github.com/htazq/aigcpanel"
+  },
+  {
+    "createdAt": "2025-11-20T11:38:15Z",
+    "description": "",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "www",
+    "nameWithOwner": "htazq/www",
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "updatedAt": "2025-11-28T05:40:03Z",
+    "url": "https://github.com/htazq/www"
+  },
+  {
+    "createdAt": "2025-11-23T11:28:43Z",
+    "description": "ai-image-process",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "ai-image-process",
+    "nameWithOwner": "htazq/ai-image-process",
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "updatedAt": "2025-11-25T09:33:49Z",
+    "url": "https://github.com/htazq/ai-image-process"
+  },
+  {
+    "createdAt": "2025-11-25T07:16:53Z",
+    "description": "A quick way to view my IP address",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": false,
+    "name": "View-IP",
+    "nameWithOwner": "htazq/View-IP",
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "updatedAt": "2025-11-25T07:42:29Z",
+    "url": "https://github.com/htazq/View-IP"
+  },
+  {
+    "createdAt": "2025-06-05T23:33:43Z",
+    "description": "",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": false,
+    "name": "container-mirror-for-china",
+    "nameWithOwner": "htazq/container-mirror-for-china",
+    "primaryLanguage": {
+      "name": "HTML"
+    },
+    "updatedAt": "2025-11-25T07:05:40Z",
+    "url": "https://github.com/htazq/container-mirror-for-china"
+  },
+  {
+    "createdAt": "2025-08-18T15:23:55Z",
+    "description": "",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "rust",
+    "nameWithOwner": "htazq/rust",
+    "primaryLanguage": {
+      "name": "Rust"
+    },
+    "updatedAt": "2025-11-21T02:03:28Z",
+    "url": "https://github.com/htazq/rust"
+  },
+  {
+    "createdAt": "2025-10-27T09:07:53Z",
+    "description": "Build offline dependency packages for air-gapped Linux environments",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": false,
+    "name": "OfflinePack",
+    "nameWithOwner": "htazq/OfflinePack",
+    "primaryLanguage": null,
+    "updatedAt": "2025-11-21T02:02:48Z",
+    "url": "https://github.com/htazq/OfflinePack"
+  },
+  {
+    "createdAt": "2024-02-04T02:43:26Z",
+    "description": "",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "my_www",
+    "nameWithOwner": "htazq/my_www",
+    "primaryLanguage": {
+      "name": "Vue"
+    },
+    "updatedAt": "2025-11-21T02:01:07Z",
+    "url": "https://github.com/htazq/my_www"
+  },
+  {
+    "createdAt": "2025-06-06T10:16:18Z",
+    "description": "",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "my-content-creation-kit",
+    "nameWithOwner": "htazq/my-content-creation-kit",
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "updatedAt": "2025-11-21T01:59:43Z",
+    "url": "https://github.com/htazq/my-content-creation-kit"
+  },
+  {
+    "createdAt": "2025-06-13T06:40:38Z",
+    "description": "",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "k8s",
+    "nameWithOwner": "htazq/k8s",
+    "primaryLanguage": {
+      "name": "Shell"
+    },
+    "updatedAt": "2025-11-21T01:58:42Z",
+    "url": "https://github.com/htazq/k8s"
+  },
+  {
+    "createdAt": "2025-07-22T14:02:53Z",
+    "description": "",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "juzi",
+    "nameWithOwner": "htazq/juzi",
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "updatedAt": "2025-11-21T01:57:10Z",
+    "url": "https://github.com/htazq/juzi"
+  },
+  {
+    "createdAt": "2024-02-02T07:14:26Z",
+    "description": "",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "hugo-blog",
+    "nameWithOwner": "htazq/hugo-blog",
+    "primaryLanguage": {
+      "name": "HTML"
+    },
+    "updatedAt": "2025-11-21T01:56:45Z",
+    "url": "https://github.com/htazq/hugo-blog"
+  },
+  {
+    "createdAt": "2025-03-25T06:47:10Z",
+    "description": "用 Helm 部署 V2Ray 的项目",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": false,
+    "name": "helm-v2ray",
+    "nameWithOwner": "htazq/helm-v2ray",
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "updatedAt": "2025-11-21T01:54:28Z",
+    "url": "https://github.com/htazq/helm-v2ray"
+  },
+  {
+    "createdAt": "2025-04-21T08:40:29Z",
+    "description": "",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": false,
+    "name": "hello-world-webapp",
+    "nameWithOwner": "htazq/hello-world-webapp",
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "updatedAt": "2025-11-21T01:54:08Z",
+    "url": "https://github.com/htazq/hello-world-webapp"
+  },
+  {
+    "createdAt": "2025-02-10T05:19:30Z",
+    "description": "16子",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "4x4-chess",
+    "nameWithOwner": "htazq/4x4-chess",
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "updatedAt": "2025-11-21T01:51:14Z",
+    "url": "https://github.com/htazq/4x4-chess"
+  },
+  {
+    "createdAt": "2025-11-21T15:08:49Z",
+    "description": "Edgeone pages templates",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "pages-templates",
+    "nameWithOwner": "htazq/pages-templates",
+    "primaryLanguage": null,
+    "updatedAt": "2025-11-21T15:08:49Z",
+    "url": "https://github.com/htazq/pages-templates"
+  },
+  {
+    "createdAt": "2025-11-07T09:47:02Z",
+    "description": "The Intelligent Cloud OS. Use AI to automate the full lifecycle of your development and production environments, from provisioning custom dev stacks and deploying self-optimizing databases (MySQL, PostgreSQL, Redis, MongoDB) to running any Dockerized service.",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "sealos",
+    "nameWithOwner": "htazq/sealos",
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "updatedAt": "2025-11-07T09:47:02Z",
+    "url": "https://github.com/htazq/sealos"
+  },
+  {
+    "createdAt": "2025-11-03T09:20:12Z",
+    "description": "",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": false,
+    "name": "cloudflare-docker-proxy",
+    "nameWithOwner": "htazq/cloudflare-docker-proxy",
+    "primaryLanguage": null,
+    "updatedAt": "2025-11-03T09:20:16Z",
+    "url": "https://github.com/htazq/cloudflare-docker-proxy"
+  },
+  {
+    "createdAt": "2025-09-28T07:45:00Z",
+    "description": "",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "cfnew",
+    "nameWithOwner": "htazq/cfnew",
+    "primaryLanguage": null,
+    "updatedAt": "2025-09-28T07:45:00Z",
+    "url": "https://github.com/htazq/cfnew"
+  },
+  {
+    "createdAt": "2023-12-15T04:36:59Z",
+    "description": "又一个一键重装脚本",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "reinstall",
+    "nameWithOwner": "htazq/reinstall",
+    "primaryLanguage": {
+      "name": "Shell"
+    },
+    "updatedAt": "2025-09-02T07:35:01Z",
+    "url": "https://github.com/htazq/reinstall"
+  },
+  {
+    "createdAt": "2025-09-15T00:12:02Z",
+    "description": "PowerPoint-ist（/'pauəpɔintist/）, An online presentation application that replicates most of the commonly used features of MS PowerPoint, allowing for the editing and presentation of PPT online. Support AIPPT.",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "PPTist",
+    "nameWithOwner": "htazq/PPTist",
+    "primaryLanguage": {
+      "name": "Vue"
+    },
+    "updatedAt": "2025-09-15T00:12:02Z",
+    "url": "https://github.com/htazq/PPTist"
+  },
+  {
+    "createdAt": "2026-01-03T02:11:02Z",
+    "description": "切换到新的网站了 https://pahubcn.com/app/courses",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "PriceActions",
+    "nameWithOwner": "htazq/PriceActions",
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "updatedAt": "2026-01-03T02:11:02Z",
+    "url": "https://github.com/htazq/PriceActions"
+  },
+  {
+    "createdAt": "2026-01-05T05:41:08Z",
+    "description": "本仓库面向所有对量化分析或开发感兴趣的量化交易从业者，提供系统性学习量化开发的技术路线，从数据获取、策略开发、回测系统到实盘部署。",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "Awesome-QuantDev-Learn",
+    "nameWithOwner": "htazq/Awesome-QuantDev-Learn",
+    "primaryLanguage": null,
+    "updatedAt": "2026-01-05T05:41:09Z",
+    "url": "https://github.com/htazq/Awesome-QuantDev-Learn"
+  },
+  {
+    "createdAt": "2025-06-05T14:56:36Z",
+    "description": "zot - A scale-out production-ready vendor-neutral OCI-native container image/artifact registry (purely based on OCI Distribution Specification)",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "zot",
+    "nameWithOwner": "htazq/zot",
+    "primaryLanguage": {
+      "name": "Go"
+    },
+    "updatedAt": "2025-06-05T14:56:36Z",
+    "url": "https://github.com/htazq/zot"
+  },
+  {
+    "createdAt": "2025-06-02T12:16:47Z",
+    "description": "",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "view-trading-information",
+    "nameWithOwner": "htazq/view-trading-information",
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "updatedAt": "2025-06-03T11:27:55Z",
+    "url": "https://github.com/htazq/view-trading-information"
+  },
+  {
+    "createdAt": "2025-11-04T13:42:27Z",
+    "description": "A GitHub Action for Gemini AI to review a pull request",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "gemini-code-review-action",
+    "nameWithOwner": "htazq/gemini-code-review-action",
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "updatedAt": "2025-11-04T13:42:27Z",
+    "url": "https://github.com/htazq/gemini-code-review-action"
+  },
+  {
+    "createdAt": "2025-05-07T03:38:00Z",
+    "description": "Monitor browser logs directly from Cursor and other MCP compatible IDEs.",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "browser-tools-mcp",
+    "nameWithOwner": "htazq/browser-tools-mcp",
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "updatedAt": "2025-05-07T03:38:00Z",
+    "url": "https://github.com/htazq/browser-tools-mcp"
+  },
+  {
+    "createdAt": "2025-04-24T13:23:10Z",
+    "description": "A set of exercises to prepare for Certified Kubernetes Application Developer exam by Cloud Native Computing Foundation",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "CKAD-exercises",
+    "nameWithOwner": "htazq/CKAD-exercises",
+    "primaryLanguage": null,
+    "updatedAt": "2025-04-24T13:23:11Z",
+    "url": "https://github.com/htazq/CKAD-exercises"
+  },
+  {
+    "createdAt": "2026-04-07T13:41:45Z",
+    "description": "AI一键批量生成各类短视频,自动批量混剪短视频,自动把视频发布到抖音,快手,小红书,视频号上,赚钱从来没有这么容易过! 支持本地语音模型chatTTS,fasterwhisper,GPTSoVITS,支持云语音：Azure,阿里云,腾讯云。支持Stable diffusion,comfyUI直接AI生图。Generate short videos with one click using AI LLM,print money together! support:chatTTS,faster-whisper,GPTSoVITS,Azure,tencent Cloud,Ali Cloud.",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "MoneyPrinterPlus",
+    "nameWithOwner": "htazq/MoneyPrinterPlus",
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "updatedAt": "2026-04-07T13:41:45Z",
+    "url": "https://github.com/htazq/MoneyPrinterPlus"
+  },
+  {
+    "createdAt": "2024-11-27T08:02:50Z",
+    "description": "",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "1",
+    "nameWithOwner": "htazq/1",
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "updatedAt": "2024-11-27T08:08:13Z",
+    "url": "https://github.com/htazq/1"
+  },
+  {
+    "createdAt": "2024-12-05T06:03:11Z",
+    "description": "🤯 Lobe Chat - an open-source, modern-design AI chat framework. Supports Multi AI Providers( OpenAI / Claude 3 / Gemini / Ollama / Qwen /  DeepSeek), Knowledge Base (file upload / knowledge management / RAG ), Multi-Modals (Vision/TTS/Plugins/Artifacts). One-click FREE deployment of your private ChatGPT/ Claude application.",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "lobe-chat",
+    "nameWithOwner": "htazq/lobe-chat",
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "updatedAt": "2025-02-11T06:22:54Z",
+    "url": "https://github.com/htazq/lobe-chat"
+  },
+  {
+    "createdAt": "2026-03-02T09:43:55Z",
+    "description": "Generating sets of formulaic alpha (predictive) stock factors via reinforcement learning.",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "alphagen",
+    "nameWithOwner": "htazq/alphagen",
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "updatedAt": "2026-03-02T09:43:55Z",
+    "url": "https://github.com/htazq/alphagen"
+  },
+  {
+    "createdAt": "2024-12-04T08:27:31Z",
+    "description": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "rustdesk",
+    "nameWithOwner": "htazq/rustdesk",
+    "primaryLanguage": {
+      "name": "Rust"
+    },
+    "updatedAt": "2024-12-04T08:27:31Z",
+    "url": "https://github.com/htazq/rustdesk"
+  },
+  {
+    "createdAt": "2024-12-04T13:14:32Z",
+    "description": "sing-box精装桶一键脚本【Hysteria2、Tuic5、Vless-reality、Vmess-ws/argo】：支持alpine系统、自签/acme双证书切换、Argo固定临时双隧道（可共存）、Psiphon赛风VPN（30个国家）分流功能；附singbox电脑网页客户端下载",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "sing-box-yg",
+    "nameWithOwner": "htazq/sing-box-yg",
+    "primaryLanguage": {
+      "name": "Shell"
+    },
+    "updatedAt": "2024-12-04T13:14:32Z",
+    "url": "https://github.com/htazq/sing-box-yg"
+  },
+  {
+    "createdAt": "2024-11-29T09:31:48Z",
+    "description": "",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "chatgpt-web-midjourney-proxy",
+    "nameWithOwner": "htazq/chatgpt-web-midjourney-proxy",
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "updatedAt": "2024-11-29T09:44:36Z",
+    "url": "https://github.com/htazq/chatgpt-web-midjourney-proxy"
+  },
+  {
+    "createdAt": "2024-12-03T10:58:13Z",
+    "description": "法克劳德，啥也不是。",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "fuclaude",
+    "nameWithOwner": "htazq/fuclaude",
+    "primaryLanguage": null,
+    "updatedAt": "2024-12-03T10:58:13Z",
+    "url": "https://github.com/htazq/fuclaude"
+  },
+  {
+    "createdAt": "2024-10-11T09:27:50Z",
+    "description": "My status",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "word_status",
+    "nameWithOwner": "htazq/word_status",
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "updatedAt": "2024-10-12T09:43:55Z",
+    "url": "https://github.com/htazq/word_status"
+  },
+  {
+    "createdAt": "2026-03-02T09:46:18Z",
+    "description": "Official implementation for AAAI2025: AlphaForge: A Framework to Mine and Dynamically Combine Formulaic Alpha  Factors",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "AlphaForge",
+    "nameWithOwner": "htazq/AlphaForge",
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "updatedAt": "2026-03-02T09:46:18Z",
+    "url": "https://github.com/htazq/AlphaForge"
+  },
+  {
+    "createdAt": "2024-08-19T06:34:27Z",
+    "description": "在原版的基础上修改了显示 VLESS 配置信息转换为订阅内容。使用该脚本，你可以方便地将 VLESS 配置信息使用在线配置转换到 Clash 或 Singbox 等工具中。",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "edgetunnel",
+    "nameWithOwner": "htazq/edgetunnel",
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "updatedAt": "2024-08-19T06:34:27Z",
+    "url": "https://github.com/htazq/edgetunnel"
+  },
+  {
+    "createdAt": "2024-12-26T09:18:02Z",
+    "description": "Python - 100天从新手到大师",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "Python-100-Days",
+    "nameWithOwner": "htazq/Python-100-Days",
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "updatedAt": "2024-12-26T09:18:03Z",
+    "url": "https://github.com/htazq/Python-100-Days"
+  },
+  {
+    "createdAt": "2024-06-12T07:28:29Z",
+    "description": "Windows inside a Docker container.",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "windows",
+    "nameWithOwner": "htazq/windows",
+    "primaryLanguage": {
+      "name": "Shell"
+    },
+    "updatedAt": "2024-06-12T07:28:29Z",
+    "url": "https://github.com/htazq/windows"
+  },
+  {
+    "createdAt": "2024-04-30T06:21:24Z",
+    "description": "一个还算强大的Web思维导图。A relatively powerful web mind map.",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "mind-map",
+    "nameWithOwner": "htazq/mind-map",
+    "primaryLanguage": {
+      "name": "Vue"
+    },
+    "updatedAt": "2024-04-30T06:21:24Z",
+    "url": "https://github.com/htazq/mind-map"
+  },
+  {
+    "createdAt": "2024-04-27T03:04:36Z",
+    "description": "",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "coze2openai",
+    "nameWithOwner": "htazq/coze2openai",
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "updatedAt": "2024-04-27T03:08:05Z",
+    "url": "https://github.com/htazq/coze2openai"
+  },
+  {
+    "createdAt": "2024-03-20T01:38:23Z",
+    "description": "tianya",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": false,
+    "name": "tianya",
+    "nameWithOwner": "htazq/tianya",
+    "primaryLanguage": null,
+    "updatedAt": "2024-03-20T01:39:24Z",
+    "url": "https://github.com/htazq/tianya"
+  },
+  {
+    "createdAt": "2026-05-12T06:37:38Z",
+    "description": "收藏一些电子书",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "iBook",
+    "nameWithOwner": "htazq/iBook",
+    "primaryLanguage": null,
+    "updatedAt": "2026-05-12T06:37:38Z",
+    "url": "https://github.com/htazq/iBook"
+  },
+  {
+    "createdAt": "2024-02-18T03:22:13Z",
+    "description": "",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": false,
+    "name": "jellyfin_work",
+    "nameWithOwner": "htazq/jellyfin_work",
+    "primaryLanguage": null,
+    "updatedAt": "2024-02-18T03:22:14Z",
+    "url": "https://github.com/htazq/jellyfin_work"
+  },
+  {
+    "createdAt": "2024-02-02T06:28:10Z",
+    "description": "A clean, elegant and advanced blog theme for Hugo.",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "DoIt",
+    "nameWithOwner": "htazq/DoIt",
+    "primaryLanguage": {
+      "name": "HTML"
+    },
+    "updatedAt": "2024-02-02T06:28:10Z",
+    "url": "https://github.com/htazq/DoIt"
+  },
+  {
+    "createdAt": "2024-01-23T23:03:54Z",
+    "description": "",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "my-memos",
+    "nameWithOwner": "htazq/my-memos",
+    "primaryLanguage": null,
+    "updatedAt": "2024-01-23T23:03:54Z",
+    "url": "https://github.com/htazq/my-memos"
+  },
+  {
+    "createdAt": "2024-03-17T11:05:47Z",
+    "description": "电话攻击，电话炸弹，电话轰炸(可代替短信轰炸) 联系莆田医院，专门炸坏蛋，BOOM💥",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "contactPutianHospital",
+    "nameWithOwner": "htazq/contactPutianHospital",
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "updatedAt": "2024-03-17T11:05:47Z",
+    "url": "https://github.com/htazq/contactPutianHospital"
+  },
+  {
+    "createdAt": "2024-01-22T02:20:28Z",
+    "description": "HFS is a web file server to run on your computer. Share folders or even a single file thanks to the virtual file system.",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "hfs",
+    "nameWithOwner": "htazq/hfs",
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "updatedAt": "2024-01-22T02:20:28Z",
+    "url": "https://github.com/htazq/hfs"
+  },
+  {
+    "createdAt": "2024-01-15T05:05:03Z",
+    "description": " 🦋 A Hexo Theme: Butterfly",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "hexo-theme-butterfly",
+    "nameWithOwner": "htazq/hexo-theme-butterfly",
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "updatedAt": "2024-01-15T05:05:03Z",
+    "url": "https://github.com/htazq/hexo-theme-butterfly"
+  },
+  {
+    "createdAt": "2024-01-31T01:52:43Z",
+    "description": "Moments piled up. A Hugo theme ported from SumiMakito/hexo-theme-Journal.",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "hugo-theme-diary",
+    "nameWithOwner": "htazq/hugo-theme-diary",
+    "primaryLanguage": {
+      "name": "HTML"
+    },
+    "updatedAt": "2024-01-31T01:52:43Z",
+    "url": "https://github.com/htazq/hugo-theme-diary"
+  },
+  {
+    "createdAt": "2023-10-30T08:40:35Z",
+    "description": "",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "nezha_backup",
+    "nameWithOwner": "htazq/nezha_backup",
+    "primaryLanguage": null,
+    "updatedAt": "2023-10-30T08:40:36Z",
+    "url": "https://github.com/htazq/nezha_backup"
+  },
+  {
+    "createdAt": "2023-07-10T02:22:08Z",
+    "description": "",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "AutoGPT-Next-Web",
+    "nameWithOwner": "htazq/AutoGPT-Next-Web",
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "updatedAt": "2023-07-10T02:24:45Z",
+    "url": "https://github.com/htazq/AutoGPT-Next-Web"
+  },
+  {
+    "createdAt": "2023-09-16T11:05:28Z",
+    "description": "✯ 一个国内可直连的直播源分享项目 ✯  🔕 永久免费 直连访问 完整开源 不含广告 完善的台标 直播源支持IPv4/IPv6双栈访问 🔕",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "live",
+    "nameWithOwner": "htazq/live",
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "updatedAt": "2023-09-16T11:05:28Z",
+    "url": "https://github.com/htazq/live"
+  },
+  {
+    "createdAt": "2023-09-16T10:08:54Z",
+    "description": "",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "TVbox-interface",
+    "nameWithOwner": "htazq/TVbox-interface",
+    "primaryLanguage": null,
+    "updatedAt": "2023-09-16T10:08:54Z",
+    "url": "https://github.com/htazq/TVbox-interface"
+  },
+  {
+    "createdAt": "2023-08-27T10:54:45Z",
+    "description": "Next Terminal是一个简单好用安全的开源交互审计系统，支持RDP、SSH、VNC、Telnet、Kubernetes协议。",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "next-terminal",
+    "nameWithOwner": "htazq/next-terminal",
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "updatedAt": "2023-08-27T10:54:45Z",
+    "url": "https://github.com/htazq/next-terminal"
+  },
+  {
+    "createdAt": "2023-12-08T04:25:42Z",
+    "description": "专注大数据学习面试，大数据成神之路开启。Flink/Spark/Hadoop/Hbase/Hive...",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "God-Of-BigData",
+    "nameWithOwner": "htazq/God-Of-BigData",
+    "primaryLanguage": null,
+    "updatedAt": "2023-12-08T04:25:43Z",
+    "url": "https://github.com/htazq/God-Of-BigData"
+  },
+  {
+    "createdAt": "2023-08-02T12:10:08Z",
+    "description": "GNU/Linux 一键更换系统软件源脚本",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "LinuxMirrors",
+    "nameWithOwner": "htazq/LinuxMirrors",
+    "primaryLanguage": {
+      "name": "Shell"
+    },
+    "updatedAt": "2023-08-02T12:10:08Z",
+    "url": "https://github.com/htazq/LinuxMirrors"
+  },
+  {
+    "createdAt": "2023-10-17T12:51:43Z",
+    "description": "信息安全方面的书籍书籍",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "Information_Security_Books",
+    "nameWithOwner": "htazq/Information_Security_Books",
+    "primaryLanguage": null,
+    "updatedAt": "2023-10-17T12:51:43Z",
+    "url": "https://github.com/htazq/Information_Security_Books"
+  },
+  {
+    "createdAt": "2023-07-09T13:59:01Z",
+    "description": "🤖 Assemble, configure, and deploy autonomous AI Agents in your browser.",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "AgentGPT",
+    "nameWithOwner": "htazq/AgentGPT",
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "updatedAt": "2023-07-09T13:59:01Z",
+    "url": "https://github.com/htazq/AgentGPT"
+  },
+  {
+    "createdAt": "2023-07-05T07:14:44Z",
+    "description": "ChatGPT 中文指南🔥，ChatGPT 中文调教指南，指令指南，应用开发指南，精选资源清单，更好的使用 chatGPT 让你的生产力 up up up! 🚀",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "awesome-chatgpt-zh",
+    "nameWithOwner": "htazq/awesome-chatgpt-zh",
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "updatedAt": "2024-05-03T04:32:22Z",
+    "url": "https://github.com/htazq/awesome-chatgpt-zh"
+  },
+  {
+    "createdAt": "2023-06-27T17:56:34Z",
+    "description": "用 Express 和  Vue3 搭建的 ChatGPT 演示网页",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "chatgpt-web",
+    "nameWithOwner": "htazq/chatgpt-web",
+    "primaryLanguage": {
+      "name": "Vue"
+    },
+    "updatedAt": "2023-06-27T17:56:34Z",
+    "url": "https://github.com/htazq/chatgpt-web"
+  },
+  {
+    "createdAt": "2023-06-27T17:44:33Z",
+    "description": "ChatGPT 中文调教指南。各种场景使用指南。学习怎么让它听你的话。",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "awesome-chatgpt-prompts-zh",
+    "nameWithOwner": "htazq/awesome-chatgpt-prompts-zh",
+    "primaryLanguage": null,
+    "updatedAt": "2023-06-27T17:44:33Z",
+    "url": "https://github.com/htazq/awesome-chatgpt-prompts-zh"
+  },
+  {
+    "createdAt": "2023-06-11T17:14:33Z",
+    "description": "用 diango 开发的 shadowsocks 面板",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "django-sspanel",
+    "nameWithOwner": "htazq/django-sspanel",
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "updatedAt": "2023-06-11T17:14:33Z",
+    "url": "https://github.com/htazq/django-sspanel"
+  },
+  {
+    "createdAt": "2023-06-03T07:20:28Z",
+    "description": "",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": true,
+    "name": "go-proxy-bingai-vercel",
+    "nameWithOwner": "htazq/go-proxy-bingai-vercel",
+    "primaryLanguage": {
+      "name": "HTML"
+    },
+    "updatedAt": "2023-06-03T07:21:07Z",
+    "url": "https://github.com/htazq/go-proxy-bingai-vercel"
+  },
+  {
+    "createdAt": "2023-06-03T07:13:33Z",
+    "description": "",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": false,
+    "name": "go-proxy-bingai-2",
+    "nameWithOwner": "htazq/go-proxy-bingai-2",
+    "primaryLanguage": {
+      "name": "HTML"
+    },
+    "updatedAt": "2023-06-03T07:13:47Z",
+    "url": "https://github.com/htazq/go-proxy-bingai-2"
+  },
+  {
+    "createdAt": "2023-06-03T07:09:04Z",
+    "description": "",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": false,
+    "name": "go-proxy-bingai",
+    "nameWithOwner": "htazq/go-proxy-bingai",
+    "primaryLanguage": {
+      "name": "HTML"
+    },
+    "updatedAt": "2023-06-03T07:09:19Z",
+    "url": "https://github.com/htazq/go-proxy-bingai"
+  },
+  {
+    "createdAt": "2023-06-03T07:11:57Z",
+    "description": "用 Vue3 和 Go 搭建的微软 New Bing 演示站点，拥有一致的 UI 体验，支持 ChatGPT 提示词，国内可用。",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "go-proxy-bingai-1",
+    "nameWithOwner": "htazq/go-proxy-bingai-1",
+    "primaryLanguage": {
+      "name": "HTML"
+    },
+    "updatedAt": "2023-06-03T07:11:58Z",
+    "url": "https://github.com/htazq/go-proxy-bingai-1"
+  },
+  {
+    "createdAt": "2023-05-28T06:00:59Z",
+    "description": "🌩「自选优选 IP」测试 Cloudflare CDN 延迟和速度，获取最快 IP (IPv4 / IPv6)！另外也支持其他 CDN / 网站 IP ~",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "CloudflareSpeedTest",
+    "nameWithOwner": "htazq/CloudflareSpeedTest",
+    "primaryLanguage": {
+      "name": "Go"
+    },
+    "updatedAt": "2023-05-28T06:00:59Z",
+    "url": "https://github.com/htazq/CloudflareSpeedTest"
+  },
+  {
+    "createdAt": "2023-05-14T14:12:58Z",
+    "description": "decentralising the Ai Industry, just some language model api's...",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "gpt4free",
+    "nameWithOwner": "htazq/gpt4free",
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "updatedAt": "2023-05-14T14:12:58Z",
+    "url": "https://github.com/htazq/gpt4free"
+  },
+  {
+    "createdAt": "2023-05-11T07:26:35Z",
+    "description": "Easy and fast book searcher, create and search your private library. Index metadata for over 10 million books in one minute as well as search in 30µs.",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "book-searcher",
+    "nameWithOwner": "htazq/book-searcher",
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "updatedAt": "2023-12-27T06:44:30Z",
+    "url": "https://github.com/htazq/book-searcher"
+  },
+  {
+    "createdAt": "2023-04-24T06:34:33Z",
+    "description": "An account management Panel based on Laravel7 framework. Include multiple payment, account management, system caching, admin notification, products models, and more. ",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "ProxyPanel",
+    "nameWithOwner": "htazq/ProxyPanel",
+    "primaryLanguage": {
+      "name": "PHP"
+    },
+    "updatedAt": "2023-04-24T06:34:34Z",
+    "url": "https://github.com/htazq/ProxyPanel"
+  },
+  {
+    "createdAt": "2023-04-21T03:01:48Z",
+    "description": "基于Python的开源量化交易平台开发框架",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "vnpy",
+    "nameWithOwner": "htazq/vnpy",
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "updatedAt": "2023-04-21T03:01:48Z",
+    "url": "https://github.com/htazq/vnpy"
+  },
+  {
+    "createdAt": "2023-04-13T14:42:54Z",
+    "description": "An experimental open-source attempt to make GPT-4 fully autonomous.",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "Auto-GPT",
+    "nameWithOwner": "htazq/Auto-GPT",
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "updatedAt": "2023-04-13T14:42:51Z",
+    "url": "https://github.com/htazq/Auto-GPT"
+  },
+  {
+    "createdAt": "2023-06-09T13:13:04Z",
+    "description": "pyTranscriber can be used to generate automatic transcription / automatic subtitles for audio/video files through a friendly graphical user interface.",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "pyTranscriber",
+    "nameWithOwner": "htazq/pyTranscriber",
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "updatedAt": "2023-06-09T13:13:04Z",
+    "url": "https://github.com/htazq/pyTranscriber"
+  },
+  {
+    "createdAt": "2023-04-13T03:18:36Z",
+    "description": "The tool can install v2ray on the Doprax, including VMess and VLess protocols, it will automatically switch IP, you need to fork this projects, read readme.md and run it. Create By ifeng.",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "V2ray-for-Doprax",
+    "nameWithOwner": "htazq/V2ray-for-Doprax",
+    "primaryLanguage": {
+      "name": "Dockerfile"
+    },
+    "updatedAt": "2023-04-13T03:16:46Z",
+    "url": "https://github.com/htazq/V2ray-for-Doprax"
+  },
+  {
+    "createdAt": "2023-03-02T04:19:24Z",
+    "description": "python八字排盘软件。　子平真诠、耕寸集等经典八字教程。　丰富的八字案例。",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "bazi",
+    "nameWithOwner": "htazq/bazi",
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "updatedAt": "2023-03-02T04:19:20Z",
+    "url": "https://github.com/htazq/bazi"
+  },
+  {
+    "createdAt": "2023-03-03T13:48:40Z",
+    "description": "v2ray/xray多用户管理部署程序",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "multi-v2ray",
+    "nameWithOwner": "htazq/multi-v2ray",
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "updatedAt": "2023-03-03T13:48:36Z",
+    "url": "https://github.com/htazq/multi-v2ray"
+  },
+  {
+    "createdAt": "2022-12-15T12:38:51Z",
+    "description": "个人笔记",
+    "isArchived": false,
+    "isFork": false,
+    "isPrivate": false,
+    "name": "note",
+    "nameWithOwner": "htazq/note",
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "updatedAt": "2022-12-15T12:39:29Z",
+    "url": "https://github.com/htazq/note"
+  },
+  {
+    "createdAt": "2023-03-02T03:14:19Z",
+    "description": "基于UniAPP开发的八字排盘工具",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "8Char-H5",
+    "nameWithOwner": "htazq/8Char-H5",
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "updatedAt": "2025-11-23T01:18:35Z",
+    "url": "https://github.com/htazq/8Char-H5"
+  },
+  {
+    "createdAt": "2022-12-17T02:18:53Z",
+    "description": "在线云盘、网盘、OneDrive、云存储、私有云、对象存储、h5ai、上传、下载",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "zfile",
+    "nameWithOwner": "htazq/zfile",
+    "primaryLanguage": {
+      "name": "Java"
+    },
+    "updatedAt": "2022-12-17T02:18:48Z",
+    "url": "https://github.com/htazq/zfile"
+  },
+  {
+    "createdAt": "2022-11-28T05:57:03Z",
+    "description": "Flippy's openwrt packaged source code",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "openwrt_packit",
+    "nameWithOwner": "htazq/openwrt_packit",
+    "primaryLanguage": {
+      "name": "Shell"
+    },
+    "updatedAt": "2022-11-28T05:57:01Z",
+    "url": "https://github.com/htazq/openwrt_packit"
+  },
+  {
+    "createdAt": "2023-04-10T03:12:54Z",
+    "description": "An open-source windows defender manager. Now you can disable windows defender permanently. ",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "defender-control",
+    "nameWithOwner": "htazq/defender-control",
+    "primaryLanguage": {
+      "name": "C++"
+    },
+    "updatedAt": "2023-04-10T03:12:51Z",
+    "url": "https://github.com/htazq/defender-control"
+  },
+  {
+    "createdAt": "2022-11-18T03:25:52Z",
+    "description": "Simple Linux Panel",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "mdserver-web",
+    "nameWithOwner": "htazq/mdserver-web",
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "updatedAt": "2022-11-18T03:25:47Z",
+    "url": "https://github.com/htazq/mdserver-web"
+  },
+  {
+    "createdAt": "2022-11-18T14:58:45Z",
+    "description": "支持多协议多用户的 xray 面板",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "x-ui",
+    "nameWithOwner": "htazq/x-ui",
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "updatedAt": "2022-11-18T14:58:53Z",
+    "url": "https://github.com/htazq/x-ui"
+  },
+  {
+    "createdAt": "2022-11-13T08:05:54Z",
+    "description": "https://bitcartcc.com",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "bitcart",
+    "nameWithOwner": "htazq/bitcart",
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "updatedAt": "2022-11-13T08:05:49Z",
+    "url": "https://github.com/htazq/bitcart"
+  },
+  {
+    "createdAt": "2022-11-04T08:57:37Z",
+    "description": "Free Image Hosting solution, Flickr/imgur alternative. Using Cloudflare Pages and Telegraph.",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "Telegraph-Image",
+    "nameWithOwner": "htazq/Telegraph-Image",
+    "primaryLanguage": {
+      "name": "HTML"
+    },
+    "updatedAt": "2022-11-04T08:30:37Z",
+    "url": "https://github.com/htazq/Telegraph-Image"
+  },
+  {
+    "createdAt": "2022-05-22T08:52:11Z",
+    "description": "中国电信助手,白嫖年入保底256+话费 .每月金豆领取(lv6,1000金豆),每日签到(随机金豆),每日喂食宠物.每日登录奖励领取(5金豆),查看我的云盘(10金豆),翻牌 (10金豆),查看我的订单 (5金豆),打开消息 (100金豆),当日分享 (50金豆),浏览生活频道 (5金豆),查看我的金豆 (5金豆),关注直播 (5金豆),观看直播15s (5金豆),打开消息 (100金豆),答问卷 (100金豆)",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "China-Telecom-Helper",
+    "nameWithOwner": "htazq/China-Telecom-Helper",
+    "primaryLanguage": null,
+    "updatedAt": "2022-05-22T08:51:05Z",
+    "url": "https://github.com/htazq/China-Telecom-Helper"
+  },
+  {
+    "createdAt": "2022-05-23T14:12:10Z",
+    "description": "github加速神器，解决github打不开、用户头像无法加载、releases无法上传下载、git-clone、git-pull、git-push失败等问题",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "FastGithub",
+    "nameWithOwner": "htazq/FastGithub",
+    "primaryLanguage": {
+      "name": "C#"
+    },
+    "updatedAt": "2022-05-23T11:17:17Z",
+    "url": "https://github.com/htazq/FastGithub"
+  },
+  {
+    "createdAt": "2022-04-29T09:54:20Z",
+    "description": "tinyproxy - a light-weight HTTP/HTTPS proxy daemon for POSIX operating systems",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "tinyproxy",
+    "nameWithOwner": "htazq/tinyproxy",
+    "primaryLanguage": {
+      "name": "C"
+    },
+    "updatedAt": "2022-04-29T09:54:17Z",
+    "url": "https://github.com/htazq/tinyproxy"
+  },
+  {
+    "createdAt": "2022-04-24T11:38:01Z",
+    "description": "",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "COVID-19",
+    "nameWithOwner": "htazq/COVID-19",
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "updatedAt": "2022-04-24T11:37:52Z",
+    "url": "https://github.com/htazq/COVID-19"
+  },
+  {
+    "createdAt": "2022-04-23T13:32:23Z",
+    "description": "一款轻量级、高性能、功能强大的内网穿透代理服务器。支持tcp、udp、socks5、http等几乎所有流量转发，可用来访问内网网站、本地支付接口调试、ssh访问、远程桌面，内网dns解析、内网socks5代理等等……，并带有功能强大的web管理端。a lightweight, high-performance, powerful intranet penetration proxy server, with a powerful web management terminal.",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "nps",
+    "nameWithOwner": "htazq/nps",
+    "primaryLanguage": {
+      "name": "Go"
+    },
+    "updatedAt": "2022-04-23T13:32:28Z",
+    "url": "https://github.com/htazq/nps"
+  },
+  {
+    "createdAt": "2022-03-13T12:56:14Z",
+    "description": "",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "GPEN",
+    "nameWithOwner": "htazq/GPEN",
+    "primaryLanguage": {
+      "name": "Jupyter Notebook"
+    },
+    "updatedAt": "2022-03-13T12:54:40Z",
+    "url": "https://github.com/htazq/GPEN"
+  },
+  {
+    "createdAt": "2022-03-13T13:52:11Z",
+    "description": "Real-ESRGAN aims at developing Practical Algorithms for General Image/Video Restoration.",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "Real-ESRGAN",
+    "nameWithOwner": "htazq/Real-ESRGAN",
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "updatedAt": "2022-03-13T13:52:05Z",
+    "url": "https://github.com/htazq/Real-ESRGAN"
+  },
+  {
+    "createdAt": "2022-02-04T13:06:14Z",
+    "description": "康师傅OpenVPN流控4.1纪念版Shell脚本源码",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "OpenVpn-kangml4.1",
+    "nameWithOwner": "htazq/OpenVpn-kangml4.1",
+    "primaryLanguage": {
+      "name": "Shell"
+    },
+    "updatedAt": "2023-07-28T09:14:51Z",
+    "url": "https://github.com/htazq/OpenVpn-kangml4.1"
+  },
+  {
+    "createdAt": "2022-02-04T13:06:19Z",
+    "description": "康师傅流控4.1纪念版PHP源码，使用PHP7.3制作，仅供交流学习与研究。",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "OpenVpn-Flow-Control-System",
+    "nameWithOwner": "htazq/OpenVpn-Flow-Control-System",
+    "primaryLanguage": {
+      "name": "PHP"
+    },
+    "updatedAt": "2023-07-28T09:13:12Z",
+    "url": "https://github.com/htazq/OpenVpn-Flow-Control-System"
+  },
+  {
+    "createdAt": "2022-02-15T08:25:28Z",
+    "description": "🚀傲星工具箱，一个在线工具箱",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "toolbox",
+    "nameWithOwner": "htazq/toolbox",
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "updatedAt": "2022-02-15T08:25:27Z",
+    "url": "https://github.com/htazq/toolbox"
+  },
+  {
+    "createdAt": "2022-02-09T10:00:59Z",
+    "description": "📝基于 Vue、Vditor，所构建的在线 Markdown 编辑器，支持流程图、甘特图、时序图、任务列表、HTML 自动转换为 Markdown 等功能；🎉新增「所见即所得」编辑模式。",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "markdown-online-editor",
+    "nameWithOwner": "htazq/markdown-online-editor",
+    "primaryLanguage": {
+      "name": "CSS"
+    },
+    "updatedAt": "2022-02-08T02:45:03Z",
+    "url": "https://github.com/htazq/markdown-online-editor"
+  },
+  {
+    "createdAt": "2022-01-19T01:51:51Z",
+    "description": "Hexo博客模版，通过云开发平台一键部署为可访问网站。",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "hexo",
+    "nameWithOwner": "htazq/hexo",
+    "primaryLanguage": {
+      "name": "HTML"
+    },
+    "updatedAt": "2022-01-18T06:59:51Z",
+    "url": "https://github.com/htazq/hexo"
+  },
+  {
+    "createdAt": "2022-03-13T04:05:43Z",
+    "description": "Use Vue, Vuex to code Tetris.使用 Vue, Vuex 做俄罗斯方块 ",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "vue-tetris",
+    "nameWithOwner": "htazq/vue-tetris",
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "updatedAt": "2022-03-12T03:41:48Z",
+    "url": "https://github.com/htazq/vue-tetris"
+  },
+  {
+    "createdAt": "2022-01-09T15:40:43Z",
+    "description": "一个浙江大学本科生的计算机、地理信息科学知识库 包含课程资料 学习笔记 大作业等（ 数据结构与算法、人工智能、地理空间数据库、计算机组成、计算机网络、图形学、编译原理等课程）",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "ZJU-CS-GIS-ClassNotes",
+    "nameWithOwner": "htazq/ZJU-CS-GIS-ClassNotes",
+    "primaryLanguage": {
+      "name": "Jupyter Notebook"
+    },
+    "updatedAt": "2022-01-09T15:40:44Z",
+    "url": "https://github.com/htazq/ZJU-CS-GIS-ClassNotes"
+  },
+  {
+    "createdAt": "2021-12-05T18:36:26Z",
+    "description": "A build script for qBittorent nox static.",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "qbittorrent-nox-static",
+    "nameWithOwner": "htazq/qbittorrent-nox-static",
+    "primaryLanguage": {
+      "name": "Shell"
+    },
+    "updatedAt": "2021-12-05T18:36:27Z",
+    "url": "https://github.com/htazq/qbittorrent-nox-static"
+  },
+  {
+    "createdAt": "2021-12-18T15:31:00Z",
+    "description": "一套基于layui框架的Typecho主题Echo",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "Echo",
+    "nameWithOwner": "htazq/Echo",
+    "primaryLanguage": {
+      "name": "PHP"
+    },
+    "updatedAt": "2021-12-18T15:31:01Z",
+    "url": "https://github.com/htazq/Echo"
+  },
+  {
+    "createdAt": "2021-11-27T19:41:24Z",
+    "description": ":trollface: 哪吒监控 一站式轻监控轻运维系统。支持系统状态、HTTP、TCP、Ping 监控报警，计划任务和在线终端。",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "nezha",
+    "nameWithOwner": "htazq/nezha",
+    "primaryLanguage": {
+      "name": "Go"
+    },
+    "updatedAt": "2024-11-23T14:08:06Z",
+    "url": "https://github.com/htazq/nezha"
+  },
+  {
+    "createdAt": "2021-11-02T11:24:44Z",
+    "description": "萌咖大佬的Linux 一键DD脚本",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "dd",
+    "nameWithOwner": "htazq/dd",
+    "primaryLanguage": {
+      "name": "Shell"
+    },
+    "updatedAt": "2021-11-02T11:24:45Z",
+    "url": "https://github.com/htazq/dd"
+  },
+  {
+    "createdAt": "2022-02-09T03:18:40Z",
+    "description": "单纯就是一个导航。",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "aNavigation",
+    "nameWithOwner": "htazq/aNavigation",
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "updatedAt": "2022-02-08T06:10:40Z",
+    "url": "https://github.com/htazq/aNavigation"
+  },
+  {
+    "createdAt": "2021-11-03T02:57:28Z",
+    "description": "Typecho Theme",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "junichi",
+    "nameWithOwner": "htazq/junichi",
+    "primaryLanguage": {
+      "name": "PHP"
+    },
+    "updatedAt": "2021-11-03T02:57:30Z",
+    "url": "https://github.com/htazq/junichi"
+  },
+  {
+    "createdAt": "2022-03-13T13:52:10Z",
+    "description": "waifu2xのCaffe版",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "waifu2x-caffe",
+    "nameWithOwner": "htazq/waifu2x-caffe",
+    "primaryLanguage": {
+      "name": "C++"
+    },
+    "updatedAt": "2022-03-13T13:52:09Z",
+    "url": "https://github.com/htazq/waifu2x-caffe"
+  },
+  {
+    "createdAt": "2023-05-25T07:23:09Z",
+    "description": "来这里学股票知识吧！！！！",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "stock_learning",
+    "nameWithOwner": "htazq/stock_learning",
+    "primaryLanguage": null,
+    "updatedAt": "2023-05-25T07:23:09Z",
+    "url": "https://github.com/htazq/stock_learning"
+  },
+  {
+    "createdAt": "2021-11-02T15:32:34Z",
+    "description": "",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "DDWIN",
+    "nameWithOwner": "htazq/DDWIN",
+    "primaryLanguage": {
+      "name": "Shell"
+    },
+    "updatedAt": "2021-11-02T15:32:35Z",
+    "url": "https://github.com/htazq/DDWIN"
+  },
+  {
+    "createdAt": "2021-04-18T07:43:42Z",
+    "description": "『微信小程序』优秀教程、轮子、开源项目 资源汇总",
+    "isArchived": false,
+    "isFork": true,
+    "isPrivate": false,
+    "name": "MasterWechatApp",
+    "nameWithOwner": "htazq/MasterWechatApp",
+    "primaryLanguage": null,
+    "updatedAt": "2021-04-18T07:43:43Z",
+    "url": "https://github.com/htazq/MasterWechatApp"
+  }
+]

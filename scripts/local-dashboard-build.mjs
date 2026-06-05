@@ -1233,6 +1233,30 @@ function buildCommitMeta(commitRows) {
   return out;
 }
 
+function mergeRowsByKey(groups, getKey) {
+  const map = new Map();
+  for (const group of groups) {
+    for (const item of group) {
+      const key = getKey(item);
+      if (!key) {
+        continue;
+      }
+      map.set(key, item);
+    }
+  }
+  return Array.from(map.values());
+}
+
+function getCommitRowKey(item) {
+  const repoKey = toOwnerRepoKey(item.repository);
+  return repoKey && item.sha ? `${repoKey}:${item.sha}` : '';
+}
+
+function getNumberedContributionKey(item) {
+  const repoKey = toOwnerRepoKey(item.repository?.nameWithOwner || item.repository);
+  return repoKey && item.number ? `${repoKey}:${item.number}` : '';
+}
+
 function maxDateText(values) {
   return values
     .filter(Boolean)
@@ -1411,6 +1435,17 @@ function applyEnrichments(repo, commitMap, contributionMap, issueMap) {
   if (!repo.issues) {
     repo.issues = issueMap.get(key) || null;
   }
+  const latestActivityAt = maxDateText([
+    repo.lastActiveAt,
+    repo.latestCommit?.committedAt,
+    repo.contribution?.latest?.updatedAt,
+    repo.issues?.latest?.updatedAt,
+    repo.pushedAt,
+    repo.updatedAt,
+  ]);
+  if (latestActivityAt) {
+    repo.lastActiveAt = latestActivityAt;
+  }
   return repo;
 }
 
@@ -1496,34 +1531,50 @@ async function fetchDataFromSources() {
     }
   }
 
-  let commitRows = [];
+  const fallbackCommitRows = (await safeLoadJson(githubSelfCreatedCommitsPath)) || [];
+  let apiCommitRows = [];
   try {
-    commitRows = await fetchGitHubAuthoredCommits();
+    apiCommitRows = await fetchGitHubAuthoredCommits();
   } catch (err) {
     console.error('[GitHub Commit API] 请求失败，将回退到离线快照:', err.message);
   }
-  if (commitRows.length === 0) {
-    commitRows = (await safeLoadJson(githubSelfCreatedCommitsPath)) || [];
-  }
+  const commitRows = mergeRowsByKey(
+    [
+      Array.isArray(fallbackCommitRows) ? fallbackCommitRows : [],
+      Array.isArray(apiCommitRows) ? apiCommitRows : [],
+    ],
+    getCommitRowKey,
+  );
 
-  let prRows = [];
+  const fallbackPrRows = (await safeLoadJson(githubAuthoredPrsPath)) || [];
+  let apiPrRows = [];
   try {
-    prRows = await fetchGitHubAuthoredPrs();
+    apiPrRows = await fetchGitHubAuthoredPrs();
   } catch (err) {
     console.error('[GitHub PR API] 请求失败，将回退到离线快照:', err.message);
   }
-  if (prRows.length === 0) {
-    prRows = (await safeLoadJson(githubAuthoredPrsPath)) || [];
-  }
-  let issueRows = [];
+  const prRows = mergeRowsByKey(
+    [
+      Array.isArray(fallbackPrRows) ? fallbackPrRows : [],
+      Array.isArray(apiPrRows) ? apiPrRows : [],
+    ],
+    getNumberedContributionKey,
+  );
+
+  const fallbackIssueRows = (await safeLoadJson(githubAuthoredIssuesPath)) || [];
+  let apiIssueRows = [];
   try {
-    issueRows = await fetchGitHubAuthoredIssues();
+    apiIssueRows = await fetchGitHubAuthoredIssues();
   } catch (err) {
     console.error('[GitHub Issue API] request failed, falling back to local snapshot', err.message);
   }
-  if (issueRows.length === 0) {
-    issueRows = (await safeLoadJson(githubAuthoredIssuesPath)) || [];
-  }
+  const issueRows = mergeRowsByKey(
+    [
+      Array.isArray(fallbackIssueRows) ? fallbackIssueRows : [],
+      Array.isArray(apiIssueRows) ? apiIssueRows : [],
+    ],
+    getNumberedContributionKey,
+  );
   const commitMap = buildCommitMeta(Array.isArray(commitRows) ? commitRows : []);
   const contributionMap = buildContributionMeta(Array.isArray(prRows) ? prRows : []);
   const issueMap = buildIssueMeta(Array.isArray(issueRows) ? issueRows : []);
