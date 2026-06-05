@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-05T01:11:40.377Z",
+  "generatedAt": "2026-06-05T01:24:41.792Z",
   "source": {
     "github": {
       "configured": true,
@@ -76,9 +76,9 @@
       "platform": "github",
       "platformId": "1167301812",
       "owner": "htazq",
-      "name": "private-finance-08",
-      "fullName": "htazq/private-finance-08",
-      "description": "自用资产，已做元数据脱敏保护",
+      "name": "mq5-trading",
+      "fullName": "htazq/mq5-trading",
+      "description": "mql5",
       "visibility": "Private",
       "isPrivate": true,
       "isFork": false,
@@ -103,22 +103,22 @@
       "lastActiveAt": "2026-03-03T15:11:58Z",
       "latestCommit": {
         "sha": "25ed1ca9455e51bb177c116c0690477ae24a6607",
-        "message": "最近有代码更新",
+        "message": "chore: 清理产物并保留Alpha研究代码，更新README说明",
         "committedAt": "2026-03-03T15:11:58Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/mq5-trading/commit/25ed1ca9455e51bb177c116c0690477ae24a6607"
       },
       "contribution": null,
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/mq5-trading",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/mq5-trading",
           "updatedAt": "2026-03-03T15:11:58Z"
         }
       ],
@@ -128,7 +128,7 @@
         "openIssues": 0
       },
       "daysSinceActive": 93,
-      "key": "htazq/private-finance-08",
+      "key": "htazq/mq5-trading",
       "status": "stale",
       "category": "金融",
       "categoryConfidence": 0.2
@@ -137,9 +137,9 @@
       "platform": "github",
       "platformId": "1159639009",
       "owner": "htazq",
-      "name": "private-finance-09",
-      "fullName": "htazq/private-finance-09",
-      "description": "自用资产，已做元数据脱敏保护",
+      "name": "polymarket-ai-arb",
+      "fullName": "htazq/polymarket-ai-arb",
+      "description": "AI-driven Polymarket arbitrage analysis system (24/7)",
       "visibility": "Private",
       "isPrivate": true,
       "isFork": false,
@@ -164,22 +164,22 @@
       "lastActiveAt": "2026-03-02T08:12:45Z",
       "latestCommit": {
         "sha": "6abc7f9ac55c950fa98ea481954dd056686ff7b0",
-        "message": "最近有代码更新",
+        "message": "feat: 60s scan loop and conditional LLM audit gate",
         "committedAt": "2026-03-02T08:12:45Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/polymarket-ai-arb/commit/6abc7f9ac55c950fa98ea481954dd056686ff7b0"
       },
       "contribution": null,
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/polymarket-ai-arb",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/polymarket-ai-arb",
           "updatedAt": "2026-03-02T08:12:45Z"
         }
       ],
@@ -189,7 +189,7 @@
         "openIssues": 0
       },
       "daysSinceActive": 94,
-      "key": "htazq/private-finance-09",
+      "key": "htazq/polymarket-ai-arb",
       "status": "stale",
       "category": "金融",
       "categoryConfidence": 0.4
@@ -198,9 +198,9 @@
       "platform": "github",
       "platformId": "1149485045",
       "owner": "htazq",
-      "name": "private-ai-02",
-      "fullName": "htazq/private-ai-02",
-      "description": "自用资产，已做元数据脱敏保护",
+      "name": "openclaw-memory",
+      "fullName": "htazq/openclaw-memory",
+      "description": "",
       "visibility": "Private",
       "isPrivate": true,
       "isFork": false,
@@ -225,22 +225,22 @@
       "lastActiveAt": "2026-02-28T10:00:11Z",
       "latestCommit": {
         "sha": "c4f1aeab7e58089e36b7fdb4492b82f3295c242f",
-        "message": "最近有代码更新",
+        "message": "sync: 编排系统约定 + 模型更新 + 心跳监控 + 日记同步\n\n- MEMORY.md: 新增编排系统约定（稳定性/智能性/可用性）\n  - Ralph Loop 失败重试逻辑\n  - 模型自动路由规则（opus/codex/gemini/qwen）\n  - 响应可靠性约定（8秒ACK、分级熔断、进度播报）\n  - 通知策略（只在需要决策时推送）\n- MEMORY.md: 主3更新为 gemini-3.1-pro-high，主4新增 qwen3.5\n- HEARTBEAT.md: 配置子任务监控 + 系统健康检查\n- memory/: 同步近期日记文件",
         "committedAt": "2026-02-28T10:00:11Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/openclaw-memory/commit/c4f1aeab7e58089e36b7fdb4492b82f3295c242f"
       },
       "contribution": null,
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/openclaw-memory",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/openclaw-memory",
           "updatedAt": "2026-02-28T10:00:11Z"
         }
       ],
@@ -250,7 +250,7 @@
         "openIssues": 0
       },
       "daysSinceActive": 96,
-      "key": "htazq/private-ai-02",
+      "key": "htazq/openclaw-memory",
       "status": "stale",
       "category": "AI",
       "categoryConfidence": 0.2
@@ -259,9 +259,9 @@
       "platform": "github",
       "platformId": "1169160574",
       "owner": "htazq",
-      "name": "private-ai-03",
-      "fullName": "htazq/private-ai-03",
-      "description": "自用资产，已做元数据脱敏保护",
+      "name": "openclaw-orchestrator",
+      "fullName": "htazq/openclaw-orchestrator",
+      "description": "OpenClaw Agent Orchestration System - 多模型编排+自动CI/CD+交叉Review",
       "visibility": "Private",
       "isPrivate": true,
       "isFork": false,
@@ -286,22 +286,22 @@
       "lastActiveAt": "2026-02-28T09:42:42Z",
       "latestCommit": {
         "sha": "2e3c88ad4ac1313f372f1f49e77780a946483d92",
-        "message": "最近有代码更新",
+        "message": "feat: update orchestration config - model routing, Ralph Loop, docs\n\n- Updated models.yaml with detailed routing rules matching MEMORY.md\n- Added Ralph Loop retry categories and subtask timeouts\n- Added docs/ORCHESTRATION.md with full orchestration system documentation\n- Covers stability, intelligence, usability pillars",
         "committedAt": "2026-02-28T09:42:42Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/openclaw-orchestrator/commit/2e3c88ad4ac1313f372f1f49e77780a946483d92"
       },
       "contribution": null,
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/openclaw-orchestrator",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/openclaw-orchestrator",
           "updatedAt": "2026-02-28T09:42:42Z"
         }
       ],
@@ -311,7 +311,7 @@
         "openIssues": 0
       },
       "daysSinceActive": 96,
-      "key": "htazq/private-ai-03",
+      "key": "htazq/openclaw-orchestrator",
       "status": "stale",
       "category": "AI",
       "categoryConfidence": 0.4
@@ -320,9 +320,9 @@
       "platform": "github",
       "platformId": "1167675983",
       "owner": "htazq",
-      "name": "private-misc-06",
-      "fullName": "htazq/private-misc-06",
-      "description": "自用资产，已做元数据脱敏保护",
+      "name": "china-travding",
+      "fullName": "htazq/china-travding",
+      "description": "",
       "visibility": "Private",
       "isPrivate": true,
       "isFork": false,
@@ -347,22 +347,22 @@
       "lastActiveAt": "2026-02-28T02:33:14Z",
       "latestCommit": {
         "sha": "b4ed9916a10ff59b6188edb1ff0cffe40b17d3a4",
-        "message": "最近有代码更新",
+        "message": "init",
         "committedAt": "2026-02-28T02:33:14Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/china-travding/commit/b4ed9916a10ff59b6188edb1ff0cffe40b17d3a4"
       },
       "contribution": null,
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/china-travding",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/china-travding",
           "updatedAt": "2026-02-28T02:33:14Z"
         }
       ],
@@ -372,7 +372,7 @@
         "openIssues": 0
       },
       "daysSinceActive": 96,
-      "key": "htazq/private-misc-06",
+      "key": "htazq/china-travding",
       "status": "stale",
       "category": "其他",
       "categoryConfidence": 0
@@ -381,9 +381,9 @@
       "platform": "github",
       "platformId": "789405656",
       "owner": "htazq",
-      "name": "private-script-10",
-      "fullName": "htazq/private-script-10",
-      "description": "自用资产，已做元数据脱敏保护",
+      "name": "automation",
+      "fullName": "htazq/automation",
+      "description": "",
       "visibility": "Private",
       "isPrivate": true,
       "isFork": false,
@@ -408,22 +408,22 @@
       "lastActiveAt": "2026-02-26T09:48:37Z",
       "latestCommit": {
         "sha": "a30cbbbb65e93a4f3e3baf01e930c6e02e2a98d7",
-        "message": "最近有代码更新",
+        "message": "修改条件",
         "committedAt": "2026-02-26T09:48:37Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/automation/commit/a30cbbbb65e93a4f3e3baf01e930c6e02e2a98d7"
       },
       "contribution": null,
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/automation",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/automation",
           "updatedAt": "2026-02-26T09:48:37Z"
         }
       ],
@@ -433,7 +433,7 @@
         "openIssues": 0
       },
       "daysSinceActive": 98,
-      "key": "htazq/private-script-10",
+      "key": "htazq/automation",
       "status": "stale",
       "category": "脚本",
       "categoryConfidence": 0.4
@@ -442,9 +442,9 @@
       "platform": "github",
       "platformId": "1164045588",
       "owner": "htazq",
-      "name": "private-misc-07",
-      "fullName": "htazq/private-misc-07",
-      "description": "自用资产，已做元数据脱敏保护",
+      "name": "relay",
+      "fullName": "htazq/relay",
+      "description": "一款远程工具（ssh/rdp/telnet/console等）",
       "visibility": "Private",
       "isPrivate": true,
       "isFork": false,
@@ -469,22 +469,22 @@
       "lastActiveAt": "2026-02-24T10:08:49Z",
       "latestCommit": {
         "sha": "4771a3e32f53bf4ad7adcbc514acc24a6d16531e",
-        "message": "最近有代码更新",
+        "message": "mobaxterm庚哥",
         "committedAt": "2026-02-24T10:08:49Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/relay/commit/4771a3e32f53bf4ad7adcbc514acc24a6d16531e"
       },
       "contribution": null,
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/relay",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/relay",
           "updatedAt": "2026-02-24T10:08:49Z"
         }
       ],
@@ -494,7 +494,7 @@
         "openIssues": 0
       },
       "daysSinceActive": 100,
-      "key": "htazq/private-misc-07",
+      "key": "htazq/relay",
       "status": "stale",
       "category": "其他",
       "categoryConfidence": 0
@@ -503,9 +503,9 @@
       "platform": "github",
       "platformId": "1156734841",
       "owner": "htazq",
-      "name": "private-finance-10",
-      "fullName": "htazq/private-finance-10",
-      "description": "自用资产，已做元数据脱敏保护",
+      "name": "follow-orders",
+      "fullName": "htazq/follow-orders",
+      "description": "mt5跟单，rust+mq5(ea)",
       "visibility": "Private",
       "isPrivate": true,
       "isFork": false,
@@ -530,22 +530,22 @@
       "lastActiveAt": "2026-02-24T09:59:49Z",
       "latestCommit": {
         "sha": "f11618ddb946a07d71aee1d6a05da23021b4f65e",
-        "message": "最近有代码更新",
+        "message": "feat(mapping): keep bidirectional rules with ordered multi-candidate resolution",
         "committedAt": "2026-02-24T09:59:49Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/follow-orders/commit/f11618ddb946a07d71aee1d6a05da23021b4f65e"
       },
       "contribution": null,
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/follow-orders",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/follow-orders",
           "updatedAt": "2026-02-24T09:59:49Z"
         }
       ],
@@ -555,7 +555,7 @@
         "openIssues": 0
       },
       "daysSinceActive": 100,
-      "key": "htazq/private-finance-10",
+      "key": "htazq/follow-orders",
       "status": "stale",
       "category": "金融",
       "categoryConfidence": 0.2
@@ -564,9 +564,9 @@
       "platform": "github",
       "platformId": "1158444471",
       "owner": "htazq",
-      "name": "private-misc-08",
-      "fullName": "htazq/private-misc-08",
-      "description": "自用资产，已做元数据脱敏保护",
+      "name": "travding",
+      "fullName": "htazq/travding",
+      "description": "Artifact repository (post-reset).",
       "visibility": "Private",
       "isPrivate": true,
       "isFork": false,
@@ -591,22 +591,22 @@
       "lastActiveAt": "2026-02-24T09:55:04Z",
       "latestCommit": {
         "sha": "c63049c8ec1fecd04f8dfa1bac6318b89c1e0c02",
-        "message": "最近有代码更新",
+        "message": "Add files via upload",
         "committedAt": "2026-02-24T09:55:04Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/travding/commit/c63049c8ec1fecd04f8dfa1bac6318b89c1e0c02"
       },
       "contribution": null,
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/travding",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/travding",
           "updatedAt": "2026-02-24T09:55:04Z"
         }
       ],
@@ -616,7 +616,7 @@
         "openIssues": 0
       },
       "daysSinceActive": 100,
-      "key": "htazq/private-misc-08",
+      "key": "htazq/travding",
       "status": "stale",
       "category": "其他",
       "categoryConfidence": 0
@@ -686,9 +686,9 @@
       "platform": "github",
       "platformId": "1161436533",
       "owner": "htazq",
-      "name": "private-finance-11",
-      "fullName": "htazq/private-finance-11",
-      "description": "自用资产，已做元数据脱敏保护",
+      "name": "crypto-cross-sectional-momentum",
+      "fullName": "htazq/crypto-cross-sectional-momentum",
+      "description": "",
       "visibility": "Private",
       "isPrivate": true,
       "isFork": false,
@@ -713,22 +713,22 @@
       "lastActiveAt": "2026-02-19T05:17:46Z",
       "latestCommit": {
         "sha": "7f993f0d9d1a51b06ae3b97824f5eaadf378b313",
-        "message": "最近有代码更新",
+        "message": "chore: initialize crypto cross-sectional momentum research repo",
         "committedAt": "2026-02-19T05:17:46Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/crypto-cross-sectional-momentum/commit/7f993f0d9d1a51b06ae3b97824f5eaadf378b313"
       },
       "contribution": null,
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/crypto-cross-sectional-momentum",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/crypto-cross-sectional-momentum",
           "updatedAt": "2026-02-19T05:17:46Z"
         }
       ],
@@ -738,7 +738,7 @@
         "openIssues": 0
       },
       "daysSinceActive": 105,
-      "key": "htazq/private-finance-11",
+      "key": "htazq/crypto-cross-sectional-momentum",
       "status": "stale",
       "category": "金融",
       "categoryConfidence": 0.2
@@ -747,9 +747,9 @@
       "platform": "github",
       "platformId": "1159658842",
       "owner": "htazq",
-      "name": "private-misc-09",
-      "fullName": "htazq/private-misc-09",
-      "description": "自用资产，已做元数据脱敏保护",
+      "name": "skill-to-animation-studio",
+      "fullName": "htazq/skill-to-animation-studio",
+      "description": "",
       "visibility": "Private",
       "isPrivate": true,
       "isFork": false,
@@ -774,22 +774,22 @@
       "lastActiveAt": "2026-02-17T02:19:36Z",
       "latestCommit": {
         "sha": "4f199035e3ae086d2de0a5af68cd95a013f91363",
-        "message": "最近有代码更新",
+        "message": "feat: 初始化 Skill 自动转动画视频开箱即用仓库",
         "committedAt": "2026-02-17T02:19:36Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/skill-to-animation-studio/commit/4f199035e3ae086d2de0a5af68cd95a013f91363"
       },
       "contribution": null,
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/skill-to-animation-studio",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/skill-to-animation-studio",
           "updatedAt": "2026-02-17T02:19:36Z"
         }
       ],
@@ -799,7 +799,7 @@
         "openIssues": 0
       },
       "daysSinceActive": 107,
-      "key": "htazq/private-misc-09",
+      "key": "htazq/skill-to-animation-studio",
       "status": "stale",
       "category": "其他",
       "categoryConfidence": 0
@@ -808,9 +808,9 @@
       "platform": "github",
       "platformId": "1156135130",
       "owner": "htazq",
-      "name": "private-finance-12",
-      "fullName": "htazq/private-finance-12",
-      "description": "自用资产，已做元数据脱敏保护",
+      "name": "A-Stock-Screening",
+      "fullName": "htazq/A-Stock-Screening",
+      "description": "A股选股",
       "visibility": "Private",
       "isPrivate": true,
       "isFork": false,
@@ -835,22 +835,22 @@
       "lastActiveAt": "2026-02-12T14:02:31Z",
       "latestCommit": {
         "sha": "e8aebfcd2982bfbec748bde0edcda940f5f22517",
-        "message": "最近有代码更新",
+        "message": "修复板块严格链路并完善评分缓存测试文档",
         "committedAt": "2026-02-12T14:02:31Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/A-Stock-Screening/commit/e8aebfcd2982bfbec748bde0edcda940f5f22517"
       },
       "contribution": null,
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/A-Stock-Screening",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/A-Stock-Screening",
           "updatedAt": "2026-02-12T14:02:31Z"
         }
       ],
@@ -860,7 +860,7 @@
         "openIssues": 0
       },
       "daysSinceActive": 112,
-      "key": "htazq/private-finance-12",
+      "key": "htazq/a-stock-screening",
       "status": "stale",
       "category": "金融",
       "categoryConfidence": 0.2
@@ -869,9 +869,9 @@
       "platform": "github",
       "platformId": "1143146779",
       "owner": "htazq",
-      "name": "private-misc-10",
-      "fullName": "htazq/private-misc-10",
-      "description": "自用资产，已做元数据脱敏保护",
+      "name": "yingdao",
+      "fullName": "htazq/yingdao",
+      "description": "",
       "visibility": "Private",
       "isPrivate": true,
       "isFork": false,
@@ -896,22 +896,22 @@
       "lastActiveAt": "2026-01-30T09:29:32Z",
       "latestCommit": {
         "sha": "927356589ebec840c538850234311cd143a6d273",
-        "message": "最近有代码更新",
+        "message": "修复分页抓取",
         "committedAt": "2026-01-30T09:29:32Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/yingdao/commit/927356589ebec840c538850234311cd143a6d273"
       },
       "contribution": null,
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/yingdao",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/yingdao",
           "updatedAt": "2026-01-30T09:29:32Z"
         }
       ],
@@ -921,7 +921,7 @@
         "openIssues": 0
       },
       "daysSinceActive": 125,
-      "key": "htazq/private-misc-10",
+      "key": "htazq/yingdao",
       "status": "stale",
       "category": "其他",
       "categoryConfidence": 0
@@ -930,9 +930,9 @@
       "platform": "github",
       "platformId": "1141164696",
       "owner": "htazq",
-      "name": "private-misc-11",
-      "fullName": "htazq/private-misc-11",
-      "description": "自用资产，已做元数据脱敏保护",
+      "name": "catalystx-api",
+      "fullName": "htazq/catalystx-api",
+      "description": "",
       "visibility": "Private",
       "isPrivate": true,
       "isFork": false,
@@ -957,22 +957,22 @@
       "lastActiveAt": "2026-01-26T07:09:57Z",
       "latestCommit": {
         "sha": "c47d0786948ce33f805949833c62d71878305d2a",
-        "message": "最近有代码更新",
+        "message": "修正sqlite路径解析避免落到容器内部",
         "committedAt": "2026-01-26T07:09:57Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/catalystx-api/commit/c47d0786948ce33f805949833c62d71878305d2a"
       },
       "contribution": null,
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/catalystx-api",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/catalystx-api",
           "updatedAt": "2026-01-26T07:09:57Z"
         }
       ],
@@ -982,7 +982,7 @@
         "openIssues": 0
       },
       "daysSinceActive": 129,
-      "key": "htazq/private-misc-11",
+      "key": "htazq/catalystx-api",
       "status": "stale",
       "category": "其他",
       "categoryConfidence": 0
@@ -991,9 +991,9 @@
       "platform": "github",
       "platformId": "1139033935",
       "owner": "htazq",
-      "name": "private-script-11",
-      "fullName": "htazq/private-script-11",
-      "description": "自用资产，已做元数据脱敏保护",
+      "name": "openwebui-auth",
+      "fullName": "htazq/openwebui-auth",
+      "description": "",
       "visibility": "Private",
       "isPrivate": true,
       "isFork": false,
@@ -1018,30 +1018,30 @@
       "lastActiveAt": "2026-01-24T12:43:43Z",
       "latestCommit": {
         "sha": "0cba08bbc13e136bc4ce3aa56f9556cb76364137",
-        "message": "最近有代码更新",
+        "message": "Feat: Implement backend-driven usage billing with admin config",
         "committedAt": "2026-01-24T12:43:43Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/openwebui-auth/commit/0cba08bbc13e136bc4ce3aa56f9556cb76364137"
       },
       "contribution": null,
       "platforms": [
         "github",
         "cnb"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/openwebui-auth",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/openwebui-auth",
           "updatedAt": "2026-01-24T12:43:43Z"
         },
         {
           "platform": "cnb",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://cnb.cool/htazq",
+          "url": "https://cnb.cool/htazq/openwebui-auth",
           "updatedAt": "2026-01-21T13:58:37Z"
         }
       ],
@@ -1051,7 +1051,7 @@
         "openIssues": 0
       },
       "daysSinceActive": 131,
-      "key": "htazq/private-script-11",
+      "key": "htazq/openwebui-auth",
       "status": "stale",
       "category": "脚本",
       "categoryConfidence": 0.2
@@ -1060,9 +1060,9 @@
       "platform": "github",
       "platformId": "1136102277",
       "owner": "htazq",
-      "name": "private-ai-04",
-      "fullName": "htazq/private-ai-04",
-      "description": "自用资产，已做元数据脱敏保护",
+      "name": "AlphaGPT_mt5",
+      "fullName": "htazq/AlphaGPT_mt5",
+      "description": "",
       "visibility": "Private",
       "isPrivate": true,
       "isFork": false,
@@ -1087,22 +1087,22 @@
       "lastActiveAt": "2026-01-18T13:53:48Z",
       "latestCommit": {
         "sha": "515b6592b36ff79dfcec700abde34f52de14ed90",
-        "message": "最近有代码更新",
+        "message": "新增因子解释与回测可视化，完善训练输出",
         "committedAt": "2026-01-18T13:53:48Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/AlphaGPT_mt5/commit/515b6592b36ff79dfcec700abde34f52de14ed90"
       },
       "contribution": null,
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/AlphaGPT_mt5",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/AlphaGPT_mt5",
           "updatedAt": "2026-01-18T13:53:48Z"
         }
       ],
@@ -1112,7 +1112,7 @@
         "openIssues": 0
       },
       "daysSinceActive": 137,
-      "key": "htazq/private-ai-04",
+      "key": "htazq/alphagpt_mt5",
       "status": "stale",
       "category": "AI",
       "categoryConfidence": 0.2
@@ -1121,9 +1121,9 @@
       "platform": "github",
       "platformId": "1130238814",
       "owner": "htazq",
-      "name": "private-misc-12",
-      "fullName": "htazq/private-misc-12",
-      "description": "自用资产，已做元数据脱敏保护",
+      "name": "nofx_strategy",
+      "fullName": "htazq/nofx_strategy",
+      "description": "",
       "visibility": "Private",
       "isPrivate": true,
       "isFork": false,
@@ -1148,22 +1148,22 @@
       "lastActiveAt": "2026-01-09T09:08:43Z",
       "latestCommit": {
         "sha": "e0d78a551d444d2b2ddd2192145ff325cb007308",
-        "message": "最近有代码更新",
+        "message": "init",
         "committedAt": "2026-01-09T09:08:43Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/nofx_strategy/commit/e0d78a551d444d2b2ddd2192145ff325cb007308"
       },
       "contribution": null,
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/nofx_strategy",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/nofx_strategy",
           "updatedAt": "2026-01-09T09:08:43Z"
         }
       ],
@@ -1173,7 +1173,7 @@
         "openIssues": 0
       },
       "daysSinceActive": 146,
-      "key": "htazq/private-misc-12",
+      "key": "htazq/nofx_strategy",
       "status": "stale",
       "category": "其他",
       "categoryConfidence": 0
@@ -1295,6 +1295,65 @@
   ],
   "repositories": [
     {
+      "key": "kylinmountain/tradingagents-ashare",
+      "owner": "KylinMountain",
+      "name": "TradingAgents-AShare",
+      "fullName": "KylinMountain/TradingAgents-AShare",
+      "category": "AI",
+      "categoryConfidence": 1,
+      "status": "active",
+      "statusText": "活跃",
+      "daysSinceActive": 0,
+      "lastActiveAt": "2026-06-05T01:22:43Z",
+      "latestCommit": null,
+      "contribution": {
+        "total": 1,
+        "opened": 0,
+        "merged": 0,
+        "closed": 1,
+        "latest": {
+          "number": 165,
+          "title": "Fix Docker frontend API base URL for remote deployments",
+          "state": "closed",
+          "updatedAt": "2026-06-05T01:22:43Z",
+          "url": "https://github.com/KylinMountain/TradingAgents-AShare/pull/165"
+        }
+      },
+      "isPrivate": false,
+      "description": "A 股多智能体智能投研系统 — 基于 TradingAgents 架构，15 名 AI Agent 模拟机构协作与实时辩论对抗，全流程可视化，支持 OpenClaw / Claude Code 集成，Docker 一键部署。",
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/KylinMountain/TradingAgents-AShare",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": false,
+          "visibility": "Public",
+          "url": "https://github.com/KylinMountain/TradingAgents-AShare",
+          "updatedAt": "2026-06-05T01:22:43Z"
+        }
+      ],
+      "metrics": {
+        "stars": 524,
+        "forks": 165,
+        "openIssues": 19
+      },
+      "language": "Python",
+      "topics": [
+        "agents",
+        "ai",
+        "finance",
+        "llm",
+        "openclaw",
+        "openclaw-skills",
+        "skills",
+        "stock"
+      ],
+      "homepage": "https://app.510168.xyz",
+      "isExternalContribution": true
+    },
+    {
       "key": "openclaw/openclaw",
       "owner": "openclaw",
       "name": "openclaw",
@@ -1304,7 +1363,7 @@
       "status": "active",
       "statusText": "活跃",
       "daysSinceActive": 0,
-      "lastActiveAt": "2026-06-05T01:11:34Z",
+      "lastActiveAt": "2026-06-05T01:22:35Z",
       "latestCommit": null,
       "contribution": {
         "total": 1,
@@ -1331,13 +1390,13 @@
           "isPrivate": false,
           "visibility": "Public",
           "url": "https://github.com/openclaw/openclaw",
-          "updatedAt": "2026-06-05T01:11:34Z"
+          "updatedAt": "2026-06-05T01:22:35Z"
         }
       ],
       "metrics": {
-        "stars": 376874,
-        "forks": 78755,
-        "openIssues": 7694
+        "stars": 376873,
+        "forks": 78756,
+        "openIssues": 7699
       },
       "language": "TypeScript",
       "topics": [
@@ -1351,6 +1410,58 @@
       ],
       "homepage": "https://openclaw.ai",
       "isExternalContribution": true
+    },
+    {
+      "key": "htazq/www",
+      "owner": "htazq",
+      "name": "www",
+      "fullName": "htazq/www",
+      "category": "网站",
+      "categoryConfidence": 0.2,
+      "status": "active",
+      "statusText": "活跃",
+      "daysSinceActive": 0,
+      "lastActiveAt": "2026-06-05T01:14:04Z",
+      "latestCommit": {
+        "sha": "10a1e91661d6bd9f82226b399e315d77a81ca889",
+        "message": "fix: harden public dashboard feed updates",
+        "committedAt": "2026-06-05T01:14:04Z",
+        "author": "cnb.Z89F8fq0hPA",
+        "url": "https://github.com/htazq/www/commit/10a1e91661d6bd9f82226b399e315d77a81ca889"
+      },
+      "contribution": null,
+      "isPrivate": true,
+      "description": "",
+      "platforms": [
+        "github",
+        "cnb"
+      ],
+      "primaryUrl": "https://github.com/htazq/www",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": true,
+          "visibility": "Private",
+          "url": "https://github.com/htazq/www",
+          "updatedAt": "2026-06-05T01:14:04Z"
+        },
+        {
+          "platform": "cnb",
+          "isPrivate": true,
+          "visibility": "Private",
+          "url": "https://cnb.cool/htazq/www",
+          "updatedAt": "2025-11-20T02:43:23Z"
+        }
+      ],
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "language": "HTML",
+      "topics": [],
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "ariadng/metatrader-mcp-server",
@@ -1524,117 +1635,6 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-web-01",
-      "owner": "htazq",
-      "name": "private-web-01",
-      "fullName": "htazq/private-web-01",
-      "category": "网站",
-      "categoryConfidence": 0.2,
-      "status": "active",
-      "statusText": "活跃",
-      "daysSinceActive": 0,
-      "lastActiveAt": "2026-06-04T15:57:45Z",
-      "latestCommit": {
-        "sha": "badab056e23584938a9ac3e8cc32197d03315b53",
-        "message": "最近有代码更新",
-        "committedAt": "2026-06-04T15:57:45Z",
-        "author": "htazq",
-        "url": ""
-      },
-      "contribution": null,
-      "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
-      "platforms": [
-        "github",
-        "cnb"
-      ],
-      "primaryUrl": "https://github.com/htazq",
-      "sources": [
-        {
-          "platform": "github",
-          "isPrivate": true,
-          "visibility": "Private",
-          "url": "https://github.com/htazq",
-          "updatedAt": "2026-06-04T15:57:45Z"
-        },
-        {
-          "platform": "cnb",
-          "isPrivate": true,
-          "visibility": "Private",
-          "url": "https://cnb.cool/htazq",
-          "updatedAt": "2025-11-20T02:43:23Z"
-        }
-      ],
-      "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0
-      },
-      "language": "HTML",
-      "topics": [],
-      "homepage": "",
-      "isExternalContribution": false
-    },
-    {
-      "key": "kylinmountain/tradingagents-ashare",
-      "owner": "KylinMountain",
-      "name": "TradingAgents-AShare",
-      "fullName": "KylinMountain/TradingAgents-AShare",
-      "category": "AI",
-      "categoryConfidence": 1,
-      "status": "active",
-      "statusText": "活跃",
-      "daysSinceActive": 0,
-      "lastActiveAt": "2026-06-04T15:56:34Z",
-      "latestCommit": null,
-      "contribution": {
-        "total": 1,
-        "opened": 0,
-        "merged": 0,
-        "closed": 1,
-        "latest": {
-          "number": 165,
-          "title": "Fix Docker frontend API base URL for remote deployments",
-          "state": "closed",
-          "updatedAt": "2026-05-09T09:18:00Z",
-          "url": "https://github.com/KylinMountain/TradingAgents-AShare/pull/165"
-        }
-      },
-      "isPrivate": false,
-      "description": "A 股多智能体智能投研系统 — 基于 TradingAgents 架构，15 名 AI Agent 模拟机构协作与实时辩论对抗，全流程可视化，支持 OpenClaw / Claude Code 集成，Docker 一键部署。",
-      "platforms": [
-        "github"
-      ],
-      "primaryUrl": "https://github.com/KylinMountain/TradingAgents-AShare",
-      "sources": [
-        {
-          "platform": "github",
-          "isPrivate": false,
-          "visibility": "Public",
-          "url": "https://github.com/KylinMountain/TradingAgents-AShare",
-          "updatedAt": "2026-06-04T15:56:34Z"
-        }
-      ],
-      "metrics": {
-        "stars": 524,
-        "forks": 165,
-        "openIssues": 19
-      },
-      "language": "Python",
-      "topics": [
-        "agents",
-        "ai",
-        "finance",
-        "llm",
-        "openclaw",
-        "openclaw-skills",
-        "skills",
-        "stock"
-      ],
-      "homepage": "https://app.510168.xyz",
-      "isExternalContribution": true
-    },
-    {
       "key": "marseventh/cloudflare-imgbed",
       "owner": "MarSeventh",
       "name": "CloudFlare-ImgBed",
@@ -1676,7 +1676,7 @@
       ],
       "metrics": {
         "stars": 5257,
-        "forks": 6546,
+        "forks": 6547,
         "openIssues": 33
       },
       "language": "JavaScript",
@@ -1753,10 +1753,10 @@
       "isExternalContribution": true
     },
     {
-      "key": "htazq/private-misc-01",
+      "key": "htazq/new-travding",
       "owner": "htazq",
-      "name": "private-misc-01",
-      "fullName": "htazq/private-misc-01",
+      "name": "new-travding",
+      "fullName": "htazq/new-travding",
       "category": "其他",
       "categoryConfidence": 0,
       "status": "active",
@@ -1765,10 +1765,10 @@
       "lastActiveAt": "2026-06-04T07:38:27Z",
       "latestCommit": {
         "sha": "a803a8e845ba77eca41725655241e5c9de1ceab6",
-        "message": "最近有代码更新",
+        "message": "Merge pull request #1 from htazq/feat/entry-risk-signal-codes\n\n重构账户风控并细化入场信号统计",
         "committedAt": "2026-06-04T07:38:27Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/new-travding/commit/a803a8e845ba77eca41725655241e5c9de1ceab6"
       },
       "contribution": {
         "total": 1,
@@ -1776,25 +1776,25 @@
         "merged": 1,
         "closed": 0,
         "latest": {
-          "number": 0,
-          "title": "已合并分支贡献",
+          "number": 1,
+          "title": "重构账户风控并细化入场信号统计",
           "state": "merged",
           "updatedAt": "2026-06-04T07:38:32Z",
-          "url": ""
+          "url": "https://github.com/htazq/new-travding/pull/1"
         }
       },
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/new-travding",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/new-travding",
           "updatedAt": "2026-06-04T07:38:27Z"
         }
       ],
@@ -1916,10 +1916,10 @@
       "isExternalContribution": true
     },
     {
-      "key": "htazq/private-script-01",
+      "key": "htazq/litevpn-infra",
       "owner": "htazq",
-      "name": "private-script-01",
-      "fullName": "htazq/private-script-01",
+      "name": "litevpn-infra",
+      "fullName": "htazq/litevpn-infra",
       "category": "脚本",
       "categoryConfidence": 0.2,
       "status": "active",
@@ -1928,24 +1928,24 @@
       "lastActiveAt": "2026-06-02T08:35:32Z",
       "latestCommit": {
         "sha": "65d88805cab4cccfab6d69ce15dd0f9d0ff4ddae",
-        "message": "最近有代码更新",
+        "message": "docs: 中文化项目文档",
         "committedAt": "2026-06-02T08:35:32Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/litevpn-infra/commit/65d88805cab4cccfab6d69ce15dd0f9d0ff4ddae"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "LiteVPN node infrastructure templates and operations",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/litevpn-infra",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/litevpn-infra",
           "updatedAt": "2026-06-02T08:35:32Z"
         }
       ],
@@ -1960,10 +1960,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-script-02",
+      "key": "htazq/litevpn-control-plane",
       "owner": "htazq",
-      "name": "private-script-02",
-      "fullName": "htazq/private-script-02",
+      "name": "litevpn-control-plane",
+      "fullName": "htazq/litevpn-control-plane",
       "category": "脚本",
       "categoryConfidence": 0.2,
       "status": "active",
@@ -1972,24 +1972,24 @@
       "lastActiveAt": "2026-06-02T08:35:31Z",
       "latestCommit": {
         "sha": "735ce8bcf38fc56dde550f3e5987c196d2e8cd5d",
-        "message": "最近有代码更新",
+        "message": "docs: 中文化项目文档",
         "committedAt": "2026-06-02T08:35:31Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/litevpn-control-plane/commit/735ce8bcf38fc56dde550f3e5987c196d2e8cd5d"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "LiteVPN control plane API admin and config delivery",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/litevpn-control-plane",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/litevpn-control-plane",
           "updatedAt": "2026-06-02T08:35:31Z"
         }
       ],
@@ -2004,10 +2004,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-script-03",
+      "key": "htazq/litevpn-client",
       "owner": "htazq",
-      "name": "private-script-03",
-      "fullName": "htazq/private-script-03",
+      "name": "litevpn-client",
+      "fullName": "htazq/litevpn-client",
       "category": "脚本",
       "categoryConfidence": 0.2,
       "status": "active",
@@ -2016,24 +2016,24 @@
       "lastActiveAt": "2026-06-02T08:35:31Z",
       "latestCommit": {
         "sha": "81cb565b9a87f4cdcfbb04f305d6e8b72950b7e3",
-        "message": "最近有代码更新",
+        "message": "docs: 中文化项目文档",
         "committedAt": "2026-06-02T08:35:31Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/litevpn-client/commit/81cb565b9a87f4cdcfbb04f305d6e8b72950b7e3"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "Cross-platform LiteVPN client for Windows Android and iOS",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/litevpn-client",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/litevpn-client",
           "updatedAt": "2026-06-02T08:35:31Z"
         }
       ],
@@ -2048,10 +2048,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-finance-01",
+      "key": "htazq/marketpipe",
       "owner": "htazq",
-      "name": "private-finance-01",
-      "fullName": "htazq/private-finance-01",
+      "name": "marketpipe",
+      "fullName": "htazq/marketpipe",
       "category": "金融",
       "categoryConfidence": 0.4,
       "status": "active",
@@ -2060,10 +2060,10 @@
       "lastActiveAt": "2026-05-28T07:35:52Z",
       "latestCommit": {
         "sha": "3818ece8c6a4700369c96b3484a075a8d8b87c5f",
-        "message": "最近有代码更新",
+        "message": "Merge pull request #1 from htazq/feat/marketpipe-mvp\n\nFeat/marketpipe mvp",
         "committedAt": "2026-05-28T07:35:52Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/marketpipe/commit/3818ece8c6a4700369c96b3484a075a8d8b87c5f"
       },
       "contribution": {
         "total": 1,
@@ -2071,25 +2071,25 @@
         "merged": 1,
         "closed": 0,
         "latest": {
-          "number": 0,
-          "title": "已合并分支贡献",
+          "number": 1,
+          "title": "Feat/marketpipe mvp",
           "state": "merged",
           "updatedAt": "2026-05-28T07:35:56Z",
-          "url": ""
+          "url": "https://github.com/htazq/marketpipe/pull/1"
         }
       },
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "MarketPipe financial market data API platform MVP",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/marketpipe",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/marketpipe",
           "updatedAt": "2026-05-28T07:35:52Z"
         }
       ],
@@ -2104,10 +2104,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-script-04",
+      "key": "htazq/fenghuoyi-card-game",
       "owner": "htazq",
-      "name": "private-script-04",
-      "fullName": "htazq/private-script-04",
+      "name": "fenghuoyi-card-game",
+      "fullName": "htazq/fenghuoyi-card-game",
       "category": "脚本",
       "categoryConfidence": 0.2,
       "status": "active",
@@ -2116,10 +2116,10 @@
       "lastActiveAt": "2026-05-28T03:22:21Z",
       "latestCommit": {
         "sha": "60a253399c541f0c070c5d1d6120b8a72098187e",
-        "message": "最近有代码更新",
+        "message": "ci: update actions for node 24",
         "committedAt": "2026-05-28T03:22:21Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/fenghuoyi-card-game/commit/60a253399c541f0c070c5d1d6120b8a72098187e"
       },
       "contribution": {
         "total": 4,
@@ -2127,25 +2127,25 @@
         "merged": 4,
         "closed": 0,
         "latest": {
-          "number": 0,
-          "title": "已合并分支贡献",
+          "number": 4,
+          "title": "ci: update actions for node 24",
           "state": "merged",
           "updatedAt": "2026-05-28T03:22:25Z",
-          "url": ""
+          "url": "https://github.com/htazq/fenghuoyi-card-game/pull/4"
         }
       },
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/fenghuoyi-card-game",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/fenghuoyi-card-game",
           "updatedAt": "2026-05-28T03:22:21Z"
         }
       ],
@@ -2160,10 +2160,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-finance-02",
+      "key": "htazq/mt5-strategy-lab",
       "owner": "htazq",
-      "name": "private-finance-02",
-      "fullName": "htazq/private-finance-02",
+      "name": "mt5-strategy-lab",
+      "fullName": "htazq/mt5-strategy-lab",
       "category": "金融",
       "categoryConfidence": 0.2,
       "status": "watch",
@@ -2172,24 +2172,24 @@
       "lastActiveAt": "2026-05-20T16:10:51Z",
       "latestCommit": {
         "sha": "4c44fef4c11fd70992ff1fae700bb4ffde0139f9",
-        "message": "最近有代码更新",
+        "message": "docs: register ustec h2l2 research candidate",
         "committedAt": "2026-05-20T16:10:51Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/mt5-strategy-lab/commit/4c44fef4c11fd70992ff1fae700bb4ffde0139f9"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "MT5 strategy research and backtesting lab",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/mt5-strategy-lab",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/mt5-strategy-lab",
           "updatedAt": "2026-05-20T16:10:51Z"
         }
       ],
@@ -2204,10 +2204,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-finance-03",
+      "key": "htazq/money-den",
       "owner": "htazq",
-      "name": "private-finance-03",
-      "fullName": "htazq/private-finance-03",
+      "name": "money-den",
+      "fullName": "htazq/money-den",
       "category": "金融",
       "categoryConfidence": 0.2,
       "status": "watch",
@@ -2216,24 +2216,24 @@
       "lastActiveAt": "2026-05-20T16:10:51Z",
       "latestCommit": {
         "sha": "4974a334af638b722ff99ce8c536536f5cb2587e",
-        "message": "最近有代码更新",
+        "message": "docs: add ustec h2l2 candidate review",
         "committedAt": "2026-05-20T16:10:51Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/money-den/commit/4974a334af638b722ff99ce8c536536f5cb2587e"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "CLI-first personal money command center: trading research, compliant airdrop tracking, wallets, and reports",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/money-den",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/money-den",
           "updatedAt": "2026-05-20T16:10:51Z"
         }
       ],
@@ -2248,10 +2248,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-misc-02",
+      "key": "htazq/brooks-es5m-rule-lab",
       "owner": "htazq",
-      "name": "private-misc-02",
-      "fullName": "htazq/private-misc-02",
+      "name": "brooks-es5m-rule-lab",
+      "fullName": "htazq/brooks-es5m-rule-lab",
       "category": "其他",
       "categoryConfidence": 0,
       "status": "watch",
@@ -2260,10 +2260,10 @@
       "lastActiveAt": "2026-05-20T16:10:51Z",
       "latestCommit": {
         "sha": "44e8d9a9ad1456b3da8fa05aa18b46131b4d4311",
-        "message": "最近有代码更新",
+        "message": "fix: use symbol-specific market contracts",
         "committedAt": "2026-05-20T16:10:51Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/brooks-es5m-rule-lab/commit/44e8d9a9ad1456b3da8fa05aa18b46131b4d4311"
       },
       "contribution": {
         "total": 18,
@@ -2271,25 +2271,25 @@
         "merged": 18,
         "closed": 0,
         "latest": {
-          "number": 0,
-          "title": "已合并分支贡献",
+          "number": 18,
+          "title": "Feat/automation audit orchestration vision",
           "state": "merged",
           "updatedAt": "2026-04-17T14:05:29Z",
-          "url": ""
+          "url": "https://github.com/htazq/brooks-es5m-rule-lab/pull/18"
         }
       },
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "Brooks-style ES 5m intraday rule research and backtesting system",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/brooks-es5m-rule-lab",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/brooks-es5m-rule-lab",
           "updatedAt": "2026-05-20T16:10:51Z"
         }
       ],
@@ -2304,10 +2304,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-web-02",
+      "key": "htazq/personal-knowledge-base",
       "owner": "htazq",
-      "name": "private-web-02",
-      "fullName": "htazq/private-web-02",
+      "name": "personal-knowledge-base",
+      "fullName": "htazq/personal-knowledge-base",
       "category": "网站",
       "categoryConfidence": 0.2,
       "status": "watch",
@@ -2316,24 +2316,24 @@
       "lastActiveAt": "2026-05-20T09:46:54Z",
       "latestCommit": {
         "sha": "2d6cb491742179fd46d2d8ab2adb3f18ea403717",
-        "message": "最近有代码更新",
+        "message": "feat: add 9deck asset dashboard",
         "committedAt": "2026-05-20T09:46:54Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/personal-knowledge-base/commit/2d6cb491742179fd46d2d8ab2adb3f18ea403717"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "Private personal inventory, knowledge base, and at9.net redesign notes",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/personal-knowledge-base",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/personal-knowledge-base",
           "updatedAt": "2026-05-20T09:46:54Z"
         }
       ],
@@ -2348,10 +2348,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-script-05",
+      "key": "eleaivideo/astro-yuanyuan",
       "owner": "eleaivideo",
-      "name": "private-script-05",
-      "fullName": "htazq/private-script-05",
+      "name": "astro-yuanyuan",
+      "fullName": "eleaivideo/astro-yuanyuan",
       "category": "脚本",
       "categoryConfidence": 0.2,
       "status": "watch",
@@ -2361,17 +2361,17 @@
       "latestCommit": null,
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "",
       "platforms": [
         "cnb"
       ],
-      "primaryUrl": "https://cnb.cool/htazq",
+      "primaryUrl": "https://cnb.cool/eleaivideo/Astro-yuanyuan",
       "sources": [
         {
           "platform": "cnb",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://cnb.cool/htazq",
+          "url": "https://cnb.cool/eleaivideo/Astro-yuanyuan",
           "updatedAt": "2026-05-19T05:06:02Z"
         }
       ],
@@ -2386,10 +2386,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-script-06",
+      "key": "htazq/card_game",
       "owner": "htazq",
-      "name": "private-script-06",
-      "fullName": "htazq/private-script-06",
+      "name": "card_game",
+      "fullName": "htazq/card_game",
       "category": "脚本",
       "categoryConfidence": 0.2,
       "status": "watch",
@@ -2399,17 +2399,17 @@
       "latestCommit": null,
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "",
       "platforms": [
         "cnb"
       ],
-      "primaryUrl": "https://cnb.cool/htazq",
+      "primaryUrl": "https://cnb.cool/htazq/card_game",
       "sources": [
         {
           "platform": "cnb",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://cnb.cool/htazq",
+          "url": "https://cnb.cool/htazq/card_game",
           "updatedAt": "2026-05-15T16:25:56Z"
         }
       ],
@@ -2424,10 +2424,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-web-03",
+      "key": "htazq/xy-doc",
       "owner": "htazq",
-      "name": "private-web-03",
-      "fullName": "htazq/private-web-03",
+      "name": "xy-doc",
+      "fullName": "htazq/xy-doc",
       "category": "网站",
       "categoryConfidence": 0.2,
       "status": "watch",
@@ -2436,24 +2436,24 @@
       "lastActiveAt": "2026-05-15T01:36:00Z",
       "latestCommit": {
         "sha": "7baa0948d36fe4aae11242ab1fbc9cc2383355a0",
-        "message": "最近有代码更新",
+        "message": "20260515暂存",
         "committedAt": "2026-05-15T01:36:00Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/xy-doc/commit/7baa0948d36fe4aae11242ab1fbc9cc2383355a0"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "xy-doc",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/xy-doc",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/xy-doc",
           "updatedAt": "2026-05-15T01:36:00Z"
         }
       ],
@@ -2582,10 +2582,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-misc-03",
+      "key": "htazq/aifs_perf_harness",
       "owner": "htazq",
-      "name": "private-misc-03",
-      "fullName": "htazq/private-misc-03",
+      "name": "aifs_perf_harness",
+      "fullName": "htazq/aifs_perf_harness",
       "category": "其他",
       "categoryConfidence": 0,
       "status": "watch",
@@ -2594,24 +2594,24 @@
       "lastActiveAt": "2026-05-12T07:08:36Z",
       "latestCommit": {
         "sha": "1748ba82c2fd9fa202ee48b8da6fc0d392c17ee5",
-        "message": "最近有代码更新",
+        "message": "fio和mdtest独立脚本完成",
         "committedAt": "2026-05-12T07:08:36Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/aifs_perf_harness/commit/1748ba82c2fd9fa202ee48b8da6fc0d392c17ee5"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "aifs_perf_harness",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/aifs_perf_harness",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/aifs_perf_harness",
           "updatedAt": "2026-05-12T07:08:36Z"
         }
       ],
@@ -2626,10 +2626,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-finance-04",
+      "key": "htazq/paio-autotrader",
       "owner": "htazq",
-      "name": "private-finance-04",
-      "fullName": "htazq/private-finance-04",
+      "name": "paio-autotrader",
+      "fullName": "htazq/paio-autotrader",
       "category": "金融",
       "categoryConfidence": 0.2,
       "status": "watch",
@@ -2638,10 +2638,10 @@
       "lastActiveAt": "2026-05-12T03:44:23Z",
       "latestCommit": {
         "sha": "da9d8ac2be7c7fd2bc01f8d11f5d89141462dc47",
-        "message": "最近有代码更新",
+        "message": "docs: add research operating contract",
         "committedAt": "2026-05-12T03:44:23Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/paio-autotrader/commit/da9d8ac2be7c7fd2bc01f8d11f5d89141462dc47"
       },
       "contribution": {
         "total": 3,
@@ -2649,25 +2649,25 @@
         "merged": 3,
         "closed": 0,
         "latest": {
-          "number": 0,
-          "title": "已合并分支贡献",
+          "number": 7,
+          "title": "Add Brooks BOPB and failed breakout research",
           "state": "merged",
           "updatedAt": "2026-05-11T15:34:57Z",
-          "url": ""
+          "url": "https://github.com/htazq/paio-autotrader/pull/7"
         }
       },
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/paio-autotrader",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/paio-autotrader",
           "updatedAt": "2026-05-12T03:44:23Z"
         }
       ],
@@ -2682,10 +2682,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-finance-05",
+      "key": "htazq/ibkr-auto-arb",
       "owner": "htazq",
-      "name": "private-finance-05",
-      "fullName": "htazq/private-finance-05",
+      "name": "ibkr-auto-arb",
+      "fullName": "htazq/ibkr-auto-arb",
       "category": "金融",
       "categoryConfidence": 0.8,
       "status": "watch",
@@ -2694,24 +2694,24 @@
       "lastActiveAt": "2026-04-28T06:52:06Z",
       "latestCommit": {
         "sha": "9d2876c281b569dad84e5168e6266f4116b32515",
-        "message": "最近有代码更新",
+        "message": "fix(live): 启动重放未应用订单事件",
         "committedAt": "2026-04-28T06:52:06Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/ibkr-auto-arb/commit/9d2876c281b569dad84e5168e6266f4116b32515"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "IBKR stock auto-trading and arbitrage platform with technical, fundamental and AI-ready research pipeline",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/ibkr-auto-arb",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/ibkr-auto-arb",
           "updatedAt": "2026-04-28T06:52:06Z"
         }
       ],
@@ -2764,10 +2764,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-finance-06",
+      "key": "htazq/polymarket",
       "owner": "htazq",
-      "name": "private-finance-06",
-      "fullName": "htazq/private-finance-06",
+      "name": "polymarket",
+      "fullName": "htazq/polymarket",
       "category": "金融",
       "categoryConfidence": 0.2,
       "status": "watch",
@@ -2776,24 +2776,24 @@
       "lastActiveAt": "2026-04-22T11:01:35Z",
       "latestCommit": {
         "sha": "c6bdbf7689d2a27a8cba1fa65d70aab97335da06",
-        "message": "最近有代码更新",
+        "message": "docs: refresh deployment and operations runbooks",
         "committedAt": "2026-04-22T11:01:35Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/polymarket/commit/c6bdbf7689d2a27a8cba1fa65d70aab97335da06"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "polymarket套利",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/polymarket",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/polymarket",
           "updatedAt": "2026-04-22T11:01:35Z"
         }
       ],
@@ -2808,10 +2808,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-script-07",
+      "key": "htazq/astro-yuanyuan",
       "owner": "htazq",
-      "name": "private-script-07",
-      "fullName": "htazq/private-script-07",
+      "name": "Astro-yuanyuan",
+      "fullName": "htazq/Astro-yuanyuan",
       "category": "脚本",
       "categoryConfidence": 0.2,
       "status": "watch",
@@ -2820,24 +2820,24 @@
       "lastActiveAt": "2026-04-22T09:27:30Z",
       "latestCommit": {
         "sha": "bc1dbd3f2651dc4e5e36deb67f2917ab8db68c60",
-        "message": "最近有代码更新",
+        "message": "refactor(i18n): remove shared content buckets zh, en, es, pt\n\nAfter splitting into independent locale directories, remove the now-redundant shared buckets:\n- zh/ (replaced by zh-CN, zh-TW, zh-HK)\n- en/ (replaced by en-US, en-GB)\n- es/ (replaced by es-ES, es-419)\n- pt/ (replaced by pt-PT, pt-BR)\n\nNow exactly 46 directories match 46 locales.\n\nVerified: npm run verify:i18n; npm run build (781 pages)",
         "committedAt": "2026-04-22T09:27:30Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/Astro-yuanyuan/commit/bc1dbd3f2651dc4e5e36deb67f2917ab8db68c60"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/Astro-yuanyuan",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/Astro-yuanyuan",
           "updatedAt": "2026-04-22T09:27:30Z"
         }
       ],
@@ -2966,10 +2966,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-script-08",
+      "key": "htazq/tuyaya",
       "owner": "htazq",
-      "name": "private-script-08",
-      "fullName": "htazq/private-script-08",
+      "name": "tuyaya",
+      "fullName": "htazq/tuyaya",
       "category": "脚本",
       "categoryConfidence": 0.2,
       "status": "watch",
@@ -2979,17 +2979,17 @@
       "latestCommit": null,
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "from tuyaya_private",
       "platforms": [
         "cnb"
       ],
-      "primaryUrl": "https://cnb.cool/htazq",
+      "primaryUrl": "https://cnb.cool/htazq/tuyaya",
       "sources": [
         {
           "platform": "cnb",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://cnb.cool/htazq",
+          "url": "https://cnb.cool/htazq/tuyaya",
           "updatedAt": "2026-04-18T06:25:57Z"
         }
       ],
@@ -3004,10 +3004,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-web-04",
+      "key": "htazq/knowledge",
       "owner": "htazq",
-      "name": "private-web-04",
-      "fullName": "htazq/private-web-04",
+      "name": "knowledge",
+      "fullName": "htazq/knowledge",
       "category": "网站",
       "categoryConfidence": 0.2,
       "status": "watch",
@@ -3017,17 +3017,17 @@
       "latestCommit": null,
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "知识库",
       "platforms": [
         "cnb"
       ],
-      "primaryUrl": "https://cnb.cool/htazq",
+      "primaryUrl": "https://cnb.cool/htazq/knowledge",
       "sources": [
         {
           "platform": "cnb",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://cnb.cool/htazq",
+          "url": "https://cnb.cool/htazq/knowledge",
           "updatedAt": "2026-04-15T10:48:01Z"
         }
       ],
@@ -3132,10 +3132,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-misc-04",
+      "key": "htazq/astro-yuanyuan-md-knowledge",
       "owner": "htazq",
-      "name": "private-misc-04",
-      "fullName": "htazq/private-misc-04",
+      "name": "astro-yuanyuan-md-knowledge",
+      "fullName": "htazq/astro-yuanyuan-md-knowledge",
       "category": "其他",
       "categoryConfidence": 0,
       "status": "watch",
@@ -3144,24 +3144,24 @@
       "lastActiveAt": "2026-04-12T14:16:45Z",
       "latestCommit": {
         "sha": "fac4a6ac68ebc154d305cf514f65b92cbd13172d",
-        "message": "最近有代码更新",
+        "message": "Initial commit",
         "committedAt": "2026-04-12T14:16:45Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/astro-yuanyuan-md-knowledge/commit/fac4a6ac68ebc154d305cf514f65b92cbd13172d"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "知识库",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/astro-yuanyuan-md-knowledge",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/astro-yuanyuan-md-knowledge",
           "updatedAt": "2026-04-12T14:16:45Z"
         }
       ],
@@ -3290,10 +3290,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-misc-05",
+      "key": "htazq/aifs-fs-functional-harness",
       "owner": "htazq",
-      "name": "private-misc-05",
-      "fullName": "htazq/private-misc-05",
+      "name": "aifs-fs-functional-harness",
+      "fullName": "htazq/aifs-fs-functional-harness",
       "category": "其他",
       "categoryConfidence": 0,
       "status": "watch",
@@ -3302,24 +3302,24 @@
       "lastActiveAt": "2026-04-02T12:12:09Z",
       "latestCommit": {
         "sha": "ba15f04c37a50727f28822b8b92b63ae0513367d",
-        "message": "最近有代码更新",
+        "message": "Make the harness deliverable as a full filesystem test repository\n\nThis change turns the repo from a runnable skeleton into a Chinese-first,\noperator-facing filesystem test repository with one CLI entrypoint,\ntimestamped run archives, a structured case catalog, suite design\ndocs, wrapper methodology, and step-by-step execution runbooks.\n\nConstraint: Must stay in the existing aifs-fs-functional-harness repository\nConstraint: Must remain Chinese-first and keep Python + Bash as the primary implementation path\nConstraint: Default execution path must stay lightweight under the local 100G/10G/5-core budget\nRejected: Rebuild the repo around a new framework or repo layout | would break continuity and violate the no-repo-reset requirement\nRejected: Make heavy Docker/Kubernetes/multi-VM orchestration the default path | conflicts with the requested lightweight local workflow\nConfidence: high\nScope-risk: moderate\nReversibility: clean\nDirective: When adding new suites or cases, update the CLI catalog, suite docs, category docs, and runbook together so automation and manual guidance do not drift\nTested: python3 -m pytest -q\nTested: python3 main.py --list-suites\nTested: python3 main.py --suite smoke --mount /auto_test/artifacts/localfs-default/mnt\nTested: python3 main.py --suite meta --mount /auto_test/artifacts/localfs-default/mnt\nTested: python3 main.py --suite recovery-lite --mount /auto_test/artifacts/localfs-default/mnt\nTested: python3 main.py --suite quota --mount /auto_test/artifacts/localfs-default/mnt\nNot-tested: Real quota-enabled filesystem behavior beyond skip path\nNot-tested: Real pjdfstest / xfstests binaries and wrapper execution against an installed toolchain\nNot-tested: Distinct dual-client mounts, fsck maintenance-window flow, and manual-only release runbook items",
         "committedAt": "2026-04-02T12:12:09Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/aifs-fs-functional-harness/commit/ba15f04c37a50727f28822b8b92b63ae0513367d"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/aifs-fs-functional-harness",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/aifs-fs-functional-harness",
           "updatedAt": "2026-04-02T12:12:09Z"
         }
       ],
@@ -3334,10 +3334,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-script-09",
+      "key": "htazq/shuake",
       "owner": "htazq",
-      "name": "private-script-09",
-      "fullName": "htazq/private-script-09",
+      "name": "shuake",
+      "fullName": "htazq/shuake",
       "category": "脚本",
       "categoryConfidence": 0.2,
       "status": "watch",
@@ -3346,24 +3346,24 @@
       "lastActiveAt": "2026-04-01T13:29:12Z",
       "latestCommit": {
         "sha": "710f4fffd58725ab9ba5c54a4bb5d790ab66ed3e",
-        "message": "最近有代码更新",
+        "message": "init",
         "committedAt": "2026-04-01T13:29:12Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/shuake/commit/710f4fffd58725ab9ba5c54a4bb5d790ab66ed3e"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "刷课",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/shuake",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/shuake",
           "updatedAt": "2026-04-01T13:29:12Z"
         }
       ],
@@ -3378,10 +3378,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-ai-01",
+      "key": "htazq/ai-weekly-ext",
       "owner": "htazq",
-      "name": "private-ai-01",
-      "fullName": "htazq/private-ai-01",
+      "name": "ai-weekly-ext",
+      "fullName": "htazq/ai-weekly-ext",
       "category": "AI",
       "categoryConfidence": 0.4,
       "status": "watch",
@@ -3390,24 +3390,24 @@
       "lastActiveAt": "2026-03-16T13:57:13Z",
       "latestCommit": {
         "sha": "405ed6e1d7a1380ee8a77619c564e87f3aa840fa",
-        "message": "最近有代码更新",
+        "message": "init",
         "committedAt": "2026-03-16T13:57:13Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/ai-weekly-ext/commit/405ed6e1d7a1380ee8a77619c564e87f3aa840fa"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "自动获取GPT、GEMINI、CLAUDE近一周内容自动整理出周报的谷歌浏览器扩展",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/ai-weekly-ext",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/ai-weekly-ext",
           "updatedAt": "2026-03-16T13:57:13Z"
         }
       ],
@@ -3422,36 +3422,36 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-finance-07",
+      "key": "htazq/global-sentinel",
       "owner": "htazq",
-      "name": "private-finance-07",
-      "fullName": "htazq/private-finance-07",
+      "name": "global-sentinel",
+      "fullName": "htazq/global-sentinel",
       "category": "金融",
       "categoryConfidence": 0.2,
       "status": "watch",
       "statusText": "关注",
-      "daysSinceActive": 84,
+      "daysSinceActive": 85,
       "lastActiveAt": "2026-03-12T01:17:21Z",
       "latestCommit": {
         "sha": "82cf38ada65e118f3bc6e66108ed39a9482cb8ff",
-        "message": "最近有代码更新",
+        "message": "fix: use fully qualified qwen model id",
         "committedAt": "2026-03-12T01:17:21Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/global-sentinel/commit/82cf38ada65e118f3bc6e66108ed39a9482cb8ff"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "全球舆情监控+链上资金追踪+AI多轮分析系统 | Global Sentiment & On-chain Whale Monitor with AI Analysis",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/global-sentinel",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/global-sentinel",
           "updatedAt": "2026-03-12T01:17:21Z"
         }
       ],
@@ -3466,10 +3466,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-finance-08",
+      "key": "htazq/mq5-trading",
       "owner": "htazq",
-      "name": "private-finance-08",
-      "fullName": "htazq/private-finance-08",
+      "name": "mq5-trading",
+      "fullName": "htazq/mq5-trading",
       "category": "金融",
       "categoryConfidence": 0.2,
       "status": "stale",
@@ -3478,24 +3478,24 @@
       "lastActiveAt": "2026-03-03T15:11:58Z",
       "latestCommit": {
         "sha": "25ed1ca9455e51bb177c116c0690477ae24a6607",
-        "message": "最近有代码更新",
+        "message": "chore: 清理产物并保留Alpha研究代码，更新README说明",
         "committedAt": "2026-03-03T15:11:58Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/mq5-trading/commit/25ed1ca9455e51bb177c116c0690477ae24a6607"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "mql5",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/mq5-trading",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/mq5-trading",
           "updatedAt": "2026-03-03T15:11:58Z"
         }
       ],
@@ -3510,10 +3510,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-finance-09",
+      "key": "htazq/polymarket-ai-arb",
       "owner": "htazq",
-      "name": "private-finance-09",
-      "fullName": "htazq/private-finance-09",
+      "name": "polymarket-ai-arb",
+      "fullName": "htazq/polymarket-ai-arb",
       "category": "金融",
       "categoryConfidence": 0.4,
       "status": "stale",
@@ -3522,24 +3522,24 @@
       "lastActiveAt": "2026-03-02T08:12:45Z",
       "latestCommit": {
         "sha": "6abc7f9ac55c950fa98ea481954dd056686ff7b0",
-        "message": "最近有代码更新",
+        "message": "feat: 60s scan loop and conditional LLM audit gate",
         "committedAt": "2026-03-02T08:12:45Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/polymarket-ai-arb/commit/6abc7f9ac55c950fa98ea481954dd056686ff7b0"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "AI-driven Polymarket arbitrage analysis system (24/7)",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/polymarket-ai-arb",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/polymarket-ai-arb",
           "updatedAt": "2026-03-02T08:12:45Z"
         }
       ],
@@ -3554,10 +3554,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-ai-02",
+      "key": "htazq/openclaw-memory",
       "owner": "htazq",
-      "name": "private-ai-02",
-      "fullName": "htazq/private-ai-02",
+      "name": "openclaw-memory",
+      "fullName": "htazq/openclaw-memory",
       "category": "AI",
       "categoryConfidence": 0.2,
       "status": "stale",
@@ -3566,24 +3566,24 @@
       "lastActiveAt": "2026-02-28T10:00:11Z",
       "latestCommit": {
         "sha": "c4f1aeab7e58089e36b7fdb4492b82f3295c242f",
-        "message": "最近有代码更新",
+        "message": "sync: 编排系统约定 + 模型更新 + 心跳监控 + 日记同步\n\n- MEMORY.md: 新增编排系统约定（稳定性/智能性/可用性）\n  - Ralph Loop 失败重试逻辑\n  - 模型自动路由规则（opus/codex/gemini/qwen）\n  - 响应可靠性约定（8秒ACK、分级熔断、进度播报）\n  - 通知策略（只在需要决策时推送）\n- MEMORY.md: 主3更新为 gemini-3.1-pro-high，主4新增 qwen3.5\n- HEARTBEAT.md: 配置子任务监控 + 系统健康检查\n- memory/: 同步近期日记文件",
         "committedAt": "2026-02-28T10:00:11Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/openclaw-memory/commit/c4f1aeab7e58089e36b7fdb4492b82f3295c242f"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/openclaw-memory",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/openclaw-memory",
           "updatedAt": "2026-02-28T10:00:11Z"
         }
       ],
@@ -3598,10 +3598,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-ai-03",
+      "key": "htazq/openclaw-orchestrator",
       "owner": "htazq",
-      "name": "private-ai-03",
-      "fullName": "htazq/private-ai-03",
+      "name": "openclaw-orchestrator",
+      "fullName": "htazq/openclaw-orchestrator",
       "category": "AI",
       "categoryConfidence": 0.4,
       "status": "stale",
@@ -3610,24 +3610,24 @@
       "lastActiveAt": "2026-02-28T09:42:42Z",
       "latestCommit": {
         "sha": "2e3c88ad4ac1313f372f1f49e77780a946483d92",
-        "message": "最近有代码更新",
+        "message": "feat: update orchestration config - model routing, Ralph Loop, docs\n\n- Updated models.yaml with detailed routing rules matching MEMORY.md\n- Added Ralph Loop retry categories and subtask timeouts\n- Added docs/ORCHESTRATION.md with full orchestration system documentation\n- Covers stability, intelligence, usability pillars",
         "committedAt": "2026-02-28T09:42:42Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/openclaw-orchestrator/commit/2e3c88ad4ac1313f372f1f49e77780a946483d92"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "OpenClaw Agent Orchestration System - 多模型编排+自动CI/CD+交叉Review",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/openclaw-orchestrator",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/openclaw-orchestrator",
           "updatedAt": "2026-02-28T09:42:42Z"
         }
       ],
@@ -3642,10 +3642,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-misc-06",
+      "key": "htazq/china-travding",
       "owner": "htazq",
-      "name": "private-misc-06",
-      "fullName": "htazq/private-misc-06",
+      "name": "china-travding",
+      "fullName": "htazq/china-travding",
       "category": "其他",
       "categoryConfidence": 0,
       "status": "stale",
@@ -3654,24 +3654,24 @@
       "lastActiveAt": "2026-02-28T02:33:14Z",
       "latestCommit": {
         "sha": "b4ed9916a10ff59b6188edb1ff0cffe40b17d3a4",
-        "message": "最近有代码更新",
+        "message": "init",
         "committedAt": "2026-02-28T02:33:14Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/china-travding/commit/b4ed9916a10ff59b6188edb1ff0cffe40b17d3a4"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/china-travding",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/china-travding",
           "updatedAt": "2026-02-28T02:33:14Z"
         }
       ],
@@ -3686,10 +3686,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-script-10",
+      "key": "htazq/automation",
       "owner": "htazq",
-      "name": "private-script-10",
-      "fullName": "htazq/private-script-10",
+      "name": "automation",
+      "fullName": "htazq/automation",
       "category": "脚本",
       "categoryConfidence": 0.4,
       "status": "stale",
@@ -3698,24 +3698,24 @@
       "lastActiveAt": "2026-02-26T09:48:37Z",
       "latestCommit": {
         "sha": "a30cbbbb65e93a4f3e3baf01e930c6e02e2a98d7",
-        "message": "最近有代码更新",
+        "message": "修改条件",
         "committedAt": "2026-02-26T09:48:37Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/automation/commit/a30cbbbb65e93a4f3e3baf01e930c6e02e2a98d7"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/automation",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/automation",
           "updatedAt": "2026-02-26T09:48:37Z"
         }
       ],
@@ -3730,10 +3730,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-misc-07",
+      "key": "htazq/relay",
       "owner": "htazq",
-      "name": "private-misc-07",
-      "fullName": "htazq/private-misc-07",
+      "name": "relay",
+      "fullName": "htazq/relay",
       "category": "其他",
       "categoryConfidence": 0,
       "status": "stale",
@@ -3742,24 +3742,24 @@
       "lastActiveAt": "2026-02-24T10:08:49Z",
       "latestCommit": {
         "sha": "4771a3e32f53bf4ad7adcbc514acc24a6d16531e",
-        "message": "最近有代码更新",
+        "message": "mobaxterm庚哥",
         "committedAt": "2026-02-24T10:08:49Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/relay/commit/4771a3e32f53bf4ad7adcbc514acc24a6d16531e"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "一款远程工具（ssh/rdp/telnet/console等）",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/relay",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/relay",
           "updatedAt": "2026-02-24T10:08:49Z"
         }
       ],
@@ -3774,10 +3774,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-finance-10",
+      "key": "htazq/follow-orders",
       "owner": "htazq",
-      "name": "private-finance-10",
-      "fullName": "htazq/private-finance-10",
+      "name": "follow-orders",
+      "fullName": "htazq/follow-orders",
       "category": "金融",
       "categoryConfidence": 0.2,
       "status": "stale",
@@ -3786,24 +3786,24 @@
       "lastActiveAt": "2026-02-24T09:59:49Z",
       "latestCommit": {
         "sha": "f11618ddb946a07d71aee1d6a05da23021b4f65e",
-        "message": "最近有代码更新",
+        "message": "feat(mapping): keep bidirectional rules with ordered multi-candidate resolution",
         "committedAt": "2026-02-24T09:59:49Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/follow-orders/commit/f11618ddb946a07d71aee1d6a05da23021b4f65e"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "mt5跟单，rust+mq5(ea)",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/follow-orders",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/follow-orders",
           "updatedAt": "2026-02-24T09:59:49Z"
         }
       ],
@@ -3818,10 +3818,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-misc-08",
+      "key": "htazq/travding",
       "owner": "htazq",
-      "name": "private-misc-08",
-      "fullName": "htazq/private-misc-08",
+      "name": "travding",
+      "fullName": "htazq/travding",
       "category": "其他",
       "categoryConfidence": 0,
       "status": "stale",
@@ -3830,24 +3830,24 @@
       "lastActiveAt": "2026-02-24T09:55:04Z",
       "latestCommit": {
         "sha": "c63049c8ec1fecd04f8dfa1bac6318b89c1e0c02",
-        "message": "最近有代码更新",
+        "message": "Add files via upload",
         "committedAt": "2026-02-24T09:55:04Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/travding/commit/c63049c8ec1fecd04f8dfa1bac6318b89c1e0c02"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "Artifact repository (post-reset).",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/travding",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/travding",
           "updatedAt": "2026-02-24T09:55:04Z"
         }
       ],
@@ -3906,10 +3906,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-finance-11",
+      "key": "htazq/crypto-cross-sectional-momentum",
       "owner": "htazq",
-      "name": "private-finance-11",
-      "fullName": "htazq/private-finance-11",
+      "name": "crypto-cross-sectional-momentum",
+      "fullName": "htazq/crypto-cross-sectional-momentum",
       "category": "金融",
       "categoryConfidence": 0.2,
       "status": "stale",
@@ -3918,24 +3918,24 @@
       "lastActiveAt": "2026-02-19T05:17:46Z",
       "latestCommit": {
         "sha": "7f993f0d9d1a51b06ae3b97824f5eaadf378b313",
-        "message": "最近有代码更新",
+        "message": "chore: initialize crypto cross-sectional momentum research repo",
         "committedAt": "2026-02-19T05:17:46Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/crypto-cross-sectional-momentum/commit/7f993f0d9d1a51b06ae3b97824f5eaadf378b313"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/crypto-cross-sectional-momentum",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/crypto-cross-sectional-momentum",
           "updatedAt": "2026-02-19T05:17:46Z"
         }
       ],
@@ -3950,10 +3950,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-misc-09",
+      "key": "htazq/skill-to-animation-studio",
       "owner": "htazq",
-      "name": "private-misc-09",
-      "fullName": "htazq/private-misc-09",
+      "name": "skill-to-animation-studio",
+      "fullName": "htazq/skill-to-animation-studio",
       "category": "其他",
       "categoryConfidence": 0,
       "status": "stale",
@@ -3962,24 +3962,24 @@
       "lastActiveAt": "2026-02-17T02:19:36Z",
       "latestCommit": {
         "sha": "4f199035e3ae086d2de0a5af68cd95a013f91363",
-        "message": "最近有代码更新",
+        "message": "feat: 初始化 Skill 自动转动画视频开箱即用仓库",
         "committedAt": "2026-02-17T02:19:36Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/skill-to-animation-studio/commit/4f199035e3ae086d2de0a5af68cd95a013f91363"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/skill-to-animation-studio",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/skill-to-animation-studio",
           "updatedAt": "2026-02-17T02:19:36Z"
         }
       ],
@@ -3994,10 +3994,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-finance-12",
+      "key": "htazq/a-stock-screening",
       "owner": "htazq",
-      "name": "private-finance-12",
-      "fullName": "htazq/private-finance-12",
+      "name": "A-Stock-Screening",
+      "fullName": "htazq/A-Stock-Screening",
       "category": "金融",
       "categoryConfidence": 0.2,
       "status": "stale",
@@ -4006,24 +4006,24 @@
       "lastActiveAt": "2026-02-12T14:02:31Z",
       "latestCommit": {
         "sha": "e8aebfcd2982bfbec748bde0edcda940f5f22517",
-        "message": "最近有代码更新",
+        "message": "修复板块严格链路并完善评分缓存测试文档",
         "committedAt": "2026-02-12T14:02:31Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/A-Stock-Screening/commit/e8aebfcd2982bfbec748bde0edcda940f5f22517"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "A股选股",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/A-Stock-Screening",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/A-Stock-Screening",
           "updatedAt": "2026-02-12T14:02:31Z"
         }
       ],
@@ -4038,10 +4038,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-misc-10",
+      "key": "htazq/yingdao",
       "owner": "htazq",
-      "name": "private-misc-10",
-      "fullName": "htazq/private-misc-10",
+      "name": "yingdao",
+      "fullName": "htazq/yingdao",
       "category": "其他",
       "categoryConfidence": 0,
       "status": "stale",
@@ -4050,24 +4050,24 @@
       "lastActiveAt": "2026-01-30T09:29:32Z",
       "latestCommit": {
         "sha": "927356589ebec840c538850234311cd143a6d273",
-        "message": "最近有代码更新",
+        "message": "修复分页抓取",
         "committedAt": "2026-01-30T09:29:32Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/yingdao/commit/927356589ebec840c538850234311cd143a6d273"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/yingdao",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/yingdao",
           "updatedAt": "2026-01-30T09:29:32Z"
         }
       ],
@@ -4082,10 +4082,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-misc-11",
+      "key": "htazq/catalystx-api",
       "owner": "htazq",
-      "name": "private-misc-11",
-      "fullName": "htazq/private-misc-11",
+      "name": "catalystx-api",
+      "fullName": "htazq/catalystx-api",
       "category": "其他",
       "categoryConfidence": 0,
       "status": "stale",
@@ -4094,24 +4094,24 @@
       "lastActiveAt": "2026-01-26T07:09:57Z",
       "latestCommit": {
         "sha": "c47d0786948ce33f805949833c62d71878305d2a",
-        "message": "最近有代码更新",
+        "message": "修正sqlite路径解析避免落到容器内部",
         "committedAt": "2026-01-26T07:09:57Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/catalystx-api/commit/c47d0786948ce33f805949833c62d71878305d2a"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/catalystx-api",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/catalystx-api",
           "updatedAt": "2026-01-26T07:09:57Z"
         }
       ],
@@ -4126,10 +4126,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-script-11",
+      "key": "htazq/openwebui-auth",
       "owner": "htazq",
-      "name": "private-script-11",
-      "fullName": "htazq/private-script-11",
+      "name": "openwebui-auth",
+      "fullName": "htazq/openwebui-auth",
       "category": "脚本",
       "categoryConfidence": 0.2,
       "status": "stale",
@@ -4138,32 +4138,32 @@
       "lastActiveAt": "2026-01-24T12:43:43Z",
       "latestCommit": {
         "sha": "0cba08bbc13e136bc4ce3aa56f9556cb76364137",
-        "message": "最近有代码更新",
+        "message": "Feat: Implement backend-driven usage billing with admin config",
         "committedAt": "2026-01-24T12:43:43Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/openwebui-auth/commit/0cba08bbc13e136bc4ce3aa56f9556cb76364137"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "",
       "platforms": [
         "github",
         "cnb"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/openwebui-auth",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/openwebui-auth",
           "updatedAt": "2026-01-24T12:43:43Z"
         },
         {
           "platform": "cnb",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://cnb.cool/htazq",
+          "url": "https://cnb.cool/htazq/openwebui-auth",
           "updatedAt": "2026-01-21T13:58:37Z"
         }
       ],
@@ -4178,10 +4178,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-ai-04",
+      "key": "htazq/alphagpt_mt5",
       "owner": "htazq",
-      "name": "private-ai-04",
-      "fullName": "htazq/private-ai-04",
+      "name": "AlphaGPT_mt5",
+      "fullName": "htazq/AlphaGPT_mt5",
       "category": "AI",
       "categoryConfidence": 0.2,
       "status": "stale",
@@ -4190,24 +4190,24 @@
       "lastActiveAt": "2026-01-18T13:53:48Z",
       "latestCommit": {
         "sha": "515b6592b36ff79dfcec700abde34f52de14ed90",
-        "message": "最近有代码更新",
+        "message": "新增因子解释与回测可视化，完善训练输出",
         "committedAt": "2026-01-18T13:53:48Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/AlphaGPT_mt5/commit/515b6592b36ff79dfcec700abde34f52de14ed90"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/AlphaGPT_mt5",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/AlphaGPT_mt5",
           "updatedAt": "2026-01-18T13:53:48Z"
         }
       ],
@@ -4222,10 +4222,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-misc-12",
+      "key": "htazq/nofx_strategy",
       "owner": "htazq",
-      "name": "private-misc-12",
-      "fullName": "htazq/private-misc-12",
+      "name": "nofx_strategy",
+      "fullName": "htazq/nofx_strategy",
       "category": "其他",
       "categoryConfidence": 0,
       "status": "stale",
@@ -4234,24 +4234,24 @@
       "lastActiveAt": "2026-01-09T09:08:43Z",
       "latestCommit": {
         "sha": "e0d78a551d444d2b2ddd2192145ff325cb007308",
-        "message": "最近有代码更新",
+        "message": "init",
         "committedAt": "2026-01-09T09:08:43Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/nofx_strategy/commit/e0d78a551d444d2b2ddd2192145ff325cb007308"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/nofx_strategy",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/nofx_strategy",
           "updatedAt": "2026-01-09T09:08:43Z"
         }
       ],
@@ -4348,10 +4348,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-tool-01",
+      "key": "htazq/docker-image",
       "owner": "htazq",
-      "name": "private-tool-01",
-      "fullName": "htazq/private-tool-01",
+      "name": "docker-image",
+      "fullName": "htazq/docker-image",
       "category": "工具",
       "categoryConfidence": 0.6,
       "status": "stale",
@@ -4361,17 +4361,17 @@
       "latestCommit": null,
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "",
       "platforms": [
         "cnb"
       ],
-      "primaryUrl": "https://cnb.cool/htazq",
+      "primaryUrl": "https://cnb.cool/htazq/docker-image",
       "sources": [
         {
           "platform": "cnb",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://cnb.cool/htazq",
+          "url": "https://cnb.cool/htazq/docker-image",
           "updatedAt": "2025-11-26T12:37:10Z"
         }
       ],
@@ -4386,10 +4386,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-tool-02",
+      "key": "htazq/ai-image-process",
       "owner": "htazq",
-      "name": "private-tool-02",
-      "fullName": "htazq/private-tool-02",
+      "name": "ai-image-process",
+      "fullName": "htazq/ai-image-process",
       "category": "工具",
       "categoryConfidence": 0.4,
       "status": "stale",
@@ -4398,24 +4398,24 @@
       "lastActiveAt": "2025-11-25T09:33:44Z",
       "latestCommit": {
         "sha": "cf88d243eb940826fa5a690cd32f55b6b99ea1c7",
-        "message": "最近有代码更新",
+        "message": "feat: Implement interactive cropping and background color\n\nIntroduce a new function `generateCroppedImage` for interactive image cropping with pan and zoom functionality. Update the UI to include controls for background color, AI background replacement mode, and tolerance. Refactor image processing to utilize the new cropping capabilities.",
         "committedAt": "2025-11-25T09:33:44Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/ai-image-process/commit/cf88d243eb940826fa5a690cd32f55b6b99ea1c7"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "ai-image-process",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/ai-image-process",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/ai-image-process",
           "updatedAt": "2025-11-25T09:33:44Z"
         }
       ],
@@ -4868,10 +4868,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-script-12",
+      "key": "htazq/k8s",
       "owner": "htazq",
-      "name": "private-script-12",
-      "fullName": "htazq/private-script-12",
+      "name": "k8s",
+      "fullName": "htazq/k8s",
       "category": "脚本",
       "categoryConfidence": 0.2,
       "status": "stale",
@@ -4880,10 +4880,10 @@
       "lastActiveAt": "2025-11-09T14:21:22Z",
       "latestCommit": {
         "sha": "86978e229917c803d00dc3b889110d834f8f3cb4",
-        "message": "最近有代码更新",
+        "message": "优化dzot-mirror",
         "committedAt": "2025-11-09T14:21:22Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/k8s/commit/86978e229917c803d00dc3b889110d834f8f3cb4"
       },
       "contribution": {
         "total": 1,
@@ -4891,25 +4891,25 @@
         "merged": 1,
         "closed": 0,
         "latest": {
-          "number": 0,
-          "title": "已合并分支贡献",
+          "number": 1,
+          "title": "Jules was unable to complete the task in time. Please review the work…",
           "state": "merged",
           "updatedAt": "2025-06-16T12:05:20Z",
-          "url": ""
+          "url": "https://github.com/htazq/k8s/pull/1"
         }
       },
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/k8s",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/k8s",
           "updatedAt": "2025-11-09T14:21:22Z"
         }
       ],
@@ -5012,10 +5012,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-misc-13",
+      "key": "htazq/rust",
       "owner": "htazq",
-      "name": "private-misc-13",
-      "fullName": "htazq/private-misc-13",
+      "name": "rust",
+      "fullName": "htazq/rust",
       "category": "其他",
       "categoryConfidence": 0,
       "status": "stale",
@@ -5024,24 +5024,24 @@
       "lastActiveAt": "2025-09-06T10:26:38Z",
       "latestCommit": {
         "sha": "21ffa6b3e9d8208f9ec6bcaffea68a7403e63237",
-        "message": "最近有代码更新",
+        "message": "添加项目架构分析文档和清理临时文件\n\n- 添加CLAUDE.md项目指导文档，记录2025-09-06架构重构分析结果\n- 分析确认项目已达到企业级标准，无需重构\n- 清理.codebuddy临时图片文件\n\n🤖 Generated with [Claude Code](https://claude.ai/code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>",
         "committedAt": "2025-09-06T10:26:38Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/rust/commit/21ffa6b3e9d8208f9ec6bcaffea68a7403e63237"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/rust",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/rust",
           "updatedAt": "2025-09-06T10:26:38Z"
         }
       ],
@@ -5056,10 +5056,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-script-13",
+      "key": "htazq/4x4-chess",
       "owner": "htazq",
-      "name": "private-script-13",
-      "fullName": "htazq/private-script-13",
+      "name": "4x4-chess",
+      "fullName": "htazq/4x4-chess",
       "category": "脚本",
       "categoryConfidence": 0.2,
       "status": "stale",
@@ -5068,10 +5068,10 @@
       "lastActiveAt": "2025-08-16T04:49:06Z",
       "latestCommit": {
         "sha": "9ea3f34da5f71d6bf4828cad09fd97e175777bda",
-        "message": "最近有代码更新",
+        "message": "解决Redis配置合并冲突 - 采用Headless Service方案",
         "committedAt": "2025-08-16T04:49:06Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/4x4-chess/commit/9ea3f34da5f71d6bf4828cad09fd97e175777bda"
       },
       "contribution": {
         "total": 2,
@@ -5079,25 +5079,25 @@
         "merged": 2,
         "closed": 0,
         "latest": {
-          "number": 0,
-          "title": "已合并分支贡献",
+          "number": 2,
+          "title": "特性: 完成Taro/Vue3射箭棋重构（4x4棋盘及详细规则对齐）",
           "state": "merged",
           "updatedAt": "2025-05-28T13:13:58Z",
-          "url": ""
+          "url": "https://github.com/htazq/4x4-chess/pull/2"
         }
       },
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "16子",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/4x4-chess",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/4x4-chess",
           "updatedAt": "2025-08-16T04:49:06Z"
         }
       ],
@@ -5112,10 +5112,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-script-14",
+      "key": "htazq/juzi",
       "owner": "htazq",
-      "name": "private-script-14",
-      "fullName": "htazq/private-script-14",
+      "name": "juzi",
+      "fullName": "htazq/juzi",
       "category": "脚本",
       "categoryConfidence": 0.2,
       "status": "stale",
@@ -5124,24 +5124,24 @@
       "lastActiveAt": "2025-07-26T14:18:19Z",
       "latestCommit": {
         "sha": "22d9e0aab18995e43d72bd6db469cc3b80dc33a4",
-        "message": "最近有代码更新",
+        "message": "暂存",
         "committedAt": "2025-07-26T14:18:19Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/juzi/commit/22d9e0aab18995e43d72bd6db469cc3b80dc33a4"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/juzi",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/juzi",
           "updatedAt": "2025-07-26T14:18:19Z"
         }
       ],
@@ -5156,10 +5156,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-misc-14",
+      "key": "htazq/my-content-creation-kit",
       "owner": "htazq",
-      "name": "private-misc-14",
-      "fullName": "htazq/private-misc-14",
+      "name": "my-content-creation-kit",
+      "fullName": "htazq/my-content-creation-kit",
       "category": "其他",
       "categoryConfidence": 0,
       "status": "stale",
@@ -5168,24 +5168,24 @@
       "lastActiveAt": "2025-07-04T09:42:40Z",
       "latestCommit": {
         "sha": "25f043aae8ab1895f1af6529fa3e515bc6fff03e",
-        "message": "最近有代码更新",
+        "message": "自动生成内容: 2025-07-05 到 2025-07-05",
         "committedAt": "2025-07-04T09:42:40Z",
-        "author": "htazq",
-        "url": ""
+        "author": "GitHub Actions Bot",
+        "url": "https://github.com/htazq/my-content-creation-kit/commit/25f043aae8ab1895f1af6529fa3e515bc6fff03e"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/my-content-creation-kit",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/my-content-creation-kit",
           "updatedAt": "2025-07-04T09:42:40Z"
         }
       ],
@@ -5200,10 +5200,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-finance-13",
+      "key": "htazq/view-trading-information",
       "owner": "htazq",
-      "name": "private-finance-13",
-      "fullName": "htazq/private-finance-13",
+      "name": "view-trading-information",
+      "fullName": "htazq/view-trading-information",
       "category": "金融",
       "categoryConfidence": 0.2,
       "status": "stale",
@@ -5212,24 +5212,24 @@
       "lastActiveAt": "2025-06-03T11:27:48Z",
       "latestCommit": {
         "sha": "b7712bd3576457adcdb058b5e527ba5926ca6030",
-        "message": "最近有代码更新",
+        "message": "完成四个规则文件的Context7 MCP强制验证机制集成",
         "committedAt": "2025-06-03T11:27:48Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/view-trading-information/commit/b7712bd3576457adcdb058b5e527ba5926ca6030"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/view-trading-information",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/view-trading-information",
           "updatedAt": "2025-06-03T11:27:48Z"
         }
       ],
@@ -5332,10 +5332,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-web-05",
+      "key": "htazq/my_www",
       "owner": "htazq",
-      "name": "private-web-05",
-      "fullName": "htazq/private-web-05",
+      "name": "my_www",
+      "fullName": "htazq/my_www",
       "category": "网站",
       "categoryConfidence": 0.2,
       "status": "stale",
@@ -5344,24 +5344,24 @@
       "lastActiveAt": "2025-03-06T05:46:39Z",
       "latestCommit": {
         "sha": "5aa852deb0c3d7106cdb0f57ac538d73b064445c",
-        "message": "最近有代码更新",
+        "message": "Merge branch 'main' of https://github.com/htazq/my_www",
         "committedAt": "2025-03-06T05:46:39Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/my_www/commit/5aa852deb0c3d7106cdb0f57ac538d73b064445c"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/my_www",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/my_www",
           "updatedAt": "2025-03-06T05:46:39Z"
         }
       ],
@@ -5376,10 +5376,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-web-06",
+      "key": "htazq/hugo-blog",
       "owner": "htazq",
-      "name": "private-web-06",
-      "fullName": "htazq/private-web-06",
+      "name": "hugo-blog",
+      "fullName": "htazq/hugo-blog",
       "category": "网站",
       "categoryConfidence": 0.4,
       "status": "stale",
@@ -5388,24 +5388,24 @@
       "lastActiveAt": "2025-02-21T22:01:30Z",
       "latestCommit": {
         "sha": "d349ffcb58de8e7556f572e6e3c87d8ade3fde5c",
-        "message": "最近有代码更新",
+        "message": "Create USTECm_20250222_0601.md",
         "committedAt": "2025-02-21T22:01:30Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/hugo-blog/commit/d349ffcb58de8e7556f572e6e3c87d8ade3fde5c"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/hugo-blog",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/hugo-blog",
           "updatedAt": "2025-02-21T22:01:30Z"
         }
       ],
@@ -5496,10 +5496,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-misc-15",
+      "key": "htazq/private",
       "owner": "htazq",
-      "name": "private-misc-15",
-      "fullName": "htazq/private-misc-15",
+      "name": "private",
+      "fullName": "htazq/private",
       "category": "其他",
       "categoryConfidence": 0,
       "status": "stale",
@@ -5509,17 +5509,17 @@
       "latestCommit": null,
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "私有",
       "platforms": [
         "cnb"
       ],
-      "primaryUrl": "https://cnb.cool/htazq",
+      "primaryUrl": "https://cnb.cool/htazq/private",
       "sources": [
         {
           "platform": "cnb",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://cnb.cool/htazq",
+          "url": "https://cnb.cool/htazq/private",
           "updatedAt": "2024-12-06T05:03:03Z"
         }
       ],
@@ -5534,10 +5534,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-ai-05",
+      "key": "htazq/chatgpt-web-midjourney-proxy",
       "owner": "htazq",
-      "name": "private-ai-05",
-      "fullName": "htazq/private-ai-05",
+      "name": "chatgpt-web-midjourney-proxy",
+      "fullName": "htazq/chatgpt-web-midjourney-proxy",
       "category": "AI",
       "categoryConfidence": 0.4,
       "status": "stale",
@@ -5546,24 +5546,24 @@
       "lastActiveAt": "2024-11-29T09:31:54Z",
       "latestCommit": {
         "sha": "c0746c5a39c308d7df92ddc4b4341a1ef1dec697",
-        "message": "最近有代码更新",
+        "message": "Initial commit\n\nCreated from https://vercel.com/new",
         "committedAt": "2024-11-29T09:31:54Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/chatgpt-web-midjourney-proxy/commit/c0746c5a39c308d7df92ddc4b4341a1ef1dec697"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/chatgpt-web-midjourney-proxy",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/chatgpt-web-midjourney-proxy",
           "updatedAt": "2024-11-29T09:31:54Z"
         }
       ],
@@ -5578,10 +5578,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-script-15",
+      "key": "htazq/1",
       "owner": "htazq",
-      "name": "private-script-15",
-      "fullName": "htazq/private-script-15",
+      "name": "1",
+      "fullName": "htazq/1",
       "category": "脚本",
       "categoryConfidence": 0.2,
       "status": "stale",
@@ -5590,24 +5590,24 @@
       "lastActiveAt": "2024-11-27T08:02:55Z",
       "latestCommit": {
         "sha": "1beec0607aab5b75420db2b44d3be7804bb84ca9",
-        "message": "最近有代码更新",
+        "message": "Initial commit\n\nCreated from https://vercel.com/new",
         "committedAt": "2024-11-27T08:02:55Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/1/commit/1beec0607aab5b75420db2b44d3be7804bb84ca9"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/1",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/1",
           "updatedAt": "2024-11-27T08:02:55Z"
         }
       ],
@@ -5622,10 +5622,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-script-16",
+      "key": "htazq/word_status",
       "owner": "htazq",
-      "name": "private-script-16",
-      "fullName": "htazq/private-script-16",
+      "name": "word_status",
+      "fullName": "htazq/word_status",
       "category": "脚本",
       "categoryConfidence": 0.2,
       "status": "stale",
@@ -5634,24 +5634,24 @@
       "lastActiveAt": "2024-10-12T09:43:52Z",
       "latestCommit": {
         "sha": "84d0de654c0327084704718353865ea57ed6bd51",
-        "message": "最近有代码更新",
+        "message": "Update uptime.config.ts",
         "committedAt": "2024-10-12T09:43:52Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/word_status/commit/84d0de654c0327084704718353865ea57ed6bd51"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "My status",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/word_status",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/word_status",
           "updatedAt": "2024-10-12T09:43:52Z"
         }
       ],
@@ -5666,10 +5666,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-script-17",
+      "key": "htazq/coze2openai",
       "owner": "htazq",
-      "name": "private-script-17",
-      "fullName": "htazq/private-script-17",
+      "name": "coze2openai",
+      "fullName": "htazq/coze2openai",
       "category": "脚本",
       "categoryConfidence": 0.2,
       "status": "stale",
@@ -5678,24 +5678,24 @@
       "lastActiveAt": "2024-04-27T03:04:40Z",
       "latestCommit": {
         "sha": "76987b88070f09c82fa989c39b267634777b8dee",
-        "message": "最近有代码更新",
+        "message": "Initial commit\n\nCreated from https://vercel.com/new",
         "committedAt": "2024-04-27T03:04:40Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/coze2openai/commit/76987b88070f09c82fa989c39b267634777b8dee"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/coze2openai",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/coze2openai",
           "updatedAt": "2024-04-27T03:04:40Z"
         }
       ],
@@ -5798,10 +5798,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-misc-16",
+      "key": "htazq/my-memos",
       "owner": "htazq",
-      "name": "private-misc-16",
-      "fullName": "htazq/private-misc-16",
+      "name": "my-memos",
+      "fullName": "htazq/my-memos",
       "category": "其他",
       "categoryConfidence": 0,
       "status": "stale",
@@ -5811,17 +5811,17 @@
       "latestCommit": null,
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/my-memos",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/my-memos",
           "updatedAt": "2024-01-23T23:03:54Z"
         }
       ],
@@ -5836,10 +5836,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-misc-17",
+      "key": "htazq/nezha_backup",
       "owner": "htazq",
-      "name": "private-misc-17",
-      "fullName": "htazq/private-misc-17",
+      "name": "nezha_backup",
+      "fullName": "htazq/nezha_backup",
       "category": "其他",
       "categoryConfidence": 0,
       "status": "stale",
@@ -5848,24 +5848,24 @@
       "lastActiveAt": "2023-10-30T08:40:36Z",
       "latestCommit": {
         "sha": "c899acaeb9f229f5f9cf7073d7c384484a0eba21",
-        "message": "最近有代码更新",
+        "message": "Initial commit",
         "committedAt": "2023-10-30T08:40:36Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/nezha_backup/commit/c899acaeb9f229f5f9cf7073d7c384484a0eba21"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/nezha_backup",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/nezha_backup",
           "updatedAt": "2023-10-30T08:40:36Z"
         }
       ],
@@ -5880,10 +5880,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-ai-06",
+      "key": "htazq/autogpt-next-web",
       "owner": "htazq",
-      "name": "private-ai-06",
-      "fullName": "htazq/private-ai-06",
+      "name": "AutoGPT-Next-Web",
+      "fullName": "htazq/AutoGPT-Next-Web",
       "category": "AI",
       "categoryConfidence": 0.2,
       "status": "stale",
@@ -5892,24 +5892,24 @@
       "lastActiveAt": "2023-07-10T02:22:14Z",
       "latestCommit": {
         "sha": "80530f937425ea3b7606a2b7c87c541aa36f9b6a",
-        "message": "最近有代码更新",
+        "message": "Initial commit\n\nCreated from https://vercel.com/new",
         "committedAt": "2023-07-10T02:22:14Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/AutoGPT-Next-Web/commit/80530f937425ea3b7606a2b7c87c541aa36f9b6a"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/AutoGPT-Next-Web",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/AutoGPT-Next-Web",
           "updatedAt": "2023-07-10T02:22:14Z"
         }
       ],
@@ -5924,10 +5924,10 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-web-07",
+      "key": "htazq/go-proxy-bingai-vercel",
       "owner": "htazq",
-      "name": "private-web-07",
-      "fullName": "htazq/private-web-07",
+      "name": "go-proxy-bingai-vercel",
+      "fullName": "htazq/go-proxy-bingai-vercel",
       "category": "网站",
       "categoryConfidence": 0.4,
       "status": "stale",
@@ -5936,24 +5936,24 @@
       "lastActiveAt": "2023-06-03T07:20:33Z",
       "latestCommit": {
         "sha": "73c637e321d8a6adb94224ca4d54ed8e14b65835",
-        "message": "最近有代码更新",
+        "message": "Initial commit\n\nCreated from https://vercel.com/new",
         "committedAt": "2023-06-03T07:20:33Z",
         "author": "htazq",
-        "url": ""
+        "url": "https://github.com/htazq/go-proxy-bingai-vercel/commit/73c637e321d8a6adb94224ca4d54ed8e14b65835"
       },
       "contribution": null,
       "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
+      "description": "",
       "platforms": [
         "github"
       ],
-      "primaryUrl": "https://github.com/htazq",
+      "primaryUrl": "https://github.com/htazq/go-proxy-bingai-vercel",
       "sources": [
         {
           "platform": "github",
           "isPrivate": true,
           "visibility": "Private",
-          "url": "https://github.com/htazq",
+          "url": "https://github.com/htazq/go-proxy-bingai-vercel",
           "updatedAt": "2023-06-03T07:20:33Z"
         }
       ],

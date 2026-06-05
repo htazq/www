@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-05T01:11:40.377Z",
+  "generatedAt": "2026-06-05T01:24:41.792Z",
   "source": {
     "github": {
       "configured": true,
@@ -1295,6 +1295,65 @@
   ],
   "repositories": [
     {
+      "key": "kylinmountain/tradingagents-ashare",
+      "owner": "KylinMountain",
+      "name": "TradingAgents-AShare",
+      "fullName": "KylinMountain/TradingAgents-AShare",
+      "category": "AI",
+      "categoryConfidence": 1,
+      "status": "active",
+      "statusText": "活跃",
+      "daysSinceActive": 0,
+      "lastActiveAt": "2026-06-05T01:22:43Z",
+      "latestCommit": null,
+      "contribution": {
+        "total": 1,
+        "opened": 0,
+        "merged": 0,
+        "closed": 1,
+        "latest": {
+          "number": 165,
+          "title": "Fix Docker frontend API base URL for remote deployments",
+          "state": "closed",
+          "updatedAt": "2026-06-05T01:22:43Z",
+          "url": "https://github.com/KylinMountain/TradingAgents-AShare/pull/165"
+        }
+      },
+      "isPrivate": false,
+      "description": "A 股多智能体智能投研系统 — 基于 TradingAgents 架构，15 名 AI Agent 模拟机构协作与实时辩论对抗，全流程可视化，支持 OpenClaw / Claude Code 集成，Docker 一键部署。",
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/KylinMountain/TradingAgents-AShare",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": false,
+          "visibility": "Public",
+          "url": "https://github.com/KylinMountain/TradingAgents-AShare",
+          "updatedAt": "2026-06-05T01:22:43Z"
+        }
+      ],
+      "metrics": {
+        "stars": 524,
+        "forks": 165,
+        "openIssues": 19
+      },
+      "language": "Python",
+      "topics": [
+        "agents",
+        "ai",
+        "finance",
+        "llm",
+        "openclaw",
+        "openclaw-skills",
+        "skills",
+        "stock"
+      ],
+      "homepage": "https://app.510168.xyz",
+      "isExternalContribution": true
+    },
+    {
       "key": "openclaw/openclaw",
       "owner": "openclaw",
       "name": "openclaw",
@@ -1304,7 +1363,7 @@
       "status": "active",
       "statusText": "活跃",
       "daysSinceActive": 0,
-      "lastActiveAt": "2026-06-05T01:11:34Z",
+      "lastActiveAt": "2026-06-05T01:22:35Z",
       "latestCommit": null,
       "contribution": {
         "total": 1,
@@ -1331,13 +1390,13 @@
           "isPrivate": false,
           "visibility": "Public",
           "url": "https://github.com/openclaw/openclaw",
-          "updatedAt": "2026-06-05T01:11:34Z"
+          "updatedAt": "2026-06-05T01:22:35Z"
         }
       ],
       "metrics": {
-        "stars": 376874,
-        "forks": 78755,
-        "openIssues": 7694
+        "stars": 376873,
+        "forks": 78756,
+        "openIssues": 7699
       },
       "language": "TypeScript",
       "topics": [
@@ -1351,6 +1410,58 @@
       ],
       "homepage": "https://openclaw.ai",
       "isExternalContribution": true
+    },
+    {
+      "key": "htazq/private-web-01",
+      "owner": "htazq",
+      "name": "private-web-01",
+      "fullName": "htazq/private-web-01",
+      "category": "网站",
+      "categoryConfidence": 0.2,
+      "status": "active",
+      "statusText": "活跃",
+      "daysSinceActive": 0,
+      "lastActiveAt": "2026-06-05T01:14:04Z",
+      "latestCommit": {
+        "sha": "10a1e91661d6bd9f82226b399e315d77a81ca889",
+        "message": "最近有代码更新",
+        "committedAt": "2026-06-05T01:14:04Z",
+        "author": "htazq",
+        "url": ""
+      },
+      "contribution": null,
+      "isPrivate": true,
+      "description": "自用资产，已做元数据脱敏保护",
+      "platforms": [
+        "github",
+        "cnb"
+      ],
+      "primaryUrl": "https://github.com/htazq",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": true,
+          "visibility": "Private",
+          "url": "https://github.com/htazq",
+          "updatedAt": "2026-06-05T01:14:04Z"
+        },
+        {
+          "platform": "cnb",
+          "isPrivate": true,
+          "visibility": "Private",
+          "url": "https://cnb.cool/htazq",
+          "updatedAt": "2025-11-20T02:43:23Z"
+        }
+      ],
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "language": "HTML",
+      "topics": [],
+      "homepage": "",
+      "isExternalContribution": false
     },
     {
       "key": "ariadng/metatrader-mcp-server",
@@ -1524,117 +1635,6 @@
       "isExternalContribution": false
     },
     {
-      "key": "htazq/private-web-01",
-      "owner": "htazq",
-      "name": "private-web-01",
-      "fullName": "htazq/private-web-01",
-      "category": "网站",
-      "categoryConfidence": 0.2,
-      "status": "active",
-      "statusText": "活跃",
-      "daysSinceActive": 0,
-      "lastActiveAt": "2026-06-04T15:57:45Z",
-      "latestCommit": {
-        "sha": "badab056e23584938a9ac3e8cc32197d03315b53",
-        "message": "最近有代码更新",
-        "committedAt": "2026-06-04T15:57:45Z",
-        "author": "htazq",
-        "url": ""
-      },
-      "contribution": null,
-      "isPrivate": true,
-      "description": "自用资产，已做元数据脱敏保护",
-      "platforms": [
-        "github",
-        "cnb"
-      ],
-      "primaryUrl": "https://github.com/htazq",
-      "sources": [
-        {
-          "platform": "github",
-          "isPrivate": true,
-          "visibility": "Private",
-          "url": "https://github.com/htazq",
-          "updatedAt": "2026-06-04T15:57:45Z"
-        },
-        {
-          "platform": "cnb",
-          "isPrivate": true,
-          "visibility": "Private",
-          "url": "https://cnb.cool/htazq",
-          "updatedAt": "2025-11-20T02:43:23Z"
-        }
-      ],
-      "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0
-      },
-      "language": "HTML",
-      "topics": [],
-      "homepage": "",
-      "isExternalContribution": false
-    },
-    {
-      "key": "kylinmountain/tradingagents-ashare",
-      "owner": "KylinMountain",
-      "name": "TradingAgents-AShare",
-      "fullName": "KylinMountain/TradingAgents-AShare",
-      "category": "AI",
-      "categoryConfidence": 1,
-      "status": "active",
-      "statusText": "活跃",
-      "daysSinceActive": 0,
-      "lastActiveAt": "2026-06-04T15:56:34Z",
-      "latestCommit": null,
-      "contribution": {
-        "total": 1,
-        "opened": 0,
-        "merged": 0,
-        "closed": 1,
-        "latest": {
-          "number": 165,
-          "title": "Fix Docker frontend API base URL for remote deployments",
-          "state": "closed",
-          "updatedAt": "2026-05-09T09:18:00Z",
-          "url": "https://github.com/KylinMountain/TradingAgents-AShare/pull/165"
-        }
-      },
-      "isPrivate": false,
-      "description": "A 股多智能体智能投研系统 — 基于 TradingAgents 架构，15 名 AI Agent 模拟机构协作与实时辩论对抗，全流程可视化，支持 OpenClaw / Claude Code 集成，Docker 一键部署。",
-      "platforms": [
-        "github"
-      ],
-      "primaryUrl": "https://github.com/KylinMountain/TradingAgents-AShare",
-      "sources": [
-        {
-          "platform": "github",
-          "isPrivate": false,
-          "visibility": "Public",
-          "url": "https://github.com/KylinMountain/TradingAgents-AShare",
-          "updatedAt": "2026-06-04T15:56:34Z"
-        }
-      ],
-      "metrics": {
-        "stars": 524,
-        "forks": 165,
-        "openIssues": 19
-      },
-      "language": "Python",
-      "topics": [
-        "agents",
-        "ai",
-        "finance",
-        "llm",
-        "openclaw",
-        "openclaw-skills",
-        "skills",
-        "stock"
-      ],
-      "homepage": "https://app.510168.xyz",
-      "isExternalContribution": true
-    },
-    {
       "key": "marseventh/cloudflare-imgbed",
       "owner": "MarSeventh",
       "name": "CloudFlare-ImgBed",
@@ -1676,7 +1676,7 @@
       ],
       "metrics": {
         "stars": 5257,
-        "forks": 6546,
+        "forks": 6547,
         "openIssues": 33
       },
       "language": "JavaScript",
@@ -3430,7 +3430,7 @@
       "categoryConfidence": 0.2,
       "status": "watch",
       "statusText": "关注",
-      "daysSinceActive": 84,
+      "daysSinceActive": 85,
       "lastActiveAt": "2026-03-12T01:17:21Z",
       "latestCommit": {
         "sha": "82cf38ada65e118f3bc6e66108ed39a9482cb8ff",
