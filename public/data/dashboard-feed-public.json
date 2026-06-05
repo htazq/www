@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-05T01:24:41.792Z",
+  "generatedAt": "2026-06-05T02:06:14.368Z",
   "source": {
     "github": {
       "configured": true,
       "usedApi": true,
-      "repos": 79
+      "repos": 83
     },
     "cnb": {
       "configured": false,
@@ -21,45 +21,45 @@
     "githubSelfOnly": false
   },
   "summary": {
-    "total": 108,
+    "total": 112,
     "mirrorAcrossPlatforms": 4,
-    "externalContributions": 8,
+    "externalContributions": 12,
     "byCategory": [
       {
         "name": "其他",
-        "count": 31
+        "count": 32
       },
       {
         "name": "脚本",
         "count": 27
       },
       {
+        "name": "网站",
+        "count": 15
+      },
+      {
         "name": "金融",
         "count": 15
       },
       {
-        "name": "网站",
+        "name": "AI",
         "count": 14
       },
       {
-        "name": "AI",
-        "count": 13
-      },
-      {
         "name": "工具",
-        "count": 8
+        "count": 9
       }
     ],
     "byStatus": {
-      "active": 16,
-      "watch": 31,
+      "active": 19,
+      "watch": 32,
       "stale": 61
     },
     "bySource": {
       "github": {
-        "total": 79,
+        "total": 83,
         "private": 57,
-        "public": 22
+        "public": 26
       },
       "cnb": {
         "total": 33,
@@ -67,9 +67,15 @@
         "public": 25
       }
     },
+    "authoredIssues": {
+      "repos": 10,
+      "total": 27,
+      "open": 13,
+      "closed": 14
+    },
     "staleRepos": 61,
-    "activeRepos": 16,
-    "watchRepos": 31
+    "activeRepos": 19,
+    "watchRepos": 32
   },
   "topByStale": [
     {
@@ -109,6 +115,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "platforms": [
         "github"
       ],
@@ -170,6 +177,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "platforms": [
         "github"
       ],
@@ -231,6 +239,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "platforms": [
         "github"
       ],
@@ -292,6 +301,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "platforms": [
         "github"
       ],
@@ -353,6 +363,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "platforms": [
         "github"
       ],
@@ -414,6 +425,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "platforms": [
         "github"
       ],
@@ -475,6 +487,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "platforms": [
         "github"
       ],
@@ -536,6 +549,18 @@
         "url": ""
       },
       "contribution": null,
+      "issues": {
+        "total": 1,
+        "open": 0,
+        "closed": 1,
+        "latest": {
+          "number": 0,
+          "title": "最近有 issue 更新",
+          "state": "closed",
+          "updatedAt": "2026-02-18T00:54:02Z",
+          "url": ""
+        }
+      },
       "platforms": [
         "github"
       ],
@@ -597,6 +622,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "platforms": [
         "github"
       ],
@@ -658,6 +684,7 @@
         "url": "https://github.com/htazq/go_test_W/commit/7a97180eb5528d201e87e58158a06c8a2efd264a"
       },
       "contribution": null,
+      "issues": null,
       "platforms": [
         "github"
       ],
@@ -719,6 +746,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "platforms": [
         "github"
       ],
@@ -780,6 +808,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "platforms": [
         "github"
       ],
@@ -841,6 +870,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "platforms": [
         "github"
       ],
@@ -902,6 +932,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "platforms": [
         "github"
       ],
@@ -963,6 +994,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "platforms": [
         "github"
       ],
@@ -1024,6 +1056,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "platforms": [
         "github",
         "cnb"
@@ -1093,6 +1126,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "platforms": [
         "github"
       ],
@@ -1154,6 +1188,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "platforms": [
         "github"
       ],
@@ -1215,6 +1250,7 @@
         "url": "https://github.com/htazq/Auto/commit/4b9d2fc928834fbfc0ca844d18a6a92702c6fd53"
       },
       "contribution": null,
+      "issues": null,
       "platforms": [
         "github"
       ],
@@ -1295,6 +1331,115 @@
   ],
   "repositories": [
     {
+      "key": "openai/codex",
+      "owner": "openai",
+      "name": "codex",
+      "fullName": "openai/codex",
+      "category": "AI",
+      "categoryConfidence": 0.2,
+      "status": "active",
+      "statusText": "活跃",
+      "daysSinceActive": 0,
+      "lastActiveAt": "2026-06-05T02:05:30Z",
+      "latestCommit": null,
+      "contribution": null,
+      "issues": {
+        "total": 3,
+        "open": 2,
+        "closed": 1,
+        "latest": {
+          "number": 19305,
+          "title": "Feature request: Full Computer Use support for Codex Desktop on Windows",
+          "state": "open",
+          "updatedAt": "2026-06-03T05:38:59Z",
+          "url": "https://github.com/openai/codex/issues/19305"
+        }
+      },
+      "isPrivate": false,
+      "description": "Lightweight coding agent that runs in your terminal",
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/openai/codex",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": false,
+          "visibility": "Public",
+          "url": "https://github.com/openai/codex",
+          "updatedAt": "2026-06-05T02:05:30Z"
+        }
+      ],
+      "metrics": {
+        "stars": 88682,
+        "forks": 13025,
+        "openIssues": 6073
+      },
+      "language": "Rust",
+      "topics": [],
+      "homepage": "",
+      "isExternalContribution": true
+    },
+    {
+      "key": "openclaw/openclaw",
+      "owner": "openclaw",
+      "name": "openclaw",
+      "fullName": "openclaw/openclaw",
+      "category": "AI",
+      "categoryConfidence": 0.4,
+      "status": "active",
+      "statusText": "活跃",
+      "daysSinceActive": 0,
+      "lastActiveAt": "2026-06-05T02:05:20Z",
+      "latestCommit": null,
+      "contribution": {
+        "total": 1,
+        "opened": 0,
+        "merged": 0,
+        "closed": 1,
+        "latest": {
+          "number": 6918,
+          "title": "docs: add Chinese README",
+          "state": "closed",
+          "updatedAt": "2026-03-11T04:03:03Z",
+          "url": "https://github.com/openclaw/openclaw/pull/6918"
+        }
+      },
+      "issues": null,
+      "isPrivate": false,
+      "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/openclaw/openclaw",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": false,
+          "visibility": "Public",
+          "url": "https://github.com/openclaw/openclaw",
+          "updatedAt": "2026-06-05T02:05:20Z"
+        }
+      ],
+      "metrics": {
+        "stars": 376877,
+        "forks": 78751,
+        "openIssues": 7699
+      },
+      "language": "TypeScript",
+      "topics": [
+        "ai",
+        "assistant",
+        "crustacean",
+        "molty",
+        "openclaw",
+        "own-your-data",
+        "personal"
+      ],
+      "homepage": "https://openclaw.ai",
+      "isExternalContribution": true
+    },
+    {
       "key": "kylinmountain/tradingagents-ashare",
       "owner": "KylinMountain",
       "name": "TradingAgents-AShare",
@@ -1304,7 +1449,7 @@
       "status": "active",
       "statusText": "活跃",
       "daysSinceActive": 0,
-      "lastActiveAt": "2026-06-05T01:22:43Z",
+      "lastActiveAt": "2026-06-05T01:52:23Z",
       "latestCommit": null,
       "contribution": {
         "total": 1,
@@ -1319,6 +1464,7 @@
           "url": "https://github.com/KylinMountain/TradingAgents-AShare/pull/165"
         }
       },
+      "issues": null,
       "isPrivate": false,
       "description": "A 股多智能体智能投研系统 — 基于 TradingAgents 架构，15 名 AI Agent 模拟机构协作与实时辩论对抗，全流程可视化，支持 OpenClaw / Claude Code 集成，Docker 一键部署。",
       "platforms": [
@@ -1331,11 +1477,11 @@
           "isPrivate": false,
           "visibility": "Public",
           "url": "https://github.com/KylinMountain/TradingAgents-AShare",
-          "updatedAt": "2026-06-05T01:22:43Z"
+          "updatedAt": "2026-06-05T01:52:23Z"
         }
       ],
       "metrics": {
-        "stars": 524,
+        "stars": 525,
         "forks": 165,
         "openIssues": 19
       },
@@ -1354,64 +1500,6 @@
       "isExternalContribution": true
     },
     {
-      "key": "openclaw/openclaw",
-      "owner": "openclaw",
-      "name": "openclaw",
-      "fullName": "openclaw/openclaw",
-      "category": "AI",
-      "categoryConfidence": 0.4,
-      "status": "active",
-      "statusText": "活跃",
-      "daysSinceActive": 0,
-      "lastActiveAt": "2026-06-05T01:22:35Z",
-      "latestCommit": null,
-      "contribution": {
-        "total": 1,
-        "opened": 0,
-        "merged": 0,
-        "closed": 1,
-        "latest": {
-          "number": 6918,
-          "title": "docs: add Chinese README",
-          "state": "closed",
-          "updatedAt": "2026-03-11T04:03:03Z",
-          "url": "https://github.com/openclaw/openclaw/pull/6918"
-        }
-      },
-      "isPrivate": false,
-      "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
-      "platforms": [
-        "github"
-      ],
-      "primaryUrl": "https://github.com/openclaw/openclaw",
-      "sources": [
-        {
-          "platform": "github",
-          "isPrivate": false,
-          "visibility": "Public",
-          "url": "https://github.com/openclaw/openclaw",
-          "updatedAt": "2026-06-05T01:22:35Z"
-        }
-      ],
-      "metrics": {
-        "stars": 376873,
-        "forks": 78756,
-        "openIssues": 7699
-      },
-      "language": "TypeScript",
-      "topics": [
-        "ai",
-        "assistant",
-        "crustacean",
-        "molty",
-        "openclaw",
-        "own-your-data",
-        "personal"
-      ],
-      "homepage": "https://openclaw.ai",
-      "isExternalContribution": true
-    },
-    {
       "key": "htazq/private-web-01",
       "owner": "htazq",
       "name": "private-web-01",
@@ -1421,15 +1509,16 @@
       "status": "active",
       "statusText": "活跃",
       "daysSinceActive": 0,
-      "lastActiveAt": "2026-06-05T01:14:04Z",
+      "lastActiveAt": "2026-06-05T01:27:04Z",
       "latestCommit": {
-        "sha": "10a1e91661d6bd9f82226b399e315d77a81ca889",
+        "sha": "f99c4c3f35f84e307be838555063f6edaac25e46",
         "message": "最近有代码更新",
-        "committedAt": "2026-06-05T01:14:04Z",
+        "committedAt": "2026-06-05T01:27:04Z",
         "author": "htazq",
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -1443,7 +1532,7 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq",
-          "updatedAt": "2026-06-05T01:14:04Z"
+          "updatedAt": "2026-06-05T01:27:04Z"
         },
         {
           "platform": "cnb",
@@ -1488,6 +1577,7 @@
           "url": "https://github.com/ariadng/metatrader-mcp-server/pull/30"
         }
       },
+      "issues": null,
       "isPrivate": false,
       "description": "Model Context Protocol (MCP) to enable AI LLMs to trade using MetaTrader platform",
       "platforms": [
@@ -1547,6 +1637,7 @@
           "url": "https://github.com/NoFxAiOS/nofx/pull/1315"
         }
       },
+      "issues": null,
       "isPrivate": false,
       "description": "Your AI trading terminal assistant for US stocks, commodities, forex, and crypto.",
       "platforms": [
@@ -1609,6 +1700,7 @@
         "url": "https://github.com/htazq/htazq/commit/5fdbed72dea7a42a06192a1f56a029c891e90d5c"
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": false,
       "description": "",
       "platforms": [
@@ -1659,6 +1751,7 @@
           "url": "https://github.com/MarSeventh/CloudFlare-ImgBed/pull/536"
         }
       },
+      "issues": null,
       "isPrivate": false,
       "description": "🏖️ A serverless, open-source file hosting solution built on Cloudflare. Supports image hosting, secure file storage, and personal cloud drive capabilities.",
       "platforms": [
@@ -1700,6 +1793,63 @@
       "isExternalContribution": true
     },
     {
+      "key": "zfile-dev/zfile",
+      "owner": "zfile-dev",
+      "name": "zfile",
+      "fullName": "zfile-dev/zfile",
+      "category": "网站",
+      "categoryConfidence": 0.2,
+      "status": "active",
+      "statusText": "活跃",
+      "daysSinceActive": 0,
+      "lastActiveAt": "2026-06-04T13:40:57Z",
+      "latestCommit": null,
+      "contribution": null,
+      "issues": {
+        "total": 1,
+        "open": 0,
+        "closed": 1,
+        "latest": {
+          "number": 469,
+          "title": "域名反代是空白",
+          "state": "closed",
+          "updatedAt": "2023-01-02T06:34:48Z",
+          "url": "https://github.com/zfile-dev/zfile/issues/469"
+        }
+      },
+      "isPrivate": false,
+      "description": "在线云盘、网盘、OneDrive、云存储、私有云、对象存储、h5ai、上传、下载",
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/zfile-dev/zfile",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": false,
+          "visibility": "Public",
+          "url": "https://github.com/zfile-dev/zfile",
+          "updatedAt": "2026-06-04T13:40:57Z"
+        }
+      ],
+      "metrics": {
+        "stars": 10758,
+        "forks": 1957,
+        "openIssues": 56
+      },
+      "language": "Java",
+      "topics": [
+        "clouddisk",
+        "h2",
+        "h5ai",
+        "mysql",
+        "spring-boot",
+        "vue"
+      ],
+      "homepage": "https://www.zfile.vip",
+      "isExternalContribution": true
+    },
+    {
       "key": "amchii/tg-signer",
       "owner": "amchii",
       "name": "tg-signer",
@@ -1724,6 +1874,7 @@
           "url": "https://github.com/amchii/tg-signer/pull/100"
         }
       },
+      "issues": null,
       "isPrivate": false,
       "description": "电报自动执行（签到、发送消息、点击键盘、AI回复等）；个人、群组、频道消息监控、转发与自动回复。Automated Telegram tasks (check-ins, sending messages, keyboard clicks, AI replies, etc.); monitoring, forwarding, and auto-replying to private, group, and channel messages.",
       "platforms": [
@@ -1783,6 +1934,7 @@
           "url": ""
         }
       },
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -1840,6 +1992,18 @@
           "url": "https://github.com/GOODBOY008/r-shell/pull/27"
         }
       },
+      "issues": {
+        "total": 9,
+        "open": 5,
+        "closed": 4,
+        "latest": {
+          "number": 8,
+          "title": "Bug: New Connection 表单输入框无法使用 Ctrl+C / Ctrl+V 复制粘贴",
+          "state": "closed",
+          "updatedAt": "2026-06-04T02:14:07Z",
+          "url": "https://github.com/GOODBOY008/r-shell/issues/8"
+        }
+      },
       "isPrivate": false,
       "description": "🚀  Lightweight open-source SSH/SFTP/FTP client built with Rust & Tauri 2. Only ~34 MB memory. Installer under 10 MB . Split terminals, SFTP, GPU monitoring. macOS/Windows/Linux.",
       "platforms": [
@@ -1890,6 +2054,7 @@
           "url": "https://github.com/MarSeventh/Sanyue-ImgHub/pull/32"
         }
       },
+      "issues": null,
       "isPrivate": false,
       "description": "Frontend of https://github.com/MarSeventh/CloudFlare-ImgBed.",
       "platforms": [
@@ -1934,6 +2099,18 @@
         "url": ""
       },
       "contribution": null,
+      "issues": {
+        "total": 1,
+        "open": 0,
+        "closed": 1,
+        "latest": {
+          "number": 0,
+          "title": "最近有 issue 更新",
+          "state": "closed",
+          "updatedAt": "2026-06-02T08:07:51Z",
+          "url": ""
+        }
+      },
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -1978,6 +2155,18 @@
         "url": ""
       },
       "contribution": null,
+      "issues": {
+        "total": 2,
+        "open": 0,
+        "closed": 2,
+        "latest": {
+          "number": 0,
+          "title": "最近有 issue 更新",
+          "state": "closed",
+          "updatedAt": "2026-06-02T08:07:52Z",
+          "url": ""
+        }
+      },
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -2022,6 +2211,18 @@
         "url": ""
       },
       "contribution": null,
+      "issues": {
+        "total": 2,
+        "open": 0,
+        "closed": 2,
+        "latest": {
+          "number": 0,
+          "title": "最近有 issue 更新",
+          "state": "closed",
+          "updatedAt": "2026-06-02T08:07:51Z",
+          "url": ""
+        }
+      },
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -2046,6 +2247,56 @@
       "topics": [],
       "homepage": "",
       "isExternalContribution": false
+    },
+    {
+      "key": "trae-ai/trae",
+      "owner": "Trae-AI",
+      "name": "TRAE",
+      "fullName": "Trae-AI/TRAE",
+      "category": "其他",
+      "categoryConfidence": 0,
+      "status": "active",
+      "statusText": "活跃",
+      "daysSinceActive": 2,
+      "lastActiveAt": "2026-06-02T08:13:20Z",
+      "latestCommit": null,
+      "contribution": null,
+      "issues": {
+        "total": 2,
+        "open": 2,
+        "closed": 0,
+        "latest": {
+          "number": 2543,
+          "title": "[Strong Feedback] Auto-run still requires manual confirmation and breaks SOLO/Agent workflows",
+          "state": "open",
+          "updatedAt": "2026-06-02T08:13:20Z",
+          "url": "https://github.com/Trae-AI/TRAE/issues/2543"
+        }
+      },
+      "isPrivate": false,
+      "description": "TRAE official",
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/Trae-AI/TRAE",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": false,
+          "visibility": "Public",
+          "url": "https://github.com/Trae-AI/TRAE",
+          "updatedAt": "2026-06-02T08:13:20Z"
+        }
+      ],
+      "metrics": {
+        "stars": 907,
+        "forks": 47,
+        "openIssues": 1309
+      },
+      "language": "",
+      "topics": [],
+      "homepage": "",
+      "isExternalContribution": true
     },
     {
       "key": "htazq/private-finance-01",
@@ -2078,6 +2329,7 @@
           "url": ""
         }
       },
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -2134,6 +2386,7 @@
           "url": ""
         }
       },
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -2178,6 +2431,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -2222,6 +2476,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -2278,6 +2533,7 @@
           "url": ""
         }
       },
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -2322,6 +2578,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -2360,6 +2617,7 @@
       "lastActiveAt": "2026-05-19T05:06:02Z",
       "latestCommit": null,
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -2398,6 +2656,7 @@
       "lastActiveAt": "2026-05-15T16:25:56Z",
       "latestCommit": null,
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -2432,7 +2691,7 @@
       "categoryConfidence": 0.2,
       "status": "watch",
       "statusText": "关注",
-      "daysSinceActive": 20,
+      "daysSinceActive": 21,
       "lastActiveAt": "2026-05-15T01:36:00Z",
       "latestCommit": {
         "sha": "7baa0948d36fe4aae11242ab1fbc9cc2383355a0",
@@ -2442,6 +2701,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -2480,6 +2740,7 @@
       "lastActiveAt": "2026-05-13T15:24:12Z",
       "latestCommit": null,
       "contribution": null,
+      "issues": null,
       "isPrivate": false,
       "description": "本仓库基于 [comfyui_base为底层镜像] 结合cnb-xu提供的代码魔改ComfyUI源码 合并而成。 宗旨在于让广大用户可以更快捷更简单的在CNB使用ComfyUI。感谢fuliai / comfyui_base的开发者：ai佬/🅰🅸来事 /感谢comfyui_shonl的开发者：影子大，cnb-xu的作者旭 及群内的其他网友的帮助。",
       "platforms": [
@@ -2518,6 +2779,7 @@
       "lastActiveAt": "2026-05-13T15:18:02Z",
       "latestCommit": null,
       "contribution": null,
+      "issues": null,
       "isPrivate": false,
       "description": "本地用秋叶 云上一点通\nCNB平台目前最全整合包，没有之一。\nComfyui一点通，无需配置，点击即玩！\n整合包内置了超多的模型，大量的插件节点，以及插件配套模型，无论你是娱乐学习，还是创意作者，或者专业工作，本仓库都能满足，体验一站式AI畅玩。",
       "platforms": [
@@ -2556,6 +2818,7 @@
       "lastActiveAt": "2026-05-13T15:14:33Z",
       "latestCommit": null,
       "contribution": null,
+      "issues": null,
       "isPrivate": false,
       "description": "集合图片处理，海报封面设计，AI动画制作，视频配音，相关工作流，内有Z-Image，Qwen-Image文生图，Qwen-Image-Edit 图片编辑，Wan 2.2 图生视频，文生视频，首尾帧，Hunyuan Foley 配音，Qwen3-VL 推理，双截棍Nunchaku加速、Flux、Fill OneReward、Flash VSR、InfiniteTalk、Wan-Animate等ComfyUI工作流。",
       "platforms": [
@@ -2600,6 +2863,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -2656,6 +2920,18 @@
           "url": ""
         }
       },
+      "issues": {
+        "total": 5,
+        "open": 3,
+        "closed": 2,
+        "latest": {
+          "number": 0,
+          "title": "最近有 issue 更新",
+          "state": "open",
+          "updatedAt": "2026-05-12T03:44:07Z",
+          "url": ""
+        }
+      },
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -2682,6 +2958,56 @@
       "isExternalContribution": false
     },
     {
+      "key": "dqzboy/workers-proxy-docker",
+      "owner": "dqzboy",
+      "name": "Workers-Proxy-Docker",
+      "fullName": "dqzboy/Workers-Proxy-Docker",
+      "category": "工具",
+      "categoryConfidence": 0.6,
+      "status": "watch",
+      "statusText": "关注",
+      "daysSinceActive": 35,
+      "lastActiveAt": "2026-04-30T07:44:25Z",
+      "latestCommit": null,
+      "contribution": null,
+      "issues": {
+        "total": 1,
+        "open": 1,
+        "closed": 0,
+        "latest": {
+          "number": 2,
+          "title": "还会增加对k8s相关镜像仓库的代理吗？",
+          "state": "open",
+          "updatedAt": "2025-11-06T11:41:20Z",
+          "url": "https://github.com/dqzboy/Workers-Proxy-Docker/issues/2"
+        }
+      },
+      "isPrivate": false,
+      "description": "基于Cloudflare Workers实现代理Docker镜像下载和搜索",
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/dqzboy/Workers-Proxy-Docker",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": false,
+          "visibility": "Public",
+          "url": "https://github.com/dqzboy/Workers-Proxy-Docker",
+          "updatedAt": "2026-04-30T07:44:25Z"
+        }
+      ],
+      "metrics": {
+        "stars": 57,
+        "forks": 20,
+        "openIssues": 1
+      },
+      "language": "JavaScript",
+      "topics": [],
+      "homepage": "",
+      "isExternalContribution": true
+    },
+    {
       "key": "htazq/private-finance-05",
       "owner": "htazq",
       "name": "private-finance-05",
@@ -2700,6 +3026,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -2738,6 +3065,7 @@
       "lastActiveAt": "2026-04-23T01:07:01Z",
       "latestCommit": null,
       "contribution": null,
+      "issues": null,
       "isPrivate": false,
       "description": "",
       "platforms": [
@@ -2782,6 +3110,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -2826,6 +3155,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -2864,6 +3194,7 @@
       "lastActiveAt": "2026-04-18T09:27:34Z",
       "latestCommit": null,
       "contribution": null,
+      "issues": null,
       "isPrivate": false,
       "description": "vllm示例项目",
       "platforms": [
@@ -2902,6 +3233,7 @@
       "lastActiveAt": "2026-04-18T08:45:48Z",
       "latestCommit": null,
       "contribution": null,
+      "issues": null,
       "isPrivate": false,
       "description": "",
       "platforms": [
@@ -2940,6 +3272,7 @@
       "lastActiveAt": "2026-04-18T08:02:40Z",
       "latestCommit": null,
       "contribution": null,
+      "issues": null,
       "isPrivate": false,
       "description": "",
       "platforms": [
@@ -2978,6 +3311,7 @@
       "lastActiveAt": "2026-04-18T06:25:44Z",
       "latestCommit": null,
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -3016,6 +3350,7 @@
       "lastActiveAt": "2026-04-15T10:48:01Z",
       "latestCommit": null,
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -3060,6 +3395,7 @@
         "url": "https://github.com/htazq/My-Knowledge-Accumulation/commit/d341e29ef4df361abb9136088829fec08de11222"
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": false,
       "description": "",
       "platforms": [
@@ -3106,6 +3442,7 @@
       "lastActiveAt": "2026-04-13T08:10:03Z",
       "latestCommit": null,
       "contribution": null,
+      "issues": null,
       "isPrivate": false,
       "description": "",
       "platforms": [
@@ -3150,6 +3487,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -3188,6 +3526,7 @@
       "lastActiveAt": "2026-04-08T02:41:41Z",
       "latestCommit": null,
       "contribution": null,
+      "issues": null,
       "isPrivate": false,
       "description": "ComfyUI商用级图片，视频工作流，适合电商、视频内容创作，使用满血版模型，工作流都经优化整理，稳定易用",
       "platforms": [
@@ -3226,6 +3565,7 @@
       "lastActiveAt": "2026-04-08T02:41:24Z",
       "latestCommit": null,
       "contribution": null,
+      "issues": null,
       "isPrivate": false,
       "description": "集合图片处理，海报封面设计，AI动画制作，视频配音，相关工作流，内有Z-Image，Qwen-Image文生图，Qwen-Image-Edit 图片编辑，Wan 2.2 图生视频，文生视频，首尾帧，Hunyuan Foley 配音，Qwen3-VL 推理，双截棍Nunchaku加速、Flux、Fill OneReward、Flash VSR、InfiniteTalk、Wan-Animate等ComfyUI工作流。",
       "platforms": [
@@ -3264,6 +3604,7 @@
       "lastActiveAt": "2026-04-05T04:52:38Z",
       "latestCommit": null,
       "contribution": null,
+      "issues": null,
       "isPrivate": false,
       "description": "",
       "platforms": [
@@ -3308,6 +3649,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -3352,6 +3694,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -3396,6 +3739,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -3440,6 +3784,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -3484,6 +3829,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -3528,6 +3874,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -3572,6 +3919,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -3616,6 +3964,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -3660,6 +4009,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -3704,6 +4054,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -3748,6 +4099,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -3792,6 +4144,18 @@
         "url": ""
       },
       "contribution": null,
+      "issues": {
+        "total": 1,
+        "open": 0,
+        "closed": 1,
+        "latest": {
+          "number": 0,
+          "title": "最近有 issue 更新",
+          "state": "closed",
+          "updatedAt": "2026-02-18T00:54:02Z",
+          "url": ""
+        }
+      },
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -3836,6 +4200,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -3880,6 +4245,7 @@
         "url": "https://github.com/htazq/go_test_W/commit/7a97180eb5528d201e87e58158a06c8a2efd264a"
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": false,
       "description": "",
       "platforms": [
@@ -3924,6 +4290,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -3968,6 +4335,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -4012,6 +4380,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -4056,6 +4425,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -4100,6 +4470,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -4144,6 +4515,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -4196,6 +4568,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -4240,6 +4613,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -4284,6 +4658,7 @@
         "url": "https://github.com/htazq/Auto/commit/4b9d2fc928834fbfc0ca844d18a6a92702c6fd53"
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": false,
       "description": "My_Auto_scripts",
       "platforms": [
@@ -4322,6 +4697,7 @@
       "lastActiveAt": "2025-11-29T12:06:15Z",
       "latestCommit": null,
       "contribution": null,
+      "issues": null,
       "isPrivate": false,
       "description": "",
       "platforms": [
@@ -4360,6 +4736,7 @@
       "lastActiveAt": "2025-11-27T13:11:21Z",
       "latestCommit": null,
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -4404,6 +4781,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -4448,6 +4826,7 @@
         "url": "https://github.com/htazq/View-IP/commit/6f06d7f8bc22b00a612e64875d81099f0c1338b2"
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": false,
       "description": "A quick way to view my IP address",
       "platforms": [
@@ -4500,6 +4879,7 @@
         "url": "https://github.com/htazq/container-mirror-for-china/commit/2aa163d60b22445b94a6294330df3134661200ce"
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": false,
       "description": "",
       "platforms": [
@@ -4538,6 +4918,7 @@
       "lastActiveAt": "2025-11-21T13:43:17Z",
       "latestCommit": null,
       "contribution": null,
+      "issues": null,
       "isPrivate": false,
       "description": "【一分钟即可出视频】\n超级氦气加速 图生视频 工作流\n生成视频速度大幅提升\nwan2.2效果炸裂\n打造wan2.2全能仓库\n欢迎大家提交合并请求\n\n【交流群】\nhttps://cnb.cool/fuliai/comfyui/-/issues/11",
       "platforms": [
@@ -4576,6 +4957,7 @@
       "lastActiveAt": "2025-11-21T13:27:29Z",
       "latestCommit": null,
       "contribution": null,
+      "issues": null,
       "isPrivate": false,
       "description": "",
       "platforms": [
@@ -4614,6 +4996,7 @@
       "lastActiveAt": "2025-11-21T13:22:51Z",
       "latestCommit": null,
       "contribution": null,
+      "issues": null,
       "isPrivate": false,
       "description": "",
       "platforms": [
@@ -4652,6 +5035,7 @@
       "lastActiveAt": "2025-11-21T02:18:40Z",
       "latestCommit": null,
       "contribution": null,
+      "issues": null,
       "isPrivate": false,
       "description": "【一分钟即可出视频】\n超级氦气加速 图生视频 工作流\n生成视频速度大幅提升\nwan2.2效果炸裂\n打造wan2.2全能仓库\n欢迎大家提交合并请求\n\n【交流群】\nhttps://cnb.cool/fuliai/comfyui/-/issues/11",
       "platforms": [
@@ -4690,6 +5074,7 @@
       "lastActiveAt": "2025-11-20T16:32:56Z",
       "latestCommit": null,
       "contribution": null,
+      "issues": null,
       "isPrivate": false,
       "description": "",
       "platforms": [
@@ -4728,6 +5113,7 @@
       "lastActiveAt": "2025-11-20T14:16:40Z",
       "latestCommit": null,
       "contribution": null,
+      "issues": null,
       "isPrivate": false,
       "description": "本镜像专为 CNB（Cloud Native Build）快速搭建远程开发环境 所定制，基于各大操作系统官方镜像进行构建，预配置开发所需基础环境，适用于云原生应用开发、容器化部署、CI/CD 自动化流程等场景",
       "platforms": [
@@ -4766,6 +5152,7 @@
       "lastActiveAt": "2025-11-18T07:29:45Z",
       "latestCommit": null,
       "contribution": null,
+      "issues": null,
       "isPrivate": false,
       "description": "📦 临时文件中转站，像快递站那样，临时存取",
       "platforms": [
@@ -4804,6 +5191,7 @@
       "lastActiveAt": "2025-11-18T07:14:37Z",
       "latestCommit": null,
       "contribution": null,
+      "issues": null,
       "isPrivate": false,
       "description": "云原生桌面\n超棒的在线桌面,来自云原生动力!\n\n预装多种IDE和编程环境,数据库和数据库管理工具,方便快速开始你的工作。\n全中文环境,预装微信QQFTP等方便工具,助力你的每一步！\n\nhttps://cnb.cool/set/Playground/Desktop\n",
       "platforms": [
@@ -4842,6 +5230,7 @@
       "lastActiveAt": "2025-11-18T06:56:57Z",
       "latestCommit": null,
       "contribution": null,
+      "issues": null,
       "isPrivate": false,
       "description": "打开远程开发终端后自动运行启动命令，体验真正的\"一键预览\"体验",
       "platforms": [
@@ -4898,6 +5287,7 @@
           "url": ""
         }
       },
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -4942,6 +5332,7 @@
         "url": "https://github.com/htazq/cloudflare-docker-proxy/commit/7a976d0a5ab1c94f9f8ba83806f08a42f043d207"
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": false,
       "description": "",
       "platforms": [
@@ -4986,6 +5377,7 @@
         "url": "https://github.com/htazq/OfflinePack/commit/5b7bbe041f531ba49a9a74c1dcf8632a5cff68ac"
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": false,
       "description": "Build offline dependency packages for air-gapped Linux environments",
       "platforms": [
@@ -5030,6 +5422,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -5086,6 +5479,7 @@
           "url": ""
         }
       },
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -5130,6 +5524,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -5174,6 +5569,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -5218,6 +5614,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -5262,6 +5659,7 @@
         "url": "https://github.com/htazq/hello-world-webapp/commit/4364f0f8f72ef0b9c362f4821256b427f13973ff"
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": false,
       "description": "",
       "platforms": [
@@ -5306,6 +5704,7 @@
         "url": "https://github.com/htazq/helm-v2ray/commit/b8b3e99f29a5927a18df7fc6094c319d9acab3e3"
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": false,
       "description": "用 Helm 部署 V2Ray 的项目",
       "platforms": [
@@ -5350,6 +5749,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -5394,6 +5794,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -5432,6 +5833,7 @@
       "lastActiveAt": "2025-02-10T03:13:32Z",
       "latestCommit": null,
       "contribution": null,
+      "issues": null,
       "isPrivate": false,
       "description": "Run DeepSeek via CNB",
       "platforms": [
@@ -5470,6 +5872,7 @@
       "lastActiveAt": "2024-12-12T10:25:11Z",
       "latestCommit": null,
       "contribution": null,
+      "issues": null,
       "isPrivate": false,
       "description": "This is a Test.",
       "platforms": [
@@ -5508,6 +5911,7 @@
       "lastActiveAt": "2024-12-06T05:03:03Z",
       "latestCommit": null,
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -5552,6 +5956,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -5596,6 +6001,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -5640,6 +6046,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -5684,6 +6091,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -5718,7 +6126,7 @@
       "categoryConfidence": 0,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 806,
+      "daysSinceActive": 807,
       "lastActiveAt": "2024-03-20T01:38:23Z",
       "latestCommit": {
         "sha": "ba65333fbb2c66a8b9b4c736842c3280a0c877e9",
@@ -5728,6 +6136,7 @@
         "url": "https://github.com/htazq/tianya/commit/ba65333fbb2c66a8b9b4c736842c3280a0c877e9"
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": false,
       "description": "tianya",
       "platforms": [
@@ -5772,6 +6181,7 @@
         "url": "https://github.com/htazq/jellyfin_work/commit/d763fd02cbaa6eb097d2b31a2e8893d081d89961"
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": false,
       "description": "",
       "platforms": [
@@ -5810,6 +6220,7 @@
       "lastActiveAt": "2024-01-23T23:03:54Z",
       "latestCommit": null,
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -5854,6 +6265,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -5898,6 +6310,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -5942,6 +6355,7 @@
         "url": ""
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": true,
       "description": "自用资产，已做元数据脱敏保护",
       "platforms": [
@@ -5986,6 +6400,7 @@
         "url": "https://github.com/htazq/go-proxy-bingai-2/commit/76d44c7d0abece36de3069515cd688be71594419"
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": false,
       "description": "",
       "platforms": [
@@ -6030,6 +6445,7 @@
         "url": "https://github.com/htazq/go-proxy-bingai/commit/76d44c7d0abece36de3069515cd688be71594419"
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": false,
       "description": "",
       "platforms": [
@@ -6074,6 +6490,7 @@
         "url": "https://github.com/htazq/note/commit/47f36abc933804fd10f7a67a3c9ca8c0abb29f59"
       },
       "contribution": null,
+      "issues": null,
       "isPrivate": false,
       "description": "个人笔记",
       "platforms": [

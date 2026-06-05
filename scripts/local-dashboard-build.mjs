@@ -25,6 +25,8 @@ const githubFallbackPath = path.join(repoRoot, 'data', 'github-repositories.json
 const cnbFallbackPath = path.join(repoRoot, 'data', 'cnb-authenticated-repositories.json');
 const githubSelfCreatedCommitsPath = path.join(repoRoot, 'data', 'github-self-created-latest-commits.json');
 const githubAuthoredPrsPath = path.join(repoRoot, 'data', 'github-authored-prs.json');
+const githubAuthoredIssuesPath = path.join(repoRoot, 'data', 'github-authored-issues.json');
+const githubRepoDetailCache = new Map();
 
 function normalizeRepoKey(inputOwner, inputName) {
   const owner = String(inputOwner || '').trim().toLowerCase();
@@ -253,6 +255,7 @@ function writeCsvFeed(items) {
     'last_active_at',
     'committed_at',
     'latest_pr',
+    'latest_issue',
     'url',
   ];
   const rows = [headers.join(',')];
@@ -267,6 +270,7 @@ function writeCsvFeed(items) {
       toCsvCell(item.lastActiveAt),
       toCsvCell(item.latestCommit?.committedAt || ''),
       toCsvCell(item.contribution?.latest?.title || ''),
+      toCsvCell(item.issues?.latest?.title || ''),
       toCsvCell(item.primaryUrl),
     ].join(','));
   }
@@ -333,6 +337,10 @@ function mergeRepoMap(items) {
       old.contribution = item.contribution;
     }
 
+    if (item.issues && (!old.issues || item.issues.total > (old.issues.total || 0))) {
+      old.issues = item.issues;
+    }
+
     old.isPrivate = old.sources.every((source) => source.isPrivate);
   }
 
@@ -354,6 +362,7 @@ function toBoardRepo(item, rules) {
     lastActiveAt: item.lastActiveAt,
     latestCommit: item.latestCommit || null,
     contribution: item.contribution || null,
+    issues: item.issues || null,
     isPrivate: item.isPrivate,
     description: item.description || '',
     platforms: item.platforms,
@@ -404,6 +413,17 @@ function buildBoard(items, rules, sourceMeta) {
     .map(([name, count]) => ({name, count}))
     .sort((a, b) => b.count - a.count);
 
+  const issueStats = withCategory.reduce((stats, item) => {
+    if (!item.issues) {
+      return stats;
+    }
+    stats.repos += 1;
+    stats.total += item.issues.total || 0;
+    stats.open += item.issues.open || 0;
+    stats.closed += item.issues.closed || 0;
+    return stats;
+  }, {repos: 0, total: 0, open: 0, closed: 0});
+
   return {
     generatedAt: new Date().toISOString(),
     source: {
@@ -433,6 +453,7 @@ function buildBoard(items, rules, sourceMeta) {
       byCategory: categories,
       byStatus: statusCounter,
       bySource: sourceCounter,
+      authoredIssues: issueStats,
       staleRepos: withCategory.filter((item) => item.status === 'stale').length,
       activeRepos: withCategory.filter((item) => item.status === 'active').length,
       watchRepos: withCategory.filter((item) => item.status === 'watch').length,
@@ -491,6 +512,15 @@ function deSensitizeBoard(originalBoard) {
         title: '已合并分支贡献',
         state: repo.contribution.latest.state || 'merged',
         updatedAt: repo.contribution.latest.updatedAt || '',
+        url: ''
+      } : null;
+    }
+    if (repo.issues) {
+      repo.issues.latest = repo.issues.latest ? {
+        number: 0,
+        title: '最近有 issue 更新',
+        state: repo.issues.latest.state || 'open',
+        updatedAt: repo.issues.latest.updatedAt || '',
         url: ''
       } : null;
     }
@@ -763,6 +793,24 @@ async function fetchGitHubPrDetail(url, headers) {
   }
 }
 
+async function fetchGitHubRepoDetail(url, headers) {
+  if (!url) {
+    return null;
+  }
+  if (githubRepoDetailCache.has(url)) {
+    return githubRepoDetailCache.get(url);
+  }
+  try {
+    const {ok, payload} = await requestJson(url, headers);
+    const detail = ok && payload?.full_name ? normalizeGitHubFromApi(payload) : null;
+    githubRepoDetailCache.set(url, detail);
+    return detail;
+  } catch {
+    githubRepoDetailCache.set(url, null);
+    return null;
+  }
+}
+
 async function fetchGitHubAuthoredPrsLegacy() {
   if (!USE_API) {
     return [];
@@ -883,6 +931,85 @@ async function fetchGitHubAuthoredPrs() {
     } catch (err) {
       lastError = err;
       console.error('[GitHub PR API] ' + attempt.label + ' 请求失败:', err.message);
+    }
+  }
+
+  if (lastError) {
+    throw lastError;
+  }
+  return [];
+}
+
+async function fetchGitHubAuthoredIssuesFromSearch(headers, label) {
+  if (!USE_API) {
+    return [];
+  }
+
+  const rows = [];
+  let next = `https://api.github.com/search/issues?q=${encodeURIComponent(`author:${GH_OWNER} type:issue`)}&sort=updated&order=desc&per_page=100`;
+
+  console.log('[GitHub Issue API] start search (' + label + '), GH_OWNER=' + GH_OWNER + ', GH_TOKEN=' + (headers.Authorization ? 'configured' : 'not used'));
+
+  while (next && rows.length < 100) {
+    const {ok, payload, headers: responseHeaders, status} = await requestJson(next, headers);
+    if (!ok) {
+      throw new Error(`GitHub Issue API request failed: ${status} ${payload?.message || ''}`.trim());
+    }
+
+    const items = Array.isArray(payload?.items) ? payload.items : [];
+    for (const item of items) {
+      if (item.pull_request) {
+        continue;
+      }
+
+      const repoFullName = String(item.repository_url || '').split('/repos/')[1] || '';
+      if (!repoFullName) {
+        continue;
+      }
+
+      const detail = await fetchGitHubRepoDetail(item.repository_url, headers);
+      const [, repoName = ''] = repoFullName.split('/');
+
+      rows.push({
+        title: item.title || '',
+        number: item.number,
+        url: item.html_url || '',
+        state: item.state || '',
+        createdAt: item.created_at || '',
+        updatedAt: item.updated_at || '',
+        closedAt: item.closed_at || null,
+        repository: {
+          name: repoName,
+          nameWithOwner: repoFullName,
+        },
+        repositoryDetails: detail,
+      });
+    }
+
+    const parsed = parseGitHubLinkHeader(responseHeaders.get('link'));
+    next = rows.length < 100 ? (parsed.next || '') : '';
+  }
+
+  return rows;
+}
+
+async function fetchGitHubAuthoredIssues() {
+  const attempts = [];
+  if (GH_TOKEN) {
+    attempts.push({label: 'authenticated', headers: makeGitHubHeaders()});
+  }
+  attempts.push({label: 'public', headers: makeGitHubHeaders({withAuth: false})});
+
+  let lastError = null;
+  for (const attempt of attempts) {
+    try {
+      const rows = await fetchGitHubAuthoredIssuesFromSearch(attempt.headers, attempt.label);
+      if (rows.length > 0) {
+        return rows;
+      }
+    } catch (err) {
+      lastError = err;
+      console.error('[GitHub Issue API] ' + attempt.label + ' request failed:', err.message);
     }
   }
 
@@ -1049,6 +1176,41 @@ function buildContributionMeta(prRows) {
   return out;
 }
 
+function buildIssueMeta(issueRows) {
+  const map = new Map();
+  for (const item of issueRows) {
+    const repoKey = toOwnerRepoKey(item.repository?.nameWithOwner || item.repository);
+    if (!repoKey) {
+      continue;
+    }
+    if (!map.has(repoKey)) {
+      map.set(repoKey, []);
+    }
+    map.get(repoKey).push(item);
+  }
+
+  const out = new Map();
+  for (const [key, rows] of map.entries()) {
+    const sorted = [...rows].sort((a, b) => String(b.updatedAt || b.createdAt || '').localeCompare(String(a.updatedAt || a.createdAt || '')));
+    const latest = sorted[0];
+    out.set(key, {
+      total: sorted.length,
+      open: sorted.filter((item) => item.state === 'open').length,
+      closed: sorted.filter((item) => item.state === 'closed').length,
+      latest: latest
+        ? {
+            number: latest.number,
+            title: latest.title || '',
+            state: latest.state || '',
+            updatedAt: latest.updatedAt || latest.createdAt || '',
+            url: latest.url || '',
+          }
+        : null,
+    });
+  }
+  return out;
+}
+
 function buildCommitMeta(commitRows) {
   const out = new Map();
   for (const item of commitRows) {
@@ -1106,7 +1268,7 @@ function addContributionRepoInfo(map, rawFullName, details, fallback = {}) {
   }
 }
 
-function buildExternalContributionRepos(commitRows, prRows, commitMap, contributionMap, existingRepos) {
+function buildExternalContributionRepos(commitRows, prRows, issueRows, commitMap, contributionMap, issueMap, existingRepos) {
   const existingKeys = new Set(existingRepos.map((repo) => normalizeRepoKey(repo.owner, repo.name)));
   const repoInfo = new Map();
 
@@ -1121,18 +1283,24 @@ function buildExternalContributionRepos(commitRows, prRows, commitMap, contribut
     addContributionRepoInfo(repoInfo, item.repository?.nameWithOwner || item.repository, item.repositoryDetails);
   }
 
+  for (const item of issueRows) {
+    addContributionRepoInfo(repoInfo, item.repository?.nameWithOwner || item.repository, item.repositoryDetails);
+  }
+
   return Array.from(repoInfo.entries())
     .filter(([key]) => !existingKeys.has(key) && !key.startsWith(`${GH_OWNER.toLowerCase()}/`))
     .map(([key, info]) => {
       const details = info.details || null;
       const latestCommit = commitMap.get(key) || null;
       const contribution = contributionMap.get(key) || null;
+      const issues = issueMap.get(key) || null;
       const visibility = details?.visibility || (String(info.visibility).toLowerCase() === 'private' ? 'Private' : 'Public');
       const isPrivate = details?.isPrivate ?? visibility.toLowerCase() === 'private';
       const fullName = details?.fullName || info.fullName;
       const lastActiveAt = maxDateText([
         latestCommit?.committedAt,
         contribution?.latest?.updatedAt,
+        issues?.latest?.updatedAt,
         details?.pushedAt,
         details?.updatedAt,
       ]);
@@ -1164,10 +1332,11 @@ function buildExternalContributionRepos(commitRows, prRows, commitMap, contribut
         lastActiveAt,
         latestCommit,
         contribution,
+        issues,
         isExternalContribution: true,
       };
     })
-    .filter((repo) => repo.latestCommit || repo.contribution);
+    .filter((repo) => repo.latestCommit || repo.contribution || repo.issues);
 }
 
 async function fetchAllCnbRepos() {
@@ -1225,7 +1394,7 @@ async function fetchAllCnbRepos() {
   return [];
 }
 
-function applyEnrichments(repo, commitMap, contributionMap) {
+function applyEnrichments(repo, commitMap, contributionMap, issueMap) {
   if (repo.platform !== 'github') {
     return repo;
   }
@@ -1238,6 +1407,9 @@ function applyEnrichments(repo, commitMap, contributionMap) {
   }
   if (!repo.contribution) {
     repo.contribution = contributionMap.get(key) || null;
+  }
+  if (!repo.issues) {
+    repo.issues = issueMap.get(key) || null;
   }
   return repo;
 }
@@ -1343,15 +1515,27 @@ async function fetchDataFromSources() {
   if (prRows.length === 0) {
     prRows = (await safeLoadJson(githubAuthoredPrsPath)) || [];
   }
+  let issueRows = [];
+  try {
+    issueRows = await fetchGitHubAuthoredIssues();
+  } catch (err) {
+    console.error('[GitHub Issue API] request failed, falling back to local snapshot', err.message);
+  }
+  if (issueRows.length === 0) {
+    issueRows = (await safeLoadJson(githubAuthoredIssuesPath)) || [];
+  }
   const commitMap = buildCommitMeta(Array.isArray(commitRows) ? commitRows : []);
   const contributionMap = buildContributionMeta(Array.isArray(prRows) ? prRows : []);
+  const issueMap = buildIssueMeta(Array.isArray(issueRows) ? issueRows : []);
 
-  githubRepos = githubRepos.map((repo) => applyEnrichments(repo, commitMap, contributionMap));
+  githubRepos = githubRepos.map((repo) => applyEnrichments(repo, commitMap, contributionMap, issueMap));
   githubRepos.push(...buildExternalContributionRepos(
     Array.isArray(commitRows) ? commitRows : [],
     Array.isArray(prRows) ? prRows : [],
+    Array.isArray(issueRows) ? issueRows : [],
     commitMap,
     contributionMap,
+    issueMap,
     githubRepos,
   ));
 

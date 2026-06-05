@@ -8,6 +8,7 @@ const __dirname = path.dirname(__filename);
 const repoRoot = path.resolve(__dirname, '..');
 const htmlPath = path.join(repoRoot, 'index.html');
 const appPath = path.join(repoRoot, 'App.tsx');
+const cnbPath = path.join(repoRoot, '.cnb.yml');
 const publicDir = path.join(repoRoot, 'public');
 const feedPath = path.join(publicDir, 'data', 'dashboard-feed.json');
 
@@ -146,5 +147,18 @@ async function validateFeed() {
   console.log(`[dashboard] feed valid: ${payload.summary.total} repositories`);
 }
 
+async function validateCnbSchedule() {
+  const source = await fs.readFile(cnbPath, 'utf8');
+  if (!source.includes('"crontab: */5 * * * *"')) {
+    fail('CNB scheduled dashboard update must run every 5 minutes: "crontab: */5 * * * *"');
+  }
+  if (source.includes('"crontab: */30 * * * *"')) {
+    fail('CNB scheduled dashboard update still contains the old 30-minute cron');
+  }
+
+  console.log('[dashboard] CNB cron valid: every 5 minutes');
+}
+
+await validateCnbSchedule();
 await validateHtml();
 await validateFeed();

@@ -67,6 +67,21 @@ async function main() {
       },
     },
   ]);
+  await writeJson(path.join(tempRoot, 'data', 'github-authored-issues.json'), [
+    {
+      title: 'bug: upstream issue',
+      number: 7,
+      url: 'https://github.com/other/needs-help/issues/7',
+      state: 'open',
+      createdAt: '2026-06-02T08:00:00Z',
+      updatedAt: '2026-06-02T09:00:00Z',
+      closedAt: null,
+      repository: {
+        name: 'needs-help',
+        nameWithOwner: 'other/needs-help',
+      },
+    },
+  ]);
   await writeJson(path.join(tempRoot, 'public', 'data', 'repo-category-rules.json'), {
     categories: [{name: '其他', keywords: []}],
     overrides: {},
@@ -91,16 +106,22 @@ async function main() {
   const feedText = await fs.readFile(path.join(tempRoot, 'public', 'data', 'dashboard-feed.json'), 'utf8');
   const feed = JSON.parse(feedText);
   const external = feed.repositories.find((repo) => repo.fullName === 'other/project');
+  const externalIssue = feed.repositories.find((repo) => repo.fullName === 'other/needs-help');
   const privateOwned = feed.repositories.find((repo) => repo.fullName === 'htazq/owned');
 
   assert.ok(external, 'external contribution repository should be included');
   assert.equal(external.isExternalContribution, true);
   assert.equal(external.latestCommit?.sha, 'abc1234567890');
   assert.equal(external.contribution?.latest?.number, 42);
+  assert.ok(externalIssue, 'external authored issue repository should be included');
+  assert.equal(externalIssue.isExternalContribution, true);
+  assert.equal(externalIssue.issues?.latest?.number, 7);
+  assert.equal(feed.summary.authoredIssues?.total, 1);
+  assert.equal(feed.summary.authoredIssues?.open, 1);
   assert.ok(privateOwned, 'full feed may expose private repository names');
   assert.equal(feedText.includes(fakeGithubToken), false, 'feed must not expose GitHub token values');
   assert.equal(feedText.includes(fakeCnbToken), false, 'feed must not expose CNB token values');
-  assert.equal(feed.source.github.repos, 2);
+  assert.equal(feed.source.github.repos, 3);
 }
 
 await main();

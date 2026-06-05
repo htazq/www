@@ -1031,11 +1031,6 @@
             <a class="chip-link" href="https://blog.at9.net" target="_blank" rel="noreferrer">📖 Tech Blog</a>
             <a class="chip-link" href="https://github.com/htazq" target="_blank" rel="noreferrer">🐙 GitHub</a>
             <a class="chip-link" href="https://cnb.cool/htazq" target="_blank" rel="noreferrer">🇨 CNB 平台</a>
-            <a class="chip-link" href="https://docker.at9.net" target="_blank" rel="noreferrer">🐳 Docker Mirror</a>
-            <a class="chip-link" href="https://ip.at9.net" target="_blank" rel="noreferrer">🌐 View-My-IP</a>
-            <a class="chip-link" href="https://gh-proxy.at9.net/" target="_blank" rel="noreferrer">⚡ GitHub Proxy</a>
-            <a class="chip-link" href="./data/dashboard-feed.json" target="_blank" rel="noreferrer">📦 JSON Feed</a>
-            <a class="chip-link" href="./data/dashboard-feed.csv" target="_blank" rel="noreferrer">📊 CSV Feed</a>
             <button class="chip-button" id="openPaletteButton" type="button">⌨️ Ctrl K 搜索</button>
           </div>
         </div>
@@ -1053,14 +1048,14 @@
                 <div class="signal-hint" id="sourceHint">waiting feed</div>
               </div>
               <div class="signal">
-                <div class="signal-label">mirrors</div>
-                <div class="signal-value" id="metricMirrors">-</div>
-                <div class="signal-hint">GitHub / CNB 双平台</div>
+                <div class="signal-label">authored issues</div>
+                <div class="signal-value" id="metricIssues">-</div>
+                <div class="signal-hint" id="issueHint">waiting issue feed</div>
               </div>
               <div class="signal">
-                <div class="signal-label">private</div>
-                <div class="signal-value" id="metricPrivate">-</div>
-                <div class="signal-hint">自用资产密度</div>
+                <div class="signal-label">open issues</div>
+                <div class="signal-value" id="metricIssueOpen">-</div>
+                <div class="signal-hint">需要回看或跟进</div>
               </div>
               <div class="signal">
                 <div class="signal-label">heartbeat sync</div>
@@ -1105,12 +1100,12 @@
 
         <div class="panel">
           <div class="panel-head">
-            <h2 class="panel-title">project map</h2>
-            <span class="tag">auto classified</span>
+            <h2 class="panel-title">work queue</h2>
+            <span class="tag" id="workSummaryTag">issues + prs + commits</span>
           </div>
           <div class="panel-body">
-            <div class="category-map" id="categoryMap">
-              <div class="loading">loading categories...</div>
+            <div class="queue-list" id="workQueue">
+              <div class="loading">loading work queue...</div>
             </div>
           </div>
         </div>
@@ -1143,12 +1138,12 @@
 
         <div class="panel">
           <div class="panel-head">
-            <h2 class="panel-title">source matrix</h2>
-            <span class="tag">github + cnb</span>
+            <h2 class="panel-title">issue queue</h2>
+            <span class="tag" id="issueSummaryTag">authored</span>
           </div>
           <div class="panel-body">
-            <div class="source-list" id="sourceMatrix">
-              <div class="loading">loading sources...</div>
+            <div class="pr-list" id="issueQueue">
+              <div class="loading">loading issues...</div>
             </div>
           </div>
         </div>
@@ -1158,7 +1153,7 @@
         <div class="panel-head">
           <h2 class="panel-title">repository index</h2>
           <div class="toolbar">
-            <input class="field" id="searchInput" type="search" placeholder="搜索仓库 / 描述 / 最近提交" />
+            <input class="field" id="searchInput" type="search" placeholder="搜索仓库 / issue / PR / commit" />
             <select class="field" id="categorySelect"><option value="">全部类别</option></select>
             <select class="field" id="statusSelect">
               <option value="">全部状态</option>
@@ -1183,8 +1178,8 @@
                 <th>category</th>
                 <th>status</th>
                 <th>idle</th>
-                <th>latest</th>
-                <th>note</th>
+                <th>latest work</th>
+                <th>progress</th>
               </tr>
             </thead>
             <tbody id="repoRows">
@@ -1344,6 +1339,87 @@
           .sort((a, b) => new Date(b.latest.updatedAt || 0) - new Date(a.latest.updatedAt || 0));
       }
 
+      function getIssueStats(data) {
+        if (data.summary?.authoredIssues) {
+          return data.summary.authoredIssues;
+        }
+        return (data.repositories || []).reduce((stats, repo) => {
+          const issues = repo.issues;
+          if (!issues) return stats;
+          stats.repos += 1;
+          stats.total += issues.total || 0;
+          stats.open += issues.open || 0;
+          stats.closed += issues.closed || 0;
+          return stats;
+        }, {repos: 0, total: 0, open: 0, closed: 0});
+      }
+
+      function getIssueItems(data) {
+        return (data.repositories || [])
+          .filter((repo) => repo.issues?.latest)
+          .map((repo) => ({
+            repo,
+            latest: repo.issues.latest,
+            total: repo.issues.total || 0,
+            open: repo.issues.open || 0,
+            closed: repo.issues.closed || 0,
+          }))
+          .sort((a, b) => new Date(b.latest.updatedAt || 0) - new Date(a.latest.updatedAt || 0));
+      }
+
+      function buildWorkItems(data) {
+        const items = [];
+        for (const repo of data.repositories || []) {
+          if (repo.issues?.latest) {
+            items.push({
+              type: "issue",
+              repo,
+              title: `Issue #${repo.issues.latest.number}: ${repo.issues.latest.title || "untitled issue"}`,
+              href: repo.issues.latest.url || repo.primaryUrl,
+              at: repo.issues.latest.updatedAt,
+              state: repo.issues.latest.state || "open",
+              className: repo.issues.latest.state === "closed" ? "ok" : "warn",
+            });
+          }
+          if (repo.contribution?.latest) {
+            items.push({
+              type: "pr",
+              repo,
+              title: `PR #${repo.contribution.latest.number}: ${repo.contribution.latest.title || "untitled PR"}`,
+              href: repo.contribution.latest.url || repo.primaryUrl,
+              at: repo.contribution.latest.updatedAt,
+              state: repo.contribution.latest.state || "open",
+              className: repo.contribution.latest.state === "merged" ? "ok" : repo.contribution.latest.state === "open" ? "warn" : "bad",
+            });
+          }
+          if (repo.latestCommit) {
+            items.push({
+              type: "commit",
+              repo,
+              title: repo.latestCommit.message || repo.latestCommit.shortSha || "commit updated",
+              href: repo.latestCommit.url || repo.primaryUrl,
+              at: repo.latestCommit.committedAt,
+              state: repo.latestCommit.shortSha || "commit",
+              className: "cyan",
+            });
+          }
+        }
+        return items.sort((a, b) => new Date(b.at || 0) - new Date(a.at || 0));
+      }
+
+      function getLatestWork(repo) {
+        const work = buildWorkItems({repositories: [repo]});
+        return work[0] || {
+          type: "repo",
+          repo,
+          title: repo.description || repo.language || "repository updated",
+          href: repo.primaryUrl,
+          at: repo.lastActiveAt,
+          state: repo.status,
+          className: (statusMeta[repo.status] || statusMeta.watch).className,
+        };
+      }
+
       function setLoading(message) {
         $("loadingState").textContent = message;
       }
@@ -1385,7 +1461,7 @@
         if (countdownTimer) clearInterval(countdownTimer);
         if (checkDataTimer) clearInterval(checkDataTimer);
 
-        const buildIntervalMs = 30 * 60 * 1000; // 云端定时任务每 30 分钟重新构建一次
+        const buildIntervalMs = 5 * 60 * 1000; // 云端定时任务每 5 分钟重新构建一次
         const generatedTime = state.data?.generatedAt ? new Date(state.data.generatedAt).getTime() : Date.now();
         let nextRefreshAt = generatedTime + buildIntervalMs;
 
@@ -1421,15 +1497,19 @@
       }
 
       function getLatestItems(data) {
+        const workItems = buildWorkItems(data);
+        if (workItems.length) {
+          return workItems.slice(0, 9);
+        }
         return [...(data.repositories || [])]
           .sort((a, b) => new Date(b.lastActiveAt || 0) - new Date(a.lastActiveAt || 0))
-          .slice(0, 9);
+          .slice(0, 9)
+          .map((repo) => getLatestWork(repo));
       }
 
       function buildTicker(data) {
-        const items = getLatestItems(data).slice(0, 8).map((repo) => {
-          const action = repo.latestCommit?.message || repo.contribution?.latest?.title || repo.description || "repo updated";
-          return `${compactRepoName(repo.fullName)} :: ${action}`;
+        const items = getLatestItems(data).slice(0, 8).map((item) => {
+          return `${compactRepoName(item.repo.fullName)} :: ${item.title}`;
         });
         const doubled = [...items, ...items].map((item) => `<span class="ticker-item">${escapeHtml(item)}</span>`);
         $("tickerTrack").innerHTML = doubled.join("");
@@ -1437,90 +1517,76 @@
 
       function renderOverview(data) {
         const prStats = getPrStats(data);
+        const issueStats = getIssueStats(data);
         $("issueNo").textContent = `ISSUE ${new Date(data.generatedAt).toISOString().slice(0, 10)}`;
         $("metricTotal").textContent = data.summary.total;
-        $("metricMirrors").textContent = data.summary.mirrorAcrossPlatforms || 0;
-        $("metricPrivate").textContent = getPrivateCount(data);
+        $("metricIssues").textContent = issueStats.total || 0;
+        $("metricIssueOpen").textContent = issueStats.open || 0;
         $("metricPrTotal").textContent = prStats.total;
         $("metricPrMerged").textContent = prStats.merged;
+        $("issueHint").textContent = `${issueStats.repos || 0} repos · closed ${issueStats.closed || 0}`;
         $("prHint").textContent = `${prStats.repos} repos · open ${prStats.opened} · closed ${prStats.closed}`;
         $("metricActive").textContent = data.summary.activeRepos || data.summary.byStatus?.active || 0;
         $("metricWatch").textContent = data.summary.watchRepos || data.summary.byStatus?.watch || 0;
         $("metricStale").textContent = data.summary.staleRepos || data.summary.byStatus?.stale || 0;
         $("generatedAt").textContent = `updated ${formatDate(data.generatedAt)}`;
-        $("sourceHint").textContent = `GH ${data.source.github.repos} / CNB ${data.source.cnb.repos}`;
+        $("sourceHint").textContent = `5m auto sync`;
         $("terminalLog").innerHTML = [
           `<div class="log-line"><span class="ok">+</span><span>feed loaded: ${data.summary.total} repositories indexed</span></div>`,
-          `<div class="log-line"><span class="cyan">i</span><span>source: GitHub ${data.source.github.repos} / CNB ${data.source.cnb.repos}</span></div>`,
-          `<div class="log-line"><span class="cyan">i</span><span>external contributions: ${data.summary.externalContributions || 0} repos with authored PRs/commits</span></div>`,
+          `<div class="log-line"><span class="cyan">i</span><span>authored issues: ${issueStats.total || 0} · pull requests: ${prStats.total || 0}</span></div>`,
+          `<div class="log-line"><span class="cyan">i</span><span>external contribution repos: ${data.summary.externalContributions || 0}</span></div>`,
           `<div class="log-line"><span class="warn">~</span><span>watch queue: ${data.summary.watchRepos || 0} repos need attention</span></div>`,
           `<div class="log-line"><span class="bad">!</span><span>stale queue: ${data.summary.staleRepos || 0} repos exceed ${data.filters.staleDays} days</span></div>`,
-          `<div class="log-line"><span class="ok">+</span><span>target: deploy this static TUI to www.at9.net</span></div>`,
+          `<div class="log-line"><span class="ok">+</span><span>cron: CNB rebuilds every 5 minutes</span></div>`,
         ].join("");
       }
 
       function renderLiveFeed(data) {
         const rows = getLatestItems(data);
-        $("liveFeed").innerHTML = rows.map((repo) => {
-          const meta = statusMeta[repo.status] || statusMeta.watch;
-          const title = compactRepoName(repo.fullName);
-          let targetUrl = repo.primaryUrl;
-          let detail = "最近活跃但暂无提交摘要";
-
-          const commitTime = repo.latestCommit?.committedAt ? new Date(repo.latestCommit.committedAt).getTime() : 0;
-          const prTime = repo.contribution?.latest?.updatedAt ? new Date(repo.contribution.latest.updatedAt).getTime() : 0;
-
-          if (commitTime > 0 || prTime > 0) {
-            if (commitTime >= prTime) {
-              detail = `💬 ${repo.latestCommit.message}`;
-              if (repo.latestCommit.url) targetUrl = repo.latestCommit.url;
-            } else {
-              detail = `🔀 PR #${repo.contribution.latest.number}: ${repo.contribution.latest.title}`;
-              if (repo.contribution.latest.url) targetUrl = repo.contribution.latest.url;
-            }
-          } else if (repo.description) {
-            detail = repo.description;
-          }
+        $("liveFeed").innerHTML = rows.map((item) => {
+          const title = compactRepoName(item.repo.fullName);
+          const typeLabel = item.type.toUpperCase();
 
           return `
-            <a class="feed-item" href="${escapeHtml(targetUrl)}" target="_blank" rel="noreferrer">
-              <span class="feed-icon ${meta.className}">${meta.icon}</span>
+            <a class="feed-item" href="${escapeHtml(item.href)}" target="_blank" rel="noreferrer">
+              <span class="feed-icon ${item.className}">${escapeHtml(typeLabel[0] || "+")}</span>
               <span>
                 <span class="feed-title">${escapeHtml(title)}</span>
-                <span class="feed-desc">${escapeHtml(detail)}</span>
+                <span class="feed-desc">${escapeHtml(item.title)}</span>
               </span>
-              <span class="feed-meta">${escapeHtml(formatShortDate(repo.lastActiveAt))}</span>
+              <span class="feed-meta">${escapeHtml(formatShortDate(item.at))}</span>
             </a>
           `;
         }).join("");
       }
 
-      function renderCategoryMap(data) {
-        const total = Math.max(1, data.summary.total || 1);
-        const repos = data.repositories || [];
+      function renderCategoryOptions(data) {
         $("categorySelect").innerHTML = '<option value="">全部类别</option>';
-        $("categoryMap").innerHTML = data.summary.byCategory.map((category) => {
-          const sample = repos
-            .filter((repo) => repo.category === category.name)
-            .slice(0, 3)
-            .map((repo) => compactRepoName(repo.fullName))
-            .join(" / ");
-          const width = Math.max(4, Math.round((category.count / total) * 100));
+        for (const category of data.summary.byCategory || []) {
           const option = document.createElement("option");
           option.value = category.name;
           option.textContent = `${category.name} (${category.count})`;
           $("categorySelect").appendChild(option);
-          return `
-            <div class="category-card">
-              <div class="category-top">
-                <span class="category-name">${escapeHtml(category.name)}</span>
-                <span class="category-count">${category.count}</span>
-              </div>
-              <div class="bar"><div class="bar-fill" style="width: ${width}%"></div></div>
-              <div class="category-sample">${escapeHtml(sample || "暂无样本")}</div>
+        }
+      }
+
+      function renderWorkQueue(data) {
+        const rows = buildWorkItems(data).slice(0, 12);
+        $("workSummaryTag").textContent = `${rows.length} recent items`;
+        if (!rows.length) {
+          $("workQueue").innerHTML = '<div class="empty">当前 feed 里没有 issue / PR / commit 动态</div>';
+          return;
+        }
+
+        $("workQueue").innerHTML = rows.map((item) => `
+          <a class="queue-row" href="${escapeHtml(item.href)}" target="_blank" rel="noreferrer">
+            <div>
+              <div class="repo-name">${escapeHtml(compactRepoName(item.repo.fullName))}</div>
+              <div class="repo-sub">${escapeHtml(item.type.toUpperCase())} · ${escapeHtml(item.title)}</div>
             </div>
-          `;
-        }).join("");
+            <span class="tag ${item.className}">${escapeHtml(formatShortDate(item.at))}</span>
+          </a>
+        `).join("");
       }
 
       function renderMaintenanceQueue(data) {
@@ -1568,71 +1634,30 @@
         }).join("");
       }
 
-      function renderSourceMatrix(data) {
-        const source = data.summary.bySource || {};
-        const rows = Object.entries(source).map(([name, value]) => {
-          const total = value.total || 0;
-          const privateCount = value.private || 0;
-          const publicCount = value.public || 0;
-          const platformUrl = name === "github"
-            ? "https://www.github.com/htazq"
-            : "https://www.cnb.cool/htazq";
+      function renderIssueQueue(data) {
+        const stats = getIssueStats(data);
+        const items = getIssueItems(data);
+        $("issueSummaryTag").textContent = `${stats.total || 0} issues · ${stats.open || 0} open`;
+
+        if (!items.length) {
+          $("issueQueue").innerHTML = '<div class="empty">当前 feed 里没有 authored issue 数据</div>';
+          return;
+        }
+
+        $("issueQueue").innerHTML = items.slice(0, 8).map((item) => {
+          const stateClass = item.latest.state === "closed" ? "ok" : "warn";
+          const targetHref = item.latest.url || item.repo.primaryUrl;
           return `
-            <a class="source-row" href="${platformUrl}" target="_blank" rel="noreferrer">
+            <a class="pr-row" href="${escapeHtml(targetHref)}" target="_blank" rel="noreferrer">
               <div>
-                <div class="repo-name">${escapeHtml(name.toUpperCase())}</div>
-                <div class="repo-sub">public ${publicCount} · private ${privateCount}</div>
+                <div class="repo-name">${escapeHtml(compactRepoName(item.repo.fullName))} #${escapeHtml(item.latest.number)}</div>
+                <div class="repo-sub">${escapeHtml(item.latest.title || "untitled issue")}</div>
+                <div class="repo-sub">total ${item.total} · open ${item.open} · closed ${item.closed}</div>
               </div>
-              <span class="tag">${total} repos</span>
+              <span class="tag ${stateClass}">${escapeHtml(item.latest.state || "open")}</span>
             </a>
           `;
-        });
-        rows.push(`
-          <a class="source-row" href="https://blog.at9.net" target="_blank" rel="noreferrer">
-            <div>
-              <div class="repo-name">blog.at9.net</div>
-              <div class="repo-sub">定位为技术知识库，不按传统博客压力更新</div>
-            </div>
-            <span class="tag cyan">knowledge</span>
-          </a>
-        `);
-        rows.push(`
-          <a class="source-row" href="https://docker.at9.net" target="_blank" rel="noreferrer">
-            <div>
-              <div class="repo-name">docker.at9.net</div>
-              <div class="repo-sub">Docker Registry 个人加速代理服务</div>
-            </div>
-            <span class="tag warn">proxy</span>
-          </a>
-        `);
-        rows.push(`
-          <a class="source-row" href="https://ip.at9.net" target="_blank" rel="noreferrer">
-            <div>
-              <div class="repo-name">ip.at9.net</div>
-              <div class="repo-sub">My IP Dashboard · 实时访客 IP 信息工具</div>
-            </div>
-            <span class="tag cyan">tool</span>
-          </a>
-        `);
-        rows.push(`
-          <a class="source-row" href="https://gh-proxy.at9.net" target="_blank" rel="noreferrer">
-            <div>
-              <div class="repo-name">gh-proxy.at9.net</div>
-              <div class="repo-sub">GitHub 文件加速代理，Git 资源快速下载</div>
-            </div>
-            <span class="tag warn">proxy</span>
-          </a>
-        `);
-        rows.push(`
-          <a class="source-row" href="https://www.at9.net" target="_blank" rel="noreferrer">
-            <div>
-              <div class="repo-name">www.at9.net</div>
-              <div class="repo-sub">最终承载这个 TUI 风格个人控制台</div>
-            </div>
-            <span class="tag ok">target</span>
-          </a>
-        `);
-        $("sourceMatrix").innerHTML = rows.join("");
+        }).join("");
       }
 
       function getCommands() {
@@ -1668,34 +1693,6 @@
             subtitle: "blog.at9.net",
             key: "open",
             run: () => window.open("https://blog.at9.net", "_blank", "noreferrer"),
-          },
-          {
-            icon: "D",
-            title: "打开 Docker 加速代理",
-            subtitle: "docker.at9.net",
-            key: "open",
-            run: () => window.open("https://docker.at9.net", "_blank", "noreferrer"),
-          },
-          {
-            icon: "I",
-            title: "打开 IP Dashboard",
-            subtitle: "ip.at9.net",
-            key: "open",
-            run: () => window.open("https://ip.at9.net", "_blank", "noreferrer"),
-          },
-          {
-            icon: "P",
-            title: "打开 GitHub 文件加速",
-            subtitle: "gh-proxy.at9.net",
-            key: "open",
-            run: () => window.open("https://gh-proxy.at9.net", "_blank", "noreferrer"),
-          },
-          {
-            icon: "W",
-            title: "打开主站",
-            subtitle: "www.at9.net",
-            key: "open",
-            run: () => window.open("https://www.at9.net", "_blank", "noreferrer"),
           },
           {
             icon: "R",
@@ -1807,6 +1804,7 @@
             repo.language,
             repo.latestCommit?.message,
             repo.contribution?.latest?.title,
+            repo.issues?.latest?.title,
           ].filter(Boolean).join(" ").toLowerCase();
           if (keyword && !text.includes(keyword)) return false;
           if (category && repo.category !== category) return false;
@@ -1825,7 +1823,12 @@
         }
         $("repoRows").innerHTML = rows.map((repo) => {
           const meta = statusMeta[repo.status] || statusMeta.watch;
-          const latest = repo.latestCommit?.message || repo.contribution?.latest?.title || "-";
+          const latest = getLatestWork(repo);
+          const progress = [
+            repo.issues ? `issues ${repo.issues.open || 0}/${repo.issues.total || 0}` : "",
+            repo.contribution ? `PR ${repo.contribution.merged || 0}/${repo.contribution.total || 0}` : "",
+            repo.latestCommit?.shortSha ? `commit ${repo.latestCommit.shortSha}` : "",
+          ].filter(Boolean).join(" · ") || repo.language || "-";
           return `
             <tr>
               <td><a class="table-link" href="${escapeHtml(repo.primaryUrl)}" target="_blank" rel="noreferrer">${escapeHtml(compactRepoName(repo.fullName))}</a></td>
@@ -1833,24 +1836,26 @@
               <td><span class="tag">${escapeHtml(repo.category)}</span></td>
               <td><span class="tag ${meta.className}">${meta.label}</span></td>
               <td class="mono">${repo.daysSinceActive}d</td>
-              <td class="table-desc">${escapeHtml(latest)}</td>
-              <td class="table-desc">${escapeHtml(repo.description || repo.language || "-")}</td>
+              <td class="table-desc"><a class="table-link" href="${escapeHtml(latest.href)}" target="_blank" rel="noreferrer">${escapeHtml(latest.title)}</a></td>
+              <td class="table-desc">${escapeHtml(progress)}</td>
             </tr>
           `;
         }).join("");
         $("repoCards").innerHTML = rows.map((repo) => {
           const meta = statusMeta[repo.status] || statusMeta.watch;
-          const latest = repo.latestCommit?.message || repo.contribution?.latest?.title || repo.description || "-";
+          const latest = getLatestWork(repo);
           return `
-            <a class="repo-card" href="${escapeHtml(repo.primaryUrl)}" target="_blank" rel="noreferrer">
+            <a class="repo-card" href="${escapeHtml(latest.href)}" target="_blank" rel="noreferrer">
               <div class="repo-card-top">
                 <span class="repo-card-title">${escapeHtml(compactRepoName(repo.fullName))}</span>
                 <span class="tag ${meta.className}">${meta.label}</span>
               </div>
-              <div class="repo-card-note">${escapeHtml(latest)}</div>
+              <div class="repo-card-note">${escapeHtml(latest.title)}</div>
               <div class="repo-card-meta">
                 <span class="tag">${escapeHtml(repo.platforms.join(" + "))}</span>
                 <span class="tag">${escapeHtml(repo.category)}</span>
+                ${repo.issues ? `<span class="tag warn">issues ${repo.issues.open || 0}/${repo.issues.total || 0}</span>` : ""}
+                ${repo.contribution ? `<span class="tag ok">PR ${repo.contribution.merged || 0}/${repo.contribution.total || 0}</span>` : ""}
                 <span class="tag">${repo.daysSinceActive}d</span>
               </div>
             </a>
@@ -1863,10 +1868,11 @@
         renderOverview(data);
         buildTicker(data);
         renderLiveFeed(data);
-        renderCategoryMap(data);
+        renderCategoryOptions(data);
+        renderWorkQueue(data);
         renderPrFlow(data);
         renderMaintenanceQueue(data);
-        renderSourceMatrix(data);
+        renderIssueQueue(data);
         renderRepoRows();
       }
 

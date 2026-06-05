@@ -67,9 +67,9 @@ main:
             npx edgeone pages deploy ./dist -n cnb-www -t $EDGEONE_API_TOKEN
 
   # ----------------------------------------------------------------
-  # 定时任务 (Cron Job)：每 30 分钟自动执行一次，从 API 抓取最新状态并重新部署
+  # 定时任务 (Cron Job)：每 5 分钟自动执行一次，从 API 抓取最新状态并重新部署
   # ----------------------------------------------------------------
-  "crontab: */30 * * * *":
+  "crontab: */5 * * * *":
     - imports: https://cnb.cool/htazq/my-secrets/-/blob/main/envs.yml
       stages:
         # ------------------------------------------------------------
