@@ -29,7 +29,7 @@ async function main() {
       name: 'owned',
       nameWithOwner: 'htazq/owned',
       description: 'owned repo',
-      isPrivate: false,
+      isPrivate: true,
       isFork: false,
       isArchived: false,
       primaryLanguage: {name: 'JavaScript'},
@@ -72,7 +72,7 @@ async function main() {
     overrides: {},
   });
 
-  const result = spawnSync(process.execPath, ['scripts/local-dashboard-build.mjs'], {
+  const result = spawnSync(process.execPath, ['scripts/local-dashboard-build.mjs', '--public'], {
     cwd: tempRoot,
     env: {
       ...process.env,
@@ -86,11 +86,15 @@ async function main() {
   assert.equal(result.status, 0, `${result.stdout}\n${result.stderr}`);
   const feed = JSON.parse(await fs.readFile(path.join(tempRoot, 'public', 'data', 'dashboard-feed.json'), 'utf8'));
   const external = feed.repositories.find((repo) => repo.fullName === 'other/project');
+  const privateOwned = feed.repositories.find((repo) => repo.fullName === 'htazq/owned');
+  const maskedOwned = feed.repositories.find((repo) => repo.fullName.startsWith('htazq/private-'));
 
   assert.ok(external, 'external contribution repository should be included');
   assert.equal(external.isExternalContribution, true);
   assert.equal(external.latestCommit?.sha, 'abc1234567890');
   assert.equal(external.contribution?.latest?.number, 42);
+  assert.equal(privateOwned, undefined, 'public feed should not expose private repository names');
+  assert.ok(maskedOwned, 'public feed should retain private repositories only as masked aliases');
   assert.equal(feed.source.github.repos, 2);
 }
 

@@ -52,8 +52,8 @@ main:
           script: |
             node -v
             npm install
-            # 运行完整版仪表盘数据构建 (写入到 public/data/)
-            node scripts/local-dashboard-build.mjs
+            # 运行公网脱敏版仪表盘数据构建 (写入到 public/data/)
+            node scripts/local-dashboard-build.mjs --public
             npm run validate
             # 编译打包主站
             npm run build
@@ -85,10 +85,10 @@ main:
           script: |
             node -v
             npm install
-            # 在线拉取最新 GitHub/CNB 数据并生成完整版 feed
-            node scripts/local-dashboard-build.mjs
+            # 在线拉取最新 GitHub/CNB 数据并生成公网脱敏版 feed
+            node scripts/local-dashboard-build.mjs --public
             npm run validate
-            # 编译打包主站 (将最新的完整数据与静态控制台页面一同构建)
+            # 编译打包主站 (将最新的脱敏数据与静态控制台页面一同构建)
             npm run build
             # 部署到 EdgeOne Pages
             npx edgeone pages deploy ./dist -n cnb-www -t $EDGEONE_API_TOKEN

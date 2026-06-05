@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-04T15:52:52.518Z",
+  "generatedAt": "2026-06-05T01:11:40.377Z",
   "source": {
     "github": {
       "configured": true,
@@ -51,8 +51,8 @@
       }
     ],
     "byStatus": {
-      "active": 19,
-      "watch": 28,
+      "active": 16,
+      "watch": 31,
       "stale": 61
     },
     "bySource": {
@@ -68,8 +68,8 @@
       }
     },
     "staleRepos": 61,
-    "activeRepos": 19,
-    "watchRepos": 28
+    "activeRepos": 16,
+    "watchRepos": 31
   },
   "topByStale": [
     {
@@ -1304,7 +1304,7 @@
       "status": "active",
       "statusText": "活跃",
       "daysSinceActive": 0,
-      "lastActiveAt": "2026-06-04T15:51:42Z",
+      "lastActiveAt": "2026-06-05T01:11:34Z",
       "latestCommit": null,
       "contribution": {
         "total": 1,
@@ -1331,13 +1331,13 @@
           "isPrivate": false,
           "visibility": "Public",
           "url": "https://github.com/openclaw/openclaw",
-          "updatedAt": "2026-06-04T15:51:42Z"
+          "updatedAt": "2026-06-05T01:11:34Z"
         }
       ],
       "metrics": {
-        "stars": 376787,
-        "forks": 78736,
-        "openIssues": 7636
+        "stars": 376874,
+        "forks": 78755,
+        "openIssues": 7694
       },
       "language": "TypeScript",
       "topics": [
@@ -1353,6 +1353,177 @@
       "isExternalContribution": true
     },
     {
+      "key": "ariadng/metatrader-mcp-server",
+      "owner": "ariadng",
+      "name": "metatrader-mcp-server",
+      "fullName": "ariadng/metatrader-mcp-server",
+      "category": "金融",
+      "categoryConfidence": 0.6,
+      "status": "active",
+      "statusText": "活跃",
+      "daysSinceActive": 0,
+      "lastActiveAt": "2026-06-05T00:54:42Z",
+      "latestCommit": null,
+      "contribution": {
+        "total": 1,
+        "opened": 1,
+        "merged": 0,
+        "closed": 0,
+        "latest": {
+          "number": 30,
+          "title": "Fix account type trade mode mapping",
+          "state": "open",
+          "updatedAt": "2026-06-02T14:57:08Z",
+          "url": "https://github.com/ariadng/metatrader-mcp-server/pull/30"
+        }
+      },
+      "isPrivate": false,
+      "description": "Model Context Protocol (MCP) to enable AI LLMs to trade using MetaTrader platform",
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/ariadng/metatrader-mcp-server",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": false,
+          "visibility": "Public",
+          "url": "https://github.com/ariadng/metatrader-mcp-server",
+          "updatedAt": "2026-06-05T00:54:42Z"
+        }
+      ],
+      "metrics": {
+        "stars": 476,
+        "forks": 170,
+        "openIssues": 13
+      },
+      "language": "Python",
+      "topics": [
+        "ai",
+        "finance",
+        "investment",
+        "llm",
+        "mcp",
+        "metatrader",
+        "quantitative-finance",
+        "trading"
+      ],
+      "homepage": "",
+      "isExternalContribution": true
+    },
+    {
+      "key": "nofxaios/nofx",
+      "owner": "NoFxAiOS",
+      "name": "nofx",
+      "fullName": "NoFxAiOS/nofx",
+      "category": "金融",
+      "categoryConfidence": 1,
+      "status": "active",
+      "statusText": "活跃",
+      "daysSinceActive": 0,
+      "lastActiveAt": "2026-06-04T20:41:11Z",
+      "latestCommit": null,
+      "contribution": {
+        "total": 1,
+        "opened": 1,
+        "merged": 0,
+        "closed": 0,
+        "latest": {
+          "number": 1315,
+          "title": "Fix backtest validation and improve error messaging",
+          "state": "open",
+          "updatedAt": "2026-03-16T05:53:33Z",
+          "url": "https://github.com/NoFxAiOS/nofx/pull/1315"
+        }
+      },
+      "isPrivate": false,
+      "description": "Your AI trading terminal assistant for US stocks, commodities, forex, and crypto.",
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/NoFxAiOS/nofx",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": false,
+          "visibility": "Public",
+          "url": "https://github.com/NoFxAiOS/nofx",
+          "updatedAt": "2026-06-04T20:41:11Z"
+        }
+      ],
+      "metrics": {
+        "stars": 12486,
+        "forks": 3003,
+        "openIssues": 506
+      },
+      "language": "Go",
+      "topics": [
+        "agentictrading",
+        "ai",
+        "ai-trading",
+        "arbitrage",
+        "binance",
+        "bitcoin",
+        "commodities",
+        "exchange",
+        "forex",
+        "hyperliquid",
+        "metals",
+        "perp-dex",
+        "stocks",
+        "trading",
+        "us-stocks",
+        "x402",
+        "x402-agent"
+      ],
+      "homepage": "https://vergex.trade",
+      "isExternalContribution": true
+    },
+    {
+      "key": "htazq/htazq",
+      "owner": "htazq",
+      "name": "htazq",
+      "fullName": "htazq/htazq",
+      "category": "其他",
+      "categoryConfidence": 0,
+      "status": "active",
+      "statusText": "活跃",
+      "daysSinceActive": 0,
+      "lastActiveAt": "2026-06-04T20:07:11Z",
+      "latestCommit": {
+        "sha": "5fdbed72dea7a42a06192a1f56a029c891e90d5c",
+        "message": "generated",
+        "committedAt": "2026-06-04T20:07:11Z",
+        "author": "github-actions",
+        "url": "https://github.com/htazq/htazq/commit/5fdbed72dea7a42a06192a1f56a029c891e90d5c"
+      },
+      "contribution": null,
+      "isPrivate": false,
+      "description": "",
+      "platforms": [
+        "github"
+      ],
+      "primaryUrl": "https://github.com/htazq/htazq",
+      "sources": [
+        {
+          "platform": "github",
+          "isPrivate": false,
+          "visibility": "Public",
+          "url": "https://github.com/htazq/htazq",
+          "updatedAt": "2026-06-04T20:07:11Z"
+        }
+      ],
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0
+      },
+      "language": "",
+      "topics": [],
+      "homepage": "",
+      "isExternalContribution": false
+    },
+    {
       "key": "htazq/private-web-01",
       "owner": "htazq",
       "name": "private-web-01",
@@ -1362,11 +1533,11 @@
       "status": "active",
       "statusText": "活跃",
       "daysSinceActive": 0,
-      "lastActiveAt": "2026-06-04T15:34:27Z",
+      "lastActiveAt": "2026-06-04T15:57:45Z",
       "latestCommit": {
-        "sha": "cafac1440bc69b168582ab2d47c40d4ab0aa305d",
+        "sha": "badab056e23584938a9ac3e8cc32197d03315b53",
         "message": "最近有代码更新",
-        "committedAt": "2026-06-04T15:34:27Z",
+        "committedAt": "2026-06-04T15:57:45Z",
         "author": "htazq",
         "url": ""
       },
@@ -1384,7 +1555,7 @@
           "isPrivate": true,
           "visibility": "Private",
           "url": "https://github.com/htazq",
-          "updatedAt": "2026-06-04T15:34:27Z"
+          "updatedAt": "2026-06-04T15:57:45Z"
         },
         {
           "platform": "cnb",
@@ -1414,7 +1585,7 @@
       "status": "active",
       "statusText": "活跃",
       "daysSinceActive": 0,
-      "lastActiveAt": "2026-06-04T15:04:59Z",
+      "lastActiveAt": "2026-06-04T15:56:34Z",
       "latestCommit": null,
       "contribution": {
         "total": 1,
@@ -1441,12 +1612,12 @@
           "isPrivate": false,
           "visibility": "Public",
           "url": "https://github.com/KylinMountain/TradingAgents-AShare",
-          "updatedAt": "2026-06-04T15:04:59Z"
+          "updatedAt": "2026-06-04T15:56:34Z"
         }
       ],
       "metrics": {
-        "stars": 523,
-        "forks": 164,
+        "stars": 524,
+        "forks": 165,
         "openIssues": 19
       },
       "language": "Python",
@@ -1461,74 +1632,6 @@
         "stock"
       ],
       "homepage": "https://app.510168.xyz",
-      "isExternalContribution": true
-    },
-    {
-      "key": "nofxaios/nofx",
-      "owner": "NoFxAiOS",
-      "name": "nofx",
-      "fullName": "NoFxAiOS/nofx",
-      "category": "金融",
-      "categoryConfidence": 1,
-      "status": "active",
-      "statusText": "活跃",
-      "daysSinceActive": 0,
-      "lastActiveAt": "2026-06-04T14:54:38Z",
-      "latestCommit": null,
-      "contribution": {
-        "total": 1,
-        "opened": 1,
-        "merged": 0,
-        "closed": 0,
-        "latest": {
-          "number": 1315,
-          "title": "Fix backtest validation and improve error messaging",
-          "state": "open",
-          "updatedAt": "2026-03-16T05:53:33Z",
-          "url": "https://github.com/NoFxAiOS/nofx/pull/1315"
-        }
-      },
-      "isPrivate": false,
-      "description": "Your AI trading terminal assistant for US stocks, commodities, forex, and crypto.",
-      "platforms": [
-        "github"
-      ],
-      "primaryUrl": "https://github.com/NoFxAiOS/nofx",
-      "sources": [
-        {
-          "platform": "github",
-          "isPrivate": false,
-          "visibility": "Public",
-          "url": "https://github.com/NoFxAiOS/nofx",
-          "updatedAt": "2026-06-04T14:54:38Z"
-        }
-      ],
-      "metrics": {
-        "stars": 12484,
-        "forks": 3003,
-        "openIssues": 505
-      },
-      "language": "Go",
-      "topics": [
-        "agentictrading",
-        "ai",
-        "ai-trading",
-        "arbitrage",
-        "binance",
-        "bitcoin",
-        "commodities",
-        "exchange",
-        "forex",
-        "hyperliquid",
-        "metals",
-        "perp-dex",
-        "stocks",
-        "trading",
-        "us-stocks",
-        "x402",
-        "x402-agent"
-      ],
-      "homepage": "https://vergex.trade",
       "isExternalContribution": true
     },
     {
@@ -1573,8 +1676,8 @@
       ],
       "metrics": {
         "stars": 5257,
-        "forks": 6542,
-        "openIssues": 32
+        "forks": 6546,
+        "openIssues": 33
       },
       "language": "JavaScript",
       "topics": [
@@ -1645,65 +1748,6 @@
       "topics": [
         "telegram",
         "telegram-bot"
-      ],
-      "homepage": "",
-      "isExternalContribution": true
-    },
-    {
-      "key": "ariadng/metatrader-mcp-server",
-      "owner": "ariadng",
-      "name": "metatrader-mcp-server",
-      "fullName": "ariadng/metatrader-mcp-server",
-      "category": "金融",
-      "categoryConfidence": 0.6,
-      "status": "active",
-      "statusText": "活跃",
-      "daysSinceActive": 0,
-      "lastActiveAt": "2026-06-04T12:58:16Z",
-      "latestCommit": null,
-      "contribution": {
-        "total": 1,
-        "opened": 1,
-        "merged": 0,
-        "closed": 0,
-        "latest": {
-          "number": 30,
-          "title": "Fix account type trade mode mapping",
-          "state": "open",
-          "updatedAt": "2026-06-02T14:57:08Z",
-          "url": "https://github.com/ariadng/metatrader-mcp-server/pull/30"
-        }
-      },
-      "isPrivate": false,
-      "description": "Model Context Protocol (MCP) to enable AI LLMs to trade using MetaTrader platform",
-      "platforms": [
-        "github"
-      ],
-      "primaryUrl": "https://github.com/ariadng/metatrader-mcp-server",
-      "sources": [
-        {
-          "platform": "github",
-          "isPrivate": false,
-          "visibility": "Public",
-          "url": "https://github.com/ariadng/metatrader-mcp-server",
-          "updatedAt": "2026-06-04T12:58:16Z"
-        }
-      ],
-      "metrics": {
-        "stars": 475,
-        "forks": 169,
-        "openIssues": 13
-      },
-      "language": "Python",
-      "topics": [
-        "ai",
-        "finance",
-        "investment",
-        "llm",
-        "mcp",
-        "metatrader",
-        "quantitative-finance",
-        "trading"
       ],
       "homepage": "",
       "isExternalContribution": true
@@ -1820,50 +1864,6 @@
       "topics": [],
       "homepage": "",
       "isExternalContribution": true
-    },
-    {
-      "key": "htazq/htazq",
-      "owner": "htazq",
-      "name": "htazq",
-      "fullName": "htazq/htazq",
-      "category": "其他",
-      "categoryConfidence": 0,
-      "status": "active",
-      "statusText": "活跃",
-      "daysSinceActive": 0,
-      "lastActiveAt": "2026-06-04T03:35:18Z",
-      "latestCommit": {
-        "sha": "9228699aca11fbfcd3274447df5a8c8877d0f577",
-        "message": "Update README stats",
-        "committedAt": "2026-06-04T03:35:18Z",
-        "author": "github-actions[bot]",
-        "url": "https://github.com/htazq/htazq/commit/9228699aca11fbfcd3274447df5a8c8877d0f577"
-      },
-      "contribution": null,
-      "isPrivate": false,
-      "description": "",
-      "platforms": [
-        "github"
-      ],
-      "primaryUrl": "https://github.com/htazq/htazq",
-      "sources": [
-        {
-          "platform": "github",
-          "isPrivate": false,
-          "visibility": "Public",
-          "url": "https://github.com/htazq/htazq",
-          "updatedAt": "2026-06-04T03:35:18Z"
-        }
-      ],
-      "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0
-      },
-      "language": "",
-      "topics": [],
-      "homepage": "",
-      "isExternalContribution": false
     },
     {
       "key": "marseventh/sanyue-imghub",
@@ -2166,9 +2166,9 @@
       "fullName": "htazq/private-finance-02",
       "category": "金融",
       "categoryConfidence": 0.2,
-      "status": "active",
-      "statusText": "活跃",
-      "daysSinceActive": 14,
+      "status": "watch",
+      "statusText": "关注",
+      "daysSinceActive": 15,
       "lastActiveAt": "2026-05-20T16:10:51Z",
       "latestCommit": {
         "sha": "4c44fef4c11fd70992ff1fae700bb4ffde0139f9",
@@ -2210,9 +2210,9 @@
       "fullName": "htazq/private-finance-03",
       "category": "金融",
       "categoryConfidence": 0.2,
-      "status": "active",
-      "statusText": "活跃",
-      "daysSinceActive": 14,
+      "status": "watch",
+      "statusText": "关注",
+      "daysSinceActive": 15,
       "lastActiveAt": "2026-05-20T16:10:51Z",
       "latestCommit": {
         "sha": "4974a334af638b722ff99ce8c536536f5cb2587e",
@@ -2254,9 +2254,9 @@
       "fullName": "htazq/private-misc-02",
       "category": "其他",
       "categoryConfidence": 0,
-      "status": "active",
-      "statusText": "活跃",
-      "daysSinceActive": 14,
+      "status": "watch",
+      "statusText": "关注",
+      "daysSinceActive": 15,
       "lastActiveAt": "2026-05-20T16:10:51Z",
       "latestCommit": {
         "sha": "44e8d9a9ad1456b3da8fa05aa18b46131b4d4311",
@@ -2394,7 +2394,7 @@
       "categoryConfidence": 0.2,
       "status": "watch",
       "statusText": "关注",
-      "daysSinceActive": 19,
+      "daysSinceActive": 20,
       "lastActiveAt": "2026-05-15T16:25:56Z",
       "latestCommit": null,
       "contribution": null,
@@ -2734,7 +2734,7 @@
       "categoryConfidence": 0,
       "status": "watch",
       "statusText": "关注",
-      "daysSinceActive": 42,
+      "daysSinceActive": 43,
       "lastActiveAt": "2026-04-23T01:07:01Z",
       "latestCommit": null,
       "contribution": null,
@@ -4686,7 +4686,7 @@
       "categoryConfidence": 0.4,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 195,
+      "daysSinceActive": 196,
       "lastActiveAt": "2025-11-20T16:32:56Z",
       "latestCommit": null,
       "contribution": null,
@@ -5384,7 +5384,7 @@
       "categoryConfidence": 0.4,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 467,
+      "daysSinceActive": 468,
       "lastActiveAt": "2025-02-21T22:01:30Z",
       "latestCommit": {
         "sha": "d349ffcb58de8e7556f572e6e3c87d8ade3fde5c",
@@ -5806,7 +5806,7 @@
       "categoryConfidence": 0,
       "status": "stale",
       "statusText": "沉默",
-      "daysSinceActive": 862,
+      "daysSinceActive": 863,
       "lastActiveAt": "2024-01-23T23:03:54Z",
       "latestCommit": null,
       "contribution": null,
