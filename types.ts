@@ -1,16 +1,22 @@
 import { LucideIcon } from 'lucide-react';
 
-export interface LinkItem {
+export type NavCategory = 'Official' | 'Project' | 'Social' | 'Tool' | 'Mirror' | 'Finance' | 'AI' | 'Dev' | 'Storage';
+
+export interface NavItem {
   id: string;
   title: string;
   url: string;
   description: string;
   icon: LucideIcon | string;
-  category: 'Project' | 'Social' | 'Tool';
+  category: NavCategory;
   color: string;
+  badge?: string;
+  tags?: string[];
+  language?: string;
+  stars?: number;
+  isNew?: boolean;
+  isFeatured?: boolean;
 }
-
-
 
 export interface TechSkill {
   name: string;

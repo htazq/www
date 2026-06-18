@@ -1,9 +1,9 @@
 import React, { useRef, useState } from 'react';
-import { LinkItem } from '../types';
+import { NavItem } from '../types';
 import { ExternalLink } from 'lucide-react';
 
 interface LinkCardProps {
-  item: LinkItem;
+  item: NavItem;
 }
 
 const LinkCard: React.FC<LinkCardProps> = ({ item }) => {
