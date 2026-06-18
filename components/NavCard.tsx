@@ -43,7 +43,7 @@ const NavCard: React.FC<NavCardProps> = ({ item }) => {
       onMouseLeave={handleMouseLeave}
       onFocus={handleFocus}
       onBlur={handleBlur}
-      className="relative group flex flex-col p-5 bg-slate-900/80 border border-slate-800 rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:border-slate-700"
+      className="relative group flex flex-col p-5 bg-slate-900/60 border border-slate-800 rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:border-slate-700 hover:bg-slate-900/80"
     >
       {/* Spotlight layers */}
       <div
@@ -65,7 +65,6 @@ const NavCard: React.FC<NavCardProps> = ({ item }) => {
         }}
       />
 
-      {/* New badge */}
       {item.isNew && (
         <span className="absolute top-3 right-3 z-20 px-2 py-0.5 rounded-full bg-rose-500/20 text-rose-400 text-[10px] font-bold tracking-wider border border-rose-500/30 animate-pulse">
           NEW
@@ -73,7 +72,7 @@ const NavCard: React.FC<NavCardProps> = ({ item }) => {
       )}
 
       <div className="relative z-10 flex items-start gap-4">
-        <div className={`shrink-0 p-3 rounded-xl bg-slate-950 border border-slate-800 group-hover:border-slate-600 transition-colors`}>
+        <div className="shrink-0 p-3 rounded-xl bg-slate-950 border border-slate-800 group-hover:border-slate-600 transition-colors">
           {isImageUrl ? (
             <img
               src={item.icon as string}
@@ -102,20 +101,10 @@ const NavCard: React.FC<NavCardProps> = ({ item }) => {
         {item.description}
       </p>
 
-      <div className="relative z-10 mt-auto pt-4 flex flex-wrap items-center gap-2">
-        {item.badge && (
-          <span className="px-2 py-0.5 rounded-md bg-slate-800 text-slate-300 text-[10px] font-medium border border-slate-700">
-            {item.badge}
-          </span>
-        )}
-        {item.tags?.map((tag) => (
-          <span
-            key={tag}
-            className="px-2 py-0.5 rounded-md bg-slate-800/60 text-slate-400 text-[10px] border border-slate-800"
-          >
-            {tag}
-          </span>
-        ))}
+      <div className="relative z-10 mt-auto pt-4">
+        <span className="inline-block px-2 py-0.5 rounded-md bg-slate-800 text-slate-400 text-[10px] font-medium border border-slate-700">
+          {item.category}
+        </span>
       </div>
     </a>
   );
