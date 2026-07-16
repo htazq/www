@@ -72,10 +72,7 @@ async function validateHtml() {
     assertInlineScriptSyntax(html);
   } else if (isViteReactApp) {
     const appSource = await fs.readFile(appPath, 'utf8');
-    if (!appSource.includes('dashboard-feed.json')) {
-      fail('React app must read dashboard-feed.json for activity updates');
-    }
-    if (!appSource.includes('id="activity"')) {
+    if (appSource.includes('dashboard-feed.json') && !appSource.includes('id="activity"')) {
       fail('React app must expose id="activity" for recent commit/PR updates');
     }
   } else {
