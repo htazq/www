@@ -77,88 +77,18 @@ main:
             pnpm build
             npx edgeone makers deploy ./dist -n at9-internet-lab -a overseas -t $EDGEONE_API_TOKEN
 
-    - name: Migrate and Bind Internet Lab Domain
+    - name: Inspect Internet Lab Domain
       imports: https://cnb.cool/htazq/my-secrets/-/blob/main/envs.yml
       stages:
-        - name: Recreate Overseas Project and Bind Domain
-          image: node:22
+        - name: Read EdgeOne Domain Records
+          image: curlimages/curl:8.10.1
           script: |
-            node --input-type=module <<'NODE'
-            const endpoint = 'https://pages-api.cloud.tencent.com/v1';
-            const headers = {
-              Authorization: `Bearer ${process.env.EDGEONE_API_TOKEN}`,
-              'Content-Type': 'application/json',
-            };
-            const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-
-            async function call(data) {
-              const response = await fetch(endpoint, {
-                method: 'POST',
-                headers,
-                body: JSON.stringify(data),
-              });
-              const body = await response.json();
-              const result = body.Data?.Response;
-              if (!response.ok || body.Code !== 0 || result?.Error) {
-                throw new Error(result?.Error?.Message || body.Message || `HTTP ${response.status}`);
-              }
-              return result;
-            }
-
-            async function findProject() {
-              const result = await call({
-                Action: 'DescribePagesProjects',
-                Filters: [{Name: 'Name', Values: ['at9-internet-lab']}],
-                Offset: 0,
-                Limit: 10,
-              });
-              return result.Projects?.find((project) => project.Name === 'at9-internet-lab');
-            }
-
-            const oldProject = await findProject();
-            if (oldProject) {
-              await call({Action: 'DeletePagesProject', ProjectId: oldProject.ProjectId});
-              console.log(`Deleted global project ${oldProject.ProjectId}`);
-            }
-
-            for (let attempt = 0; attempt < 30 && await findProject(); attempt += 1) {
-              await sleep(2000);
-            }
-            if (await findProject()) throw new Error('Timed out waiting for project deletion');
-
-            const created = await call({
-              Action: 'CreatePagesProject',
-              Name: 'at9-internet-lab',
-              Provider: 'Upload',
-              Channel: 'Custom',
-              Area: 'overseas',
-              Source: 'cli',
-            });
-            console.log(`Created overseas project ${created.ProjectId}`);
-
-            let project;
-            for (let attempt = 0; attempt < 72; attempt += 1) {
-              project = await findProject();
-              if (project?.Area === 'overseas' && project.Deployment?.Status === 'Success') break;
-              await sleep(5000);
-            }
-            if (project?.Area !== 'overseas' || project.Deployment?.Status !== 'Success') {
-              throw new Error('Timed out waiting for overseas deployment');
-            }
-
-            const domain = await call({
-              Action: 'CreatePagesZoneCustomDomain',
-              ProjectId: project.ProjectId,
-              Domain: 'lab.at9.net',
-            });
-            console.log(JSON.stringify({
-              ProjectId: project.ProjectId,
-              Domain: domain.Domain,
-              Status: domain.Status,
-              Cname: domain.Cname,
-              OwnershipVerification: domain.OwnershipVerification,
-            }, null, 2));
-            NODE
+            curl -fsS https://pages-api.cloud.tencent.com/v1 \
+              -H 'Content-Type: application/json' \
+              -H "Authorization: Bearer $EDGEONE_API_TOKEN" \
+              --data '{"Action":"DescribePagesZoneCustomDomains","ProjectId":"makers-flcytmbxfj4r","Domain":"lab.at9.net"}'
+            printf '\nAvailable DNS credential variables:\n'
+            env | cut -d= -f1 | grep -E 'CLOUDFLARE|^CF_' || true
 
   # ----------------------------------------------------------------
   # 定时任务 (Cron Job)：每 5 分钟自动执行一次，从 API 抓取最新状态并重新部署
