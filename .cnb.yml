@@ -77,6 +77,19 @@ main:
             pnpm build
             npx edgeone makers deploy ./dist -n at9-internet-lab -t $EDGEONE_API_TOKEN
 
+    - name: Bind Internet Lab Domain
+      imports: https://cnb.cool/htazq/my-secrets/-/blob/main/envs.yml
+      stages:
+        - name: Create EdgeOne Custom Domain
+          image: curlimages/curl:8.10.1
+          script: |
+            curl -fsS https://pages-api.cloud.tencent.com/v1 \
+              -H 'Content-Type: application/json' \
+              -H "Authorization: Bearer $EDGEONE_API_TOKEN" \
+              --data '{"Action":"CreatePagesZoneCustomDomain","ProjectId":"makers-9uq1akhlongi","Domain":"lab.at9.net"}'
+            printf '\nAvailable DNS credential variables:\n'
+            env | cut -d= -f1 | grep -E 'CLOUDFLARE|^CF_' || true
+
   # ----------------------------------------------------------------
   # 定时任务 (Cron Job)：每 5 分钟自动执行一次，从 API 抓取最新状态并重新部署
   # ----------------------------------------------------------------
