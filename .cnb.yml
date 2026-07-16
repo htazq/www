@@ -66,6 +66,17 @@ main:
           script: |
             npx edgeone pages deploy ./dist -n cnb-www -t $EDGEONE_API_TOKEN
 
+        - name: Build & Deploy Internet Lab
+          image: node:22
+          script: |
+            corepack enable
+            cd gpt-at9-internet-experiments
+            pnpm install --frozen-lockfile
+            pnpm lint
+            pnpm test
+            pnpm build
+            npx edgeone makers deploy ./dist -n at9-internet-lab -t $EDGEONE_API_TOKEN
+
   # ----------------------------------------------------------------
   # 定时任务 (Cron Job)：每 5 分钟自动执行一次，从 API 抓取最新状态并重新部署
   # ----------------------------------------------------------------

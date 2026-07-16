@@ -1,0 +1,225 @@
+.education-banner {
+  display: flex;
+  gap: 1rem 2rem;
+  flex-wrap: wrap;
+  padding: 1rem clamp(1rem, 5vw, 5.5rem);
+  border-bottom: 1px solid rgba(232, 169, 79, 0.35);
+  background: rgba(232, 169, 79, 0.06);
+  font: 600 0.68rem/1.5 monospace;
+  color: var(--paper-muted);
+}
+.education-banner strong {
+  color: var(--signal);
+}
+.quorum-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(250px, 0.6fr);
+}
+.quorum-topology,
+.quorum-status,
+.quorum-controls,
+.scenario-panel,
+.event-log {
+  padding: 2rem clamp(1rem, 3vw, 2.5rem);
+  border-bottom: 1px solid var(--line);
+  border-right: 1px solid var(--line);
+}
+.quorum-status,
+.event-log {
+  border-right: 0;
+}
+.quorum-panel-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.quorum-topology svg {
+  margin-top: 1rem;
+  overflow: visible;
+}
+.quorum-topology .link {
+  stroke: rgba(120, 201, 155, 0.65);
+  stroke-width: 3;
+}
+.quorum-topology .link.failed {
+  stroke: var(--danger);
+  stroke-dasharray: 10 8;
+}
+.node rect,
+.witness rect,
+.vip rect {
+  fill: #15191e;
+  stroke: var(--line);
+  stroke-width: 2;
+}
+.node text,
+.witness text,
+.vip text {
+  fill: var(--paper);
+  font: 700 15px monospace;
+  text-anchor: middle;
+}
+.node .node-sub,
+.witness .node-sub {
+  fill: var(--paper-muted);
+  font-size: 11px;
+}
+.node.active rect {
+  stroke: var(--phosphor);
+  stroke-width: 3;
+}
+.node.offline,
+.witness.offline {
+  opacity: 0.35;
+}
+.vip-A rect,
+.vip-B rect {
+  stroke: var(--cobalt);
+}
+.vip-both rect {
+  stroke: var(--danger);
+}
+.vip-none {
+  opacity: 0.45;
+}
+.topology-explanation {
+  padding: 1rem;
+  border-left: 2px solid var(--cobalt);
+  color: var(--paper-muted);
+  line-height: 1.6;
+}
+.quorum-status dl {
+  margin: 1.2rem 0 0;
+}
+.quorum-status dl div {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--line);
+}
+.quorum-status dt {
+  color: var(--paper-muted);
+}
+.quorum-status dd {
+  margin: 0;
+  font: 700 0.72rem monospace;
+}
+.quorum-status dd.good {
+  color: var(--phosphor);
+}
+.quorum-status dd.bad {
+  color: var(--danger);
+}
+.quorum-status dd.warn {
+  color: var(--signal);
+}
+.quorum-controls {
+  grid-column: 1/-1;
+}
+.control-groups {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.control-groups > div {
+  display: grid;
+  align-content: start;
+  gap: 0.5rem;
+  padding: 1rem;
+  border: 1px solid var(--line);
+}
+.control-groups strong {
+  margin-bottom: 0.4rem;
+  color: var(--paper-muted);
+  font: 600 0.65rem monospace;
+}
+.scenario-panel h2 {
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  margin: 2rem 0 1rem;
+}
+.scenario-panel > p,
+.scenario-panel li {
+  color: var(--paper-muted);
+  line-height: 1.6;
+}
+.scenario-tabs {
+  display: flex;
+  gap: 0.4rem;
+  overflow: auto;
+  margin-top: 1rem;
+}
+.scenario-tabs button {
+  white-space: nowrap;
+  border: 1px solid var(--line);
+  background: none;
+  color: var(--paper-muted);
+  padding: 0.7rem;
+  font: 600 0.65rem monospace;
+}
+.scenario-tabs button.active {
+  background: var(--paper);
+  color: var(--ink);
+}
+.scenario-success {
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 1px solid var(--line);
+}
+.event-log ol {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+  max-height: 360px;
+  overflow: auto;
+}
+.event-log li {
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 0.6rem;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: var(--paper-muted);
+}
+.event-log li span {
+  color: var(--cobalt);
+  font-family: monospace;
+}
+@media (max-width: 900px) {
+  .quorum-layout {
+    grid-template-columns: 1fr;
+  }
+  .quorum-status,
+  .event-log {
+    border-right: 0;
+  }
+  .control-groups {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 560px) {
+  .quorum-topology,
+  .quorum-status,
+  .quorum-controls,
+  .scenario-panel,
+  .event-log {
+    padding: 1rem;
+  }
+  .control-groups {
+    grid-template-columns: 1fr;
+  }
+  .quorum-topology svg {
+    min-width: 560px;
+  }
+  .quorum-topology {
+    overflow: auto;
+  }
+  .scenario-tabs {
+    margin-inline: -1rem;
+    padding-inline: 1rem;
+  }
+}

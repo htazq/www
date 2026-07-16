@@ -1,0 +1,216 @@
+.garden-controls {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto;
+  gap: 1rem;
+  align-items: end;
+  padding: 1.5rem clamp(1rem, 5vw, 5.5rem);
+  border-bottom: 1px solid var(--line);
+  background: #0e1718;
+}
+.swap-route {
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--line);
+  background: var(--surface-raised);
+  font-size: 1.2rem;
+}
+.map-zoom {
+  display: flex;
+  gap: 0.4rem;
+}
+.garden-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(280px, 0.7fr);
+  background: #0e1718;
+}
+.world-panel,
+.route-stages,
+.browser-timing,
+.network-info {
+  padding: 2rem clamp(1rem, 3vw, 2.5rem);
+  border-bottom: 1px solid var(--line);
+  border-right: 1px solid var(--line);
+}
+.route-stages,
+.network-info {
+  border-right: 0;
+}
+.garden-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.world-map {
+  width: 100%;
+  min-height: 420px;
+  touch-action: none;
+  cursor: grab;
+}
+.world-map:active {
+  cursor: grabbing;
+}
+.land {
+  fill: #182527;
+  stroke: rgba(232, 228, 220, 0.14);
+  stroke-width: 1;
+}
+.route-arc {
+  fill: none;
+  stroke: var(--cobalt);
+  stroke-width: 2;
+  stroke-dasharray: 6 6;
+}
+.route-pulse {
+  fill: var(--signal);
+  filter: drop-shadow(0 0 5px rgba(232, 169, 79, 0.7));
+}
+.city {
+  cursor: pointer;
+}
+.city circle {
+  fill: var(--paper-muted);
+}
+.city text {
+  fill: var(--paper-muted);
+  font: 9px monospace;
+}
+.city.selected circle {
+  fill: var(--signal);
+  stroke: rgba(232, 169, 79, 0.3);
+  stroke-width: 8;
+}
+.city.selected text {
+  fill: var(--paper);
+  font-weight: 700;
+}
+.route-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--line);
+}
+.route-summary div {
+  padding: 1rem;
+  border-right: 1px solid var(--line);
+}
+.route-summary div:last-child {
+  border-right: 0;
+}
+.route-summary span,
+.timing-grid span {
+  display: block;
+  color: var(--paper-muted);
+  font: 600 0.62rem/1.4 monospace;
+}
+.route-summary strong,
+.timing-grid strong {
+  display: block;
+  margin-top: 0.6rem;
+  font: 700 clamp(1rem, 2vw, 1.35rem)/1 monospace;
+}
+.route-stages {
+  display: grid;
+  align-content: start;
+  gap: 1rem;
+}
+.stage-row {
+  display: grid;
+  grid-template-columns: 70px 1fr 72px;
+  align-items: center;
+  gap: 0.7rem;
+  font: 600 0.65rem monospace;
+}
+.stage-row i {
+  height: 5px;
+  background: linear-gradient(
+    90deg,
+    var(--cobalt) var(--stage-width),
+    rgba(232, 228, 220, 0.08) var(--stage-width)
+  );
+}
+.stage-row strong {
+  text-align: right;
+}
+.route-stages > p,
+.browser-timing > p,
+.network-info p {
+  color: var(--paper-muted);
+  font-size: 0.8rem;
+  line-height: 1.6;
+  margin-top: 2rem;
+}
+.browser-timing {
+  grid-column: 1;
+}
+.timing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 1rem;
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+.timing-grid div {
+  padding: 1rem;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.network-info strong {
+  display: block;
+  margin: 2rem 0 1rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+.network-info code {
+  font-family: monospace;
+  color: var(--signal);
+}
+@media (max-width: 960px) {
+  .garden-controls {
+    grid-template-columns: 1fr auto 1fr;
+  }
+  .map-zoom {
+    grid-column: 1/-1;
+  }
+  .garden-layout {
+    grid-template-columns: 1fr;
+  }
+  .route-stages,
+  .network-info {
+    border-right: 0;
+  }
+  .browser-timing {
+    grid-column: 1;
+  }
+}
+@media (max-width: 600px) {
+  .garden-controls {
+    grid-template-columns: 1fr auto 1fr;
+    padding: 1rem;
+  }
+  .map-zoom {
+    overflow: auto;
+  }
+  .world-panel,
+  .route-stages,
+  .browser-timing,
+  .network-info {
+    padding: 1rem;
+  }
+  .world-map {
+    min-height: 330px;
+  }
+  .route-summary {
+    grid-template-columns: 1fr;
+  }
+  .route-summary div {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .timing-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .stage-row {
+    grid-template-columns: 62px 1fr 66px;
+    font-size: 0.6rem;
+  }
+}
