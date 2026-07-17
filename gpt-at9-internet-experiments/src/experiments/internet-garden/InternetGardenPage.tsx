@@ -95,11 +95,7 @@ export default function InternetGardenPage() {
 
   return (
     <>
-      <ExperimentHeader
-        number="03"
-        title="INTERNET GARDEN"
-        description="Choose two cities and inspect the physical lower bound, an illustrative protocol journey, and measurements collected by this browser for the current page."
-      />
+      <ExperimentHeader number="03" title="INTERNET GARDEN" />
       <section className="garden-controls">
         <div className="field">
           <label htmlFor="source-city">SOURCE CITY</label>

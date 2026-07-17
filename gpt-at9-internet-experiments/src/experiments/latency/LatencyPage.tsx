@@ -24,11 +24,7 @@ export default function LatencyPage() {
 
   return (
     <>
-      <ExperimentHeader
-        number="05"
-        title="LATENCY"
-        description="Choose a reference scale, then walk from CPU time to network time, model inference, and human coordination."
-      />
+      <ExperimentHeader number="05" title="LATENCY" />
       <section className="latency-controls">
         <div className="benchmark-control">
           <span className="panel-label">REFERENCE</span>

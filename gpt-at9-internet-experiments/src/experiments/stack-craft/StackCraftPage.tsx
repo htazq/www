@@ -95,11 +95,7 @@ export default function StackCraftPage() {
 
   return (
     <>
-      <ExperimentHeader
-        number="01"
-        title="STACK CRAFT"
-        description="Begin with Linux, processes, memory, disks, and networks. Compose deterministic technology recipes until the system becomes an AI data center."
-      />
+      <ExperimentHeader number="01" title="STACK CRAFT" />
       <section className="stack-layout">
         <aside className="stack-inventory">
           <div className="stack-panel-title">

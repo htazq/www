@@ -2,12 +2,37 @@ import { Link } from 'react-router-dom';
 import { usePageMetadata } from './metadata';
 import { siteConfig } from './siteConfig';
 import { experiments } from '../data/experiments';
+import { getSiteLanguage, localize } from './language';
 
-export default function HomePage() {
-  usePageMetadata({
+const pageCopy = {
+  zh: {
+    title: '浏览器原生系统实验室',
+    description: '关于系统、网络、尺度和计算机历史的可交互实验。',
+    intro: '一个工程师持续发布互联网实验的地方。关于系统、网络、尺度，以及计算机历史。',
+    explore: '浏览实验',
+    collection: '实验集合',
+    collectionTitle: '七个可运行的实验',
+    enter: '进入实验',
+  },
+  en: {
     title: 'Browser-native systems laboratory',
     description: 'Interactive experiments about systems, networks, scale, and computing history.',
-    path: '/',
+    intro: 'Small experiments about systems, networks, scale, and the history of computing.',
+    explore: 'EXPLORE THE LAB',
+    collection: 'THE COLLECTION',
+    collectionTitle: 'Seven working exhibits',
+    enter: 'ENTER EXPERIMENT',
+  },
+} as const;
+
+export default function HomePage() {
+  const language = getSiteLanguage();
+  const copy = pageCopy[language];
+
+  usePageMetadata({
+    title: copy.title,
+    description: copy.description,
+    path: '/experiments',
   });
 
   return (
@@ -18,18 +43,12 @@ export default function HomePage() {
           <span>AT9</span>INTERNET EXPERIMENTS
         </h1>
         <div className="hero-copy">
-          <p>一个工程师持续发布互联网实验的地方。</p>
-          <p>关于系统、网络、尺度，以及计算机历史的一些可交互实验。</p>
-          <p className="hero-english">
-            Small experiments about systems, networks,
-            <br />
-            scale, and the history of computing.
-          </p>
+          <p>{copy.intro}</p>
         </div>
         <div className="hero-actions">
-          <Link className="button-primary" to="/experiments">
-            EXPLORE THE LAB
-          </Link>
+          <a className="button-primary" href="#experiments-heading">
+            {copy.explore}
+          </a>
           <a href={siteConfig.links.deck} target="_blank" rel="noreferrer">
             OPEN 9DECK ↗
           </a>
@@ -40,25 +59,25 @@ export default function HomePage() {
       </section>
       <section className="exhibit-list" aria-labelledby="experiments-heading">
         <div className="section-heading">
-          <p>THE COLLECTION</p>
-          <h2 id="experiments-heading">Seven working exhibits</h2>
+          <p>{copy.collection}</p>
+          <h2 id="experiments-heading">{copy.collectionTitle}</h2>
         </div>
         {experiments.map((experiment) => (
           <article className="exhibit" key={experiment.slug}>
             <div className="exhibit-meta">
               <span>{experiment.number}</span>
               <span>{experiment.type}</span>
-              <span>LIVE EXPERIMENT</span>
+              <span>{language === 'zh' ? '在线实验' : 'LIVE EXPERIMENT'}</span>
             </div>
             <div className="exhibit-title">
               <h3>{experiment.title}</h3>
-              <p>{experiment.description}</p>
+              <p>{localize(experiment.description)}</p>
             </div>
             <div className="exhibit-preview" aria-hidden="true">
               {experiment.preview}
             </div>
             <Link className="exhibit-link" to={`/experiments/${experiment.slug}`}>
-              ENTER EXPERIMENT <span>↗</span>
+              {copy.enter} <span>↗</span>
             </Link>
           </article>
         ))}

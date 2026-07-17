@@ -8,7 +8,7 @@ export function SiteHeader() {
 
   return (
     <header className="site-header">
-      <NavLink className="brand" to="/" onClick={close} aria-label="AT9 home">
+      <NavLink className="brand" to="/experiments" onClick={close} aria-label="AT9 experiments">
         AT9
       </NavLink>
       <button
@@ -28,7 +28,7 @@ export function SiteHeader() {
         <NavLink to="/experiments" onClick={close}>
           EXPERIMENTS
         </NavLink>
-        <NavLink to="/about" onClick={close}>
+        <NavLink to="/experiments/about" onClick={close}>
           ABOUT
         </NavLink>
         <a href={siteConfig.links.deck} target="_blank" rel="noreferrer">

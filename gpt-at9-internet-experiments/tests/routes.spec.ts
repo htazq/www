@@ -1,8 +1,7 @@
 import { expect, test } from '@playwright/test';
 
 const routes = [
-  '/',
-  '/experiments',
+  '/experiments/',
   '/experiments/stack-craft',
   '/experiments/quorum',
   '/experiments/internet-garden',
@@ -10,8 +9,8 @@ const routes = [
   '/experiments/latency',
   '/experiments/data-scale',
   '/experiments/internet-archaeology',
-  '/about',
-  '/route-that-does-not-exist',
+  '/experiments/about',
+  '/experiments/route-that-does-not-exist',
 ];
 
 test.describe('route smoke tests', () => {
@@ -40,10 +39,10 @@ test.describe('route smoke tests', () => {
   });
 
   test('home enters each experiment', async ({ page }) => {
-    await page.goto('/');
+    await page.goto('/experiments/');
     await expect(page.getByRole('link', { name: /ENTER EXPERIMENT/ })).toHaveCount(7);
     for (let index = 0; index < 7; index += 1) {
-      await page.goto('/');
+      await page.goto('/experiments/');
       await page
         .getByRole('link', { name: /ENTER EXPERIMENT/ })
         .nth(index)
@@ -57,5 +56,23 @@ test.describe('route smoke tests', () => {
     await page.goto('/experiments/quorum');
     await page.reload();
     await expect(page.getByRole('heading', { name: 'QUORUM' })).toBeVisible();
+  });
+
+  test('descriptions follow the browser language', async ({ browser }) => {
+    const cases = [
+      { locale: 'zh-CN', expected: '将基础设施概念组合成一个可运行的 AI 数据中心。' },
+      {
+        locale: 'ja-JP',
+        expected: 'Compose infrastructure concepts into a working AI data center.',
+      },
+    ];
+
+    for (const item of cases) {
+      const context = await browser.newContext({ locale: item.locale });
+      const page = await context.newPage();
+      await page.goto('/experiments/');
+      await expect(page.locator('.exhibit-title p').first()).toHaveText(item.expected);
+      await context.close();
+    }
   });
 });

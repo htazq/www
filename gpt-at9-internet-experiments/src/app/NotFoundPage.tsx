@@ -12,7 +12,7 @@ export default function NotFoundPage() {
       <p>404 / NULL ROUTE</p>
       <h1>ROUTE NOT FOUND</h1>
       <p>The packet reached a network that does not exist.</p>
-      <Link className="button-primary" to="/">
+      <Link className="button-primary" to="/experiments">
         Return to the lab.
       </Link>
     </section>

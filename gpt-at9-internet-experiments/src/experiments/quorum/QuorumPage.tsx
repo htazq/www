@@ -21,12 +21,7 @@ export default function QuorumPage() {
   const statusClass = (ok: boolean) => (ok ? 'good' : 'bad');
   return (
     <>
-      <ExperimentHeader
-        number="02"
-        title="QUORUM"
-        description="Break a simplified high-availability cluster to understand votes, network partitions, Virtual IP ownership, fencing, and split-brain risk."
-        label="EDUCATIONAL MODEL"
-      />
+      <ExperimentHeader number="02" title="QUORUM" label="EDUCATIONAL MODEL" />
       <div className="education-banner">
         <strong>EDUCATIONAL MODEL</strong>
         <span>This is a simplified simulation, not an exact Pacemaker implementation.</span>

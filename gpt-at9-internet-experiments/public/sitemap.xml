@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://lab.at9.net/</loc></url>
-  <url><loc>https://lab.at9.net/experiments</loc></url>
-  <url><loc>https://lab.at9.net/experiments/stack-craft</loc></url>
-  <url><loc>https://lab.at9.net/experiments/quorum</loc></url>
-  <url><loc>https://lab.at9.net/experiments/internet-garden</loc></url>
-  <url><loc>https://lab.at9.net/experiments/one-million-blocks</loc></url>
-  <url><loc>https://lab.at9.net/experiments/latency</loc></url>
-  <url><loc>https://lab.at9.net/experiments/data-scale</loc></url>
-  <url><loc>https://lab.at9.net/experiments/internet-archaeology</loc></url>
-  <url><loc>https://lab.at9.net/about</loc></url>
+  <url><loc>https://www.at9.net/experiments</loc></url>
+  <url><loc>https://www.at9.net/experiments/stack-craft</loc></url>
+  <url><loc>https://www.at9.net/experiments/quorum</loc></url>
+  <url><loc>https://www.at9.net/experiments/internet-garden</loc></url>
+  <url><loc>https://www.at9.net/experiments/one-million-blocks</loc></url>
+  <url><loc>https://www.at9.net/experiments/latency</loc></url>
+  <url><loc>https://www.at9.net/experiments/data-scale</loc></url>
+  <url><loc>https://www.at9.net/experiments/internet-archaeology</loc></url>
+  <url><loc>https://www.at9.net/experiments/about</loc></url>
 </urlset>

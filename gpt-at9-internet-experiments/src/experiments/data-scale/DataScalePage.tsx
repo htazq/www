@@ -99,11 +99,7 @@ export default function DataScalePage() {
 
   return (
     <>
-      <ExperimentHeader
-        number="06"
-        title="DATA SCALE"
-        description="Enter one byte and continue to an exabyte. Toggle decimal and binary units, inspect assumptions, and see how many human-scale objects fit."
-      />
+      <ExperimentHeader number="06" title="DATA SCALE" />
       <section className="scale-controls">
         <div>
           <span className="panel-label">UNIT SYSTEM</span>

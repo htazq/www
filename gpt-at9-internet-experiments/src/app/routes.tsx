@@ -3,7 +3,6 @@ import { Route, Routes } from 'react-router-dom';
 import { SiteLayout } from '../components/layout/SiteLayout';
 
 const HomePage = lazy(() => import('./HomePage'));
-const ExperimentsPage = lazy(() => import('./ExperimentsPage'));
 const AboutPage = lazy(() => import('./AboutPage'));
 const NotFoundPage = lazy(() => import('./NotFoundPage'));
 const StackCraftPage = lazy(() => import('../experiments/stack-craft/StackCraftPage'));
@@ -31,8 +30,7 @@ export function AppRoutes() {
     <Suspense fallback={<RouteFallback />}>
       <Routes>
         <Route element={<SiteLayout />}>
-          <Route index element={<HomePage />} />
-          <Route path="experiments" element={<ExperimentsPage />} />
+          <Route path="experiments" element={<HomePage />} />
           <Route path="experiments/stack-craft" element={<StackCraftPage />} />
           <Route path="experiments/quorum" element={<QuorumPage />} />
           <Route path="experiments/internet-garden" element={<InternetGardenPage />} />
@@ -40,7 +38,7 @@ export function AppRoutes() {
           <Route path="experiments/latency" element={<LatencyPage />} />
           <Route path="experiments/data-scale" element={<DataScalePage />} />
           <Route path="experiments/internet-archaeology" element={<InternetArchaeologyPage />} />
-          <Route path="about" element={<AboutPage />} />
+          <Route path="experiments/about" element={<AboutPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>

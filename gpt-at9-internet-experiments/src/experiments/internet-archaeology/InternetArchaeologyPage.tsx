@@ -28,11 +28,7 @@ export default function InternetArchaeologyPage() {
   };
   return (
     <>
-      <ExperimentHeader
-        number="07"
-        title="INTERNET ARCHAEOLOGY"
-        description="A hands-on museum of era-inspired, original interface reconstructions—from clear-text terminals to agent control loops."
-      />
+      <ExperimentHeader number="07" title="INTERNET ARCHAEOLOGY" />
       <div className="museum-notice">
         <strong>ORIGINAL RECONSTRUCTIONS</strong>
         <span>

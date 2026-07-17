@@ -1,9 +1,10 @@
 {
   "name": "AT9 Internet Experiments",
   "short_name": "AT9 Lab",
-  "start_url": "/",
+  "start_url": "/experiments/",
+  "scope": "/experiments/",
   "display": "standalone",
   "background_color": "#111418",
   "theme_color": "#111418",
-  "icons": [{ "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+  "icons": [{ "src": "/experiments/favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
 }

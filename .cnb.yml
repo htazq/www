@@ -1,10 +1,7 @@
 $:
   vscode:
     - docker:
-        # 指定云原生开发启动时的基础镜像为当前镜像
         image: docker.cnb.cool/htazq/image/node-22:latest
-      env:
-        CNB_WELCOME_EXECUTE_COMMAND: bash /workspace/welcome.sh
       services:
         - vscode
         - docker
@@ -12,107 +9,65 @@ $:
         - node -v
         - npm install
 
-# ----------------------------------------------------------------
-# 流水线配置 (Pipeline)
-# ----------------------------------------------------------------
 main:
   push:
-    # 导入密钥 (GITHUB_TOKEN, EDGEONE_API_TOKEN, CNB_TOKEN 等)
     - imports: https://cnb.cool/htazq/my-secrets/-/blob/main/envs.yml
       stages:
-        # ------------------------------------------------------------
-        # 第一步：同步代码到 GitHub (htazq/www)
-        # ------------------------------------------------------------
         - name: Sync to GitHub
           image: alpine/git
           script: |
-            # 1. 检查变量是否存在
             if [ -z "$GITHUB_TOKEN" ]; then echo "Error: GITHUB_TOKEN is empty"; exit 1; fi
-            
-            # 2. 配置 Git 信息
             git config --global user.email "61930738+htazq@users.noreply.github.com"
             git config --global user.name "htazq"
-            
-            # 3. 添加远程仓库
             git remote add github https://oauth2:$GITHUB_TOKEN@github.com/htazq/www.git
-            
-            # 4. 强制推送到 main 分支
             git push --force github HEAD:main
 
-        # ------------------------------------------------------------
-        # 第二步：构建项目 (含生成完整 feed)
-        # ------------------------------------------------------------
-        - name: Build Project & Feed
-          image: node:20
+        - name: Build Dashboard and Experiments
+          image: node:22
           env:
             GITHUB_TOKEN: $GITHUB_TOKEN
             CNB_TOKEN: $CNB_TOKEN
             GH_OWNER: htazq
-            CNB_USER: htazq
           script: |
-            node -v
             npm install
-            # 运行完整版仪表盘数据构建 (写入到 public/data/)
             node scripts/local-dashboard-build.mjs
             npm run validate
-            # 编译打包主站
             npm run build
-
-        # ------------------------------------------------------------
-        # 第三步：部署到 EdgeOne (cnb-www)
-        # ------------------------------------------------------------
-        - name: Deploy to EdgeOne Pages
-          image: node:20
-          script: |
-            npx edgeone pages deploy ./dist -n cnb-www -t $EDGEONE_API_TOKEN
-
-        - name: Build & Deploy Internet Lab
-          image: node:22
-          script: |
             corepack enable
             cd gpt-at9-internet-experiments
             pnpm install --frozen-lockfile
             pnpm lint
             pnpm test
             pnpm build
-            npx edgeone makers deploy ./dist -n at9-internet-lab -a overseas -t $EDGEONE_API_TOKEN
+            cd ..
+            mkdir -p dist/experiments
+            cp -R gpt-at9-internet-experiments/dist/. dist/experiments/
 
-    - name: Inspect Internet Lab Domain
-      imports: https://cnb.cool/htazq/my-secrets/-/blob/main/envs.yml
-      stages:
-        - name: Read EdgeOne Domain Records
-          image: curlimages/curl:8.10.1
+        - name: Deploy to EdgeOne Pages
+          image: node:22
           script: |
-            curl -fsS https://pages-api.cloud.tencent.com/v1 \
-              -H 'Content-Type: application/json' \
-              -H "Authorization: Bearer $EDGEONE_API_TOKEN" \
-              --data '{"Action":"DescribePagesZoneCustomDomains","ProjectId":"makers-flcytmbxfj4r","Domain":"lab.at9.net"}'
-            printf '\nAvailable DNS credential variables:\n'
-            env | cut -d= -f1 | grep -E 'CLOUDFLARE|^CF_' || true
+            npx edgeone pages deploy ./dist -n cnb-www -t $EDGEONE_API_TOKEN
 
-  # ----------------------------------------------------------------
-  # 定时任务 (Cron Job)：每 5 分钟自动执行一次，从 API 抓取最新状态并重新部署
-  # ----------------------------------------------------------------
+  # 每 5 分钟重新抓取 GitHub/CNB 数据，并把主站与实验站一起部署到 www.at9.net。
   "crontab: */5 * * * *":
     - imports: https://cnb.cool/htazq/my-secrets/-/blob/main/envs.yml
       stages:
-        # ------------------------------------------------------------
-        # 定时构建与部署 (拉取最新元数据并重新生成 Feed 发布)
-        # ------------------------------------------------------------
-        - name: Scheduled Build & Deploy
-          image: node:20
+        - name: Scheduled Build and Deploy
+          image: node:22
           env:
             GITHUB_TOKEN: $GITHUB_TOKEN
             CNB_TOKEN: $CNB_TOKEN
             GH_OWNER: htazq
-            CNB_USER: htazq
           script: |
-            node -v
             npm install
-            # 在线拉取最新 GitHub/CNB 数据并生成完整版 feed
             node scripts/local-dashboard-build.mjs
             npm run validate
-            # 编译打包主站 (将最新的完整数据与静态控制台页面一同构建)
             npm run build
-            # 部署到 EdgeOne Pages
+            corepack enable
+            cd gpt-at9-internet-experiments
+            pnpm install --frozen-lockfile
+            pnpm build
+            cd ..
+            mkdir -p dist/experiments
+            cp -R gpt-at9-internet-experiments/dist/. dist/experiments/
             npx edgeone pages deploy ./dist -n cnb-www -t $EDGEONE_API_TOKEN

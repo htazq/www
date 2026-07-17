@@ -298,12 +298,7 @@ export default function OneMillionBlocksPage() {
 
   return (
     <>
-      <ExperimentHeader
-        number="04"
-        title="ONE MILLION BLOCKS"
-        description="A 1000 × 1000 storage array simulated with Canvas, TypedArray, a Web Worker, and IndexedDB. Every metric comes from the local state you create."
-        label="LOCAL SIMULATION"
-      />
+      <ExperimentHeader number="04" title="ONE MILLION BLOCKS" label="LOCAL SIMULATION" />
       <div className="local-banner">
         <strong>LOCAL SIMULATION</strong>
         <span>Stored only in this browser. This is not a global shared canvas.</span>
