@@ -44,7 +44,7 @@ main:
         - name: Deploy to EdgeOne Pages
           image: node:22
           script: |
-            npx edgeone pages deploy ./dist -n cnb-www -t $EDGEONE_API_TOKEN
+            npx edgeone makers deploy ./dist -n cnb-www -t $EDGEONE_API_TOKEN
 
   # 每 5 分钟只刷新数据分支，不消耗 EdgeOne 构建额度。
   "crontab: */5 * * * *":
@@ -91,3 +91,21 @@ main:
             git add dashboard-feed.json
             git commit -m "data: refresh dashboard feed"
             git push --force "https://oauth2:$GITHUB_TOKEN@github.com/htazq/at9-dashboard-feed.git" HEAD:main
+
+  # 低频兜底发布，避免代码推送恰好遇到 EdgeOne 当日额度耗尽。
+  "crontab: 10 0 * * *":
+    - imports: https://cnb.cool/htazq/my-secrets/-/blob/main/envs.yml
+      stages:
+        - name: Daily EdgeOne Deploy
+          image: node:22
+          script: |
+            npm install
+            npm run build
+            corepack enable
+            cd gpt-at9-internet-experiments
+            pnpm install --frozen-lockfile
+            pnpm build
+            cd ..
+            mkdir -p dist/experiments
+            cp -R gpt-at9-internet-experiments/dist/. dist/experiments/
+            npx edgeone makers deploy ./dist -n cnb-www -t $EDGEONE_API_TOKEN
