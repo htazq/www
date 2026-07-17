@@ -25,8 +25,6 @@ main:
         - name: Build Dashboard and Experiments
           image: node:22
           env:
-            GITHUB_TOKEN: $GITHUB_TOKEN
-            CNB_TOKEN: $CNB_TOKEN
             GH_OWNER: htazq
           script: |
             npm install
@@ -55,8 +53,6 @@ main:
         - name: Refresh Dashboard Feed
           image: node:22
           env:
-            GITHUB_TOKEN: $GITHUB_TOKEN
-            CNB_TOKEN: $CNB_TOKEN
             GH_OWNER: htazq
           script: |
             node scripts/local-dashboard-build.mjs
