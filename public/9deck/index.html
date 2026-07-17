@@ -1203,7 +1203,7 @@
 
     <script>
       const DEFAULT_REFRESH_MS = 300000;
-      const FEED_URL = "https://raw.githubusercontent.com/htazq/at9-dashboard-feed/main/dashboard-feed.json";
+      const FEED_URL = "https://raw.githubusercontent.com/htazq/www/dashboard-data/dashboard-feed.json";
       const params = new URLSearchParams(window.location.search);
       const urlRefreshMs = Number(params.get("refreshMs"));
       const refreshMs = Number.isFinite(urlRefreshMs) && urlRefreshMs > 0

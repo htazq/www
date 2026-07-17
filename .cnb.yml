@@ -58,39 +58,34 @@ main:
             node scripts/local-dashboard-build.mjs
             npm run validate
             node --input-type=module <<'NODE'
-            const repository = 'at9-dashboard-feed';
             const headers = {
               Accept: 'application/vnd.github+json',
               Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
               'Content-Type': 'application/json',
               'X-GitHub-Api-Version': '2022-11-28',
             };
-            let response = await fetch(`https://api.github.com/repos/htazq/${repository}`, {headers});
-            if (response.status === 404) {
-              response = await fetch('https://api.github.com/user/repos', {
-                method: 'POST',
+            let response = await fetch('https://api.github.com/repos/htazq/www', {headers});
+            if (!response.ok) throw new Error(`Repository request failed: ${response.status} ${await response.text()}`);
+            const repository = await response.json();
+            if (repository.private) {
+              response = await fetch('https://api.github.com/repos/htazq/www', {
+                method: 'PATCH',
                 headers,
-                body: JSON.stringify({
-                  name: repository,
-                  description: 'Public data feed for www.at9.net',
-                  private: false,
-                }),
+                body: JSON.stringify({visibility: 'public'}),
               });
+              if (!response.ok) throw new Error(`Visibility update failed: ${response.status} ${await response.text()}`);
             }
-            if (!response.ok) throw new Error(`Data repository request failed: ${response.status} ${await response.text()}`);
-            const data = await response.json();
-            if (data.private) throw new Error('Data repository must be public');
             NODE
             workdir="$(mktemp -d)"
             cp public/data/dashboard-feed.json "$workdir/dashboard-feed.json"
             cd "$workdir"
             git init
-            git checkout -b main
+            git checkout -b dashboard-data
             git config user.email "61930738+htazq@users.noreply.github.com"
             git config user.name "htazq"
             git add dashboard-feed.json
             git commit -m "data: refresh dashboard feed"
-            git push --force "https://oauth2:$GITHUB_TOKEN@github.com/htazq/at9-dashboard-feed.git" HEAD:main
+            git push --force "https://oauth2:$GITHUB_TOKEN@github.com/htazq/www.git" HEAD:dashboard-data
 
   # 低频兜底发布，避免代码推送恰好遇到 EdgeOne 当日额度耗尽。
   "crontab: 10 0 * * *":
