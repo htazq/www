@@ -1203,6 +1203,7 @@
 
     <script>
       const DEFAULT_REFRESH_MS = 300000;
+      const FEED_URL = "https://raw.githubusercontent.com/htazq/www/dashboard-data/dashboard-feed.json";
       const params = new URLSearchParams(window.location.search);
       const urlRefreshMs = Number(params.get("refreshMs"));
       const refreshMs = Number.isFinite(urlRefreshMs) && urlRefreshMs > 0
@@ -1440,7 +1441,7 @@
       async function checkAndFetchNewData() {
         if (state.loading) return;
         try {
-          const response = await fetch(`/data/dashboard-feed.json?t=${Date.now()}`);
+          const response = await fetch(`${FEED_URL}?t=${Date.now()}`);
           if (!response.ok) return;
           const newData = await response.json();
 
@@ -1883,7 +1884,7 @@
         setLoading("syncing");
 
         try {
-          const response = await fetch(`/data/dashboard-feed.json?t=${Date.now()}`);
+          const response = await fetch(`${FEED_URL}?t=${Date.now()}`);
           if (!response.ok) throw new Error(`dashboard-feed.json ${response.status}`);
           state.data = await response.json();
           renderAll();

@@ -48,26 +48,26 @@ main:
           script: |
             npx edgeone pages deploy ./dist -n cnb-www -t $EDGEONE_API_TOKEN
 
-  # 每 5 分钟重新抓取 GitHub/CNB 数据，并把主站与实验站一起部署到 www.at9.net。
+  # 每 5 分钟只刷新数据分支，不消耗 EdgeOne 构建额度。
   "crontab: */5 * * * *":
     - imports: https://cnb.cool/htazq/my-secrets/-/blob/main/envs.yml
       stages:
-        - name: Scheduled Build and Deploy
+        - name: Refresh Dashboard Feed
           image: node:22
           env:
             GITHUB_TOKEN: $GITHUB_TOKEN
             CNB_TOKEN: $CNB_TOKEN
             GH_OWNER: htazq
           script: |
-            npm install
             node scripts/local-dashboard-build.mjs
             npm run validate
-            npm run build
-            corepack enable
-            cd gpt-at9-internet-experiments
-            pnpm install --frozen-lockfile
-            pnpm build
-            cd ..
-            mkdir -p dist/experiments
-            cp -R gpt-at9-internet-experiments/dist/. dist/experiments/
-            npx edgeone pages deploy ./dist -n cnb-www -t $EDGEONE_API_TOKEN
+            workdir="$(mktemp -d)"
+            cp public/data/dashboard-feed.json "$workdir/dashboard-feed.json"
+            cd "$workdir"
+            git init
+            git checkout -b dashboard-data
+            git config user.email "61930738+htazq@users.noreply.github.com"
+            git config user.name "htazq"
+            git add dashboard-feed.json
+            git commit -m "data: refresh dashboard feed"
+            git push --force "https://oauth2:$GITHUB_TOKEN@github.com/htazq/www.git" HEAD:dashboard-data
