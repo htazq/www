@@ -6,6 +6,7 @@ import {
   Cloud,
   Shield,
   Zap,
+  FlaskConical,
 } from 'lucide-react';
 import type { NavItem } from './types';
 
@@ -19,6 +20,16 @@ export const SITE_CONFIG = {
 };
 
 export const MIRROR_SITES: NavItem[] = [
+  {
+    id: 'experiments',
+    title: 'AT9 实验室',
+    url: 'https://www.at9.net/experiments/',
+    description: '7 个关于系统、网络、规模与计算机历史的浏览器交互实验。',
+    icon: FlaskConical,
+    category: 'Lab',
+    color: 'text-rose-400',
+    isNew: true,
+  },
   {
     id: 'docker',
     title: 'Docker 镜像加速',
