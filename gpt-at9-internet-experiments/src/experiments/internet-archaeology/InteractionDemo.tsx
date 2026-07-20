@@ -3,13 +3,13 @@ import type { Exhibit } from './exhibits';
 
 export function InteractionDemo({ exhibit }: { exhibit: Exhibit }) {
   const [command, setCommand] = useState('help');
-  const [terminalLines, setTerminalLines] = useState(['AT9 REMOTE NODE / TYPE HELP']);
+  const [terminalLines, setTerminalLines] = useState(['AT9 远程节点 / 输入 HELP 查看命令']);
   const [transfer, setTransfer] = useState<'idle' | 'active' | 'passive'>('idle');
   const [topic, setTopic] = useState(0);
   const [playing, setPlaying] = useState(false);
   const [flash, setFlash] = useState(false);
-  const [feeds, setFeeds] = useState(['Systems Weekly', 'Open Protocol Notes']);
-  const [messages, setMessages] = useState(['<operator> welcome to #at9-lab']);
+  const [feeds, setFeeds] = useState(['系统周刊', '开放协议笔记']);
+  const [messages, setMessages] = useState(['<站长> 欢迎来到 #at9-lab']);
   const [chat, setChat] = useState('');
   const [machine, setMachine] = useState<'host' | 'guest'>('host');
   const [layers, setLayers] = useState(['base: minimal-linux']);
@@ -30,25 +30,25 @@ export function InteractionDemo({ exhibit }: { exhibit: Exhibit }) {
             event.preventDefault();
             const response =
               command === 'help'
-                ? 'COMMANDS: HELP, WHOAMI, STATUS, EXIT'
+                ? '命令：HELP、WHOAMI、STATUS、EXIT'
                 : command === 'whoami'
                   ? 'GUEST@AT9'
                   : command === 'status'
-                    ? 'LINK UP / CLEAR TEXT CHANNEL'
+                    ? '链路正常 / 明文通道'
                     : command === 'exit'
-                      ? 'CONNECTION CLOSED'
-                      : 'UNKNOWN COMMAND';
+                      ? '连接已关闭'
+                      : '未知命令';
             setTerminalLines((lines) => [...lines, `> ${command}`, response]);
             setCommand('');
           }}
         >
           <span>&gt;</span>
           <input
-            aria-label="Telnet command"
+            aria-label="Telnet 命令"
             value={command}
             onChange={(event) => setCommand(event.target.value)}
           />
-          <button>RUN</button>
+          <button>执行</button>
         </form>
       </div>
     );
@@ -56,7 +56,7 @@ export function InteractionDemo({ exhibit }: { exhibit: Exhibit }) {
     return (
       <div className="demo ftp-demo">
         <div>
-          <strong>LOCAL</strong>
+          <strong>本地</strong>
           <button
             draggable
             onDragStart={(event) => event.dataTransfer.setData('text/plain', 'archive.tar')}
@@ -65,9 +65,9 @@ export function InteractionDemo({ exhibit }: { exhibit: Exhibit }) {
           </button>
         </div>
         <div className="ftp-channel">
-          <span>CONTROL :21</span>
+          <span>控制通道 :21</span>
           <i />
-          <span>DATA {transfer === 'passive' ? 'SERVER PORT' : 'CLIENT PORT'}</span>
+          <span>数据通道 {transfer === 'passive' ? '服务器端口' : '客户端端口'}</span>
         </div>
         <div
           onDragOver={(event) => event.preventDefault()}
@@ -76,20 +76,20 @@ export function InteractionDemo({ exhibit }: { exhibit: Exhibit }) {
             setTransfer('passive');
           }}
         >
-          <strong>REMOTE</strong>
+          <strong>远端</strong>
           <p>
             {transfer === 'idle'
-              ? 'DROP FILE HERE'
-              : `TRANSFERRED VIA ${transfer.toUpperCase()} MODE`}
+              ? '把文件拖到这里'
+              : `已通过${transfer === 'active' ? '主动' : '被动'}模式传输`}
           </p>
           <button onClick={() => setTransfer(transfer === 'active' ? 'passive' : 'active')}>
-            MODE: {transfer === 'active' ? 'ACTIVE' : 'PASSIVE'}
+            模式：{transfer === 'active' ? '主动' : '被动'}
           </button>
         </div>
       </div>
     );
   if (exhibit.demo === 'bbs') {
-    const topics = ['WELCOME NEW USERS', 'MODEM CONFIGURATION', 'SHAREWARE EXCHANGE'];
+    const topics = ['欢迎新用户', '调制解调器设置', '共享软件交换'];
     return (
       <div className="demo bbs-demo">
         <ol>
@@ -103,13 +103,13 @@ export function InteractionDemo({ exhibit }: { exhibit: Exhibit }) {
         </ol>
         <article>
           <h4>{topics[topic]}</h4>
-          <p>FROM: SYSOP · 23:14</p>
+          <p>来自：站长 · 23:14</p>
           <p>
             {topic === 0
-              ? 'Read the rules, choose a handle, and leave the line free for the next caller.'
+              ? '先读版规，选一个昵称，聊完记得把线路让给下一位呼叫者。'
               : topic === 1
-                ? 'Try 9600 baud, hardware flow control, and disable local echo.'
-                : 'Upload descriptions before midnight maintenance.'}
+                ? '试试 9600 波特、硬件流控，并关闭本地回显。'
+                : '请在午夜维护之前上传文件说明。'}
           </p>
         </article>
       </div>
@@ -119,8 +119,8 @@ export function InteractionDemo({ exhibit }: { exhibit: Exhibit }) {
     return (
       <div className="demo player-demo">
         <div className="player-display">
-          <span>AT9 AUDIO UNIT</span>
-          <strong>{playing ? 'PLAYING / SIGNAL STUDY 01' : 'STOPPED'}</strong>
+          <span>AT9 音频单元</span>
+          <strong>{playing ? '播放中 / 信号研究 01' : '已停止'}</strong>
           <div className={playing ? 'equalizer playing' : 'equalizer'}>
             {Array.from({ length: 18 }, (_, i) => (
               <i key={i} />
@@ -133,8 +133,8 @@ export function InteractionDemo({ exhibit }: { exhibit: Exhibit }) {
           <button onClick={() => setPlaying(true)}>»</button>
         </div>
         <ol>
-          <li>01 SIGNAL STUDY</li>
-          <li>02 PACKET GARDEN</li>
+          <li>01 信号研究</li>
+          <li>02 数据包花园</li>
         </ol>
       </div>
     );
@@ -149,7 +149,7 @@ export function InteractionDemo({ exhibit }: { exhibit: Exhibit }) {
           </g>
         </svg>
         <button onClick={() => setFlash((value) => !value)}>
-          {flash ? 'STOP VECTOR LOOP' : 'PLAY VECTOR LOOP'}
+          {flash ? '停止矢量循环' : '播放矢量循环'}
         </button>
       </div>
     );
@@ -163,22 +163,22 @@ export function InteractionDemo({ exhibit }: { exhibit: Exhibit }) {
           <button
             onClick={() =>
               setFeeds((items) =>
-                items.includes('AT9 Lab Feed') ? items : [...items, 'AT9 Lab Feed'],
+                items.includes('AT9 实验室订阅源') ? items : [...items, 'AT9 实验室订阅源'],
               )
             }
           >
-            + SUBSCRIBE LOCAL FEED
+            + 订阅本地订阅源
           </button>
         </aside>
         <section>
           <article>
             <span>12:30</span>
-            <h4>New storage experiment published</h4>
-            <p>Chronological, local sample item. No remote feed requested.</p>
+            <h4>新的存储实验已发布</h4>
+            <p>按时间排列的本地示例条目，没有请求任何远程订阅源。</p>
           </article>
           <article>
             <span>09:10</span>
-            <h4>Browser primitives worth revisiting</h4>
+            <h4>值得重新认识的浏览器原语</h4>
           </article>
         </section>
       </div>
@@ -195,17 +195,17 @@ export function InteractionDemo({ exhibit }: { exhibit: Exhibit }) {
         <form
           onSubmit={(event) => {
             event.preventDefault();
-            if (chat.trim()) setMessages((items) => [...items, `<guest> ${chat}`]);
+            if (chat.trim()) setMessages((items) => [...items, `<访客> ${chat}`]);
             setChat('');
           }}
         >
           <input
-            aria-label="IRC message"
+            aria-label="IRC 消息"
             value={chat}
             onChange={(event) => setChat(event.target.value)}
-            placeholder="message #at9-lab"
+            placeholder="发送到 #at9-lab"
           />
-          <button>SEND</button>
+          <button>发送</button>
         </form>
       </div>
     );
@@ -214,23 +214,21 @@ export function InteractionDemo({ exhibit }: { exhibit: Exhibit }) {
       <div className="demo vm-demo">
         <div className="vm-tabs">
           <button className={machine === 'host' ? 'active' : ''} onClick={() => setMachine('host')}>
-            HOST MACHINE
+            宿主机
           </button>
           <button
             className={machine === 'guest' ? 'active' : ''}
             onClick={() => setMachine('guest')}
           >
-            GUEST VM
+            客户机 VM
           </button>
         </div>
         <div className={`machine-screen ${machine}`}>
-          <strong>
-            {machine === 'host' ? 'HOST OS / 16 GB RAM' : 'GUEST OS / 4 GB VIRTUAL RAM'}
-          </strong>
+          <strong>{machine === 'host' ? '宿主系统 / 16 GB 内存' : '客户系统 / 4 GB 虚拟内存'}</strong>
           <p>
             {machine === 'host'
-              ? 'Physical CPU, disks, and network interfaces.'
-              : 'Virtual CPU, snapshot disk, emulated network adapter.'}
+              ? '物理 CPU、磁盘与网络接口。'
+              : '虚拟 CPU、快照磁盘与模拟网卡。'}
           </p>
         </div>
       </div>
@@ -256,7 +254,7 @@ export function InteractionDemo({ exhibit }: { exhibit: Exhibit }) {
               + {layer}
             </button>
           ))}
-          <button onClick={() => setLayers(['base: minimal-linux'])}>RESET IMAGE</button>
+          <button onClick={() => setLayers(['base: minimal-linux'])}>重置镜像</button>
         </div>
       </div>
     );
@@ -270,38 +268,26 @@ export function InteractionDemo({ exhibit }: { exhibit: Exhibit }) {
             className={podNode === 'node-a' ? 'selected' : ''}
             onClick={() => setPodNode('node-a')}
           >
-            NODE A<br />
+            节点 A<br />
             CPU 62%
           </button>
           <button
             className={podNode === 'node-b' ? 'selected' : ''}
             onClick={() => setPodNode('node-b')}
           >
-            NODE B<br />
+            节点 B<br />
             CPU 31%
           </button>
         </div>
         <p>
           {podNode === 'none'
-            ? 'PENDING: choose a node'
-            : 'SCHEDULED: pod bound to ' + podNode.toUpperCase()}
+            ? '待调度：请选择一个节点'
+            : `已调度：Pod 绑定到${podNode === 'node-a' ? '节点 A' : '节点 B'}`}
         </p>
       </div>
     );
   if (exhibit.demo === 'tokens') {
-    const sequence = [
-      'The',
-      ' request',
-      ' crosses',
-      ' a',
-      ' network',
-      ',',
-      ' waits',
-      ',',
-      ' then',
-      ' returns',
-      '.',
-    ];
+    const sequence = ['一次', '请求', '穿过', '网络', '，', '等待', '，', '然后', '返回', '。'];
     return (
       <div className="demo token-demo">
         <p>
@@ -312,24 +298,24 @@ export function InteractionDemo({ exhibit }: { exhibit: Exhibit }) {
           disabled={tokens.length === sequence.length}
           onClick={() => setTokens((items) => [...items, sequence[items.length] ?? ''])}
         >
-          GENERATE NEXT TOKEN
+          生成下一个词元
         </button>
-        <button onClick={() => setTokens([])}>RESET CONTEXT</button>
+        <button onClick={() => setTokens([])}>重置上下文</button>
         <div className="token-probs">
-          <span>network .42</span>
-          <span>system .21</span>
-          <span>boundary .09</span>
+          <span>网络 .42</span>
+          <span>系统 .21</span>
+          <span>边界 .09</span>
         </div>
       </div>
     );
   }
   const steps = [
-    'GOAL: inspect service health',
-    'PLAN: read status, compare expected state',
-    'TOOL: query local simulation',
-    'FEEDBACK: service unavailable',
-    'VERIFY: quorum lost; refuse writes',
-    'RESULT: explain corrective action',
+    '目标：检查服务健康状况',
+    '计划：读取状态，对比期望状态',
+    '工具：查询本地模拟',
+    '反馈：服务不可用',
+    '验证：仲裁丢失，拒绝写入',
+    '结论：给出纠正动作',
   ];
   return (
     <div className="demo agent-demo">
@@ -348,9 +334,9 @@ export function InteractionDemo({ exhibit }: { exhibit: Exhibit }) {
         disabled={agentStep >= steps.length}
         onClick={() => setAgentStep((value) => Math.min(steps.length, value + 1))}
       >
-        ADVANCE CONTROL LOOP
+        推进控制循环
       </button>
-      <button onClick={() => setAgentStep(0)}>RESET</button>
+      <button onClick={() => setAgentStep(0)}>重置</button>
     </div>
   );
 }

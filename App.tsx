@@ -1,10 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { MIRROR_SITES, TRUST_BADGES, SITE_CONFIG } from './constants';
+import { MIRROR_SITES, SITE_CONFIG } from './constants';
 import NavCard from './components/NavCard';
-import MatrixRain from './components/MatrixRain';
-import HackerText from './components/HackerText';
-import MouseSpotlight from './components/MouseSpotlight';
-import { Cloud } from 'lucide-react';
 
 const App = () => {
   const [query, setQuery] = useState('');
@@ -12,7 +8,7 @@ const App = () => {
   const searchRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    const timer = setTimeout(() => setShowContent(true), 400);
+    const timer = setTimeout(() => setShowContent(true), 250);
     return () => clearTimeout(timer);
   }, []);
 
@@ -42,119 +38,104 @@ const App = () => {
   }, [query]);
 
   return (
-    <div className="min-h-screen w-full relative overflow-hidden flex flex-col bg-[#020617] text-slate-200 selection:bg-cyan-500/30">
-      <MatrixRain />
-      <MouseSpotlight />
+    <div className="grain min-h-screen w-full relative flex flex-col bg-ink text-paper selection:bg-cinnabar selection:text-paper">
+      {/* 背景色块 */}
+      <div className="fixed inset-0 pointer-events-none z-0">
+        <div className="absolute -top-32 -left-32 w-[34rem] h-[34rem] rounded-full bg-cinnabar/15 blur-[120px]" />
+        <div className="absolute top-1/3 -right-40 w-[30rem] h-[30rem] rounded-full bg-indigo/15 blur-[120px]" />
+        <div className="absolute bottom-0 left-1/4 w-[26rem] h-[26rem] rounded-full bg-amber/10 blur-[120px]" />
+      </div>
 
-      <div className="fixed inset-0 bg-gradient-to-b from-slate-950/70 via-slate-950/85 to-slate-950 pointer-events-none z-0" />
-
-      <main className="relative z-10 flex-1 w-full max-w-4xl mx-auto px-6 py-16 md:py-24 flex flex-col">
+      <main className="relative z-10 flex-1 w-full max-w-5xl mx-auto px-6 py-14 md:py-20 flex flex-col">
         {/* Hero */}
-        <section className="text-center mb-12 md:mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-cyan-500/25 bg-cyan-500/10 text-cyan-400 text-xs font-mono mb-6 tracking-widest">
-            <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
-            FREE PUBLIC MIRROR
+        <section className="mb-14 md:mb-20">
+          <div className="flex items-center gap-3 mb-8 font-mono text-[11px] tracking-[0.3em] text-paper/50">
+            <span className="w-2 h-2 bg-cinnabar" />
+            FREE PUBLIC MIRROR · EST. 2024
           </div>
 
-          <div className="mb-5 min-h-[4.5rem] md:min-h-[6.5rem] flex items-center justify-center">
-            <HackerText
-              text={SITE_CONFIG.name}
-              className="text-6xl md:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white via-cyan-100 to-slate-400 tracking-tighter"
-            />
+          <h1 className="font-serifcn font-black leading-[0.95] tracking-tight text-[17vw] md:text-[9rem] mb-6">
+            <span className="text-cinnabar">海棠</span>
+            <span className="text-paper/90">的</span>
+            <br />
+            <span className="text-paper">数字空间</span>
+          </h1>
+
+          <div className="flex flex-col md:flex-row md:items-end gap-6 md:gap-12">
+            <p className="font-mono text-sm md:text-base text-amber tracking-wider">
+              {SITE_CONFIG.name}
+            </p>
+            <p className="max-w-xl text-sm md:text-base text-paper/60 leading-relaxed">
+              {SITE_CONFIG.bio}
+            </p>
           </div>
-
-          <h2 className="text-xl md:text-2xl font-light text-slate-300 mb-3">
-            {SITE_CONFIG.headline}
-          </h2>
-          <p className="text-sm md:text-base text-slate-500 font-mono mb-6">
-            {SITE_CONFIG.tagline}
-          </p>
-          <p className="max-w-2xl mx-auto text-sm text-slate-400 leading-relaxed">
-            {SITE_CONFIG.bio}
-          </p>
-        </section>
-
-        {/* Trust badges */}
-        <section
-          className={`flex flex-wrap justify-center gap-3 mb-12 transition-all duration-700 ${
-            showContent ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
-          }`}
-        >
-          {TRUST_BADGES.map((badge) => (
-            <div
-              key={badge.label}
-              className="flex items-center gap-2 px-3 py-2 rounded-lg bg-slate-900/60 border border-slate-800 text-xs"
-            >
-              <badge.icon className={`w-4 h-4 ${badge.color}`} />
-              <span className="text-slate-300">{badge.label}</span>
-            </div>
-          ))}
         </section>
 
         {/* Search */}
         <section
-          className={`w-full max-w-xl mx-auto mb-10 transition-all duration-700 delay-100 ${
+          className={`w-full max-w-xl mb-12 transition-all duration-700 ${
             showContent ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
           }`}
         >
-          <div className="relative group">
+          <div className="relative">
             <input
               ref={searchRef}
               type="search"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="搜索镜像或工具..."
-              className="w-full pl-4 pr-10 py-3.5 bg-slate-900/80 border border-slate-800 rounded-xl text-slate-200 placeholder:text-slate-600 focus:outline-none focus:border-cyan-500/50 focus:ring-1 focus:ring-cyan-500/30 transition-all font-light text-center"
+              placeholder="搜索服务或工具…"
+              className="w-full px-5 py-4 bg-paper/5 border border-paper/15 rounded-none text-paper placeholder:text-paper/30 focus:outline-none focus:border-cinnabar transition-colors text-sm"
             />
             {query && (
               <button
                 type="button"
                 onClick={() => setQuery('')}
-                className="absolute inset-y-0 right-0 pr-4 flex items-center text-slate-500 hover:text-slate-300"
+                className="absolute inset-y-0 right-0 pr-5 flex items-center text-paper/40 hover:text-cinnabar text-xl"
               >
                 ×
               </button>
             )}
           </div>
-          <p className="text-center text-xs text-slate-600 font-mono mt-3">
-            Press <kbd className="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400">/</kbd> or <kbd className="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400">Ctrl K</kbd> to search
+          <p className="text-[11px] text-paper/30 font-mono mt-3 tracking-wider">
+            按 <kbd className="px-1.5 py-0.5 bg-paper/10 text-paper/60">/</kbd> 或 <kbd className="px-1.5 py-0.5 bg-paper/10 text-paper/60">Ctrl K</kbd> 搜索
           </p>
         </section>
 
         {/* Cards */}
         <section
-          className={`transition-all duration-700 delay-200 ${
+          className={`transition-all duration-700 delay-150 ${
             showContent ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
           }`}
         >
           {filtered.length === 0 ? (
-            <div className="text-center py-16 rounded-2xl border border-dashed border-slate-800 bg-slate-900/30">
-              <p className="text-slate-500 mb-3">No matches found</p>
+            <div className="py-20 border border-dashed border-paper/20 text-center">
+              <p className="text-paper/50 mb-4">没有找到匹配的服务</p>
               <button
                 type="button"
                 onClick={() => setQuery('')}
-                className="px-4 py-2 rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 transition-colors text-sm"
+                className="px-5 py-2.5 bg-cinnabar text-paper hover:bg-cinnabar/85 transition-colors text-sm font-medium"
               >
-                Reset
+                重置搜索
               </button>
             </div>
           ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {filtered.map((link) => (
-                <NavCard key={link.id} item={link} />
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              {filtered.map((link, index) => (
+                <NavCard key={link.id} item={link} index={index} />
               ))}
             </div>
           )}
         </section>
 
         {/* Footer */}
-        <footer className="mt-auto pt-16 text-center text-xs text-slate-600 font-mono">
-          <div className="flex items-center justify-center gap-2 mb-3">
-            <Cloud className="w-4 h-4 text-orange-400" />
-            <span>Powered by {SITE_CONFIG.poweredBy}</span>
+        <footer className="mt-auto pt-20 flex flex-col md:flex-row items-start md:items-end justify-between gap-6 border-t border-paper/10 mt-16 pt-8">
+          <div>
+            <p className="font-serifcn font-black text-2xl text-paper/90 mb-1">海棠 · at9.net</p>
+            <p className="text-xs text-paper/40">{SITE_CONFIG.tagline}</p>
           </div>
-          <p className="mb-1">© {new Date().getFullYear()} {SITE_CONFIG.domains[0]}</p>
-          <p>Free for personal and open-source use.</p>
+          <p className="font-mono text-[11px] text-paper/30 tracking-wider">
+            © {new Date().getFullYear()} · POWERED BY {SITE_CONFIG.poweredBy.toUpperCase()} · 免费供个人与开源使用
+          </p>
         </footer>
       </main>
     </div>

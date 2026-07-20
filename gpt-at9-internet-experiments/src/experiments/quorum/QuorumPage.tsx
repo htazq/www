@@ -5,11 +5,13 @@ import { deriveQuorumState, initialQuorumState, quorumReducer } from './machine'
 import { quorumScenarios } from './scenarios';
 import './quorum.css';
 
+const availabilityText = { AVAILABLE: '可用', DEGRADED: '降级', UNAVAILABLE: '不可用' } as const;
+const dataRiskText = { LOW: '低', ELEVATED: '偏高', CRITICAL: '危急' } as const;
+
 export default function QuorumPage() {
   usePageMetadata({
-    title: 'Quorum',
-    description:
-      'A deterministic educational model of quorum, VIP ownership, fencing, and split brain.',
+    title: '仲裁集群',
+    description: '一个关于仲裁、虚拟 IP 归属、隔离与脑裂的确定性教学模型。',
     path: '/experiments/quorum',
   });
   const [state, dispatch] = useReducer(quorumReducer, initialQuorumState);
@@ -21,60 +23,45 @@ export default function QuorumPage() {
   const statusClass = (ok: boolean) => (ok ? 'good' : 'bad');
   return (
     <>
-      <ExperimentHeader number="02" title="QUORUM" label="EDUCATIONAL MODEL" />
+      <ExperimentHeader number="02" title="仲裁集群" label="教学模型" />
       <div className="education-banner">
-        <strong>EDUCATIONAL MODEL</strong>
-        <span>This is a simplified simulation, not an exact Pacemaker implementation.</span>
+        <strong>教学模型</strong>
+        <span>这是一个简化的模拟，并非 Pacemaker 的精确实现。</span>
       </div>
       <section className="quorum-layout">
         <div className="quorum-topology">
           <div className="quorum-panel-heading">
-            <span className="panel-label">LIVE TOPOLOGY</span>
+            <span className="panel-label">实时拓扑</span>
             <span
               className={`status-pill ${derived.availability === 'AVAILABLE' ? 'good' : derived.availability === 'DEGRADED' ? 'warn' : 'bad'}`}
             >
-              {derived.availability}
+              {availabilityText[derived.availability]}
             </span>
           </div>
-          <svg
-            viewBox="0 0 760 430"
-            role="img"
-            aria-label="Two data nodes, one witness, service, and virtual IP"
-          >
+          <svg viewBox="0 0 760 430" role="img" aria-label="两个数据节点、一个见证者、服务与虚拟 IP">
             <line
               className={state.links.AB ? 'link' : 'link failed'}
-              x1="190"
-              y1="165"
-              x2="570"
-              y2="165"
+              x1="190" y1="165" x2="570" y2="165"
             />
             <line
               className={state.links.AW ? 'link' : 'link failed'}
-              x1="190"
-              y1="165"
-              x2="380"
-              y2="345"
+              x1="190" y1="165" x2="380" y2="345"
             />
             <line
               className={state.links.BW ? 'link' : 'link failed'}
-              x1="570"
-              y1="165"
-              x2="380"
-              y2="345"
+              x1="570" y1="165" x2="380" y2="345"
             />
             <g
               className={`node ${state.online.A ? '' : 'offline'} ${derived.activeNode === 'A' || derived.activeNode === 'both' ? 'active' : ''}`}
               transform="translate(110 105)"
             >
               <rect width="160" height="120" />
-              <text x="80" y="42">
-                NODE A
-              </text>
+              <text x="80" y="42">节点 A</text>
               <text className="node-sub" x="80" y="72">
-                {state.online.A ? 'ONLINE' : 'OFFLINE'}
+                {state.online.A ? '在线' : '离线'}
               </text>
               <text className="node-sub" x="80" y="94">
-                SERVICE {state.service.A ? 'RUNNING' : 'STOPPED'}
+                服务{state.service.A ? '运行中' : '已停止'}
               </text>
             </g>
             <g
@@ -82,125 +69,108 @@ export default function QuorumPage() {
               transform="translate(490 105)"
             >
               <rect width="160" height="120" />
-              <text x="80" y="42">
-                NODE B
-              </text>
+              <text x="80" y="42">节点 B</text>
               <text className="node-sub" x="80" y="72">
-                {state.online.B ? 'ONLINE' : 'OFFLINE'}
+                {state.online.B ? '在线' : '离线'}
               </text>
               <text className="node-sub" x="80" y="94">
-                SERVICE {state.service.B ? 'RUNNING' : 'STOPPED'}
+                服务{state.service.B ? '运行中' : '已停止'}
               </text>
             </g>
-            <g
-              className={`witness ${state.online.W ? '' : 'offline'}`}
-              transform="translate(315 310)"
-            >
+            <g className={`witness ${state.online.W ? '' : 'offline'}`} transform="translate(315 310)">
               <rect width="130" height="70" />
-              <text x="65" y="31">
-                WITNESS
-              </text>
+              <text x="65" y="31">见证者</text>
               <text className="node-sub" x="65" y="53">
-                {state.online.W ? 'VOTING' : 'OFFLINE'}
+                {state.online.W ? '投票中' : '离线'}
               </text>
             </g>
             <g className={`vip vip-${state.vip}`} transform="translate(305 30)">
               <rect width="150" height="48" />
               <text x="75" y="30">
-                VIP: {state.vip.toUpperCase()}
+                虚拟 IP：{state.vip === 'both' ? '双侧' : state.vip === 'none' ? '无' : state.vip.toUpperCase()}
               </text>
             </g>
           </svg>
           <p className="topology-explanation">{derived.explanation}</p>
         </div>
         <aside className="quorum-status">
-          <span className="panel-label">CALCULATED STATE</span>
+          <span className="panel-label">推演状态</span>
           <dl>
             <div>
-              <dt>Quorum</dt>
-              <dd className={statusClass(derived.quorum)}>{derived.quorum ? 'YES' : 'NO'}</dd>
+              <dt>仲裁</dt>
+              <dd className={statusClass(derived.quorum)}>{derived.quorum ? '达成' : '未达成'}</dd>
             </div>
             <div>
-              <dt>Active node</dt>
-              <dd>{derived.activeNode.toUpperCase()}</dd>
+              <dt>活动节点</dt>
+              <dd>
+                {derived.activeNode === 'both' ? '双侧' : derived.activeNode === 'none' ? '无' : derived.activeNode.toUpperCase()}
+              </dd>
             </div>
             <div>
-              <dt>VIP location</dt>
-              <dd>{state.vip.toUpperCase()}</dd>
+              <dt>虚拟 IP 位置</dt>
+              <dd>{state.vip === 'both' ? '双侧' : state.vip === 'none' ? '无' : state.vip.toUpperCase()}</dd>
             </div>
             <div>
-              <dt>Service</dt>
+              <dt>服务</dt>
               <dd className={statusClass(derived.serviceAvailable)}>
-                {derived.serviceAvailable ? 'AVAILABLE' : 'UNAVAILABLE'}
+                {derived.serviceAvailable ? '可用' : '不可用'}
               </dd>
             </div>
             <div>
-              <dt>Split brain</dt>
+              <dt>脑裂</dt>
               <dd className={derived.splitBrainRisk ? 'bad' : 'good'}>
-                {derived.splitBrainRisk ? 'POSSIBLE' : 'CONTROLLED'}
+                {derived.splitBrainRisk ? '可能发生' : '受控'}
               </dd>
             </div>
             <div>
-              <dt>Data risk</dt>
+              <dt>数据风险</dt>
               <dd
                 className={
-                  derived.dataRisk === 'LOW'
-                    ? 'good'
-                    : derived.dataRisk === 'ELEVATED'
-                      ? 'warn'
-                      : 'bad'
+                  derived.dataRisk === 'LOW' ? 'good' : derived.dataRisk === 'ELEVATED' ? 'warn' : 'bad'
                 }
               >
-                {derived.dataRisk}
+                {dataRiskText[derived.dataRisk]}
               </dd>
             </div>
             <div>
-              <dt>Writes</dt>
+              <dt>写入</dt>
               <dd className={derived.refuseWrites ? 'bad' : 'good'}>
-                {derived.refuseWrites ? 'REFUSE' : 'ALLOW'}
+                {derived.refuseWrites ? '拒绝' : '允许'}
               </dd>
             </div>
             <div>
-              <dt>Fencing</dt>
+              <dt>隔离机制</dt>
               <dd className={state.fencing ? 'good' : 'warn'}>
-                {state.fencing ? 'ENABLED' : 'DISABLED'}
+                {state.fencing ? '已启用' : '已关闭'}
               </dd>
             </div>
           </dl>
         </aside>
         <section className="quorum-controls">
           <div className="quorum-panel-heading">
-            <span className="panel-label">FAULT INJECTION</span>
-            <button
-              className="control-button"
-              type="button"
-              onClick={() => dispatch({ type: 'RESET' })}
-            >
-              RESET
+            <span className="panel-label">故障注入</span>
+            <button className="control-button" type="button" onClick={() => dispatch({ type: 'RESET' })}>
+              重置
             </button>
           </div>
           <div className="control-groups">
             <div>
-              <strong>NODES</strong>
+              <strong>节点</strong>
               <button
                 className="control-button"
-                onClick={() =>
-                  dispatch({ type: state.online.A ? 'SHUTDOWN' : 'RECOVER', node: 'A' })
-                }
+                onClick={() => dispatch({ type: state.online.A ? 'SHUTDOWN' : 'RECOVER', node: 'A' })}
               >
-                {state.online.A ? 'SHUT DOWN A' : 'RECOVER A'}
+                {state.online.A ? '关闭 A' : '恢复 A'}
               </button>
               <button
                 className="control-button"
-                onClick={() =>
-                  dispatch({ type: state.online.B ? 'SHUTDOWN' : 'RECOVER', node: 'B' })
-                }
+                onClick={() => dispatch({ type: state.online.B ? 'SHUTDOWN' : 'RECOVER', node: 'B' })}
               >
-                {state.online.B ? 'SHUT DOWN B' : 'RECOVER B'}
+                {state.online.B ? '关闭 B' : '恢复 B'}
               </button>
             </div>
             <div>
-              <strong>LINKS</strong>
+              <strong>链路</strong>
               <button
                 className="control-button"
                 onClick={() => {
@@ -208,7 +178,7 @@ export default function QuorumPage() {
                   dispatch({ type: state.links.BW ? 'DISCONNECT' : 'RESTORE_LINK', link: 'BW' });
                 }}
               >
-                {state.links.AW || state.links.BW ? 'DISCONNECT WITNESS' : 'RESTORE WITNESS'}
+                {state.links.AW || state.links.BW ? '断开见证者' : '恢复见证者'}
               </button>
               {(['AB', 'AW', 'BW'] as const).map((link) => (
                 <button
@@ -218,47 +188,44 @@ export default function QuorumPage() {
                     dispatch({ type: state.links[link] ? 'DISCONNECT' : 'RESTORE_LINK', link })
                   }
                 >
-                  {state.links[link] ? `DISCONNECT ${link}` : `RESTORE ${link}`}
+                  {state.links[link] ? `断开 ${link}` : `恢复 ${link}`}
                 </button>
               ))}
             </div>
             <div>
-              <strong>OWNERSHIP</strong>
-              <button
-                className="control-button"
-                onClick={() => dispatch({ type: 'CRASH_SERVICE' })}
-              >
-                CRASH SERVICE
+              <strong>所有权</strong>
+              <button className="control-button" onClick={() => dispatch({ type: 'CRASH_SERVICE' })}>
+                崩溃服务
               </button>
               <button
                 className="control-button"
                 onClick={() => dispatch({ type: 'MOVE_VIP', node: 'A' })}
               >
-                MOVE VIP TO A
+                虚拟 IP 移到 A
               </button>
               <button
                 className="control-button"
                 onClick={() => dispatch({ type: 'MOVE_VIP', node: 'B' })}
               >
-                MOVE VIP TO B
+                虚拟 IP 移到 B
               </button>
             </div>
             <div>
-              <strong>SAFETY</strong>
+              <strong>安全</strong>
               <button
                 className={`control-button ${state.fencing ? 'active' : 'danger'}`}
                 onClick={() => dispatch({ type: 'TOGGLE_FENCING' })}
               >
-                FENCING {state.fencing ? 'ON' : 'OFF'}
+                隔离 {state.fencing ? '开' : '关'}
               </button>
               <button className="control-button" onClick={() => dispatch({ type: 'CLEAR_FAULTS' })}>
-                CLEAR FAULTS
+                清除故障
               </button>
             </div>
           </div>
         </section>
         <section className="scenario-panel">
-          <span className="panel-label">TASK SCENARIOS</span>
+          <span className="panel-label">任务场景</span>
           <div className="scenario-tabs">
             {quorumScenarios.map((item) => (
               <button
@@ -278,11 +245,11 @@ export default function QuorumPage() {
             ))}
           </ol>
           <p className="scenario-success">
-            <strong>WHY:</strong> {scenario.success}
+            <strong>原理：</strong>{scenario.success}
           </p>
         </section>
         <aside className="event-log">
-          <span className="panel-label">EVENT LOG</span>
+          <span className="panel-label">事件日志</span>
           <ol>
             {state.log.map((item, index) => (
               <li key={`${item}-${index}`}>

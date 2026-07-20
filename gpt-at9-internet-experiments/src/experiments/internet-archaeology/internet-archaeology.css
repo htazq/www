@@ -2,27 +2,27 @@
   display: flex;
   gap: 1rem 2rem;
   flex-wrap: wrap;
-  padding: 1rem clamp(1rem, 5vw, 5.5rem);
+  padding: 1rem clamp(1rem, 5vw, 5rem);
   border-bottom: 1px solid rgba(232, 169, 79, 0.3);
-  background: #161512;
-  color: var(--paper-muted);
+  background: var(--ink-2);
+  color: var(--paper-dim);
   font: 600 0.68rem/1.5 monospace;
 }
 .museum-notice strong {
-  color: var(--signal);
+  color: var(--amber);
 }
 .museum-controls {
   display: grid;
   grid-template-columns: 1fr 260px;
   gap: 2rem;
   align-items: end;
-  padding: 1.5rem clamp(1rem, 5vw, 5.5rem);
+  padding: 1.5rem clamp(1rem, 5vw, 5rem);
   border-bottom: 1px solid var(--line);
-  background: #161512;
+  background: var(--ink-2);
 }
 .museum-index {
-  padding: 3rem clamp(1rem, 5vw, 5.5rem);
-  background: #161512;
+  padding: 3rem clamp(1rem, 5vw, 5rem);
+  background: var(--ink-2);
 }
 .museum-index.timeline {
   display: flex;
@@ -54,7 +54,7 @@
 .museum-index.list button {
   min-height: 210px;
   border: 0;
-  background: #161512;
+  background: var(--ink-2);
   color: inherit;
   text-align: left;
   padding: 1.3rem;
@@ -64,19 +64,19 @@
 }
 .museum-index button span {
   font: 600 0.65rem monospace;
-  color: var(--signal);
+  color: var(--amber);
 }
 .museum-index button strong {
   font-size: 1.3rem;
 }
 .museum-index button em {
   font: 500 0.6rem monospace;
-  color: var(--paper-muted);
+  color: var(--paper-dim);
   font-style: normal;
   text-transform: uppercase;
 }
 .museum-index button p {
-  color: var(--paper-muted);
+  color: var(--paper-dim);
   font-size: 0.78rem;
   line-height: 1.55;
 }
@@ -90,7 +90,7 @@
 }
 .artifact-detail {
   scroll-margin-top: 68px;
-  padding: clamp(3rem, 7vw, 7rem) clamp(1rem, 5vw, 5.5rem);
+  padding: clamp(3rem, 7vw, 7rem) clamp(1rem, 5vw, 5rem);
   border-top: 1px solid var(--line);
   background: #121518;
 }
@@ -109,12 +109,12 @@
 .artifact-detail header > p {
   grid-column: 2;
   max-width: 46rem;
-  color: var(--paper-muted);
+  color: var(--paper-dim);
   font-size: 1.1rem;
   line-height: 1.6;
 }
 .artifact-detail header div p {
-  color: var(--signal);
+  color: var(--amber);
   font: 600 0.68rem monospace;
 }
 .artifact-grid {
@@ -132,7 +132,7 @@
 }
 .artifact-grid dt {
   font: 600 0.58rem monospace;
-  color: var(--paper-muted);
+  color: var(--paper-dim);
 }
 .artifact-grid dd {
   margin: 0.65rem 0 0;
@@ -148,7 +148,7 @@
   margin-bottom: 1rem;
 }
 .demo-label span:last-child {
-  color: var(--paper-muted);
+  color: var(--paper-dim);
   font: 600 0.6rem monospace;
 }
 .demo {
@@ -160,7 +160,7 @@
 .terminal-demo {
   display: grid;
   grid-template-rows: 1fr auto;
-  color: var(--phosphor);
+  color: var(--celadon);
   font: 600 0.75rem/1.5 monospace;
 }
 .terminal-output {
@@ -178,7 +178,7 @@
 .terminal-demo input,
 .irc-demo input {
   border: 0;
-  border-bottom: 1px solid var(--phosphor);
+  border-bottom: 1px solid var(--celadon);
   background: none;
   color: inherit;
 }
@@ -187,7 +187,7 @@
 .demo button {
   min-height: 38px;
   border: 1px solid var(--line);
-  background: var(--surface-raised);
+  background: var(--ink-3);
   color: var(--paper);
   padding: 0.5rem 0.7rem;
   font: 600 0.62rem monospace;
@@ -206,7 +206,7 @@
 }
 .ftp-demo strong {
   font: 600 0.65rem monospace;
-  color: var(--paper-muted);
+  color: var(--paper-dim);
 }
 .ftp-channel {
   place-content: center;
@@ -216,14 +216,14 @@
 .ftp-channel i {
   height: 80px;
   width: 1px;
-  background: var(--signal);
+  background: var(--amber);
   justify-self: center;
 }
 .bbs-demo {
   display: grid;
   grid-template-columns: 1fr 1.4fr;
   gap: 1rem;
-  color: var(--phosphor);
+  color: var(--celadon);
   font-family: monospace;
 }
 .bbs-demo ol {
@@ -240,7 +240,7 @@
   color: inherit;
 }
 .bbs-demo article {
-  border-left: 1px solid var(--phosphor);
+  border-left: 1px solid var(--celadon);
   padding: 1rem;
 }
 .player-demo {
@@ -252,7 +252,7 @@
 .player-display {
   padding: 1rem;
   background: #111a17;
-  color: var(--phosphor);
+  color: var(--celadon);
   font: 600 0.65rem monospace;
 }
 .player-display strong {
@@ -268,7 +268,7 @@
 .equalizer i {
   flex: 1;
   height: 15%;
-  background: var(--signal);
+  background: var(--amber);
 }
 .equalizer.playing i:nth-child(3n) {
   height: 80%;
@@ -332,13 +332,13 @@
 }
 .rss-demo article span {
   font: 600 0.6rem monospace;
-  color: var(--signal);
+  color: var(--amber);
 }
 .rss-demo h4 {
   margin: 0.5rem 0;
 }
 .rss-demo p {
-  color: var(--paper-muted);
+  color: var(--paper-dim);
   font-size: 0.8rem;
 }
 .irc-demo {
@@ -351,7 +351,7 @@
   overflow: auto;
 }
 .irc-channel strong {
-  color: var(--signal);
+  color: var(--amber);
 }
 .vm-tabs {
   display: flex;
@@ -379,7 +379,7 @@
   background: #17212a;
 }
 .machine-screen p {
-  color: var(--paper-muted);
+  color: var(--paper-dim);
 }
 .layer-demo {
   display: grid;
@@ -409,7 +409,7 @@
 .pod {
   justify-self: center;
   padding: 1rem;
-  border: 1px solid var(--signal);
+  border: 1px solid var(--amber);
   font: 700 0.7rem monospace;
 }
 .nodes {
@@ -421,12 +421,12 @@
   min-height: 130px;
 }
 .nodes button.selected {
-  border-color: var(--phosphor);
+  border-color: var(--celadon);
   background: rgba(120, 201, 155, 0.08);
 }
 .scheduler-demo p {
   text-align: center;
-  color: var(--paper-muted);
+  color: var(--paper-dim);
   font: 600 0.65rem monospace;
 }
 .token-demo {
@@ -440,7 +440,7 @@
   line-height: 1.5;
 }
 .token-cursor {
-  color: var(--cobalt);
+  color: var(--indigo);
 }
 .token-probs {
   display: flex;
@@ -451,7 +451,7 @@
   padding: 0.5rem;
   border: 1px solid var(--line);
   font: 600 0.6rem monospace;
-  color: var(--paper-muted);
+  color: var(--paper-dim);
 }
 .agent-demo ol {
   list-style: none;
@@ -464,15 +464,15 @@
   gap: 0.7rem;
   padding: 1rem;
   border-bottom: 1px solid var(--line);
-  color: var(--paper-muted);
+  color: var(--paper-dim);
   font: 600 0.68rem/1.4 monospace;
 }
 .agent-demo li.active {
-  color: var(--signal);
-  border-left: 2px solid var(--signal);
+  color: var(--amber);
+  border-left: 2px solid var(--amber);
 }
 .agent-demo li.done {
-  color: var(--phosphor);
+  color: var(--celadon);
 }
 .artifact-nav {
   display: flex;
@@ -484,7 +484,7 @@
 .artifact-nav button {
   border: 0;
   background: none;
-  color: var(--paper-muted);
+  color: var(--paper-dim);
   font: 600 0.68rem monospace;
 }
 .artifact-nav button:disabled {
@@ -522,7 +522,7 @@
     padding: 3rem 1rem;
   }
   .artifact-detail header h2 {
-    font-size: clamp(3rem, 18vw, 5.5rem);
+    font-size: clamp(3rem, 18vw, 5rem);
   }
   .ftp-demo,
   .bbs-demo,

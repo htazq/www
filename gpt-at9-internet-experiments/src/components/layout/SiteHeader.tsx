@@ -8,8 +8,8 @@ export function SiteHeader() {
 
   return (
     <header className="site-header">
-      <NavLink className="brand" to="/experiments" onClick={close} aria-label="AT9 experiments">
-        AT9
+      <NavLink className="brand" to="/experiments" onClick={close} aria-label="AT9 实验室">
+        AT9 LAB
       </NavLink>
       <button
         className="menu-button"
@@ -18,18 +18,18 @@ export function SiteHeader() {
         aria-controls="site-navigation"
         onClick={() => setOpen((value) => !value)}
       >
-        MENU
+        菜单
       </button>
       <nav
         id="site-navigation"
         className={open ? 'site-nav is-open' : 'site-nav'}
-        aria-label="Main navigation"
+        aria-label="主导航"
       >
         <NavLink to="/experiments" onClick={close}>
-          EXPERIMENTS
+          实验
         </NavLink>
         <NavLink to="/experiments/about" onClick={close}>
-          ABOUT
+          关于
         </NavLink>
         <a href={siteConfig.links.deck} target="_blank" rel="noreferrer">
           9DECK ↗

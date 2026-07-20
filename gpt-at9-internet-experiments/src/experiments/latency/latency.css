@@ -1,8 +1,9 @@
 .latency-controls {
+  --accent: var(--violet);
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   gap: 2rem;
-  padding: 1.5rem clamp(1rem, 5vw, 5.5rem);
+  padding: 1.5rem clamp(1rem, 5vw, 5rem);
   border-bottom: 1px solid var(--line);
 }
 .benchmark-control {
@@ -11,30 +12,17 @@
   gap: 0.7rem 1.5rem;
   align-items: center;
 }
-.benchmark-control strong {
-  font: 700 1rem monospace;
-}
-.benchmark-control input {
-  grid-column: 1/-1;
-  width: 100%;
-  accent-color: var(--cobalt);
-}
+.benchmark-control strong { font: 700 1rem 'JetBrains Mono', monospace; color: var(--violet); }
+.benchmark-control input { grid-column: 1/-1; width: 100%; accent-color: var(--violet); }
 .benchmark-control > div {
   grid-column: 1/-1;
   display: flex;
   justify-content: space-between;
-  color: var(--paper-muted);
-  font: 600 0.6rem monospace;
+  color: var(--paper-dim);
+  font: 600 0.62rem 'JetBrains Mono', monospace;
 }
-.mode-buttons {
-  display: flex;
-  gap: 0.5rem;
-  margin-top: 0.8rem;
-}
-.latency-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 330px;
-}
+.mode-buttons { display: flex; gap: 0.5rem; margin-top: 0.8rem; }
+.latency-layout { display: grid; grid-template-columns: minmax(0, 1fr) 330px; }
 .latency-scale {
   position: relative;
   min-height: 1800px;
@@ -49,20 +37,15 @@
   display: grid;
   grid-template-rows: auto 1fr auto;
   justify-items: center;
-  color: var(--paper-muted);
-  font: 600 0.58rem monospace;
+  color: var(--paper-dim);
+  font: 600 0.6rem 'JetBrains Mono', monospace;
 }
 .scale-axis i {
   width: 1px;
   height: 100%;
-  background: linear-gradient(var(--phosphor), var(--signal), var(--danger));
+  background: linear-gradient(var(--celadon), var(--amber), var(--cinnabar));
 }
-.scale-axis span:first-child {
-  writing-mode: vertical-rl;
-}
-.scale-axis span:last-child {
-  writing-mode: vertical-rl;
-}
+.scale-axis span { writing-mode: vertical-rl; }
 .latency-stop {
   position: absolute;
   left: 110px;
@@ -78,138 +61,86 @@
   height: 11px;
   margin-top: 1.1rem;
   border-radius: 50%;
-  background: var(--cobalt);
-  box-shadow: 0 0 0 6px rgba(79, 121, 255, 0.1);
+  background: var(--violet);
+  box-shadow: 0 0 0 6px rgba(154, 95, 208, 0.12);
 }
 .latency-stop > div {
   padding: 1rem 1.2rem;
   border-top: 1px solid var(--line);
-  background: linear-gradient(90deg, rgba(79, 121, 255, 0.045), transparent);
+  background: linear-gradient(90deg, rgba(154, 95, 208, 0.05), transparent);
 }
 .latency-stop h2 {
   margin: 0.25rem 0;
-  font-size: clamp(1.2rem, 2.2vw, 2rem);
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 900;
+  font-size: clamp(1.2rem, 2.2vw, 1.9rem);
 }
-.latency-stop p {
-  margin: 0.25rem 0;
-  color: var(--paper-muted);
-  font-size: 0.76rem;
-  line-height: 1.5;
-}
+.latency-stop p { margin: 0.25rem 0; color: var(--paper-dim); font-size: 0.78rem; line-height: 1.6; }
 .latency-stop > div > p:first-child {
-  font: 600 0.56rem monospace;
-  color: var(--signal);
+  font: 600 0.58rem 'JetBrains Mono', monospace;
+  color: var(--amber);
+  letter-spacing: 0.1em;
 }
-.latency-stop > div > strong {
-  font: 700 0.75rem monospace;
-}
+.latency-stop > div > strong { font: 700 0.76rem 'JetBrains Mono', monospace; }
 .latency-stop em {
   align-self: start;
   margin-top: 1rem;
-  color: var(--phosphor);
-  font: 700 0.7rem monospace;
+  color: var(--celadon);
+  font: 700 0.72rem 'JetBrains Mono', monospace;
   font-style: normal;
   white-space: nowrap;
 }
-.latency-stop details {
-  margin-top: 0.7rem;
-}
+.latency-stop details { margin-top: 0.7rem; }
 .latency-stop summary {
   cursor: pointer;
-  color: var(--paper-muted);
-  font: 600 0.6rem monospace;
+  color: var(--paper-dim);
+  font: 600 0.62rem 'JetBrains Mono', monospace;
 }
 .latency-stop code {
   display: block;
   margin-top: 0.6rem;
-  font-size: 0.68rem;
+  font-size: 0.7rem;
   white-space: normal;
-  color: var(--signal);
+  color: var(--amber);
 }
-.mode-linear .latency-stop {
-  top: calc(4rem + var(--position) * 0.88);
-}
-.mode-narrative {
-  min-height: 2100px;
-}
+.mode-narrative { min-height: 2100px; }
 .latency-compare {
   padding: 2rem;
   position: sticky;
-  top: 68px;
+  top: 64px;
   align-self: start;
   display: grid;
   gap: 1.2rem;
 }
-.ratio-readout {
-  padding: 1.2rem;
-  border: 1px solid var(--line);
-}
+.ratio-readout { padding: 1.2rem; border: 1px solid var(--line); }
 .ratio-readout strong {
-  font-size: clamp(2rem, 4vw, 3.4rem);
-  letter-spacing: -0.05em;
-  color: var(--cobalt);
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 900;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  letter-spacing: -0.03em;
+  color: var(--violet);
 }
-.ratio-readout p,
-.latency-disclaimer {
-  color: var(--paper-muted);
-  font-size: 0.78rem;
-  line-height: 1.6;
+.ratio-readout p, .latency-disclaimer {
+  color: var(--paper-dim);
+  font-size: 0.8rem;
+  line-height: 1.7;
 }
-.raw-values div {
-  padding: 0.8rem 0;
-  border-bottom: 1px solid var(--line);
-}
-.raw-values span {
-  display: block;
-  color: var(--paper-muted);
-  font-size: 0.7rem;
-}
-.raw-values strong {
-  font: 700 0.72rem monospace;
-}
+.raw-values div { padding: 0.8rem 0; border-bottom: 1px solid var(--line); }
+.raw-values span { display: block; color: var(--paper-dim); font-size: 0.72rem; }
+.raw-values strong { font: 700 0.74rem 'JetBrains Mono', monospace; }
 @media (max-width: 900px) {
-  .latency-layout {
-    grid-template-columns: 1fr;
-  }
-  .latency-scale {
-    border-right: 0;
-  }
-  .latency-compare {
-    position: static;
-    border-top: 1px solid var(--line);
-  }
+  .latency-layout { grid-template-columns: 1fr; }
+  .latency-scale { border-right: 0; }
+  .latency-compare { position: static; border-top: 1px solid var(--line); }
 }
 @media (max-width: 600px) {
-  .latency-controls {
-    grid-template-columns: 1fr;
-  }
-  .benchmark-control {
-    grid-template-columns: 1fr;
-  }
-  .latency-scale {
-    min-height: 2050px;
-    padding-left: 55px;
-    padding-right: 1rem;
-  }
-  .scale-axis {
-    left: 20px;
-  }
-  .latency-stop {
-    left: 48px;
-    right: 1rem;
-    grid-template-columns: 12px 1fr;
-  }
-  .latency-stop > em {
-    grid-column: 2;
-    margin-top: 0;
-  }
-  .latency-stop > div {
-    padding: 0.8rem;
-  }
-  .latency-stop h2 {
-    font-size: 1.1rem;
-  }
-  .latency-compare {
-    padding: 1rem;
-  }
+  .latency-controls { grid-template-columns: 1fr; }
+  .benchmark-control { grid-template-columns: 1fr; }
+  .latency-scale { min-height: 2050px; padding-left: 55px; padding-right: 1rem; }
+  .scale-axis { left: 20px; }
+  .latency-stop { left: 48px; right: 1rem; grid-template-columns: 12px 1fr; }
+  .latency-stop > em { grid-column: 2; margin-top: 0; }
+  .latency-stop > div { padding: 0.8rem; }
+  .latency-stop h2 { font-size: 1.1rem; }
+  .latency-compare { padding: 1rem; }
 }

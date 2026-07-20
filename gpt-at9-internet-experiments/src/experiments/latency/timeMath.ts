@@ -10,14 +10,14 @@ export function scaledHumanSeconds(
   return (latencyNs / benchmarkNs) * benchmarkHumanSeconds;
 }
 export function formatDuration(seconds: number) {
-  if (!Number.isFinite(seconds)) return 'UNAVAILABLE';
-  if (seconds < 0.001) return `${(seconds * 1_000_000).toFixed(2)} μs`;
-  if (seconds < 1) return `${(seconds * 1000).toFixed(2)} ms`;
-  if (seconds < 60) return `${seconds.toFixed(2)} s`;
-  if (seconds < 3600) return `${(seconds / 60).toFixed(2)} min`;
-  if (seconds < 86400) return `${(seconds / 3600).toFixed(2)} h`;
-  if (seconds < 31_536_000) return `${(seconds / 86400).toFixed(2)} days`;
-  return `${(seconds / 31_536_000).toFixed(2)} years`;
+  if (!Number.isFinite(seconds)) return '不可用';
+  if (seconds < 0.001) return `${(seconds * 1_000_000).toFixed(2)} 微秒`;
+  if (seconds < 1) return `${(seconds * 1000).toFixed(2)} 毫秒`;
+  if (seconds < 60) return `${seconds.toFixed(2)} 秒`;
+  if (seconds < 3600) return `${(seconds / 60).toFixed(2)} 分钟`;
+  if (seconds < 86400) return `${(seconds / 3600).toFixed(2)} 小时`;
+  if (seconds < 31_536_000) return `${(seconds / 86400).toFixed(2)} 天`;
+  return `${(seconds / 31_536_000).toFixed(2)} 年`;
 }
 export function scalePosition(value: number, min: number, max: number, mode: 'linear' | 'log') {
   if (mode === 'linear') return (value - min) / (max - min);

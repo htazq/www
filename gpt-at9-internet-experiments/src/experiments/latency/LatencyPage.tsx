@@ -1,15 +1,16 @@
 import { useState } from 'react';
 import { usePageMetadata } from '../../app/metadata';
 import { ExperimentHeader } from '../../components/experiment/ExperimentHeader';
-import { latencyItems } from './latencyData';
+import { kindNames, latencyItems } from './latencyData';
 import { formatDuration, scalePosition, scaledHumanSeconds } from './timeMath';
 import './latency.css';
 
+const modeNames = { linear: '线性', log: '对数', narrative: '叙事' } as const;
+
 export default function LatencyPage() {
   usePageMetadata({
-    title: 'Latency',
-    description:
-      'Translate nanoseconds, microseconds, milliseconds, and human delays into one explorable scale.',
+    title: '延迟尺度',
+    description: '把纳秒、微秒、毫秒与人类延迟放进同一条可探索的尺度。',
     path: '/experiments/latency',
   });
   const [benchmarkExponent, setBenchmarkExponent] = useState(0);
@@ -24,13 +25,13 @@ export default function LatencyPage() {
 
   return (
     <>
-      <ExperimentHeader number="05" title="LATENCY" />
+      <ExperimentHeader number="05" title="延迟尺度" />
       <section className="latency-controls">
         <div className="benchmark-control">
-          <span className="panel-label">REFERENCE</span>
-          <strong>{benchmarkNs.toLocaleString()} ns = 1 second</strong>
+          <span className="panel-label">参考尺度</span>
+          <strong>{benchmarkNs.toLocaleString()} ns = 1 秒</strong>
           <input
-            aria-label="Latency reference exponent"
+            aria-label="延迟参考指数"
             type="range"
             min="-1"
             max="9"
@@ -44,7 +45,7 @@ export default function LatencyPage() {
           </div>
         </div>
         <div>
-          <span className="panel-label">VIEW MODE</span>
+          <span className="panel-label">视图模式</span>
           <div className="mode-buttons">
             {(['linear', 'log', 'narrative'] as const).map((item) => (
               <button
@@ -52,7 +53,7 @@ export default function LatencyPage() {
                 key={item}
                 onClick={() => setMode(item)}
               >
-                {item.toUpperCase()}
+                {modeNames[item]}
               </button>
             ))}
           </div>
@@ -61,9 +62,9 @@ export default function LatencyPage() {
       <section className="latency-layout">
         <div className={`latency-scale mode-${mode}`}>
           <div className="scale-axis">
-            <span>FASTER</span>
+            <span>更快</span>
             <i />
-            <span>SLOWER</span>
+            <span>更慢</span>
           </div>
           {latencyItems.map((item, index) => {
             const position =
@@ -80,15 +81,15 @@ export default function LatencyPage() {
               >
                 <span className="latency-dot" />
                 <div>
-                  <p>{item.kind.toUpperCase()} VALUE</p>
+                  <p>{kindNames[item.kind]}</p>
                   <h2>{item.name}</h2>
                   <strong>{item.display}</strong>
                   <p>{item.context}</p>
                   <details>
-                    <summary>VIEW CONVERSION</summary>
+                    <summary>查看换算</summary>
                     <code>
                       {item.nanoseconds.toLocaleString()} ns ÷ {benchmarkNs.toLocaleString()} ns × 1
-                      s = {formatDuration(human)}
+                      秒 = {formatDuration(human)}
                     </code>
                   </details>
                 </div>
@@ -98,9 +99,9 @@ export default function LatencyPage() {
           })}
         </div>
         <aside className="latency-compare">
-          <span className="panel-label">COMPARE TWO WORLDS</span>
+          <span className="panel-label">比较两个世界</span>
           <div className="field">
-            <label htmlFor="compare-a">ITEM A</label>
+            <label htmlFor="compare-a">对象 A</label>
             <select
               id="compare-a"
               value={compareA}
@@ -114,7 +115,7 @@ export default function LatencyPage() {
             </select>
           </div>
           <div className="field">
-            <label htmlFor="compare-b">ITEM B</label>
+            <label htmlFor="compare-b">对象 B</label>
             <select
               id="compare-b"
               value={compareB}
@@ -135,8 +136,7 @@ export default function LatencyPage() {
               ×
             </strong>
             <p>
-              {b.name} is approximately this many times slower than {a.name} using the selected
-              representative values.
+              按所选的代表值估算，「{b.name}」大约比「{a.name}」慢这么多倍。
             </p>
           </div>
           <div className="raw-values">
@@ -150,9 +150,8 @@ export default function LatencyPage() {
             </div>
           </div>
           <p className="latency-disclaimer">
-            These are typical, ranged, or illustrative values—not universal constants. CPU
-            generation, memory topology, storage queue depth, network distance, software stacks, and
-            workload shape all matter.
+            这些是典型值、范围值或示意值——并非普适常数。CPU 代际、内存拓扑、存储队列深度、
+            网络距离、软件栈与负载形态都会有影响。
           </p>
         </aside>
       </section>

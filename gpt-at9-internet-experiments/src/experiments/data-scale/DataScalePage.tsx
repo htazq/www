@@ -14,10 +14,9 @@ import './data-scale.css';
 
 export default function DataScalePage() {
   usePageMetadata({
-    title: 'Data Scale',
-    description: 'Explore data magnitude from one byte to one exabyte using SI and IEC units.',
+    title: '数据量级',
+    description: '用 SI 与 IEC 单位，从 1 字节探索到 1 艾字节。',
     path: '/experiments/data-scale',
-    themeColor: '#171511',
   });
   const [system, setSystem] = useState<UnitSystem>('SI');
   const [bytesInput, setBytesInput] = useState('1000000000');
@@ -43,29 +42,29 @@ export default function DataScalePage() {
   const assumptions = useMemo(
     () => [
       {
-        label: 'TEXT CHARACTERS',
-        value: `${formatNumber(bytes / Math.max(textBpc, 0.000001), 0)} chars`,
-        detail: `${textBpc} byte(s) per selected character assumption`,
+        label: '文本字符',
+        value: `${formatNumber(bytes / Math.max(textBpc, 0.000001), 0)} 个字符`,
+        detail: `按当前假设每字符 ${textBpc} 字节`,
       },
       {
-        label: 'COMPRESSED PHOTOS',
-        value: `${formatNumber(storageDeviceCount(bytes, photoBytes), 2)} photos`,
-        detail: `${photoMb} MB per photo`,
+        label: '压缩照片',
+        value: `${formatNumber(storageDeviceCount(bytes, photoBytes), 2)} 张`,
+        detail: `每张 ${photoMb} MB`,
       },
       {
-        label: '1080P VIDEO',
-        value: `${formatNumber(bytes / Math.max(videoBytes, 1), 3)} hours`,
-        detail: `${videoMbps} Mb/s for ${videoMinutes} minutes`,
+        label: '1080P 视频',
+        value: `${formatNumber(bytes / Math.max(videoBytes, 1), 3)} 小时`,
+        detail: `${videoMbps} Mb/s，每段 ${videoMinutes} 分钟`,
       },
       {
-        label: 'SSDS',
-        value: `${formatNumber(storageDeviceCount(bytes, ssdBytes), 3)} drives`,
-        detail: `${ssdTb} TB decimal capacity each`,
+        label: '固态盘',
+        value: `${formatNumber(storageDeviceCount(bytes, ssdBytes), 3)} 块`,
+        detail: `每块 ${ssdTb} TB（十进制）`,
       },
       {
-        label: 'RACKS',
-        value: `${formatNumber(storageDeviceCount(bytes, rackBytes), 4)} racks`,
-        detail: `${drivesPerRack} × ${ssdTb} TB SSDs per rack`,
+        label: '机架',
+        value: `${formatNumber(storageDeviceCount(bytes, rackBytes), 4)} 个`,
+        detail: `每机架 ${drivesPerRack} × ${ssdTb} TB SSD`,
       },
     ],
     [
@@ -82,7 +81,7 @@ export default function DataScalePage() {
       videoMinutes,
     ],
   );
-  const resultText = `${bytes.toLocaleString()} bytes = ${formatNumber(selected.value, 6)} ${selected.unit} (${system})`;
+  const resultText = `${bytes.toLocaleString()} 字节 = ${formatNumber(selected.value, 6)} ${selected.unit}（${system}）`;
   const copyResult = async () => {
     if (navigator.clipboard) await navigator.clipboard.writeText(resultText);
     else {
@@ -99,10 +98,10 @@ export default function DataScalePage() {
 
   return (
     <>
-      <ExperimentHeader number="06" title="DATA SCALE" />
+      <ExperimentHeader number="06" title="数据量级" />
       <section className="scale-controls">
         <div>
-          <span className="panel-label">UNIT SYSTEM</span>
+          <span className="panel-label">单位制</span>
           <div className="mode-buttons">
             <button
               className={`control-button ${system === 'SI' ? 'active' : ''}`}
@@ -119,7 +118,7 @@ export default function DataScalePage() {
           </div>
         </div>
         <div className="field">
-          <label htmlFor="byte-input">ARBITRARY BYTE COUNT</label>
+          <label htmlFor="byte-input">任意字节数</label>
           <input
             id="byte-input"
             inputMode="decimal"
@@ -128,12 +127,12 @@ export default function DataScalePage() {
           />
         </div>
         <div className="scale-result">
-          <span>AUTO UNIT</span>
+          <span>自动单位</span>
           <strong>
             {formatNumber(selected.value, 6)} {selected.unit}
           </strong>
           <button className="control-button" onClick={() => void copyResult()}>
-            {copied ? 'COPIED' : 'COPY RESULT'}
+            {copied ? '已复制' : '复制结果'}
           </button>
         </div>
       </section>
@@ -153,13 +152,13 @@ export default function DataScalePage() {
                 <div>
                   <p>{level.realm}</p>
                   <h2>{level.power === 0 ? '1 B' : `1 ${unit}`}</h2>
-                  <strong>{unitBytes.toLocaleString()} bytes</strong>
+                  <strong>{unitBytes.toLocaleString()} 字节</strong>
                   <p>{level.example}</p>
                   <details>
-                    <summary>FULL CONVERSION</summary>
+                    <summary>完整换算</summary>
                     <code>
                       {system === 'SI' ? '1000' : '1024'}^{level.power} ={' '}
-                      {unitBytes.toLocaleString()} bytes
+                      {unitBytes.toLocaleString()} 字节
                     </code>
                   </details>
                 </div>
@@ -168,11 +167,11 @@ export default function DataScalePage() {
           })}
         </div>
         <aside className="scale-calculator">
-          <span className="panel-label">ASSUMPTION LAB</span>
+          <span className="panel-label">假设实验室</span>
           <section>
-            <h3>TEXT</h3>
+            <h3>文本</h3>
             <div className="field">
-              <label htmlFor="text-count">CHARACTERS</label>
+              <label htmlFor="text-count">字符数</label>
               <input
                 id="text-count"
                 value={textCharacters}
@@ -180,20 +179,20 @@ export default function DataScalePage() {
               />
             </div>
             <div className="field">
-              <label htmlFor="text-type">TEXT TYPE</label>
+              <label htmlFor="text-type">文本类型</label>
               <select
                 id="text-type"
                 value={textType}
                 onChange={(event) => setTextType(event.target.value as typeof textType)}
               >
-                <option value="ascii">UTF-8 ASCII · 1 byte</option>
-                <option value="chinese">UTF-8 Chinese typical · 3 bytes</option>
-                <option value="custom">Custom average</option>
+                <option value="ascii">UTF-8 ASCII · 1 字节</option>
+                <option value="chinese">UTF-8 中文常见 · 3 字节</option>
+                <option value="custom">自定义平均值</option>
               </select>
             </div>
             {textType === 'custom' && (
               <div className="field">
-                <label htmlFor="custom-bpc">BYTES / CHARACTER</label>
+                <label htmlFor="custom-bpc">字节 / 字符</label>
                 <input
                   id="custom-bpc"
                   value={customBytes}
@@ -201,16 +200,15 @@ export default function DataScalePage() {
                 />
               </div>
             )}
-            <output>{formatNumber(textBytes, 0)} bytes estimated</output>
+            <output>估算 {formatNumber(textBytes, 0)} 字节</output>
             <p>
-              UTF-8 is variable-length. ASCII characters use one byte; many Chinese characters
-              commonly use three bytes, while emoji may use four or more.
+              UTF-8 是变长编码：ASCII 字符占 1 字节，许多中文字符通常占 3 字节，emoji 可能占 4 字节或更多。
             </p>
           </section>
           <section>
-            <h3>MEDIA</h3>
+            <h3>媒体</h3>
             <div className="field">
-              <label htmlFor="photo-size">PHOTO SIZE · MB</label>
+              <label htmlFor="photo-size">照片大小 · MB</label>
               <input
                 id="photo-size"
                 value={photoMb}
@@ -218,7 +216,7 @@ export default function DataScalePage() {
               />
             </div>
             <div className="field">
-              <label htmlFor="video-rate">VIDEO BITRATE · Mb/s</label>
+              <label htmlFor="video-rate">视频码率 · Mb/s</label>
               <input
                 id="video-rate"
                 value={videoMbps}
@@ -226,7 +224,7 @@ export default function DataScalePage() {
               />
             </div>
             <div className="field">
-              <label htmlFor="video-length">VIDEO LENGTH · MIN</label>
+              <label htmlFor="video-length">视频时长 · 分钟</label>
               <input
                 id="video-length"
                 value={videoMinutes}
@@ -235,9 +233,9 @@ export default function DataScalePage() {
             </div>
           </section>
           <section>
-            <h3>STORAGE</h3>
+            <h3>存储</h3>
             <div className="field">
-              <label htmlFor="ssd-size">SSD CAPACITY · TB</label>
+              <label htmlFor="ssd-size">SSD 容量 · TB</label>
               <input
                 id="ssd-size"
                 value={ssdTb}
@@ -245,7 +243,7 @@ export default function DataScalePage() {
               />
             </div>
             <div className="field">
-              <label htmlFor="rack-drives">DRIVES / RACK</label>
+              <label htmlFor="rack-drives">每机架盘数</label>
               <input
                 id="rack-drives"
                 value={drivesPerRack}
@@ -256,8 +254,8 @@ export default function DataScalePage() {
         </aside>
         <section className="analogy-panel">
           <div className="scale-panel-heading">
-            <span className="panel-label">WHAT {bytes.toLocaleString()} BYTES COULD REPRESENT</span>
-            <span className="status-pill warn">ASSUMPTION-BASED</span>
+            <span className="panel-label">{bytes.toLocaleString()} 字节可以代表什么</span>
+            <span className="status-pill warn">基于假设</span>
           </div>
           <div className="analogy-grid">
             {assumptions.map((item) => (
@@ -270,8 +268,8 @@ export default function DataScalePage() {
           </div>
           <div className="calculation-strip">
             <code>
-              {bytes.toLocaleString()} bytes ÷{' '}
-              {bytesForUnit(selected.power, system).toLocaleString()} bytes/{selected.unit} ={' '}
+              {bytes.toLocaleString()} 字节 ÷{' '}
+              {bytesForUnit(selected.power, system).toLocaleString()} 字节/{selected.unit} ={' '}
               {formatNumber(selected.value, 6)} {selected.unit}
             </code>
           </div>

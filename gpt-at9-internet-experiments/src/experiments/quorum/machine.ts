@@ -28,7 +28,7 @@ export const initialQuorumState: QuorumState = {
   fencing: true,
   service: { A: true, B: false },
   vip: 'A',
-  log: ['Simulation initialized. Node A owns the service and Virtual IP.'],
+  log: ['模拟已初始化。节点 A 持有服务与虚拟 IP。'],
 };
 
 function neighbors(state: QuorumState, node: Member): Member[] {
@@ -98,12 +98,12 @@ export function deriveQuorumState(state: QuorumState): DerivedQuorumState {
   const dataRisk = splitBrainRisk ? 'CRITICAL' : !quorum || !state.fencing ? 'ELEVATED' : 'LOW';
   const refuseWrites = !quorum || splitBrainRisk || !vipServed;
   const explanation = splitBrainRisk
-    ? 'Both sides may believe they are allowed to serve writes. Fencing is required before ownership can move safely.'
+    ? '两侧可能都认为自己可以受理写入。所有权安全转移前必须启用隔离机制。'
     : !quorum
-      ? 'No data node can reach a majority of voting members. Writes should stop.'
+      ? '没有数据节点能触达多数投票成员。写入应当停止。'
       : serviceAvailable
-        ? 'A majority exists and exactly one reachable service owner holds the Virtual IP.'
-        : 'A majority exists, but the service or Virtual IP is not currently available.';
+        ? '多数派存在，且恰好一个可达的服务所有者持有虚拟 IP。'
+        : '多数派存在，但服务或虚拟 IP 当前不可用。';
   return {
     quorum,
     activeNode,
@@ -126,12 +126,12 @@ function failover(state: QuorumState, failed: DataNode): QuorumState {
   if (candidate.online[target] && nodeHasQuorum(candidate, target)) {
     return append(
       { ...candidate, service: { A: target === 'A', B: target === 'B' }, vip: target },
-      `Failover completed. Node ${target} owns the service and VIP.`,
+      `故障转移完成。节点 ${target} 持有服务与虚拟 IP。`,
     );
   }
   return append(
     { ...candidate, vip: 'none' },
-    'Failover refused because no safe majority owner exists.',
+    '故障转移被拒绝：不存在安全的多数派所有者。',
   );
 }
 
@@ -141,53 +141,53 @@ export function quorumReducer(state: QuorumState, action: QuorumAction): QuorumS
     return {
       ...initialQuorumState,
       fencing: state.fencing,
-      log: ['Faults cleared. Cluster returned to a single owner.'],
+      log: ['故障已清除。集群恢复到单一所有者。'],
     };
   if (action.type === 'TOGGLE_FENCING')
     return append(
       { ...state, fencing: !state.fencing },
-      `Fencing ${state.fencing ? 'disabled' : 'enabled'}.`,
+      `隔离机制已${state.fencing ? '关闭' : '开启'}。`,
     );
   if (action.type === 'SHUTDOWN') {
     const next = { ...state, online: { ...state.online, [action.node]: false } };
     return state.service[action.node] || state.vip === action.node
       ? failover(next, action.node)
-      : append(next, `Node ${action.node} shut down.`);
+      : append(next, `节点 ${action.node} 已关机。`);
   }
   if (action.type === 'RECOVER')
     return append(
       { ...state, online: { ...state.online, [action.node]: true } },
-      `Node ${action.node} recovered as a passive member.`,
+      `节点 ${action.node} 已恢复为被动成员。`,
     );
   if (action.type === 'DISCONNECT')
     return append(
       { ...state, links: { ...state.links, [action.link]: false } },
-      `Link ${action.link} disconnected.`,
+      `链路 ${action.link} 已断开。`,
     );
   if (action.type === 'RESTORE_LINK')
     return append(
       { ...state, links: { ...state.links, [action.link]: true } },
-      `Link ${action.link} restored.`,
+      `链路 ${action.link} 已恢复。`,
     );
   if (action.type === 'CRASH_SERVICE') {
     if (state.vip === 'A' || state.vip === 'B')
       return failover({ ...state, service: { ...state.service, [state.vip]: false } }, state.vip);
-    return append(state, 'No single active service exists to crash.');
+    return append(state, '当前没有可崩溃的活动服务。');
   }
   if (action.type === 'MOVE_VIP') {
     if (!state.online[action.node])
-      return append(state, `VIP move refused: Node ${action.node} is offline.`);
+      return append(state, `虚拟 IP 迁移被拒绝：节点 ${action.node} 离线。`);
     if (!nodeHasQuorum(state, action.node))
-      return append(state, `VIP move refused: Node ${action.node} has no quorum.`);
+      return append(state, `虚拟 IP 迁移被拒绝：节点 ${action.node} 没有仲裁。`);
     if (!state.fencing && !state.links.AB && (state.service.A || state.service.B)) {
       return append(
         { ...state, service: { ...state.service, [action.node]: true }, vip: 'both' },
-        `Unsafe VIP move to Node ${action.node}: the previous owner was not fenced.`,
+        `危险的虚拟 IP 迁移到节点 ${action.node}：原所有者未被隔离。`,
       );
     }
     return append(
       { ...state, service: { A: action.node === 'A', B: action.node === 'B' }, vip: action.node },
-      `VIP moved safely to Node ${action.node}.`,
+      `虚拟 IP 已安全迁移到节点 ${action.node}。`,
     );
   }
   return state;

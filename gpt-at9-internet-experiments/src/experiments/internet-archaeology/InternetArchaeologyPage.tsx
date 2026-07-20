@@ -1,16 +1,15 @@
 import { useMemo, useState } from 'react';
 import { usePageMetadata } from '../../app/metadata';
 import { ExperimentHeader } from '../../components/experiment/ExperimentHeader';
-import { exhibits, type ExhibitCategory } from './exhibits';
+import { categoryNames, exhibits, type ExhibitCategory } from './exhibits';
 import { InteractionDemo } from './InteractionDemo';
 import './internet-archaeology.css';
 
 export default function InternetArchaeologyPage() {
   usePageMetadata({
-    title: 'Internet Archaeology',
-    description: 'An interactive museum of reconstructed computing and internet artifacts.',
+    title: '互联网考古',
+    description: '一座重构计算与互联网文物的交互博物馆。',
     path: '/experiments/internet-archaeology',
-    themeColor: '#161512',
   });
   const [selectedId, setSelectedId] = useState('telnet');
   const [view, setView] = useState<'timeline' | 'list'>('timeline');
@@ -28,49 +27,46 @@ export default function InternetArchaeologyPage() {
   };
   return (
     <>
-      <ExperimentHeader number="07" title="INTERNET ARCHAEOLOGY" />
+      <ExperimentHeader number="07" title="互联网考古" />
       <div className="museum-notice">
-        <strong>ORIGINAL RECONSTRUCTIONS</strong>
-        <span>
-          No original logos, skins, screenshots, startup sounds, or software assets are used.
-        </span>
+        <strong>原创重构</strong>
+        <span>未使用任何原始的 Logo、皮肤、截图、开机音或软件资产。</span>
       </div>
       <section className="museum-controls">
         <div>
-          <span className="panel-label">VIEW</span>
+          <span className="panel-label">视图</span>
           <div className="mode-buttons">
             <button
               className={`control-button ${view === 'timeline' ? 'active' : ''}`}
               onClick={() => setView('timeline')}
             >
-              TIMELINE VIEW
+              时间线
             </button>
             <button
               className={`control-button ${view === 'list' ? 'active' : ''}`}
               onClick={() => setView('list')}
             >
-              LIST VIEW
+              列表
             </button>
           </div>
         </div>
         <div className="field">
-          <label htmlFor="category-filter">CATEGORY</label>
+          <label htmlFor="category-filter">分类</label>
           <select
             id="category-filter"
             value={category}
             onChange={(event) => setCategory(event.target.value as typeof category)}
           >
-            <option value="all">All categories</option>
-            <option value="protocol">Protocol</option>
-            <option value="community">Community</option>
-            <option value="media">Media</option>
-            <option value="virtualization">Virtualization</option>
-            <option value="infrastructure">Infrastructure</option>
-            <option value="intelligence">Intelligence</option>
+            <option value="all">全部分类</option>
+            {(Object.keys(categoryNames) as ExhibitCategory[]).map((key) => (
+              <option value={key} key={key}>
+                {categoryNames[key]}
+              </option>
+            ))}
           </select>
         </div>
       </section>
-      <section className={`museum-index ${view}`} aria-label="Artifact collection">
+      <section className={`museum-index ${view}`} aria-label="馆藏列表">
         {filtered.map((item) => (
           <button
             onClick={() => select(item.id)}
@@ -79,7 +75,7 @@ export default function InternetArchaeologyPage() {
           >
             <span>{item.year}</span>
             <strong>{item.name}</strong>
-            <em>{item.category}</em>
+            <em>{categoryNames[item.category]}</em>
             <p>{item.definition}</p>
           </button>
         ))}
@@ -91,10 +87,10 @@ export default function InternetArchaeologyPage() {
         <header>
           <div>
             <span className="panel-label">
-              ARTIFACT {String(exhibits.indexOf(selected) + 1).padStart(2, '0')} / {exhibits.length}
+              藏品 {String(exhibits.indexOf(selected) + 1).padStart(2, '0')} / {exhibits.length}
             </span>
             <p>
-              {selected.era} · {selected.category.toUpperCase()}
+              {selected.era} · {categoryNames[selected.category]}
             </p>
           </div>
           <h2>{selected.name}</h2>
@@ -103,48 +99,46 @@ export default function InternetArchaeologyPage() {
         <div className="artifact-grid">
           <dl>
             <div>
-              <dt>TYPICAL INTERFACE</dt>
+              <dt>典型界面</dt>
               <dd>{selected.interface}</dd>
             </div>
             <div>
-              <dt>COMMON USE</dt>
+              <dt>常见用途</dt>
               <dd>{selected.uses}</dd>
             </div>
             <div>
-              <dt>PROBLEM IT SOLVED</dt>
+              <dt>解决的问题</dt>
               <dd>{selected.problem}</dd>
             </div>
             <div>
-              <dt>TECHNICAL LIMITS</dt>
+              <dt>技术局限</dt>
               <dd>{selected.limits}</dd>
             </div>
             <div>
-              <dt>HOW THE FUTURE LOOKED</dt>
+              <dt>当时想象的未来</dt>
               <dd>{selected.future}</dd>
             </div>
             <div>
-              <dt>WHAT REMAINS TODAY</dt>
+              <dt>今天留下的东西</dt>
               <dd>{selected.legacy}</dd>
             </div>
           </dl>
           <div className="artifact-demo">
             <div className="demo-label">
-              <span className="panel-label">INTERACTIVE RECONSTRUCTION</span>
-              <span>LOCAL ONLY</span>
+              <span className="panel-label">交互重构</span>
+              <span>仅在本地</span>
             </div>
             <InteractionDemo key={selected.id} exhibit={selected} />
           </div>
         </div>
-        <nav className="artifact-nav" aria-label="Artifact navigation">
+        <nav className="artifact-nav" aria-label="藏品导航">
           <button
             disabled={exhibits.indexOf(selected) === 0}
             onClick={() =>
-              setSelectedId(
-                exhibits[Math.max(0, exhibits.indexOf(selected) - 1)]?.id ?? selected.id,
-              )
+              setSelectedId(exhibits[Math.max(0, exhibits.indexOf(selected) - 1)]?.id ?? selected.id)
             }
           >
-            ← PREVIOUS
+            ← 上一件
           </button>
           <button
             disabled={exhibits.indexOf(selected) === exhibits.length - 1}
@@ -155,7 +149,7 @@ export default function InternetArchaeologyPage() {
               )
             }
           >
-            NEXT →
+            下一件 →
           </button>
         </nav>
       </section>

@@ -28,7 +28,7 @@ export function SoundToggle() {
 
   return (
     <button className="sound-toggle" type="button" aria-pressed={enabled} onClick={toggle}>
-      SOUND {enabled ? 'ON' : 'OFF'}
+      音效 {enabled ? '开' : '关'}
     </button>
   );
 }

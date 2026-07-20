@@ -7,22 +7,16 @@ export interface CityNode {
 }
 
 export const cities: CityNode[] = [
-  { id: 'shanghai', name: 'Shanghai', country: 'China', lat: 31.2304, lon: 121.4737 },
-  { id: 'singapore', name: 'Singapore', country: 'Singapore', lat: 1.3521, lon: 103.8198 },
-  { id: 'tokyo', name: 'Tokyo', country: 'Japan', lat: 35.6762, lon: 139.6503 },
-  { id: 'sydney', name: 'Sydney', country: 'Australia', lat: -33.8688, lon: 151.2093 },
-  { id: 'mumbai', name: 'Mumbai', country: 'India', lat: 19.076, lon: 72.8777 },
-  { id: 'frankfurt', name: 'Frankfurt', country: 'Germany', lat: 50.1109, lon: 8.6821 },
-  { id: 'london', name: 'London', country: 'United Kingdom', lat: 51.5072, lon: -0.1276 },
-  { id: 'virginia', name: 'Virginia', country: 'United States', lat: 37.4316, lon: -78.6569 },
-  {
-    id: 'los-angeles',
-    name: 'Los Angeles',
-    country: 'United States',
-    lat: 34.0522,
-    lon: -118.2437,
-  },
-  { id: 'sao-paulo', name: 'São Paulo', country: 'Brazil', lat: -23.5558, lon: -46.6396 },
+  { id: 'shanghai', name: '上海', country: '中国', lat: 31.2304, lon: 121.4737 },
+  { id: 'singapore', name: '新加坡', country: '新加坡', lat: 1.3521, lon: 103.8198 },
+  { id: 'tokyo', name: '东京', country: '日本', lat: 35.6762, lon: 139.6503 },
+  { id: 'sydney', name: '悉尼', country: '澳大利亚', lat: -33.8688, lon: 151.2093 },
+  { id: 'mumbai', name: '孟买', country: '印度', lat: 19.076, lon: 72.8777 },
+  { id: 'frankfurt', name: '法兰克福', country: '德国', lat: 50.1109, lon: 8.6821 },
+  { id: 'london', name: '伦敦', country: '英国', lat: 51.5072, lon: -0.1276 },
+  { id: 'virginia', name: '弗吉尼亚', country: '美国', lat: 37.4316, lon: -78.6569 },
+  { id: 'los-angeles', name: '洛杉矶', country: '美国', lat: 34.0522, lon: -118.2437 },
+  { id: 'sao-paulo', name: '圣保罗', country: '巴西', lat: -23.5558, lon: -46.6396 },
 ];
 
 export const simplifiedLand = [

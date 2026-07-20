@@ -3,17 +3,17 @@ import { usePageMetadata } from './metadata';
 
 export default function NotFoundPage() {
   usePageMetadata({
-    title: 'Route not found',
-    description: 'The packet reached a network that does not exist.',
+    title: '路由不存在',
+    description: '这个数据包到达了一个不存在的网络。',
     path: '/404',
   });
   return (
     <section className="not-found">
-      <p>404 / NULL ROUTE</p>
-      <h1>ROUTE NOT FOUND</h1>
-      <p>The packet reached a network that does not exist.</p>
+      <p>404 / 空路由</p>
+      <h1>路由不存在</h1>
+      <p>这个数据包到达了一个不存在的网络。</p>
       <Link className="button-primary" to="/experiments">
-        Return to the lab.
+        返回实验室
       </Link>
     </section>
   );

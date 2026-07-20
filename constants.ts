@@ -1,21 +1,17 @@
 import {
-  Server,
-  Network,
   Container,
   Github,
-  Cloud,
-  Shield,
-  Zap,
+  Network,
   FlaskConical,
 } from 'lucide-react';
 import type { NavItem } from './types';
 
 export const SITE_CONFIG = {
   name: 'at9.net',
-  headline: '免费公益镜像加速',
+  headline: '海棠的数字空间',
   domains: ['www.at9.net', 'at9.net'],
-  tagline: '基于 Cloudflare 全球网络 · 免费 · 稳定 · 透明',
-  bio: '为开发者和研究者提供免费的 Docker、GitHub 与网络工具镜像服务。数据仅用于加速，不存储、不追踪。',
+  tagline: '免费 · 公益 · 透明 —— 基于 Cloudflare 全球网络',
+  bio: '为开发者与研究者提供免费的 Docker、GitHub 镜像加速与网络工具。数据仅用于加速，不存储、不追踪。',
   poweredBy: 'Cloudflare',
 };
 
@@ -24,10 +20,10 @@ export const MIRROR_SITES: NavItem[] = [
     id: 'experiments',
     title: 'AT9 实验室',
     url: 'https://www.at9.net/experiments/',
-    description: '7 个关于系统、网络、规模与计算机历史的浏览器交互实验。',
+    description: '七个关于系统、网络、规模与计算机历史的浏览器交互实验。',
     icon: FlaskConical,
     category: 'Lab',
-    color: 'text-rose-400',
+    color: '#e8452c',
     isNew: true,
   },
   {
@@ -37,7 +33,7 @@ export const MIRROR_SITES: NavItem[] = [
     description: '免费 Docker Hub 镜像代理，快速拉取常用镜像。',
     icon: Container,
     category: 'Mirror',
-    color: 'text-blue-400',
+    color: '#4a6fd6',
   },
   {
     id: 'github',
@@ -46,7 +42,7 @@ export const MIRROR_SITES: NavItem[] = [
     description: 'GitHub 文件、Release、Raw 内容加速下载。',
     icon: Github,
     category: 'Mirror',
-    color: 'text-purple-400',
+    color: '#9a5fd0',
     isNew: true,
   },
   {
@@ -56,13 +52,6 @@ export const MIRROR_SITES: NavItem[] = [
     description: '快速查看当前公网 IP、地理位置与网络信息。',
     icon: Network,
     category: 'Tool',
-    color: 'text-green-400',
+    color: '#3fae8a',
   },
-];
-
-export const TRUST_BADGES = [
-  { icon: Cloud, label: 'Cloudflare 全球加速', color: 'text-orange-400' },
-  { icon: Shield, label: '无日志、不追踪', color: 'text-emerald-400' },
-  { icon: Zap, label: '免费公益服务', color: 'text-yellow-400' },
-  { icon: Server, label: '7×24 小时可用', color: 'text-cyan-400' },
 ];
