@@ -36,7 +36,6 @@ export default function AboutPage() {
       </div>
       <nav className="external-links" aria-label="外部链接">
         <a href={siteConfig.links.notes}>博客 ↗</a>
-        <a href={siteConfig.links.deck}>9DECK ↗</a>
         <a href={siteConfig.links.ipTool}>IP 工具 ↗</a>
         <a href={siteConfig.links.github}>GITHUB ↗</a>
       </nav>

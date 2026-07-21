@@ -28,8 +28,8 @@ it('keeps sound off until the user enables it', async () => {
   Object.defineProperty(window, 'AudioContext', { value: AudioContextMock, configurable: true });
   const user = userEvent.setup();
   render(<SoundToggle />);
-  const button = screen.getByRole('button', { name: 'SOUND OFF' });
+  const button = screen.getByRole('button', { name: '音效 关' });
   expect(button).toHaveAttribute('aria-pressed', 'false');
   await user.click(button);
-  expect(screen.getByRole('button', { name: 'SOUND ON' })).toHaveAttribute('aria-pressed', 'true');
+  expect(screen.getByRole('button', { name: '音效 开' })).toHaveAttribute('aria-pressed', 'true');
 });

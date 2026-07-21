@@ -10,9 +10,7 @@ it('moves the service after Node A shuts down', async () => {
       <QuorumPage />
     </MemoryRouter>,
   );
-  await user.click(screen.getByRole('button', { name: 'SHUT DOWN A' }));
-  expect(
-    screen.getByText('Failover completed. Node B owns the service and VIP.'),
-  ).toBeInTheDocument();
+  await user.click(screen.getByRole('button', { name: '关闭 A' }));
+  expect(screen.getByText('故障转移完成。节点 B 持有服务与虚拟 IP。')).toBeInTheDocument();
   expect(screen.getAllByText('B').length).toBeGreaterThan(0);
 });

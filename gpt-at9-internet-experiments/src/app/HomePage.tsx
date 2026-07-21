@@ -30,9 +30,6 @@ export default function HomePage() {
           <a className="button-primary" href="#experiments-heading">
             浏览实验 ↓
           </a>
-          <a href={siteConfig.links.deck} target="_blank" rel="noreferrer">
-            9DECK ↗
-          </a>
           <a href={siteConfig.links.notes} target="_blank" rel="noreferrer">
             博客 ↗
           </a>

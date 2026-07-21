@@ -31,8 +31,8 @@ export function SiteHeader() {
         <NavLink to="/experiments/about" onClick={close}>
           关于
         </NavLink>
-        <a href={siteConfig.links.deck} target="_blank" rel="noreferrer">
-          9DECK ↗
+        <a href={siteConfig.links.notes} target="_blank" rel="noreferrer">
+          博客 ↗
         </a>
       </nav>
     </header>

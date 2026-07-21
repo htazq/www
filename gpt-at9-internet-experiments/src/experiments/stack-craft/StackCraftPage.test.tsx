@@ -13,8 +13,8 @@ describe('Stack Craft page', () => {
       </MemoryRouter>,
     );
     await user.click(screen.getByRole('button', { name: 'Linux' }));
-    await user.click(screen.getByRole('button', { name: 'Disk' }));
-    expect(screen.getByRole('status')).toHaveTextContent('DISCOVERED: File System');
-    expect(screen.getByRole('button', { name: 'File System' })).toBeInTheDocument();
+    await user.click(screen.getByRole('button', { name: '磁盘' }));
+    expect(screen.getByRole('status')).toHaveTextContent('发现新元素：文件系统');
+    expect(screen.getByRole('button', { name: '文件系统' })).toBeInTheDocument();
   });
 });

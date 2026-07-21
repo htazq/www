@@ -22,14 +22,10 @@ main:
             git remote add github https://oauth2:$GITHUB_TOKEN@github.com/htazq/www.git
             git push --force github HEAD:main
 
-        - name: Build Dashboard and Experiments
+        - name: Build Site and Experiments
           image: node:22
-          env:
-            GH_OWNER: htazq
           script: |
             npm install
-            node scripts/local-dashboard-build.mjs
-            npm run validate
             npm run build
             corepack enable
             cd gpt-at9-internet-experiments
@@ -45,47 +41,6 @@ main:
           image: node:22
           script: |
             npx edgeone makers deploy ./dist -n cnb-www -t $EDGEONE_API_TOKEN
-
-  # 每 5 分钟只刷新数据分支，不消耗 EdgeOne 构建额度。
-  "crontab: */5 * * * *":
-    - imports: https://cnb.cool/htazq/my-secrets/-/blob/main/envs.yml
-      stages:
-        - name: Refresh Dashboard Feed
-          image: node:22
-          env:
-            GH_OWNER: htazq
-          script: |
-            node scripts/local-dashboard-build.mjs
-            npm run validate
-            node --input-type=module <<'NODE'
-            const headers = {
-              Accept: 'application/vnd.github+json',
-              Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
-              'Content-Type': 'application/json',
-              'X-GitHub-Api-Version': '2022-11-28',
-            };
-            let response = await fetch('https://api.github.com/repos/htazq/www', {headers});
-            if (!response.ok) throw new Error(`Repository request failed: ${response.status} ${await response.text()}`);
-            const repository = await response.json();
-            if (repository.private) {
-              response = await fetch('https://api.github.com/repos/htazq/www', {
-                method: 'PATCH',
-                headers,
-                body: JSON.stringify({visibility: 'public'}),
-              });
-              if (!response.ok) throw new Error(`Visibility update failed: ${response.status} ${await response.text()}`);
-            }
-            NODE
-            workdir="$(mktemp -d)"
-            cp public/data/dashboard-feed.json "$workdir/dashboard-feed.json"
-            cd "$workdir"
-            git init
-            git checkout -b dashboard-data
-            git config user.email "61930738+htazq@users.noreply.github.com"
-            git config user.name "htazq"
-            git add dashboard-feed.json
-            git commit -m "data: refresh dashboard feed"
-            git push --force "https://oauth2:$GITHUB_TOKEN@github.com/htazq/www.git" HEAD:dashboard-data
 
   # 低频兜底发布，避免代码推送恰好遇到 EdgeOne 当日额度耗尽。
   "crontab: 10 0 * * *":

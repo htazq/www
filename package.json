@@ -5,12 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "check": "node --check scripts/local-dashboard-build.mjs && node --check scripts/validate-dashboard.mjs && node --check scripts/test-dashboard-external-contributions.mjs && npm run validate && npm run test:contributions",
-    "test:contributions": "node scripts/test-dashboard-external-contributions.mjs",
-    "validate": "node scripts/validate-dashboard.mjs",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "npm run check && npm run build"
+    "test": "npm run build"
   },
   "dependencies": {
     "@google/genai": "^1.30.0",
