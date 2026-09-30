@@ -1,4 +1,13 @@
 $:
+  pull_request:
+    - name: AI PR review
+      stages:
+        - name: Review and post conclusion
+          image: cnbcool/code-review:latest
+          settings:
+            comment: true
+            max_comments: 10
+            review_event: auto
   vscode:
     - docker:
         image: docker.cnb.cool/htazq/image/node-22:latest
