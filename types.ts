@@ -1,6 +1,6 @@
 import { LucideIcon } from 'lucide-react';
 
-export type NavCategory = 'Mirror' | 'Tool' | 'Lab';
+export type NavCategory = 'Mirror' | 'Tool' | 'Service';
 
 export interface NavItem {
   id: string;
