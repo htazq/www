@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>at9.net · 海棠的数字空间</title>
-    <meta name="description" content="at9.net 提供免费公益服务：文件服务、IP 查看工具、Docker 镜像加速、GitHub 镜像加速。基于 EdgeOne 全球网络。" />
-    <link rel="icon" href="/experiments/favicon.svg" type="image/svg+xml" />
+    <title>Brooks · 数字花园</title>
+    <meta name="description" content="Brooks（htazq）的个人站点：公益文件服务、IP 工具、Docker 与 GitHub 镜像加速，以及博客、实验场等个人站点与友链。" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&family=JetBrains+Mono:wght@300;400;700&family=Noto+Serif+SC:wght@600;900&display=swap" rel="stylesheet" />
@@ -15,13 +15,20 @@
         theme: {
           extend: {
             colors: {
-              ink: '#0d0a08',
-              paper: '#f2ead9',
-              cinnabar: '#e8452c',
-              amber: '#f0a832',
-              celadon: '#3fae8a',
-              indigo: '#4a6fd6',
-              violet: '#9a5fd0',
+              cream: '#fff8f0',
+              coral: '#ff4d3d',
+              tangerine: '#ff8a00',
+              sun: '#ffc700',
+              grass: '#00b876',
+              ocean: '#1e7dff',
+              grape: '#8b3dff',
+              midnight: '#1a1030',
+            },
+            screens: {
+              xs: '420px',
+              sm: '640px',
+              md: '768px',
+              lg: '1024px',
             },
             fontFamily: {
               serifcn: ['"Noto Serif SC"', 'serif'],
@@ -32,12 +39,57 @@
       };
     </script>
     <style>
-      body { font-family: 'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif; background: #0d0a08; color: #f2ead9; }
-      .font-mono { font-family: 'JetBrains Mono', monospace; }
-      .grain::before {
-        content: ''; position: fixed; inset: 0; z-index: 1; pointer-events: none; opacity: .05;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+      body {
+        font-family: 'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+        background: #fff8f0;
+        color: #1a1030;
       }
+      .font-mono { font-family: 'JetBrains Mono', monospace; }
+
+      /* 彩虹流动背景 */
+      .aurora {
+        position: fixed; inset: 0; z-index: -1; overflow: hidden;
+        background: #fff8f0;
+      }
+      .aurora::before, .aurora::after {
+        content: ''; position: absolute; width: 60vmax; height: 60vmax;
+        border-radius: 50%; filter: blur(90px); opacity: .35;
+      }
+      .aurora::before {
+        top: -25vmax; left: -15vmax;
+        background: conic-gradient(from 90deg, #ff4d3d, #ff8a00, #ffc700, #ff4d3d);
+        animation: spin 24s linear infinite;
+      }
+      .aurora::after {
+        bottom: -30vmax; right: -15vmax;
+        background: conic-gradient(from 270deg, #1e7dff, #8b3dff, #00b876, #1e7dff);
+        animation: spin 32s linear infinite reverse;
+      }
+      @keyframes spin { to { transform: rotate(360deg); } }
+
+      /* 文字描边 */
+      .stroke-text {
+        -webkit-text-stroke: 2px #1a1030;
+        color: transparent;
+      }
+
+      /* 跑马灯 */
+      @keyframes marquee {
+        from { transform: translateX(0); }
+        to { transform: translateX(-50%); }
+      }
+      .animate-marquee { animation: marquee 28s linear infinite; }
+
+      /* 上下浮动 */
+      @keyframes floaty {
+        0%, 100% { transform: translateY(0) rotate(-3deg); }
+        50% { transform: translateY(-12px) rotate(3deg); }
+      }
+      .floaty { animation: floaty 5s ease-in-out infinite; }
+
+      /* 卡片硬阴影 */
+      .hard-shadow { box-shadow: 6px 6px 0 #1a1030; }
+      .hard-shadow-sm { box-shadow: 4px 4px 0 #1a1030; }
     </style>
   </head>
   <body>

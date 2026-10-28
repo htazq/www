@@ -1,6 +1,6 @@
 import { LucideIcon } from 'lucide-react';
 
-export type NavCategory = 'Mirror' | 'Tool' | 'Service';
+export type NavCategory = 'Mirror' | 'Tool' | 'Service' | 'Blog';
 
 export interface NavItem {
   id: string;
@@ -13,8 +13,17 @@ export interface NavItem {
   isNew?: boolean;
 }
 
-export interface Quote {
-  id: number;
-  category: string;
-  content: string;
+export interface FriendLink {
+  id: string;
+  title: string;
+  url: string;
+  description: string;
+  icon: LucideIcon | string;
+}
+
+export interface InternalService {
+  title: string;
+  url: string;
+  description: string;
+  icon: LucideIcon | string;
 }
