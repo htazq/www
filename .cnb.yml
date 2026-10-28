@@ -31,20 +31,11 @@ main:
             git remote add github https://oauth2:$GITHUB_TOKEN@github.com/htazq/www.git
             git push --force github HEAD:main
 
-        - name: Build Site and Experiments
+        - name: Build Site
           image: node:22
           script: |
             npm install
             npm run build
-            corepack enable
-            cd gpt-at9-internet-experiments
-            pnpm install --frozen-lockfile
-            pnpm lint
-            pnpm test
-            pnpm build
-            cd ..
-            mkdir -p dist/experiments
-            cp -R gpt-at9-internet-experiments/dist/. dist/experiments/
 
         - name: Deploy to EdgeOne Pages
           image: node:22
@@ -60,11 +51,4 @@ main:
           script: |
             npm install
             npm run build
-            corepack enable
-            cd gpt-at9-internet-experiments
-            pnpm install --frozen-lockfile
-            pnpm build
-            cd ..
-            mkdir -p dist/experiments
-            cp -R gpt-at9-internet-experiments/dist/. dist/experiments/
             npx edgeone makers deploy ./dist -n cnb-www -t $EDGEONE_API_TOKEN
