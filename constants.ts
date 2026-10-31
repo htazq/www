@@ -96,6 +96,7 @@ export const INTERNAL_SERVICES: InternalService[] = [
   { title: 'Pod 管理', url: 'https://pod.at9.net', description: 'Komodo 容器部署平台', icon: Server },
   { title: 'AI Web', url: 'https://ai.at9.net', description: 'AI 应用入口', icon: Bot },
   { title: 'CLI Proxy', url: 'https://cliproxy.at9.net', description: '模型代理服务', icon: Cloud },
+  { title: 'cnbai', url: 'https://cnbai.at9.net', description: 'cnbai 控制台', icon: Bot },
 ];
 
 export const FRIEND_LINKS: FriendLink[] = [
